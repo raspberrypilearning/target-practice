@@ -1,6 +1,6 @@
-title: explore-project-template
+title: Python archery
 hero_image: images/banner.png
-description: explore-project-template description
+description:
 version: 4
 listed: false
 copyedit: false
@@ -8,7 +8,11 @@ last_tested: "2021-03-26"
 steps:
   - title: Introduction
   - title: Step title
-  - title: Reflection
+  - title: Step title
+  - title: Reflect
+  - title: Upgrade your project
+  - title: What next?
+
     knowledge_quiz:
       path: quiz1
       version: 1
