@@ -4,7 +4,6 @@ from p5 import *
 from math import *
 from random import randint
 
-
 def setup():
   frame_rate(5)
   size(400, 400)
@@ -12,7 +11,6 @@ def setup():
   shoot = False
 
 def mouse_pressed():
-
   if pixel_colour == YELLOW:
     print('You hit yellow, 500 points!')
   elif pixel_colour == RED:
