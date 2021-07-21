@@ -1,4 +1,4 @@
-## Step title
+## Set up your screen
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -9,6 +9,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 </div>
 
+<mark>Imports, setup to set screen size, define SKY_BLUE constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
 --- task ---
 
 Open a [new Scratch project](http://rpf.io/scratch-new){:target="_blank"}. Scratch will open in another browser tab.
