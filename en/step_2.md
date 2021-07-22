@@ -98,21 +98,21 @@ The ```draw()``` function is the second function called by ```run()``` after ```
 
 Now we need to create some colour variables. This will allow us to use the colour names to draw them rather than complicated **tuples**.
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> All the colours you can see on your computer screen are made by combining different levels of <span style="color: #FF0000">Red</span>, <span style="color: #00FF00">Green</span> and <span style="color: #0000FF">Blue</span>. 
+
+These levels can be set to any value from ```0``` to ```255```, and combining different levels of these three colours can make up to 16 million different variations! </p>
+
 --- task ---
 On the next line, type ``` global SKY_BLUE,``` and press Enter. This line creates the global variable for our sky colour, ```SKY_BLUE```.
 --- /task ---
 
 --- task ---
-Now type ```SKY_BLUE = color(92, 204, 206)``` and press Enter. This line sets our new ```SKY_BLUE``` variable using a colour tuple. 
+Now type ```SKY_BLUE = color(92, 204, 206)``` and press Enter. This line sets the colour for our new ```SKY_BLUE``` variable using a colour tuple. 
 
 --- collapse ---
 ---
 title: Colour tuples in python
 ---
-All the colours you can see on your computer screen are made by combining different levels of Red, Blue and Green. 
-
-These levels can be set to any value from ```0``` to ```255```, and combining different levels of these three colours can make up to 16 million different variations! 
-
 To define the colours in python we use **tuples**, or sets of three numbers in brackets separated by commas. The first number in the tuple represents the <span style="color: #FF0000">Red</span> value, the second is the <span style="color: #00FF00">Green</span> value and the third value is for<span style="color: #0000FF"> Blue </span> - this is why we call it an **RGB** colour palette.
 
 The colour we have created above is a light blue colour. It has much less red than blue and green, which we can see from the tuple: Red = 92
