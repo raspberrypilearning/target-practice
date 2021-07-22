@@ -9,8 +9,8 @@ In Japanese archery, known as <span style="color: #0faeb0">Kyūdō</span>, the b
 </p>
 
 You will:
-+ Code and draw simple coloured shapes using python
-+ Use conditional statements (if, else if, else) to simulate decision making
++ Use **global variables** to store and use values
++ Use **conditional statements** (```if```, ```elif```, ```else``` ) to simulate decision making
 + Create functions to organise code 
 
 --- no-print ---
@@ -24,7 +24,7 @@ When the dot appears close to the centre of the target, click the mouse to fire 
 
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe src="https://trinket.io/embed/python/6a22c68892" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <iframe src="https://trinket.io/embed/python/e7feefb6dc" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 --- /task ---
