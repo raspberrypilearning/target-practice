@@ -9,7 +9,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 </div>
 
-<mark>Imports, setup to set screen size, define SKY_BLUE constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
+<mark>define SKY_BLUE constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
 --- task ---
 
 Open the [Python archery starter](https://trinket.io/python/06ee0e5643) project. Trinket will open in another browser tab.
@@ -35,7 +35,7 @@ With this line, we have started to **define a function** called ```setup```. Thi
 --- task ---
 Leaving the indent created by Trinket, type ```frame_rate(5)``` and hit Enter. You should see Trinket keep the same level of **indentation** as the previous line. 
 
-This line sets how many **frames** per second our animation will contain. The higher the number, the more frames. More frames means a smoother and faster animation. 
+This line sets how many **frames** per second our animation will contain. The higher the number, the more frames. More frames means a smoother and **faster** animation. 
 
 We are using ```5``` as our value because we want our player to be able to have a chance of firing their arrow at the right time. We could increase the framerate, but it would mean our 'arrow' would be moving much more quickly (and make it nearly impossible to be accurate). With this value, they will have 1/5th of a second to fire while the arrow is still.
 --- /task ---
@@ -69,5 +69,12 @@ The Boolean data type has only two values: **true** or **false**. These values a
 
 In python, we use the values ```True``` and ```False```. The ```False``` keyword is the same as ```0``` or ```off```. The ```True``` keyword is the same as ```1``` or ```on```.
 --- /collapse ---
+
+--- /task ---
+
+The code you have just typed is the ```setup``` function for our game. When the program runs, it will now set the animation frame rate to 5 frames per second, create a window 400 pixels wide by 400 pixels high, create a global variable called shoot (which we will need later) and set it to False. 
+
+
+
 
 --- save ---
