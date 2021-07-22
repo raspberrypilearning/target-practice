@@ -113,14 +113,15 @@ All the colours you can see on your computer screen are made by combining differ
 
 These levels can be set to any value from ```0``` to ```255```, and combining different levels of these three colours can make up to 16 million different variations! 
 
-To define the colours in python we use **tuples**, or sets of three numbers in brackets separated by commas. The first number in the tuple represents the Red value, the second is the Green value and the third value is for Blue - this is why we call it an **RGB** colour palette.
+To define the colours in python we use **tuples**, or sets of three numbers in brackets separated by commas. The first number in the tuple represents the <span style="color: #FF0000">Red</span> value, the second is the <span style="color: #00FF00">Green</span> value and the third value is for<span style="color: #0000FF"> Blue </span> - this is why we call it an **RGB** colour palette.
 
 The colour we have created above is a light blue colour. It has much less red than blue and green, which we can see from the tuple: Red = 92
 Green = 204
 Blue = 206 
 
-You can see a whole list of RGB colour values [here](https://image-color.com/color-picker#5CCCCE).
+You can see a whole list of RGB colour values [here](https://image-color.com/color-picker#5CCCCE), including our ```SKY_BLUE```.
 
 --- /collapse ---
+--- /task ---
 
 --- save ---
