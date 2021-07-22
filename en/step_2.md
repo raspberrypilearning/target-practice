@@ -74,7 +74,53 @@ In python, we use the values ```True``` and ```False```. The ```False``` keyword
 
 The code you have just typed is the ```setup``` function for our game. When the program runs, it will now set the animation frame rate to 5 frames per second, create a window 400 pixels wide by 400 pixels high, create a global variable called shoot (which we will need later) and set it to False. 
 
+The next step in setting up our game window is to draw the sky and grass backdrop. We will do this by creating two rectangles with the ```draw``` function and colouring them blue and green.
 
+--- task ---
+Under the ```setup function```, leave a blank line by pressing Enter and **remove the indent** so that your cursor is all the way against the left edge of the coding window, ready to start defining a new function.
 
+--- collapse ---
+---
+title: Indentation in python
+---
+Indentation refers to the spaces at the beginning of a code line, which are usually in blocks of **four spaces**. You can create an indent by pressing the ```Tab``` key on your keyboard while typing in the code window.
+
+In other programming languages the indentation in code is for making it easier to read, but in Python, the indentation is very important as Python uses indentation to indicate a 'block' of code.
+
+Everything which is indented in the block above is part of the ```setup``` function. Once the indentation ends, so does the function. 
+--- /collapse ---
+
+On this line type ```def draw():``` and press Enter. You'll see that an indentation is provided for your function again.
+
+--- /task ---
+
+The ```draw()``` function is the second function called by ```run()``` after ```setup()```. It tells the program what to create in the window we just coded. 
+
+Now we need to create some colour variables. This will allow us to use the colour names to draw them rather than complicated **tuples**.
+
+--- task ---
+On the next line, type ``` global SKY_BLUE,``` and press Enter. This line creates the global variable for our sky colour, ```SKY_BLUE```.
+--- /task ---
+
+--- task ---
+Now type ```SKY_BLUE = color(92, 204, 206)``` and press Enter. This line sets our new ```SKY_BLUE``` variable using a colour tuple. 
+
+--- collapse ---
+---
+title: Colour tuples in python
+---
+All the colours you can see on your computer screen are made by combining different levels of Red, Blue and Green. 
+
+These levels can be set to any value from ```0``` to ```255```, and combining different levels of these three colours can make up to 16 million different variations! 
+
+To define the colours in python we use **tuples**, or sets of three numbers in brackets separated by commas. The first number in the tuple represents the Red value, the second is the Green value and the third value is for Blue - this is why we call it an **RGB** colour palette.
+
+The colour we have created above is a light blue colour. It has much less red than blue and green, which we can see from the tuple: Red = 92
+Green = 204
+Blue = 206 
+
+You can see a whole list of RGB colour values [here](https://image-color.com/color-picker#5CCCCE).
+
+--- /collapse ---
 
 --- save ---
