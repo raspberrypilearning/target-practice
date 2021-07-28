@@ -4,11 +4,14 @@ from p5 import *
 from math import *
 from random import randint
 
+arrow_x = 400
+arrow_y = 400
+
+
 def setup():
   frame_rate(5)
   size(400, 400)
-  global shoot
-  shoot = False
+
 
 def mouse_pressed():
   if pixel_colour == YELLOW:
@@ -25,20 +28,21 @@ def mouse_pressed():
     print('You missed, No points !')
     
     
-def target():
+def shoot_arrow():
+  global arrow_x, arrow_y
   global pixel_colour
-  if frame_count%40 == 0:
-    target_x = randint(100, 300)
-    target_y = randint(100, 300)
-    pixel_colour = color(get(target_x, target_y))
+  arrow_x = randint(100, 300)
+  arrow_y = randint(100, 300)
+  pixel_colour = color(get(arrow_x, arrow_y))
     
-  point(target_x, target_y)
+  point(arrow_x, arrow_y)
+  
   
 def draw():
   
-  global YELLOW, RED, BLUE, BLACK, GREY, WHITE, SKY_BLUE, GRASS_GREE, WOOD_BROWN
+  global YELLOW, RED, BLUE, BLACK, GREY, WHITE, SKY_BLUE, GRASS_GREEN, WOOD_BROWN
   
-  YELLOW = color (252, 249, 0)
+  YELLOW = color(252, 249, 0)
   RED = color(255, 0, 0)
   BLUE = color(0, 110, 191)
   BLACK = color(0, 0, 0)
@@ -48,6 +52,7 @@ def draw():
   GRASS_GREEN = color(149, 212, 122)
   WOOD_BROWN = color(145, 96, 51)
   
+  
   # Backdrop
   noStroke()
   fill(SKY_BLUE)
@@ -55,7 +60,7 @@ def draw():
   fill(GRASS_GREEN)
   rect(0, 250, 400, 400)
   
-  # Target
+  # Draw a target
   fill(WOOD_BROWN)
   triangle(150, 350, 200, 150, 250, 350)
   strokeWeight(1)
@@ -75,6 +80,6 @@ def draw():
   stroke(WOOD_BROWN)
   strokeWeight(10)
   
-  target()
+  shoot_arrow()
   
 run()

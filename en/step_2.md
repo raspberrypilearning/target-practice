@@ -1,5 +1,15 @@
 ## Set up your screen
 
+
+- Remove mention of scope, tuples
+- Acknowldge that global variables are used everywhere, but avoid the word scope
+- Focus on colour & intro coordinates (adapt the collapse from rocket project)
+- Review the Hello World project to determine what they already know
+https://projects.raspberrypi.org/en/projects/hello-world
+- Give them Sky Blue & Grass green in the starter
+
+
+
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will code the window which will display your game by drawing the background sky and grass. 

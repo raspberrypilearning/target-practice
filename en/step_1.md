@@ -9,9 +9,9 @@ In Japanese archery, known as <span style="color: #0faeb0">Kyūdō</span>, the b
 </p>
 
 You will:
-+ Use **global variables** to store and use values
-+ Use **conditional statements** (```if```, ```elif```, ```else``` ) to simulate decision making
-+ Create functions to organise code 
++ Colour theory in Python
++ Use **conditional statements** (`if`, `elif`, `else` ) to simulate decision making
++ x, y coordinate system
 
 --- no-print ---
 --- task ---

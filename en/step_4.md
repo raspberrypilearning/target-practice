@@ -9,7 +9,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 </div>
 
-<mark>target() function and calling it in the draw() function</mark>
+<mark>shoot_arrow() function and calling it in the draw() function, color(get()) and also rewrite to draw a small elipse (remove point from code).</mark>
 
 --- task ---
 

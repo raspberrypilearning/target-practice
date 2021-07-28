@@ -9,7 +9,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 </div>
 
-<mark>mouse pressed() and shooting function - focus on conditional selection</mark>
+<mark>mouse pressed() — inc. the idea of listening — and shooting function - focus on conditional selection and the equivalence operator (specifically the difference between = and ==)</mark>
 
 --- task ---
 
