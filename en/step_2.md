@@ -7,11 +7,11 @@
 In this step you will create the background for your game.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![The output area with sky coloured rectangle above a grass coloured rectangle to create the background.](images/background.png){:width="300px"}
 </div>
 </div>
 
-<mark>define SKY_BLUE constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
+<mark>define SKY constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
 
 --- task ---
 
@@ -27,7 +27,7 @@ The first step in making your game is to draw the sky and grass backdrop. The st
 
 --- task ---
 
-Inside your `draw` function, set the colour you want to fill the sky with to `SKY_BLUE` by using the `fill` function:
+Inside your `draw` function, set the colour you want to fill the sky with to `SKY` by using the `fill` function:
 
 --- code ---
 ---
@@ -40,29 +40,31 @@ line_highlights: 25-26
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
   
   BLACK = color(0, 0, 0)
-  GRASS_GREEN = color(149, 212, 122)
+  GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY_BLUE = color(92, 204, 206)
+  SKY = color(92, 204, 206)
   WHITE = color(255, 255, 255)
-  WOOD_BROWN = color(145, 96, 51)
+  WOOD = color(145, 96, 51)
 
-  fill(SKY_BLUE)
+  fill(SKY)
 
 
 --- /code ---
 
-**Tip:** Shapes will always be drawn with the fill colour set the last time `fill` was called, even if that was in another function. This can sometimes be the cause of bugs!
+**Tip:** When Python programmers won't be changing the value of a variable as the program is running, they name it with UPPERCASE LETTERS.
 
 --- /task ---
 
 --- task ---
 
-Now, draw a sky blue rectangle by calling the `rect` function after your fill
+Now, draw a sky blue rectangle by calling the `rect(x, y, width, height)` function after your `fill` code. 
 
-[[[processing-python-rect]]]
+The sky rectangle will start in the top-left corner of the screen at coordinates (0,0). The sky will have a width of `400` and a height of `250`.  
+
+![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
 
 --- code ---
 ---
@@ -75,17 +77,17 @@ line_highlights: 27
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
   
   BLACK = color(0, 0, 0)
-  GRASS_GREEN = color(149, 212, 122)
+  GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY_BLUE = color(92, 204, 206)
+  SKY = color(92, 204, 206)
   WHITE = color(255, 255, 255)
-  WOOD_BROWN = color(145, 96, 51)
+  WOOD = color(145, 96, 51)
 
-  fill(SKY_BLUE)
-  rect(0, 0, 400, 250)
+  fill(SKY)
+  rect(0, 0, 400, 250) # x, y, width, height
 
 
 --- /code ---
@@ -95,6 +97,8 @@ def draw():
 **Test:** Run your code to see the sky you've drawn.
 
 --- /task ---
+
+![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png)
 
 That's a bit strange, there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
 
@@ -113,17 +117,17 @@ line_highlights: 25-26
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
   
   BLACK = color(0, 0, 0)
-  GRASS_GREEN = color(149, 212, 122)
+  GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY_BLUE = color(92, 204, 206)
+  SKY = color(92, 204, 206)
   WHITE = color(255, 255, 255)
-  WOOD_BROWN = color(145, 96, 51)
+  WOOD = color(145, 96, 51)
 
   no_stroke()
-  fill(SKY_BLUE)
+  fill(SKY)
   rect(0, 0, 400, 250)
 
 
@@ -137,7 +141,11 @@ def draw():
 
 --- task ---
 
-Now add a `rect` in `GRASS_GREEN` below the sky, to be the grass.
+Now, change the `fill` colour to `GRASS` and add a `rect(x, y, width, height)`. 
+
+This `rect` needs to be positioned below the sky `rect` at coordinates (0, 250). The first coordinate is the **x coordinate** and controls the horizontal position on the screen. The second coordinate is the **y coordinate** and controls the vertical postion on the screen. 
+
+Set the grass `rect` to start at (0, 250) — so that it starts in the lower part of the screen.
 
 --- code ---
 ---
@@ -150,23 +158,25 @@ line_highlights: 29-30
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
   
   BLACK = color(0, 0, 0)
-  GRASS_GREEN = color(149, 212, 122)
+  GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY_BLUE = color(92, 204, 206)
+  SKY = color(92, 204, 206)
   WHITE = color(255, 255, 255)
-  WOOD_BROWN = color(145, 96, 51)
+  WOOD = color(145, 96, 51)
 
   no_stroke()
-  fill(SKY_BLUE)
-  rect(0, 0, 400, 250)
-  fill(GRASS_GREEN)
-  rect(0, 250, 400, 400)
+  fill(SKY)
+  rect(0, 0, 400, 250) # x, y, width, height
+  fill(GRASS)
+  rect(0, 250, 400, 150) # x, y, width, height
 
 
 --- /code ---
+
+**Tip:** Shapes will always be drawn with the fill colour set the last time `fill` was called, even if that was in another function. This can sometimes be the cause of bugs!
 
 --- save ---
 

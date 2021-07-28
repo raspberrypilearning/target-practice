@@ -40,16 +40,3 @@ Can use:
 
 
 
---- collapse ---
----
-title: Colour tuples in python
----
-To define the colours in python we use **tuples**, or sets of three numbers in brackets separated by commas. The first number in the tuple represents the <span style="color: #FF0000">Red</span> value, the second is the <span style="color: #00FF00">Green</span> value and the third value is for<span style="color: #0000FF"> Blue </span> - this is why we call it an **RGB** colour palette.
-
-The colour we have created above is a light blue colour. It has much less red than blue and green, which we can see from the tuple: Red = 92
-Green = 204
-Blue = 206 
-
-You can see a whole list of RGB colour values [here](https://image-color.com/color-picker#5CCCCE), including our ```SKY_BLUE```.
-
---- /collapse ---
