@@ -42,19 +42,19 @@ def draw():
   
   global YELLOW, RED, BLUE, BLACK, GREY, WHITE, SKY_BLUE, GRASS_GREEN, WOOD_BROWN
   
-  YELLOW = color(252, 249, 0)
-  RED = color(255, 0, 0)
-  BLUE = color(0, 110, 191)
   BLACK = color(0, 0, 0)
-  GREY = color(236, 236, 236)
-  WHITE = color(255, 255, 255)
-  SKY_BLUE = color(92, 204, 206)
+  BLUE = color(0, 110, 191)
   GRASS_GREEN = color(149, 212, 122)
+  GREY = color(236, 236, 236)
+  RED = color(255, 0, 0)
+  SKY_BLUE = color(92, 204, 206)
+  WHITE = color(255, 255, 255)
   WOOD_BROWN = color(145, 96, 51)
+  YELLOW = color(252, 249, 0)
   
   
   # Backdrop
-  noStroke()
+  no_stroke()
   fill(SKY_BLUE)
   rect(0, 0, 400, 250)
   fill(GRASS_GREEN)

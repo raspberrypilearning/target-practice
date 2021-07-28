@@ -2,17 +2,20 @@
 
 
 - Remove mention of scope, tuples
+- Remove details on shebang and import
+- Remove explaining multiplication
 - Acknowldge that global variables are used everywhere, but avoid the word scope
 - Focus on colour & intro coordinates (adapt the collapse from rocket project)
 - Review the Hello World project to determine what they already know
 https://projects.raspberrypi.org/en/projects/hello-world
 - Give them Sky Blue & Grass green in the starter
+- There's an ingredient for rectangles we can use - https://learning-admin.raspberrypi.org/en/projects/processing-python-rect
 
 
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will code the window which will display your game by drawing the background sky and grass. 
+In this step you will create the background for your game.
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
@@ -22,116 +25,162 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 <mark>define SKY_BLUE constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
 --- task ---
 
-Open the [Python archery starter](https://trinket.io/python/06ee0e5643) project. Trinket will open in another browser tab.
+Open the [Python archery starter](https://trinket.io/python/bbcc44911d) project. Remix it.
 
 [[[working-offline]]]
 
---- /task ---
-
-The first line of the script ```#!/bin/python3``` tells Trinket that you are using Python 3 (the latest version). The import lines tell Python that you are going to use some code you didn’t write, by importing **modules** of code that you can call upon to do specific things.
-
-Here, we are importing **everything** from the p5 library and the math library by using the ```*``` symbol. This is sometimes called a **wildcard** and it pretty much just means 'all'. So, we are asking python to import **all** from the p5 and math libraries for use in our code. We are only importing one part of the ```time``` module, the **package** called ```sleep``` which allows us to put timed breaks in our code. 
-
---- task ---
-In the main.py file of your Trinket, on the last line, type:
-```def setup():``` and hit enter.
-
-You should see the cursor move down a line and leave a small gap or **indent** at the beginning of the next. **Don't remove the indent!** It's very important to the structure of our code!
+--- save ---
 
 --- /task ---
 
-With this line, we have started to **define a function** called ```setup```. This function is always called first in python processing by the final command of every script: ```run()```. The ```setup``` function usually contains all the things the script needs to do to prepare the context for your code to run. Things like set the **framerate** for animations, or create a game window that is 400x400 pixels. 
+The first step in making your game is to draw the sky and grass backdrop. The starter already contains some colours you can use to do this.
 
 --- task ---
-Leaving the indent created by Trinket, type ```frame_rate(5)``` and hit Enter. You should see Trinket keep the same level of **indentation** as the previous line. 
 
-This line sets how many **frames** per second our animation will contain. The higher the number, the more frames. More frames means a smoother and **faster** animation. 
+Inside your `draw` function, set the colour you want to fill the sky with to `SKY_BLUE` by using the `fill` function:
 
-We are using ```5``` as our value because we want our player to be able to have a chance of firing their arrow at the right time. We could increase the framerate, but it would mean our 'arrow' would be moving much more quickly (and make it nearly impossible to be accurate). With this value, they will have 1/5th of a second to fire while the arrow is still.
---- /task ---
-
---- task ---
-Leaving the indent created, type ```size(400, 400)``` and hit Enter. You should see Trinket keep the same level of **indentation** as the previous line. 
-
-This line defines how big our game window will be. In this instance it will create a window with the dimensions of 400 pixels by 400 pixels. 
---- /task ---
-
---- task ---
-Leaving the indent created, type ```global shoot``` and hit Enter. You should see Trinket keep the same level of **indentation** as the previous line, and the word ```global``` should turn purple. 
-
-This line has created a **global variable** called ```shoot```. In python, a variable is used to store values. 
---- /task ---
-
-Normally, when you create a variable inside a function as we have done here, that variable is **local** and can **only be used inside that function**.
-
-To create a **global variable** inside a function, you can use the ```global``` keyword. If you create a variable using this keyword, the variable has global **scope**. Which means it is available **everywhere in your script**.
-
---- task ---
-Leaving the indent created, type ```shoot = False``` and hit Enter. You should see Trinket keep the same level of **indentation** as the previous line, and the word ```False``` will turn purple.
-
-This line has set the value of our global variable to be ```False```. 
-
---- collapse ---
+--- code ---
 ---
-title: ```False``` keyword and Boolean
+language: python
+filename: main.py — draw
+line_numbers: true
+line_number_start: 14 
+line_highlights: 25-26
 ---
-The Boolean data type has only two values: **true** or **false**. These values are used to control the flow of the execution of programs. 
+def draw():
+  # Things to do in every frame
+  
+  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  
+  BLACK = color(0, 0, 0)
+  GRASS_GREEN = color(149, 212, 122)
+  GREY = color(236, 236, 236)
+  SKY_BLUE = color(92, 204, 206)
+  WHITE = color(255, 255, 255)
+  WOOD_BROWN = color(145, 96, 51)
 
-In python, we use the values ```True``` and ```False```. The ```False``` keyword is the same as ```0``` or ```off```. The ```True``` keyword is the same as ```1``` or ```on```.
---- /collapse ---
+  fill(SKY_BLUE)
 
---- /task ---
 
-The code you have just typed is the ```setup``` function for our game. When the program runs, it will now set the animation frame rate to 5 frames per second, create a window 400 pixels wide by 400 pixels high, create a global variable called shoot (which we will need later) and set it to False. 
+--- /code ---
 
-The next step in setting up our game window is to draw the sky and grass backdrop. We will do this by creating two rectangles with the ```draw``` function and colouring them blue and green.
+**Tip:** Shapes will always be drawn with the fill colour set the last time `fill` was called, even if that was in another function. This can sometimes be the cause of bugs!
 
---- task ---
-Under the ```setup function```, leave a blank line by pressing Enter and **remove the indent** so that your cursor is all the way against the left edge of the coding window, ready to start defining a new function.
-
---- collapse ---
----
-title: Indentation in python
----
-Indentation refers to the spaces at the beginning of a code line, which are usually in blocks of **four spaces**. You can create an indent by pressing the ```Tab``` key on your keyboard while typing in the code window.
-
-In other programming languages the indentation in code is for making it easier to read, but in Python, the indentation is very important as Python uses indentation to indicate a 'block' of code.
-
-Everything which is indented in the block above is part of the ```setup``` function. Once the indentation ends, so does the function. 
---- /collapse ---
-
-On this line type ```def draw():``` and press Enter. You'll see that an indentation is provided for your function again.
-
---- /task ---
-
-The ```draw()``` function is the second function called by ```run()``` after ```setup()```. It tells the program what to create in the window we just coded. 
-
-Now we need to create some colour variables. This will allow us to use the colour names to draw them rather than complicated **tuples**.
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> All the colours you can see on your computer screen are made by combining different levels of <span style="color: #FF0000">Red</span>, <span style="color: #00FF00">Green</span> and <span style="color: #0000FF">Blue</span>. 
-
-These levels can be set to any value from ```0``` to ```255```, and combining different levels of these three colours can make up to 16 million different variations! </p>
-
---- task ---
-On the next line, type ``` global SKY_BLUE,``` and press Enter. This line creates the global variable for our sky colour, ```SKY_BLUE```.
 --- /task ---
 
 --- task ---
-Now type ```SKY_BLUE = color(92, 204, 206)``` and press Enter. This line sets the colour for our new ```SKY_BLUE``` variable using a colour tuple. 
 
---- collapse ---
+Now, draw a sky blue rectangle by calling the `rect` function after your fill
+
+[[[processing-python-rect]]]
+
+--- code ---
 ---
-title: Colour tuples in python
+language: python
+filename: main.py — draw
+line_numbers: true
+line_number_start: 14 
+line_highlights: 27
 ---
-To define the colours in python we use **tuples**, or sets of three numbers in brackets separated by commas. The first number in the tuple represents the <span style="color: #FF0000">Red</span> value, the second is the <span style="color: #00FF00">Green</span> value and the third value is for<span style="color: #0000FF"> Blue </span> - this is why we call it an **RGB** colour palette.
+def draw():
+  # Things to do in every frame
+  
+  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  
+  BLACK = color(0, 0, 0)
+  GRASS_GREEN = color(149, 212, 122)
+  GREY = color(236, 236, 236)
+  SKY_BLUE = color(92, 204, 206)
+  WHITE = color(255, 255, 255)
+  WOOD_BROWN = color(145, 96, 51)
 
-The colour we have created above is a light blue colour. It has much less red than blue and green, which we can see from the tuple: Red = 92
-Green = 204
-Blue = 206 
+  fill(SKY_BLUE)
+  rect(0, 0, 400, 250)
 
-You can see a whole list of RGB colour values [here](https://image-color.com/color-picker#5CCCCE), including our ```SKY_BLUE```.
 
---- /collapse ---
---- /task ---
+--- /code ---
 
 --- save ---
+
+**Test:** Run your code to see the sky you've drawn.
+
+--- /task ---
+
+That's a bit strange, there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
+
+--- task ---
+
+Turn off the stroke by adding `no_stroke()` before you start drawing the sky. This function will turn off any stroke that may be active.
+
+--- code ---
+---
+language: python
+filename: main.py — draw
+line_numbers: true
+line_number_start: 14 
+line_highlights: 25-26
+---
+def draw():
+  # Things to do in every frame
+  
+  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  
+  BLACK = color(0, 0, 0)
+  GRASS_GREEN = color(149, 212, 122)
+  GREY = color(236, 236, 236)
+  SKY_BLUE = color(92, 204, 206)
+  WHITE = color(255, 255, 255)
+  WOOD_BROWN = color(145, 96, 51)
+
+  no_stroke()
+  fill(SKY_BLUE)
+  rect(0, 0, 400, 250)
+
+
+--- /code ---
+
+--- save ---
+
+**Test:** Check that the stroke is now gone.
+
+--- /task ---
+
+
+--- task ---
+
+Now add a `rect` in `GRASS_GREEN` below the sky, to be the grass.
+
+--- code ---
+---
+language: python
+filename: main.py — draw
+line_numbers: true
+line_number_start: 14 
+line_highlights: 29-30
+---
+def draw():
+  # Things to do in every frame
+  
+  global BLACK, GRASS_GREEN, GREY, SKY_BLUE, WHITE, WOOD_BROWN
+  
+  BLACK = color(0, 0, 0)
+  GRASS_GREEN = color(149, 212, 122)
+  GREY = color(236, 236, 236)
+  SKY_BLUE = color(92, 204, 206)
+  WHITE = color(255, 255, 255)
+  WOOD_BROWN = color(145, 96, 51)
+
+  no_stroke()
+  fill(SKY_BLUE)
+  rect(0, 0, 400, 250)
+  fill(GRASS_GREEN)
+  rect(0, 250, 400, 400)
+
+
+--- /code ---
+
+--- save ---
+
+**Test:** View your finished background
+
+--- /task ---
