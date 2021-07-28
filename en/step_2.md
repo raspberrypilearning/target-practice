@@ -1,4 +1,4 @@
-## Set up your screen
+## Create a game world
 
 - Acknowldge global variables, mention coordinates, colour theory
 
@@ -17,8 +17,6 @@ In this step you will create the background for your game.
 
 Open the [Python archery starter](https://trinket.io/python/bbcc44911d) project. Remix it.
 
-[[[working-offline]]]
-
 --- save ---
 
 --- /task ---
@@ -35,18 +33,16 @@ language: python
 filename: main.py — draw
 line_numbers: true
 line_number_start: 14 
-line_highlights: 25-26
+line_highlights: 24-26
 ---
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
+  global GRASS, GREY, SKY, WOOD
   
-  BLACK = color(0, 0, 0)
   GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
   SKY = color(92, 204, 206)
-  WHITE = color(255, 255, 255)
   WOOD = color(145, 96, 51)
 
   fill(SKY)
@@ -72,18 +68,16 @@ language: python
 filename: main.py — draw
 line_numbers: true
 line_number_start: 14 
-line_highlights: 27
+line_highlights: 25
 ---
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
+  global GRASS, GREY, SKY, WOOD
   
-  BLACK = color(0, 0, 0)
   GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
   SKY = color(92, 204, 206)
-  WHITE = color(255, 255, 255)
   WOOD = color(145, 96, 51)
 
   fill(SKY)
@@ -112,18 +106,16 @@ language: python
 filename: main.py — draw
 line_numbers: true
 line_number_start: 14 
-line_highlights: 25-26
+line_highlights: 24
 ---
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
+  global GRASS, GREY, SKY, WOOD
   
-  BLACK = color(0, 0, 0)
   GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
   SKY = color(92, 204, 206)
-  WHITE = color(255, 255, 255)
   WOOD = color(145, 96, 51)
 
   no_stroke()
@@ -153,18 +145,16 @@ language: python
 filename: main.py — draw
 line_numbers: true
 line_number_start: 14 
-line_highlights: 29-30
+line_highlights: 27-28
 ---
 def draw():
   # Things to do in every frame
   
-  global BLACK, GRASS, GREY, SKY, WHITE, WOOD
+  global GRASS, GREY, SKY, WOOD
   
-  BLACK = color(0, 0, 0)
   GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
   SKY = color(92, 204, 206)
-  WHITE = color(255, 255, 255)
   WOOD = color(145, 96, 51)
 
   no_stroke()
