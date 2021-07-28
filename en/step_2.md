@@ -1,17 +1,6 @@
 ## Set up your screen
 
-
-- Remove mention of scope, tuples
-- Remove details on shebang and import
-- Remove explaining multiplication
-- Acknowldge that global variables are used everywhere, but avoid the word scope
-- Focus on colour & intro coordinates (adapt the collapse from rocket project)
-- Review the Hello World project to determine what they already know
-https://projects.raspberrypi.org/en/projects/hello-world
-- Give them Sky Blue & Grass green in the starter
-- There's an ingredient for rectangles we can use - https://learning-admin.raspberrypi.org/en/projects/processing-python-rect
-
-
+- Acknowldge global variables, mention coordinates, colour theory
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -23,6 +12,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 </div>
 
 <mark>define SKY_BLUE constant, Draw sky and run(), color theory (collapse), coordinates (collapse) for rect</mark>
+
 --- task ---
 
 Open the [Python archery starter](https://trinket.io/python/bbcc44911d) project. Remix it.
@@ -144,7 +134,6 @@ def draw():
 **Test:** Check that the stroke is now gone.
 
 --- /task ---
-
 
 --- task ---
 
