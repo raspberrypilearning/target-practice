@@ -2,10 +2,10 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an introductory sentence. What will learners achieve by the end of this step?
+In this step you will add scores based on where the arrow hits.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![The target showing an arrow landed on the blue inner circle with printed message to sshow points scored.](images/blue-points.png){:width="300px"}
 </div>
 </div>
 
@@ -32,7 +32,9 @@ def mouse_pressed():
 
 --- /task ---
 
-We use conditions all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. `if` conditions let us write code that does something different depending on whether a condition is true or false.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. `if` conditions let us write code that does something different depending on whether a condition is true or false.
+</p>
 
 --- task ---
 
@@ -56,7 +58,7 @@ line_highlights:
 def mouse_pressed():
   if hit_colour == GREY:
     # Just like functions, if statements are indented
-    print('You hit grey, 50 points!') # Choose how many points
+    print('You hit grey, 50 points!')
 
 
 --- /code ---
@@ -92,7 +94,7 @@ line_highlights:
 def mouse_pressed():
   if hit_colour == GREY:
     # Just like functions, if statements are indented
-    print('You hit grey, 50 points!') # Choose how many points
+    print('You hit grey, 50 points!')
   elif pixel_colour == BLUE:
     print('You hit blue, 200 points!')
   elif pixel_colour == YELLOW:
@@ -115,7 +117,9 @@ def mouse_pressed():
 
 There is one more decision we need to make: What happens if the arrow does not land on any of the target circles? To do this last check we use `else`.
 
-We use if … else all the time to make decisions in real life. When you wake up you check and if it is morning you get up else you go back to sleep. Can you think of any if ... else decisions you make? 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> all the time to make decisions in real life. When you wake up you check and if it is morning you get up else you go back to sleep. Can you think of any if ... else decisions you make? 
+</p>
 
 --- task ---
 
@@ -133,7 +137,7 @@ line_highlights:
 def mouse_pressed():
   if hit_colour == GREY:
     # Just like functions, if statements are indented
-    print('You hit grey, 50 points!') # Choose how many points
+    print('You hit grey, 50 points!')
   elif pixel_colour == BLUE:
     print('You hit blue, 200 points!')
   elif pixel_colour == YELLOW:
