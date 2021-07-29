@@ -9,6 +9,10 @@ Summary or upgrade project task
 </div>
 </div>
 
+Add extra rings
+
+Pick own ring colours
+
 --- collapse ---
 
 ---

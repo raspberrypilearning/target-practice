@@ -7,7 +7,7 @@ copyedit: false
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Set up your screen
+  - title: Create a game world
   - title: Draw your target
   - title: Aim your bow
   - title: Fire your arrow

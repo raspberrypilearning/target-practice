@@ -21,12 +21,11 @@ You will:
 Click **Run** in the python Trinket below to start the game. Once the program is running, you will see a small dot appearing randomly in the display window. 
 
 When the dot appears close to the centre of the target, click the mouse to fire your arrow and see how many points you get!
+  <iframe src="https://trinket.io/embed/python/e7feefb6dc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  </iframe>
+</div>
+</div>
 
-</div>
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe src="https://trinket.io/embed/python/e7feefb6dc" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
-</div>
 --- /task ---
 --- /no-print ---
 

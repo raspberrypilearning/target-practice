@@ -170,6 +170,6 @@ def draw():
 
 --- save ---
 
-**Test:** View your finished background
+**Test:** View your finished background.
 
 --- /task ---
