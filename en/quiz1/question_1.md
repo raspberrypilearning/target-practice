@@ -1,6 +1,6 @@
 ## Reflection
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+Well done, made a game! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
 
 Answer the three questions below to reflect on what you've learned.
 
@@ -13,29 +13,31 @@ Have fun!
 ---
 legend: Question 1 of 3
 ---
+Here's a colour, which are the RGB values that will create it?
 
+<mark>blue colour</mark>
 
 --- choices ---
 
-- ( )
+- ( ) Black
 
   --- feedback ---
 
   --- /feedback ---
 
-- ( )
+- ( ) Red
 
   --- feedback ---
 
   --- /feedback ---
 
-- (x) 
+- (x) Blue
 
   --- feedback ---
 
   --- /feedback ---
 
-- ( ) 
+- ( ) White
 
   --- feedback ---
 

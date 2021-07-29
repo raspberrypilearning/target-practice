@@ -5,13 +5,16 @@
 legend: Question 2 of 3
 ---
 
-You made Pico say hello in a speech bubble.
+Conditional statements
 
-```blocks3
-say [Hello!] for [2] secs
-```
+variable = 5
 
-Where would you go to find this block?
+if
+elif
+elif
+else
+
+Which ouput will fire (what will be printed?)
 
 --- choices ---
 
