@@ -4,7 +4,7 @@ If you are following the [Intro to Python](https://projects.raspberrypi.org/en/r
 
 --- print-only ---
 
-![Rocket launch project](images/showcase-rocket.png)
+![Rocket launch project](images/showcase_rocket.png)
 
 --- /print-only ---
 

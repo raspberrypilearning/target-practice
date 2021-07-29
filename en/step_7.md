@@ -5,7 +5,7 @@
 Add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
 </div>
 <div>
-![The output area showing a target with five output circles.](images/five-circles.png){:width="300px"}
+![The output area showing a target with five output circles.](images/five_circles.png){:width="300px"}
 </div>
 </div>
 

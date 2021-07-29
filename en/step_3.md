@@ -11,7 +11,7 @@
 In this step you will create a target stand and the coloured circles. 
 </div>
 <div>
-![The output area with the target and stand.](images/initial-target.png){:width="300px"}
+![The output area with the target and stand.](images/initial_target.png){:width="300px"}
 </div>
 </div>
 
