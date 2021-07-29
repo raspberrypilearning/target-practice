@@ -93,11 +93,11 @@ def draw():
 
 **Test:** Run your code to see the sky you've drawn.
 
---- /task ---
-
 ![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
 
 That's a bit strange, there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
+
+--- /task ---
 
 --- task ---
 

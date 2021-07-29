@@ -30,7 +30,7 @@ line_highlights: 10-12
 def shoot_arrow():
   arrow_x = 200
   arrow_y = 200
-  ellipse(arrow_x, arrow_y, 10, 10)
+  ellipse(arrow_x, arrow_y, 5, 5)
 
 
 --- /code ---
@@ -39,7 +39,7 @@ def shoot_arrow():
 
 --- task ---
 
-Below the code in `draw()` that creates the target, add code to set the `fill()` to `WOOD` then 
+Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `WOOD` then call your new `shoot_arrow()` function. 
 
 --- code ---
 ---
@@ -50,11 +50,12 @@ line_number_start:
 line_highlights: 10-12
 ---
   fill(YELLOW)
-  ellipse(200, 200, 30, 30)
+  ellipse(200, 200, 5, 5)
   
   # Arrow
   fill(WOOD)
   shoot_arrow()
+
 
 --- /code ---
 
@@ -64,13 +65,15 @@ line_highlights: 10-12
 
 --- task ---
 
-**Test:** 
+**Test:** Run you code and see the arrow appear in the bullseye.
+
+![The target on the background with a brown circle arrow](images/arrow-target.png)
 
 --- /task ---
 
 --- task ---
 
-To create random movements for the arrow you can use some code that has already been written and stored in a library. At the top of your code, find the `import` statements and add code to import `randint` from the `random` library. 
+To make the arrow move randomly you can use some code from a library. Find the `import` statements, at the top of your code, and from the `random` library import `randint`. 
 
 --- code ---
 ---
@@ -90,7 +93,9 @@ from random import randint
 
 --- task ---
 
-Go to your `shoot_arrow()` function and amend the `arrow_x` and `arrow_y` values to choose random numbers between `100` and `300`. This will let some shots miss the target, without them going all the way to the edges of your game.
+Go to your `shoot_arrow()` function and change the `arrow_x` and `arrow_y` values to choose random numbers between `100` and `300`. 
+
+This will let some shots miss the target, without them going all the way to the edges of your game.
 
 --- code ---
 ---
@@ -104,7 +109,8 @@ line_highlights: 10-12
 def shoot_arrow():
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  ellipse(arrow_x, arrow_y, 10, 10)
+  ellipse(arrow_x, arrow_y, 5, 5)
+
 
 --- /code ---
 
@@ -112,7 +118,7 @@ def shoot_arrow():
 
 --- task ---
 
-Finally, you need to check what colour the arrow has hit. You can do this with the `get()` function, which gets the colour at the x and y coordinates you provide. Store it in a variable called `pixel_colour`.
+Finally, you need to check what colour the arrow has hit. You can do this with the `get()` function, which gets the colour at the x and y coordinates you provide. Store it in a global variable called `hit_colour`. 
 
 --- code ---
 ---
@@ -124,13 +130,15 @@ line_highlights: 10-12
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
+  global hit_colour
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  ellipse(arrow_x, arrow_y, 10, 10)
-  pixel_colour = get(arrow_x, arrow_y)
+  ellipse(arrow_x, arrow_y, 5, 5)
+  hit_colour = get(arrow_x, arrow_y)
 
 
 --- /code ---
 
 --- /task ---
 
+--- save ---
