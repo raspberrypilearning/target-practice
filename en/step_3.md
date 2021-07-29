@@ -50,6 +50,8 @@ line_highlights: 30-32
 
 --- /code ---
 
+--- save ---
+
 --- /task ---
 
 --- task ---
@@ -83,6 +85,8 @@ line_highlights: 33-35
   ellipse(200, 200, 170, 170) 
   
 --- /code ---
+
+--- save ---
 
 --- /task ---
 
@@ -163,6 +167,8 @@ line_highlights:
   
 --- /code ---
 
+--- save ---
+
 --- /task ---
 
 --- task ---
@@ -206,6 +212,8 @@ line_highlights:
 
 --- /code ---
 
+--- save ---
+
 --- /task ---
 
 --- task ---
@@ -215,8 +223,3 @@ line_highlights:
 ![A brown triangle with three coloured circles, each ringed in white, against a blue sky on green grass.](images/outline-circles.png)
 
 --- /task ---
-
---- save ---
-
-
-
