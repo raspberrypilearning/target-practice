@@ -1,12 +1,4 @@
 ## Draw your target
-
- <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The term <span style="color: #0faeb0; font-weight: bold;"> Bullseye</span> when used to mean the centre of a target may have come from the practice of English archers who, both to develop and to exhibit their skills, would attempt to shoot an arrow through the eye socket of a bull's skull.
-<br>
-In Japanese archery, known as <span style="color: #0faeb0; font-weight: bold;">Kyūdō</span>, the bullseye is called <span style="color: #0faeb0; font-weight: bold;">zuboshi</span>. The term is also used just as it is in English; to show that someone has done or said something that is "exactly right."
-</p>
-
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will create a target stand and a target with coloured circles — smaller circles are worth more points than larger ones. 
@@ -15,8 +7,6 @@ In this step you will create a target stand and a target with coloured circles �
 ![The output area with the target and stand.](images/initial_target.png){:width="300px"}
 </div>
 </div>
-
-<mark>Draw the rest of the scene - define new colours explain coordinate system for different shapes</mark>
 
 --- task ---
 
@@ -136,9 +126,7 @@ def draw():
 
 The target will be made of up a number of circles with different sizes but the same centre coordinates. 
 
-Add two more circles to represent an inner circle and the bullseye. 
-
-Remember to change the `fill()` before drawing each circle. 
+Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle. 
 
 --- code ---
 ---
@@ -175,13 +163,19 @@ line_highlights:
 
 --- /task ---
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+The term <span style="color: #0faeb0; font-weight: bold;"> Bullseye</span> when used to mean the centre of a target may have come from the practice of English archers who, both to develop and to exhibit their skills, would attempt to shoot an arrow through the eye socket of a bull's skull.
+<br>
+In Japanese archery, known as <span style="color: #0faeb0; font-weight: bold;">Kyūdō</span>, the bullseye is called <span style="color: #0faeb0; font-weight: bold;">zuboshi</span>. The term is also used just as it is in English; to show that someone has done or said something that is "exactly right."
+</p>
+
 --- task ---
 
 You set `no_stroke()` when drawing your background, so all of the shapes after that have been drawn without a **stroke** outline too.
 
 A `WHITE` variable has been created for you. The RGB colour values for white are (255, 255, 255) this is the maximum amount of each colour. What do you think the values for black are?
 
-Set the colour of the `stroke()` to `WHITE` for the circles. To control the thinkness of the outline, add `strokeWeight()` and set this to `3`. 
+Set the colour of the `stroke()` to `WHITE` for the circles. To control the thinkness of the outline, add `stroke_weight()` and set this to `3`. 
 
 --- code ---
 ---
@@ -196,14 +190,9 @@ line_highlights:
   fill(WOOD_BROWN)
   triangle(150, 350, 200, 150, 250, 350)
   stroke(WHITE) # A white outline
-  strokeWeight(3) # A thick outline
+  stroke_weight(3) # A thick outline
   fill(GREY)
   ellipse(200, 200, 170, 170)
-  fill(BLUE)
-  ellipse(200, 200, 110, 110)
-  fill(YELLOW)
-  ellipse(200, 200, 30, 30)
-
 --- /code ---
 
 --- save ---

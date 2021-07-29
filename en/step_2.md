@@ -111,14 +111,6 @@ line_numbers: true
 line_number_start: 14 
 line_highlights: 24
 ---
-def draw():
-  # Things to do in every frame
-  
-  global GRASS, GREY, SKY, WOOD
-  
-  GRASS = color(149, 212, 122)
-  GREY = color(236, 236, 236)
-  SKY = color(92, 204, 206)
   WOOD = color(145, 96, 51)
 
   no_stroke()
@@ -154,14 +146,6 @@ line_numbers: true
 line_number_start: 14 
 line_highlights: 27-28
 ---
-def draw():
-  # Things to do in every frame
-  
-  global GRASS, GREY, SKY, WOOD
-  
-  GRASS = color(149, 212, 122)
-  GREY = color(236, 236, 236)
-  SKY = color(92, 204, 206)
   WOOD = color(145, 96, 51)
 
   no_stroke()

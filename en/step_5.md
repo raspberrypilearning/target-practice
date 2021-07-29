@@ -1,4 +1,4 @@
-## Fire your arrow
+## Score points
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -57,7 +57,7 @@ line_highlights:
 # The mouse_pressed function goes here
 def mouse_pressed():
   if hit_colour == GREY:
-    # Just like functions, if statements are indented
+    # Like functions, if statements are indented
     print('You hit grey, 50 points!')
 
 
@@ -93,7 +93,7 @@ line_highlights:
 ---
 def mouse_pressed():
   if hit_colour == GREY:
-    # Just like functions, if statements are indented
+    # Like functions, if statements are indented
     print('You hit grey, 50 points!')
   elif pixel_colour == BLUE:
     print('You hit blue, 200 points!')
@@ -136,7 +136,7 @@ line_highlights:
 
 def mouse_pressed():
   if hit_colour == GREY:
-    # Just like functions, if statements are indented
+    # Like functions, if statements are indented
     print('You hit grey, 50 points!')
   elif pixel_colour == BLUE:
     print('You hit blue, 200 points!')

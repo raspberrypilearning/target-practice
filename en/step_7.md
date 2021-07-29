@@ -13,44 +13,18 @@ Add more to your project. Perhaps you could change the difficulty level or add m
 
 You could:
 
-+ Make the game easier or harder by changing the `frameRate(5)` value
-+ Add more circles that score points based on their position
-+ Use `input` to ask the user which difficulty level
-+ Copy [emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} and paste to your `print` code
-
---- collapse ---
-
----
-title: Use input to control frameRate()
----
-
-
---- code ---
----
-language: python
-filename: main.py - setup
-line_numbers: true
-line_number_start: 11
-line_highlights: 12
----
-def setup():
-  difficulty = input('Which difficulty level would you like? 1, 2 or 3:')
-  if difficulty == 1:
-    frame_rate(3)
-  elif difficulty == 2:
-    frame_rate(5)
-  elif difficulty == 3:
-    frame_rate(7)
-  else:
-    frame_rate(5)
---- /code ---
-
---- /collapse ---
-
-Here’s an example that uses five target circles each scoring a different number of points:
++ Make the game easier or harder by changing the `frame_rate(5)` value
++ Use `input()` to ask the user which difficulty level they want to play at
++ Add more circles, in new colours, that score different points based on their position
++ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 
 --- no-print ---
 
+**Difficult setting**: [See inside](https://trinket.io/python/e7feefb6dc){:target="_blank"}
+<iframe src="https://trinket.io/embed/python/e7feefb6dc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
+
+**Five circle target**: [See inside](https://trinket.io/python/e7feefb6dc){:target="_blank"}
 <iframe src="https://trinket.io/embed/python/e7feefb6dc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
@@ -58,6 +32,7 @@ Here’s an example that uses five target circles each scoring a different numbe
 
 --- print-only ---
 
+![Upgraded project showing question in the output area asking what difficulty to set.](images/difficulty-setting.png)
 ![Upgraded project showing five target circles.](images/five-circles.png)
 
 --- /print-only ---
