@@ -9,8 +9,6 @@ Summary or upgrade project task
 </div>
 </div>
 
---- no-print ---
-
 --- task ---
 
 You could:
@@ -19,6 +17,8 @@ You could:
 + Make the game easier or harder by changing the frameRate() 
 
 Here’s an example that uses five target circles each scoring a different number of points:
+
+--- no-print ---
 
 <iframe src="https://trinket.io/embed/python/a54e164ac2?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
