@@ -12,7 +12,7 @@ In this step you will create the background for your game.
 
 Open the [Python archery starter](https://trinket.io/python/bbcc44911d) project. Click on the remix button.
 
-<mark>Offline Python ingredient goes here</mark>
+<mark>Offline Python ingredient goes here. Do we show them manual online saving?</mark>
 
 --- save ---
 
@@ -87,6 +87,10 @@ def draw():
 
 --- save ---
 
+--- /task ---
+
+--- task ---
+
 **Test:** Run your code to see the sky you've drawn.
 
 --- /task ---
@@ -125,6 +129,10 @@ def draw():
 --- /code ---
 
 --- save ---
+
+--- /task ---
+
+--- task ---
 
 **Test:** Run your project again to check that the stroke has gone.
 
@@ -166,6 +174,10 @@ def draw():
 --- /code ---
 
 --- save ---
+
+--- /task ---
+
+--- task ---
 
 **Test:** Run your project again to view the finished background.
 
