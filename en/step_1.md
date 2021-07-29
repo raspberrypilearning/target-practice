@@ -1,26 +1,22 @@
 ## Introduction
 
-In this project, you will use python to create an archery game by drawing a target and shoot arrows as close to the bullseye as you can. 
+In this project, you will use Python to draw a target and score points by hitting it with arrows. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The term <span style="color: #0faeb0"> Bullseye</span> when used to mean the centre of a target may have come from the practice of English archers who, both to develop and to exhibit their skills, would attempt to shoot an arrow through the eye socket of a bull's skull.
-
-In Japanese archery, known as <span style="color: #0faeb0">Kyūdō</span>, the bullseye is called <span style="color: #0faeb0">zuboshi</span>. The term is also used just as it is in English; to show that someone has done or said something that is "exactly right."
+The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes to us from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found which date to 60,000 to 70,000 years ago. 
 </p>
 
 You will:
-+ Colour theory in Python
-+ Use **conditional statements** (`if`, `elif`, `else` ) to simulate decision making
-+ x, y coordinate system
+ + Personalise your game with **RGB colours**
+ + Use **conditional statements** (`if`, `elif`, `else` ) to make decisions
+ + Position shapes with **x, y coordinates**
 
 --- no-print ---
 --- task ---
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Click **Run** in the python Trinket below to start the game. Once the program is running, you will see a small dot appearing randomly in the display window. 
-
-When the dot appears close to the centre of the target, click the mouse to fire your arrow and see how many points you get!
+Click the **Run** button below to start the game. When the dot appears close to the centre of the target, click the mouse (or tap on a tablet) to fire your arrow. How many points will you get?
   <iframe src="https://trinket.io/embed/python/e7feefb6dc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
