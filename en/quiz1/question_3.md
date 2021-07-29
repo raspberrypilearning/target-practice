@@ -11,9 +11,9 @@ ellipse(0,0,100,100)
 
 four images:
 top left (x)
-centre
-random
-bottom right
+centre (maths class)
+random (how coords work)
+bottom right (screen origin top-left)
 
 --- choices ---
 
