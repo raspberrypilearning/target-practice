@@ -1,11 +1,5 @@
 ## Draw your target
 
- - Reduce the target to three rings (yellow, blue, white)
- - 
- - Elipse positoning (use ingredient?)
- - Triangle positioning (if different?)
- - Stroke needs explaining
-
  <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The term <span style="color: #0faeb0; font-weight: bold;"> Bullseye</span> when used to mean the centre of a target may have come from the practice of English archers who, both to develop and to exhibit their skills, would attempt to shoot an arrow through the eye socket of a bull's skull.
 <br>
