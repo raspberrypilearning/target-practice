@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Summary or upgrade project task
+Add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
 </div>
 <div>
 ![The output area showing a target with five output circles.](images/five-circles.png){:width="300px"}
@@ -13,9 +13,10 @@ Summary or upgrade project task
 
 You could:
 
-+ Make the game easier or harder by changing the frameRate(5) value
++ Make the game easier or harder by changing the `frameRate(5)` value
 + Add more circles that score points based on their position
 + Use `input` to ask the user which difficulty level
++ Copy [emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} and paste to your `print` code
 
 --- collapse ---
 
