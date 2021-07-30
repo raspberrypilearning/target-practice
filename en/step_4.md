@@ -67,7 +67,7 @@ line_highlights: 10-12
 
 **Test:** Run you code and see the arrow appear in the bullseye.
 
-![The target on the background with a brown circle arrow](images/arrow-target.png)
+![The target on the background with a brown circle arrow](images/arrow-middle.png)
 
 --- /task ---
 
