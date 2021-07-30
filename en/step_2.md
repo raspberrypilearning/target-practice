@@ -101,7 +101,7 @@ That's a bit strange, there's a black line around your sky! This is because, whe
 
 --- task ---
 
-Turn off the stroke by adding `no_stroke()` before you start drawing the sky. This function will turn off any stroke that may be set.
+Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
 
 --- code ---
 ---
@@ -134,7 +134,9 @@ line_highlights: 24
 
 Now, change the `fill()` colour to `GRASS` and add another `rect(x, y, width, height)`. 
 
-This rectangle needs to be positioned below the sky at coordinates (0, 250). The first coordinate is the **x coordinate** and controls the horizontal position. The second coordinate is the **y coordinate** and controls the vertical postion. 
+This rectangle needs to be positioned below the sky at coordinates (0, 250). 
++ The first coordinate is the **x coordinate** and controls the horizontal position. 
++ The second coordinate is the **y coordinate** and controls the vertical postion. 
 
 Set the grass rectangle to start at (0, 250) — so that it starts in the lower part of the screen.
 
