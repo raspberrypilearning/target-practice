@@ -134,11 +134,9 @@ line_highlights: 24
 
 Now, change the `fill()` colour to `GRASS` and add another `rect(x, y, width, height)`. 
 
-This rectangle needs to be positioned below the sky at coordinates (0, 250). 
+This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen:
 + The first coordinate is the **x coordinate** and controls the horizontal position. 
 + The second coordinate is the **y coordinate** and controls the vertical postion. 
-
-Set the grass rectangle to start at (0, 250) — so that it starts in the lower part of the screen.
 
 --- code ---
 ---
