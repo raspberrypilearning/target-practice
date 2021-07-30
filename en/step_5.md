@@ -38,10 +38,10 @@ We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all t
 
 --- task ---
 
-To `print` a points message for the target's outter circle, add code to your `mouse_pressed()` function to check if the colour it has landed on `hit_colour` is `==` to `GREY`. 
+To `print` a message for the target's outter circle, add code to your `mouse_pressed()` function to check if the `hit_colour` is `==` to `GREY`. 
 
 Be careful when using the `=` symbol in Python: 
- + `=` is used for **assignment** — setting the value of a variable, like `arrow_x = 200`. 
+ + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable, . 
  + `==` is used to test **equivalence** — like `hit_colour == YELLOW` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`.
 
 
@@ -67,13 +67,13 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the grey outter circle to see your points message. 
+**Test:** Run your project. Try to stop the arrow on the grey outter circle to see your message. 
 <br>
-`frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number. 
+**Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number. 
 
 ![The output area with arrow touching the grey outter circle. The points print statement is appears in the output area.](images/grey-points.png)
 
-**Debug:** Make sure your code matches exactly and you indented the code inside your `if`? The indent tells Python which code should only run if the condition is `True`.
+**Debug:** Make sure your code matches exactly and you indented the code inside your `if`. The indent tells Python which code should only run if the condition is `True`.
 
 --- /task ---
 
@@ -107,7 +107,7 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue and yellow circles to see their points messages.
+**Test:** Run your project. Try to stop the arrow on the blue and yellow circles to see their messages.
 
 ![The output area with arrow touching the yellow inner circle. The points print statement appears in the output area.](images/yellow-points.png)
 
