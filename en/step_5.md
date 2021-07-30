@@ -77,11 +77,17 @@ def mouse_pressed():
 
 --- /task ---
 
---- task ---
-
 `GREY` is not the only colour you need to check for, points will be scored if the arrow lands on `BLUE` or `YELLOW` circles too. To do this use `elif` (a shortened version of else - if). 
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> all the time to make decisions in real life. When you are painting a picture of the sky you might check if there is a yellow paint for the sun. Else if there is no yellow paint you look for orange. Else if there is no yellow or orange paint you might use red - really lightly!
+</p>
+
+--- task ---
+
 An `elif` can only be used with an `if` statement and like an `if` it checks a condition. If the condition is `True`, the `elif` runs some code. What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it have been `False`.
+
+Add `elif` statements for `BLUE` and `YELLOW`.
 
 --- code ---
 ---
