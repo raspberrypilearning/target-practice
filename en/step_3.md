@@ -164,9 +164,7 @@ line_highlights:
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The term <span style="color: #0faeb0; font-weight: bold;"> Bullseye</span> when used to mean the centre of a target may have come from the practice of English archers who, both to develop and to exhibit their skills, would attempt to shoot an arrow through the eye socket of a bull's skull.
-<br>
-In Japanese archery, known as <span style="color: #0faeb0; font-weight: bold;">Kyūdō</span>, the bullseye is called <span style="color: #0faeb0; font-weight: bold;">zuboshi</span>. The term is also used just as it is in English; to show that someone has done or said something that is "exactly right."
+In Japan, the Samurai introduced a requirement for learning archery. The Japanese martial art of archery is known as <span style="color: #0faeb0; font-weight: bold;">Kyūdō</span> and the bullseye is called <span style="color: #0faeb0; font-weight: bold;">zuboshi</span>. The term zuboshi is also used in English; to show that someone has done or said something that is "exactly right."
 </p>
 
 --- task ---
