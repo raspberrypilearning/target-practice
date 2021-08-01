@@ -1,4 +1,4 @@
-## Create a game world
+## Create a background
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will create the background for your game.
@@ -12,7 +12,7 @@ In this step you will create the background for your game.
 
 Open the [Python archery starter](https://trinket.io/python/bbcc44911d) project. Click on the remix button.
 
-<mark>Offline Python ingredient goes here. Do we show them manual online saving?</mark>
+<mark>Offline Python ingredient goes here.</mark>
 
 --- save ---
 
@@ -29,19 +29,20 @@ Inside your `draw()` function, add code to set the `fill()` colour to `SKY`:
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 14 
-line_highlights: 24-26
+line_number_start: 17
+line_highlights: 28-30
 ---
 def draw():
   # Things to do in every frame
   
-  global GRASS, GREY, SKY, WOOD
+  global GRASS, GREY, SKY, WHITE, WOOD
   
   GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
   SKY = color(92, 204, 206)
   WOOD = color(145, 96, 51)
-
+  WHITE = color(255,255,255)
+  
   fill(SKY)
 
 
@@ -53,32 +54,35 @@ def draw():
 
 --- task ---
 
-Now, draw rectangle by calling the `rect(x, y, width, height)` function after your `fill()` code.
-
-**Tip:** Shapes will always be drawn with the fill colour set the last time `fill()` was called.
+Now, draw rectangle by calling the `rect(x_coordinate, y_coordinate, width, height)` function after your `fill()` code.
 
 The rectangle will start in the top-left corner of the screen at coordinates (0,0). The rectangle will have a width of `400` and a height of `250`.
++ The first coordinate is the **x coordinate** and controls the horizontal position. 
++ The second coordinate is the **y coordinate** and controls the vertical postion. 
 
 ![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
+
+**Tip:** Shapes will always be drawn with the fill colour set the last time `fill()` was called.
 
 --- code ---
 ---
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 14 
-line_highlights: 25
+line_number_start: 17 
+line_highlights: 29
 ---
 def draw():
   # Things to do in every frame
   
-  global GRASS, GREY, SKY, WOOD
+  global GRASS, GREY, SKY, WHITE, WOOD
   
   GRASS = color(149, 212, 122)
   GREY = color(236, 236, 236)
   SKY = color(92, 204, 206)
   WOOD = color(145, 96, 51)
-
+  WHITE = color(255,255,255)
+  
   fill(SKY)
   rect(0, 0, 400, 250) # x, y, width, height
 
@@ -108,14 +112,14 @@ Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 14 
-line_highlights: 24
+line_number_start: 26
+line_highlights: 28
 ---
-  WOOD = color(145, 96, 51)
+  WHITE = color(255,255,255)
 
   no_stroke()
   fill(SKY)
-  rect(0, 0, 400, 250)
+  rect(0, 0, 400, 250) # x, y, width, height
 
 
 --- /code ---
@@ -134,25 +138,23 @@ line_highlights: 24
 
 Now, change the `fill()` colour to `GRASS` and add another `rect(x, y, width, height)`. 
 
-This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen:
-+ The first coordinate is the **x coordinate** and controls the horizontal position. 
-+ The second coordinate is the **y coordinate** and controls the vertical postion. 
+This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
 
 --- code ---
 ---
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 14 
-line_highlights: 27-28
+line_number_start: 26
+line_highlights: 31-32
 ---
-  WOOD = color(145, 96, 51)
-
+  WHITE = color(255,255,255)
+  
   no_stroke()
   fill(SKY)
   rect(0, 0, 400, 250) # x, y, width, height
   fill(GRASS)
-  rect(0, 250, 400, 150) # x, y, width, height
+  rect(0, 250, 400, 150)
 
 
 --- /code ---

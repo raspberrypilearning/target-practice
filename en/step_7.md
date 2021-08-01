@@ -45,7 +45,7 @@ You could:
 title: Completed project
 ---
 
-You can view the [completed project here](https://trinket.io/python/e7feefb6dc){:target="_blank"}.
+You can view the [completed project here](https://trinket.io/python/7280f75efc){:target="_blank"}.
 
 --- /collapse ---
 

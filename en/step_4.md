@@ -5,7 +5,7 @@
 In this step you will create an arrow that moves randomly across the target area.
 </div>
 <div>
-![The target on the background with a brown circle arrow](images/arrow-target.png){:width="300px"}
+![The target, with a brown circle arrow appearing in a variety of positions.](images/step_5_preview.gif){:width="300px"}
 </div>
 </div>
 
@@ -23,14 +23,14 @@ Create two new variables **arrow_x** and **arrow_y** and set them both to `200` 
 language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
-line_number_start:  
-line_highlights: 10-12
+line_number_start: 9
+line_highlights: 10-15
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
   arrow_x = 200
   arrow_y = 200
-  ellipse(arrow_x, arrow_y, 5, 5)
+  ellipse(arrow_x, arrow_y, 10, 10)
 
 
 --- /code ---
@@ -39,21 +39,22 @@ def shoot_arrow():
 
 --- task ---
 
-Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `WOOD` then call your new `shoot_arrow()` function. 
+Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `WOOD`, turn off the `WHITE` strok you have set, and then call your new `shoot_arrow()` function. 
 
 --- code ---
 ---
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start:  
-line_highlights: 10-12
+line_number_start: 51
+line_highlights: 54-57
 ---
   fill(YELLOW)
-  ellipse(200, 200, 5, 5)
+  ellipse(200, 200, 10, 10)
   
   # Arrow
   fill(WOOD)
+  no_stroke()
   shoot_arrow()
 
 
@@ -80,8 +81,8 @@ To make the arrow move randomly you can use some code from a library. Find the `
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 1 
-line_highlights: 4
+line_number_start: 3
+line_highlights: 6
 ---
 # Import library code
 from p5 import *
@@ -102,14 +103,14 @@ This will let some shots miss the target, without them going all the way to the 
 language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
-line_number_start:  
-line_highlights: 10-12
+line_number_start: 10
+line_highlights: 12-13
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  ellipse(arrow_x, arrow_y, 5, 5)
+  ellipse(arrow_x, arrow_y, 10, 10)
 
 
 --- /code ---
@@ -118,23 +119,23 @@ def shoot_arrow():
 
 --- task ---
 
-Finally, you need to check what colour the arrow has hit. You can do this with the `get()` function, which gets the colour at the x and y coordinates you provide. Store it in a global variable called `hit_colour`. 
+Finally, you need to check what colour the arrow has hit. You can do this with the `get()` function, inside the `color()` function, which gets the colour at the x and y coordinates you provide. Store it in a global variable called `hit_colour`. 
 
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py — shoot_arrow() 
 line_numbers: true
-line_number_start: main.py — shoot_arrow() 
-line_highlights: 10-12
+line_number_start: 10
+line_highlights: 12, 15
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
   global hit_colour
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  ellipse(arrow_x, arrow_y, 5, 5)
-  hit_colour = get(arrow_x, arrow_y)
+  hit_colour = color(get(arrow_x, arrow_y))
+  ellipse(arrow_x, arrow_y, 10, 10)
 
 
 --- /code ---

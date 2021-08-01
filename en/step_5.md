@@ -5,7 +5,7 @@
 In this step you will add scores based on where the arrow hits.
 </div>
 <div>
-![The target showing an arrow landed on the blue inner circle with printed message to sshow points scored.](images/blue-points.png){:width="300px"}
+![The target, with the arrow appearing in a variety of positions and scores appearing as text below the game.](images/step_5_preview.gif){:width="300px"}
 </div>
 </div>
 
@@ -21,12 +21,12 @@ Find the comment **# The mouse_pressed function goes here** and below it add cod
 language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 
-line_highlights: 
+line_number_start: 8
+line_highlights: 9-11
 ---
-
 # The mouse_pressed function goes here
 def mouse_pressed():
+
 
 --- /code ---
 
@@ -50,10 +50,9 @@ Be careful when using the `=` symbol in Python:
 language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 
-line_highlights: 
+line_number_start: 9
+line_highlights: 10-14
 ---
-
 # The mouse_pressed function goes here
 def mouse_pressed():
   if hit_colour == GREY:
@@ -92,18 +91,18 @@ Add `elif` statements for `BLUE` and `YELLOW`.
 --- code ---
 ---
 language: python
-filename: main.py
+filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 
-line_highlights: 
+line_number_start: 9
+line_highlights: 13-16
 ---
 def mouse_pressed():
   if hit_colour == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-  elif pixel_colour == BLUE:
+  elif hit_colour == BLUE:
     print('You hit blue, 200 points!')
-  elif pixel_colour == YELLOW:
+  elif hit_colour == YELLOW:
     print('You hit yellow, 500 points!')
 
 
@@ -136,17 +135,16 @@ Add code to `print` a message `else` none of the `if` and `elif` statements have
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 
-line_highlights: 
+line_number_start: 9
+line_highlights: 17-18
 ---
-
 def mouse_pressed():
   if hit_colour == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-  elif pixel_colour == BLUE:
+  elif hit_colour == BLUE:
     print('You hit blue, 200 points!')
-  elif pixel_colour == YELLOW:
+  elif hit_colour == YELLOW:
     print('You hit yellow, 500 points!')
   else:
     print('You missed! No points!')
