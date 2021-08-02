@@ -7,7 +7,7 @@ copyedit: false
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Create a game world
+  - title: Create a background
   - title: Draw your target
   - title: Fire your arrow
   - title: Score points
