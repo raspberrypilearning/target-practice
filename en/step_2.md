@@ -10,7 +10,7 @@ In this step you will create the background for your game.
 
 --- task ---
 
-Open the [Python archery starter](https://trinket.io/python/bbcc44911d) project. Click on the remix button.
+Open the [Python archery starter](https://trinket.io/python/bbcc44911d){:target="_blank"} project. Click on the remix button.
 
 <mark>Offline Python ingredient goes here.</mark>
 
