@@ -17,7 +17,7 @@ You will:
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 Click the **Run** button below to start the game. When the dot appears close to the centre of the target, click the mouse (or tap on a tablet) to fire your arrow. How many points will you get?
-  <iframe src="https://trinket.io/python/7280f75efc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/7280f75efc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
