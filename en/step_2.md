@@ -56,9 +56,11 @@ def draw():
 
 Now, draw rectangle by calling the `rect(x_coordinate, y_coordinate, width, height)` function after your `fill()` code.
 
-The rectangle will start in the top-left corner of the screen at coordinates (0,0). The rectangle will have a width of `400` and a height of `250`.
-+ The first coordinate is the **x coordinate** and controls the horizontal position. 
-+ The second coordinate is the **y coordinate** and controls the vertical postion. 
+The rectangle will start in the top-left corner of the screen at coordinates (0,0): 
++ The **x coordinate** and controls the horizontal position 
++ The **y coordinate** and controls the vertical postion 
+
+The rectangle will have a width of `400` and a height of `250`.
 
 ![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
 
