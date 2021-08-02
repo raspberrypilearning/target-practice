@@ -12,16 +12,23 @@ In this step you will create a target stand and a target with coloured circles â
 
 The wooden stand will sit behind the target circles so needs to be drawn first. The order in which you draw things can be very important for complex images.
 
---- collapse ---
----
-title: Graphics layers
----
-
-Computer graphics are made of **layers**. In your game, each shape is a layer. Objects on higher layers cover objects on lower layers. Imagine cutting all the shapes out of paper. Depnding on how you arrange and overlap that paper, the final result could look very different.
-
---- /collapse ---
+Computer graphics are made of **layers**. In your game, each shape is a layer. Objects on higher layers sit in front of objects on lower layers. Imagine cutting all the shapes out of paper. Depnding on how you arrange and overlap that paper, the final result could look very different.
 
 Draw a **triangle** using the function `triangle(x1, y1, x2, y2, x3, y3)`. Triangles have three sets of coordinates each representing the position of one of the triangle's corners. 
+
+--- collapse ---
+---
+title: Triangle coordinates
+---
+
+  Here are three example triangles each with different sets of coordinates. Look at the grid position of each to see how the x and y coordinates position the corners of the triangles:
+  + triangle(50,50, 150,50, 180, 100)
+  + triangle(210,280, 300,350, 380, 100)
+  + triangle(50,150, 200,250, 180, 350)
+  
+  ![The output area with three triangles.](images/triangle-coords.png)
+
+--- /collapse ---
 
 The stand will have corners at (150, 350), (200, 150), and (250, 350).
 
