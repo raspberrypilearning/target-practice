@@ -8,11 +8,11 @@ In this step you will create a target stand and a target with coloured circles â
 </div>
 </div>
 
---- task ---
-
 The wooden stand will sit behind the target circles so needs to be drawn first. The order in which you draw things can be very important for complex images.
 
 Computer graphics are made of **layers**. In your game, each shape is a layer. Objects on higher layers sit in front of objects on lower layers. Imagine cutting all the shapes out of paper. Depnding on how you arrange and overlap that paper, the final result could look very different.
+
+--- task ---
 
 Draw a **triangle** using the function `triangle(x1, y1, x2, y2, x3, y3)`. Triangles have three sets of coordinates each representing the position of one of the triangle's corners. 
 
@@ -22,9 +22,9 @@ title: Triangle coordinates
 ---
 
   Here are three example triangles each with different sets of coordinates. Look at the grid position of each to see how the x and y coordinates position the corners of the triangles:
-  + triangle(50, 50, 150, 50, 180, 100)
-  + triangle(210, 280, 300, 350, 380, 100)
-  + triangle(50, 150, 200, 250, 180, 350)
+  + Green triangle: triangle(50, 50, 150, 50, 180, 100)
+  + Blue triangle: triangle(210, 280, 300, 350, 380, 100)
+  + Brown triangle: triangle(50, 150, 200, 250, 180, 350)
   
   ![The output area with three triangles.](images/triangles-coords.png)
 
@@ -99,7 +99,7 @@ line_highlights: 37-39
 
 --- /task ---
 
-The starter project had colours `SKY_BLUE`, `GREEN`, `BROWN`, `WHITE`, and `GREY` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
+The starter project had colours `GREEN`, `GREY`, `SKY_BLUE`, `BROWN`, and `WHITE` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
 
 --- task ---
 
@@ -123,7 +123,7 @@ line_highlights: 20, 27-28
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, SKY_BLUE, WHITE, BROWN, BLUE, YELLOW
+  global GREEN, GREY, SKY_BLUE, BROWN, WHITE, BLUE, YELLOW
   
   GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236) # The outter circle

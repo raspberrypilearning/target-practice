@@ -12,7 +12,7 @@ In this step you will create the background for your game.
 
 Open the [Python archery starter](https://trinket.io/python/bbcc44911d){:target="_blank"} project. Click on the remix button.
 
-<mark>Offline Python ingredient goes here.</mark>
+[[[python-offline]]]
 
 --- save ---
 
@@ -35,7 +35,7 @@ line_highlights: 28-30
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, SKY_BLUE, WHITE, BROWN
+  global GREEN, GREY, SKY_BLUE, BROWN, WHITE
   
   GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236)
@@ -77,7 +77,7 @@ line_highlights: 29
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, SKY_BLUE, WHITE, BROWN
+  global GREEN, GREY, SKY_BLUE, BROWN, WHITE
   
   GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236)
