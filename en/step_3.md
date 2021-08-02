@@ -26,7 +26,7 @@ title: Triangle coordinates
   + triangle(210,280, 300,350, 380, 100)
   + triangle(50,150, 200,250, 180, 350)
   
-  ![The output area with three triangles.](images/triangle-coords.png)
+  ![The output area with three triangles.](images/triangles-coords.png)
 
 --- /collapse ---
 
