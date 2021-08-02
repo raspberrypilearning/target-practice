@@ -13,29 +13,12 @@ Add more to your project. Perhaps you could change the difficulty level or add m
 
 You could:
 
-+ Make the game easier or harder by changing the `frame_rate(5)` value
-+ Use `input()` to ask the user which difficulty level they want to play at
 + Add more circles, in new colours, that score different points based on their position
 + Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
++ Make the game easier or harder by changing the `frame_rate(5)` value
++ Use `input()` to ask the user which difficulty level they want to play at
 
---- no-print ---
-
-**Difficult setting**: [See inside](https://trinket.io/python/e7feefb6dc){:target="_blank"}
-<iframe src="https://trinket.io/embed/python/e7feefb6dc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-**Five circle target**: [See inside](https://trinket.io/python/e7feefb6dc){:target="_blank"}
-<iframe src="https://trinket.io/embed/python/e7feefb6dc?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
---- /no-print ---
-
---- print-only ---
-
-![Upgraded project showing question in the output area asking what difficulty to set.](images/difficulty-setting.png)
-![Upgraded project showing five target circles.](images/five-circles.png)
-
---- /print-only ---
+![Upgraded project ideas one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
 
 --- /task ---
 

@@ -4,13 +4,13 @@
 In this step you will create a target stand and a target with coloured circles — smaller circles are worth more points than larger ones. 
 </div>
 <div>
-![The output area with the target and stand.](images/initial_target.png){:width="300px"}
+![The output area with the target and stand.](images/outline-circles.png){:width="300px"}
 </div>
 </div>
 
 The wooden stand will sit behind the target circles so needs to be drawn first. The order in which you draw things can be very important for complex images.
 
-Computer graphics are made of **layers**. In your game, each shape is a layer. Objects on higher layers sit in front of objects on lower layers. Imagine cutting all the shapes out of paper. Depnding on how you arrange and overlap that paper, the final result could look very different.
+Computer graphics are made of **layers**. In your game, each shape is a layer. Objects on higher layers sit in front of objects on lower layers. Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
 
 --- task ---
 
@@ -49,6 +49,8 @@ line_highlights: 34-36
 
 
 --- /code ---
+
+**Tip:** We have added comments to our code like `# Set the fill colour to brown` to tell you what it does. You don't need to add these comments to your code but you can do to help you remember why it's there.
 
 --- save ---
 
@@ -99,14 +101,14 @@ line_highlights: 37-39
 
 --- /task ---
 
-The starter project had colours `GREEN`, `GREY`, `SKY_BLUE`, `BROWN`, and `WHITE` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
+The starter project had colours `GREEN`, `GREY`, `BLUE`, `BROWN`, and `WHITE` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
 
 --- task ---
 
-Create two new global variables to store colours `BLUE` and `YELLOW` for the remaining circles:
+Create two new global variables to store colours `RED` and `YELLOW` for the remaining circles:
 
- + Add the `BLUE` and `YELLOW` variables to the line that makes the variables global (don't forget the commas!)
- + Assign colours to the `BLUE` and `YELLOW` variables using `color()`
+ + Add the `RED` and `YELLOW` variables to the line that makes the variables global (don't forget the commas!)
+ + Assign colours to the `RED` and `YELLOW` variables using `color()`
 
 The `color()` function expects three numbers: one each for red, green, and blue.
 
@@ -123,14 +125,14 @@ line_highlights: 20, 27-28
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, SKY_BLUE, BROWN, WHITE, BLUE, YELLOW
+  global GREEN, GREY, BLUE, BROWN, WHITE, RED, YELLOW
   
   GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236) # The outter circle
-  SKY_BLUE = color(92, 204, 206)
+  BLUE = color(92, 204, 206)
   BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
-  BLUE = color(0, 110, 191) # The inner circle
+  RED = color(255, 0, 0) # The inner circle
   YELLOW = color(252, 249, 0) # The bullseye
 
 --- /code ---
@@ -157,7 +159,7 @@ line_highlights: 42-45
   fill(GREY)
   # 200, 200 is the middle of the screen.
   ellipse(200, 200, 170, 170) # Outter circle
-  fill(BLUE)
+  fill(RED)
   ellipse(200, 200, 110, 110) # Inner circle
   fill(YELLOW)
   ellipse(200, 200, 30, 30) # Bullseye

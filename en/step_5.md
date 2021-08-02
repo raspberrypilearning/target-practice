@@ -5,7 +5,7 @@
 In this step you will add scores based on where the arrow hits.
 </div>
 <div>
-![The target, with the arrow appearing in a variety of positions and scores appearing as text below the game.](images/step_5_preview.gif){:width="300px"}
+![The target, with the arrow appearing in a variety of positions and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
 </div>
 </div>
 
@@ -41,8 +41,8 @@ We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all t
 To `print` a message for the target's outter circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `GREY`. 
 
 Be careful when using the `=` symbol in Python: 
- + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable, . 
- + `==` is used to test **equivalence** — like `hit_color == YELLOW` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`.
+ + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable 
+ + `==` is used to test **equivalence** — like `hit_color == YELLOW` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
 
 
 --- code ---
@@ -84,9 +84,11 @@ We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> all t
 
 --- task ---
 
-An `elif` can only be used with an `if` statement and like an `if` it checks a condition. If the condition is `True`, the `elif` runs some code. What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it have been `False`.
+An `elif` can only be used with an `if` statement and like an `if` it checks a condition. If the condition is `True`, the `elif` runs some code. 
 
-Add `elif` statements for `BLUE` and `YELLOW`.
+What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it have been `False`.
+
+Add `elif` statements for `RED` and `YELLOW`.
 
 --- code ---
 ---
@@ -100,8 +102,8 @@ def mouse_pressed():
   if hit_color == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-  elif hit_color == BLUE:
-    print('You hit blue, 200 points!')
+  elif hit_color == RED:
+    print('You hit red, 200 points!')
   elif hit_color == YELLOW:
     print('You hit yellow, 500 points!')
 
@@ -112,7 +114,7 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue and yellow circles to see their messages.
+**Test:** Run your project. Try to stop the arrow on the red and yellow circles to see their messages.
 
 ![The output area with arrow touching the yellow inner circle. The points print statement appears in the output area.](images/yellow-points.png)
 
@@ -142,8 +144,8 @@ def mouse_pressed():
   if hit_color == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-  elif hit_color == BLUE:
-    print('You hit blue, 200 points!')
+  elif hit_color == RED:
+    print('You hit red, 200 points!')
   elif hit_color == YELLOW:
     print('You hit yellow, 500 points!')
   else:

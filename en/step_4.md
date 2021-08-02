@@ -5,7 +5,7 @@
 In this step you will create an arrow that moves randomly across the target area.
 </div>
 <div>
-![The target, with a brown circle arrow appearing in a variety of positions.](images/step_5_preview.gif){:width="300px"}
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
 </div>
 </div>
 
@@ -30,7 +30,7 @@ line_highlights: 10-15
 def shoot_arrow():
   arrow_x = 200
   arrow_y = 200
-  ellipse(arrow_x, arrow_y, 10, 10)
+  ellipse(arrow_x, arrow_y, 15, 15)
 
 
 --- /code ---
@@ -50,7 +50,7 @@ line_number_start: 51
 line_highlights: 54-57
 ---
   fill(YELLOW)
-  ellipse(200, 200, 10, 10)
+  ellipse(200, 200, 30, 30)
   
   # Arrow
   fill(BROWN)
@@ -110,7 +110,7 @@ line_highlights: 12-13
 def shoot_arrow():
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  ellipse(arrow_x, arrow_y, 10, 10)
+  ellipse(arrow_x, arrow_y, 15, 15)
 
 
 --- /code ---
@@ -119,7 +119,9 @@ def shoot_arrow():
 
 --- task ---
 
-Finally, you need to check what colour the arrow has hit. You can do this with the `get()` function, inside the `color()` function, which gets the colour at the x and y coordinates you provide. Store it in a global variable called `hit_colour`. 
+Finally, create a global variable called `hit_colour` to use to check what colour the arrow has hit. 
+
+Add code a `get()` function, inside the `color()` function, which gets the colour at the `arrow_x` and `arrow_y` coordinates. 
 
 --- code ---
 ---
@@ -131,15 +133,27 @@ line_highlights: 12, 15
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
-  global hit_colour
+  global hit_color
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  hit_colour = color(get(arrow_x, arrow_y))
-  ellipse(arrow_x, arrow_y, 10, 10)
+  hit_color = color(get(arrow_x, arrow_y))
+  ellipse(arrow_x, arrow_y, 15, 15)
 
 
 --- /code ---
 
+--- save ---
+
 --- /task ---
 
---- save ---
+--- task ---
+
+**Test:** Run your project, the arrow is redrawn at random coordinates. 
+
+The project gets the `hit_color` each time the arrow is redrawn but doesn't do anything with that information yet. 
+
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+
+--- /task ---
+
+

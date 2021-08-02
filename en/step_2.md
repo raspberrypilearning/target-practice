@@ -22,7 +22,7 @@ The first step in making your game is to draw the sky and grass background. The 
 
 --- task ---
 
-Inside your `draw()` function, add code to set the `fill()` colour to `SKY_BLUE`:
+Inside your `draw()` function, add code to set the `fill()` colour to `BLUE`:
 
 --- code ---
 ---
@@ -35,15 +35,15 @@ line_highlights: 28-30
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, SKY_BLUE, BROWN, WHITE
+  global GREEN, GREY, BLUE, BROWN, WHITE
   
   GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY_BLUE = color(92, 204, 206)
+  BLUE = color(92, 204, 206)
   BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
   
-  fill(SKY_BLUE)
+  fill(BLUE)
 
 
 --- /code ---
@@ -77,15 +77,15 @@ line_highlights: 29
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, SKY_BLUE, BROWN, WHITE
+  global GREEN, GREY, BLUE, BROWN, WHITE
   
   GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY_BLUE = color(92, 204, 206)
+  BLUE = color(92, 204, 206)
   BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
   
-  fill(SKY_BLUE)
+  fill(BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
 
 
@@ -120,7 +120,7 @@ line_highlights: 28
   WHITE = color(255,255,255)
 
   no_stroke()
-  fill(SKY_BLUE)
+  fill(BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
 
 
@@ -153,7 +153,7 @@ line_highlights: 31-32
   WHITE = color(255,255,255)
   
   no_stroke()
-  fill(SKY_BLUE)
+  fill(BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
   fill(GREEN)
   rect(0, 250, 400, 150)
