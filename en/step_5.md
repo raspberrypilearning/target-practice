@@ -38,11 +38,11 @@ We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all t
 
 --- task ---
 
-To `print` a message for the target's outter circle, add code to your `mouse_pressed()` function to check if the `hit_colour` is `==` to `GREY`. 
+To `print` a message for the target's outter circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `GREY`. 
 
 Be careful when using the `=` symbol in Python: 
  + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable, . 
- + `==` is used to test **equivalence** — like `hit_colour == YELLOW` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`.
+ + `==` is used to test **equivalence** — like `hit_color == YELLOW` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`.
 
 
 --- code ---
@@ -55,7 +55,7 @@ line_highlights: 10-14
 ---
 # The mouse_pressed function goes here
 def mouse_pressed():
-  if hit_colour == GREY:
+  if hit_color == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
 
@@ -97,12 +97,12 @@ line_number_start: 9
 line_highlights: 13-16
 ---
 def mouse_pressed():
-  if hit_colour == GREY:
+  if hit_color == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-  elif hit_colour == BLUE:
+  elif hit_color == BLUE:
     print('You hit blue, 200 points!')
-  elif hit_colour == YELLOW:
+  elif hit_color == YELLOW:
     print('You hit yellow, 500 points!')
 
 
@@ -139,12 +139,12 @@ line_number_start: 9
 line_highlights: 17-18
 ---
 def mouse_pressed():
-  if hit_colour == GREY:
+  if hit_color == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-  elif hit_colour == BLUE:
+  elif hit_color == BLUE:
     print('You hit blue, 200 points!')
-  elif hit_colour == YELLOW:
+  elif hit_color == YELLOW:
     print('You hit yellow, 500 points!')
   else:
     print('You missed! No points!')

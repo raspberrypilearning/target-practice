@@ -39,7 +39,7 @@ def shoot_arrow():
 
 --- task ---
 
-Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `WOOD`, turn off the `WHITE` strok you have set, and then call your new `shoot_arrow()` function. 
+Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `BROWN`, turn off the `WHITE` strok you have set, and then call your new `shoot_arrow()` function. 
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ line_highlights: 54-57
   ellipse(200, 200, 10, 10)
   
   # Arrow
-  fill(WOOD)
+  fill(BROWN)
   no_stroke()
   shoot_arrow()
 

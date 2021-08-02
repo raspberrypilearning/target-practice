@@ -22,7 +22,7 @@ The first step in making your game is to draw the sky and grass background. The 
 
 --- task ---
 
-Inside your `draw()` function, add code to set the `fill()` colour to `SKY`:
+Inside your `draw()` function, add code to set the `fill()` colour to `SKY_BLUE`:
 
 --- code ---
 ---
@@ -35,15 +35,15 @@ line_highlights: 28-30
 def draw():
   # Things to do in every frame
   
-  global GRASS, GREY, SKY, WHITE, WOOD
+  global GREEN, GREY, SKY_BLUE, WHITE, BROWN
   
-  GRASS = color(149, 212, 122)
+  GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY = color(92, 204, 206)
-  WOOD = color(145, 96, 51)
+  SKY_BLUE = color(92, 204, 206)
+  BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
   
-  fill(SKY)
+  fill(SKY_BLUE)
 
 
 --- /code ---
@@ -77,15 +77,15 @@ line_highlights: 29
 def draw():
   # Things to do in every frame
   
-  global GRASS, GREY, SKY, WHITE, WOOD
+  global GREEN, GREY, SKY_BLUE, WHITE, BROWN
   
-  GRASS = color(149, 212, 122)
+  GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236)
-  SKY = color(92, 204, 206)
-  WOOD = color(145, 96, 51)
+  SKY_BLUE = color(92, 204, 206)
+  BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
   
-  fill(SKY)
+  fill(SKY_BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
 
 
@@ -120,7 +120,7 @@ line_highlights: 28
   WHITE = color(255,255,255)
 
   no_stroke()
-  fill(SKY)
+  fill(SKY_BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
 
 
@@ -138,7 +138,7 @@ line_highlights: 28
 
 --- task ---
 
-Now, change the `fill()` colour to `GRASS` and add another `rect(x, y, width, height)`. 
+Now, change the `fill()` colour to `GREEN` and add another `rect(x, y, width, height)`. 
 
 This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
 
@@ -153,9 +153,9 @@ line_highlights: 31-32
   WHITE = color(255,255,255)
   
   no_stroke()
-  fill(SKY)
+  fill(SKY_BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
-  fill(GRASS)
+  fill(GREEN)
   rect(0, 250, 400, 150)
 
 

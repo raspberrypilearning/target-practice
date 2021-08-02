@@ -22,9 +22,9 @@ title: Triangle coordinates
 ---
 
   Here are three example triangles each with different sets of coordinates. Look at the grid position of each to see how the x and y coordinates position the corners of the triangles:
-  + triangle(50,50, 150,50, 180, 100)
-  + triangle(210,280, 300,350, 380, 100)
-  + triangle(50,150, 200,250, 180, 350)
+  + triangle(50, 50, 150, 50, 180, 100)
+  + triangle(210, 280, 300, 350, 380, 100)
+  + triangle(50, 150, 200, 250, 180, 350)
   
   ![The output area with three triangles.](images/triangles-coords.png)
 
@@ -40,11 +40,11 @@ line_numbers: true
 line_number_start: 31
 line_highlights: 34-36
 ---
-  fill(GRASS)
+  fill(GREEN)
   rect(0, 250, 400, 150) # x, y, width, height
   
   # Draw a target
-  fill(WOOD) # Set the fill colour to wood
+  fill(BROWN) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
 
 
@@ -64,9 +64,9 @@ line_highlights: 34-36
 
 --- task ---
 
-The largest part of the target will be a `GREY` **circle** using `ellipse(x, y, width, height)`. The **x** and **y** coordinates are the centre position of the circle. 
+The largest part of the target will be a `GREY` **circle** using `ellipse(x, y, width, height)`.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. The **x** and **y** coordinates are the centre position of the circle. 
 
-**Tip:** An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. To make a perfect circle the **width** and **height** must be the same. 
+**Tip:** To make a perfect circle the **width** and **height** must be the same. 
 
 --- code ---
 ---
@@ -77,7 +77,7 @@ line_number_start: 34
 line_highlights: 37-39
 ---
 # Draw a target
-  fill(WOOD)
+  fill(BROWN)
   triangle(150, 350, 200, 150, 250, 350)
   fill(GREY)
   # 200, 200 is the middle of the screen.
@@ -99,7 +99,7 @@ line_highlights: 37-39
 
 --- /task ---
 
-The starter project had colours `SKY`, `GRASS`, `WOOD`, `WHITE`, and `GREY` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
+The starter project had colours `SKY_BLUE`, `GREEN`, `BROWN`, `WHITE`, and `GREY` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
 
 --- task ---
 
@@ -123,12 +123,12 @@ line_highlights: 20, 27-28
 def draw():
   # Things to do in every frame
   
-  global GRASS, GREY, SKY, WHITE, WOOD, BLUE, YELLOW
+  global GREEN, GREY, SKY_BLUE, WHITE, BROWN, BLUE, YELLOW
   
-  GRASS = color(149, 212, 122)
+  GREEN = color(149, 212, 122)
   GREY = color(236, 236, 236) # The outter circle
-  SKY = color(92, 204, 206)
-  WOOD = color(145, 96, 51)
+  SKY_BLUE = color(92, 204, 206)
+  BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
   BLUE = color(0, 110, 191) # The inner circle
   YELLOW = color(252, 249, 0) # The bullseye
@@ -152,7 +152,7 @@ line_number_start: 36
 line_highlights: 42-45
 ---
   # Draw a target
-  fill(WOOD) # Set the fill colour to wood
+  fill(BROWN) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
   fill(GREY)
   # 200, 200 is the middle of the screen.
@@ -198,7 +198,7 @@ line_number_start: 36
 line_highlights: 39–40
 ---
   # Draw a target
-  fill(WOOD) # Set the fill colour to wood
+  fill(BROWN) # Set the fill colour to wood
   triangle(150, 350, 200, 150, 250, 350)
   stroke(WHITE) # A white outline
   stroke_weight(3) # A thick outline
