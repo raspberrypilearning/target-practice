@@ -14,7 +14,7 @@ Computer graphics are made of **layers**. In your game, each shape is a layer. O
 
 --- task ---
 
-Draw a **triangle** using the function `triangle(x1, y1, x2, y2, x3, y3)`. Triangles have three sets of coordinates each representing the position of one of the triangle's corners. 
+Draw a **triangle** using the function `triangle(x1, y1, x2, y2, x3, y3)`. Triangles have three sets of coordinates, each representing the position of one of the triangle's corners. 
 
 --- collapse ---
 ---
@@ -199,7 +199,7 @@ line_number_start: 36
 line_highlights: 39–40
 ---
   # Draw a target
-  fill(BROWN) # Set the fill colour to wood
+  fill(BROWN) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
   stroke(WHITE) # A white outline
   stroke_weight(3) # A thick outline
