@@ -13,33 +13,41 @@ Have fun!
 ---
 legend: Question 1 of 3
 ---
-Here's a colour, which are the RGB values that will create it?
+Here is a blue square, which are the RGB values that will create it?
 
-<mark>blue colour</mark>
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
-- ( ) Black
+- ( ) (0, 0, 0)
 
   --- feedback ---
+
+Not quite, when all the colour values are set to `0` the color is **black**.
 
   --- /feedback ---
 
-- ( ) Red
+- ( ) (255, 0, 0)
 
   --- feedback ---
+
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
-- (x) Blue
+- (x) (0, 0, 255)
 
   --- feedback ---
+
+  That's right! Colours follow the RGB model. This colour has no R or G but maximum B, so will be **blue**.
 
   --- /feedback ---
 
-- ( ) White
+- ( ) (255, 255, 255)
 
   --- feedback ---
+
+  Not quite, when all the colour values are set to the `255` maximum the color is **white**.
 
   --- /feedback ---
 

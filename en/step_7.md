@@ -18,9 +18,9 @@ You could:
 + Make the game easier or harder by changing the `frame_rate(5)` value
 + Use `input()` to ask the user which difficulty level they want to play at
 
-![Upgraded project ideas one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
-
 --- /task ---
+
+![Upgraded project ideas one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
 
 --- collapse ---
 

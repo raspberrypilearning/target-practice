@@ -5,45 +5,60 @@
 legend: Question 2 of 3
 ---
 
-Conditional statements
+In your project, you used `if` , `elif` and `else` conditions to check which color the arrow landed on. 
 
-variable = 5
+When this code is run, what would be printed in the output area? 
 
-if = 7
-print
-elif = 5
-print
-elif = 6
-print
-else
-print
+--- code ---
+---
+language: python
+---
 
-Which ouput will fire (what will be printed?)
+speed = 6
+
+if speed == 7:
+  print('Super fast')
+elif speed == 5:
+  print('Pretty quick')
+elif speed == 6:
+  print('Very fast')
+else:
+ print('Speed not recognised!') 
+
+--- /code ---
 
 --- choices ---
 
-- (x) The correct one fires
+- (x) `Very fast`
 
   --- feedback ---
+
+  That's right the **speed** variable has been assigned the value `6` which makes the `speed == 6` condition **True** and prints `Very fast`
 
   --- /feedback ---
 
-- ( ) Multiple conditions fire
+- ( ) `Pretty quick` and `Very fast`
 
   --- feedback ---
-  Only ever one
+
+  No, only one condition will be true. Look at the value assigned to the **speed** variable.
+
   --- /feedback ---
 
-- ( ) The else fires
+- ( ) `Speed not recognised!`
 
   --- feedback ---
-  Not if a condition is met
+
+  Not quite, look at the value assigned to the **speed** variable.
+
   --- /feedback ---
 
 - ( ) Nothing gets printed
 
   --- feedback ---
-  With the else, there will always be, but also something is true.
+  
+  No, with the else statement, there will always be something that is true. Therefore an output will be printed.
+
   --- /feedback ---
 
 --- /choices ---
