@@ -46,7 +46,7 @@ Which of the images below show the correct position of this ellipse in the outpu
 
   --- feedback ---
   
-  That's right! This circle is centred at coordinates (0,0) the top-left corner of the screen. 
+  That's correct! This circle is centred at coordinates (0,0) the top-left corner of the screen. 
 
   --- /feedback ---
 
