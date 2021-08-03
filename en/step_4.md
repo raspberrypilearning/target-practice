@@ -39,7 +39,7 @@ def shoot_arrow():
 
 --- task ---
 
-Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `BROWN`, turn off the `WHITE` strok you have set, and then call your new `shoot_arrow()` function. 
+Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `BROWN`, turn off the `WHITE` stroke you have set, and then call your new `shoot_arrow()` function. 
 
 --- code ---
 ---
@@ -74,7 +74,9 @@ line_highlights: 54-57
 
 --- task ---
 
-To make the arrow move randomly you can use some code from a library. Find the `import` statements, at the top of your code, and from the `random` library import `randint`. 
+To make the arrow move randomly you can use some code from a library. 
+
+Find the `import` statements, at the top of your code, and from the `random` library import `randint`. 
 
 --- code ---
 ---
@@ -119,7 +121,7 @@ def shoot_arrow():
 
 --- task ---
 
-Finally, create a global variable called `hit_colour` to use to check what colour the arrow has hit. 
+Finally, create a global variable called `hit_color` to use to check what colour the arrow has hit. 
 
 Add code a `get()` function, inside the `color()` function, which gets the colour at the `arrow_x` and `arrow_y` coordinates. 
 
