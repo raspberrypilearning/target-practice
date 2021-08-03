@@ -128,12 +128,12 @@ def draw():
   global GREEN, GREY, BLUE, BROWN, WHITE, RED, YELLOW
   
   GREEN = color(149, 212, 122)
-  GREY = color(236, 236, 236) # The outter circle
+  GREY = color(236, 236, 236) 
   BLUE = color(92, 204, 206)
   BROWN = color(145, 96, 51)
   WHITE = color(255,255,255)
-  RED = color(255, 0, 0) # The inner circle
-  YELLOW = color(252, 249, 0) # The bullseye
+  RED = color(255, 0, 0) 
+  YELLOW = color(252, 249, 0) 
 
 --- /code ---
 
@@ -141,7 +141,7 @@ def draw():
 
 --- task ---
 
-The target will be made of up a number of circles with different sizes but the same centre coordinates. 
+The target will be made of up a number of circles with different sizes but the same centre coordinates (200, 200) - the middle of the screen. 
 
 Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle. 
 
@@ -157,7 +157,6 @@ line_highlights: 42-45
   fill(BROWN) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
   fill(GREY)
-  # 200, 200 is the middle of the screen.
   ellipse(200, 200, 170, 170) # Outter circle
   fill(RED)
   ellipse(200, 200, 110, 110) # Inner circle

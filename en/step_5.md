@@ -76,10 +76,10 @@ def mouse_pressed():
 
 --- /task ---
 
-`GREY` is not the only colour you need to check for, points will be scored if the arrow lands on `BLUE` or `YELLOW` circles too. To do this use `elif` (a shortened version of else - if). 
+`GREY` is not the only colour you need to check for, points will be scored if the arrow lands on `RED` or `YELLOW` circles too. To do this use `elif` (a shortened version of else - if). 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> all the time to make decisions in real life. When you are painting a picture of the sky you might check if there is a yellow paint for the sun. Else if there is no yellow paint you look for orange. Else if there is no yellow or orange paint you might use red - really lightly!
+We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> to make decisions in real life. When you are painting a picture of the sky you might check if there is a yellow paint for the sun. Else if there is no yellow paint you look for orange. Else if there is no yellow or orange paint you might use red - really lightly!
 </p>
 
 --- task ---
@@ -125,7 +125,7 @@ def mouse_pressed():
 There is one more decision we need to make: What happens if the arrow does not land on any of the target circles? To do this last check we use `else`.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> all the time to make decisions in real life. When you wake up you check and if it is morning you get up else you go back to sleep. Can you think of any if ... else decisions you make? 
+We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> to make decisions. When you wake up you check and if it is morning you get up else you go back to sleep. Can you think of any if ... else decisions you make? 
 </p>
 
 --- task ---

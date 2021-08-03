@@ -1,6 +1,6 @@
 ## Reflection
 
-Well done, made a game! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+Well done, you made a game! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
 
 Answer the three questions below to reflect on what you've learned.
 
@@ -39,7 +39,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's right! Colours follow the RGB model. This colour has no R or G but maximum B, so will be **blue**.
+  That's correct! Colours follow the RGB model. This colour has no R or G but maximum B, so will be **blue**.
 
   --- /feedback ---
 
