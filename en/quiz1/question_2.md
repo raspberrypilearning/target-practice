@@ -5,7 +5,7 @@
 legend: Question 2 of 3
 ---
 
-In your project, you used `if` , `elif` and `else` conditions to check which color the arrow landed on. 
+In your project, you used `if` , `elif` and `else` conditions to check which colour the arrow landed on. 
 
 When this code is run, what would be printed in the output area? 
 
@@ -33,7 +33,7 @@ else:
 
   --- feedback ---
 
-  That's right the **speed** variable has been assigned the value `6` which makes the `speed == 6` condition **True** and prints `Very fast`
+  That's correct! The **speed** variable has been assigned the value `6` which makes the `speed == 6` condition **True** and prints `Very fast`
 
   --- /feedback ---
 
