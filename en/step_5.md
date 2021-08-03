@@ -123,7 +123,7 @@ def mouse_pressed():
 **Debug:** If you are seeing a message about `RED` or `YELLOW` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
 
 ```python
-global GREEN, GREY, BLUE, WHITE, WOOD, RED, YELLOW
+global GREEN, GREY, BLUE, WHITE, BROWN, RED, YELLOW
 ```
 
 --- /task ---
