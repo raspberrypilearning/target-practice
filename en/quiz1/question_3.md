@@ -12,8 +12,6 @@ An ellipse is drawn using the following code:
 language: python
 ---
 
---- /code ---
-
 def setup():
   size(400, 400)
   fill(0,255,0)
@@ -21,6 +19,8 @@ def setup():
     
 def draw():
   ellipse(0,0,300,300) 
+  
+--- /code ---
 
 Which of the images below show the correct position of this ellipse in the output area?
 
