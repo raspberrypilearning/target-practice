@@ -120,6 +120,12 @@ def mouse_pressed():
 
 **Debug:** Make sure your `elif` is at the same indentation level as your `if`, and the code inside your `elif` is at the same level as the code inside your `if`.
 
+**Debug:** If you are seeing a message about `RED` or `YELLOW` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+
+```python
+global GREEN, GREY, BLUE, WHITE, WOOD, RED, YELLOW
+```
+
 --- /task ---
 
 There is one more decision we need to make: What happens if the arrow does not land on any of the target circles? To do this last check we use `else`.

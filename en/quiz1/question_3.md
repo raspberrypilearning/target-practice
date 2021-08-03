@@ -54,7 +54,7 @@ Which of the images below show the correct position of this ellipse in the outpu
 
   --- feedback ---
   
-  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen.
+  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen. The x coordinate is how far across the screen the ellipse is, and the y coordinate is how far down the screen it is.
 
   --- /feedback ---
 

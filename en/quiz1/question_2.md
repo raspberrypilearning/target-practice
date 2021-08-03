@@ -37,6 +37,7 @@ else:
 
   --- /feedback ---
 
+<!--
 - ( ) `Pretty quick` and `Very fast`
 
   --- feedback ---
@@ -44,6 +45,7 @@ else:
   No, only one condition will be true. Look at the value assigned to the **speed** variable.
 
   --- /feedback ---
+-->
 
 - ( ) `Speed not recognised!`
 
