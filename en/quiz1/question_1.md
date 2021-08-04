@@ -43,7 +43,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- /feedback ---
 
-- (x) (255, 255, 255)
+- ( ) (255, 255, 255)
 
   --- feedback ---
 
