@@ -38,7 +38,7 @@ We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all t
 
 --- task ---
 
-To `print` a message for the target's outter circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `GREY`. 
+To `print` a message for the target's outer circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `GREY`. 
 
 Be careful when using the `=` symbol in Python: 
  + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable 
@@ -66,11 +66,11 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the grey outter circle to see your message. 
+**Test:** Run your project. Try to stop the arrow on the grey outer circle to see your message. 
 <br>
 **Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number. 
 
-![The output area with arrow touching the grey outter circle. The points print statement is appears in the output area.](images/grey-points.png)
+![The output area with arrow touching the grey outer circle. The points print statement is appears in the output area.](images/grey-points.png)
 
 **Debug:** Make sure your code matches exactly and you indented the code inside your `if`. The indent tells Python which code should only run if the condition is `True`.
 
