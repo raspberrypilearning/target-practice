@@ -83,7 +83,7 @@ line_highlights: 37-39
   triangle(150, 350, 200, 150, 250, 350)
   fill(GREY)
   # 200, 200 is the middle of the screen.
-  ellipse(200, 200, 170, 170) # Outter circle
+  ellipse(200, 200, 170, 170) # Outer circle
   
 --- /code ---
 
@@ -157,7 +157,7 @@ line_highlights: 42-45
   fill(BROWN) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
   fill(GREY)
-  ellipse(200, 200, 170, 170) # Outter circle
+  ellipse(200, 200, 170, 170) # Outer circle
   fill(RED)
   ellipse(200, 200, 110, 110) # Inner circle
   fill(YELLOW)
