@@ -1,6 +1,6 @@
 title: Python archery
 hero_image: images/banner.png
-description:
+description: Use Python to draw a target and score points by hitting it with arrows.
 version: 4
 listed: false
 copyedit: false
