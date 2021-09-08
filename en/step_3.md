@@ -68,7 +68,7 @@ line_highlights: 34-36
 
 The largest part of the target will be a `GREY` **circle** using `ellipse(x, y, width, height)`.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. The **x** and **y** coordinates are the centre position of the circle. 
 
-**Tip:** To make a perfect circle the **width** and **height** must be the same. 
+**Tip:** To make a circle the **width** and **height** must be the same. 
 
 --- code ---
 ---
