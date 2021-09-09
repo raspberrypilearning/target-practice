@@ -70,6 +70,12 @@ line_highlights: 34-36
 
 The largest part of the target will be a `GREY` **circle** using `ellipse(x, y, width, height)`.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. The **x** and **y** coordinates are the centre position of the circle. 
 
+The `GREY` circle will cover over the brown triangle where they overlap, because it was drawn later. This covering over earlier drawings is how the background is cleared between frames of your animation. In the first animation below the background is not being redrawn, and all of the versions of the circle remain visible. The second animation makes it look like a single, moving, circle by redrawing the background in every frame.
+
+![An animation with a green circle that changes its x-coordinate each time the frame is redrawn. The background is not redrawn so the previous versions of the circle remain on the screen, overlapping each other.](images/animation_no_bg_erase.png)
+
+![An animation with a green circle that changes its x-coordinate each time the frame is redrawn. The background is redrawn so the previous versions of the circle are erased leaving only the latest version of the circle.](images/animation_bg_erase.png)
+
 **Tip:** To make a circle the **width** and **height** must be the same. 
 
 --- code ---
@@ -198,7 +204,7 @@ language: python
 filename: main.py - draw()
 line_numbers: true
 line_number_start: 36
-line_highlights: 39–40
+line_highlights: 39-40
 ---
   # Draw a target
   fill(BROWN) # Set the fill colour to brown

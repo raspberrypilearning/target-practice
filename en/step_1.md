@@ -1,6 +1,6 @@
 ## Introduction
 
-Use Python to draw a target and score points by hitting it with arrows. 
+Use Python, with the P5 graphics library, to draw a target and score points by hitting it with arrows. 
 
 You will:
  + Personalise your game with **RGB colours**
