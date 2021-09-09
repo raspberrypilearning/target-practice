@@ -32,6 +32,8 @@ title: Triangle coordinates
 
 The stand will have corners at (150, 350), (200, 150), and (250, 350).
 
+![A brown triangle against a blue sky on green grass with the coordinate points labelled.](images/stand_coords.png)
+
 --- code ---
 ---
 language: python

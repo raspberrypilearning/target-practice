@@ -3,9 +3,13 @@
 Use Python to draw a target and score points by hitting it with arrows. 
 
 You will:
- + Personalise your game with colours
+ + Personalise your game with **RGB colours**
  + Use **conditional statements** (`if`, `elif`, `else` ) to make decisions
  + Position shapes with **x, y coordinates**
+
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+The <span style="color: #0faeb0; font-weight: bold;"> RGB colour model </span> uses the primary colours of light; red, green, and blue (RGB). The RGB colours each have a value between 0 and 255, that combine to create a different colour. People such as Game Artists and Graphic Designers use the RGB colour model in their work.
+</p>
 
 --- no-print ---
 --- task ---
