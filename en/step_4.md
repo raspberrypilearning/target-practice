@@ -100,6 +100,8 @@ Go to your `shoot_arrow()` function and change the `arrow_x` and `arrow_y` value
 
 This will let some shots miss the target, without them going all the way to the edges of your game.
 
+![A rectangle showing the target area coordinattes in a semi transparent rectangle](images/target_area.png)
+
 --- code ---
 ---
 language: python
@@ -123,7 +125,7 @@ def shoot_arrow():
 
 Finally, create a global variable called `hit_color` to use to check what colour the arrow has hit. 
 
-Add code a `get()` function, inside the `color()` function, which gets the colour at the `arrow_x` and `arrow_y` coordinates. 
+Add a `get()` function, inside a `color()` function, which gets the colour at the `arrow_x` and `arrow_y` coordinates. 
 
 --- code ---
 ---
@@ -144,6 +146,8 @@ def shoot_arrow():
 
 --- /code ---
 
+**Tip:** The code to get the colour and save it needs to be before the code to draw the ellipse otherwise you will always save the BROWN colour of the arrow! 
+
 --- save ---
 
 --- /task ---
@@ -152,7 +156,7 @@ def shoot_arrow():
 
 **Test:** Run your project, the arrow is redrawn at random coordinates. 
 
-The project gets the `hit_color` each time the arrow is redrawn but doesn't do anything with that information yet. 
+The project gets the `hit_color` each time the arrow is redrawn — you'll use that value in the next step.
 
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 

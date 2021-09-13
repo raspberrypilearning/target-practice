@@ -66,8 +66,8 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the grey outer circle to see your message. 
-<br>
+**Test:** Run your project. Try to stop the arrow on the grey outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked. 
+
 **Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number. 
 
 ![The output area with arrow touching the grey outer circle. The points print statement is appears in the output area.](images/grey-points.png)

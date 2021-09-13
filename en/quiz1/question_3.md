@@ -19,7 +19,9 @@ def setup():
     
 def draw():
   ellipse(0,0,300,300) 
-  
+
+run()
+
 --- /code ---
 
 Which of the images below show the correct position of this ellipse in the output area?
