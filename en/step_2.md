@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will create the background for your game.
+The sky and grass are made by writing code to draw coloured rectangles.
 </div>
 <div>
 ![The output area with sky coloured rectangle above a grass coloured rectangle to create the background.](images/background.png){:width="300px"}
@@ -10,7 +10,6 @@ In this step you will create the background for your game.
 </div>
 
 --- task ---
-
 Open the [Archery starter](https://trinket.io/python/bbcc44911d){:target="_blank"} project. 
 
 If you have a Trinket account you can click on the **Remix** button to save a copy to your 'My Trinkets' library.
@@ -37,25 +36,22 @@ from math import *
 --- /code ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0; font-weight: bold;"> p5 library </span> is a collection of code used for sketching, animation and data visualisation. Artists, animators and designers are some of the main users of the p5 Processing library.  
-</p>
+The <span style="color: #0faeb0; font-weight: bold;"> p5 library </span> provides graphic functions for drawing, animation and data visualisation. Artists, animators and designers use the p5 Processing library for creative coding.</p>
 
-There are three functions that every project using `p5` needs:
+There are two functions that every project using `p5` needs to **define**:
 + **setup()** - runs once when the program starts to set properties like screen size  
 + **draw()** - runs repeatedly and defines what will be sketched
-+ **run()** - starts the p5 project by calling the `setup()` function followed by the `draw()` function
+
+You also need to **call** the `run()` function:
++ **run()** - starts the p5 project by calling the `setup()` function followed by repeatedly calling the `draw()` function
 
 ### Creating a background
 
-The first step in making your game is to draw the background. The background will be a rectangle for the sky filled in blue and a rectangle for the grass filled in green. 
-
-The starter project already contains some colours you can use to do this. 
-
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. 
+The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this. 
 
-Find your `draw()` function and prepare to draw the sky by adding code to set the `fill()` colour to `BLUE`:
+Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `BLUE`:
 
 --- code ---
 ---
@@ -63,43 +59,38 @@ language: python
 filename: main.py — draw()
 line_numbers: true
 line_number_start: 17
-line_highlights: 28-30
+line_highlights: 26
 ---
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, BLUE, BROWN, WHITE
-  
-  GREEN = color(149, 212, 122)
-  GREY = color(236, 236, 236)
-  BLUE = color(92, 204, 206)
+  GREEN = color(149, 212, 122) # Red = 149, Green = 212, Blue = 122
+  GREY = color(236, 236, 236) # Equal amounts of all colours
+  BLUE = color(92, 204, 206) 
   BROWN = color(145, 96, 51)
-  WHITE = color(255,255,255)
+  WHITE = color(255,255,255) # Maximum Red, Green and Blue make white
   
   fill(BLUE)
 
 --- /code ---
 
-**Tip:** When Python programmers won't be changing the value of a variable as the program is running, they name it with UPPERCASE LETTERS.
+**Tip:** In Python UPPER and lower case letters are different. When you see a variable name like BLUE then you must type it in CAPITAL letters. In Python, an UPPER case name is often used to show that a variable won't be changed and will always have the same value.
 
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The coordinates system used by p5 has an <span style="color: #0faeb0; font-weight: bold;"> origin point (0,0) </span> in the top-left of the screen. This top-left positioning of x = 0 and y = 0 is very popular to use when programming apps and games. If you have used Scratch or plotted charts on paper you might be used to seeing x = 0 and y = 0 in the centre. 
+Coordinates in p5 start from an <span style="color: #0faeb0; font-weight: bold;"> origin point (0,0) </span> in the top-left of the screen. This top-left positioning of x = 0 and y = 0 is commonly used when programming apps and games. If you have used Scratch or plotted charts on paper you might be used to seeing x = 0 and y = 0 in the centre. 
 
 ![An animated gif showing a ellipse moving across the canvas. It's current x and y coordinates are displayed as it moves.](images/coords_animation.gif)
-
 </p>
 
 --- task ---
 
-Now, draw rectangle by calling the `rect(x_coordinate, y_coordinate, width, height)` function after your `fill()` code.
-
-The rectangle will start in the top-left corner of the screen at coordinates (0,0): 
+The `rect(x_coordinate, y_coordinate, width, height)` function draws a rectangle.
 + The **x_coordinate** controls the horizontal position 
 + The **y_coordinate** controls the vertical postion 
 
-The rectangle will have a width of `400` and a height of `250`.
+After your `fill()` code draw a `rect()` for the sky. The rectangle will start in the top-left corner of the screen at coordinates (`0`,`0`), have a width of `400` to match the width of the canvas and a height of `250`.
 
 ![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
 
@@ -108,27 +99,13 @@ The rectangle will have a width of `400` and a height of `250`.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 17 
-line_highlights: 29
+line_number_start: 26 
+line_highlights: 27
 ---
-def draw():
-  # Things to do in every frame
-  
-  global GREEN, GREY, BLUE, BROWN, WHITE
-  
-  GREEN = color(149, 212, 122)
-  GREY = color(236, 236, 236)
-  BLUE = color(92, 204, 206)
-  BROWN = color(145, 96, 51)
-  WHITE = color(255,255,255)
-  
   fill(BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
 
-
 --- /code ---
-
-**Tip:** Shapes will always be drawn with the fill colour set the last time `fill()` was called.
 
 --- save ---
 
@@ -177,7 +154,9 @@ line_highlights: 28
 
 --- task ---
 
-Now, change the `fill()` colour to `GREEN` and add another `rect(x, y, width, height)`. 
+`fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
+
+Change the `fill()` colour to `GREEN` and add another `rect(x, y, width, height)`. 
 
 This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
 
@@ -196,7 +175,6 @@ line_highlights: 31-32
   rect(0, 0, 400, 250) # x, y, width, height
   fill(GREEN)
   rect(0, 250, 400, 150)
-
 
 --- /code ---
 

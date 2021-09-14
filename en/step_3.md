@@ -1,20 +1,20 @@
 ## Draw your target
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will create a target stand and a target with coloured circles — smaller circles are worth more points than larger ones. 
+The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
 </div>
 <div>
 ![The output area with the target and stand.](images/outline-circles.png){:width="300px"}
 </div>
 </div>
 
-The wooden stand will sit behind the target circles so needs to be drawn first. The order in which you draw things can be very important for complex images.
+Shapes are drawn in the order that the lines of code run. The triangular wooden stand is partly behind the target circles so it must be drawn first. 
 
-Computer graphics are made of **layers**. In your game, each shape is a layer. Objects on higher layers sit in front of objects on lower layers. Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
+Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
 
 --- task ---
 
-Draw a **triangle** using the function `triangle(x1, y1, x2, y2, x3, y3)`. Triangles have three sets of coordinates, each representing the position of one of the triangle's corners. 
+When you call the `triangle()` function you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners. 
 
 --- collapse ---
 ---
@@ -30,7 +30,7 @@ title: Triangle coordinates
 
 --- /collapse ---
 
-The stand will have corners at (150, 350), (200, 150), and (250, 350).
+Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
 
 ![A brown triangle against a blue sky on green grass with the coordinate points labelled.](images/stand_coords.png)
 
@@ -68,13 +68,11 @@ line_highlights: 34-36
 
 --- task ---
 
-The largest part of the target will be a `GREY` **circle** using `ellipse(x, y, width, height)`.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. The **x** and **y** coordinates are the centre position of the circle. 
+The largest part of the target will be a `GREY` **circle** using the `ellipse()` function.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. 
 
-The `GREY` circle will cover over the brown triangle where they overlap, because it was drawn later. This covering over earlier drawings is how the background is cleared between frames of your animation. In the first animation below the background is not being redrawn, and all of the versions of the circle remain visible. The second animation makes it look like a single, moving, circle by redrawing the background in every frame.
+Ellipse needs **x** and **y** coordinates, width and height. The **x** and **y** coordinates of an ellipse are the centre position. 
 
-![An animation with a green circle that changes its x-coordinate each time the frame is redrawn. The background is not redrawn so the previous versions of the circle remain on the screen, overlapping each other.](images/animation_no_bg_erase.gif)
-
-![An animation with a green circle that changes its x-coordinate each time the frame is redrawn. The background is redrawn so the previous versions of the circle are erased leaving only the latest version of the circle.](images/animation_bg_erase.gif)
+The `GREY` circle will cover over the brown triangle where they overlap, because it was drawn later. 
 
 **Tip:** To make a circle the **width** and **height** must be the same. 
 
@@ -105,7 +103,7 @@ line_highlights: 37-39
 
 ![A brown triangle and grey circle against a blue sky on green grass.](images/grey-circle.png)
 
-**Debug:** You might have used a different spelling of 'grey' — this is one of those words that has a different spelling in different parts of the English-speaking world.
+**Debug:** Check your spelling of 'GREY' and that you have used all capital letters.
 
 --- /task ---
 

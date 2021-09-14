@@ -16,10 +16,10 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Click the **Run** button below to start the game. When the dot appears close to the centre of the target, click the mouse (or tap on a tablet) to fire your arrow. 
+Click the **Run** button below to start the game. When the dot appears on the target, click the mouse (or tap on a tablet) to fire your arrow. 
 
-What changes if the arrow is in different places when you click? 
-  <iframe src="https://trinket.io/embed/python/8561448463?outputOnly=true" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on different colours? 
+  <iframe src="https://trinket.io/embed/python/8561448463?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
