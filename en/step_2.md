@@ -78,7 +78,6 @@ def draw():
   
   fill(BLUE)
 
-
 --- /code ---
 
 **Tip:** When Python programmers won't be changing the value of a variable as the program is running, they name it with UPPERCASE LETTERS.
@@ -91,9 +90,6 @@ The coordinates system used by p5 has an <span style="color: #0faeb0; font-weigh
 ![An animated gif showing a ellipse moving across the canvas. It's current x and y coordinates are displayed as it moves.](images/coords_animation.gif)
 
 </p>
-
-
-
 
 --- task ---
 
