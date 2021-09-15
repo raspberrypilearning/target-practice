@@ -9,7 +9,6 @@ In this step you will add scores based on where the arrow hits.
 </div>
 </div>
 
-
 The p5 library is 'listening' for certain events, one of these is the press of the mouse button. When it knows that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed()` function.
 
 --- task ---
@@ -44,7 +43,6 @@ Be careful when using the `=` symbol in Python:
  + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable 
  + `==` is used to test **equivalence** — like `hit_color == YELLOW` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
 
-
 --- code ---
 ---
 language: python
@@ -58,7 +56,6 @@ def mouse_pressed():
   if hit_color == GREY:
     # Like functions, if statements are indented
     print('You hit grey, 50 points!')
-
 
 --- /code ---
 

@@ -38,7 +38,6 @@ def shoot_arrow():
   arrow_y = 200
   ellipse(arrow_x, arrow_y, 15, 15)
 
-
 --- /code ---
 
 --- /task ---
@@ -63,10 +62,7 @@ line_highlights: 54-57
   no_stroke()
   shoot_arrow()
 
-
 --- /code ---
-
---- save ---
 
 --- /task ---
 
@@ -149,12 +145,9 @@ def shoot_arrow():
   hit_color = color(get(arrow_x, arrow_y))
   ellipse(arrow_x, arrow_y, 15, 15)
 
-
 --- /code ---
 
 **Tip:** The code to get the colour and save it needs to be before the code to draw the ellipse otherwise you will always save the BROWN colour of the arrow! 
-
---- save ---
 
 --- /task ---
 
@@ -168,4 +161,5 @@ The project gets the `hit_color` each time the arrow is redrawn — you'll use 
 
 --- /task ---
 
+--- save ---
 

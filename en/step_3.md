@@ -54,8 +54,6 @@ line_highlights: 34-36
 
 **Tip:** We have added comments to our code like `# Set the fill colour to brown` to tell you what it does. You don't need to add these comments to your code but you can do to help you remember why it's there.
 
---- save ---
-
 --- /task ---
 
 --- task ---
@@ -92,8 +90,6 @@ line_highlights: 37-39
   ellipse(200, 200, 170, 170) # Outer circle
   
 --- /code ---
-
---- save ---
 
 --- /task ---
 
@@ -170,8 +166,6 @@ line_highlights: 42-45
   ellipse(200, 200, 30, 30) # Bullseye
 --- /code ---
 
---- save ---
-
 --- /task ---
 
 --- task ---
@@ -212,8 +206,6 @@ line_highlights: 39-40
   fill(GREY)
 --- /code ---
 
---- save ---
-
 --- /task ---
 
 --- task ---
@@ -223,3 +215,6 @@ line_highlights: 39-40
 ![A brown triangle with three coloured circles, each ringed in white, against a blue sky on green grass.](images/outline-circles.png)
 
 --- /task ---
+
+--- save ---
+

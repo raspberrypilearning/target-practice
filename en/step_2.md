@@ -14,38 +14,11 @@ Open the [Archery starter](https://trinket.io/python/bbcc44911d){:target="_blank
 
 If you have a Trinket account you can click on the **Remix** button to save a copy to your 'My Trinkets' library.
 
---- save ---
-
 --- /task ---
 
-### p5 Processing library
+The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game. 
 
-The starter project has some code already written for you and imports more code from the `p5` and `math` libraries. 
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 4
----
-
-from p5 import *
-from math import *
-
---- /code ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0; font-weight: bold;"> p5 library </span> provides graphic functions for drawing, animation and data visualisation. Artists, animators and designers use the p5 Processing library for creative coding.</p>
-
-There are two functions that every project using `p5` needs to **define**:
-+ **setup()** - runs once when the program starts to set properties like screen size  
-+ **draw()** - runs repeatedly and defines what will be sketched
-
-You also need to **call** the `run()` function:
-+ **run()** - starts the p5 project by calling the `setup()` function followed by repeatedly calling the `draw()` function
-
-### Creating a background
+[[[p5-processing-library]]]
 
 --- task ---
 
@@ -78,19 +51,13 @@ def draw():
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Coordinates in p5 start from an <span style="color: #0faeb0; font-weight: bold;"> origin point (0,0) </span> in the top-left of the screen. This top-left positioning of x = 0 and y = 0 is commonly used when programming apps and games. If you have used Scratch or plotted charts on paper you might be used to seeing x = 0 and y = 0 in the centre. 
+The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
 
-![An animated gif showing a ellipse moving across the canvas. It's current x and y coordinates are displayed as it moves.](images/coords_animation.gif)
-</p>
+[[[p5-coordinates]]]
 
 --- task ---
 
-The `rect(x_coordinate, y_coordinate, width, height)` function draws a rectangle.
-+ The **x_coordinate** controls the horizontal position 
-+ The **y_coordinate** controls the vertical postion 
-
-After your `fill()` code draw a `rect()` for the sky. The rectangle will start in the top-left corner of the screen at coordinates (`0`,`0`), have a width of `400` to match the width of the canvas and a height of `250`.
+After your `fill()` code draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
 
 ![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
 
@@ -103,11 +70,9 @@ line_number_start: 26
 line_highlights: 27
 ---
   fill(BLUE)
-  rect(0, 0, 400, 250) # x, y, width, height
+  rect(0, 0, 400, 250) # start x, start y, width, height
 
 --- /code ---
-
---- save ---
 
 --- /task ---
 
@@ -139,10 +104,7 @@ line_highlights: 28
   fill(BLUE)
   rect(0, 0, 400, 250) # x, y, width, height
 
-
 --- /code ---
-
---- save ---
 
 --- /task ---
 
@@ -178,8 +140,6 @@ line_highlights: 31-32
 
 --- /code ---
 
---- save ---
-
 --- /task ---
 
 --- task ---
@@ -187,3 +147,5 @@ line_highlights: 31-32
 **Test:** Run your project again to view the finished background.
 
 --- /task ---
+
+--- save ---
