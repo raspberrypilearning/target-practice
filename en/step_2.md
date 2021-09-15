@@ -24,7 +24,7 @@ The starter project has some code already written for you to import the `p5` lib
 
 The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this. 
 
-Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `BLUE`:
+Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
 
 --- code ---
 ---
@@ -36,18 +36,14 @@ line_highlights: 26
 ---
 def draw():
   # Things to do in every frame
+  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
+  grass = color(149, 212, 122)
+  wood = color(145, 96, 51)
+  outer = color(0, 120, 180) # Equal amounts of all colours
   
-  GREEN = color(149, 212, 122) # Red = 149, Green = 212, Blue = 122
-  GREY = color(236, 236, 236) # Equal amounts of all colours
-  BLUE = color(92, 204, 206) 
-  BROWN = color(145, 96, 51)
-  WHITE = color(255,255,255) # Maximum Red, Green and Blue make white
-  
-  fill(BLUE)
+  fill(sky)
 
 --- /code ---
-
-**Tip:** In Python UPPER and lower case letters are different. When you see a variable name like BLUE then you must type it in CAPITAL letters. In Python, an UPPER case name is often used to show that a variable won't be changed and will always have the same value.
 
 --- /task ---
 
@@ -69,7 +65,7 @@ line_numbers: true
 line_number_start: 26 
 line_highlights: 27
 ---
-  fill(BLUE)
+  fill(sky)
   rect(0, 0, 400, 250) # start x, start y, width, height
 
 --- /code ---
@@ -98,10 +94,10 @@ line_numbers: true
 line_number_start: 26
 line_highlights: 28
 ---
-  WHITE = color(255,255,255)
+  outer = color(0, 120, 180) # Equal amounts of all colours
 
   no_stroke()
-  fill(BLUE)
+  fill(sky)
   rect(0, 0, 400, 250) # x, y, width, height
 
 --- /code ---
@@ -118,7 +114,7 @@ line_highlights: 28
 
 `fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
 
-Change the `fill()` colour to `GREEN` and add another `rect(x, y, width, height)`. 
+Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`. 
 
 This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
 
@@ -130,12 +126,12 @@ line_numbers: true
 line_number_start: 26
 line_highlights: 31-32
 ---
-  WHITE = color(255,255,255)
+  outer = color(0, 120, 180) # Equal amounts of all colours
   
   no_stroke()
-  fill(BLUE)
+  fill(sky)
   rect(0, 0, 400, 250) # x, y, width, height
-  fill(GREEN)
+  fill(grass)
   rect(0, 250, 400, 150)
 
 --- /code ---

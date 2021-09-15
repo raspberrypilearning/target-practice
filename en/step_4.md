@@ -1,28 +1,19 @@
 ## Fire your arrow
 
-This covering over earlier drawings is how the background is cleared between frames of your animation. In the first animation below the background is not being redrawn, and all of the versions of the circle remain visible. The second animation makes it look like a single, moving, circle by redrawing the background in every frame.
-
-![An animation with a green circle that changes its x-coordinate each time the frame is redrawn. The background is not redrawn so the previous versions of the circle remain on the screen, overlapping each other.](images/animation_no_bg_erase.gif)
-
-![An animation with a green circle that changes its x-coordinate each time the frame is redrawn. The background is redrawn so the previous versions of the circle are erased leaving only the latest version of the circle.](images/animation_bg_erase.gif)
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will create an arrow that moves randomly across the target area.
+Now it's time to add an arrow that moves randomly across the target area.
 </div>
 <div>
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
 </div>
 </div>
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Archery as a  <span style="color: #0faeb0; font-weight: bold;"> competitive sport </span> dates back to medieval England. Nowadays team and individual Archery events are held at they Olympic Games and Paralympic Games with targets that are 122cm in diameter. The bullseye measures 12.2cm in diameter (about the size of an apple). Archers shoot at the target from a distance of 70m (around 230ft)! </p>
-
 --- task ---
 
 Find the comment **# The shoot_arrow function goes here** and below it add code to define your `shoot_arrow()` function. 
 
-Create two new variables **arrow_x** and **arrow_y** and set them both to `200` (the centre of the screen). Add a small `ellipse()` to represent the arrow.
+Add a small `ellipse()` in the centre of the screen to represent the arrow.
 
 --- code ---
 ---
@@ -34,9 +25,7 @@ line_highlights: 10-15
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
-  arrow_x = 200
-  arrow_y = 200
-  ellipse(arrow_x, arrow_y, 15, 15)
+  ellipse(200, 200, 15, 15)
 
 --- /code ---
 
@@ -44,7 +33,7 @@ def shoot_arrow():
 
 --- task ---
 
-Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `BROWN`, turn off the `WHITE` stroke you have set, and then call your new `shoot_arrow()` function. 
+Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `wood`, then call your new `shoot_arrow()` function. 
 
 --- code ---
 ---
@@ -54,12 +43,11 @@ line_numbers: true
 line_number_start: 51
 line_highlights: 54-57
 ---
-  fill(YELLOW)
+  fill(bullseye)
   ellipse(200, 200, 30, 30)
   
   # Arrow
-  fill(BROWN)
-  no_stroke()
+  fill(wood)
   shoot_arrow()
 
 --- /code ---
@@ -74,9 +62,16 @@ line_highlights: 54-57
 
 --- /task ---
 
---- task ---
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computer games, videos and animations create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>. The speed that the image changes at is called the <span style="color: #800080;">frame rate</span> and is given in  <span style="color: #800080;">fps</span> or frames per second.  
+</p>
 
-To make the arrow move randomly you can use some code from a library. 
+The `frame_rate(2)` line in `setup()` sets the frame rate to 2 frames per second.
+
+The `draw()` function is called every frame. You are going to draw the arrow in a random position each time `draw()` is called. 
+
+The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+
+--- task ---
 
 Find the `import` statements, at the top of your code, and from the `random` library import `randint`. 
 
@@ -98,9 +93,11 @@ from random import randint
 
 --- task ---
 
-Go to your `shoot_arrow()` function and change the `arrow_x` and `arrow_y` values to choose random numbers between `100` and `300`. 
+Go to your `shoot_arrow()` function and add two new `arrow_x` and `arrow_y` variables to store random numbers between `100` and `300`. 
 
 This will let some shots miss the target, without them going all the way to the edges of your game.
+
+Change your `ellipse()` to use the new variables to position your arrow. 
 
 ![A rectangle showing the target area coordinattes in a semi transparent rectangle](images/target_area.png)
 
@@ -110,24 +107,30 @@ language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
 line_number_start: 10
-line_highlights: 12-13
+line_highlights: 12-14
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  ellipse(arrow_x, arrow_y, 15, 15)
-
+  ellipse(arrow_x, arrow_y, 15, 15) # use the random coordinates
 
 --- /code ---
 
 --- /task ---
 
+### Get the colour the arrow hits
+
+The `get()` function returns the colour of a pixel.
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+</p>
+
 --- task ---
+You need to store the colour that the arrow is aiming at before you draw an arrow on top of it.
 
-Finally, create a global variable called `hit_color` to use to check what colour the arrow has hit. 
-
-Add a `get()` function, inside a `color()` function, which gets the colour at the `arrow_x` and `arrow_y` coordinates. 
+Add code to store the `hit_color`. Use the `get()` function, to get the colour of the pixel at the `arrow_x` and `arrow_y` coordinates - the centre of the arrow. 
 
 --- code ---
 ---
@@ -135,29 +138,81 @@ language: python
 filename: main.py — shoot_arrow() 
 line_numbers: true
 line_number_start: 10
-line_highlights: 12, 15
+line_highlights: 15
 ---
 # The shoot_arrow function goes here
 def shoot_arrow():
-  global hit_color
   arrow_x = randint(100, 300)
   arrow_y = randint(100, 300)
-  hit_color = color(get(arrow_x, arrow_y))
+  hit_color = get(arrow_x, arrow_y) # save the colour before drawing the arrow
   ellipse(arrow_x, arrow_y, 15, 15)
 
 --- /code ---
 
-**Tip:** The code to get the colour and save it needs to be before the code to draw the ellipse otherwise you will always save the BROWN colour of the arrow! 
+**Tip:** The code to get the colour and save it needs to be *before* the code to draw the ellipse otherwise you will always save the wood colour of the arrow! 
 
+--- /task ---
+
+The p5 library is 'listening' for certain events, one of these is the press of the mouse button. When it knows that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed()` function.
+
+--- task ---
+
+Find the comment **# The mouse_pressed function goes here** and below it add code to define your `mouse_pressed()` function. 
+
+Add code to print the amounts of red, green and blue in the pixel the arrow lands on. 
+
+--- code ---
+---
+language: python
+filename: main.py - mouse_pressed()
+line_numbers: true
+line_number_start: 8
+line_highlights: 9-11
+---
+# The mouse_pressed function goes here
+def mouse_pressed():
+  print( red(hit_color), green(hit_color), blue(hit_color) )
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+You have defined two functions `shoot_arrow()` and `mouse_pressed()` both of these functions need to use the `hit_color` variable. 
+
+A variable that needs to be used thoughout a program is known as a **global variable**. Add code to your `shoot_arrow()` function to make `hit_color` a global variable:
+
+--- code ---
+---
+language: python
+filename: main.py - shoot_arrow()
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
+
+# The shoot_arrow function goes here
+def shoot_arrow():
+  global hit_color # can be used in other functions
+  arrow_x = randint(100, 300)
+  arrow_y = randint(100, 300)
+  hit_color = get(arrow_x, arrow_y) # save the colour before drawing the arrow
+  ellipse(arrow_x, arrow_y, 15, 15)
+
+--- /code ---
 --- /task ---
 
 --- task ---
 
 **Test:** Run your project, the arrow is redrawn at random coordinates. 
 
-The project gets the `hit_color` each time the arrow is redrawn — you'll use that value in the next step.
+The project gets the `hit_color` each time the arrow is redrawn and prints the colour value in the output area underneath the target.
 
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+
+**Debug:** If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+
+**Debug:** Check the `print` line really carefully for commas and brackets. 
 
 --- /task ---
 

@@ -12,6 +12,8 @@ Shapes are drawn in the order that the lines of code run. The triangular wooden 
 
 Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
 
+### Draw the stand
+
 --- task ---
 
 When you call the `triangle()` function you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners. 
@@ -32,7 +34,7 @@ title: Triangle coordinates
 
 Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
 
-![A brown triangle against a blue sky on green grass with the coordinate points labelled.](images/stand_coords.png)
+![A brown triangle against a  sky on grass with the coordinate points labelled.](images/stand_coords.png)
 
 --- code ---
 ---
@@ -42,11 +44,11 @@ line_numbers: true
 line_number_start: 31
 line_highlights: 34-36
 ---
-  fill(GREEN)
+  fill(grass)
   rect(0, 250, 400, 150) # x, y, width, height
   
   # Draw a target
-  fill(BROWN) # Set the fill colour to brown
+  fill(wood) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
 
 
@@ -60,17 +62,19 @@ line_highlights: 34-36
 
 **Test:** Run your code to see the stand for your target. 
 
-![A brown triangle against a blue sky on green grass.](images/target-stand.png)
+![A brown triangle against a sky on grass.](images/target-stand.png)
 
 --- /task ---
 
+### Draw the target
+
 --- task ---
 
-The largest part of the target will be a `GREY` **circle** using the `ellipse()` function.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. 
+The largest part of the target will be a blue **circle** using the `ellipse()` function.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. 
 
 Ellipse needs **x** and **y** coordinates, width and height. The **x** and **y** coordinates of an ellipse are the centre position. 
 
-The `GREY` circle will cover over the brown triangle where they overlap, because it was drawn later. 
+The blue circle will cover over the brown triangle where they overlap, because it was drawn later. 
 
 **Tip:** To make a circle the **width** and **height** must be the same. 
 
@@ -83,9 +87,9 @@ line_number_start: 34
 line_highlights: 37-39
 ---
 # Draw a target
-  fill(BROWN)
+  fill(wood)
   triangle(150, 350, 200, 150, 250, 350)
-  fill(GREY)
+  fill(outer)
   # 200, 200 is the middle of the screen.
   ellipse(200, 200, 170, 170) # Outer circle
   
@@ -95,24 +99,21 @@ line_highlights: 37-39
 
 --- task ---
 
-**Test:** Run your code to see the first large grey circle.
+**Test:** Run your code to see the first large blue circle.
 
-![A brown triangle and grey circle against a blue sky on green grass.](images/grey-circle.png)
-
-**Debug:** Check your spelling of 'GREY' and that you have used all capital letters.
+![A brown triangle and blue circle against a sky on grass.](images/grey-circle.png)
 
 --- /task ---
 
-The starter project had colours `GREEN`, `GREY`, `BLUE`, `BROWN`, and `WHITE` defined as global variables. When you make a variable `global` it can be read from anywhere in the project. 
-
 --- task ---
 
-Create two new global variables to store colours `RED` and `YELLOW` for the remaining circles:
+Create two new variables to store colours `inner` and `bullseye` for the remaining circles. 
 
- + Add the `RED` and `YELLOW` variables to the line that makes the variables global (don't forget the commas!)
- + Assign colours to the `RED` and `YELLOW` variables using `color()`
+Assign colours to the `inner` and `bullseye` variables using `color()`.
 
 The `color()` function expects three numbers: one each for red, green, and blue.
+
+We used numbers that give traditional archery target colours but you can use whatever colours you like as long as they are different.
 
 [[[generic-theory-simple-colours]]]
 
@@ -127,15 +128,12 @@ line_highlights: 20, 27-28
 def draw():
   # Things to do in every frame
   
-  global GREEN, GREY, BLUE, BROWN, WHITE, RED, YELLOW
-  
-  GREEN = color(149, 212, 122)
-  GREY = color(236, 236, 236) 
-  BLUE = color(92, 204, 206)
-  BROWN = color(145, 96, 51)
-  WHITE = color(255,255,255)
-  RED = color(255, 0, 0) 
-  YELLOW = color(252, 249, 0) 
+  sky = color(92, 204, 206)
+  grass = color(149, 212, 122)
+  wood = color(145, 96, 51)
+  outer = color(0, 120, 180) # blue
+  inner = color(210, 60, 60) # red
+  bullseye = color(220, 200, 0) # yellow
 
 --- /code ---
 
@@ -143,7 +141,7 @@ def draw():
 
 --- task ---
 
-The target will be made of up a number of circles with different sizes but the same centre coordinates (200, 200) - the middle of the screen. 
+The target is made of different-sized circles with the same centre coordinates (200, 200) - the middle of the screen. 
 
 Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle. 
 
@@ -156,13 +154,13 @@ line_number_start: 36
 line_highlights: 42-45
 ---
   # Draw a target
-  fill(BROWN) # Set the fill colour to brown
+  fill(wood) # Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
-  fill(GREY)
+  fill(outer)
   ellipse(200, 200, 170, 170) # Outer circle
-  fill(RED)
+  fill(inner)
   ellipse(200, 200, 110, 110) # Inner circle
-  fill(YELLOW)
+  fill(bullseye)
   ellipse(200, 200, 30, 30) # Bullseye
 --- /code ---
 
@@ -170,49 +168,11 @@ line_highlights: 42-45
 
 --- task ---
 
-**Test:** Run your project again to see the target with three colour circles.
+**Test:** Run your project again to see the target with three coloured circles. Change the colours until you are happy with them.
 
-![A brown triangle with three coloured circles against a blue sky on green grass.](images/three-circles.png)
+![A brown triangle with three coloured circles against a sky on grass.](images/three-circles.png)
 
-**Debug:** You might have used 'colo**u**r' instead of 'color'. Just like with 'gr**e**y' and 'gr**a**y', these words have diffrent spellings in different places. The makers of Python use the 'color' spelling, so you have to use it too!
-
---- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-In Japan, the Samurai introduced a requirement for learning archery. The Japanese martial art of archery is known as <span style="color: #0faeb0; font-weight: bold;">Kyūdō</span> and the bullseye is called <span style="color: #0faeb0; font-weight: bold;">zuboshi</span>. The term zuboshi is also used in English; to show that someone has done or said something that is "exactly right."
-</p>
-
---- task ---
-
-You set `no_stroke()` when drawing your background, so all of the shapes after that have been drawn without a **stroke** outline too.
-
-A `WHITE` variable has been created for you. The RGB colour values for white are (255, 255, 255) this is the maximum amount of each colour. What do you think the values for black are?
-
-Set the colour of the `stroke()` to `WHITE` for the circles. To control the thinkness of the outline, add `stroke_weight()` and set this to `3`. 
-
---- code ---
----
-language: python
-filename: main.py - draw()
-line_numbers: true
-line_number_start: 36
-line_highlights: 39-40
----
-  # Draw a target
-  fill(BROWN) # Set the fill colour to brown
-  triangle(150, 350, 200, 150, 250, 350)
-  stroke(WHITE) # A white outline
-  stroke_weight(3) # A thick outline
-  fill(GREY)
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test:** Run your project to see the outline around the circles in your target. 
-
-![A brown triangle with three coloured circles, each ringed in white, against a blue sky on green grass.](images/outline-circles.png)
+**Debug:** Python uses the American spelling of 'color' (without a 'u') so make sure you do the same.
 
 --- /task ---
 
