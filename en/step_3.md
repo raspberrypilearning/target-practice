@@ -16,14 +16,14 @@ Imagine cutting all the shapes out of paper. Depending on how you arrange and ov
 
 --- task ---
 
-When you call the `triangle()` function you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners. 
+When you call the `triangle()` function, you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners. 
 
 --- collapse ---
 ---
 title: Triangle coordinates
 ---
 
-  Here are three example triangles each with different sets of coordinates. Look at the grid position of each to see how the x and y coordinates position the corners of the triangles:
+  Here are three example triangles, each with different sets of coordinates. Look at the grid position of each to see how the `x` and `y` coordinates position the corners of the triangles:
   + Green triangle: triangle(50, 50, 150, 50, 180, 100)
   + Blue triangle: triangle(210, 280, 300, 350, 380, 100)
   + Brown triangle: triangle(50, 150, 200, 250, 180, 350)
@@ -34,7 +34,7 @@ title: Triangle coordinates
 
 Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
 
-![A brown triangle against a  sky on grass with the coordinate points labelled.](images/stand_coords.png)
+![A brown triangle on grass and against a sky with the coordinate points labelled.](images/stand_coords.png)
 
 --- code ---
 ---
@@ -44,17 +44,17 @@ line_numbers: true
 line_number_start: 31
 line_highlights: 34-36
 ---
-  fill(grass)
-  rect(0, 250, 400, 150) # x, y, width, height
+  fill(grass)   
+  rect(0, 250, 400, 150) #x, y, width, height
   
-  # Draw a target
-  fill(wood) # Set the fill colour to brown
+  #Draw a target
+  fill(wood) #Set the fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
 
 
 --- /code ---
 
-**Tip:** We have added comments to our code like `# Set the fill colour to brown` to tell you what it does. You don't need to add these comments to your code but you can do to help you remember why it's there.
+**Tip:** We have added comments to our code, like `#Set the fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
@@ -62,7 +62,7 @@ line_highlights: 34-36
 
 **Test:** Run your code to see the stand for your target. 
 
-![A brown triangle against a sky on grass.](images/target-stand.png)
+![A brown triangle on grass and against a sky.](images/target-stand.png)
 
 --- /task ---
 
@@ -70,11 +70,11 @@ line_highlights: 34-36
 
 --- task ---
 
-The largest part of the target will be a blue **circle** using the `ellipse()` function.  An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. 
+The largest part of the target will be a blue **circle** made by using the `ellipse()` function. An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle. 
 
-Ellipse needs **x** and **y** coordinates, width and height. The **x** and **y** coordinates of an ellipse are the centre position. 
+An ellipse needs `x` and `y` coordinates, width, and height. The `x` and `y` coordinates of an ellipse are the centre position. 
 
-The blue circle will cover over the brown triangle where they overlap, because it was drawn later. 
+The blue circle will cover the brown triangle where they overlap, because the circle was drawn later. 
 
 **Tip:** To make a circle the **width** and **height** must be the same. 
 
@@ -86,12 +86,12 @@ line_numbers: true
 line_number_start: 34
 line_highlights: 37-39
 ---
-# Draw a target
-  fill(wood)
-  triangle(150, 350, 200, 150, 250, 350)
-  fill(outer)
-  # 200, 200 is the middle of the screen.
-  ellipse(200, 200, 170, 170) # Outer circle
+#Draw a target
+  fill(wood)   
+  triangle(150, 350, 200, 150, 250, 350)   
+  fill(outer)   
+  #200, 200 is the middle of the screen
+  ellipse(200, 200, 170, 170) #Outer circle
   
 --- /code ---
 
@@ -101,7 +101,7 @@ line_highlights: 37-39
 
 **Test:** Run your code to see the first large blue circle.
 
-![A brown triangle and blue circle against a sky on grass.](images/grey-circle.png)
+![A brown triangle and blue circle on grass and against a sky.](images/grey-circle.png)
 
 --- /task ---
 
@@ -113,7 +113,7 @@ Assign colours to the `inner` and `bullseye` variables using `color()`.
 
 The `color()` function expects three numbers: one each for red, green, and blue.
 
-We used numbers that give traditional archery target colours but you can use whatever colours you like as long as they are different.
+We used numbers that give traditional archery target colours, but you can use whatever colours you like as long as they are different from each other.
 
 [[[generic-theory-simple-colours]]]
 
@@ -125,15 +125,15 @@ line_numbers: true
 line_number_start: 17
 line_highlights: 20, 27-28
 ---
-def draw():
-  # Things to do in every frame
+def draw():   
+  #Things to do in every frame
   
-  sky = color(92, 204, 206)
-  grass = color(149, 212, 122)
-  wood = color(145, 96, 51)
-  outer = color(0, 120, 180) # blue
-  inner = color(210, 60, 60) # red
-  bullseye = color(220, 200, 0) # yellow
+  sky = color(92, 204, 206)   
+  grass = color(149, 212, 122)   
+  wood = color(145, 96, 51)   
+  outer = color(0, 120, 180) #Blue
+  inner = color(210, 60, 60) # Red
+  bullseye = color(220, 200, 0) #Yellow
 
 --- /code ---
 
@@ -141,7 +141,7 @@ def draw():
 
 --- task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200) - the middle of the screen. 
+The target is made of different-sized circles with the same centre coordinates (200, 200) — the middle of the screen. 
 
 Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle. 
 
@@ -153,15 +153,15 @@ line_numbers: true
 line_number_start: 36
 line_highlights: 42-45
 ---
-  # Draw a target
-  fill(wood) # Set the fill colour to brown
-  triangle(150, 350, 200, 150, 250, 350)
-  fill(outer)
-  ellipse(200, 200, 170, 170) # Outer circle
-  fill(inner)
-  ellipse(200, 200, 110, 110) # Inner circle
-  fill(bullseye)
-  ellipse(200, 200, 30, 30) # Bullseye
+  #Draw a target
+  fill(wood) #Set the fill colour to brown   
+  triangle(150, 350, 200, 150, 250, 350)   
+  fill(outer)   
+  ellipse(200, 200, 170, 170) #Outer circle   
+  fill(inner)   
+  ellipse(200, 200, 110, 110) #Inner circle   
+  fill(bullseye)   
+  ellipse(200, 200, 30, 30) #Bullseye   
 --- /code ---
 
 --- /task ---
@@ -170,7 +170,7 @@ line_highlights: 42-45
 
 **Test:** Run your project again to see the target with three coloured circles. Change the colours until you are happy with them.
 
-![A brown triangle with three coloured circles against a sky on grass.](images/three-circles.png)
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)
 
 **Debug:** Python uses the American spelling of 'color' (without a 'u') so make sure you do the same.
 
