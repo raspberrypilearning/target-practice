@@ -14,7 +14,7 @@ If you are following the [Intro to Python](https://projects.raspberrypi.org/en/r
 
 **Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use? 
 
-**Tip:** around 30000 kg should be enough but experiment with the numbers to see what happens.
+**Tip:** Around 30,000kg should be enough, but experiment with the numbers to see what happens.
 
 <iframe src="https://trinket.io/embed/python/ced6bff454?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
