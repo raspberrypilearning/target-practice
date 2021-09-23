@@ -5,14 +5,14 @@
 The sky and grass are made by writing code to draw coloured rectangles.
 </div>
 <div>
-![The output area with sky coloured rectangle above a grass coloured rectangle to create the background.](images/background.png){:width="300px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 Open the [Archery starter](https://trinket.io/python/bbcc44911d){:target="_blank"} project. 
 
-If you have a Trinket account you can click on the **Remix** button to save a copy to your 'My Trinkets' library.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
 
 --- /task ---
 
@@ -36,10 +36,10 @@ line_highlights: 26
 ---
 def draw():
   # Things to do in every frame
-  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
+  sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206
   grass = color(149, 212, 122)
   wood = color(145, 96, 51)
-  outer = color(0, 120, 180) # Equal amounts of all colours
+  outer = color(0, 120, 180) #Equal amounts of all colours
   
   fill(sky)
 
@@ -49,11 +49,11 @@ def draw():
 
 The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
 
-[[[p5-coordinates]]]
+[[[p5-coordinates.]]]
 
 --- task ---
 
-After your `fill()` code draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
+After your `fill()` code, draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
 
 ![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
 
@@ -66,7 +66,7 @@ line_number_start: 26
 line_highlights: 27
 ---
   fill(sky)
-  rect(0, 0, 400, 250) # start x, start y, width, height
+  rect(0, 0, 400, 250) #Start x, start y, width, height
 
 --- /code ---
 
@@ -74,7 +74,7 @@ line_highlights: 27
 
 --- task ---
 
-**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library the `run()` function calls the `setup()` function once then the `draw()` function repeatedly.  
+**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library, the `run()` function calls the `setup()` function once, then the `draw()` function repeatedly.  
 
 ![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
 
@@ -94,11 +94,11 @@ line_numbers: true
 line_number_start: 26
 line_highlights: 28
 ---
-  outer = color(0, 120, 180) # Equal amounts of all colours
+  outer = color(0, 120, 180) #Equal amounts of all colours
 
-  no_stroke()
-  fill(sky)
-  rect(0, 0, 400, 250) # x, y, width, height
+  no_stroke()   
+  fill(sky)   
+  rect(0, 0, 400, 250) #x, y, width, height
 
 --- /code ---
 
@@ -126,11 +126,11 @@ line_numbers: true
 line_number_start: 26
 line_highlights: 31-32
 ---
-  outer = color(0, 120, 180) # Equal amounts of all colours
+  outer = color(0, 120, 180) #Equal amounts of all colours
   
   no_stroke()
   fill(sky)
-  rect(0, 0, 400, 250) # x, y, width, height
+  rect(0, 0, 400, 250) #x, y, width, height
   fill(grass)
   rect(0, 250, 400, 150)
 
