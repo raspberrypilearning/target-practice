@@ -13,14 +13,14 @@ Add more to your project. Perhaps you could change the difficulty level or add m
 
 You could:
 
-+ Add a `fourth` and `fifth` circle, in new colours, that score different points based on their position
++ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position
 + Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 + Make the game easier or harder by changing the `frame_rate(5)` value
 + Use `input()` to ask the user which difficulty level they want to play at
 
 --- /task ---
 
-![Upgraded project ideas one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
+![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
 
 --- collapse ---
 
