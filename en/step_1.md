@@ -28,7 +28,7 @@ Have a few goes. Your score appears in the output area below the target. How doe
 --- /no-print ---
 
 --- print-only ---
-![Completed project.](images/showcase_static.png)
+![Completed project.](images/yellow-points.png)
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
