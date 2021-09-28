@@ -19,6 +19,8 @@ If you are following the [Intro to Python](https://projects.raspberrypi.org/en/r
 <iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
+![Rocket launch project](images/showcase_rocket.png)
+
 --- /task ---
 
 --- /no-print ---
