@@ -49,7 +49,7 @@ def draw():
 
 The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
 
-[[[p5-coordinates.]]]
+[[[p5-coordinates]]]
 
 --- task ---
 

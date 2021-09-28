@@ -9,7 +9,7 @@ steps:
   - title: Introduction
   - title: Create a background
   - title: Draw your target
-  - title: Fire your arrow
+  - title: Fire the arrow
   - title: Score points
   - title: Reflection
     knowledge_quiz:
