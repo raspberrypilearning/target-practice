@@ -4,7 +4,7 @@
 The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
 </div>
 <div>
-![The output area with the target and stand.](images/outline-circles.png){:width="300px"}
+![The output area with the target and stand.](images/three-circles.png){:width="300px"}
 </div>
 </div>
 
@@ -41,20 +41,19 @@ Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (2
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 31
-line_highlights: 34-36
+line_number_start: 28
+line_highlights: 31-32
 ---
   fill(grass)   
   rect(0, 250, 400, 150) #x, y, width, height
   
-  #Draw a target
-  fill(wood) #Set the fill colour to brown
+  fill(wood) #Set the stand fill colour to brown
   triangle(150, 350, 200, 150, 250, 350)
 
 
 --- /code ---
 
-**Tip:** We have added comments to our code, like `#Set the fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Tip:** We have added comments to our code, like `#Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
@@ -83,15 +82,14 @@ The blue circle will cover the brown triangle where they overlap, because the ci
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 34
-line_highlights: 37-39
+line_number_start: 31
+line_highlights: 33-34
 ---
 #Draw a target
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
-  fill(outer)   
-  #200, 200 is the middle of the screen
-  ellipse(200, 200, 170, 170) #Outer circle
+  fill(outer) 
+  ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
   
 --- /code ---
 
@@ -101,7 +99,7 @@ line_highlights: 37-39
 
 **Test:** Run your code to see the first large blue circle.
 
-![A brown triangle and blue circle on grass and against a sky.](images/grey-circle.png)
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
 
 --- /task ---
 
@@ -122,8 +120,8 @@ We used numbers that give traditional archery target colours, but you can use wh
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 17
-line_highlights: 20, 27-28
+line_number_start: 18
+line_highlights: 24-25
 ---
 def draw():   
   #Things to do in every frame
@@ -150,12 +148,11 @@ Add two more circles to represent an inner circle and the bullseye. Change the `
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 36
-line_highlights: 42-45
+line_number_start: 33
+line_highlights: 37-40
 ---
-  #Draw a target
-  fill(wood) #Set the fill colour to brown   
-  triangle(150, 350, 200, 150, 250, 350)   
+  fill(wood) 
+  triangle(150, 350, 200, 150, 250, 350) #Stand    
   fill(outer)   
   ellipse(200, 200, 170, 170) #Outer circle   
   fill(inner)   

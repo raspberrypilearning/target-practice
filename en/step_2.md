@@ -10,7 +10,7 @@ The sky and grass are made by writing code to draw coloured rectangles.
 </div>
 
 --- task ---
-Open the [Archery starter](https://trinket.io/python/bbcc44911d){:target="_blank"} project. 
+Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
 
 If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
 
@@ -31,15 +31,15 @@ Find your `draw()` function and prepare to draw the sky by adding indented code 
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 17
-line_highlights: 26
+line_number_start: 18
+line_highlights: 25
 ---
 def draw():
   # Things to do in every frame
   sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206
   grass = color(149, 212, 122)
   wood = color(145, 96, 51)
-  outer = color(0, 120, 180) #Equal amounts of all colours
+  outer = color(0, 120, 180) 
   
   fill(sky)
 
@@ -62,8 +62,8 @@ After your `fill()` code, draw a `rect()` for the sky with top-left coordinates 
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 26 
-line_highlights: 27
+line_number_start: 25 
+line_highlights: 26
 ---
   fill(sky)
   rect(0, 0, 400, 250) #Start x, start y, width, height
@@ -91,8 +91,8 @@ Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 26
-line_highlights: 28
+line_number_start: 23
+line_highlights: 25
 ---
   outer = color(0, 120, 180) #Equal amounts of all colours
 
@@ -123,8 +123,8 @@ This rectangle needs to be positioned below the sky at coordinates (0, 250), so 
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 26
-line_highlights: 31-32
+line_number_start: 23
+line_highlights: 28-29
 ---
   outer = color(0, 120, 180) #Equal amounts of all colours
   

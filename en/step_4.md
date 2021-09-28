@@ -20,8 +20,8 @@ Add a small `ellipse()` in the centre of the screen to represent the arrow.
 language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
-line_number_start: 9
-line_highlights: 10-15
+line_number_start: 10
+line_highlights: 11-12
 ---
 #The shoot_arrow function goes here
 def shoot_arrow():   
@@ -40,13 +40,12 @@ Go to the `draw()` code that creates the target and add code at the end to set t
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 51
-line_highlights: 54-57
+line_number_start: 41
+line_highlights: 44-45
 ---
   fill(bullseye)   
   ellipse(200, 200, 30, 30)   
   
-  #Arrow   
   fill(wood)   
   shoot_arrow()   
 
@@ -73,7 +72,7 @@ The background and target will be drawn over the old arrow. This means you only 
 
 --- task ---
 
-Find the `import` statements, at the top of your code, and from the `random` library import `randint`. 
+Find the `import` statements, at the top of your code, you are going to use `randint` from the `random` library. 
 
 --- code ---
 ---
@@ -81,7 +80,6 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 3
-line_highlights: 6
 ---
 #Import library code
 from p5 import *
@@ -113,7 +111,7 @@ line_highlights: 12-14
 def shoot_arrow():   
   arrow_x = randint(100, 300)   
   arrow_y = randint(100, 300)    
-  ellipse(arrow_x, arrow_y, 15, 15) #Use the random coordinates
+  ellipse(arrow_x, arrow_y, 15, 15) #Upate to random coordinates
 
 --- /code ---
 
@@ -138,7 +136,7 @@ language: python
 filename: main.py — shoot_arrow() 
 line_numbers: true
 line_number_start: 10
-line_highlights: 15
+line_highlights: 14
 ---
 #The shoot_arrow function goes here
 def shoot_arrow():   
@@ -167,7 +165,7 @@ language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
 line_number_start: 8
-line_highlights: 9-11
+line_highlights: 9-10
 ---
 #The mouse_pressed function goes here   
 def mouse_pressed():   
@@ -187,8 +185,8 @@ A variable that needs to be used thoughout a program is known as a **global vari
 language: python
 filename: main.py - shoot_arrow()
 line_numbers: true
-line_number_start: 
-line_highlights: 
+line_number_start: 12
+line_highlights: 14
 ---
 
 #The shoot_arrow function goes here   

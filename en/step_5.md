@@ -9,6 +9,32 @@ In this step you will add scores based on where the arrow hits.
 </div>
 </div>
 
+--- task ---
+
+The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this they need to be set as global variables: 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 26
+line_highlights: 28
+---
+
+def draw():
+# Things to do in every frame
+  global outer, inner, bullseye
+  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
+  grass = color(149, 212, 122)
+  wood = color(145, 96, 51)
+  outer = color(0, 120, 180) 
+  inner = color(210, 60, 60)
+  bullseye = color(220, 200, 0)
+--- /code ---
+
+--- /task ---
+
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
 </p>
@@ -21,19 +47,20 @@ Be careful when using the `=` symbol in Python:
  + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable 
  + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
 
+Change the code in your `print()` ro give a score:
+
 --- code ---
 ---
 language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 9
-line_highlights: 10-14
+line_number_start: 8
+line_highlights: 10-11
 ---
 #The mouse_pressed function goes here
 def mouse_pressed():   
   if hit_color == outer:  
-    #Like functions, 'if' statements are indented
-    print('You hit the outer circle, 50 points!')
+    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
 
 --- /code ---
 
@@ -41,11 +68,11 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the grey outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked. 
+**Test:** Run your project. Try to stop the arrow on the blue outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked. 
 
 **Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number. 
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/grey-points.png)
+![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
 
 **Debug:** Make sure your code matches exactly and you indented the code inside your `if` statement. The indent tells Python that the code should only run if the condition is `True`.
 
@@ -71,12 +98,10 @@ language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
 line_number_start: 9
-line_highlights: 14-17
+line_highlights: 12-15
 ---
-def mouse_pressed():   
-  print( red(hit_color), green(hit_color), blue(hit_color) )   
-  if hit_color == outer:   
-    #Like functions, 'if' statements are indented   
+def mouse_pressed():    
+  if hit_color == outer:    
     print('You hit the outer circle, 50 points!')
   elif hit_color == inner:    
     print('You hit the inner circle, 200 points!')   
@@ -119,12 +144,11 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 9
-line_highlights: 18-19
+line_highlights: 16-17
 ---
 def mouse_pressed():   
   print( red(hit_color), green(hit_color), blue(hit_color) )   
   if hit_color == outer:   
-    #Like functions, 'if' statements are indented   
     print('You hit the outer circle, 50 points!')   
   elif hit_color == inner:   
     print('You hit the inner circle, 200 points!')   
