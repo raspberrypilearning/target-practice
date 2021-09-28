@@ -12,9 +12,9 @@ If you are following the [Intro to Python](https://projects.raspberrypi.org/en/r
 
 --- task ---
 
-**Try it:** Your program will adjust the animation based on how powerful you make the engine and how much fuel you put in the rocket, to decide whether the rocket successfully enters orbit. How much fuel do you want to use? 
+**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use? 
 
-**Tip:** around 5000 kg should be enough but experiment with the numbers to see what happens.
+**Tip:** Around 30,000kg should be enough, but experiment with the numbers to see what happens.
 
 <iframe src="https://trinket.io/embed/python/ced6bff454?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
@@ -24,4 +24,6 @@ If you are following the [Intro to Python](https://projects.raspberrypi.org/en/r
 --- /no-print ---
 
 If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+
+
 

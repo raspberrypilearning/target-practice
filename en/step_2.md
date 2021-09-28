@@ -2,108 +2,58 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will create the background for your game.
+The sky and grass are made by writing code to draw coloured rectangles.
 </div>
 <div>
-![The output area with sky coloured rectangle above a grass coloured rectangle to create the background.](images/background.png){:width="300px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
+Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
 
-Open the [Archery starter](https://trinket.io/python/bbcc44911d){:target="_blank"} project. 
-
-If you have a Trinket account you can click on the **Remix** button to save a copy to your 'My Trinkets' library.
-
---- save ---
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
 
 --- /task ---
 
-### p5 Processing library
+The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game. 
 
-The starter project has some code already written for you and imports more code from the `p5` and `math` libraries. 
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 4
----
-
-from p5 import *
-from math import *
-
---- /code ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0; font-weight: bold;"> p5 library </span> is a collection of code used for sketching, animation and data visualisation. Artists, animators and designers are some of the main users of the p5 Processing library.  
-</p>
-
-There are three functions that every project using `p5` needs:
-+ **setup()** - runs once when the program starts to set properties like screen size  
-+ **draw()** - runs repeatedly and defines what will be sketched
-+ **run()** - starts the p5 project by calling the `setup()` function followed by the `draw()` function
-
-### Creating a background
-
-The first step in making your game is to draw the background. The background will be a rectangle for the sky filled in blue and a rectangle for the grass filled in green. 
-
-The starter project already contains some colours you can use to do this. 
+[[[p5-processing-library]]]
 
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. 
+The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this. 
 
-Find your `draw()` function and prepare to draw the sky by adding code to set the `fill()` colour to `BLUE`:
+Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
 
 --- code ---
 ---
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 17
-line_highlights: 28-30
+line_number_start: 18
+line_highlights: 25
 ---
 def draw():
   # Things to do in every frame
+  sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206
+  grass = color(149, 212, 122)
+  wood = color(145, 96, 51)
+  outer = color(0, 120, 180) 
   
-  global GREEN, GREY, BLUE, BROWN, WHITE
-  
-  GREEN = color(149, 212, 122)
-  GREY = color(236, 236, 236)
-  BLUE = color(92, 204, 206)
-  BROWN = color(145, 96, 51)
-  WHITE = color(255,255,255)
-  
-  fill(BLUE)
-
+  fill(sky)
 
 --- /code ---
 
-**Tip:** When Python programmers won't be changing the value of a variable as the program is running, they name it with UPPERCASE LETTERS.
-
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The coordinates system used by p5 has an <span style="color: #0faeb0; font-weight: bold;"> origin point (0,0) </span> in the top-left of the screen. This top-left positioning of x = 0 and y = 0 is very popular to use when programming apps and games. If you have used Scratch or plotted charts on paper you might be used to seeing x = 0 and y = 0 in the centre. 
+The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
 
-![An animated gif showing a ellipse moving across the canvas. It's current x and y coordinates are displayed as it moves.](images/coords_animation.gif)
-
-</p>
-
-
-
+[[[p5-coordinates.]]]
 
 --- task ---
 
-Now, draw rectangle by calling the `rect(x_coordinate, y_coordinate, width, height)` function after your `fill()` code.
-
-The rectangle will start in the top-left corner of the screen at coordinates (0,0): 
-+ The **x_coordinate** controls the horizontal position 
-+ The **y_coordinate** controls the vertical postion 
-
-The rectangle will have a width of `400` and a height of `250`.
+After your `fill()` code, draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
 
 ![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
 
@@ -112,35 +62,19 @@ The rectangle will have a width of `400` and a height of `250`.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 17 
-line_highlights: 29
+line_number_start: 25 
+line_highlights: 26
 ---
-def draw():
-  # Things to do in every frame
-  
-  global GREEN, GREY, BLUE, BROWN, WHITE
-  
-  GREEN = color(149, 212, 122)
-  GREY = color(236, 236, 236)
-  BLUE = color(92, 204, 206)
-  BROWN = color(145, 96, 51)
-  WHITE = color(255,255,255)
-  
-  fill(BLUE)
-  rect(0, 0, 400, 250) # x, y, width, height
-
+  fill(sky)
+  rect(0, 0, 400, 250) #Start x, start y, width, height
 
 --- /code ---
-
-**Tip:** Shapes will always be drawn with the fill colour set the last time `fill()` was called.
-
---- save ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library the `run()` function calls the `setup()` function once then the `draw()` function repeatedly.  
+**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library, the `run()` function calls the `setup()` function once, then the `draw()` function repeatedly.  
 
 ![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
 
@@ -157,19 +91,16 @@ Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 26
-line_highlights: 28
+line_number_start: 23
+line_highlights: 25
 ---
-  WHITE = color(255,255,255)
+  outer = color(0, 120, 180) #Equal amounts of all colours
 
-  no_stroke()
-  fill(BLUE)
-  rect(0, 0, 400, 250) # x, y, width, height
-
+  no_stroke()   
+  fill(sky)   
+  rect(0, 0, 400, 250) #x, y, width, height
 
 --- /code ---
-
---- save ---
 
 --- /task ---
 
@@ -181,7 +112,9 @@ line_highlights: 28
 
 --- task ---
 
-Now, change the `fill()` colour to `GREEN` and add another `rect(x, y, width, height)`. 
+`fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
+
+Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`. 
 
 This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
 
@@ -190,21 +123,18 @@ This rectangle needs to be positioned below the sky at coordinates (0, 250), so 
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 26
-line_highlights: 31-32
+line_number_start: 23
+line_highlights: 28-29
 ---
-  WHITE = color(255,255,255)
+  outer = color(0, 120, 180) #Equal amounts of all colours
   
   no_stroke()
-  fill(BLUE)
-  rect(0, 0, 400, 250) # x, y, width, height
-  fill(GREEN)
+  fill(sky)
+  rect(0, 0, 400, 250) #x, y, width, height
+  fill(grass)
   rect(0, 250, 400, 150)
 
-
 --- /code ---
-
---- save ---
 
 --- /task ---
 
@@ -213,3 +143,5 @@ line_highlights: 31-32
 **Test:** Run your project again to view the finished background.
 
 --- /task ---
+
+--- save ---
