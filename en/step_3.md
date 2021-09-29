@@ -47,7 +47,7 @@ line_highlights: 31-32
   fill(grass)   
   rect(0, 250, 400, 150) #x, y, width, height
   
-  fill(wood) #Set the stand fill colour to brown
+  fill(wood) #Set the stand fill colour to brown     
   triangle(150, 350, 200, 150, 250, 350)
 
 
@@ -75,7 +75,7 @@ An ellipse needs `x` and `y` coordinates, width, and height. The `x` and `y` coo
 
 The blue circle will cover the brown triangle where they overlap, because the circle was drawn later. 
 
-**Tip:** To make a circle the **width** and **height** must be the same. 
+**Tip:** To make a circle, the **width** and **height** must be the same. 
 
 --- code ---
 ---
@@ -87,7 +87,7 @@ line_highlights: 33-34
 ---
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
-  fill(outer) 
+  fill(outer)    
   ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
   
 --- /code ---
@@ -128,9 +128,9 @@ def draw():
   sky = color(92, 204, 206)   
   grass = color(149, 212, 122)   
   wood = color(145, 96, 51)   
-  outer = color(0, 120, 180) #Blue
-  inner = color(210, 60, 60) # Red
-  bullseye = color(220, 200, 0) #Yellow
+  outer = color(0, 120, 180) #Blue    
+  inner = color(210, 60, 60) # Red    
+  bullseye = color(220, 200, 0) #Yellow    
 
 --- /code ---
 
@@ -150,7 +150,7 @@ line_numbers: true
 line_number_start: 33
 line_highlights: 37-40
 ---
-  fill(wood) 
+  fill(wood)    
   triangle(150, 350, 200, 150, 250, 350) #Stand    
   fill(outer)   
   ellipse(200, 200, 170, 170) #Outer circle   
