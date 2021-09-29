@@ -1,10 +1,10 @@
 ## What next?
 
-If you are following the [Intro to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit. 
+If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit. 
 
 --- print-only ---
 
-![Rocket launch project](images/showcase_rocket.png)
+![Rocket launch project.](images/showcase_rocket.png)
 
 --- /print-only ---
 
