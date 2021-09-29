@@ -94,7 +94,7 @@ line_numbers: true
 line_number_start: 23
 line_highlights: 25
 ---
-  outer = color(0, 120, 180) #Equal amounts of all colours
+  outer = color(0, 120, 180) 
 
   no_stroke()   
   fill(sky)   
@@ -126,7 +126,7 @@ line_numbers: true
 line_number_start: 23
 line_highlights: 28-29
 ---
-  outer = color(0, 120, 180) #Equal amounts of all colours
+  outer = color(0, 120, 180) 
   
   no_stroke()
   fill(sky)

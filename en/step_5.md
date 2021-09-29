@@ -146,8 +146,7 @@ line_numbers: true
 line_number_start: 9
 line_highlights: 16-17
 ---
-def mouse_pressed():   
-  print( red(hit_color), green(hit_color), blue(hit_color) )   
+def mouse_pressed():    
   if hit_color == outer:   
     print('You hit the outer circle, 50 points!')   
   elif hit_color == inner:   
