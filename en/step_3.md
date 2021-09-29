@@ -85,7 +85,6 @@ line_numbers: true
 line_number_start: 31
 line_highlights: 33-34
 ---
-#Draw a target
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
   fill(outer) 
