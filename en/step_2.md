@@ -34,12 +34,12 @@ line_numbers: true
 line_number_start: 18
 line_highlights: 25
 ---
-def draw():
-  # Things to do in every frame
-  sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206
-  grass = color(149, 212, 122)
-  wood = color(145, 96, 51)
-  outer = color(0, 120, 180) 
+def draw():     
+  #Things to do in every frame     
+  sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206     
+  grass = color(149, 212, 122)     
+  wood = color(145, 96, 51)     
+  outer = color(0, 120, 180)     
   
   fill(sky)
 
@@ -78,7 +78,7 @@ line_highlights: 26
 
 ![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
 
-That's a bit strange, there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
+That's a bit strange: there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
 
 --- /task ---
 
@@ -128,11 +128,11 @@ line_highlights: 28-29
 ---
   outer = color(0, 120, 180) 
   
-  no_stroke()
-  fill(sky)
-  rect(0, 0, 400, 250) #x, y, width, height
-  fill(grass)
-  rect(0, 250, 400, 150)
+  no_stroke()     
+  fill(sky)     
+  rect(0, 0, 400, 250) #x, y, width, height    
+  fill(grass)    
+  rect(0, 250, 400, 150)     
 
 --- /code ---
 

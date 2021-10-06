@@ -1,6 +1,6 @@
 ## Introduction
 
-Use Python, with the p5 graphics library, to draw a target and score points by hitting it with arrows. 
+Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows. 
 
 You will:
  + Personalise your game with **RGB colours**
@@ -32,5 +32,5 @@ Have a few goes. Your score appears in the output area below the target. How doe
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes to us from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
 </p>

@@ -23,7 +23,7 @@ line_numbers: true
 line_number_start: 10
 line_highlights: 11-12
 ---
-#The shoot_arrow function goes here
+#The shoot_arrow function goes here    
 def shoot_arrow():   
   ellipse(200, 200, 15, 15)
 
@@ -43,8 +43,8 @@ line_numbers: true
 line_number_start: 41
 line_highlights: 44-45
 ---
-  fill(bullseye)   
-  ellipse(200, 200, 30, 30)   
+  fill(bullseye)    
+  ellipse(200, 200, 30, 30)    
   
   fill(wood)   
   shoot_arrow()   
@@ -81,10 +81,10 @@ filename: main.py
 line_numbers: true
 line_number_start: 3
 ---
-#Import library code
-from p5 import *
-from math import *
-from random import randint
+#Import library code    
+from p5 import *    
+from math import *    
+from random import randint    
 --- /code ---
 
 --- /task ---
@@ -107,11 +107,11 @@ line_numbers: true
 line_number_start: 10
 line_highlights: 12-14
 ---
-#The shoot_arrow function goes here
-def shoot_arrow():   
+#The shoot_arrow function goes here    
+def shoot_arrow():    
   arrow_x = randint(100, 300)   
   arrow_y = randint(100, 300)    
-  ellipse(arrow_x, arrow_y, 15, 15) #Upate to random coordinates
+  ellipse(arrow_x, arrow_y, 15, 15) #Upate to random coordinates    
 
 --- /code ---
 
@@ -138,10 +138,10 @@ line_numbers: true
 line_number_start: 10
 line_highlights: 14
 ---
-#The shoot_arrow function goes here
-def shoot_arrow():   
-  arrow_x = randint(100, 300)   
-  arrow_y = randint(100, 300)   
+#The shoot_arrow function goes here     
+def shoot_arrow():    
+  arrow_x = randint(100, 300)    
+  arrow_y = randint(100, 300)    
   hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow   
   ellipse(arrow_x, arrow_y, 15, 15)   
 
@@ -167,8 +167,8 @@ line_numbers: true
 line_number_start: 8
 line_highlights: 9-10
 ---
-#The mouse_pressed function goes here   
-def mouse_pressed():   
+#The mouse_pressed function goes here    
+def mouse_pressed():    
   print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- /code ---
@@ -189,13 +189,13 @@ line_number_start: 12
 line_highlights: 14
 ---
 
-#The shoot_arrow function goes here   
-def shoot_arrow():
-  global hit_color #Can be used in other functions
-  arrow_x = randint(100, 300)
-  arrow_y = randint(100, 300)
-  hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow
-  ellipse(arrow_x, arrow_y, 15, 15)
+#The shoot_arrow function goes here    
+def shoot_arrow():    
+  global hit_color #Can be used in other functions     
+  arrow_x = randint(100, 300)     
+  arrow_y = randint(100, 300)     
+  hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow     
+  ellipse(arrow_x, arrow_y, 15, 15)     
 
 --- /code ---
 --- /task ---

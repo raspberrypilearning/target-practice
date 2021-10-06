@@ -1,10 +1,10 @@
 ## Reflection
 
-Well done, you made a game! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
 
-Answer the three questions below to reflect on what you've learned.
+Answer the three questions below to reflect on what you've learnt.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
 
 Have fun!
 
@@ -13,7 +13,7 @@ Have fun!
 ---
 legend: Question 1 of 3
 ---
-Here is a blue square, which are the RGB values that will create it?
+Here is a blue square, what are the RGB values that will create it?
 
 ![A single block of blue colour.](images/quiz-colour.png)
 
@@ -23,7 +23,7 @@ Here is a blue square, which are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0` the color is **black**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G but maximum B, so will be **blue**.
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -47,7 +47,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum the color is **white**.
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 

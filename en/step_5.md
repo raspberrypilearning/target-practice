@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will add scores based on where the arrow hits.
+In this step, you will add scores based on where the arrow hits.
 </div>
 <div>
 ![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
@@ -11,7 +11,7 @@ In this step you will add scores based on where the arrow hits.
 
 --- task ---
 
-The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this they need to be set as global variables: 
+The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this, they need to be set as global variables: 
 
 --- code ---
 ---
@@ -22,15 +22,15 @@ line_number_start: 26
 line_highlights: 28
 ---
 
-def draw():
-# Things to do in every frame
-  global outer, inner, bullseye
-  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
-  grass = color(149, 212, 122)
-  wood = color(145, 96, 51)
-  outer = color(0, 120, 180) 
-  inner = color(210, 60, 60)
-  bullseye = color(220, 200, 0)
+def draw():    
+#Things to do in every frame    
+  global outer, inner, bullseye    
+  sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206    
+  grass = color(149, 212, 122)    
+  wood = color(145, 96, 51)    
+  outer = color(0, 120, 180)    
+  inner = color(210, 60, 60)   
+  bullseye = color(220, 200, 0)   
 --- /code ---
 
 --- /task ---
@@ -47,7 +47,7 @@ Be careful when using the `=` symbol in Python:
  + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable 
  + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
 
-Change the code in your `print()` ro give a score:
+Change the code in your `print()` to give a score:
 
 --- code ---
 ---
@@ -57,10 +57,10 @@ line_numbers: true
 line_number_start: 8
 line_highlights: 10-11
 ---
-#The mouse_pressed function goes here
-def mouse_pressed():   
-  if hit_color == outer:  
-    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+#The mouse_pressed function goes here     
+def mouse_pressed():     
+  if hit_color == outer:      
+    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented    
 
 --- /code ---
 
@@ -102,7 +102,7 @@ line_highlights: 12-15
 ---
 def mouse_pressed():    
   if hit_color == outer:    
-    print('You hit the outer circle, 50 points!')
+    print('You hit the outer circle, 50 points!')    
   elif hit_color == inner:    
     print('You hit the inner circle, 200 points!')   
   elif hit_color == bullseye:    
