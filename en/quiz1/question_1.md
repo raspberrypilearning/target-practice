@@ -9,7 +9,6 @@ After each question, press **submit**. You will be guided towards the correct an
 Have fun!
 
 --- question ---
-
 ---
 legend: Question 1 of 3
 ---

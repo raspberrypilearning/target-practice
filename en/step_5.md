@@ -5,7 +5,9 @@
 In this step, you will add scores based on where the arrow hits.
 </div>
 <div>
+
 ![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+
 </div>
 </div>
 
@@ -31,6 +33,7 @@ def draw():
   outer = color(0, 120, 180)    
   inner = color(210, 60, 60)   
   bullseye = color(220, 200, 0)   
+
 --- /code ---
 
 --- /task ---
@@ -57,6 +60,7 @@ line_numbers: true
 line_number_start: 8
 line_highlights: 10-11
 ---
+
 #The mouse_pressed function goes here     
 def mouse_pressed():     
   if hit_color == outer:      
@@ -100,6 +104,7 @@ line_numbers: true
 line_number_start: 9
 line_highlights: 12-15
 ---
+
 def mouse_pressed():    
   if hit_color == outer:    
     print('You hit the outer circle, 50 points!')    
@@ -146,6 +151,7 @@ line_numbers: true
 line_number_start: 9
 line_highlights: 16-17
 ---
+
 def mouse_pressed():    
   if hit_color == outer:   
     print('You hit the outer circle, 50 points!')   

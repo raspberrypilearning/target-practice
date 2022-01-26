@@ -5,7 +5,9 @@
 Now it's time to add an arrow that moves randomly across the target area.
 </div>
 <div>
+
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+
 </div>
 </div>
 
@@ -23,6 +25,7 @@ line_numbers: true
 line_number_start: 10
 line_highlights: 11-12
 ---
+
 #The shoot_arrow function goes here    
 def shoot_arrow():   
   ellipse(200, 200, 15, 15)
@@ -43,6 +46,7 @@ line_numbers: true
 line_number_start: 41
 line_highlights: 44-45
 ---
+
   fill(bullseye)    
   ellipse(200, 200, 30, 30)    
   
@@ -81,10 +85,12 @@ filename: main.py
 line_numbers: true
 line_number_start: 3
 ---
+
 #Import library code    
 from p5 import *    
 from math import *    
 from random import randint    
+
 --- /code ---
 
 --- /task ---
@@ -107,6 +113,7 @@ line_numbers: true
 line_number_start: 10
 line_highlights: 12-14
 ---
+
 #The shoot_arrow function goes here    
 def shoot_arrow():    
   arrow_x = randint(100, 300)   
@@ -126,6 +133,7 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 </p>
 
 --- task ---
+
 You need to store the colour that the arrow is aiming at before you draw an arrow on top of it.
 
 Add code to store the `hit_color`. Use the `get()` function, to get the colour of the pixel at the `arrow_x` and `arrow_y` coordinates — the centre of the arrow. 
@@ -138,6 +146,7 @@ line_numbers: true
 line_number_start: 10
 line_highlights: 14
 ---
+
 #The shoot_arrow function goes here     
 def shoot_arrow():    
   arrow_x = randint(100, 300)    
@@ -167,6 +176,7 @@ line_numbers: true
 line_number_start: 8
 line_highlights: 9-10
 ---
+
 #The mouse_pressed function goes here    
 def mouse_pressed():    
   print( red(hit_color), green(hit_color), blue(hit_color) )
@@ -198,6 +208,7 @@ def shoot_arrow():
   ellipse(arrow_x, arrow_y, 15, 15)     
 
 --- /code ---
+
 --- /task ---
 
 --- task ---

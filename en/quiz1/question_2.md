@@ -1,6 +1,5 @@
 
 --- question ---
-
 ---
 legend: Question 2 of 3
 ---

@@ -5,7 +5,9 @@
 Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
 </div>
 <div>
+
 ![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
+
 </div>
 </div>
 
@@ -23,7 +25,6 @@ You could:
 ![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
 
 --- collapse ---
-
 ---
 title: Completed project
 ---

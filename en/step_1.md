@@ -4,7 +4,7 @@ Use Python, with the `p5` graphics library, to draw a target and score points by
 
 You will:
  + Personalise your game with **RGB colours**
- + Use **conditional statements** (`if`, `elif`, `else` ) to make decisions
+ + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
  + Position shapes with **x, y coordinates**
 
  <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
@@ -12,7 +12,9 @@ You will:
 </p>
 
 --- no-print ---
+
 --- task ---
+
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -25,10 +27,13 @@ Have a few goes. Your score appears in the output area below the target. How doe
 </div>
 
 --- /task ---
+
 --- /no-print ---
 
 --- print-only ---
+
 ![Completed project.](images/yellow-points.png)
+
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">

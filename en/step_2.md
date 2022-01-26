@@ -5,11 +5,14 @@
 The sky and grass are made by writing code to draw coloured rectangles.
 </div>
 <div>
+
 ![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+
 </div>
 </div>
 
 --- task ---
+
 Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
 
 If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
@@ -34,6 +37,7 @@ line_numbers: true
 line_number_start: 18
 line_highlights: 25
 ---
+
 def draw():     
   #Things to do in every frame     
   sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206     
@@ -65,6 +69,7 @@ line_numbers: true
 line_number_start: 25 
 line_highlights: 26
 ---
+
   fill(sky)
   rect(0, 0, 400, 250) #Start x, start y, width, height
 
@@ -94,6 +99,7 @@ line_numbers: true
 line_number_start: 23
 line_highlights: 25
 ---
+
   outer = color(0, 120, 180) 
 
   no_stroke()   
@@ -126,6 +132,7 @@ line_numbers: true
 line_number_start: 23
 line_highlights: 28-29
 ---
+
   outer = color(0, 120, 180) 
   
   no_stroke()     
