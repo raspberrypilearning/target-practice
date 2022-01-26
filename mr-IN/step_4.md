@@ -168,7 +168,9 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- /task ---
 
---- task --- You have defined two functions `shoot_arrow()` and `mouse_pressed()`, both of these functions need to use the `hit_color` variable.
+--- task ---
+
+You have defined two functions `shoot_arrow()` and `mouse_pressed()`, both of these functions need to use the `hit_color` variable.
 
 A variable that needs to be used thoughout a program is known as a **global variable**. Add code to your `shoot_arrow()` function to make `hit_color` a global variable:
 
