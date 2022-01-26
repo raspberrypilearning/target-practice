@@ -4,7 +4,9 @@
 The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
 </div>
 <div>
+
 ![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+
 </div>
 </div>
 
@@ -44,6 +46,7 @@ line_numbers: true
 line_number_start: 28
 line_highlights: 31-32
 ---
+
   fill(grass)   
   rect(0, 250, 400, 150) #x, y, width, height
   
@@ -85,6 +88,7 @@ line_numbers: true
 line_number_start: 31
 line_highlights: 33-34
 ---
+
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
   fill(outer)    
@@ -122,6 +126,7 @@ line_numbers: true
 line_number_start: 18
 line_highlights: 24-25
 ---
+
 def draw():   
   #Things to do in every frame
   
@@ -150,6 +155,7 @@ line_numbers: true
 line_number_start: 33
 line_highlights: 37-40
 ---
+
   fill(wood)    
   triangle(150, 350, 200, 150, 250, 350) #Stand    
   fill(outer)   
@@ -158,6 +164,7 @@ line_highlights: 37-40
   ellipse(200, 200, 110, 110) #Inner circle   
   fill(bullseye)   
   ellipse(200, 200, 30, 30) #Bullseye   
+  
 --- /code ---
 
 --- /task ---
