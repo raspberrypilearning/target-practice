@@ -1,19 +1,19 @@
-## Score points
+## Marquer des points
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add scores based on where the arrow hits.
+Dans cette étape, tu ajouteras des points en fonction de l'endroit où la flèche frappe.
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![La cible, avec la flèche apparaissant dans diverses positions et les scores apparaissant sous forme de texte sous le jeu.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this, they need to be set as global variables:
+Les variables de couleur dans la fonction `dessin()` seront utilisées pour vérifier le score dans la fonction `souris_pressee()`. Pour ce faire, elles doivent être définies en tant que variables globales :
 
 --- code ---
 ---
@@ -21,33 +21,33 @@ language: python filename: main.py line_numbers: true line_number_start: 26
 line_highlights: 28
 ---
 
-def draw():
-# Things to do in every frame
-  global outer, inner, bullseye    
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206    
-grass = color(149, 212, 122)    
-wood = color(145, 96, 51)    
-outer = color(0, 120, 180)    
-inner = color(210, 60, 60)   
-bullseye = color(220, 200, 0)
+def dessin():
+# Choses à faire dans chaque image
+  global exterieur, interieur, centre    
+ciel = color(92, 204, 206) #Rouge = 92, Vert = 204, Bleu = 206    
+herbe = color(149, 212, 122)    
+bois = color(145, 96, 51)    
+exterieur = color(0, 120, 180)    
+interieur = color(210, 60, 60)   
+centre = color(220, 200, 0)
 
 --- /code ---
 
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+Nous utilisons des <span style="color: #0faeb0; font-weight: bold;"> conditions</span> tout le temps pour prendre des décisions. On pourrait dire « si le crayon est émoussé, alors taille-le ». De même, les conditions "if" nous permettent d'écrire du code qui fait quelque chose de différent selon qu'une condition est vraie ou fausse.
 </p>
 
 --- task ---
 
-To `print` a message for the target's outer circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `outer`.
+Pour `imprimer` un message pour le cercle extérieur de la cible, ajoute du code à ta fonction `souris_pressee()` pour vérifier si le `couleur_touche` est `==` à `exterieur`.
 
-Be careful when using the `=` symbol in Python:
- + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable
- + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
+Sois prudent lorsque tu utilise le symbole `=` en Python :
+ + `=` est utilisé pour **affectation** — comme `fleche_x = 200` pour définir la valeur d'une variable
+ + `==` est utilisé pour tester **équivalence** — comme `couleur_touche == centre` — si les choses de chaque côté ont la même valeur, alors le test est `True`, sinon c'est `False`
 
-Change the code in your `print()` to give a score:
+Change le code dans ton `print()` pour donner un score :
 
 --- code ---
 ---
@@ -55,10 +55,10 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 10-11
 ---
 
-# The mouse_pressed function goes here
-def mouse_pressed():     
-if hit_color == outer:      
-print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+# La fonction souris_pressee vient ici
+def souris_pressee():     
+if couleur_touche == exterieur:      
+print('tu as touché le cercle extérieur, 50 points !') #Comme les fonctions, les instructions "if" sont indentées
 
 --- /code ---
 
@@ -66,29 +66,29 @@ print('You hit the outer circle, 50 points!') #Like functions, 'if' statements a
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked.
+**Test :** Exécute ton projet. Essaye d'arrêter la flèche sur le cercle extérieur bleu pour voir ton message. La couleur du pixel au centre de la flèche est la couleur enregistrée et vérifiée.
 
-**Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**Astuce :** `frame_rate()`, dans `configuration()`, contrôle la vitesse à laquelle ton jeu dessine. S'il va trop vite, régle-le sur un nombre inférieur.
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
+![La zone de sortie avec une flèche touchant le cercle extérieur. L'instruction d'impression des points apparaît dans la zone de sortie.](images/blue-points.png)
 
-**Debug:** Make sure your code matches exactly and you indented the code inside your `if` statement. The indent tells Python that the code should only run if the condition is `True`.
+**Debogage :** Assure-toi que ton code correspond exactement et que tu as indenté le code dans ton instruction `if`. L'indentation indique à Python que le code ne doit s'exécuter que si la condition est `True`.
 
 --- /task ---
 
-As points will be scored if the arrow lands on the `inner` or `bullseye` circles too, `outer` is not the only circle you need to check. To do this, use `elif` (a shortened version of else - if).
+Comme des points seront marqués si la flèche atterrit également sur les cercles `intérieur` ou `centre` , `extérieur` n'est pas le seul cercle que tu dois vérifier. Pour ce faire, utilise `elif` (une version abrégée de else - if).
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> to make decisions in real life. When you are painting a picture of the sky, you might check if there is a yellow paint for the sun. Else, if there is no yellow paint, you look for orange. Else, if there is no yellow or orange paint, you might use red — really lightly!
+Nous utilisons <span style="color: #0faeb0; font-weight: bold;"> else - if </span> pour prendre des décisions dans la vraie vie. Lorsque tu peins une image du ciel, tu peux vérifier s'il y a une peinture jaune pour le soleil. Sinon, s'il n'y a pas de peinture jaune, tu recherches de l'orange. Sinon, s'il n'y a pas de peinture jaune ou orange, tu peux utiliser du rouge - très légèrement !
 </p>
 
 --- task ---
 
-An `elif` can only be used with an `if` statement and, like an `if`, it checks a condition. If the condition is `True`, the `elif` runs some code.
+Un `elif` ne peut être utilisé qu'avec une instruction `if` et, comme un `if`, il vérifie une condition. Si la condition est `True`, le `elif` exécute du code.
 
-What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it are `False`.
+Ce qui rend `elif` différent, c'est qu'il ne fera cette vérification que si les conditions du `if` et de tout `elif`s avant lui sont `False`.
 
-Add `elif` statements for `inner` and `bullseye`.
+Ajoute `elif` déclarations pour `intérieur` et `centre`.
 
 --- code ---
 ---
@@ -96,13 +96,13 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 12-15
 ---
 
-def mouse_pressed():    
-if hit_color == outer:    
-print('You hit the outer circle, 50 points!')    
-elif hit_color == inner:    
-print('You hit the inner circle, 200 points!')   
-elif hit_color == bullseye:    
-print('You hit the bullseye, 500 points!')
+def souris_pressee():    
+if couleur_touche == exterieur:    
+print('Tu as touché le cercle extérieur, 50 points !')    
+elif couleur_touche == interieur:    
+print('Tu as touché le cercle intérieur, 200 points !')   
+elif couleur_touche == centre:    
+print('Tu as touché le centre, 500 points !')
 
 --- /code ---
 
@@ -110,29 +110,29 @@ print('You hit the bullseye, 500 points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the red and yellow circles to see their messages.
+**Test :** Exécute ton projet. Essaye d'arrêter la flèche sur les cercles rouges et jaunes pour voir leurs messages.
 
-![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
+![La zone de sortie avec une flèche touchant le cercle intérieur. L'instruction d'impression des points apparaît dans la zone de sortie.](images/yellow-points.png)
 
-**Debug:** Make sure your `elif` is at the same indentation level as your `if`, and the code inside your `elif` is at the same level as the code inside your `if`.
+**Debogage :** Assure-toi que ton `elif` est au même niveau d'indentation que ton `if`, et que le code à l'intérieur de ton `elif` est au même niveau que le code à l'intérieur de ton `if`.
 
-**Debug:** If you see a message about `inner` or `bullseye` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+**Débogage :** Si tu vois un message indiquant que `interieur` ou `centre` sont « non définis », reviens à `dessin()` et vérifie qu'ils se trouvent sur la ligne qui déclare les variables globales.
 
 ```python
-global outer, inner, bullseye
+global exterieur, interieur, centre
 ```
 
 --- /task ---
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? To do this last check, you use `else`.
+Il te reste une décision à prendre : que se passe-t-il si la flèche n'atterrit sur aucun des cercles cibles ? Pour faire cette dernière vérification, tu utilises `else`.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> to make decisions. When you wake up, you check and if it is morning you get up, else you go back to sleep. Can you think of any if ... else decisions you make? 
+Nous utilisons <span style="color: #0faeb0; font-weight: bold;"> si … sinon </span> pour prendre des décisions. Quand tu te réveilles, tu vérifies et si c'est le matin tu te leves, sinon tu te rendors. Peux-tu penser à des décisions si ... sinon que tu prends ? 
 </p>
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Ajoute du code à `print` un message `else` si aucune des déclarations `if` et `elif` n'ont été remplies.
 
 --- code ---
 ---
@@ -140,15 +140,14 @@ language: python filename: main.py line_numbers: true line_number_start: 9
 line_highlights: 16-17
 ---
 
-def mouse_pressed():    
-if hit_color == outer:   
-print('You hit the outer circle, 50 points!')   
-elif hit_color == inner:   
-print('You hit the inner circle, 200 points!')   
-elif hit_color == bullseye:    
-print('You hit the bullseye, 500 points!')   
-else:   
-print('You missed! No points!')
+def souris_pressee():    
+if couleur_touche == exterieur:   
+print('Tu as touché le cercle extérieur, 50 points !')   
+elif couleur_touche == interieur:   
+print('Tu as touché le cercle intérieur, 200 points !')   
+elif couleur_touche == centre:    
+print('Tu as touché le centre, 500 points !') else:   
+print('Tu as loupé la cible ! Aucun point !')
 
 --- /code ---
 
@@ -156,9 +155,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow in the grass or sky to see the miss message. Change the number of points scored for the different colours if you like.
+**Test :** Exécute ton projet. Essaye d'arrêter la flèche dans l'herbe ou le ciel pour voir le message manqué. Modifie le nombre de points marqués pour les différentes couleurs si tu le souhaites.
 
-![The output area with an arrow missing the target. The points print statement appears in the output area.](images/missed-points.png)
+![La zone de sortie avec une flèche manquant la cible. L'instruction d'impression des points apparaît dans la zone de sortie.](images/missed-points.png)
 
 --- /task ---
 
