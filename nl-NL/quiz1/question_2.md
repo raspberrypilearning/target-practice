@@ -1,47 +1,47 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+In je project heb je `if` , `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
 
-When this code is run, what would be printed in the output area?
+Als deze code wordt uitgevoerd, wat wordt er dan afgedrukt in het uitvoergebied?
 
 --- code ---
 ---
 language: python
 ---
 
-speed = 6
+snelheid = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if snelheid == 7: print('Super snel') elif snelheid == 5: print('Aardig snel') elif snelheid == 6: print('Zeer snel') else: print( 'Snelheid niet herkend!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Zeer snel`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  Dat is correct! De **snelheid** variabele heeft de waarde `6`gekregen, waardoor de voorwaarde `snelheid == 6` **Waar** is en `Zeer snel` wordt afgedrukt.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Snelheid niet herkend!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Niet helemaal, kijk naar de waarde die is toegewezen aan de variabele **snelheid**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Er wordt niets afgedrukt
 
   --- feedback ---
 
-  No, with the else statement, there will always be something that is true. Therefore, an output will be printed.
+  Nee, met de else-verklaring zal er altijd iets zijn dat waar is. Daarom wordt een uitvoer afgedrukt.
 
   --- /feedback ---
 
