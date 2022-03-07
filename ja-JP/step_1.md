@@ -1,24 +1,24 @@
-## Introduction
+## はじめに
 
-Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
+Pythonと`p5`グラフィックスライブラリを使って、ターゲットを描き、そこに矢を当てて得点を表示するゲームを作成します。
 
-You will:
- + Personalise your game with **RGB colours**
- + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
- + Position shapes with **x, y coordinates** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- <span style="color: #0faeb0; font-weight: bold;"> RGB colours </span> have values between 0 and 255 for each of R(ed), G(reen), and B(lue). <span style="color: #800080;">Purple</span> has values R,G,B (128, 0, 128) — medium amounts of red and blue, with no green. Video game artists and graphic designers work with RGB colours. 
+あなたは次のことを行います。
+ + **RGBカラー**でゲームをカスタマイズする
+ + **条件文**(`if`, `elif`, `else`) を使用して判断する
+ + **x, y座標**で図形を配置する <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ <span style="color: #0faeb0; font-weight: bold;">RGBカラー</span>は、R(ed)、G(reen)、B(lue) のそれぞれに対して0から255までの値を持ちます。 <span style="color: #800080;">紫</span> の値は、R,G,B(128、0、128)で — 中程度の量の赤と青で、緑はありません。 ビデオゲームのアーティストやグラフィックデザイナーは、RGBカラーを使用しています。 
 </p>
 
 --- no-print ---
 
 --- task ---
 
-### Try it
+### 試してみる
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Click the **Run** button below to start the game. When the dot appears on the target, click the mouse (or tap on your tablet) to fire your arrow. 
+下の**Run**ボタンをクリックするとゲームが開始されます。 ターゲットに点が表示されたら、マウスをクリック(タブレットではタップ) して矢を放ちます。 
 
-Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
+数回行ってみてください。 スコアは的の下の出力エリアに表示されます。 矢印が異なる色に着弾したとき、スコアはどのように変化しますか？ 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
@@ -30,10 +30,10 @@ Have a few goes. Your score appears in the output area below the target. How doe
 
 --- print-only ---
 
-![Completed project.](images/yellow-points.png)
+![完成したプロジェクト](images/yellow-points.png)
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+<span style="color: #0faeb0; font-weight: bold;"> アーチェリー</span>の最も古い証拠は、南アフリカのクワズールナタールにある洞窟から来ています。 6万年から7万年前の石鏃（せきぞく）、骨鏃（こつぞく）の跡が見つかっています。 
 </p>
