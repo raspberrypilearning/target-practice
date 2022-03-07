@@ -1,24 +1,24 @@
 ## Introduction
 
-Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
+Utilise Python, avec la bibliothèque graphique `p5` , pour dessiner une cible et marquer des points en la frappant avec des flèches.
 
-You will:
- + Personalise your game with **RGB colours**
- + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
- + Position shapes with **x, y coordinates** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- <span style="color: #0faeb0; font-weight: bold;"> RGB colours </span> have values between 0 and 255 for each of R(ed), G(reen), and B(lue). <span style="color: #800080;">Purple</span> has values R,G,B (128, 0, 128) — medium amounts of red and blue, with no green. Video game artists and graphic designers work with RGB colours. 
+Tu vas devoir :
+ + Personnaliser ton jeu avec des **couleurs RVB**
+ + Utiliser les **instructions conditionnelles** (`if`, `elif`, `else`) pour prendre des décisions
+ + Positionner les formes avec les coordonnées **x, y** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ <span style="color: #0faeb0; font-weight: bold;"> Les couleurs RVB </span> ont des valeurs comprises entre 0 et 255 pour R(ouge), V(ert) et B(leu). <span style="color: #800080;">Violet</span> a des valeurs R, G, B (128, 0, 128) — quantités moyennes de rouge et de bleu, sans vert. Les artistes de jeux vidéo et les graphistes travaillent avec des couleurs RVB. 
 </p>
 
 --- no-print ---
 
 --- task ---
 
-### Try it
+### Essaie-le
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Click the **Run** button below to start the game. When the dot appears on the target, click the mouse (or tap on your tablet) to fire your arrow. 
+Clique sur le bouton **Run** ci-dessous pour démarrer le jeu. Lorsque le point apparaît sur la cible, clique sur la souris (ou appuye sur ta tablette) pour tirer ta flèche. 
 
-Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
+Fais quelques essais. Ton score apparaît dans la zone de sortie sous la cible. Comment ton score change-t-il lorsque la flèche atterrit sur les différentes couleurs ? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
@@ -30,10 +30,10 @@ Have a few goes. Your score appears in the output area below the target. How doe
 
 --- print-only ---
 
-![Completed project.](images/yellow-points.png)
+![Projet terminé.](images/yellow-points.png)
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+La plus ancienne preuve de <span style="color: #0faeb0; font-weight: bold;"> tir à l'arc </span> provient de la grotte de Sibudu au KwaZulu-Natal, en Afrique du Sud. Des restes de pointes de flèches en pierre et en os ont été trouvés, qui datent d'il y a entre 60 000 et 70 000 ans. 
 </p>
