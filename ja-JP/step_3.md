@@ -1,42 +1,42 @@
-## Draw your target
+## ターゲットを描く
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
+ターゲットスタンドは三角形です。 ターゲットはカラーサークルで作られており、小さいサークルは大きいサークルよりもポイントが高くなります。 
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![ターゲットとスタンドのある出力エリア。](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-Shapes are drawn in the order that the lines of code run. The triangular wooden stand is partly behind the target circles so it must be drawn first.
+図形は、コード行が実行される順序で描画されます。 三角形の木製スタンドは、部分的にターゲットサークルの後ろにあるため、最初に描画する必要があります。
 
-Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
+紙からすべての形を切り取ると想像してみてください。 その紙をどう並べ、どう重ねるかによって、最終的な仕上がりは大きく変わってきます。
 
-### Draw the stand
+### スタンドを描く
 
 --- task ---
 
-When you call the `triangle()` function, you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners.
+`triangle()` 関数を呼び出すとき、`x1, y1, x2, y2, x3, y3` という3組の座標が必要で、それぞれが三角形の角の1つの位置を表します。
 
 --- collapse ---
 ---
-title: Triangle coordinates
+title: 三角形の座標
 ---
 
-  Here are three example triangles, each with different sets of coordinates. Look at the grid position of each to see how the `x` and `y` coordinates position the corners of the triangles:
-  + Green triangle: triangle(50, 50, 150, 50, 180, 100)
-  + Blue triangle: triangle(210, 280, 300, 350, 380, 100)
-  + Brown triangle: triangle(50, 150, 200, 250, 180, 350)
+  ここでは、それぞれ異なる座標を持つ3つの三角形の例を示します。 それぞれのグリッド位置を見て、`x`と`y`の座標が三角形の角をどのように位置づけているかを確認します。
+  + 緑の三角形：triangle(50, 50, 150, 50, 180, 100)
+  + 青の三角形：triangle(210, 280, 300, 350, 380, 100)
+  + 茶色の三角形：triangle(50, 150, 200, 250, 180, 350)
 
-  ![The output area with three triangles.](images/triangles-coords.png)
+  ![3つの三角形のある出力領域。](images/triangles-coords.png)
 
 --- /collapse ---
 
-Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
+角が (150, 350), (200, 150), (250, 350) にあるスタンドの`triangle()`を描画します。
 
-![A brown triangle on grass and against a sky with the coordinate points labelled.](images/stand_coords.png)
+![草原と空に描かれた茶色の三角形とその座標点。](images/stand_coords.png)
 
 --- code ---
 ---
@@ -45,37 +45,38 @@ line_highlights: 31-32
 ---
 
   fill(grass)   
-rect(0, 250, 400, 150) #x, y, width, height
+rect(0, 250, 400, 150) #x, y, 幅, 高さ
 
-  fill(wood) #Set the stand fill colour to brown     
+  fill(wood) #スタンドフィルカラーをブラウンに設定     
 triangle(150, 350, 200, 150, 250, 350)
 
 
 --- /code ---
 
-**Tip:** We have added comments to our code, like `#Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**ヒント:** 私たちは、`#スタンドフィルカラーをブラウンに設定
+` のように、コードにコメントを追加して、それが何をするものなのかを説明しています。 これらのコメントをコードに追加する必要はありませんが、コードの行が何を行っているかを思い出すのに便利です。
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target.
+**テスト：** コードを実行して、ターゲットのスタンドを確認します。
 
-![A brown triangle on grass and against a sky.](images/target-stand.png)
+![草の上と空を背景にした茶色の三角形。](images/target-stand.png)
 
 --- /task ---
 
-### Draw the target
+### ターゲットを描く
 
 --- task ---
 
-The largest part of the target will be a blue **circle** made by using the `ellipse()` function. An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle.
+ターゲットの一番大きな部分は、` ellipse ()` 関数を使って作った青い**円**になります。 楕円は、片側に角のない形状です。 楕円のようにつぶれてもいいし、円のように完全に丸くなってもいい。
 
-An ellipse needs `x` and `y` coordinates, width, and height. The `x` and `y` coordinates of an ellipse are the centre position.
+楕円は、`x`と`y`の座標、幅、高さが必要です。 楕円の`x`と`y`の座標が中心位置となります。
 
-The blue circle will cover the brown triangle where they overlap, because the circle was drawn later.
+青い丸は、後から描いたものなので、茶色の三角が重なる部分を覆います。
 
-**Tip:** To make a circle, the **width** and **height** must be the same.
+**ヒント：**円を作るには、**幅**と**高さ**が同じである必要があります。
 
 --- code ---
 ---
@@ -86,7 +87,7 @@ line_highlights: 33-34
   fill(wood)   
 triangle(150, 350, 200, 150, 250, 350)   
 fill(outer)    
-ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
+ellipse(200, 200, 170, 170) #外側の円 200、200は画面の中央です
 
 --- /code ---
 
@@ -94,21 +95,21 @@ ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Test:** コードを実行すると、最初の大きな青い丸が表示されます。
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
+![草の上と空を背景にした茶色の三角形と青い円。](images/blue-circle.png)
 
 --- /task ---
 
 --- task ---
 
-Create two new variables to store colours `inner` and `bullseye` for the remaining circles.
+残りの円の色 `inner` と `bullseye` を格納するために2つの新しい変数を作成します。
 
-Assign colours to the `inner` and `bullseye` variables using `color()`.
+`color()`で`inner`と`bullseye`の変数に色を代入する。
 
-The `color()` function expects three numbers: one each for red, green, and blue.
+`color()`関数は、赤、緑、青にそれぞれ1つずつ、計3つの数値を想定しています。
 
-We used numbers that give traditional archery target colours, but you can use whatever colours you like as long as they are different from each other.
+私たちは、伝統的なアーチェリーの的の色を示す数字を使いましたが、互いに異なる色であれば、好きな色を使うことができます。
 
 [[[generic-theory-simple-colours]]]
 
@@ -119,7 +120,7 @@ line_highlights: 24-25
 ---
 
 def draw():   
-#Things to do in every frame
+#全てのフレームで行うこと
 
   sky = color(92, 204, 206)   
 grass = color(149, 212, 122)   
@@ -134,9 +135,9 @@ bullseye = color(220, 200, 0) #Yellow
 
 --- task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200) — the middle of the screen.
+ターゲットは、同じ中心座標(200, 200)、つまり画面の真ん中にある、大きさの異なる円でできています。
 
-Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle.
+さらに2つの円を追加して、内側の円とブルズアイを表現します。 各円を描く前に`fill()`を変更します。
 
 --- code ---
 ---
@@ -145,13 +146,13 @@ line_highlights: 37-40
 ---
 
   fill(wood)    
-triangle(150, 350, 200, 150, 250, 350) #Stand    
+triangle(150, 350, 200, 150, 250, 350) #スタンド    
 fill(outer)   
-ellipse(200, 200, 170, 170) #Outer circle   
+ellipse(200, 200, 170, 170) #外側の円   
 fill(inner)   
-ellipse(200, 200, 110, 110) #Inner circle   
+ellipse(200, 200, 110, 110) #内側の円   
 fill(bullseye)   
-ellipse(200, 200, 30, 30) #Bullseye
+ellipse(200, 200, 30, 30) #ブルズアイ
 
 --- /code ---
 
@@ -159,11 +160,11 @@ ellipse(200, 200, 30, 30) #Bullseye
 
 --- task ---
 
-**Test:** Run your project again to see the target with three coloured circles. Change the colours until you are happy with them.
+**Test:** プロジェクトを再度実行すると、ターゲットに3色の丸が表示されます。 納得がいくまで色を変えてみてください。
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)
+![草の上と空を背景に3色の円が描かれた茶色の三角形。](images/three-circles.png)
 
-**Debug:** Python uses the American spelling of 'color' (without a 'u') so make sure you do the same.
+**デバッグ：** Python は 'color' のアメリカ綴り('u' がない) を使うので、同じようにしてください。
 
 --- /task ---
 
