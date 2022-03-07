@@ -1,35 +1,35 @@
-## Upgrade your project
+## Améliorer ton projet
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
+Personnalise et ajoute plus à ton projet. Peut-être pourrais-tu changer le niveau de difficulté ou ajouter plus de cercles à ta cible.
 </div>
 <div>
 
-![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
+![La zone de sortie montrant une cible avec cinq cercles.](images/five_circles.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-You could:
+Tu pourrais :
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position
-+ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
-+ Make the game easier or harder by changing the `frame_rate(2)` value
-+ Use `input()` to ask the user which difficulty level they want to play at
++ Ajouter un `quatrième` et `cinquième` cercle, dans de nouvelles couleurs, qui marquent différents nombres de points en fonction de leur position
++ Mettre des emoji dans tes messages imprimés ([voici une liste d'emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} que tu peux copier)
++ Rendre le jeu plus facile ou plus difficile en modifiant la valeur `frame_rate(2)`
++ Utiliser `input()` pour demander à l'utilisateur à quel niveau de difficulté il veut jouer
 
 --- /task ---
 
-![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
+![Idées de projets améliorées : une avec cinq cercles, une avec une question de saisie de difficulté, une avec des emoji dans le message de points.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
-title: Completed project
+title: Le projet achevé
 ---
 
-You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+Tu peux voir le [projet terminé ici](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
