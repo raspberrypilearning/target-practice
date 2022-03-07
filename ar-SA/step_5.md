@@ -1,19 +1,19 @@
-## Score points
+## تسجيل النقاط
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add scores based on where the arrow hits.
+في هذه الخطوة ، ستضيف درجات بناءً على مكان وصول السهم.
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+! [الهدف ، مع ظهور السهم في مواضع مختلفة ، وتظهر النتائج كنص أسفل اللعبة.] (images / Points-scored.gif) {: "width = "300px}
 
 </div>
 </div>
 
 --- task ---
 
-The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this, they need to be set as global variables:
+سيتم استخدام متغيرات اللون في دالة `()draw ` للتحقق من النتيجة في دالة ` ()mouse_pressed`. للقيام بذلك ، يجب تعيينهم كمتغيرات عامة:
 
 --- code ---
 ---
@@ -22,9 +22,9 @@ line_highlights: 28
 ---
 
 def draw():
-# Things to do in every frame
+# أشياء للقيام بها في كل إطار
   global outer, inner, bullseye    
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206    
+sky = color(92, 204, 206) #احمر = 92, اخضر = 204, ازرق = 206    
 grass = color(149, 212, 122)    
 wood = color(145, 96, 51)    
 outer = color(0, 120, 180)    
@@ -36,18 +36,18 @@ bullseye = color(220, 200, 0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+نحن نستخدم <span style="color: #0faeb0; font-weight: bold;"> شروط</span> طوال الوقت لاتخاذ القرارات. يمكننا أن نقول 'إذا كان القلم غير حاد ، فقم جعله حادا'. وبالمثل ، تتيح لنا شروط `if` كتابة رمز يقوم بشيء مختلف اعتمادًا على ما إذا كان الشرط صحيحًا أم خطأ.
 </p>
 
 --- task ---
 
-To `print` a message for the target's outer circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `outer`.
+`print` رسالة للدائرة الخارجية للهدف ، أضف رمزًا لوظيفة ` ()mouse_pressed` للتحقق مما إذا كانت `hit_color` هي `==` إلى `outer`.
 
-Be careful when using the `=` symbol in Python:
- + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable
- + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
+كن حذرًا عند استخدام الرمز `=` في بايثون:
+ + `=` يستخدم من أجل **تخصيص** - مثل `arrow_x = 200` لتعيين قيمة متغير
+ + `==` يستخدم لاختبار **تكافؤ** - مثل `hit_color == bullseye` - إذا كانت الأشياء على كلا الجانبين لها نفس القيمة ، فإن الاختبار هو `True`، وإلا فهو `False`
 
-Change the code in your `print()` to give a score:
+قم بتغيير التعليمات البرمجية الموجود في ` ()print` لإعطاء درجة:
 
 --- code ---
 ---
@@ -55,10 +55,10 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 10-11
 ---
 
-# The mouse_pressed function goes here
+# تذهب دالة mouse_pressed هنا
 def mouse_pressed():     
 if hit_color == outer:      
-print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+print('You hit the outer circle, 50 points!') #Like دالة ، يتم وضع مسافة بادئة لعبارات 'if'
 
 --- /code ---
 
@@ -66,29 +66,29 @@ print('You hit the outer circle, 50 points!') #Like functions, 'if' statements a
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked.
+**اختبار:** قم بتشغيل مشروعك. حاول إيقاف السهم الموجود على الدائرة الخارجية الزرقاء لرؤية رسالتك. لون البكسل الموجود في وسط السهم هو اللون الذي يتم حفظه والتحقق منه.
 
-**Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**نصيحة:** ` ()frame_rate`، في ` ()setup`، يتحكم في مدى سرعة رسم لعبتك. إذا كان الأمر سريعًا جدًا ، فاضبطه على رقم أقل.
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
+![منطقة مخرجات مع سهم يلمس الدائرة الخارجية. تظهر عبارة طباعة النقاط في منطقة مخرجات.](images/blue-points.png)
 
-**Debug:** Make sure your code matches exactly and you indented the code inside your `if` statement. The indent tells Python that the code should only run if the condition is `True`.
+**تصحيح:** تأكد من تطابق التعليمات البرمجية تمامًا وقمت بوضع مسافة بادئة التعليمات البرمجية داخل عبارة `if`. تخبر المسافة البادئة Python أنه يجب تشغيل الكود فقط إذا كان الشرط `True`.
 
 --- /task ---
 
-As points will be scored if the arrow lands on the `inner` or `bullseye` circles too, `outer` is not the only circle you need to check. To do this, use `elif` (a shortened version of else - if).
+نظرًا لأنه سيتم تسجيل النقاط إذا هبط السهم على الدائرة `inner` أو `bullseye` أيضًا ، فإن دوائر` outer` ليست الدائرة الوحيدة التي تحتاج إلى التحقق منها. للقيام بذلك ، استخدم `elif` (نسخة مختصرة من else - if).
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> to make decisions in real life. When you are painting a picture of the sky, you might check if there is a yellow paint for the sun. Else, if there is no yellow paint, you look for orange. Else, if there is no yellow or orange paint, you might use red — really lightly!
+نستخدم <span style="color: #0faeb0; font-weight: bold;"> else - if </span> لاتخاذ القرارات في الحياة الواقعية. عندما ترسم صورة للسماء ، قد تتحقق مما إذا كان هناك طلاء أصفر للشمس. عدا ذلك ، إذا لم يكن هناك طلاء أصفر ، فابحث عن اللون البرتقالي. بخلاف ذلك ، إذا لم يكن هناك طلاء أصفر أو برتقالي ، فيمكنك استخدام اللون الأحمر - بشكل خفيف حقًا!
 </p>
 
 --- task ---
 
-An `elif` can only be used with an `if` statement and, like an `if`, it checks a condition. If the condition is `True`, the `elif` runs some code.
+لا يمكن استخدام `elif` إلا مع عبارة `if` ، ومثل `if`، يتحقق الشرط. إذا كان الشرط `True`، فإن `elif` يقوم بتشغيل بعض التعليمات البرمجية.
 
-What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it are `False`.
+ما يجعل `elif` مختلفًا هو أنه سيتم فقط التحقق مما إذا كانت شروط `if` وأي `elif` قبل أن تكون `False`.
 
-Add `elif` statements for `inner` and `bullseye`.
+أضف عبارة ` elif` لـ `inner` و `bullseye`.
 
 --- code ---
 ---
@@ -110,13 +110,13 @@ print('You hit the bullseye, 500 points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the red and yellow circles to see their messages.
+**اختبار:** قم بتشغيل مشروعك. حاول إيقاف السهم الموجود على الدوائر الحمراء والصفراء لرؤية رسائلهم.
 
-![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
+![منطقة مخرجات مع سهم يلمس الدائرة الداخلية. تظهر عبارة طباعة النقاط في منطقة مخرجات.](images/yellow-points.png)
 
-**Debug:** Make sure your `elif` is at the same indentation level as your `if`, and the code inside your `elif` is at the same level as the code inside your `if`.
+**تصحيح الأخطاء:** تأكد من أن `elif` في نفس مستوى المسافة البادئة مثل `if`، وأن الكود الموجود داخل `elif` في نفس مستوى الرمز الموجود داخل `if`.
 
-**Debug:** If you see a message about `inner` or `bullseye` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+**التصحيح:** إذا رأيت رسالة حول `inner` or `bullseye` كونها 'غير محددة' ، فارجع إلى ` ()draw` وتأكد من أنها على السطر الذي يعلن عن المتغيرات عامة.
 
 ```python
 global outer, inner, bullseye
@@ -124,15 +124,15 @@ global outer, inner, bullseye
 
 --- /task ---
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? To do this last check, you use `else`.
+هناك قرار آخر يتعين عليك اتخاذه: ماذا يحدث إذا لم يسقط السهم على أي من الدوائر المستهدفة؟ لإجراء هذا الفحص الأخير ، يمكنك استخدام `else`.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> to make decisions. When you wake up, you check and if it is morning you get up, else you go back to sleep. Can you think of any if ... else decisions you make? 
+نستخدم  <span style="color: #0faeb0; font-weight: bold;"> if … else </span> لاتخاذ القرارات. عندما تستيقظ ، تتحقق وإذا كان الصباح تستيقظ ، أو تعود للنوم. هل يمكنك التفكير في أي قرارات أخرى تتخذها؟ 
 </p>
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+أضف الكود إلى `print` رسالة `else` لم يتم استيفاء أي من عبارات `if` و `elif`.
 
 --- code ---
 ---
@@ -156,9 +156,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow in the grass or sky to see the miss message. Change the number of points scored for the different colours if you like.
+**اختبار:** قم بتشغيل مشروعك. حاول إيقاف السهم في العشب أو السماء لرؤية الرسالة المفقودة. قم بتغيير عدد النقاط المسجلة للألوان المختلفة إذا أردت.
 
-![The output area with an arrow missing the target. The points print statement appears in the output area.](images/missed-points.png)
+![منطقة مخرجات بسهم يفتقد الهدف. تظهر عبارة طباعة النقاط في منطقة مخرجات.](images/missed-points.png)
 
 --- /task ---
 
