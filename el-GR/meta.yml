@@ -11,7 +11,7 @@ steps:
   - title: Δημιούργησε ένα υπόβαθρο
   - title: Σχεδίασε τον στόχο σου
     completion: engaged
-  - title: Ρίξε το βέλος
+  - title: Ρίξε το βέλος σου
   - title: Κέρδισε πόντους
   - title: Αναστοχασμός
     knowledge_quiz:
