@@ -1,20 +1,20 @@
-## Reflection
+## Reflectie
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Goed gedaan, je hebt een spel gemaakt! Nu is het tijd om te reflecteren - reflecteren is een belangrijk onderdeel van leren, omdat het helpt om nieuwe verbindingen in je hersenen te maken.
 
-Answer the three questions below to reflect on what you've learnt.
+Beantwoord de drie onderstaande vragen om terug te kijken op wat je hebt geleerd.
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Druk na elke vraag op **indienen**. Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: Vraag 1 van 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Hier is een blauw vierkant, wat zijn de RGB-waarden die het zal creëren?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Een enkel blok met een blauwe kleur.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Niet helemaal, als alle kleurwaarden zijn ingesteld op `0`, is de kleur **zwart**.
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Niet helemaal, kleuren volgen het RGB-model. Deze kleur heeft een maximale R-waarde en geen G of B, dus **rood**.
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  Dat is correct! Kleuren volgen het RGB-model. Deze kleur heeft geen R of G, maar maximaal B, dus is **blauw**.
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Niet helemaal, als alle kleurwaarden zijn ingesteld op het maximum van `255` is de kleur **wit**.
 
   --- /feedback ---
 
