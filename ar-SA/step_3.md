@@ -1,42 +1,43 @@
-## Draw your target
+## ارسم هدفك
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
+حامل الهدف هو شكل المثلث الهدف مكون من دوائر ملونة - الدوائر الأصغر تساوي نقاطًا أكثر من الدوائر الأكبر. 
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![منطقة المخرجات مع الهدف وحامل الهدف.] 
+(images/three-circles.png) {"width="300px:}
 
 </div>
 </div>
 
-Shapes are drawn in the order that the lines of code run. The triangular wooden stand is partly behind the target circles so it must be drawn first.
+يتم رسم الأشكال بالترتيب الذي تعمل به أسطر التعليمات البرمجية. يقع الحامل الخشبي المثلث جزئيًا خلف الدوائر المستهدفة لذا يجب رسمه أولاً.
 
-Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
+تخيل قص كل الأشكال من الورق. اعتمادًا على كيفية ترتيب وتداخل تلك الورقة، قد تبدو النتيجة النهائية مختلفة تمامًا.
 
-### Draw the stand
+### ارسم الحامل
 
 --- task ---
 
-When you call the `triangle()` function, you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners.
+عندما تستدعي دالة `()triangle` ، تحتاج إلى توفير ثلاث مجموعات من الإحداثيات ، `x1, y1, x2, y2, x3, y3` تمثل كل منها موضع إحدى زوايا المثلث.
 
 --- collapse ---
 ---
-title: Triangle coordinates
+title: إحداثيات مثلث
 ---
 
-  Here are three example triangles, each with different sets of coordinates. Look at the grid position of each to see how the `x` and `y` coordinates position the corners of the triangles:
-  + Green triangle: triangle(50, 50, 150, 50, 180, 100)
-  + Blue triangle: triangle(210, 280, 300, 350, 380, 100)
-  + Brown triangle: triangle(50, 150, 200, 250, 180, 350)
+  فيما يلي ثلاثة أمثلة على المثلثات، لكل منها مجموعات مختلفة من الإحداثيات. انظر إلى موضع الشبكة لكل منها لترى كيف تضع إحداثيات `×` و `y` زوايا المثلثين:
+  + المثلث الأخضر: triangle(50, 50, 150, 50, 180, 100)
+  + المثلث الأزرق: triangle(210, 280, 300, 350, 380, 100)
+  + المثلث البني: triangle(50, 150, 200, 250, 180, 350)
 
-  ![The output area with three triangles.](images/triangles-coords.png)
+  ![منطقة المخرجات مع ثلاثة مثلثات.](images/triangles-coords.png)
 
 --- /collapse ---
 
-Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
+ارسم `() triangle` للحامل ذي الزوايا عند (150، 350) ،(200، 150) ،(250 ،350).
 
-![A brown triangle on grass and against a sky with the coordinate points labelled.](images/stand_coords.png)
+![مثلث بني على العشب وضد السماء مع تحديد نقاط الإحداثيات.](images/stand_coords.png)
 
 --- code ---
 ---
@@ -47,35 +48,35 @@ line_highlights: 31-32
   fill(grass)   
 rect(0, 250, 400, 150) #x, y, width, height
 
-  fill(wood) #Set the stand fill colour to brown     
+  fill(wood) # اضبط لون تعبئة الحامل على البني     
 triangle(150, 350, 200, 150, 250, 350)
 
 
 --- /code ---
 
-**Tip:** We have added comments to our code, like `#Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**نصيحة:** لقد أضفنا تعليقات إلى الكود الخاص بنا ، مثل `# اضبط لون تعبئة الحامل على البني`، لنخبرك بما يفعله. لا تحتاج إلى إضافة هذه التعليقات إلى التعليمات البرمجية الخاصة بك ، ولكنها يمكن أن تكون مفيدة لتذكيرك بما تفعله سطور التعليمات البرمجية.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target.
+**اختبار:** قم بتشغيل التعليمات برمجية الخاص بك لمعرفة الحامل لهدفك.
 
-![A brown triangle on grass and against a sky.](images/target-stand.png)
+![مثلث بني على العشب وقبالة السماء.](images/target-stand.png)
 
 --- /task ---
 
-### Draw the target
+### ارسم الهدف
 
 --- task ---
 
-The largest part of the target will be a blue **circle** made by using the `ellipse()` function. An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle.
+سيكون الجزء الأكبر من الهدف عبارة عن دائرة **circle** مصنوعة باستخدام دالة `()ellipse`. القطع الناقص هو شكل ذو جانب واحد وبدون زوايا. يمكن سحقها ، مثل شكل بيضاوي ، أو دائري تمامًا ، مثل الدائرة.
 
-An ellipse needs `x` and `y` coordinates, width, and height. The `x` and `y` coordinates of an ellipse are the centre position.
+يحتاج القطع الناقص إلى إحداثيات `×` و `y` وعرض وارتفاع. إحداثيات `x` و `y` للقطع الناقص هي موضع المركز.
 
-The blue circle will cover the brown triangle where they overlap, because the circle was drawn later.
+ستغطي الدائرة الزرقاء المثلث البني حيث يتداخلان ، لأن الدائرة تم رسمها لاحقًا.
 
-**Tip:** To make a circle, the **width** and **height** must be the same.
+**نصيحة:** لعمل دائرة ، يجب أن يكون **العرض** و **ارتفاع** هو نفسه.
 
 --- code ---
 ---
@@ -86,7 +87,7 @@ line_highlights: 33-34
   fill(wood)   
 triangle(150, 350, 200, 150, 250, 350)   
 fill(outer)    
-ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
+ellipse(200, 200, 170, 170) #الدائرة الخارجية. 200، 200 هو منتصف الشاشة
 
 --- /code ---
 
@@ -94,21 +95,21 @@ ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**اختبار:** قم بتشغيل التعليمات البرمجية الخاص بك لرؤية أول دائرة زرقاء كبيرة.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
+![مثلث بني ودائرة زرقاء على العشب وقبالة السماء.](images/blue-circle.png)
 
 --- /task ---
 
 --- task ---
 
-Create two new variables to store colours `inner` and `bullseye` for the remaining circles.
+قم بإنشاء متغيرين جديدين لتخزين الألوان `inner` و `bullseye` للدوائر المتبقية.
 
-Assign colours to the `inner` and `bullseye` variables using `color()`.
+قم بتعيين الألوان للمتغيرات `inner` و `bullseye` باستخدام `()color`.
 
-The `color()` function expects three numbers: one each for red, green, and blue.
+تتوقع الدالة ` ()color` ثلاثة أرقام: رقم واحد للأحمر والأخضر والأزرق.
 
-We used numbers that give traditional archery target colours, but you can use whatever colours you like as long as they are different from each other.
+استخدمنا الأرقام التي تعطي ألوانًا تقليدية لهدف الرماية ، ولكن يمكنك استخدام الألوان التي تريدها طالما أنها مختلفة عن بعضها البعض.
 
 [[[generic-theory-simple-colours]]]
 
@@ -119,7 +120,7 @@ line_highlights: 24-25
 ---
 
 def draw():   
-#Things to do in every frame
+# أشياء يجب القيام بها في كل إطار
 
   sky = color(92, 204, 206)   
 grass = color(149, 212, 122)   
@@ -134,9 +135,9 @@ bullseye = color(220, 200, 0) #Yellow
 
 --- task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200) — the middle of the screen.
+الهدف مكون من دوائر مختلفة الحجم بنفس إحداثيات المركز (200 ، 200) - منتصف الشاشة.
 
-Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle.
+أضف دائرتين إضافيتين لتمثل الدائرة الداخلية والمركز. قم بتغيير `()fill` قبل رسم كل دائرة.
 
 --- code ---
 ---
@@ -145,13 +146,13 @@ line_highlights: 37-40
 ---
 
   fill(wood)    
-triangle(150, 350, 200, 150, 250, 350) #Stand    
+triangle(150, 350, 200, 150, 250, 350) #حامل الهدف    
 fill(outer)   
-ellipse(200, 200, 170, 170) #Outer circle   
+ellipse(200, 200, 170, 170) #الدائرة الخارجية   
 fill(inner)   
-ellipse(200, 200, 110, 110) #Inner circle   
+ellipse(200, 200, 110, 110) #الدائرة الداخلية    
 fill(bullseye)   
-ellipse(200, 200, 30, 30) #Bullseye
+ellipse(200, 200, 30, 30) #مركز الهدف
 
 --- /code ---
 
@@ -159,11 +160,11 @@ ellipse(200, 200, 30, 30) #Bullseye
 
 --- task ---
 
-**Test:** Run your project again to see the target with three coloured circles. Change the colours until you are happy with them.
+**اختبار:** قم بتشغيل مشروعك مرة أخرى لرؤية الهدف بثلاث دوائر ملونة. قم بتغيير الألوان حتى تكون سعيدًا بها.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)
+![مثلث بني به ثلاث دوائر ملونة على العشب ومقابل السماء.](images/three-circles.png)
 
-**Debug:** Python uses the American spelling of 'color' (without a 'u') so make sure you do the same.
+**تتبع الخطأ:** تستخدم Python التهجئة الأمريكية لـ "color" (بدون "u") لذا تأكد من فعل الشيء نفسه.
 
 --- /task ---
 
