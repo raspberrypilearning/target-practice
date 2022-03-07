@@ -1,19 +1,19 @@
-## Score points
+## Punten scoren
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add scores based on where the arrow hits.
+In deze stap voeg je scores toe afhankelijk van waar de pijl raakt.
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Het doel, met de pijl die op verschillende posities verschijnt, en scores die als tekst onder het spel verschijnen.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this, they need to be set as global variables:
+De kleurvariabelen in de functie `draw()` worden gebruikt om de score in de functie `muis_ingedrukt()` te controleren. Om dit te kunnen doen, moeten ze worden ingesteld als globale variabelen:
 
 --- code ---
 ---
@@ -22,32 +22,32 @@ line_highlights: 28
 ---
 
 def draw():
-# Things to do in every frame
-  global outer, inner, bullseye    
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206    
-grass = color(149, 212, 122)    
-wood = color(145, 96, 51)    
-outer = color(0, 120, 180)    
-inner = color(210, 60, 60)   
-bullseye = color(220, 200, 0)
+# Dingen om te doen in elk frame
+  global buitenste, binnenste, roos    
+lucht = color(92, 204, 206) #Rood = 92, Groen = 204, Blauw = 206    
+gras = color(149, 212, 122)    
+hout = color(145, 96, 51)    
+buitenste = color(0, 120, 180)    
+binnenste = color(210, 60, 60)   
+roos = color(220, 200, 0)
 
 --- /code ---
 
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+We gebruiken voortdurende <span style="color: #0faeb0; font-weight: bold;"> voorwaarden</span> om beslissingen te nemen. We zouden kunnen zeggen 'als het potlood bot is, slijp het dan'. Evenzo laten `if`-voorwaarden ons code schrijven die iets anders doet, afhankelijk van of een voorwaarde waar of onwaar is.
 </p>
 
 --- task ---
 
-To `print` a message for the target's outer circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `outer`.
+Om een bericht voor de buitenste cirkel van het doel `weer te geven`, voeg je code toe aan je `muis_ingedrukt()` functie om te controleren of de `raak_kleur` `==` is aan de `buitenste`.
 
-Be careful when using the `=` symbol in Python:
- + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable
- + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
+Wees voorzichtig bij het gebruik van het `=` symbool in Python:
+ + `=` wordt gebruikt voor een **toewijzing** — zoals `pijl_x = 200` om de waarde van een variabele in te stellen
+ + `==` wordt gebruikt om **gelijkheid** te testen — zoals `raak_kleur == roos` — als beide kanten dezelfde waarde hebben, dan is de test `True` (Waar), anders is het `False` (Niet waar)
 
-Change the code in your `print()` to give a score:
+Wijzig de code in `print()` om een score te geven:
 
 --- code ---
 ---
@@ -55,10 +55,10 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 10-11
 ---
 
-# The mouse_pressed function goes here
-def mouse_pressed():     
-if hit_color == outer:      
-print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+# De muis_ingedrukt functie komt hier
+def muis_ingedrukt():     
+if raak_kleur == buitenste:      
+print('Je raakt de buitenste cirkel, 50 punten!') #Net als functions zijn 'if'-instructies ingesprongen
 
 --- /code ---
 
@@ -66,29 +66,29 @@ print('You hit the outer circle, 50 points!') #Like functions, 'if' statements a
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked.
+**Test: ** Voer je project uit. Probeer de pijl op de blauwe buitenste cirkel te laten landen om je bericht te zien. De kleur van de pixel in het midden van de pijl is de kleur die is opgeslagen en gecontroleerd.
 
-**Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**Tip:** `frame_rate()`, in `setup()`, bepaalt hoe snel je spel gaat. Als het te snel gaat, stel het dan in op een lager getal.
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
+![Het uitvoergebied met de pijl die de buitenste cirkel raakt. De punten worden getoond in het uitvoergebied.](images/blue-points.png)
 
-**Debug:** Make sure your code matches exactly and you indented the code inside your `if` statement. The indent tells Python that the code should only run if the condition is `True`.
+**Debuggen:** Zorg ervoor dat je code exact overeenkomt en dat de code in je `if`-statement is ingesprongen. De inspringing vertelt Python dat de code alleen moet worden uitgevoerd als de voorwaarde `Waar`is.
 
 --- /task ---
 
-As points will be scored if the arrow lands on the `inner` or `bullseye` circles too, `outer` is not the only circle you need to check. To do this, use `elif` (a shortened version of else - if).
+Aangezien er punten worden gescoord als de pijl ook op de `binnenste` of `roos` cirkels terechtkomt, is `buitenste` niet de enige cirkel die je moet controleren. Gebruik hiervoor `elif` (een verkorte versie van else - if).
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> to make decisions in real life. When you are painting a picture of the sky, you might check if there is a yellow paint for the sun. Else, if there is no yellow paint, you look for orange. Else, if there is no yellow or orange paint, you might use red — really lightly!
+We gebruiken <span style="color: #0faeb0; font-weight: bold;"> else - if </span> om beslissingen in het echte leven te nemen. Wanneer je een afbeelding van de lucht schildert, kun je controleren of er een gele verf voor de zon is. Anders, als er geen gele verf is, zoek je naar oranje. Anders, als er geen gele of oranje verf is, zou je rood kunnen gebruiken - heel licht!
 </p>
 
 --- task ---
 
-An `elif` can only be used with an `if` statement and, like an `if`, it checks a condition. If the condition is `True`, the `elif` runs some code.
+Een `elif` kan alleen gebruikt worden met een `if` statement en, net als een `if`, controleert het een voorwaarde. Als de voorwaarde `Waar`is, voert de `elif` wat code uit.
 
-What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it are `False`.
+Wat `elif` anders maakt, is dat het die controle alleen zal uitvoeren als de voorwaarden van de `if` en elke `elif` ervoor `Niet waar`zijn.
 
-Add `elif` statements for `inner` and `bullseye`.
+Voeg `elif` statements toe voor `binnenste` en `roos`.
 
 --- code ---
 ---
@@ -96,13 +96,13 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 12-15
 ---
 
-def mouse_pressed():    
-if hit_color == outer:    
-print('You hit the outer circle, 50 points!')    
-elif hit_color == inner:    
-print('You hit the inner circle, 200 points!')   
-elif hit_color == bullseye:    
-print('You hit the bullseye, 500 points!')
+def muis_ingedrukt():    
+if raakt_kleur == buitenste:    
+print('Je raakt de buitenste cirkel, 50 punten!')    
+elif raak_kleur == binnenste:    
+print('Je raakt de binnenste cirkel, 200 punten!')   
+elif raak_kleur == roos:    
+print('Je raakt de roos, 500 punten!')
 
 --- /code ---
 
@@ -110,29 +110,29 @@ print('You hit the bullseye, 500 points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the red and yellow circles to see their messages.
+**Test: ** Voer je project uit. Probeer de pijl op de rode en gele cirkels te laten landen om hun berichten te zien.
 
-![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
+![Het uitvoergebied met de pijl die de binnenste cirkel raakt. De punten worden getoond in het uitvoergebied.](images/yellow-points.png)
 
-**Debug:** Make sure your `elif` is at the same indentation level as your `if`, and the code inside your `elif` is at the same level as the code inside your `if`.
+**Debuggen:** Zorg ervoor dat `elif` zich op hetzelfde inspringniveau bevindt als je `if`, en dat de code in je `elif` zich op hetzelfde niveau bevindt als de code in je `if`.
 
-**Debug:** If you see a message about `inner` or `bullseye` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+**Debuggen:** Als je een bericht ziet over `binnenste` of `roos` die 'niet gedefinieerd' zijn, ga dan terug naar `draw()` en controleer of ze als globale variabele declareert zijn.
 
 ```python
-global outer, inner, bullseye
+global buitenste, binnenste, roos
 ```
 
 --- /task ---
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? To do this last check, you use `else`.
+Er is nog een beslissing die je moet nemen: wat gebeurt er als de pijl niet op een van de doelcirkels landt? Om deze laatste controle uit te voeren, gebruik je `else`.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> to make decisions. When you wake up, you check and if it is morning you get up, else you go back to sleep. Can you think of any if ... else decisions you make? 
+We gebruiken <span style="color: #0faeb0; font-weight: bold;"> if ... else</span> om beslissingen te nemen. Als je wakker wordt, controleer je en als het ochtend is sta je op, anders ga je weer slapen. Kun je een 'if ... else'  beslissing bedenken? 
 </p>
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Voeg code toe om een bericht `te tonen` `als` aan geen van de `if` en `elif` voorwaarden is voldaan.
 
 --- code ---
 ---
@@ -140,15 +140,15 @@ language: python filename: main.py line_numbers: true line_number_start: 9
 line_highlights: 16-17
 ---
 
-def mouse_pressed():    
-if hit_color == outer:   
-print('You hit the outer circle, 50 points!')   
-elif hit_color == inner:   
-print('You hit the inner circle, 200 points!')   
-elif hit_color == bullseye:    
-print('You hit the bullseye, 500 points!')   
+def muis_ingedrukt():    
+if raak_kleur == buitenste:   
+print('Je raakt de buitenste cirkel, 50 punten!')   
+elif raak_kleur == binnenste:   
+print('Je raakt de binnenste cirkel, 200 punten!')   
+elif raak_kleur == roos:    
+print('Je hebt de roos, 500 punten!')   
 else:   
-print('You missed! No points!')
+print('Je hebt gemist! Geen punten!')
 
 --- /code ---
 
@@ -156,9 +156,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow in the grass or sky to see the miss message. Change the number of points scored for the different colours if you like.
+**Test: ** Voer je project uit. Probeer de pijl in het gras of de lucht te laten landen om het bericht 'Gemist' te zien. Wijzig desgewenst het aantal gescoorde punten voor de verschillende kleuren.
 
-![The output area with an arrow missing the target. The points print statement appears in the output area.](images/missed-points.png)
+![Het uitvoergebied met een pijl die het doel mist. De punten worden getoond in het uitvoergebied.](images/missed-points.png)
 
 --- /task ---
 
