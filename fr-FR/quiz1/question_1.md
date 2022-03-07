@@ -1,20 +1,20 @@
-## Reflection
+## Réflexion
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Bravo, tu as créé un jeu ! Maintenant, il est temps de réfléchir - la réflexion est une partie importante de l'apprentissage, car elle aide à établir de nouvelles connexions dans ton cerveau.
 
-Answer the three questions below to reflect on what you've learnt.
+Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris.
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Après chaque question, appuie sur **soumettre**. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
 
-Have fun!
+Amuse-toi bien !
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend : Question 1 sur 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Voici un carré bleu, quelles sont les valeurs RVB qui vont le créer ?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Un seul bloc de couleur bleue.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Pas tout à fait, lorsque toutes les valeurs de couleur sont définies sur `0`, la couleur est le **noir**.
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Pas tout à fait, les couleurs suivent le modèle RVB. Cette couleur a une valeur R maximale et pas de V ou B, donc sera **rouge**.
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  C'est correct ! Les couleurs suivent le modèle RVB. Cette couleur n'a ni R ni V, mais un maximum de B, donc sera **bleu**.
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Pas tout à fait, lorsque toutes les valeurs de couleur sont réglées au maximum `255` , la couleur est le **blanc**.
 
   --- /feedback ---
 
