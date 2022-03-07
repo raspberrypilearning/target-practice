@@ -1,33 +1,33 @@
-## Create a background
+## 背景を作成する
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The sky and grass are made by writing code to draw coloured rectangles.
+空と草は、色付きの長方形を描くコードを書くことによって作られています。
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![草色の長方形の上に空色の長方形がある出力領域で、背景を作成する。](images/background.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+[アーチェリースターター](https://trinket.io/python/9973649e5c){:target="_blank"}プロジェクトを開く。
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
+Trinketアカウントをお持ちの方は、**Remix**ボタンをクリックすると、`My Trinkets`ライブラリにコピーを保存することができます。
 
 --- /task ---
 
-The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game.
+スタータープロジェクトには、`p5` ライブラリをインポートするためのコードがすでに書かれており、このライブラリを使ってアーチェリーゲームを構築することになります。
 
 [[[p5-processing-library]]]
 
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this.
+`fill()`関数は、図形の内側の色を設定します。 スタータープロジェクトには、これを行うために使用できるRGBカラーがすでにいくつか含まれています。
 
-Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
+`draw()`関数を見つけ、`fill()`色を`sky`に設定するコードをインデントして、空を描く準備をします。
 
 --- code ---
 ---
@@ -36,8 +36,8 @@ line_highlights: 25
 ---
 
 def draw():     
-#Things to do in every frame     
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206     
+#すべてのフレームで行うこと     
+sky = color(92, 204, 206) #赤 = 92, 緑 = 204, 青 = 206     
 grass = color(149, 212, 122)     
 wood = color(145, 96, 51)     
 outer = color(0, 120, 180)
@@ -48,15 +48,15 @@ outer = color(0, 120, 180)
 
 --- /task ---
 
-The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
+`setup()`内の`size()`関数呼び出しで、画面サイズを400ピクセル×400ピクセルに設定しています。
 
 [[[p5-coordinates]]]
 
 --- task ---
 
-After your `fill()` code, draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
+`fill()`のコードの後に、`rect()`を左上の座標(`0`,`0`) に合わせて、幅`400`、高さ`250`で描画します。
 
-![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
+![灰色の長方形の上に、上部の角から始まる空の長方形の位置を示す座標グリッドが描かれた青色の長方形。](images/sky_coords.png)
 
 --- code ---
 ---
@@ -64,7 +64,7 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 26
 ---
 
-  fill(sky) rect(0, 0, 400, 250) #Start x, start y, width, height
+  fill(sky) rect(0, 0, 400, 250) #開始 x, 開始 y, 幅, 高さ
 
 --- /code ---
 
@@ -72,17 +72,17 @@ line_highlights: 26
 
 --- task ---
 
-**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library, the `run()` function calls the `setup()` function once, then the `draw()` function repeatedly.
+**テスト：** コードを実行して、結果を確認します。 `p5`ライブラリでは、`run()`関数が`setup()`関数を一度呼び出し、その後`draw()`関数を繰り返し呼び出すことを覚えておいてください。
 
-![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
+![灰色の長方形の上に、周囲に黒い境界線がある青い長方形。](images/sky_stroke.png){:width="300px"}
 
-That's a bit strange: there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
+ちょっと不思議な感じですね：あなたの空の周りに黒い線があります！ これは、プログラムが起動するときに、描画するものの周りに**ストローク** という黒い枠を自動的に設定するからです。
 
 --- /task ---
 
 --- task ---
 
-Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
+空を描画する前に`no_stroke()`を追加して、ストロークをオフにします。
 
 --- code ---
 ---
@@ -94,7 +94,7 @@ line_highlights: 25
 
   no_stroke()   
 fill(sky)   
-rect(0, 0, 400, 250) #x, y, width, height
+rect(0, 0, 400, 250) #x, y, 幅, 高さ
 
 --- /code ---
 
@@ -102,17 +102,17 @@ rect(0, 0, 400, 250) #x, y, width, height
 
 --- task ---
 
-**Test:** Run your project again to check that the stroke has gone.
+**テスト：** プロジェクトを再度実行して、ストロークがなくなったことを確認します。
 
 --- /task ---
 
 --- task ---
 
-`fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
+`fill()`は、`fill()`が新しい色で再度呼ばれるまで、描画されたすべての図形の塗りつぶしの色を変更します。
 
-Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`.
+`fill()`の色を`grass`に変更し、さらに`rect(x, y, width, height)`を追加します。
 
-This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
+この長方形は、画面の下部から始まるように、空の下の座標(0, 250) に配置する必要があります。
 
 --- code ---
 ---
@@ -124,7 +124,7 @@ line_highlights: 28-29
 
   no_stroke()     
 fill(sky)     
-rect(0, 0, 400, 250) #x, y, width, height    
+rect(0, 0, 400, 250) #x, y, 幅, 高さ    
 fill(grass)    
 rect(0, 250, 400, 150)
 
@@ -134,7 +134,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-**Test:** Run your project again to view the finished background.
+**テスト：** プロジェクトを再度実行して、完成した背景を表示します。
 
 --- /task ---
 
