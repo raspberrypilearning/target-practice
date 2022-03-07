@@ -1,20 +1,20 @@
-## Reflection
+## ふりかえり
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+よくやった、あなたはゲームを作りました！ 次はふりかえりの時間です。ふりかえりを行うことで、脳内に新しいつながりを作ることができます。このため、ふりかえりは学習の大事な部分です。
 
-Answer the three questions below to reflect on what you've learnt.
+以下の3つの質問に答えて、学んだことをふりかえってみましょう。
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+各質問の後、**ボタン**を押してください。 正しい答えが表示されます。 このアクティビティは何度でも実行できます。
 
-Have fun!
+お楽しみください!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: 質問1/3
 ---
-Here is a blue square, what are the RGB values that will create it?
+ここに青い正方形がありますが、これを作成するRGBの値は？
 
-![A single block of blue colour.](images/quiz-colour.png)
+![青い色の単一ブロック。](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+ちょっと違います、すべての色の値が `0`に設定されている場合、色は **黒**です。
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+ちょっと違います、色はRGBモデルに従います。 この色はR値が最大でGやBがないので、**赤**になります。
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  そのとおりです！ 色はRGBモデルに従います。 この色はRもGもなく、Bが最大なので、**青**になる。
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  ちょっと違います、すべての色の値を`255`の最大値に設定すると、色は**白**になります。
 
   --- /feedback ---
 
