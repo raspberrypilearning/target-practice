@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: Ερώτηση 2 από 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+Στο έργο σου, χρησιμοποίησες τις συνθήκες `if` , `elif`και `else` για να ελέγξεις σε ποιο χρώμα προσγειώθηκε το βέλος.
 
-When this code is run, what would be printed in the output area?
+Όταν εκτελείται αυτός ο κώδικας, τι θα εμφανιστεί στην περιοχή εξόδου;
 
 --- code ---
 ---
@@ -15,33 +15,33 @@ language: python
 
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if speed == 7: print('Υπερβολικά γρήγορα') elif speed == 5: print('Αρκετά γρήγορα') elif speed == 6: print('Πολύ γρήγορα') else: print('Δεν αναγνωρίστηκε η ταχύτητα!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Πολύ γρήγορα`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  Αυτό είναι το σωστό! Στη μεταβλητή **speed** έχει δοθεί η τιμή `6`, η οποία κάνει την συνθήκη `speed == 6` **Αληθή** και εμφανίζει το μήνυμα `Πολύ γρήγορα`.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Δεν αναγνωρίστηκε η ταχύτητα!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Όχι ακριβώς, κοίταξε την τιμή που έχει δοθεί στη μεταβλητή **speed**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Τίποτα δεν εμφανίζεται
 
   --- feedback ---
 
-  No, with the else statement, there will always be something that is true. Therefore, an output will be printed.
+  Όχι, με τη δήλωση else, θα υπάρχει πάντα κάτι που είναι αληθές. Επομένως, θα εμφανιστεί μια έξοδος.
 
   --- /feedback ---
 
