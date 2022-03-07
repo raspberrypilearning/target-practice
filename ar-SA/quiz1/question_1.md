@@ -1,20 +1,20 @@
-## Reflection
+## تفكير
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+أحسنت لقد صنعت لعبة! الآن ، حان وقت التفكير - التفكير جزء مهم من التعلم ، لأنه يساعد في إنشاء روابط جديدة في عقلك.
 
-Answer the three questions below to reflect on what you've learnt.
+أجب عن الأسئلة الثلاثة أدناه لتفكر فيما تعلمته.
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+بعد كل سؤال ، اضغط على **إرسال**. سيتم توجيهك نحو الإجابة الصحيحة. يمكنك القيام بهذا النشاط عدة مرات كما تريد.
 
-Have fun!
+إستمتع!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: السؤال 1 من 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+هذا مربع أزرق ، ما هي قيم RGB التي ستنشئه؟
 
-![A single block of blue colour.](images/quiz-colour.png)
+![كتلة واحدة من اللون الأزرق.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+ليس تمامًا ، عندما يتم ضبط جميع قيم الألوان على `0`، يكون اللون **أسود**.
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+ليس تمامًا ، فالألوان تتبع نموذج RGB. هذا اللون له قيمة R قصوى وليس G أو B ، لذلك سيكون **أحمر**.
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  هذا صحيح! الألوان تتبع نموذج RGB. هذا اللون لا يحتوي على R أو G ، ولكن الحد الأقصى B ، لذلك سيكون **أزرق**.
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  ليس تمامًا ، عندما يتم ضبط جميع قيم اللون على `255` أقصى ، يكون اللون **أبيض**.
 
   --- /feedback ---
 
