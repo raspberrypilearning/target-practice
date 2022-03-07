@@ -1,22 +1,22 @@
 #!/bin/python3
 
-# Import library code
+# Εισαγωγή του κώδικα της βιβλιοθήκης
 from p5 import *
 from math import *
 from random import randint
 
-# The mouse_pressed function goes here
+# Η συνάρτηση mouse_pressed πηγαίνει εδώ
 def mouse_pressed():
   if hit_color == outer:  
-    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+    print('Έχεις πετύχει τον εξωτερικό κύκλο, 50 πόντοι!') #Όπως οι συναρτήσεις, οι δηλώσεις 'if' έχουν εσοχή
   elif hit_color == inner:    
-    print('You hit the inner circle, 200 points!')   
+    print ('Έχεις πετύχει τον εσωτερικό κύκλο, 200 βαθμοί!')   
   elif hit_color == bullseye:    
-    print('You hit the bullseye, 500 points!')   
+    print ('Έχεις πετύχει το κέντρο του στόχου, 500 πόντοι!')   
   else:   
-    print('You missed! No points!')    
+    print('Έχασες! Δεν παίρνεις πόντους!')    
     
-# The shoot_arrow function goes here
+# Η συνάρτηση shoot_arrow πηγαίνει εδώ
 def shoot_arrow():
   global hit_color 
   arrow_x = randint(100, 300)
@@ -25,15 +25,15 @@ def shoot_arrow():
   ellipse(arrow_x, arrow_y, 15, 15)
 
 def setup():
-# Setup your game here
-  size(400, 400) # width and height
+# Όρισε τις παραμέτρους του παιχνιδιού σου εδώ
+  size(400, 400) # πλάτος και ύψος
   frame_rate(2)
 
 
 def draw():
-# Things to do in every frame
+# Ενέργειες που πρέπει να γίνονται σε κάθε καρέ
   global outer, inner, bullseye
-  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
+  sky = color(92, 204, 206) # Κόκκινο = 92, Πράσινο = 204, Μπλε = 206
   grass = color(149, 212, 122)
   wood = color(145, 96, 51)
   outer = color(0, 120, 180) 
@@ -51,11 +51,11 @@ def draw():
   fill(outer)
   ellipse(200, 200, 170, 170)
   fill(inner)   
-  ellipse(200, 200, 110, 110) #Inner circle   
+  ellipse(200, 200, 110, 110) #Εσωτερικός κύκλος   
   fill(bullseye)   
-  ellipse(200, 200, 30, 30) #Bullseye 
+  ellipse(200, 200, 30, 30) #Κέντρο στόχου 
   
   fill(wood)
   shoot_arrow()
-# Keep this to run your code
+# Από εδώ εκτελείς τον κώδικά σου
 run()
