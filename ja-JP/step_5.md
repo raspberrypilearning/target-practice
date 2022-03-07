@@ -1,19 +1,19 @@
-## Score points
+## 得点
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add scores based on where the arrow hits.
+このステップでは、矢が当たった場所に応じてスコアを追加します。
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![ターゲット、矢が様々な位置に現れ、ゲームの下に得点がテキストで表示されます。](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this, they need to be set as global variables:
+`draw()`関数内のカラー変数が、`mouse_pressed()`関数内のスコアチェックに使われます。 そのためには、グローバル変数として設定する必要があります。
 
 --- code ---
 ---
@@ -22,9 +22,9 @@ line_highlights: 28
 ---
 
 def draw():
-# Things to do in every frame
+# すべてのフレームで行うこと
   global outer, inner, bullseye    
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206    
+sky = color(92, 204, 206) #赤 = 92, 緑 = 204, 青 = 206    
 grass = color(149, 212, 122)    
 wood = color(145, 96, 51)    
 outer = color(0, 120, 180)    
@@ -36,18 +36,18 @@ bullseye = color(220, 200, 0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+私たちは常に<span style="color: #0faeb0; font-weight: bold;">条件</span>で判断しています。 「鉛筆の芯がとがっていなければ、削る」と言えます。 同様に、`if`条件では、ある条件が真か偽かによって異なる処理を行うコードを書くことができます。
 </p>
 
 --- task ---
 
-To `print` a message for the target's outer circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `outer`.
+ターゲットの外側の円に対してメッセージを`print`するには、`mouse_pressed()`関数に、`hit_color``==``outer`になっているかをチェックするコードを追加してください。
 
-Be careful when using the `=` symbol in Python:
- + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable
- + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
+Pythonで`=`記号を使用する場合は、注意が必要です。
+ + `=` は**代入<0>に使用されます - `arrow_x = 200`のように、変数の値を設定します。</li>
+ + `==` は**同値**をテストするために使われます - `hit_color == bullseye` のように - もしどちらかの側のものが同じ値であれば、テストは`真`、そうでない場合`偽`になります。</ul>
 
-Change the code in your `print()` to give a score:
+`print()`のコードを変更して、点数を出すようにしてください。
 
 --- code ---
 ---
@@ -55,10 +55,10 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 10-11
 ---
 
-# The mouse_pressed function goes here
+# mouse_pressed関数はここにあります
 def mouse_pressed():     
 if hit_color == outer:      
-print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+print('外側の円にあたった, 50点!') #関数と同様、'if'文はインデントされます。
 
 --- /code ---
 
@@ -66,29 +66,29 @@ print('You hit the outer circle, 50 points!') #Like functions, 'if' statements a
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked.
+**テスト：** プロジェクトを実行します。 あなたのメッセージを見るために青い外側の円の矢を止めてみてください。 矢の中心にあるピクセルの色が、保存されチェックされる色です。
 
-**Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**ヒント：** `setup()` 内の `frame_rate()` は、ゲームの描画速度を制御します。 速度が速すぎる場合は、小さい数値に設定してください。
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
+![矢が外側の円に接している出力領域。 ポイントプリント文が出力エリアに表示されます。](images/blue-points.png)
 
-**Debug:** Make sure your code matches exactly and you indented the code inside your `if` statement. The indent tells Python that the code should only run if the condition is `True`.
+**デバッグ：** コードが正確に一致し、`if`文の中でコードをインデントしていることを確認してください。 インデントはPythonに、条件が`True`のときだけコードを実行するように指示します。
 
 --- /task ---
 
-As points will be scored if the arrow lands on the `inner` or `bullseye` circles too, `outer` is not the only circle you need to check. To do this, use `elif` (a shortened version of else - if).
+`inner`や`bullseye`にも矢が当たれば得点になるので、`outer`だけでなく、innerもチェックすべきサークルです。 これを行うには、 `elif` (else --ifの短縮バージョン) を使用します。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> to make decisions in real life. When you are painting a picture of the sky, you might check if there is a yellow paint for the sun. Else, if there is no yellow paint, you look for orange. Else, if there is no yellow or orange paint, you might use red — really lightly!
+私たちは実生活の中で、<span style="color: #0faeb0; font-weight: bold;"> else - if </span> を使って意思決定をしています。 空の絵を描くときに、太陽用の黄色い絵の具があるかどうか確認します。 また、黄色の塗料がない場合は、オレンジ色を探します。 また、黄色やオレンジの絵の具がない場合は、赤を使うかもしれません。
 </p>
 
 --- task ---
 
-An `elif` can only be used with an `if` statement and, like an `if`, it checks a condition. If the condition is `True`, the `elif` runs some code.
+`elif`は`if`文でのみ使用でき、`if`同様、条件をチェックします。 条件が`True`の場合、`elif`で何らかのコードが実行される。
 
-What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it are `False`.
+`elif`の違いは、`if`とその前の`elif`の条件が`False`のときだけチェックする点です。
 
-Add `elif` statements for `inner` and `bullseye`.
+`inner`と`bullseye`に`elif`ステートメントを追加しました。
 
 --- code ---
 ---
@@ -98,11 +98,11 @@ line_highlights: 12-15
 
 def mouse_pressed():    
 if hit_color == outer:    
-print('You hit the outer circle, 50 points!')    
+print('外側の円に当たった、50点！')    
 elif hit_color == inner:    
-print('You hit the inner circle, 200 points!')   
+print('内側の円に当たった、 200点！')   
 elif hit_color == bullseye:    
-print('You hit the bullseye, 500 points!')
+print('ブルズアイに当たった, 500点！')
 
 --- /code ---
 
@@ -110,13 +110,13 @@ print('You hit the bullseye, 500 points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the red and yellow circles to see their messages.
+**テスト：**プロジェクトを実行します。 赤と黄色の円に矢を止めて、そのメッセージを確認してください。
 
-![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
+![矢が内側の円に接している出力領域。 ポイントプリント文が出力エリアに表示されます。](images/yellow-points.png)
 
-**Debug:** Make sure your `elif` is at the same indentation level as your `if`, and the code inside your `elif` is at the same level as the code inside your `if`.
+**デバッグ：** `elif`が`if`と同じインデントレベルであり、`elif`内のコードが`if`内のコードと同じレベルにあることを確認してください。
 
-**Debug:** If you see a message about `inner` or `bullseye` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+**Debug:** `inner` や `bullseye` が「定義されていない」というメッセージが表示されたら、 `draw()` に戻って、それらがグローバル変数を宣言している行にあるかどうかチェックしてみてください。
 
 ```python
 global outer, inner, bullseye
@@ -124,15 +124,15 @@ global outer, inner, bullseye
 
 --- /task ---
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? To do this last check, you use `else`.
+もうひとつ、「矢がどのターゲットサークルにも当たらなかった場合はどうするか」という判断が必要です。 この最後のチェックを行うために、`else`を使用するのです。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> to make decisions. When you wake up, you check and if it is morning you get up, else you go back to sleep. Can you think of any if ... else decisions you make? 
+私たちは、<span style="color: #0faeb0; font-weight: bold;"> if ... else </span>で判断しているのです。 目が覚めたら、朝かどうか確認し、朝であれば起き、そうでなければまた寝る。 if...... else、という判断に思い当たることはありますか？ 
 </p>
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+`else`内の`print`に`if`と`elif`のいずれの条件も満たされていない場合のメッセージを追加。
 
 --- code ---
 ---
@@ -142,13 +142,13 @@ line_highlights: 16-17
 
 def mouse_pressed():    
 if hit_color == outer:   
-print('You hit the outer circle, 50 points!')   
+print('外側の円に当たった、50点！')   
 elif hit_color == inner:   
-print('You hit the inner circle, 200 points!')   
+print('内側の円に当たった、 200点！')   
 elif hit_color == bullseye:    
-print('You hit the bullseye, 500 points!')   
+print('ブルズアイに当たった, 500点！')   
 else:   
-print('You missed! No points!')
+print('外した！ ポイントなし！')
 
 --- /code ---
 
@@ -156,9 +156,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow in the grass or sky to see the miss message. Change the number of points scored for the different colours if you like.
+**テスト：**プロジェクトを実行します。 草むらや空に矢を止めてみて、ミスメッセージを見ることができます。 お好みで色ごとの得点数を変えてみてください。
 
-![The output area with an arrow missing the target. The points print statement appears in the output area.](images/missed-points.png)
+![矢のある出力エリアがターゲットから外れた状態。 ポイントプリント文が出力エリアに表示されます。](images/missed-points.png)
 
 --- /task ---
 
