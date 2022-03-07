@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: السؤال 2 من 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+في مشروعك ، استخدمت `if` و `elif`و `else` للتحقق من اللون الذي سقط عليه السهم.
 
-When this code is run, what would be printed in the output area?
+عند تشغيل هذا التعليمات البرمجية ، ما الذي سيتم طباعته في منطقة المخرجات ؟
 
 --- code ---
 ---
@@ -15,17 +15,17 @@ language: python
 
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+speed = 6 if speed == 7: print('سريع جدا جدا') elif speed == 5: print('سريع') elif speed == 6: print('سريع جدا') else: print('لا يمكن تمييز السرعة!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- سريع جدًا
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  هذا صحيح! تم تخصيص متغير **speed** للقيمة `6`، مما يجعل `speed == 6` شرط **صحيح** ويطبع `سريع جدًا`.
 
   --- /feedback ---
 
@@ -33,15 +33,15 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  ليس تمامًا ، انظر إلى القيمة المخصصة للمتغير **speed**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- لا تتم طباعة أي شيء
 
   --- feedback ---
 
-  No, with the else statement, there will always be something that is true. Therefore, an output will be printed.
+  لا ، مع عبارة else ، سيكون هناك دائمًا شيء صحيح. لذلك ، ستتم طباعة المخرجات.
 
   --- /feedback ---
 
