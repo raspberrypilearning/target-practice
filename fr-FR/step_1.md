@@ -5,7 +5,9 @@ Utilise Python, avec la bibliothèque graphique `p5`, pour dessiner une cible et
 Tu vas devoir :
  + Personnaliser ton jeu avec des **couleurs RVB**
  + Utiliser les **instructions conditionnelles** (`if`, `elif`, `else`) pour prendre des décisions
- + Positionner les formes avec les coordonnées **x, y** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ + Positionner les formes avec les coordonnées **x, y** 
+ 
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  <span style="color: #0faeb0; font-weight: bold;"> Les couleurs RVB </span> ont des valeurs comprises entre 0 et 255 pour R(ouge), V(ert) et B(leu). <span style="color: #800080;">Violet</span> a des valeurs R, G, B (128, 0, 128) — quantités moyennes de rouge et de bleu, sans vert. Les artistes de jeux vidéo et les graphistes travaillent avec des couleurs RVB. 
 </p>
 

@@ -164,7 +164,7 @@ La bibliothèque `p5` « écoute » certains événements, l'un d'eux est la pre
 
 --- task ---
 
-Trouve le commentaire **# La fonction souris_pressee vient ici** et en dessous ajoute du code pour définir ta fonction `mouse_pressed()`.
+Trouve le commentaire **# La fonction mouse_pressed vient ici** et en dessous ajoute du code pour définir ta fonction `mouse_pressed()`.
 
 Ajoute du code pour imprimer les quantités de rouge, de vert et de bleu dans le pixel sur lequel la flèche atterrit.
 
