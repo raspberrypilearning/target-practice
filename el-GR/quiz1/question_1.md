@@ -1,20 +1,20 @@
-## Reflection
+## Αναστοχασμός
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Μπράβο, έφτιαξες ένα παιχνίδι! Τώρα, ήρθε η ώρα να εξετάσεις τις νέες γνώσεις- ο αναστοχασμός είναι σημαντικό μέρος της μάθησης, επειδή βοηθά στη δημιουργία νέων συνδέσεων στον εγκέφαλό σου.
 
-Answer the three questions below to reflect on what you've learnt.
+Απάντησε στις τρεις ερωτήσεις παρακάτω για να διαπιστώσεις τι έμαθες.
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Μετά από κάθε ερώτηση, πάτα **υποβολή**. Θα οδηγηθείς στη σωστή απάντηση. Μπορείς να επαναλάβεις αυτήν τη δραστηριότητα όσες φορές θέλεις.
 
-Have fun!
+Καλή διασκέδαση!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: Ερώτηση 1 από 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Εδώ είναι ένα μπλε τετράγωνο, ποιες είναι οι τιμές RGB που θα το δημιουργήσουν;
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Ένα μπλοκ μπλε χρώματος.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Όχι ακριβώς, όταν όλες οι τιμές χρώματος έχουν οριστεί σε `0`, το χρώμα είναι **μαύρο**.
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Όχι ακριβώς, τα χρώματα ακολουθούν το μοντέλο RGB. Αυτό το χρώμα έχει μέγιστη τιμή R και δεν έχει G ή B, επομένως θα είναι **κόκκινο**.
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  Αυτό είναι το σωστό! Τα χρώματα ακολουθούν το μοντέλο RGB. Αυτό το χρώμα δεν έχει R ή G, αλλά το μέγιστο B, επομένως θα είναι **μπλε**.
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Όχι ακριβώς, όταν όλες οι τιμές χρώματος έχουν οριστεί στο μέγιστο `255`, το χρώμα είναι **λευκό**.
 
   --- /feedback ---
 
