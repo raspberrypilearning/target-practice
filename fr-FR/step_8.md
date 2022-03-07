@@ -1,10 +1,10 @@
-## What next?
+## Et ensuite ?
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) , tu peux passer au projet [Lancement de fusée](https://projects.raspberrypi.org/en/projects/rocket-launch). Dans ce projet, tu réaliseras une animation interactive d'une fusée lançant un satellite en orbite.
 
 --- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png)
+![Projet de lancement de fusée.](images/showcase_rocket.png)
 
 --- /print-only ---
 
@@ -12,20 +12,20 @@ If you are following the [Introduction to Python](https://projects.raspberrypi.o
 
 --- task ---
 
-**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use to reach orbit but not waste too much extra fuel?
+**Essaye :** Ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
 
-**Tip:** Around 25,000kg should be enough, but experiment with the numbers to see what happens.
+**Astuce :** Environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
 
 <iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen mark="crwd-mark">
 </iframe>
 
-![Rocket launch project](images/showcase_rocket.png)
+![Projet de lancement de fusée](images/showcase_rocket.png)
 
 --- /task ---
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Si tu veux t'amuser davantage en explorant Python, tu peux essayer n'importe lequel de [ces projets](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
 
 
 
