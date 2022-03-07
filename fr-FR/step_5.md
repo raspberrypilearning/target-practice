@@ -56,7 +56,8 @@ Change le code dans ton `print()` pour donner un score :
 ---
 language: python 
 filename: main.py - mouse_pressed() 
-line_numbers: true line_number_start: 8
+line_numbers: true 
+line_number_start: 8
 line_highlights: 10-11
 ---
 
