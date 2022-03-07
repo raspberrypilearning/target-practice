@@ -1,47 +1,47 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend : Question 2 sur 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+Dans ton projet, tu as utilisé les conditions`if`, `elif`et `else` pour vérifier sur quelle couleur la flèche a atterri.
 
-When this code is run, what would be printed in the output area?
+Lorsque ce code est exécuté, qu'est-ce qui sera imprimé dans la zone de sortie ?
 
 --- code ---
 ---
 language: python
 ---
 
-speed = 6
+vitesse = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if vitesse == 7: print('Super rapide') elif speed == 5: print('Assez rapide') elif speed == 6: print('Très rapide') else: print('Vitesse non reconnue !')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Très rapide`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  C'est correct ! La variable **vitesse** a reçu la valeur `6`, ce qui rend la condition `vitesse == 6` **True** et imprime `Très rapide`.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Vitesse non reconnue !`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Pas tout à fait, regarde la valeur attribuée à la variable **vitesse**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Rien ne s'imprime
 
   --- feedback ---
 
-  No, with the else statement, there will always be something that is true. Therefore, an output will be printed.
+  Non, avec l'instruction else, il y aura toujours quelque chose de vrai. Par conséquent, une sortie sera imprimée.
 
   --- /feedback ---
 
