@@ -10,7 +10,7 @@ steps:
   - title: Create a background
   - title: Draw your target
     completion: engaged  
-  - title: Fire the arrow
+  - title: Fire your arrow
   - title: Score points
   - title: Reflection
     knowledge_quiz:
