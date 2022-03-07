@@ -1,33 +1,33 @@
-## Create a background
+## Δημιούργησε ένα υπόβαθρο
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The sky and grass are made by writing code to draw coloured rectangles.
+Ο ουρανός και το γρασίδι φτιάχνονται γράφοντας κώδικα για να σχεδιάσεις χρωματιστά ορθογώνια.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![Η περιοχή εξόδου με ένα ορθογώνιο στο χρώμα του ουρανού πάνω από ένα ορθογώνιο χρώματος γρασιδιού για τη δημιουργία του φόντου.](images/background.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+Άνοιξε το [αρχικό έργο Τοξοβολίας](https://trinket.io/python/9973649e5c){:target="_blank"}.
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
+Εάν έχεις λογαριασμό Trinket, μπορείς να κάνεις κλικ στο κουμπί **Remix** για να αποθηκεύσεις ένα αντίγραφο στη βιβλιοθήκη `My Trinkets`.
 
 --- /task ---
 
-The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game.
+Το αρχικό έργο έχει ήδη έτοιμο κώδικα για να εισαγάγεις τη βιβλιοθήκη `p5`, θα χρησιμοποιήσεις αυτήν τη βιβλιοθήκη για να δημιουργήσεις το παιχνίδι τοξοβολίας σου.
 
 [[[p5-processing-library]]]
 
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this.
+Η συνάρτηση `fill()` ορίζει το εσωτερικό χρώμα των σχημάτων. Το αρχικό έργο περιέχει ήδη μερικά χρώματα RGB που μπορείς να χρησιμοποιήσεις για να το κάνεις αυτό.
 
-Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
+Βρες τη συνάρτηση `draw()` και ετοιμάσου να σχεδιάσεις τον ουρανό προσθέτοντας κώδικα σε εσοχή για να ορίσεις τη μεταβλητή `sky` ως το χρώμα της `fill()`:
 
 --- code ---
 ---
@@ -36,8 +36,8 @@ line_highlights: 25
 ---
 
 def draw():     
-#Things to do in every frame     
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206     
+#Πράγματα που θα συμβαίνουν σε κάθε καρέ     
+sky = color(92, 204, 206) #Κόκκινο = 92, Πράσινο = 204, Μπλε = 206     
 grass = color(149, 212, 122)     
 wood = color(145, 96, 51)     
 outer = color(0, 120, 180)
@@ -48,15 +48,15 @@ outer = color(0, 120, 180)
 
 --- /task ---
 
-The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
+Η κλήση της συνάρτησης `size()` στο `setup()` ορίζει το μέγεθος της οθόνης σε 400 pixel επί 400 pixel.
 
 [[[p5-coordinates]]]
 
 --- task ---
 
-After your `fill()` code, draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
+Μετά τον κώδικα της `fill()`, σχεδίασε ένα `rect()` (ορθογώνιο) για τον ουρανό με συντεταγμένες πάνω αριστερά (`0`,`0`), πλάτος `400` για να ταιριάζει με το πλάτος της οθόνης και ύψος `250`.
 
-![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
+![Ένα μπλε ορθογώνιο στη θέση του ουρανού που ξεκινά από την επάνω γωνία, πάνω από ένα γκρι ορθογώνιο.](images/sky_coords.png)
 
 --- code ---
 ---
@@ -64,7 +64,7 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 26
 ---
 
-  fill(sky) rect(0, 0, 400, 250) #Start x, start y, width, height
+  fill(sky) rect(0, 0, 400, 250) #Αρχή x, αρχή y, πλάτος, ύψος
 
 --- /code ---
 
@@ -72,17 +72,17 @@ line_highlights: 26
 
 --- task ---
 
-**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library, the `run()` function calls the `setup()` function once, then the `draw()` function repeatedly.
+**Δοκιμή:** Εκτέλεσε τον κώδικά σου για να δεις τον ουρανό που ζωγράφισες. Θυμήσου ότι με τη βιβλιοθήκη `p5`, η συνάρτηση `run()` καλεί τη συνάρτηση `setup()` μία φορά και μετά τη συνάρτηση `draw()` επανειλημμένα.
 
-![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
+![Ένα μπλε ορθογώνιο με μαύρο περίγραμμα γύρω του, πάνω από ένα γκρι ορθογώνιο.](images/sky_stroke.png){:width="300px"}
 
-That's a bit strange: there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
+Αυτό είναι λίγο περίεργο: υπάρχει μια μαύρη γραμμή γύρω από τον ουρανό σου! Αυτό συμβαίνει επειδή, όταν ξεκινά το πρόγραμμα, θέτει αυτόματα ένα μαύρο περίγραμμα — που ονομάζεται **stroke** — γύρω από όλα όσα σχεδιάζει.
 
 --- /task ---
 
 --- task ---
 
-Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
+Απενεργοποίησε το stroke προσθέτοντας `no_stroke()` πριν ξεκινήσεις να σχεδιάζεις τον ουρανό.
 
 --- code ---
 ---
@@ -94,7 +94,7 @@ line_highlights: 25
 
   no_stroke()   
 fill(sky)   
-rect(0, 0, 400, 250) #x, y, width, height
+rect(0, 0, 400, 250) #x, y, πλάτος, ύψος
 
 --- /code ---
 
@@ -102,17 +102,17 @@ rect(0, 0, 400, 250) #x, y, width, height
 
 --- task ---
 
-**Test:** Run your project again to check that the stroke has gone.
+**Δοκιμή:** Τρέξε το έργο σου ξανά για να διαπιστώσεις ότι το περίγραμμα έχει φύγει.
 
 --- /task ---
 
 --- task ---
 
-`fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
+Η συνάρτηση `fill()` αλλάζει το χρώμα γεμίσματος για όλα τα σχήματα που σχεδιάζονται έως ότου γίνει ξανά κλήση της `fill()` με νέο χρώμα.
 
-Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`.
+Άλλαξε το χρώμα της `fill()` σε `grass` και πρόσθεσε ακόμη ένα `rect(x, y, width, height)`.
 
-This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
+Αυτό το ορθογώνιο πρέπει να τοποθετηθεί κάτω από τον ουρανό σε συντεταγμένες (0, 250), έτσι ώστε να ξεκινά από το κάτω μέρος της οθόνης.
 
 --- code ---
 ---
@@ -124,7 +124,7 @@ line_highlights: 28-29
 
   no_stroke()     
 fill(sky)     
-rect(0, 0, 400, 250) #x, y, width, height    
+rect(0, 0, 400, 250) #x, y, πλάτος, ύψος    
 fill(grass)    
 rect(0, 250, 400, 150)
 
@@ -134,7 +134,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-**Test:** Run your project again to view the finished background.
+**Δοκιμή:** Τρέξε το έργο σου ξανά για να δεις το ολοκληρωμένο υπόβαθρο.
 
 --- /task ---
 
