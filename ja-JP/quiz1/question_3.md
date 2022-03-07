@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: 質問3/3
 ---
 
-An ellipse is drawn using the following code:
+次のコードで楕円を描画します。
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this ellipse in the output area?
+次の画像のうち、出力領域でのこの楕円の正しい位置を示しているのはどれですか？
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![出力領域の右下隅の中央にある緑色の円。](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `ellipse(400,400,300,300)`.
+  ちょっと違います、右下の円を中央に配置するには、画面サイズと同じ座標にする必要があります。 この例では、楕円は `ellipse(400,400,300,300)`になります。
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![出力領域の中央にある緑色の円。](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `ellipse(200,200,300,300)`.
+  ちょっと違います、円を中央に配置するためには、座標が画面サイズの半分になる必要があるのです。 この例では、 `ellipse(200,200,300,300)`です。
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![出力領域の左上隅の中央にある緑色の円。](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  そのとおりです！ この円の中心は、画面の左上隅の座標(0,0) です。
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![出力領域の右上に向かって中央に配置された緑色の円。](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  いいえ、この円のコードは `ellipse(350,150,300,300)` で、画面の右上に向かって中央に配置されます。 `x`座標は楕円が画面の横方向にどれだけあるか、`y`座標は画面の下方向にどれだけあるかを示しています。
 
   --- /feedback ---
 
