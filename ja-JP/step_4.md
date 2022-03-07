@@ -1,21 +1,21 @@
-## Fire your arrow
+## 矢を放つ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now it's time to add an arrow that moves randomly across the target area.
+次に、ターゲット領域をランダムに移動する矢を追加します。
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![茶色の丸い矢が様々な位置に現れるターゲット。](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Find the comment **#The shoot_arrow function goes here** and below it add code to define your `shoot_arrow()` function.
+コメント **# shoot_arrow関数はここにあります ** を探し、その下に `shoot_arrow()` 関数を定義するコードを追加してください。
 
-Add a small `ellipse()` in the centre of the screen to represent the arrow.
+画面中央に小さな`ellipse()`を追加し、矢を表現します。
 
 --- code ---
 ---
@@ -23,7 +23,7 @@ language: python filename: main.py — shoot_arrow() line_numbers: true line_num
 line_highlights: 11-12
 ---
 
-# The shoot_arrow function goes here
+# shoot_arrow関数はここにあります
 def shoot_arrow():   
 ellipse(200, 200, 15, 15)
 
@@ -33,7 +33,7 @@ ellipse(200, 200, 15, 15)
 
 --- task ---
 
-Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `wood`, then call your new `shoot_arrow()` function.
+ターゲットを作成する `draw()`コードに移動して、`fill()`を `wood `に設定するコードを最後に追加し、新しい `shoot_arrow()` 関数を呼び出します。
 
 --- code ---
 ---
@@ -53,24 +53,24 @@ shoot_arrow()
 
 --- task ---
 
-**Test:** Run you code and see the arrow appear in the bullseye.
+**テスト:**コードを実行し、矢がブルズアイに表示されることを確認します。
 
-![The target on the background with a brown circle arrow on it.](images/arrow-middle.png)
+![背景のターゲットに茶色の丸い矢印が描かれている。](images/arrow-middle.png)
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computer games, videos, and animations create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>. The speed that the image changes at is called the <span style="color: #800080;">frame rate</span> and is given in <span style="color: #800080;">fps</span> or frames per second.  
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> コンピュータゲーム、ビデオ、アニメーションは、たくさんの画像を次々に表示することで、動きの効果を生み出します。 各画像は<span style="color: #0faeb0; font-weight: bold;">フレーム</span>と呼ばれます。 画像が変化する速さを<span style="color: #800080;">フレームレート</span>といい、<span style="color: #800080;">fps</span>またはフレーム/秒の単位で示されます。  
 </p>
 
-The `frame_rate(2)` line in `setup()` sets the frame rate to 2 frames per second.
+`setup()` の `frame_rate(2)` 行で、フレームレートを2フレーム/秒に設定します。
 
-The `draw()` function is called every frame. You are going to draw the arrow in a random position each time `draw()` is called.
+`draw()`関数は1フレームごとに呼び出されます。 `draw()`が呼ばれるたびにランダムな位置に矢を描画することになります。
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+背景とターゲットは、古い矢の上に描画されます。 これは、一度に1つの矢しか表示されないことを意味します。
 
 --- task ---
 
-Find the `import` statements, at the top of your code, you are going to use `randint` from the `random` library.
+コードの先頭で`import`ステートメントを見つけ、`random`ライブラリから`randint`を使用します。
 
 --- code ---
 ---
@@ -78,7 +78,7 @@ language: python filename: main.py line_numbers: true
 line_number_start: 3
 ---
 
-# Import library code
+# ライブラリコードをインポートする
 from p5 import *    
 from math import *    
 from random import randint
@@ -89,13 +89,13 @@ from random import randint
 
 --- task ---
 
-Go to your `shoot_arrow()` function and add two new `arrow_x` and `arrow_y` variables to store random numbers between `100` and `300`.
+`shoot_arrow()`関数に行き、`arrow_x`と`arrow_y`の2つの新しい変数を追加して、`100`から`300`までの乱数を格納します。
 
-This will let some shots miss the target, without them going all the way to the edges of your game.
+これによって、一部のショットが的を外れても、端に行くことはなくなります。
 
-Change your `ellipse()` to use the new variables to position your arrow.
+`ellipse()` を変更して、新しい変数を使用して矢を配置します。
 
-![A rectangle showing the target area coordinates in a semi transparent rectangle.](images/target_area.png)
+![半透明の長方形でターゲット領域の座標を示す長方形。](images/target_area.png)
 
 --- code ---
 ---
@@ -103,29 +103,29 @@ language: python filename: main.py — shoot_arrow() line_numbers: true line_num
 line_highlights: 12-14
 ---
 
-# The shoot_arrow function goes here
+# shoot_arrow関数はここにあります
 def shoot_arrow():    
 arrow_x = randint(100, 300)   
 arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #Upate to random coordinates
+ellipse(arrow_x, arrow_y, 15, 15) #ランダム座標へのアップデイト
 
 --- /code ---
 
 --- /task ---
 
-### Get the colour the arrow hits
+### 矢が当たった色を取得する
 
-The `get()` function returns the colour of a pixel.
+`get()`関数は、ピクセルの色を返します。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+<span style="color: #0faeb0; font-weight: bold;">ピクセル</span>は、ピクチャーエレメントの略で、画像の中にある1つの色のついた点のことです。 画像は、たくさんの色のついたピクセルで構成されています。
 </p>
 
 --- task ---
 
-You need to store the colour that the arrow is aiming at before you draw an arrow on top of it.
+その上に矢を描く前に、矢が狙っている色を保存する必要があります。
 
-Add code to store the `hit_color`. Use the `get()` function, to get the colour of the pixel at the `arrow_x` and `arrow_y` coordinates — the centre of the arrow.
+`hit_color`を格納するコードを追加します。 `get()`関数で、`arrow_x`と`arrow_y`座標（矢の中心）のピクセルの色を取得することができます。
 
 --- code ---
 ---
@@ -133,26 +133,26 @@ language: python filename: main.py — shoot_arrow() line_numbers: true line_num
 line_highlights: 14
 ---
 
-# The shoot_arrow function goes here
+# shoot_arrow関数はここにあります
 def shoot_arrow():    
 arrow_x = randint(100, 300)    
 arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow   
+hit_color = get(arrow_x, arrow_y) #矢印を描く前に色を保存する   
 ellipse(arrow_x, arrow_y, 15, 15)
 
 --- /code ---
 
-**Tip:** The code to get the colour and save it needs to be **before** the code to draw the ellipse otherwise you will always save the wood colour of the arrow!
+**Tip:** 色を取得して保存するコードは、楕円を描くコードの**前**にある必要があります。そうしないと、常に矢印の木の色が保存されます!
 
 --- /task ---
 
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed()` function.
+`p5` ライブラリは、特定のイベントを「リッスン」します。これらの1つは、マウスボタンを押すことです。 マウスボタンが押されたことを検知すると、`mouse_pressed()`関数で指定されたコードを実行します。
 
 --- task ---
 
-Find the comment **#The mouse_pressed function goes here** and below it add code to define your `mouse_pressed()` function.
+コメント **# mouse_pressed関数はここにあります ** を探し、その下に `mouse_pressed()` 関数を定義するコードを追加します。
 
-Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
+矢が当たったピクセルの赤、緑、青の量を表示するコードを追加します。
 
 --- code ---
 ---
@@ -160,7 +160,7 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 9-10
 ---
 
-# The mouse_pressed function goes here
+# mouse_pressed関数はここにあります
 def mouse_pressed():    
 print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -170,9 +170,9 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- task ---
 
-You have defined two functions `shoot_arrow()` and `mouse_pressed()`, both of these functions need to use the `hit_color` variable.
+2つの関数 `shoot_arrow()` と `mouse_pressed()` を定義していますが、これらの関数は両方とも `hit_color` 変数を使用する必要があります。
 
-A variable that needs to be used thoughout a program is known as a **global variable**. Add code to your `shoot_arrow()` function to make `hit_color` a global variable:
+プログラム全体で使用する必要のある変数は、 **グローバル変数**と呼ばれます。 `shoot_arrow()` 関数にコードを追加して、 ` hit_color ` をグローバル変数にします。
 
 --- code ---
 ---
@@ -180,12 +180,12 @@ language: python filename: main.py - shoot_arrow() line_numbers: true line_numbe
 line_highlights: 14
 ---
 
-# The shoot_arrow function goes here
+# shoot_arrow関数はここにあります
 def shoot_arrow():    
-global hit_color #Can be used in other functions     
+global hit_color #他の機能でも使用可能     
 arrow_x = randint(100, 300)     
 arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow     
+hit_color = get(arrow_x, arrow_y) #矢を描く前に色を保存する     
 ellipse(arrow_x, arrow_y, 15, 15)
 
 --- /code ---
@@ -194,15 +194,15 @@ ellipse(arrow_x, arrow_y, 15, 15)
 
 --- task ---
 
-**Test:** Run your project. The arrow is redrawn at random coordinates.
+**テスト：** プロジェクトを実行します。 矢印はランダムな座標で再描画されます。
 
-The project gets the `hit_color` each time the arrow is redrawn and prints the colour value in the output area underneath the target.
+プロジェクトでは、矢印が再描画されるたびに`hit_color`を取得し、ターゲットの下の出力エリアにその色の値を表示します。
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![さまざまな位置に茶色の円の矢印が表示されているターゲット。](images/fire_arrow.gif)
 
-**Debug:** If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+**デバッグ：** 「`hit_colour` being 'not defined'」というメッセージが表示された場合は、 `shoot_arrow()` に戻り、 `のグローバル` 行があることを確認します。
 
-**Debug:** Check the `print` line really carefully for commas and brackets.
+**デバッグ：** `print` 行にカンマや括弧がないか、本当に注意深くチェックしてください。
 
 --- /task ---
 
