@@ -1,42 +1,42 @@
-## Draw your target
+## Dessiner ta cible
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
+Le support cible est en forme de triangle. La cible est constituée de cercles colorés - les cercles plus petits valent plus de points que les plus grands. 
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![La zone de sortie avec la cible et le support.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-Shapes are drawn in the order that the lines of code run. The triangular wooden stand is partly behind the target circles so it must be drawn first.
+Les formes sont dessinées dans l'ordre d'exécution des lignes de code. Le support triangulaire en bois se trouve en partie derrière les cercles cibles, il doit donc être dessiné en premier.
 
-Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
+Imagine découper toutes les formes dans du papier. Selon la façon dont tu organises et superposes ce papier, le résultat final peut être très différent.
 
-### Draw the stand
+### Dessiner le support
 
 --- task ---
 
-When you call the `triangle()` function, you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners.
+Lorsque tu appelles la fonction `triangle()`, tu dois fournir trois ensembles de coordonnées, `x1, y1, x2, y2, x3, y3` représentant chacun la position de l'un des coins du triangle.
 
 --- collapse ---
 ---
-title: Triangle coordinates
+title: Coordonnées du triangle
 ---
 
-  Here are three example triangles, each with different sets of coordinates. Look at the grid position of each to see how the `x` and `y` coordinates position the corners of the triangles:
-  + Green triangle: triangle(50, 50, 150, 50, 180, 100)
-  + Blue triangle: triangle(210, 280, 300, 350, 380, 100)
-  + Brown triangle: triangle(50, 150, 200, 250, 180, 350)
+  Voici trois exemples de triangles, chacun avec différents ensembles de coordonnées. Regarde la position de grille de chacun pour voir comment les coordonnées `x` et `y` positionnent les coins des triangles :
+  + Triangle vert : triangle(50, 50, 150, 50, 180, 100)
+  + Triangle bleu : triangle(210, 280, 300, 350, 380, 100)
+  + Triangle marron : triangle(50, 150, 200, 250, 180, 350)
 
-  ![The output area with three triangles.](images/triangles-coords.png)
+  ![La zone de sortie avec trois triangles.](images/triangles-coords.png)
 
 --- /collapse ---
 
-Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
+Dessine un `triangle()` pour le support avec des coins à (150, 350), (200, 150) et (250, 350).
 
-![A brown triangle on grass and against a sky with the coordinate points labelled.](images/stand_coords.png)
+![Un triangle marron sur l'herbe et contre un ciel avec les points de coordonnées étiquetés.](images/stand_coords.png)
 
 --- code ---
 ---
@@ -44,38 +44,38 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 31-32
 ---
 
-  fill(grass)   
-rect(0, 250, 400, 150) #x, y, width, height
+  fill(herbe)   
+rect(0, 250, 400, 150) #x, y, largeur, hauteur
 
-  fill(wood) #Set the stand fill colour to brown     
+  fill(bois) #Définir la couleur de remplissage du support sur marron     
 triangle(150, 350, 200, 150, 250, 350)
 
 
 --- /code ---
 
-**Tip:** We have added comments to our code, like `#Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Astuce :** Nous avons ajouté des commentaires à notre code, comme `#Définir la couleur de remplissage du support sur marron`, pour te dire ce qu'il fait. Tu n'as pas besoin d'ajouter ces commentaires à ton code, mais ils peuvent être utiles pour te rappeler ce que font les lignes de code.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target.
+**Test :** Exécute ton code pour voir le support de ta cible.
 
-![A brown triangle on grass and against a sky.](images/target-stand.png)
+![Un triangle marron sur l'herbe et contre un ciel.](images/target-stand.png)
 
 --- /task ---
 
-### Draw the target
+### Dessiner la cible
 
 --- task ---
 
-The largest part of the target will be a blue **circle** made by using the `ellipse()` function. An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle.
+La plus grande partie de la cible sera un **cercle bleu** créé en utilisant la fonction `ellipse()`. Une ellipse est une forme avec un seul côté et sans coins. Elle peut être écrasée, comme un ovale, ou parfaitement ronde, comme un cercle.
 
-An ellipse needs `x` and `y` coordinates, width, and height. The `x` and `y` coordinates of an ellipse are the centre position.
+Une ellipse nécessite des coordonnées `x` et `y` , largeur et hauteur. Les coordonnées `x` et `y` d'une ellipse sont la position centrale.
 
-The blue circle will cover the brown triangle where they overlap, because the circle was drawn later.
+Le cercle bleu couvrira le triangle marron où ils se chevauchent, car le cercle a été dessiné plus tard.
 
-**Tip:** To make a circle, the **width** and **height** must be the same.
+**Astuce :** Pour faire un cercle, les **largeur** et **hauteur** doivent être identiques.
 
 --- code ---
 ---
@@ -83,10 +83,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 33-34
 ---
 
-  fill(wood)   
+  fill(bois)   
 triangle(150, 350, 200, 150, 250, 350)   
-fill(outer)    
-ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
+fill(exterieur)    
+ellipse(200, 200, 170, 170) #Cercle extérieur. 200, 200 est le milieu de l'écran
 
 --- /code ---
 
@@ -94,21 +94,21 @@ ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Test :** Exécute ton code pour voir le premier grand cercle bleu.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
+![Un triangle marron et un cercle bleu sur l'herbe et contre un ciel.](images/blue-circle.png)
 
 --- /task ---
 
 --- task ---
 
-Create two new variables to store colours `inner` and `bullseye` for the remaining circles.
+Crée deux nouvelles variables pour stocker les couleurs `intérieur` et `centre` pour les cercles restants.
 
-Assign colours to the `inner` and `bullseye` variables using `color()`.
+Attribue des couleurs aux variables `intérieure` et `centre` en utilisant `color()`.
 
-The `color()` function expects three numbers: one each for red, green, and blue.
+La fonction `color()` attend trois nombres : un pour le rouge, le vert et le bleu.
 
-We used numbers that give traditional archery target colours, but you can use whatever colours you like as long as they are different from each other.
+Nous avons utilisé des chiffres qui donnent les couleurs traditionnelles des cibles de tir à l'arc, mais tu peux utiliser les couleurs que tu aimes tant qu'elles sont différentes les unes des autres.
 
 [[[generic-theory-simple-colours]]]
 
@@ -118,15 +118,15 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 24-25
 ---
 
-def draw():   
-#Things to do in every frame
+def dessin():   
+#Choses à faire dans chaque image
 
-  sky = color(92, 204, 206)   
-grass = color(149, 212, 122)   
-wood = color(145, 96, 51)   
-outer = color(0, 120, 180) #Blue    
-inner = color(210, 60, 60) # Red    
-bullseye = color(220, 200, 0) #Yellow
+  ciel = color(92, 204, 206)   
+herbe = color(149, 212, 122)   
+bois = color(145, 96, 51)   
+exterieur = color(0, 120, 180) #Bleu    
+interieur = color(210, 60, 60) #Rouge    
+centre = color(220, 200, 0) #Jaune
 
 --- /code ---
 
@@ -134,9 +134,9 @@ bullseye = color(220, 200, 0) #Yellow
 
 --- task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200) — the middle of the screen.
+La cible est constituée de cercles de tailles différentes avec les mêmes coordonnées centrales (200, 200) - le milieu de l'écran.
 
-Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle.
+Ajoute deux autres cercles pour représenter un cercle intérieur et le centre. Change le `fill()` avant de dessiner chaque cercle.
 
 --- code ---
 ---
@@ -144,14 +144,14 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 37-40
 ---
 
-  fill(wood)    
-triangle(150, 350, 200, 150, 250, 350) #Stand    
-fill(outer)   
-ellipse(200, 200, 170, 170) #Outer circle   
-fill(inner)   
-ellipse(200, 200, 110, 110) #Inner circle   
-fill(bullseye)   
-ellipse(200, 200, 30, 30) #Bullseye
+  fill(bois)    
+triangle(150, 350, 200, 150, 250, 350) #Support    
+fill(exterieur)   
+ellipse(200, 200, 170, 170) #Cercle extérieur   
+fill(interieur)   
+ellipse(200, 200, 110, 110) #Cercle interieur   
+fill(centre)   
+ellipse(200, 200, 30, 30) #Centre
 
 --- /code ---
 
@@ -159,11 +159,11 @@ ellipse(200, 200, 30, 30) #Bullseye
 
 --- task ---
 
-**Test:** Run your project again to see the target with three coloured circles. Change the colours until you are happy with them.
+**Test :** Exécute à nouveau ton projet pour voir la cible avec trois cercles colorés. Change les couleurs jusqu'à ce que tu en sois satisfait.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)
+![Un triangle marron avec trois cercles colorés sur l'herbe et contre un ciel.](images/three-circles.png)
 
-**Debug:** Python uses the American spelling of 'color' (without a 'u') so make sure you do the same.
+**Débogage:** Python utilise l'orthographe américaine de « color » (sans "u") alors assure-toi de faire de même.
 
 --- /task ---
 
