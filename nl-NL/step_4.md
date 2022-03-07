@@ -1,21 +1,21 @@
-## Fire your arrow
+## Schiet de pijl af
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now it's time to add an arrow that moves randomly across the target area.
+Nu is het tijd om een pijl toe te voegen die willekeurig over het doelgebied beweegt.
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![Het doelwit, met een bruine cirkelpijl die op verschillende posities verschijnt.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Find the comment **#The shoot_arrow function goes here** and below it add code to define your `shoot_arrow()` function.
+Zoek de opmerking **#De schiet_pijl functie komt hier** en daaronder voeg je code toe om je `schiet_pijl()`-functie te definiëren.
 
-Add a small `ellipse()` in the centre of the screen to represent the arrow.
+Voeg een kleine `ellips()` toe in het midden van het scherm om de pijl weer te geven.
 
 --- code ---
 ---
@@ -23,8 +23,8 @@ language: python filename: main.py — shoot_arrow() line_numbers: true line_num
 line_highlights: 11-12
 ---
 
-# The shoot_arrow function goes here
-def shoot_arrow():   
+# De schiet_pijl functie komt hier
+def schiet_pijl():   
 ellipse(200, 200, 15, 15)
 
 --- /code ---
@@ -33,7 +33,7 @@ ellipse(200, 200, 15, 15)
 
 --- task ---
 
-Go to the `draw()` code that creates the target and add code at the end to set the `fill()` to `wood`, then call your new `shoot_arrow()` function.
+Ga naar de `draw()` code die het doel maakt en voeg aan het einde code toe om de `fill()` tcode voor `hout` in te stellen, en roep dan je nieuwe `schiet_pijl()` functie aan.
 
 --- code ---
 ---
@@ -41,11 +41,11 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 44-45
 ---
 
-  fill(bullseye)    
+  fill(roos)    
 ellipse(200, 200, 30, 30)
 
-  fill(wood)   
-shoot_arrow()
+  fill(hout)   
+schiet_pijl()
 
 --- /code ---
 
@@ -53,24 +53,24 @@ shoot_arrow()
 
 --- task ---
 
-**Test:** Run you code and see the arrow appear in the bullseye.
+**Test:** Voer je code uit en zie de pijl in de roos verschijnen.
 
-![The target on the background with a brown circle arrow on it.](images/arrow-middle.png)
+![Het doelwit op de achtergrond met een bruine cirkelpijl erop.](images/arrow-middle.png)
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computer games, videos, and animations create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>. The speed that the image changes at is called the <span style="color: #800080;">frame rate</span> and is given in <span style="color: #800080;">fps</span> or frames per second.  
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computerspelletjes, video's en animaties creëren het effect van beweging door veel afbeeldingen achter elkaar te laten zien. Elke afbeelding wordt een <span style="color: #0faeb0; font-weight: bold;"> frame </span>genoemd. De snelheid waarmee het beeld verandert, wordt de <span style="color: #800080;">frame rate</span> genoemd en wordt weergegeven in <span style="color: #800080;">fps</span> of frames per seconde.  
 </p>
 
-The `frame_rate(2)` line in `setup()` sets the frame rate to 2 frames per second.
+De `frame_rate(2)` regel in `setup()` stelt de frame snelheid in op 2 frames per seconde.
 
-The `draw()` function is called every frame. You are going to draw the arrow in a random position each time `draw()` is called.
+De `draw()` functie wordt in elk frame aangeroepen. Je gaat de pijl in een willekeurige positie weergeven, elke keer dat `draw()` wordt aangeroepen.
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+De achtergrond en het doel worden over de oude pijl getekend. Dit betekent dat je maar één pijl tegelijk ziet.
 
 --- task ---
 
-Find the `import` statements, at the top of your code, you are going to use `randint` from the `random` library.
+Zoek de `import`-statements, bovenaan je code, je gaat `randint` gebruiken uit de `random` bibliotheek.
 
 --- code ---
 ---
@@ -78,7 +78,7 @@ language: python filename: main.py line_numbers: true
 line_number_start: 3
 ---
 
-# Import library code
+# Bibliotheekcode importeren
 from p5 import *    
 from math import *    
 from random import randint
@@ -89,13 +89,13 @@ from random import randint
 
 --- task ---
 
-Go to your `shoot_arrow()` function and add two new `arrow_x` and `arrow_y` variables to store random numbers between `100` and `300`.
+Ga naar de functie `schiet_pijl()` en voeg twee nieuwe variabelen `pijl_x` en `pijl_y` toe om willekeurige getallen tussen `100` en `300` op te slaan.
 
-This will let some shots miss the target, without them going all the way to the edges of your game.
+Hierdoor zullen sommige schoten het doel missen, zonder dat ze helemaal naar de randen van je spel gaan.
 
-Change your `ellipse()` to use the new variables to position your arrow.
+Verander je `ellips()` om de nieuwe variabelen te gebruiken om je pijl te positioneren.
 
-![A rectangle showing the target area coordinates in a semi transparent rectangle.](images/target_area.png)
+![Een rechthoek met de coördinaten van het doelgebied in een semi-transparante rechthoek.](images/target_area.png)
 
 --- code ---
 ---
@@ -103,29 +103,29 @@ language: python filename: main.py — shoot_arrow() line_numbers: true line_num
 line_highlights: 12-14
 ---
 
-# The shoot_arrow function goes here
-def shoot_arrow():    
-arrow_x = randint(100, 300)   
-arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #Upate to random coordinates
+# De schiet_pijl functie komt hier
+def schiet_pijl():    
+pijl_x = randint(100, 300)   
+pijl_y = randint(100, 300)    
+ellipse(pijl_x, pijl_y, 15, 15) #Update naar willekeurige coördinaten
 
 --- /code ---
 
 --- /task ---
 
-### Get the colour the arrow hits
+### Bij welke kleur raakt de pijl het doel
 
-The `get()` function returns the colour of a pixel.
+De functie `get()` retourneert de kleur van een pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+Een <span style="color: #0faeb0; font-weight: bold;">pixel</span>, een afkorting van picture element, is een enkele gekleurde stip in een afbeelding. Afbeeldingen zijn opgebouwd uit veel gekleurde pixels.
 </p>
 
 --- task ---
 
-You need to store the colour that the arrow is aiming at before you draw an arrow on top of it.
+Je moet de kleur waarop de pijl gericht is opslaan voordat je er een pijl op tekent.
 
-Add code to store the `hit_color`. Use the `get()` function, to get the colour of the pixel at the `arrow_x` and `arrow_y` coordinates — the centre of the arrow.
+Voeg code toe om de `raak_kleur` op te slaan. Gebruik de functie `get()` om de kleur van de pixel te vinden op de coördinaten `pijl_x` en `pijl_y` — het midden van de pijl.
 
 --- code ---
 ---
@@ -133,26 +133,26 @@ language: python filename: main.py — shoot_arrow() line_numbers: true line_num
 line_highlights: 14
 ---
 
-# The shoot_arrow function goes here
-def shoot_arrow():    
-arrow_x = randint(100, 300)    
-arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow   
-ellipse(arrow_x, arrow_y, 15, 15)
+# De schiet_pijl functie komt hier
+def schiet_pijl():    
+pijl_x = randint(100, 300)    
+pijl_y = randint(100, 300)    
+raak_kleur = get(pijl_x, pijl_y) #Sla de kleur op voordat je de pijl tekent   
+ellipse(pijl_x, pijl_y, 15, 15)
 
 --- /code ---
 
-**Tip:** The code to get the colour and save it needs to be **before** the code to draw the ellipse otherwise you will always save the wood colour of the arrow!
+**Tip:** De code om de kleur op te halen en op te slaan moet **vóór** de code om de ellips te tekenen staan, anders bewaar je altijd de (hout) kleur van de pijl!
 
 --- /task ---
 
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed()` function.
+De `p5` bibliotheek 'luistert' naar bepaalde gebeurtenissen, één daarvan is het indrukken van de muisknop. Wanneer het detecteert dat de muis knop is ingedrukt, zal het de code uitvoeren die het is gegeven in de `muis_ingedrukt()` functie.
 
 --- task ---
 
-Find the comment **#The mouse_pressed function goes here** and below it add code to define your `mouse_pressed()` function.
+Zoek het commentaar **#De muis_ingedrukt functie komt hier** en daaronder voeg je code toe om je `muis_ingedrukt()` functie te definiëren.
 
-Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
+Voeg code toe om de hoeveelheden rood, groen en blauw af te drukken in de pixel waarop de pijl terechtkomt.
 
 --- code ---
 ---
@@ -160,9 +160,9 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 9-10
 ---
 
-# The mouse_pressed function goes here
-def mouse_pressed():    
-print( red(hit_color), green(hit_color), blue(hit_color) )
+# De muis_ingedrukt functie komt hier
+def muis_ingedrukt():    
+print( red(raak_kleur), green(raak_kleur), blue(raak_kleur))
 
 --- /code ---
 
@@ -170,9 +170,9 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- task ---
 
-You have defined two functions `shoot_arrow()` and `mouse_pressed()`, both of these functions need to use the `hit_color` variable.
+Je hebt twee functies gedefinieerd `schiet_pijl()` en `muis_ingedrukt()`, beide functies moeten de variabele `raak_kleur` gebruiken.
 
-A variable that needs to be used thoughout a program is known as a **global variable**. Add code to your `shoot_arrow()` function to make `hit_color` a global variable:
+Een variabele die door het hele programma heen gebruikt moet worden, staat bekend als een **globale variabele**. Voeg code toe aan je `schiet_pijl()` functie om van `raak_kleur` een globale variabele te maken:
 
 --- code ---
 ---
@@ -180,13 +180,13 @@ language: python filename: main.py - shoot_arrow() line_numbers: true line_numbe
 line_highlights: 14
 ---
 
-# The shoot_arrow function goes here
-def shoot_arrow():    
-global hit_color #Can be used in other functions     
-arrow_x = randint(100, 300)     
-arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow     
-ellipse(arrow_x, arrow_y, 15, 15)
+# De schiet_pijl functie komt hier
+def schiet_pijl():    
+global raak_kleur #Kan ook gebruikt worden in andere functies     
+pijl_x = randint(100, 300)     
+pijl_y = randint(100, 300)     
+raak_kleur = get(pijl_x, pijl_y) #Sla de kleur op voordat je de pijl tekent     
+ellipse(pijl_x, pijl_y, 15, 15)
 
 --- /code ---
 
@@ -194,17 +194,17 @@ ellipse(arrow_x, arrow_y, 15, 15)
 
 --- task ---
 
-**Test:** Run your project. The arrow is redrawn at random coordinates.
+**Test: ** Voer je project uit. De pijl wordt opnieuw getekend op willekeurige coördinaten.
 
-The project gets the `hit_color` each time the arrow is redrawn and prints the colour value in the output area underneath the target.
+Het project haalt de `raak_kleur` op elke keer dat de pijl opnieuw wordt getekend en drukt de kleurwaarde af in het uitvoergebied onder het doel.
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Het doelwit, met een bruine cirkelpijl die in verschillende posities verschijnt.](images/fire_arrow.gif)
 
-**Debug:** If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+**Debuggen:** Als je een bericht ziet dat `raak_kleur` 'niet gedefinieerd' is, ga dan terug naar `schiet_pijl()` functie en controleer of je de regel `global raak_kleur` hebt.
 
-**Debug:** Check the `print` line really carefully for commas and brackets.
+**Debuggen:** Controleer de `print` regel heel goed op komma's en haakjes.
 
---- /task ---
+-- /task ---
 
 --- save ---
 
