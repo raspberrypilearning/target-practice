@@ -1,24 +1,24 @@
-## Introduction
+## Inleiding
 
-Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
+Gebruik Python, met de `p5` grafische bibliotheek, om een doel te tekenen en punten te scoren door het met pijlen te raken.
 
-You will:
- + Personalise your game with **RGB colours**
- + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
- + Position shapes with **x, y coordinates** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
- <span style="color: #0faeb0; font-weight: bold;"> RGB colours </span> have values between 0 and 255 for each of R(ed), G(reen), and B(lue). <span style="color: #800080;">Purple</span> has values R,G,B (128, 0, 128) — medium amounts of red and blue, with no green. Video game artists and graphic designers work with RGB colours. 
+Je gaat:
+ + Je spel personaliseren met **RGB-kleuren**
+ + **Voorwaardelijke uitspraken** (`if`, `elif`, `else`) gebruiken om beslissingen te nemen
+ + Vormen positioneren met **x, y-coördinaten** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ <span style="color: #0faeb0; font-weight: bold;"> RGB-kleuren </span> hebben waarden tussen 0 en 255 voor elk van de kleuren R(ed), G(reen) en B(lue). <span style="color: #800080;">Paars</span> heeft de waarden R,G,B (128, 0, 128) — gemiddelde hoeveelheden rood en blauw, zonder groen. Videogame kunstenaars en grafisch ontwerpers werken met RGB-kleuren. 
 </p>
 
 --- no-print ---
 
 --- task ---
 
-### Try it
+### Probeer het uit
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Click the **Run** button below to start the game. When the dot appears on the target, click the mouse (or tap on your tablet) to fire your arrow. 
+Klik op de knop **Run** hieronder om het spel te starten. Wanneer de stip op het doel komt, klik je met de muis (of tik je op je tablet) om je pijl af te schieten. 
 
-Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
+Probeer een paar keer. Je score verschijnt in het uitvoergebied onder het doel. Hoe verandert je score als de pijl op de verschillende kleuren landt? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
@@ -30,10 +30,10 @@ Have a few goes. Your score appears in the output area below the target. How doe
 
 --- print-only ---
 
-![Completed project.](images/yellow-points.png)
+![Voltooid project.](images/yellow-points.png)
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+Het oudste bewijs van <span style="color: #0faeb0; font-weight: bold;"> boogschieten </span> komt uit de Sibudu-grot in KwaZulu-Natal, Zuid-Afrika. Er zijn overblijfselen gevonden van pijlpunten van steen en been, die dateren van 60.000 tot 70.000 jaar geleden. 
 </p>
