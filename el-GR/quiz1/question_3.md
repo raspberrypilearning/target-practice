@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: Ερώτηση 3 από 3
 ---
 
-An ellipse is drawn using the following code:
+Μια έλλειψη σχεδιάζεται χρησιμοποιώντας τον ακόλουθο κώδικα:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this ellipse in the output area?
+Ποια από τις παρακάτω εικόνες δείχνει τη σωστή θέση αυτής της έλλειψης στην περιοχή εξόδου;
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Ένας πράσινος κύκλος με κέντρο στην κάτω δεξιά γωνία της περιοχής εξόδου.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `ellipse(400,400,300,300)`.
+  Όχι ακριβώς, για να κεντράρουμε τον κύκλο στην κάτω δεξιά γωνία, οι συντεταγμένες θα πρέπει να είναι ίδιες με το μέγεθος της οθόνης. Σε αυτό το παράδειγμα, η έλλειψη θα ήταν `ellipse(400,400,300,300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Ένας πράσινος κύκλος με κέντρο στο κέντρο της περιοχής εξόδου.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `ellipse(200,200,300,300)`.
+  Όχι ακριβώς, για να κεντράρουμε τον κύκλο στη μέση, οι συντεταγμένες θα πρέπει να είναι το μισό του μεγέθους της οθόνης. Σε αυτό το παράδειγμα, `ellipse(200,200,300,300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Ένας πράσινος κύκλος με κέντρο στην επάνω αριστερή γωνία της περιοχής εξόδου.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Αυτό είναι το σωστό! Αυτός ο κύκλος είναι κεντραρισμένος στις συντεταγμένες (0,0), στην επάνω αριστερή γωνία της οθόνης.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Ένας πράσινος κύκλος με κέντρο την επάνω δεξιά πλευρά της περιοχής εξόδου.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Όχι, αυτός ο κύκλος θα είχε κώδικα `ellipse(350,150,300,300)` για να τον κεντράρει προς την επάνω δεξιά πλευρά της οθόνης. Η συντεταγμένη `x` δείχνει πόσο αριστερά ή δεξιά βρίσκεται η έλλειψη στην οθόνη και η συντεταγμένη `y` δείχνει πόσο κάτω ή πάνω βρίσκεται στην οθόνη.
 
   --- /feedback ---
 
