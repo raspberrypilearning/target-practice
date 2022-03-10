@@ -1,0 +1,25 @@
+---
+title: تمرين الرماية
+hero_image: images/banner.png
+description: استخدم Python لرسم هدف وتسجيل نقاط بضربه بالسهام
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-06"
+steps:
+  - title: المقدمة
+  - title: قم بإنشاء خلفية
+  - title: ارسم هدفك
+    completion: engaged
+  - title: أطلق سهمك
+  - title: تسجيل النقاط
+  - title: تفكير
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion: internal
+  - title: قم بتطوير مشروعك
+    completion: external
+  - title: ما التالي؟
