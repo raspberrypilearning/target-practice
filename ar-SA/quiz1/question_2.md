@@ -28,7 +28,7 @@ else:
 
 --- choices ---
 
-- ( ) سريع جدًا
+- (x) `Very fast`
 
   --- feedback ---
 
