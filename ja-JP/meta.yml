@@ -1,0 +1,25 @@
+---
+title: 射的
+hero_image: images/banner.png
+description: Pythonでターゲットを描き、矢を当てて得点を表示します
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-06"
+steps:
+  - title: はじめに
+  - title: 背景を作成する
+  - title: ターゲットを描く
+    completion: engaged
+  - title: 矢を放つ
+  - title: 得点
+  - title: ふりかえり
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion: internal
+  - title: プロジェクトをアップグレードする
+    completion: external
+  - title: 次は何をしますか？
