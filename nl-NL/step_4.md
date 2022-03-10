@@ -15,7 +15,7 @@ Nu is het tijd om een pijl toe te voegen die willekeurig over het doelgebied bew
 
 Zoek de opmerking **#De schiet_pijl functie komt hier** en daaronder voeg je code toe om je `schiet_pijl()`-functie te definiëren.
 
-Voeg een kleine `ellips()` toe in het midden van het scherm om de pijl weer te geven.
+Voeg een kleine `ellipse()` toe in het midden van het scherm om de pijl weer te geven.
 
 --- code ---
 ---

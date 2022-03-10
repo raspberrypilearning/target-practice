@@ -11,7 +11,7 @@ steps:
   - title: Een achtergrond maken
   - title: Teken je doelwit
     completion: engaged
-  - title: Schiet je pijl af
+  - title: Schiet de pijl af
   - title: Punten scoren
   - title: Reflectie
     knowledge_quiz:
