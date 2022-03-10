@@ -136,7 +136,7 @@ def draw():
   wood = color(145, 96, 51)   
   outer = color(0, 120, 180) #青    
   inner = color(210, 60, 60) # 赤    
-  bullseye = color(220, 200, 0) #Yellow
+  bullseye = color(220, 200, 0) #黄
 
 --- /code ---
 

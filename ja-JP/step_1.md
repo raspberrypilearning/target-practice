@@ -5,7 +5,9 @@ Pythonと`p5`グラフィックスライブラリを使って、ターゲット�
 あなたは次のことを行います。
  + **RGBカラー**でゲームをカスタマイズする
  + **条件文**(`if`, `elif`, `else`) を使用して判断する
- + **x, y座標**で図形を配置する <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ + **x, y座標**で図形を配置する 
+ 
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  <span style="color: #0faeb0; font-weight: bold;">RGBカラー</span>は、R(ed)、G(reen)、B(lue) のそれぞれに対して0から255までの値を持ちます。 <span style="color: #800080;">紫</span> の値は、R,G,B(128、0、128)で — 中程度の量の赤と青で、緑はありません。 ビデオゲームのアーティストやグラフィックデザイナーは、RGBカラーを使用しています。 
 </p>
 

@@ -11,7 +11,7 @@ steps:
   - title: 背景を作成する
   - title: ターゲットを描く
     completion: engaged
-  - title: Fire your arrow
+  - title: 矢を放つ
   - title: 得点
   - title: ふりかえり
     knowledge_quiz:
