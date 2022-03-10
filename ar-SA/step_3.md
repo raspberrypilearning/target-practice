@@ -133,8 +133,8 @@ def draw():
   sky = color(92, 204, 206)   
   grass = color(149, 212, 122)   
   wood = color(145, 96, 51)   
-  outer = color(0, 120, 180) #Blue    
-  inner = color(210, 60, 60) # Red    
+  outer = color(0, 120, 180) #ازرق     
+  inner = color(210, 60, 60) # احمر     
   bullseye = color(220, 200, 0) #Yellow
 
 --- /code ---
