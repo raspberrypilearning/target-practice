@@ -29,7 +29,7 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `لا يمكن تمييز السرعة!`
 
   --- feedback ---
 
