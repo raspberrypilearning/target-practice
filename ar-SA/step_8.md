@@ -1,6 +1,6 @@
 ## ماذا بعد؟
 
-إذا كنت تتبع [مقدمة Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) ، يمكنك الانتقال إلى مشروع [اطلاق صاروخ](https://projects.raspberrypi.org/en/projects/rocket-launch). في هذا المشروع ، ستقوم بعمل رسوم متحركة تفاعلية لصاروخ يطلق قمرًا صناعيًا في المدار.
+إذا كنت تتبع مسار [مقدمة الى Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro)، يمكنك الانتقال إلى مشروع [اطلاق صاروخ](https://projects.raspberrypi.org/en/projects/rocket-launch). في هذا المشروع ، ستقوم بعمل رسوم متحركة تفاعلية لصاروخ يطلق قمرًا صناعيًا في المدار.
 
 --- print-only ---
 
