@@ -12,13 +12,13 @@ steps:
     completion: engaged  
   - title: Fire your arrow
   - title: Score points
+    completion: internal     
   - title: Reflection
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
-      passing_score: 3
-    completion: internal        
+      passing_score: 3   
   - title: Upgrade your project
     completion: external  
   - title: What next?
