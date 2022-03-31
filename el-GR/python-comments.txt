@@ -1,63 +1,63 @@
-Things to do in every frame
+Ενέργειες που πρέπει να γίνονται σε κάθε καρέ
 
-Red = 92, Green = 204, Blue = 206
+Κόκκινο = 92, Πράσινο = 204, Μπλε = 206
 
-Start x, start y, width, height
+Αρχή x, αρχή y, πλάτος, ύψος
 
-x, y, width, height
+x, y, πλάτος, ύψος
 
-Set the stand fill colour to brown
+Ρύθμισε το χρώμα γεμίσματος της βάσης σε καφέ
 
-Outer circle.200, 200 is the middle of the screen
+Εξωτερικός κύκλος. 200, 200 είναι το μέσο της οθόνης
 
-Blue
+Μπλε
 
-Red
+Κόκκινο
 
-Yellow
+Κίτρινο
 
-Stand
+Βάση
 
-Outer circle
+Εξωτερικός κύκλος
 
-Inner circle
+Εσωτερικός κύκλος
 
-Bullseye
+Κέντρο στόχου
 
-The shoot_arrow function goes here
+Η συνάρτηση shoot_arrow πηγαίνει εδώ
 
-Import library code
+Εισαγωγή του κώδικα της βιβλιοθήκης
 
-Update to random coordinates
+Ενημέρωσε με τυχαίες συντεταγμένες
 
-Save the colour before drawing the arrow
+Αποθήκευσε το χρώμα πριν σχεδιάσεις το βέλος
 
-The mouse_pressed function goes here
+Η συνάρτηση mouse_pressed πηγαίνει εδώ
 
-Can be used in other functions
+Μπορεί να χρησιμοποιηθεί και σε άλλες συναρτήσεις
 
-Like functions, 'if' statements are indented
+Όπως οι συναρτήσεις, οι δηλώσεις "if" έχουν εσοχή
 
-Setup your game here
+Όρισε τις παραμέτρους του παιχνιδιού σου εδώ
 
-width and height
+πλάτος και ύψος
 
-Definitions for compatibility with the p5py processing library
+Ορισμοί για συμβατότητα με τη βιβλιοθήκη επεξεργασίας p5py
 
-Shape
+Σχήμα
 
-Fonts
+Γραμματοσειρές
 
-Text
+Κείμενο
 
-Colour
+Χρώμα
 
-Images
+Εικόνες
 
-Environment
+Περιβάλλον
 
-Transform
+Μετασχηματισμοί
 
-Keyboard
+Πληκτρολόγιο
 
-Keep this to run your code
+Από εδώ εκτελείς τον κώδικά σου
