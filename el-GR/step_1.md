@@ -5,7 +5,9 @@
 Θα χρειαστεί να:
  + Προσαρμόσεις το παιχνίδι σου σύμφωνα με τις επιθυμίες σου με τα **χρώματα RGB**
  + Χρησιμοποιήσεις **υποθετικές προτάσεις** (`if`, `elif`, `else`) για να λάβεις αποφάσεις
- + Τοποθετήσεις σχήματα με συντεταγμένες **x, y** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ + Τοποθετήσεις σχήματα με συντεταγμένες **x, y**
+
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  Τα <span style="color: #0faeb0; font-weight: bold;"> χρώματα RGB </span> έχουν τιμές μεταξύ 0 και 255 για καθένα από τα R(ed), G(reen) και B(lue) (Κόκκινο, Πράσινο και Μπλε). Το <span style="color: #800080;">Μωβ</span> έχει τιμές R,G,B (128, 0, 128) — δηλαδή μέτριες ποσότητες κόκκινου και μπλε, χωρίς πράσινο. Οι σχεδιαστές βιντεοπαιχνιδιών και οι γραφίστες χρησιμοποιούν τα χρώματα RGB. 
 </p>
 
