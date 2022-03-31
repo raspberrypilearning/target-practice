@@ -16,7 +16,7 @@ Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org
 
 **Astuce :** Environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen mark="crwd-mark">
+<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 ![Projet de lancement de fusée](images/showcase_rocket.png)
