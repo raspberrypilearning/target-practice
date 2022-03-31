@@ -18,6 +18,7 @@ steps:
     title: 矢を放つ
   - 
     title: 得点
+    completion: internal
   - 
     title: ふりかえり
     knowledge_quiz:
@@ -25,7 +26,6 @@ steps:
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - 
     title: プロジェクトをアップグレードする
     completion: external
