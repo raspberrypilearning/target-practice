@@ -18,6 +18,7 @@ steps:
     title: أطلق سهمك
   - 
     title: تسجيل النقاط
+    completion: internal
   - 
     title: تفكير
     knowledge_quiz:
@@ -25,7 +26,6 @@ steps:
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - 
     title: قم بتطوير مشروعك
     completion: external
