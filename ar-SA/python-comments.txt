@@ -2,23 +2,23 @@
 
 احمر = 92, اخضر = 204, ازرق = 206
 
-Start x, start y, width, height
+ابداء محور س, ابداء محور ص, عرض, ارتفاع
 
-x, y, width, height
+محور س, محور ص, العرض, الارتفاع
 
-Set the stand fill colour to brown
+اضبط لون تعبئة الحامل على البني
 
-Outer circle.200, 200 is the middle of the screen
+الدائرة الخارجية. 200, 200 هو منتصف الشاشة
 
-Blue
+ازرق
 
-Red
+احمر
 
-Yellow
+أصفر
 
-Stand
+حامل الهدف
 
-Outer circle
+الدائرة الخارجية
 
 الدائرة الداخلية
 
@@ -28,36 +28,36 @@ Outer circle
 
 استيراد مكتبة التعليمات البرمجية
 
-Update to random coordinates
+التحديث إلى الإحداثيات العشوائية
 
-Save the colour before drawing the arrow
+احفظ اللون قبل رسم السهم
 
 نضع دالة mouse_pressed هنا
 
-Can be used in other functions
+يمكن استخدامها في دالة أخرى
 
-Like functions, 'if' statements are indented
+Like دالة ، يتم وضع مسافة بادئة لعبارات 'if'
 
 قم بإعداد لعبتك هنا
 
 العرض والارتفاع
 
-Definitions for compatibility with the p5py processing library
+تعاريف للتوافق مع مكتبة مع
 
-Shape
+شكل
 
-Fonts
+الخطو
 
-Text
+نص
 
-Colour
+اللون
 
-Images
+صور
 
-Environment
+بيئة
 
-Transform
+تحول
 
-Keyboard
+لوحة المفاتيح
 
 احتفظ بهذا لتشغيل التعليمات البرمجية الخاصة بك
