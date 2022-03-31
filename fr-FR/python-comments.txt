@@ -1,63 +1,63 @@
-Things to do in every frame
+Choses à faire dans chaque image
 
-Red = 92, Green = 204, Blue = 206
+Rouge = 92, Vert = 204, Bleu = 206
 
-Start x, start y, width, height
+Départ x, départ y, largeur, hauteur
 
-x, y, width, height
+x, y, largeur, hauteur
 
-Set the stand fill colour to brown
+Définir la couleur de remplissage du support sur marron
 
-Outer circle.200, 200 is the middle of the screen
+Cercle extérieur. 200, 200 est le milieu de l'écran
 
-Blue
+Bleu
 
-Red
+Rouge
 
-Yellow
+Jaune
 
-Stand
+Support
 
-Outer circle
+Cercle extérieur
 
-Inner circle
+Cercle intérieur
 
-Bullseye
+Centre
 
-The shoot_arrow function goes here
+La fonction tire_fleche vient ici
 
-Import library code
+Importer le code de la bibliothèque
 
-Update to random coordinates
+Mise à jour des coordonnées aléatoires
 
-Save the colour before drawing the arrow
+Enregistrer la couleur avant de dessiner la flèche
 
-The mouse_pressed function goes here
+La fonction mouse_pressed vient ici
 
-Can be used in other functions
+Peut être utilisé dans d'autres fonctions
 
-Like functions, 'if' statements are indented
+Comme les fonctions, les instructions "if" sont indentées
 
-Setup your game here
+Configure ton jeu ici
 
-width and height
+largeur et hauteur
 
-Definitions for compatibility with the p5py processing library
+Définitions pour la compatibilité avec la bibliothèque de traitement p5py
 
-Shape
+Forme
 
-Fonts
+Polices
 
-Text
+Texte
 
-Colour
+Couleur
 
 Images
 
-Environment
+Environnement
 
-Transform
+Transformer
 
-Keyboard
+Clavier
 
-Keep this to run your code
+Garde ceci pour exécuter ton code
