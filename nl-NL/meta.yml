@@ -18,6 +18,7 @@ steps:
     title: Schiet de pijl af
   - 
     title: Punten scoren
+    completion: internal
   - 
     title: Reflectie
     knowledge_quiz:
@@ -25,7 +26,6 @@ steps:
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - 
     title: Verbeter je project
     completion: external
