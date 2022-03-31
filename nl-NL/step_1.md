@@ -5,7 +5,9 @@ Gebruik Python, met de `p5` grafische bibliotheek, om een doel te tekenen en pun
 Je gaat:
  + Je spel personaliseren met **RGB-kleuren**
  + **Voorwaardelijke uitspraken** (`if`, `elif`, `else`) gebruiken om beslissingen te nemen
- + Vormen positioneren met **x, y-coördinaten** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ + Vormen positioneren met **x, y-coördinaten**
+
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  <span style="color: #0faeb0; font-weight: bold;"> RGB-kleuren </span> hebben waarden tussen 0 en 255 voor elk van de kleuren R(ed), G(reen) en B(lue). <span style="color: #800080;">Paars</span> heeft de waarden R,G,B (128, 0, 128) — gemiddelde hoeveelheden rood en blauw, zonder groen. Videogame kunstenaars en grafisch ontwerpers werken met RGB-kleuren. 
 </p>
 
