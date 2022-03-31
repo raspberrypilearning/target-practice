@@ -104,10 +104,10 @@ line_highlights: 12-14
 ---
 
 # De schiet_pijl functie komt hier
-def shoot_arrow():    
-arrow_x = randint(100, 300)   
-arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #Update to random coordinates
+def schiet_pijl():    
+pijl_x = randint(100, 300)   
+pijl_y = randint(100, 300)    
+ellipse(pijl_x, pijl_y, 15, 15) #Update naar willekeurige coördinaten
 
 --- /code ---
 
