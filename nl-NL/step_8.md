@@ -16,7 +16,7 @@ Als je het [Inleiding tot Python](https://projects.raspberrypi.org/en/raspberryp
 
 **Tip:** Ongeveer 25.000 kg zou genoeg moeten zijn, maar experimenteer met de cijfers om te zien wat er gebeurt.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen mark="crwd-mark">
+<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 ![Raket lanceren-project](images/showcase_rocket.png)
