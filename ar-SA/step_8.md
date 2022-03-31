@@ -16,7 +16,7 @@
 
 **نصيحة:** يجب أن يكون حوالي 25000 كجم كافيًا ، لكن جرب الأرقام لترى ما سيحدث.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen mark="crwd-mark">
+<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 ![مشروع إطلاق الصواريخ](images/showcase_rocket.png)
