@@ -104,10 +104,10 @@ line_highlights: 12-14
 ---
 
 # La fonction tire_fleche vient ici
-def shoot_arrow():    
-arrow_x = randint(100, 300)   
-arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #Update to random coordinates
+def tire_fleche():    
+fleche_x = randint(100, 300)   
+fleche_y = randint(100, 300)    
+ellipse(fleche_x, fleche_y, 15, 15) #Mise à jour des coordonnées aléatoires
 
 --- /code ---
 
