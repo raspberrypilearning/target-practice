@@ -18,20 +18,20 @@ arrow_y
 
 hit_color
 
-You hit the outer circle, 50 points!
+Έχεις πετύχει τον εξωτερικό κύκλο, 50 πόντοι!
 
-You hit the inner circle, 200 points!
+Έχεις πετύχει τον εσωτερικό κύκλο, 200 βαθμοί!
 
-You hit the bullseye, 500 points!
+Έχεις πετύχει το κέντρο του στόχου, 500 πόντοι!
 
-You missed! No points!
+Έχασες! Δεν παίρνεις πόντους!
 
 speed
 
-Super fast
+Υπερβολικά γρήγορα
 
-Pretty quick
+Αρκετά γρήγορα
 
-Very fast
+Πολύ γρήγορα
 
-Speed not recognised!
+Δεν αναγνωρίστηκε η ταχύτητα!
