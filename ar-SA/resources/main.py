@@ -53,7 +53,7 @@ def draw():
   fill(inner)   
   ellipse(200, 200, 110, 110) #الدائرة الداخلية   
   fill(bullseye)   
-  ellipse(200, 200, 30, 30) #Bullseye 
+  ellipse(200, 200, 30, 30) #مركز الهدف 
   
   fill(wood)
   shoot_arrow()
