@@ -1,6 +1,6 @@
-Things to do in every frame
+أشياء للقيام بها في كل إطار
 
-Red = 92, Green = 204, Blue = 206
+احمر = 92, اخضر = 204, ازرق = 206
 
 Start x, start y, width, height
 
@@ -20,27 +20,27 @@ Stand
 
 Outer circle
 
-Inner circle
+الدائرة الداخلية
 
-Bullseye
+مركز الهدف
 
-The shoot_arrow function goes here
+نضع دالة shoot_arrow هنا
 
-Import library code
+استيراد مكتبة التعليمات البرمجية
 
 Update to random coordinates
 
 Save the colour before drawing the arrow
 
-The mouse_pressed function goes here
+نضع دالة mouse_pressed هنا
 
 Can be used in other functions
 
 Like functions, 'if' statements are indented
 
-Setup your game here
+قم بإعداد لعبتك هنا
 
-width and height
+العرض والارتفاع
 
 Definitions for compatibility with the p5py processing library
 
@@ -60,4 +60,4 @@ Transform
 
 Keyboard
 
-Keep this to run your code
+احتفظ بهذا لتشغيل التعليمات البرمجية الخاصة بك
