@@ -18,20 +18,20 @@ arrow_y
 
 hit_color
 
-You hit the outer circle, 50 points!
+外側の円に当たった、50点！
 
-You hit the inner circle, 200 points!
+内側の円に当たった、 200点！
 
-You hit the bullseye, 500 points!
+ブルズアイに当たった、500ポイント！
 
-You missed! No points!
+外した！ ポイントなし！
 
 speed
 
-Super fast
+超高速
 
-Pretty quick
+かなり速い
 
-Very fast
+非常に速い
 
-Speed not recognised!
+速度が認識されない！
