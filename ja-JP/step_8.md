@@ -16,7 +16,7 @@
 
 **ヒント：** 25,000kg程度で十分だと思いますが、どうなるか試してみてください。
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen mark="crwd-mark">
+<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 ![ロケット打ち上げプロジェクト](images/showcase_rocket.png)
