@@ -5,7 +5,9 @@ Use Python, with the `p5` graphics library, to draw a target and score points by
 You will:
  + Personalise your game with **RGB colours**
  + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
- + Position shapes with **x, y coordinates** <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ + Position shapes with **x, y coordinates**
+
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
  <span style="color: #0faeb0; font-weight: bold;"> RGB colours </span> have values between 0 and 255 for each of R(ed), G(reen), and B(lue). <span style="color: #800080;">Purple</span> has values R,G,B (128, 0, 128) — medium amounts of red and blue, with no green. Video game artists and graphic designers work with RGB colours. 
 </p>
 
