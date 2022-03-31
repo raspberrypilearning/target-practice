@@ -107,7 +107,7 @@ line_highlights: 12-14
 def shoot_arrow():    
 arrow_x = randint(100, 300)   
 arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #التحديث إلى الإحداثيات العشوائية
+ellipse(arrow_x, arrow_y, 15, 15) #Update to random coordinates
 
 --- /code ---
 
