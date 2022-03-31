@@ -18,6 +18,7 @@ steps:
     title: Tirer la flèche
   - 
     title: Marquer des points
+    completion: internal
   - 
     title: Réflexion
     knowledge_quiz:
@@ -25,7 +26,6 @@ steps:
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - 
     title: Améliorer ton projet
     completion: external
