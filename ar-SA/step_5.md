@@ -58,7 +58,7 @@ line_highlights: 10-11
 # تذهب دالة mouse_pressed هنا
 def mouse_pressed():     
 if hit_color == outer:      
-print('You hit the outer circle, 50 points!') #Like دالة ، يتم وضع مسافة بادئة لعبارات 'if'
+print('You hit the outer circle, 50 points!') #مثل الدالة، يتم وضع مسافة بادئة لعبارات 'if'
 
 --- /code ---
 
