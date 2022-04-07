@@ -20,7 +20,7 @@ Voeg een kleine `ellipse()` toe in het midden van het scherm om de pijl weer te 
 --- code ---
 ---
 language: python 
-filename: main.py — shoot_arrow() 
+filename: main.py — schiet_pijl() 
 line_numbers: true 
 line_number_start: 10
 line_highlights: 11-12
@@ -108,7 +108,7 @@ Verander je `ellipse()` om de nieuwe variabelen te gebruiken om je pijl te posit
 --- code ---
 ---
 language: python 
-filename: main.py — shoot_arrow() 
+filename: main.py — schiet_pijl() 
 line_numbers: true 
 line_number_start: 10
 line_highlights: 12-14
@@ -141,7 +141,7 @@ Voeg code toe om de `raak_kleur` op te slaan. Gebruik de functie `get()` om de k
 --- code ---
 ---
 language: python 
-filename: main.py — shoot_arrow()
+filename: main.py — schiet_pijl()
 line_numbers: true 
 line_number_start: 10
 line_highlights: 14
@@ -194,7 +194,7 @@ Een variabele die door het hele programma heen gebruikt moet worden, staat beken
 --- code ---
 ---
 language: python 
-filename: main.py - shoot_arrow() 
+filename: main.py - schiet_pijl() 
 line_numbers: true 
 line_number_start: 12
 line_highlights: 14
