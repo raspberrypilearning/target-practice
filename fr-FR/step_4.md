@@ -20,7 +20,7 @@ Ajoute une petite `ellipse()` au centre de l'écran pour représenter la flèche
 --- code ---
 ---
 language: python 
-filename: main.py — shoot_arrow() 
+filename: main.py — tire_fleche() 
 line_numbers: true 
 line_number_start: 10
 line_highlights: 11-12
@@ -108,7 +108,7 @@ Change ton `ellipse()` pour utiliser les nouvelles variables pour positionner ta
 --- code ---
 ---
 language: python 
-filename: main.py — shoot_arrow() 
+filename: main.py — tire_fleche() 
 line_numbers: true 
 line_number_start: 10
 line_highlights: 12-14
@@ -141,7 +141,7 @@ Ajoute du code pour stocker le `touche_couleur`. Utilise la fonction `get()` pou
 --- code ---
 ---
 language: python 
-filename: main.py — shoot_arrow() 
+filename: main.py — tire_fleche() 
 line_numbers: true 
 line_number_start: 10
 line_highlights: 14
@@ -194,7 +194,7 @@ Une variable qui doit être utilisée tout au long d'un programme est connue sou
 --- code ---
 ---
 language: python 
-filename: main.py - shoot_arrow() 
+filename: main.py - tire_fleche() 
 line_numbers: true 
 line_number_start: 12
 line_highlights: 14
