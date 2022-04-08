@@ -13,13 +13,13 @@ steps:
     completion: engaged
   - title: Ρίξε το βέλος σου
   - title: Κέρδισε πόντους
+    completion: internal
   - title: Αναστοχασμός
+    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - title: Αναβάθμιση του έργου σου
-    completion: external
   - title: Και τώρα;
