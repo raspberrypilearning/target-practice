@@ -1,11 +1,11 @@
 #!/bin/python3
 
-# استيراد مكتبة التعليمات البرمجية
+# Import library code
 from p5 import *
 from math import *
 from random import randint
 
-# نضع دالة mouse_pressed هنا
+# The mouse_pressed function goes here
 def mouse_pressed():
   if hit_color == outer:  
     print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
@@ -16,7 +16,7 @@ def mouse_pressed():
   else:   
     print('You missed! No points!')    
     
-# نضع دالة shoot_arrow هنا
+# The shoot_arrow function goes here
 def shoot_arrow():
   global hit_color 
   arrow_x = randint(100, 300)
@@ -25,15 +25,15 @@ def shoot_arrow():
   ellipse(arrow_x, arrow_y, 15, 15)
 
 def setup():
-# قم بإعداد لعبتك هنا
-  size(400, 400) # العرض والارتفاع
+# Setup your game here
+  size(400, 400) # width and height
   frame_rate(2)
 
 
 def draw():
-# أشياء للقيام بها في كل إطار
+# Things to do in every frame
   global outer, inner, bullseye
-  sky = color(92, 204, 206) # احمر = 92, اخضر = 204, ازرق = 206
+  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
   grass = color(149, 212, 122)
   wood = color(145, 96, 51)
   outer = color(0, 120, 180) 
@@ -51,11 +51,11 @@ def draw():
   fill(outer)
   ellipse(200, 200, 170, 170)
   fill(inner)   
-  ellipse(200, 200, 110, 110) #الدائرة الداخلية   
+  ellipse(200, 200, 110, 110) #Inner circle   
   fill(bullseye)   
-  ellipse(200, 200, 30, 30) #مركز الهدف 
+  ellipse(200, 200, 30, 30) #Bullseye 
   
   fill(wood)
   shoot_arrow()
-# احتفظ بهذا لتشغيل التعليمات البرمجية الخاصة بك
+# Keep this to run your code
 run()
