@@ -1,22 +1,22 @@
 #!/bin/python3
 
-# ライブラリコードをインポートする
+# Import library code
 from p5 import *
 from math import *
 from random import randint
 
-#  mouse_pressed関数はここにあります
+# The mouse_pressed function goes here
 def mouse_pressed():
   if hit_color == outer:  
-    print('外側の円に当たった、50点！') #関数と同様に'if'文はインデントが必要です
+    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
   elif hit_color == inner:    
-    print('内側の円に当たった、 200点！')   
+    print('You hit the inner circle, 200 points!')   
   elif hit_color == bullseye:    
-    print( 'ブルズアイに当たった、500ポイント！')   
+    print('You hit the bullseye, 500 points!')   
   else:   
-    print('外した！ ポイントなし！')    
+    print('You missed! No points!')    
     
-# shoot_arrow関数はここにあります
+# The shoot_arrow function goes here
 def shoot_arrow():
   global hit_color 
   arrow_x = randint(100, 300)
@@ -25,13 +25,13 @@ def shoot_arrow():
   ellipse(arrow_x, arrow_y, 15, 15)
 
 def setup():
-# ここでゲームをセットアップします
-  size(400, 400) # 幅と高さ
+# Setup your game here
+  size(400, 400) # width and height
   frame_rate(2)
 
 
 def draw():
-# すべてのフレームで行うこと
+# Things to do in every frame
   global outer, inner, bullseye
   sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
   grass = color(149, 212, 122)
@@ -51,11 +51,11 @@ def draw():
   fill(outer)
   ellipse(200, 200, 170, 170)
   fill(inner)   
-  ellipse(200, 200, 110, 110) #内側の円   
+  ellipse(200, 200, 110, 110) #Inner circle   
   fill(bullseye)   
-  ellipse(200, 200, 30, 30) #ブルズアイ 
+  ellipse(200, 200, 30, 30) #Bullseye 
   
   fill(wood)
   shoot_arrow()
-# コードを実行するためにこれを保持します
+# Keep this to run your code
 run()
