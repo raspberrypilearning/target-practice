@@ -1,22 +1,22 @@
 #!/bin/python3
 
-# Εισαγωγή του κώδικα της βιβλιοθήκης
+# Import library code
 from p5 import *
 from math import *
 from random import randint
 
-# Η συνάρτηση mouse_pressed πηγαίνει εδώ
+# The mouse_pressed function goes here
 def mouse_pressed():
   if hit_color == outer:  
-    print('Έχεις πετύχει τον εξωτερικό κύκλο, 50 πόντοι!') #Όπως οι συναρτήσεις, οι δηλώσεις 'if' έχουν εσοχή
+    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
   elif hit_color == inner:    
-    print ('Έχεις πετύχει τον εσωτερικό κύκλο, 200 βαθμοί!')   
+    print('You hit the inner circle, 200 points!')   
   elif hit_color == bullseye:    
-    print ('Έχεις πετύχει το κέντρο του στόχου, 500 πόντοι!')   
+    print('You hit the bullseye, 500 points!')   
   else:   
-    print('Έχασες! Δεν παίρνεις πόντους!')    
+    print('You missed! No points!')    
     
-# Η συνάρτηση shoot_arrow πηγαίνει εδώ
+# The shoot_arrow function goes here
 def shoot_arrow():
   global hit_color 
   arrow_x = randint(100, 300)
@@ -25,15 +25,15 @@ def shoot_arrow():
   ellipse(arrow_x, arrow_y, 15, 15)
 
 def setup():
-# Όρισε τις παραμέτρους του παιχνιδιού σου εδώ
-  size(400, 400) # πλάτος και ύψος
+# Setup your game here
+  size(400, 400) # width and height
   frame_rate(2)
 
 
 def draw():
-# Ενέργειες που πρέπει να γίνονται σε κάθε καρέ
+# Things to do in every frame
   global outer, inner, bullseye
-  sky = color(92, 204, 206) # Κόκκινο = 92, Πράσινο = 204, Μπλε = 206
+  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
   grass = color(149, 212, 122)
   wood = color(145, 96, 51)
   outer = color(0, 120, 180) 
@@ -51,11 +51,11 @@ def draw():
   fill(outer)
   ellipse(200, 200, 170, 170)
   fill(inner)   
-  ellipse(200, 200, 110, 110) #Εσωτερικός κύκλος   
+  ellipse(200, 200, 110, 110) #Inner circle   
   fill(bullseye)   
-  ellipse(200, 200, 30, 30) #Κέντρο στόχου 
+  ellipse(200, 200, 30, 30) #Bullseye 
   
   fill(wood)
   shoot_arrow()
-# Από εδώ εκτελείς τον κώδικά σου
+# Keep this to run your code
 run()
