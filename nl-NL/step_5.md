@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In deze stap voeg je scores toe afhankelijk van waar de pijl raakt.
+In deze stap voeg je scores toe afhankelijk van waar de pijl het doel raakt.
 </div>
 <div>
 
@@ -36,7 +36,7 @@ roos = color(220, 200, 0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We gebruiken voortdurende <span style="color: #0faeb0; font-weight: bold;"> voorwaarden</span> om beslissingen te nemen. We zouden kunnen zeggen 'als het potlood bot is, slijp het dan'. Evenzo laten `if`-voorwaarden ons code schrijven die iets anders doet, afhankelijk van of een voorwaarde waar of onwaar is.
+We gebruiken de hele tijd <span style="color: #0faeb0; font-weight: bold;"> voorwaarden</span> om beslissingen te nemen. We zouden kunnen zeggen 'als het potlood bot is, slijp het dan'. Daarnaast kun je met `if`-voorwaarden code schrijven die iets anders doet, afhankelijk van of een voorwaarde waar of onwaar is.
 </p>
 
 --- task ---
@@ -79,7 +79,7 @@ print('Je raakt de buitenste cirkel, 50 punten!') #Net als functions zijn 'if'-i
 Aangezien er punten worden gescoord als de pijl ook op de `binnenste` of `roos` cirkels terechtkomt, is `buitenste` niet de enige cirkel die je moet controleren. Gebruik hiervoor `elif` (een verkorte versie van else - if).
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We gebruiken <span style="color: #0faeb0; font-weight: bold;"> else - if </span> om beslissingen in het echte leven te nemen. Wanneer je een afbeelding van de lucht schildert, kun je controleren of er een gele verf voor de zon is. Anders, als er geen gele verf is, zoek je naar oranje. Anders, als er geen gele of oranje verf is, zou je rood kunnen gebruiken - heel licht!
+Wist je dat we <span style="color: #0faeb0; font-weight: bold;"> else - if </span>  ook gebruiken om zelf beslissingen te nemen in het dagelijks leven? Wanneer je bijvoorbeeld een schilderijk maakt van een landschap en de lucht schildert, kun je controleren of je gele verf voor de zon hebt. Anders, als er geen gele verf is, zoek je naar oranje. Anders, als er geen gele of oranje verf is, zou je (heel licht) rood kunnen gebruiken om de zon te schilderen!
 </p>
 
 --- task ---
@@ -116,7 +116,7 @@ print('Je raakt de roos, 500 punten!')
 
 **Debuggen:** Zorg ervoor dat `elif` zich op hetzelfde inspringniveau bevindt als je `if`, en dat de code in je `elif` zich op hetzelfde niveau bevindt als de code in je `if`.
 
-**Debuggen:** Als je een bericht ziet over `binnenste` of `roos` die 'niet gedefinieerd' zijn, ga dan terug naar `draw()` en controleer of ze als globale variabele declareert zijn.
+**Debuggen:** Als je een bericht ziet over `binnenste` of `roos` die 'niet gedefinieerd' zijn, ga dan terug naar `draw()` en controleer of ze als globale variabele aangeduid zijn.
 
 ```python
 global buitenste, binnenste, roos
@@ -127,7 +127,7 @@ global buitenste, binnenste, roos
 Er is nog een beslissing die je moet nemen: wat gebeurt er als de pijl niet op een van de doelcirkels landt? Om deze laatste controle uit te voeren, gebruik je `else`.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We gebruiken <span style="color: #0faeb0; font-weight: bold;"> if ... else</span> om beslissingen te nemen. Als je wakker wordt, controleer je en als het ochtend is sta je op, anders ga je weer slapen. Kun je een 'if ... else'  beslissing bedenken? 
+We gebruiken <span style="color: #0faeb0; font-weight: bold;"> if ... else</span> om beslissingen te nemen. Als je wakker wordt, controleer je en als het ochtend is sta je op, anders ga je weer slapen. Kun jij ook een 'if ... else' beslissing bedenken die jij vaak gebruikt? 
 </p>
 
 --- task ---
