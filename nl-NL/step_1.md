@@ -20,7 +20,7 @@ Je gaat:
 <div style="flex-basis: 175px; flex-grow: 1">  
 Klik op de knop **Run** hieronder om het spel te starten. Wanneer de stip op het doel komt, klik je met de muis (of tik je op je tablet) om je pijl af te schieten. 
 
-Probeer een paar keer. Je score verschijnt in het uitvoergebied onder het doel. Hoe verandert je score als de pijl op de verschillende kleuren landt? 
+Probeer het een paar keer. Je score verschijnt in het uitvoergebied onder het doel. Hoe verandert je score als de pijl op de verschillende kleuren landt? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
@@ -37,5 +37,5 @@ Probeer een paar keer. Je score verschijnt in het uitvoergebied onder het doel. 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Het oudste bewijs van <span style="color: #0faeb0; font-weight: bold;"> boogschieten </span> komt uit de Sibudu-grot in KwaZulu-Natal, Zuid-Afrika. Er zijn overblijfselen gevonden van pijlpunten van steen en been, die dateren van 60.000 tot 70.000 jaar geleden. 
+Het oudste bewijs van <span style="color: #0faeb0; font-weight: bold;"> boogschieten </span> komt uit de Sibudu-grot in KwaZulu-Natal, Zuid-Afrika. Er zijn overblijfselen gevonden van pijlpunten van steen en beenderen, die dateren van 60.000 tot 70.000 jaar geleden. 
 </p>
