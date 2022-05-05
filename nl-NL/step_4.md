@@ -33,7 +33,7 @@ ellipse(200, 200, 15, 15)
 
 --- task ---
 
-Ga naar de `draw()` code die het doel maakt en voeg aan het einde code toe om de `fill()` tcode voor `hout` in te stellen, en roep dan je nieuwe `schiet_pijl()` functie aan.
+Ga naar de `draw()` code die het doel maakt en voeg aan het einde code toe om de `fill()` code voor `hout` in te stellen, en roep dan je nieuwe `schiet_pijl()` functie aan.
 
 --- code ---
 ---
@@ -115,7 +115,7 @@ ellipse(pijl_x, pijl_y, 15, 15) #Update naar willekeurige coördinaten
 
 ### Bij welke kleur raakt de pijl het doel
 
-De functie `get()` retourneert de kleur van een pixel.
+De functie `get()` haalt de kleur van een pixel op.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 Een <span style="color: #0faeb0; font-weight: bold;">pixel</span>, een afkorting van picture element, is een enkele gekleurde stip in een afbeelding. Afbeeldingen zijn opgebouwd uit veel gekleurde pixels.
