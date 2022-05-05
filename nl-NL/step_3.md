@@ -25,7 +25,7 @@ Wanneer je de functie `triangle()` oproept, moet je drie sets coördinaten opgev
 title: Driehoekscoördinaten
 ---
 
-  Hier zijn drie voorbeelddriehoeken, elk met verschillende sets coördinaten. Kijk naar de rasterpositie van elk om te zien hoe de `x` en `y` coördinaten de hoeken van de driehoeken positioneren:
+  Hier zijn drie voorbeelddriehoeken, elk met verschillende sets coördinaten. Kijk naar de rasterpositie van elke driehoek om te zien hoe de `x` en `y` coördinaten de hoeken van de driehoeken positioneren:
   + Groene driehoek: triangle(50, 50, 150, 50, 180, 100)
   + Blauwe driehoek: triangle(210, 280, 300, 350, 380, 100)
   + Bruine driehoek: triangle(50, 150, 200, 250, 180, 350)
@@ -69,11 +69,11 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-Het grootste deel van het doelwit zal een blauwe **cirkel** zijn, gemaakt met behulp van de functie `ellipse()`. Een ellips is een vorm met één zijde en geen hoeken. Het kan platgedrukt worden, zoals een ovaal, of perfect rond, zoals een cirkel.
+Het grootste deel van het doelwit zal een blauwe **cirkel** zijn, gemaakt met behulp van de functie `ellipse()`. Een ellips is een vorm met één zijde en geen hoeken. Hij kan platgedrukt worden, zoals een ovaal, of perfect rond, zoals een cirkel.
 
 Een ellips heeft `x` en `y` coördinaten, breedte en hoogte nodig. De `x` en `y` coördinaten van een ellips geven de middenpositie aan.
 
-De blauwe cirkel zal de bruine cirkel bedekken waar ze elkaar overlappen, omdat die cirkel later is getekend.
+De blauwe cirkel zal de bruine driehoek bedekken waar ze elkaar overlappen, omdat die cirkel later is getekend.
 
 **Tip:** Om een cirkel te maken, moeten de **breedte** en **hoogte** gelijk zijn.
 
