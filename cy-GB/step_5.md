@@ -1,19 +1,19 @@
-## Score points
+## Sgorio pwyntiau
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will add scores based on where the arrow hits.
+Yn y cam hwn, byddwch chi'n ychwanegu sgoriau ar sail lle mae'r saeth yn taro.
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Y targed, gyda'r saeth yn ymddangos mewn amrywiaeth o safleoedd a sgoriau'n ymddangos fel testun o dan y gêm.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-The colour variables in the `draw()` function will be used to check the score in the `mouse_pressed()` function. To do this, they need to be set as global variables:
+Bydd y newidynnau lliw yn y swyddogaeth `draw()` yn cael eu defnyddio i wirio'r sgôr yn y swyddogaeth `mouse_pressed()`. I wneud hyn, bydd angen eu gosod fel newidynnau cyffredinol:
 
 --- code ---
 ---
@@ -22,7 +22,7 @@ line_highlights: 28
 ---
 
 def draw():
-# Things to do in every frame
+# Pethau i'w gwneud ym mhob ffrâm
   global outer, inner, bullseye    
 sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206    
 grass = color(149, 212, 122)    
@@ -36,18 +36,18 @@ bullseye = color(220, 200, 0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+Rydyn ni'n defnyddio <span style="color: #0faeb0; font-weight: bold;">amodau</span> i wneud penderfyniadau drwy'r amser. Pethau fel 'os nad oes min ar y pensil, mae angen ei finio'. Yn debyg, mae amodau `if` yn gadael i ni ysgrifennu cod sy'n gwneud pethau gwahanol yn dibynnu a yw'r amod yn wir neu ddim.
 </p>
 
 --- task ---
 
-To `print` a message for the target's outer circle, add code to your `mouse_pressed()` function to check if the `hit_color` is `==` to `outer`.
+I brintio neges ar gyfer cylch allanol y targed, ychwanegwch god at eich swyddogaeth `mouse_pressed()` i wneud yn siŵr bod y `lliw_taro` `==` to `allanol`.
 
-Be careful when using the `=` symbol in Python:
- + `=` is used for **assignment** — like `arrow_x = 200` to set the value of a variable
- + `==` is used to test **equivalence** — like `hit_color == bullseye` — if the things on either side have the same value, then the test is `True`, otherwise it is `False`
+Byddwch yn ofalus wrth ddefnyddio'r symbol `=` yn Python:
+ + `=` yn cael ei ddefnyddio i **neilltuo** — fel `saeth_x= 200` i osod gwerth newidyn
+ + `==` yn cael ei ddefnyddio i brofi **cywerthedd** — fel `lliw_taro == canol_y_nod` — os oes gan y pethau ar y naill ochr a'r llall yr un gwerth, mae'r prawf yn `True`, fel arall mae'n `False`
 
-Change the code in your `print()` to give a score:
+Newidiwch y cod yn eich `print()` i roi sgôr:
 
 --- code ---
 ---
@@ -55,10 +55,10 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 10-11
 ---
 
-# The mouse_pressed function goes here
+# Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
 def mouse_pressed():     
 if hit_color == outer:      
-print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+print('You hit the outer circle, 50 points!') #Fel swyddogethau, mae datganiadau 'if' wedi'u mewnoli
 
 --- /code ---
 
@@ -66,29 +66,29 @@ print('You hit the outer circle, 50 points!') #Like functions, 'if' statements a
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the blue outer circle to see your message. The colour of the pixel at the centre of the arrow is the colour that is saved and checked.
+**Profi:** Rhedwch eich prosiect. Ceisiwch stopio'r saeth ar y cylch allanol glas i weld eich neges. Lliw'r picsel ar ganol y saeth yw'r lliw sy'n cael ei gadw a'i wirio.
 
-**Tip:** `frame_rate()`, in `setup()`, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**Cyngor:** Mae `frame_rate()` yn `setup()` yn rheoli pa mor gyflym mae eich gêm yn llunio. Os yw'n mynd yn rhy gyflym, rhowch rif is.
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
+![Yr ardal allbwn gyda saeth yn cyffwrdd y cylch allanol. Mae'r datganiad print pwyntiau yn ymddangos yn yr ardal allbwn.](images/blue-points.png)
 
-**Debug:** Make sure your code matches exactly and you indented the code inside your `if` statement. The indent tells Python that the code should only run if the condition is `True`.
+**Difa chwilod:** Gwnewch yn siŵr bod eich cod yn cyfateb yn union a'ch bod wedi mewnoli'r cod yn eich datganiad `if`. Mae mewnoli yn dweud wrth Python mai dim ond os yw'r amod yn `True` y dylai'r cod redeg.
 
 --- /task ---
 
-As points will be scored if the arrow lands on the `inner` or `bullseye` circles too, `outer` is not the only circle you need to check. To do this, use `elif` (a shortened version of else - if).
+Oherwydd bydd pwyntiau'n cael eu sgorio os bydd y saeth yn glanio ar y cylchoedd `mewnol` neu `canol_y_nod` hefyd, nid `allanol` yw'r unig gylch mae'n rhaid i chi ei wirio. I wneud hyn, defnyddiwch `elif` (fersiwn wedi'i byrhau o else - if).
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> else - if </span> to make decisions in real life. When you are painting a picture of the sky, you might check if there is a yellow paint for the sun. Else, if there is no yellow paint, you look for orange. Else, if there is no yellow or orange paint, you might use red — really lightly!
+Rydyn ni'n defnyddio <span style="color: #0faeb0; font-weight: bold;"> else - if </span> i wneud penderfyniadau mewn bywyd go iawn. Pan fyddwch chi'n paentio llun o'r awyr, efallai byddwch chi'n gweld a oes paent melyn ar gyfer yr haul. Fel arall, os nad oes paent melyn, rydych chi'n chwilio am baent oren. Fel arall, os nad oes paent melyn nac oren, fe allech chi ddefnyddio coch — yn ysgafn iawn!
 </p>
 
 --- task ---
 
-An `elif` can only be used with an `if` statement and, like an `if`, it checks a condition. If the condition is `True`, the `elif` runs some code.
+Dim ond gyda datganiad `if` gellir defnyddio `elif` ac, fel `if`, mae'n gwirio amod. Os yw'r amod yn `True`, mae'r `elif` yn rhedeg cod.
 
-What makes `elif` different is that it will only make that check if the conditions of the `if` and any `elif`s before it are `False`.
+Yr hyn sy'n gwneud `elif` yn wahanol yw y bydd yn gwirio dim ond os yw amodau `if` ac unrhyw `elif` o'i flaen yn `False`.
 
-Add `elif` statements for `inner` and `bullseye`.
+Ychwanegwch ddatganiadau `elif` ar gyfer `mewnol` a `canol_y_nod`.
 
 --- code ---
 ---
@@ -110,13 +110,13 @@ print('You hit the bullseye, 500 points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow on the red and yellow circles to see their messages.
+**Profi:** Rhedwch eich prosiect. Ceisiwch stopio'r saeth ar y cylchoedd coch a melyn i weld eu negeseuon.
 
-![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
+![Yr ardal allbwn gyda'r saeth yn cyffwrdd y cylch mewnol. Mae'r datganiad print pwyntiau yn ymddangos yn yr ardal allbwn.](images/yellow-points.png)
 
-**Debug:** Make sure your `elif` is at the same indentation level as your `if`, and the code inside your `elif` is at the same level as the code inside your `if`.
+**Difa chwilod:** Gwnewch yn siŵr bod eich `elif` ar yr un lefel mewnoli â'ch `if`, a bod y cod tu mewn i'ch `elif` ar yr un lefel â'r cod tu mewn i'ch `if`.
 
-**Debug:** If you see a message about `inner` or `bullseye` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+**Difa chwilod:** Os gwelwch chi neges yn dweud bod y `mewnol` neu `canol_y_nod` 'not defined', ewch yn ôl i `draw()` a gwneud yn siŵr eu bod ar y llinell sy'n datgan bod y newidynnau'n rhai cyffredinol (global).
 
 ```python
 global outer, inner, bullseye
@@ -124,15 +124,15 @@ global outer, inner, bullseye
 
 --- /task ---
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? To do this last check, you use `else`.
+Mae un penderfyniad arall i chi ei wneud: beth sy'n digwydd os nad yw'r saeth yn glanio ar unrhyw un o gylchoedd y targed? Rydych chi'n defnyddio `else` i wneud y gwiriad olaf hwn.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> if … else </span> to make decisions. When you wake up, you check and if it is morning you get up, else you go back to sleep. Can you think of any if ... else decisions you make? 
+Rydyn ni'n defnyddio <span style="color: #0faeb0; font-weight: bold;"> os (if) … fel arall (else) </span> i wneud penderfyniadau. Pan fyddwch chi'n deffro, rydych chi'n gweld a yw hi'n fore ac os felly, yn deffro. Fel arall, rydych chi'n mynd yn ôl i gysgu. Allwch chi feddwl am unrhyw benderfyniadau os ... fel arall rydych chi'n eu gwneud? 
 </p>
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Ychwanegwch god i brintio neges `else` os nad yw unrhyw un o'r datganiadau `if` ac `elif` wedi'u bodloni.
 
 --- code ---
 ---
@@ -148,7 +148,7 @@ print('You hit the inner circle, 200 points!')
 elif hit_color == bullseye:    
 print('You hit the bullseye, 500 points!')   
 else:   
-print('You missed! No points!')
+print('You missed! Dim pwyntiau!')
 
 --- /code ---
 
@@ -156,9 +156,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** Run your project. Try to stop the arrow in the grass or sky to see the miss message. Change the number of points scored for the different colours if you like.
+**Profi:** Rhedwch eich prosiect. Ceisiwch stopio'r saeth ar y gwair neu yn yr awyr i weld y neges methu. Newidiwch nifer y pwyntiau sy'n cael eu sgorio am y gwahanol liwiau os hoffech chi.
 
-![The output area with an arrow missing the target. The points print statement appears in the output area.](images/missed-points.png)
+![Yr ardal allbwn gyda saeth yn methu'r targed. Mae'r datganiad print pwyntiau yn ymddangos yn yr ardal allbwn.](images/missed-points.png)
 
 --- /task ---
 
