@@ -19,15 +19,15 @@ Als je een Trinket-account hebt, kun je op de knop **Remix** klikken om een kopi
 
 --- /task ---
 
-Het startproject heeft al code voor je geschreven om de `p5` -bibliotheek te importeren, je gaat deze bibliotheek gebruiken om je boogschietspel te bouwen.
+Het startproject heeft al code voor je geschreven om in je `p5` -bibliotheek te importeren, je gaat deze bibliotheek gebruiken om je boogschietspel te bouwen.
 
 [[[p5-processing-library]]]
 
 --- task ---
 
-De functie `fill()` stelt de binnenkleur van vormen in. Het startproject bevat al enkele RGB-kleuren die je hiervoor kunt gebruiken.
+De functie `fill()` stelt de opvulkleur van vormen in. Het startproject bevat al enkele RGB-kleuren die je hiervoor kunt gebruiken.
 
-Zoek je `draw()` functie en bereid je voor om de lucht te tekenen door ingesprongen code toe te voegen om de `fill()` kleur in te stellen op `lucht`:
+Zoek je `draw()` functie om de lucht te tekenen, je doet dit door ingesprongen code toe te voegen om de `fill()` kleur in te stellen op `lucht`:
 
 --- code ---
 ---
@@ -76,7 +76,7 @@ line_highlights: 26
 
 ![Een blauwe rechthoek met een zwarte rand eromheen, daarboven een grijze rechthoek.](images/sky_stroke.png){:width="300px"}
 
-Dat is een beetje vreemd: er staat een zwarte lijn om je lucht! Dit komt omdat, wanneer het programma start, het automatisch een zwarte rand plaatst — een zogenaamde **stroke** — rond alles wat het tekent.
+Hé wat raar: er staat een zwarte lijn om je lucht! Dit komt omdat, wanneer het programma start, het automatisch een zwarte rand plaatst — een zogenaamde **stroke** — rond alles wat het tekent.
 
 --- /task ---
 
