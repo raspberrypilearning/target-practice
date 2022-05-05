@@ -1,63 +1,63 @@
-Things to do in every frame
+Pethau i'w gwneud ym mhob ffrâm
 
-Red = 92, Green = 204, Blue = 206
+Coch = 92, Gwyrdd = 204, Glas = 206
 
-Start x, start y, width, height
+x dechrau, y dechrau, lled, uchder
 
-x, y, width, height
+x, y, lled, uchder
 
-Set the stand fill colour to brown
+Gosod lliw llenwi'r stand i frown
 
-Outer circle.200, 200 is the middle of the screen
+Cylch allanol.200, 200 yw canol y sgrin
 
-Blue
+Glas
 
-Red
+Coch
 
-Yellow
+Melyn
 
 Stand
 
-Outer circle
+Cylch allanol
 
-Inner circle
+Cylch mewnol
 
-Bullseye
+Canol y nod
 
-The shoot_arrow function goes here
+Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
 
-Import library code
+Mewngludo cod llyfrgell
 
-Update to random coordinates
+Diweddaru i gyfesurynnau ar hap
 
-Save the colour before drawing the arrow
+Cadw'r lliw cyn llunio'r saeth
 
-The mouse_pressed function goes here
+Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
 
-Can be used in other functions
+Gellir ei ddefnyddio mewn swyddogaethau eraill
 
-Like functions, 'if' statements are indented
+Fel swyddogaethau, mae datganiadau 'if' yn cael eu mewnoli
 
-Setup your game here
+Gosodwch eich gêm yma
 
-width and height
+lled ac uchder
 
-Definitions for compatibility with the p5py processing library
+Diffiniadau ar gyfer cydnawsedd â'r llyfrgell brosesu p5py
 
-Shape
+Siâp
 
-Fonts
+Ffontiau
 
-Text
+Testun
 
-Colour
+Lliw
 
-Images
+Delweddau
 
-Environment
+Amgylchedd
 
-Transform
+Trawsnewid
 
-Keyboard
+Bysellfwrdd
 
-Keep this to run your code
+Cadwch hwn i redeg eich cod
