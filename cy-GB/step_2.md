@@ -1,33 +1,33 @@
-## Create a background
+## Creu cefndir
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The sky and grass are made by writing code to draw coloured rectangles.
+Mae'r awyr a'r gwair yn cael eu gwneud drwy ysgrifennu cod i lunio petryalau lliw.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![Yr ardal allbwn gyda phetryal lliw awyr uwchben petryal lliw gwair i greu'r cefndir.](images/background.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+Agorwch y [prosiect dechreuol Saethyddiaeth](https://trinket.io/python/9973649e5c){:target="_blank"}.
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
+Os oes gennych chi gyfrif Trinket, fe allwch chi glicio'r botwm **Remix** i gadw copi yn eich llyfrgell `My Trinkets`.
 
 --- /task ---
 
-The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game.
+Mae rhywfaint o god wedi'i ysgrifennu i chi yn barod yn y prosiect dechreuol er mwyn i chi fewngludo'r llyfrgell `p5`. Byddwch yn defnyddio'r llyfrgell hon i adeiladu eich gêm saethyddiaeth.
 
 [[[p5-processing-library]]]
 
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this.
+Mae'r swyddogaeth `fill()` yn gosod y lliw tu mewn i'r siapiau. Mae'r prosiect dechreuol eisoes yn cynnwys rhai lliwiau RGB gallwch chi eu defnyddio i wneud hyn.
 
-Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
+Dewch o hyd i'ch swyddogaeth `draw()` a pharatoi i lunio'r awyr drwy ychwanegu cod wedi'i fewnoli i osod y lliw `fill()` ar `awyr`:
 
 --- code ---
 ---
@@ -48,15 +48,15 @@ outer = color(0, 120, 180)
 
 --- /task ---
 
-The `size()` function call in `setup()` sets the screen size to 400 pixels by 400 pixels.
+Mae'r swyddogaeth `size()` yn `setup()` yn gosod maint y sgrin ar 400 picsel wrth 400 picsel.
 
 [[[p5-coordinates]]]
 
 --- task ---
 
-After your `fill()` code, draw a `rect()` for the sky with top-left coordinates (`0`,`0`), a width of `400` to match the width of the screen and a height of `250`.
+Ar ôl eich cod `fill()` lluniwch betryal - `rect()` - ar gyfer yr awyr gyda'r cyfesurynnau chwith uchaf (`0`,`0`), lled o `400` i gyfateb i led y sgrin ac uchder o `250`.
 
-![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
+![Petryal glas gyda grid cyfesurynnau yn dangos safle'r petryal awyr yn dechrau yn y gornel uchaf, uwchben petryal llwyd.](images/sky_coords.png)
 
 --- code ---
 ---
@@ -72,17 +72,17 @@ line_highlights: 26
 
 --- task ---
 
-**Test:** Run your code to see the sky you've drawn. Remember that with the `p5` library, the `run()` function calls the `setup()` function once, then the `draw()` function repeatedly.
+**Profi:** Rhedwch eich cod i weld yr awyr rydych chi wedi'i llunio. Cofiwch, gyda'r llyfrgell `p5` mae'r swyddogaeth `run()` yn galw'r swyddogaeth `setup()` unwaith, wedyn y swyddogaeth `draw()` drosodd a throsodd.
 
-![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
+![Petryal glas gyda border du o'i amgylch, uwchben petryal llwyd.](images/sky_stroke.png){:width="300px"}
 
-That's a bit strange: there's a black line around your sky! This is because, when the program starts, it automatically sets a black border — called a **stroke** — around everything it draws.
+Dyna ryfedd: mae llinell ddu o amgylch eich awyr! Y rheswm am hyn yw, pan fydd rhaglen yn dechrau, mae'n gosod border du — o'r enw **stroke** — o amgylch popeth mae'n ei lunio yn awtomatig.
 
 --- /task ---
 
 --- task ---
 
-Turn off the stroke by adding `no_stroke()` before you start drawing the sky.
+I gael gwared ar y strôc, ychwanegwch `no_stroke()` cyn dechrau llunio'r awyr.
 
 --- code ---
 ---
@@ -102,17 +102,17 @@ rect(0, 0, 400, 250) #x, y, width, height
 
 --- task ---
 
-**Test:** Run your project again to check that the stroke has gone.
+**Profi:** Rhedwch eich prosiect eto i wneud yn siŵr bod y strôc wedi diflannu.
 
 --- /task ---
 
 --- task ---
 
-`fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
+Mae `fill()` yn newid y lliw llenwi ar gyfer pob siâp sy'n cael ei lunio nes bod `fill()` yn cael ei galw eto gyda lliw newydd.
 
-Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`.
+Newidiwch y lliw `fill()` i `gwair` ac ychwanegu `rect(x, y, lled, uchder)` arall.
 
-This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
+Mae angen i'r petryal hwn fod o dan yr awyr ar y cyfesurynnau (0, 250) er mwyn iddo ddechrau yn y rhan isaf o'r sgrin.
 
 --- code ---
 ---
@@ -134,7 +134,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-**Test:** Run your project again to view the finished background.
+**Profi:** Rhedwch eich prosiect eto i weld y cefndir gorffenedig.
 
 --- /task ---
 
