@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Personaliseer en voeg meer toe aan je project. Misschien kun je de moeilijkheidsgraad aanpassen of meer cirkels aan je doel toevoegen.
+Nu is het jouw beurt! Wat kun jij nog meer toevoegen aan je project?  Misschien kun je de moeilijkheidsgraad aanpassen of meer cirkels aan je doel toevoegen.
 </div>
 <div>
 
