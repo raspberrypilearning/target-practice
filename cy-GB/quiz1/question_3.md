@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: Cwestiwn 3 o 3
 ---
 
-An ellipse is drawn using the following code:
+Mae elips yn cael ei lunio gan ddefnyddio'r cod canlynol:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this ellipse in the output area?
+Pa un o'r lluniau isod sy'n dangos safle cywir yr elips yn yr ardal allbwn?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Cylch gwyrdd â'i ganol yng nghornel dde isaf yr ardal allbwn.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `ellipse(400,400,300,300)`.
+  Ddim yn hollol. I gael canol y cylch yn y gornel dde isaf, byddai angen i'r cyfesurynnau fod yr un peth â maint y sgrin. Yn yr enghraifft hon, byddai'r elips yn `ellipse(400,400,300,300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Cylch gwyrdd â'i ganol yng nghanol yr ardal allbwn.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `ellipse(200,200,300,300)`.
+  Ddim yn hollol. I gael canol y cylch yn y canol, byddai angen i'r cyfesurynnau fod hanner maint y sgrin. Yn yr enghraifft hon, `ellipse(200,200,300,300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Cylch gwyrdd â'i ganol yng nghornel chwith uchaf yr ardal allbwn.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Cywir! Cyfesurynnau canol y cylch yw (0,0), cornel chwith uchaf y sgrin.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Cylch gwyrdd â'i ganol tua chornel dde uchaf yr ardal allbwn.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Na, byddai gan y cylch hwn y cod `ellipse(350,150,300,300)` i'w ganoli tua cornel dde uchaf y sgrin. Mae'r cyfesuryn `x` yn dangos pa mor bell ar draws y sgrin mae'r elips, a'r cyfesuryn `y` yw pa mor bell i lawr y sgrin mae'r elips.
 
   --- /feedback ---
 
