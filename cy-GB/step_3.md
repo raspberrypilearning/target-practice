@@ -1,42 +1,42 @@
-## Draw your target
+## Llunio eich targed
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The target stand is a triangle shape. The target is made with coloured circles — smaller circles are worth more points than larger ones. 
+Siâp triongl yw stand y targed. Mae'r targed yn cael ei wneud â chylchoedd lliw — mae'r cylchoedd llai werth mwy o bwyntiau na'r rhai mwy. 
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![Yr ardal allbwn gyda'r targed a'r stand.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-Shapes are drawn in the order that the lines of code run. The triangular wooden stand is partly behind the target circles so it must be drawn first.
+Mae siapiau'n cael eu llunio yn nhrefn rhedeg y llinellau cod. Mae'r stand pren triongl tu ôl cylchoedd y targed yn rhannol, felly rhaid ei lunio gyntaf.
 
-Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
+Dychmygwch dorri'r holl siapiau allan o bapur. Yn dibynnu ar sut rydych chi'n trefnu ac yn croesi'r papur hwnnw, gallai'r canlyniad edrych yn wahanol iawn.
 
-### Draw the stand
+### Llunio'r stand
 
 --- task ---
 
-When you call the `triangle()` function, you need to provide three sets of coordinates, `x1, y1, x2, y2, x3, y3` each representing the position of one of the triangle's corners.
+Pan fyddwch yn galw'r swyddogaeth `triangle()`, rhaid i chi ddarparu tair set o gyfesurynnau, `x1, y1, x2, y2, x3, y3` lle mae pob un yn cynrychioli un o gorneli'r triongl.
 
 --- collapse ---
 ---
-title: Triangle coordinates
+title: Cyfesurynnau triongl
 ---
 
-  Here are three example triangles, each with different sets of coordinates. Look at the grid position of each to see how the `x` and `y` coordinates position the corners of the triangles:
-  + Green triangle: triangle(50, 50, 150, 50, 180, 100)
-  + Blue triangle: triangle(210, 280, 300, 350, 380, 100)
-  + Brown triangle: triangle(50, 150, 200, 250, 180, 350)
+  Dyma dri triongl enghreifftiol ac mae gan bob un set wahanol o gyfesurynnau. 'Drychwch ar safle grid pob un i weld sut mae'r cyfesurynnau `x` a `y` yn lleoli corneli'r trionglau:
+  + Triongl gwyrdd: triongl(50, 50, 150, 50, 180, 100)
+  + Triongl glas: triongl(210, 280, 300, 350, 380, 100)
+  + Triongl brown: triongl(50, 150, 200, 250, 180, 350)
 
-  ![The output area with three triangles.](images/triangles-coords.png)
+  ![Yr ardal allbwn gyda thri thriongl.](images/triangles-coords.png)
 
 --- /collapse ---
 
-Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
+Lluniwch `triangle()` ar gyfer y stand gyda'r corneli yn (150, 350), (200, 150), a (250, 350).
 
-![A brown triangle on grass and against a sky with the coordinate points labelled.](images/stand_coords.png)
+![Triongl brown ar wair ac yn erbyn awyr gyda'r pwyntiau cyfesurynnau wedi'u labelu.](images/stand_coords.png)
 
 --- code ---
 ---
@@ -53,29 +53,29 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
-**Tip:** We have added comments to our code, like `#Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Cyngor:** Rydyn ni wedi ychwanegu sylwadau at ein cod, fel `#Gosod lliw llenwi'r stand ar frown`, i roi gwybod i chi beth mae'n ei wneud. Does dim rhaid i chi ychwanegu'r sylwadau hyn at eich cod, ond maen nhw'n gallu bod yn ddefnyddiol i'ch atgoffa beth mae llinellau cod yn ei wneud.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target.
+**Profi:** Rhedwch eich cod i weld stand eich targed.
 
-![A brown triangle on grass and against a sky.](images/target-stand.png)
+![Triongl brown ar wair ac yn erbyn awyr.](images/target-stand.png)
 
 --- /task ---
 
-### Draw the target
+### Llunio'r targed
 
 --- task ---
 
-The largest part of the target will be a blue **circle** made by using the `ellipse()` function. An ellipse is a shape with a single side and no corners. It can be squashed, like an oval, or perfecly round, like a circle.
+Bydd y rhan fwyaf o'r targed yn **gylch** glas wedi'i wneud gan ddefnyddio'r swyddogaeth `ellipse()`. Siâp ag un ochr a dim corneli yw elips. Gall fod yn hirgrwn neu'n hollol grwn fel cylch.
 
-An ellipse needs `x` and `y` coordinates, width, and height. The `x` and `y` coordinates of an ellipse are the centre position.
+Mae angen cyfesurynnau `x` ac `y`, lled ac uchder ar elips. Safle'r canol yw cyfesurynnau `x` ac `y` elips.
 
-The blue circle will cover the brown triangle where they overlap, because the circle was drawn later.
+Bydd y cylch glas yn gorchuddio'r triongl brown lle maen nhw'n gorgyffwrdd, oherwydd bod y cylch wedi'i lunio'n ddiweddarach.
 
-**Tip:** To make a circle, the **width** and **height** must be the same.
+**Cyngor:** I wneud cylch, rhaid i'r **lled** a'r **uchder** fod yr un fath.
 
 --- code ---
 ---
@@ -86,7 +86,7 @@ line_highlights: 33-34
   fill(wood)   
 triangle(150, 350, 200, 150, 250, 350)   
 fill(outer)    
-ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
+ellipse(200, 200, 170, 170) #Outer circle. 200, 200 yw canol y sgrin
 
 --- /code ---
 
@@ -94,21 +94,21 @@ ellipse(200, 200, 170, 170) #Outer circle. 200, 200 is the middle of the screen
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Profi:** Rhedwch eich cod i weld y cylch glas mawr cyntaf.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
+![Triongl brown a chylch glas ar wair ac yn erbyn awyr.](images/blue-circle.png)
 
 --- /task ---
 
 --- task ---
 
-Create two new variables to store colours `inner` and `bullseye` for the remaining circles.
+Ewch ati i greu dau newidyn newydd i storio'r lliwiau `mewnol` a `canol_y_nod` ar gyfer y cylchoedd sy'n weddill.
 
-Assign colours to the `inner` and `bullseye` variables using `color()`.
+Neilltuwch liwiau i'r newidynnau `mewnol` a `canol_y_nod` gan ddefnyddio `color()`.
 
-The `color()` function expects three numbers: one each for red, green, and blue.
+Mae'r swyddogaeth `color()` yn disgwyl tri rhif: un yr un i goch, gwyrdd a glas.
 
-We used numbers that give traditional archery target colours, but you can use whatever colours you like as long as they are different from each other.
+Rydyn ni wedi defnyddio rhifau sy'n creu lliwiau traddodiadol targed saethu, ond fe allwch chi ddefnyddio unrhyw liwiau mynnwch chi, cyhyd â'u bod yn wahanol i'w gilydd.
 
 [[[generic-theory-simple-colours]]]
 
@@ -134,9 +134,9 @@ bullseye = color(220, 200, 0) #Yellow
 
 --- task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200) — the middle of the screen.
+Mae'r targed wedi'i ffurffio o gylchoedd o wahanol faint gyda'r un cyfesurynnau canol (200, 200) — canol y sgrin.
 
-Add two more circles to represent an inner circle and the bullseye. Change the `fill()` before drawing each circle.
+Ychwanegwch ddau gylch arall i gynrychioli cylch mewnol a chanol y nod (y bullseye). Newidiwch `fill()` cyn llunio pob cylch.
 
 --- code ---
 ---
@@ -159,11 +159,11 @@ ellipse(200, 200, 30, 30) #Bullseye
 
 --- task ---
 
-**Test:** Run your project again to see the target with three coloured circles. Change the colours until you are happy with them.
+**Profi:** Rhedwch eich prosiect eto i weld y targed gyda thri chylch lliw. Newidiwch y lliwiau nes eich bod yn fodlon arnyn nhw.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)
+![Triongl brown gyda thri chylch lliw ar wair ac yn erbyn awyr.](images/three-circles.png)
 
-**Debug:** Python uses the American spelling of 'color' (without a 'u') so make sure you do the same.
+**Difa chwilod:** Mae Python yn defnyddio 'color', ar gyfer lliw, felly gwnewch yn siŵr eich bod chi'n gwneud hynny hefyd.
 
 --- /task ---
 
