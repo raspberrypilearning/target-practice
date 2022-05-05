@@ -1,20 +1,20 @@
-## Reflection
+## Beth nesaf?
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Da iawn, rydych chi wedi gwneud gêm! Amser myfyrio nawr — mae myfyrio'n rhan bwysig o ddysgu oherwydd mae'n helpu i wneud cysylltiadau newydd yn eich ymennydd.
 
-Answer the three questions below to reflect on what you've learnt.
+Atebwch y tri chwestiwn isod i fyfyrio ar yr hyn rydych chi wedi'i ddysgu.
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Ar ôl bob cwestiwn, pwyswch **cyflwyno**. Byddi di'n cael dy dywys i'r ateb cywir. Galli di wneud hyn gymaint ag y mynni.
 
-Have fun!
+Mwynhewch!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: Cwestiwn 1 o 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Dyma sgŵar glas. Beth yw'r gwerthoedd RGB a fydd yn ei greu?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Un bloc lliw glas.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Ddim yn hollol, pan fydd yr holl werthoedd lliw wedi'u gosod ar `0`, **du** yw'r lliw.
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Ddim yn hollol, mae lliwiau'n dilyn y model RGB. Mae gan y lliw hwn y gwerth R uchaf a dim G na B, felly bydd yn **goch**.
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  Cywir! Mae lliwiau'n dilyn y model RGB. Does gan y lliw hwn ddim R na G, ond y gwerth B uchaf, felly bydd yn **las**.
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Ddim yn hollol, pan fydd yr holl werthoedd lliw wedi'u gosod ar y gwerth uchaf o `255`, **gwyn** yw'r lliw.
 
   --- /feedback ---
 
