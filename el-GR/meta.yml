@@ -1,25 +1,29 @@
 ---
 title: Εξάσκηση στόχου
 hero_image: images/banner.png
-description: Χρησιμοποίησε την Python για να σχεδιάσεις έναν στόχο και να κερδίζεις πόντους χτυπώντας τον με βέλη
+description: Χρησιμοποίησε την Python για να σχεδιάσεις έναν στόχο και να κερδίζεις
+  πόντους χτυπώντας τον με βέλη
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-10-06"
+last_tested: '2021-10-06'
 steps:
-  - title: Εισαγωγή
-  - title: Δημιούργησε ένα υπόβαθρο
-  - title: Σχεδίασε τον στόχο σου
-    completion: engaged
-  - title: Ρίξε το βέλος σου
-  - title: Κέρδισε πόντους
-    completion: internal
-  - title: Αναστοχασμός
-    completion: external
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
-  - title: Αναβάθμιση του έργου σου
-  - title: Και τώρα;
+- title: Εισαγωγή
+- title: Δημιούργησε ένα υπόβαθρο
+- title: Σχεδίασε τον στόχο σου
+  completion:
+  - engaged
+- title: Ρίξε το βέλος σου
+- title: Κέρδισε πόντους
+  completion:
+  - internal
+- title: Αναστοχασμός
+  knowledge_quiz:
+    path: quiz1
+    version: 1
+    questions: 3
+    passing_score: 3
+  completion:
+  - external
+- title: Αναβάθμιση του έργου σου
+- title: Και τώρα;
