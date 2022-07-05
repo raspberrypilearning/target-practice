@@ -5,7 +5,7 @@ description: Gebruik Python om een doel te tekenen en punten te scoren door het 
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-10-06"
+last_tested: '2021-10-06'
 steps:
   - 
     title: Inleiding
@@ -13,20 +13,23 @@ steps:
     title: Een achtergrond maken
   - 
     title: Teken je doelwit
-    completion: engaged
+    completion:
+      - engaged
   - 
     title: Schiet de pijl af
   - 
     title: Punten scoren
-    completion: internal
+    completion:
+      - internal
   - 
     title: Reflectie
-    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
+    completion:
+      - external
   - 
     title: Verbeter je project
   - 
