@@ -1,0 +1,63 @@
+Pethau i'w gwneud ym mhob ffrâm
+
+Coch = 92, Gwyrdd = 204, Glas = 206
+
+x dechrau, y dechrau, lled, uchder
+
+x, y, lled, uchder
+
+Gosod lliw llenwi'r stand i frown
+
+Cylch allanol.200, 200 yw canol y sgrin
+
+Glas
+
+Coch
+
+Melyn
+
+Stand
+
+Cylch allanol
+
+Cylch mewnol
+
+Canol y nod
+
+Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
+
+Mewngludo cod llyfrgell
+
+Diweddaru i gyfesurynnau ar hap
+
+Cadw'r lliw cyn llunio'r saeth
+
+Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
+
+Gellir ei ddefnyddio mewn swyddogaethau eraill
+
+Fel swyddogaethau, mae datganiadau 'if' yn cael eu mewnoli
+
+Gosodwch eich gêm yma
+
+lled ac uchder
+
+Diffiniadau ar gyfer cydnawsedd â'r llyfrgell brosesu p5py
+
+Siâp
+
+Ffontiau
+
+Testun
+
+Lliw
+
+Delweddau
+
+Amgylchedd
+
+Trawsnewid
+
+Bysellfwrdd
+
+Cadwch hwn i redeg eich cod

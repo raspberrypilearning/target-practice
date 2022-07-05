@@ -1,0 +1,37 @@
+awyr
+
+gwair
+
+pren
+
+allanol
+
+mewnol
+
+canol_y_nod
+
+saethu_saeth
+
+saeth_x
+
+saeth_y
+
+lliw_taro
+
+Ti wedi taro'r cylch allanol, 50 pwynt!
+
+Ti wedi taro'r cylch mewnol, 200 pwynt!
+
+Canol y nod! 500 pwynt!
+
+Ti wedi methu! Dim pwyntiau!
+
+cyflymder
+
+Cyflym iawn iawn
+
+Eithaf cyflym
+
+Cyflym iawn
+
+Heb adnabod y cyflymder!
