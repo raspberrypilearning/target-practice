@@ -1,20 +1,20 @@
-## Reflection
+## आपके सोच
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+बहुत बढ़िया, आपने एक गेम बनाया! अब यह प्रतिबिंबित करने का समय है - प्रतिबिंबित करना सीखने का एक महत्वपूर्ण हिस्सा है क्योंकि यह आपके मस्तिष्क में नए कनेक्शन बनाने में मदद करता है।
 
-Answer the three questions below to reflect on what you've learnt.
+आपने जो सीखा है, उसे दर्शाने के लिए नीचे दिए गए तीन प्रश्नों का उत्तर दें।
 
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+प्रत्येक प्रश्न के बाद, **सबमिट करें** दबाएं। वह आपको सही उत्तर की तरफ लेकर जाएगा। आप इस गतिविधि को जितनी बार चाहें उतनी बार कर सकते हैं।
 
-Have fun!
+आनंद लें!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: प्रश्न 1 का 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+यहाँ एक नीला वर्ग है, RGB मान क्या हैं जो इसे बनाएंगे?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![नीले रंग का एक एकल ब्लॉक।](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +22,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+बिल्कुल नहीं, जब सभी रंग मान `0` पर सेट होते हैं, तो रंग **काला ** होता है।
 
   --- /feedback ---
 
@@ -30,7 +30,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+बिल्कुल नहीं, रंग RGB मॉडल का पालन करते हैं। इस रंग में अधिकतम R मान है और कोई G या B नहीं है, इसलिए **red** होगा।
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  यह सही है! रंग RGB मॉडल का पालन करते हैं। इस रंग में कोई R या G नहीं है, लेकिन अधिकतम B है, इसलिए **नीला** होगा।
 
   --- /feedback ---
 
@@ -46,7 +46,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  बिल्कुल नहीं, जब सभी रंग मान `255` अधिकतम पर सेट होते हैं, तो रंग **सफ़ेद (white)** होता है।
 
   --- /feedback ---
 
