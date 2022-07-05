@@ -1,0 +1,28 @@
+---
+title: Ymarfer saethu
+hero_image: images/banner.png
+description: Defnyddiwch Python i lunio targed a sgorio pwyntiau drwy ei daro â saethau
+version: 4
+listed: true
+copyedit: true
+last_tested: '2021-10-06'
+steps:
+  - title: Cyflwyniad
+  - title: Creu cefndir
+  - title: Llunio eich targed
+    completion:
+      - engaged
+  - title: Saethu
+  - title: Sgorio pwyntiau
+    completion:
+      - internal
+  - title: Myfyrio
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Uwchraddio eich brosiect
+  - title: Beth nesaf?
