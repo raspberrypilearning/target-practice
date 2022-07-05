@@ -5,7 +5,7 @@ description: Utiliser Python pour dessiner une cible et marquer des points en la
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-10-06"
+last_tested: '2021-10-06'
 steps:
   - 
     title: Introduction
@@ -13,20 +13,23 @@ steps:
     title: Créer un arrière-plan
   - 
     title: Dessiner ta cible
-    completion: engaged
+    completion:
+      - engaged
   - 
     title: Tirer la flèche
   - 
     title: Marquer des points
-    completion: internal
+    completion:
+      - internal
   - 
     title: Réflexion
-    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
+    completion:
+      - external
   - 
     title: Améliorer ton projet
   - 
