@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: 3 प्रश्नों में तीसरा
 ---
 
-An ellipse is drawn using the following code:
+एक दीर्घवृत्त निम्नलिखित कोड का उपयोग करके बनाया जाता है:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this ellipse in the output area?
+नीचे दिए गए चित्रों में से कौन-सा आउटपुट क्षेत्र में इस दीर्घवृत्त की सही स्थिति दिखाता है?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![आउटपुट क्षेत्र के निचले-दाएँ कोने में केंद्रित एक हरा वृत्त।](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `ellipse(400,400,300,300)`.
+  नहीं, निचले-दाएँ कोने में वृत्त को केंद्र में लाने के लिए, निर्देशांक स्क्रीन के आकार के समान होने चाहिए। इस उदाहरण में, दीर्घवृत्त `ellipse(400,400,300,300)` होगा।
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![आउटपुट क्षेत्र के मध्य में केंद्रित एक हरा वृत्त।](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `ellipse(200,200,300,300)`.
+  बिल्कुल नहीं, मध्य में वृत्त को केंद्रित करने के लिए, निर्देशांक स्क्रीन के आकार का आधा होना चाहिए। इस उदाहरण में, `ellipse(200,200,300,300)`।
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![आउटपुट क्षेत्र के ऊपरी-बाएँ कोने में केंद्रित एक हरा वृत्त।](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  यह सही है! यह वृत्त निर्देशांक (0,0) पर केंद्रित है, जो स्क्रीन का ऊपरी-बायाँ कोना है।
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![आउटपुट क्षेत्र के ऊपरी-दाईं ओर केंद्रित एक हरा वृत्त।](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  नहीं, इस सर्कल में `दीर्घवृत्त(350,150,300,300)` का कोड होगा ताकि इसे स्क्रीन के ऊपरी-दाईं ओर केंद्रित किया जा सके। `x` निर्देशांक यह है कि कितनी दूर स्क्रीन पर दीर्घवृत्त है, और `y` निर्देशांक है कि स्क्रीन कितनी नीचे है।
 
   --- /feedback ---
 
