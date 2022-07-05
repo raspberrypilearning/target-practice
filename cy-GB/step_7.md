@@ -29,7 +29,7 @@ Fe allech chi:
 title: Prosiect gorffenedig
 ---
 
-Fe allwch chi weld y [prosiect gorffenedig yma](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+Fe allwch chi weld y [prosiect gorffenedig yma](https://trinket.io/python/5126c55555){:target="_blank"}.
 
 --- /collapse ---
 

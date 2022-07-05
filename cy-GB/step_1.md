@@ -21,7 +21,7 @@ Byddi di'n:
 Cliciwch y botwm **Run** isod i ddechrau'r gêm. Pan fydd y dot yn ymddangos ar y targed, cliciwch y llygoden (neu daro ar eich dyfais tabled) i saethu. 
 
 Rhowch ambell gynnig arni. Bydd eich sgôr yn ymddangos yn yr ardal allbwn o dan y targed. Sut mae eich sgôr yn newid pan fydd y saeth yn glanio ar y gwahanol liwiau? 
-  <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/5126c55555?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>

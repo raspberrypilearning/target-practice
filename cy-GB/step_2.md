@@ -13,7 +13,7 @@ Mae'r awyr a'r gwair yn cael eu gwneud drwy ysgrifennu cod i lunio petryalau lli
 
 --- task ---
 
-Agorwch y [prosiect dechreuol Saethyddiaeth](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Agorwch y [prosiect dechreuol Saethyddiaeth](https://trinket.io/python/23a6f02447){:target="_blank"}.
 
 Os oes gennych chi gyfrif Trinket, fe allwch chi glicio'r botwm **Remix** i gadw copi yn eich llyfrgell `My Trinkets`.
 
