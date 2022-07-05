@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: तीन में से दूसरा प्रश्न
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+अपने प्रोजेक्ट में, आपने `if`, `elif`, और `else` शर्तों का उपयोग किया है ताकि यह पता लगाया जा सके कि तीर किस रंग में उतरा।
 
-When this code is run, what would be printed in the output area?
+जब यह कोड चलाया जाता है, तो आउटपुट क्षेत्र में क्या प्रिंट किया जाएगा?
 
 --- code ---
 ---
@@ -21,11 +21,11 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `बहुत तेज़`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  यह सही है! **speed** वेरिएबल को `6` का मान सौंपा गया है, जो `speed == 6` स्थिति को **True** बनाता है और `बहुत तेज` प्रिंट करता है।
 
   --- /feedback ---
 
@@ -33,15 +33,15 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  बिल्कुल नहीं, **speed** वेरिएबल को असाइन किए गए मान को देखें।
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- () कुछ भी नहीं छपा
 
   --- feedback ---
 
-  No, with the else statement, there will always be something that is true. Therefore, an output will be printed.
+  नहीं, दूसरे कथन के साथ, हमेशा कुछ ऐसा होगा जो सच हो। इसलिए, एक आउटपुट प्रिंट किया जाएगा।
 
   --- /feedback ---
 
