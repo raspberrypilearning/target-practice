@@ -61,7 +61,7 @@ line_highlights: 44-45
 
 **Profi:** Rhedwch eich cod a gweld y saeth yn ymddangos yng nghanol y nod.
 
-![Y targed ar gefndir gyda chylch brown, y saeth, arno.](images/saeth-middle.png)
+![Y targed ar gefndir gyda chylch brown, y saeth, arno.](images/arrow-middle.png)
 
 --- /task ---
 
@@ -218,7 +218,7 @@ def saethu_saeth():
 
 Mae'r prosiect yn cael y `lliw_taro` bob tro mae'r saeth yn cael ei hail-lunio ac yn printio'r gwerth lliw yn yr ardal allbwn o dan y targed.
 
-![Y targed gyda chylch brown, y saeth, yn ymddangos mewn amrywiaeth o safleoedd.](images/fire_saeth.gif)
+![Y targed gyda chylch brown, y saeth, yn ymddangos mewn amrywiaeth o safleoedd.](images/fire_arrow.gif)
 
 **Difa chwilod:** Os ydych chi'n gweld neges yn dweud `lliw_taro` 'not defined', ewch yn ôl i `saeth_saethu()` a gwneud yn siŵr bod gennych chi'r llinell `global lliw_taro`.
 
