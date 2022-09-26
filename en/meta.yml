@@ -5,24 +5,24 @@ description: Use Python to draw a target and score points by hitting it with arr
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-10-06'
+last_tested: "2021-10-06"
 steps:
-- title: Introduction
-- title: Create a background
-- title: Draw your target
-  completion:
-  - engaged
-- title: Fire your arrow
-- title: Score points
-  completion:
-  - internal
-- title: Reflection
-  knowledge_quiz:
-    path: quiz1
-    version: 1
-    questions: 3
-    passing_score: 3
-  completion:
-  - external
-- title: Upgrade your project
-- title: What next?
+  - title: You will make
+  - title: Create a background
+  - title: Draw your target
+    completion:
+      - engaged
+  - title: Fire your arrow
+  - title: Score points
+    completion:
+      - internal
+  - title: Quick quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Upgrade your project
+  - title: What next?
