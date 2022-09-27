@@ -13,19 +13,19 @@ The sky and grass are made by writing code to draw coloured rectangles.
 
 --- task ---
 
-Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
+Open the [Archery starter](https://editor.raspberrypi.org/python/python-archery-starter){:target="_blank"} project. 
 
 If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
 
 --- /task ---
 
-The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game. 
+The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game.
 
 [[[p5-processing-library]]]
 
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this. 
+The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this.
 
 Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
 
@@ -44,7 +44,7 @@ def draw():
   grass = color(149, 212, 122)     
   wood = color(145, 96, 51)     
   outer = color(0, 120, 180)     
-  
+
   fill(sky)
 
 --- /code ---
@@ -66,7 +66,7 @@ After your `fill()` code, draw a `rect()` for the sky with top-left coordinates 
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 25 
+line_number_start: 25
 line_highlights: 26
 ---
 
@@ -100,7 +100,7 @@ line_number_start: 23
 line_highlights: 25
 ---
 
-  outer = color(0, 120, 180) 
+  outer = color(0, 120, 180)
 
   no_stroke()   
   fill(sky)   
@@ -120,7 +120,7 @@ line_highlights: 25
 
 `fill()` changes the fill colour for all shapes drawn until `fill()` is called again with a new colour.
 
-Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`. 
+Change the `fill()` colour to `grass` and add another `rect(x, y, width, height)`.
 
 This rectangle needs to be positioned below the sky at coordinates (0, 250), so that it starts in the lower part of the screen.
 
@@ -133,8 +133,8 @@ line_number_start: 23
 line_highlights: 28-29
 ---
 
-  outer = color(0, 120, 180) 
-  
+  outer = color(0, 120, 180)
+
   no_stroke()     
   fill(sky)     
   rect(0, 0, 400, 250) #x, y, width, height    

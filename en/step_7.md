@@ -29,7 +29,7 @@ You could:
 title: Completed project
 ---
 
-You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+You can view the [completed project here](https://editor.raspberrypi.org/python/python-archery-example){:target="_blank"}.
 
 --- /collapse ---
 
