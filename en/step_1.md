@@ -40,3 +40,5 @@ Have a few goes. Your score appears in the output area below the target. How doe
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
 </p>
+
+![](http://code.org/api/hour/begin_coderdojo_target.png)
