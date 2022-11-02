@@ -68,7 +68,7 @@ line_highlights: 31-32
 
 --- /task ---
 
-### Draw the target
+### Draw the target rings
 
 --- task ---
 
@@ -105,6 +105,10 @@ line_highlights: 33-34
 ![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
 
 --- /task ---
+
+ <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+ <span style="color: #0faeb0; font-weight: bold;"> RGB colours </span> have values between 0 and 255 for each of R(ed), G(reen), and B(lue). <span style="color: #800080;">Purple</span> has values R,G,B (128, 0, 128) — medium amounts of red and blue, with no green. Video game artists and graphic designers work with RGB colours. 
+</p>
 
 --- task ---
 

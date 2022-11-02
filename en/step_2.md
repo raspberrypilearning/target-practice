@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The sky and grass are made by writing code to draw coloured rectangles.
+Draw the sky and grass using coloured rectangles. 
 </div>
 <div>
 
@@ -19,13 +19,19 @@ If you have a Trinket account, you can click on the **Remix** button to save a c
 
 --- /task ---
 
-The starter project has some code already written for you to import the `p5` library, you will use this library to build your archery game. 
+--- task ---
 
-[[[p5-processing-library]]]
+The starter projct has some code already written for you. 
+
+Click 'Run' to see a rectangle is drawn. This will be your sky. 
+
+--- /task ---
+
+### Draw the grass
 
 --- task ---
 
-The `fill()` function sets the inside colour of shapes. The starter project already contains some RGB colours you can use to do this. 
+The `fill()` function sets the inside colour of shapes. 
 
 Find your `draw()` function and prepare to draw the sky by adding indented code to set the `fill()` colour to `sky`:
 
