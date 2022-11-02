@@ -13,9 +13,9 @@ Draw the sky and grass using coloured rectangles.
 
 --- task ---
 
-Open the [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your `My Trinkets` library.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
@@ -23,7 +23,7 @@ If you have a Trinket account, you can click on the **Remix** button to save a c
 
 The starter project has some code already written for you. 
 
-Click 'Run' to see a 400 x 250 pixel blue filled rectangle drawn at the top of the screen. This is the sky. 
+Click **'Run'** to see a blue filled rectangle drawn at x=`0`, y=`0` (the top of the screen). This `400` x `250` pixel rectangle is the sky. 
 
 ![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
 
@@ -35,12 +35,12 @@ Click 'Run' to see a 400 x 250 pixel blue filled rectangle drawn at the top of t
 
 The sky has been drawn with a black border (stroke). 
 
-To turn `stroke` off for all shapes add `no_stroke()` to the `setup` function:
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
 language: python
-filename: main.py — draw()
+filename: main.py — setup()
 line_numbers: true
 line_number_start: 11
 line_highlights: 15
@@ -60,8 +60,6 @@ def setup():
 **Run** your code again and notice 👀 that the border (stroke) has now disappeared. 
 
 --- /task ---
-
-![](images/coords_animation.gif)
 
 ### Draw the grass
 
