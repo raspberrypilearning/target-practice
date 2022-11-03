@@ -204,5 +204,4 @@ The project gets the `hit_color` each time the arrow is redrawn and prints the c
 
 --- /task ---
 
---- save ---
 
