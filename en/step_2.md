@@ -23,7 +23,7 @@ If you have a Trinket account, you can click on the **Remix** button to save a c
 
 The starter project has some code already written for you. 
 
-Click **'Run'** to see a blue filled rectangle drawn at x=`0`, y=`0` (the top of the screen). This `400` x `250` pixel rectangle is the sky. 
+Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky. 
 
 ![A blue rectangle with a black border around it, above a grey rectangle.](images/sky_stroke.png){:width="300px"}
 
@@ -67,9 +67,11 @@ def setup():
 
 The `fill` function sets the colour for the inside of a shape.
 
-Set the `fill` colour to `grass` and add another `rect(x, y, width, height)`. 
+Go to the `draw` function and set the `fill` colour to `grass` then add another rectangle.
 
-![A blue rectangle with a coordinates grid showing the position of the sky rectangle starting in the top corner, above a grey rectangle.](images/sky_coords.png)
+The code for a rectangle is `rect(x, y, width, height)` The grass rectangle will be drawn from x=`0`, y=`250` and be `400` x `150` pixels in size. 
+
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png)
 
 --- code ---
 ---

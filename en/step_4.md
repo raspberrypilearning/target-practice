@@ -13,7 +13,7 @@ Now it's time to add an arrow that moves randomly across the target area.
 
 --- task ---
 
-Find the comment **#The shoot_arrow function goes here** and below it add code to define your `shoot_arrow()` function. 
+Find the comment **# The shoot_arrow function goes here** and below it add code to define your `shoot_arrow()` function. 
 
 Add a small `ellipse()` in the centre of the screen to represent the arrow.
 
@@ -22,11 +22,10 @@ Add a small `ellipse()` in the centre of the screen to represent the arrow.
 language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
-line_number_start: 10
-line_highlights: 11-12
+line_number_start: 9
+line_highlights: 10-11
 ---
-
-#The shoot_arrow function goes here    
+# The shoot_arrow function goes here    
 def shoot_arrow():   
   ellipse(200, 200, 15, 15)
 
@@ -43,13 +42,11 @@ Go to the `draw()` code that creates the target and add code at the end to set t
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 41
-line_highlights: 44-45
+line_number_start: 38
+line_highlights: 40-41
 ---
-
   fill(bullseye)    
   ellipse(200, 200, 30, 30)    
-  
   fill(wood)   
   shoot_arrow()   
 
@@ -65,35 +62,18 @@ line_highlights: 44-45
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computer games, videos, and animations create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>. The speed that the image changes at is called the <span style="color: #800080;">frame rate</span> and is given in <span style="color: #800080;">fps</span> or frames per second.  
-</p>
+### Randomly position the arrow on each frame
 
 The `frame_rate(2)` line in `setup()` sets the frame rate to 2 frames per second.
 
-The `draw()` function is called every frame. You are going to draw the arrow in a random position each time `draw()` is called. 
+The `draw()` function is called every frame. 
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computer games, videos, and animations create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>. The speed that the image changes at is called the <span style="color: #800080;">frame rate</span> and is given in <span style="color: #800080;">fps</span> or frames per second.  
+</p>
+
+You are going to use `randint` from the `random` library to draw the arrow in a random position each time `draw()` is called. 
 
 The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
-
---- task ---
-
-Find the `import` statements, at the top of your code, you are going to use `randint` from the `random` library. 
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 3
----
-
-#Import library code    
-from p5 import *    
-from math import *    
-from random import randint    
-
---- /code ---
-
---- /task ---
 
 --- task ---
 
@@ -110,15 +90,15 @@ Change your `ellipse()` to use the new variables to position your arrow.
 language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
-line_number_start: 10
-line_highlights: 12-14
+line_number_start: 9
+line_highlights: 11-13
 ---
 
-#The shoot_arrow function goes here    
+# The shoot_arrow function goes here    
 def shoot_arrow():    
   arrow_x = randint(100, 300)   
   arrow_y = randint(100, 300)    
-  ellipse(arrow_x, arrow_y, 15, 15) #Update to random coordinates    
+  ellipse(arrow_x, arrow_y, 15, 15) # Update to random coordinates    
 
 --- /code ---
 
@@ -134,8 +114,6 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 
 --- task ---
 
-You need to store the colour that the arrow is aiming at before you draw an arrow on top of it.
-
 Add code to store the `hit_color`. Use the `get()` function, to get the colour of the pixel at the `arrow_x` and `arrow_y` coordinates — the centre of the arrow. 
 
 --- code ---
@@ -143,28 +121,29 @@ Add code to store the `hit_color`. Use the `get()` function, to get the colour o
 language: python
 filename: main.py — shoot_arrow() 
 line_numbers: true
-line_number_start: 10
-line_highlights: 14
+line_number_start: 9
+line_highlights: 13
 ---
-
-#The shoot_arrow function goes here     
+# The shoot_arrow function goes here     
 def shoot_arrow():    
   arrow_x = randint(100, 300)    
   arrow_y = randint(100, 300)    
-  hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow   
+  hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow   
   ellipse(arrow_x, arrow_y, 15, 15)   
 
 --- /code ---
 
-**Tip:** The code to get the colour and save it needs to be **before** the code to draw the ellipse otherwise you will always save the wood colour of the arrow! 
+**Tip:** The code to `get()` the colour needs to be **before** the code to draw the `ellipse()` otherwise you will always save the wood colour of the arrow! 
 
 --- /task ---
+
+### Print the colour when the mouse is pressed
 
 The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed()` function.
 
 --- task ---
 
-Find the comment **#The mouse_pressed function goes here** and below it add code to define your `mouse_pressed()` function. 
+Find the comment **# The mouse_pressed function goes here** and below it add code to define your `mouse_pressed()` function. 
 
 Add code to print the amounts of red, green, and blue in the pixel the arrow lands on. 
 
@@ -173,11 +152,11 @@ Add code to print the amounts of red, green, and blue in the pixel the arrow lan
 language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 8
-line_highlights: 9-10
+line_number_start: 7
+line_highlights: 8-9
 ---
 
-#The mouse_pressed function goes here    
+# The mouse_pressed function goes here    
 def mouse_pressed():    
   print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -196,16 +175,15 @@ A variable that needs to be used thoughout a program is known as a **global vari
 language: python
 filename: main.py - shoot_arrow()
 line_numbers: true
-line_number_start: 12
-line_highlights: 14
+line_number_start: 11
+line_highlights: 13
 ---
-
-#The shoot_arrow function goes here    
+# The shoot_arrow function goes here    
 def shoot_arrow():    
-  global hit_color #Can be used in other functions     
+  global hit_color # Can be used in other functions     
   arrow_x = randint(100, 300)     
   arrow_y = randint(100, 300)     
-  hit_color = get(arrow_x, arrow_y) #Save the colour before drawing the arrow     
+  hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow     
   ellipse(arrow_x, arrow_y, 15, 15)     
 
 --- /code ---
