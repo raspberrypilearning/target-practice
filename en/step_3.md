@@ -1,7 +1,8 @@
 ## Draw your target
+
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The target is made with a triangle stand and a coloured target circles — smaller circles are worth more points than larger ones. 
+Your game needs a target to shoot arrows at.
 </div>
 <div>
 
@@ -10,19 +11,13 @@ The target is made with a triangle stand and a coloured target circles — small
 </div>
 </div>
 
-Shapes are drawn in the order that the lines of code run. 
-
-Imagine cutting all the shapes out of paper. Depending on how you arrange and overlap that paper, the final result could look very different.
-
 ### Draw the stand
 
 The triangular wooden stand is partly behind the target circles so it must be drawn first. 
 
 --- task ---
 
-The `triangle()` function uses three sets of coordinates, `x1, y1, x2, y2, x3, y3` one for each of the triangle's corners. 
-
-Draw a `triangle()` for the stand with corners at (150, 350), (200, 150), and (250, 350).
+Draw a brown `triangle()` with corners at coordinates (150, 350), (200, 150), and (250, 350).
 
 ![A brown triangle on grass and against a sky with the coordinate points labelled.](images/stand_coords.png)
 
@@ -39,10 +34,7 @@ line_highlights: 28-29
   fill(wood) # Set the stand fill colour to brown     
   triangle(150, 350, 200, 150, 250, 350)
 
-
 --- /code ---
-
-**Tip:** We have added comments to our code, like `#Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 

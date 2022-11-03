@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Draw the sky and grass using coloured rectangles. 
+Your game needs a colourful background.
 </div>
 <div>
 
@@ -65,11 +65,7 @@ def setup():
 
 --- task ---
 
-The `fill` function sets the colour for the inside of a shape.
-
-Go to the `draw` function and set the `fill` colour to `grass` then add another rectangle.
-
-The code for a rectangle is `rect(x, y, width, height)` The grass rectangle will be drawn from x=`0`, y=`250` and be `400` x `150` pixels in size. 
+**Add** code to draw a green rectangle at the bottom of the screen.
 
 ![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png)
 
@@ -79,14 +75,23 @@ language: python
 filename: main.py — draw()
 line_numbers: true
 line_number_start: 24
-line_highlights: 26-27
+line_highlights: 33, 34
 ---
+def draw():
+# Things to do in every frame
+  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
+  grass = color(149, 212, 122)
+  wood = color(145, 96, 51)
+  outer = color(0, 120, 180) 
+
   fill(sky)     
-  rect(0, 0, 400, 250) # x, y, width, height    
-  fill(grass)    
+  rect(0, 0, 400, 250)     
+  fill(grass) # Set the fill color to grass
   rect(0, 250, 400, 150) # x, y, width, height     
 
 --- /code ---
+
+**Tip:** We have added comments to our code, like `# Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
