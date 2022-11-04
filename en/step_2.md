@@ -31,6 +31,19 @@ Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top 
 
 --- /task ---
 
+--- collapse ---
+---
+title: How does the `rectangle` function work?
+---
+
+The `rectangle` function call takes **four** numbers (arguments). 
+
+`rectangle(0, 0, 400, 250)` will draw a rectangle that starts in the **top left** corner `(0, 0)` and is `400` pixels wide and `250` pixels tall. 
+
+![A diagram demonstrating what the four numbers in the rectangle function call mean. Part one focuses on the first number, which is 0. 0 refers to the x value and is located in the top left corner of the screen. Part two focuses on the second number, which is 0. This 0 refers to the y value and is also located in the top left corner. Part three focuses on the third number, which is 400. 400 refers to the width of the rectangle. The fourth part refers to the fourth number, which is 250. 250 refers to the height of the rectangle.](images/rectangle-diagram.png)
+
+--- /collapse ---
+
 --- task ---
 
 The sky has been drawn with a black border (stroke). 
