@@ -11,6 +11,8 @@ Your game needs a colourful background.
 </div>
 </div>
 
+### Open the starter project
+
 --- task ---
 
 Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project. 
@@ -18,6 +20,8 @@ Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target
 If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
+
+### Edit the sky
 
 --- task ---
 
@@ -27,7 +31,7 @@ Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top 
 
 ![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
-**Tip:** Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used. 
+**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used. 
 
 --- /task ---
 
@@ -79,6 +83,7 @@ line_highlights: 33, 34
 ---
 def draw():
 # Things to do in every frame
+  global wood
   sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
   grass = color(149, 212, 122)
   wood = color(145, 96, 51)
@@ -91,13 +96,13 @@ def draw():
 
 --- /code ---
 
-**Tip:** We have added comments to our code, like `# Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Tip:** 💡 We have added comments to our code, like `# Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your project again to view the finished background. 
+**Test:** 🔄 Run your project again to view the finished background. 
 
 ![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 

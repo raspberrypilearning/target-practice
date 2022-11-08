@@ -40,7 +40,7 @@ line_highlights: 28-29
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target: 
+**Test:** 🔄 Run your code to see the stand for your target: 
 
 ![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
@@ -54,7 +54,7 @@ The largest part of the target is a blue **circle**.
 
 Set the fill colour to `outer` (blue). 
 
-Draw an ellipse with coordinates for its centre and a width. The width is also used for the height to create a circle. 
+Draw a circle with x and y coordinates for its centre and a width. 
 
 ![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
 
@@ -70,7 +70,7 @@ line_highlights: 30-31
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
   fill(outer) # Set the circle fill colour to outer    
-  ellipse(200, 200, 170) # x, y, width of the circle
+  circle(200, 200, 170) # x, y, width of the circle
   
 --- /code ---
 
@@ -102,6 +102,7 @@ line_highlights: 23-24
 ---
 def draw():   
   # Things to do in every frame
+  global wood
   sky = color(92, 204, 206)   
   grass = color(149, 212, 122)   
   wood = color(145, 96, 51)   
@@ -130,11 +131,11 @@ line_highlights: 34-37
   fill(wood)    
   triangle(150, 350, 200, 150, 250, 350)  
   fill(outer)   
-  ellipse(200, 200, 170)
+  circle(200, 200, 170)
   fill(inner) # Set the circle fill colour to inner      
-  ellipse(200, 200, 110) # Inner circle - x, y, width of the circle  
+  circle(200, 200, 110) # Inner circle - x, y, width of the circle  
   fill(middle) # Set the circle fill colour to middle      
-  ellipse(200, 200, 30) # Middle circle - x, y, width of the circle 
+  circle(200, 200, 30) # Middle circle - x, y, width of the circle 
   
 --- /code ---
 
@@ -142,17 +143,17 @@ line_highlights: 34-37
 
 --- task ---
 
-**Test:** Run your project to see the target with three coloured circles. 
+**Test:** 🔄 Run your project to see the target with three coloured circles. 
 
 ![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
 
-**Debug:** Check that you have used the American spelling of 'color' (without a 'u').
+**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
 
 --- /task ---
 
 --- task ---
 
-**Choose:** Change any of the colours.
+**Choose:** 💭 Change any of the colours.
 
 [[[generic-theory-simple-colours]]]
 
