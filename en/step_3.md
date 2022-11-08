@@ -19,7 +19,7 @@ Set the fill colour to `wood` (brown).
 
 Draw a triangle using the x and y coordinates for each of the corners.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350)](images/stand_coords.png)
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png)
 
 --- code ---
 ---
@@ -56,6 +56,8 @@ Set the fill colour to `outer` (blue).
 
 Draw an ellipse with coordinates for its centre, and give it equal width and height.
 
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png)
+
 --- code ---
 ---
 language: python
@@ -68,7 +70,7 @@ line_highlights: 30-31
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
   fill(outer) # Set the circle fill colour to outer    
-  ellipse(200, 200, 170, 170) # x, y, width, height
+  ellipse(200, 200, 170) # x, y, width of the circle
   
 --- /code ---
 
@@ -154,7 +156,7 @@ line_highlights: 34-37
 
 [[[generic-theory-simple-colours]]]
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png)
+![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="300px"}
 
 
 --- /task ---
