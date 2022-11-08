@@ -88,6 +88,8 @@ The blue circle was drawn after the stand so it is in front:
 
 --- task ---
 
+👀 Find your colour variables in the `draw` function. 
+
 Create two variables called `inner` and `middle` to store colours for the other circles. 
 
 The `color` function expects three numbers: one each for red, green, and blue.
@@ -118,7 +120,7 @@ The target is made of different-sized circles with the same centre coordinates (
 
 --- task ---
 
-Add coloured circles for the inner and middle parts of the target. 
+**Add** coloured circles for the inner and middle parts of the target. 
 
 --- code ---
 ---
