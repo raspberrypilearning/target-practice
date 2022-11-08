@@ -167,7 +167,7 @@ The project prints the `hit_color` each time the arrow is redrawn.
 
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-**Debug:** 🐞 If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
 
 **Debug:** 🐞 Check the `print` line really carefully for commas and brackets. 
 

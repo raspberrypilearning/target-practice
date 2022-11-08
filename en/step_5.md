@@ -13,7 +13,7 @@ Your game will add scores based on where the arrow hits.
 
 --- task ---
 
-Go to the `draw()` function and add `outer, inner, middle` to the list of global variables.
+Go to the `draw()` function and add `, outer, inner, middle` to the list of global variables.
 
 --- code ---
 ---
@@ -43,6 +43,26 @@ We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all t
 </p>
 
 ### Display the scores
+
+--- task ---
+
+Delete ❌ the `print( red(hit_color), green(hit_color), blue(hit_color) )` line of code. 
+
+--- code ---
+---
+language: python
+filename: main.py - mouse_pressed()
+line_numbers: true
+line_number_start: 7
+line_highlights: 9
+---
+# The mouse_pressed function goes here    
+def mouse_pressed():    
+  
+
+--- /code ---
+
+--- /task ---
 
 --- task ---
 
@@ -80,7 +100,7 @@ def mouse_pressed():
 
 --- /task ---
 
-`elif`s (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. The remaining conditions will be ignored.
+`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. The remaining conditions will be ignored.
 
 --- task ---
 
