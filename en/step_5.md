@@ -55,8 +55,8 @@ Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
 language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 8
-line_highlights: 10-11
+line_number_start: 7
+line_highlights: 9, 10
 ---
 
 # The mouse_pressed function goes here     
@@ -91,8 +91,8 @@ Score points if the arrow lands on the `inner` or `middle` circles 🎯:
 language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 9
-line_highlights: 12-15
+line_number_start: 8
+line_highlights: 11, 12, 13, 14
 ---
 
 def mouse_pressed():    
@@ -134,8 +134,8 @@ Add code to `print` a message `else` none of the `if` and `elif` statements have
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 9
-line_highlights: 16-17
+line_number_start: 8
+line_highlights: 15, 16
 ---
 
 def mouse_pressed():    

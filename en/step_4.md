@@ -30,7 +30,7 @@ language: python
 filename: main.py — shoot_arrow()
 line_numbers: true
 line_number_start: 9
-line_highlights: 10-14
+line_highlights: 10, 11, 12, 13, 14
 ---
 # The shoot_arrow function goes here    
 def shoot_arrow():   
@@ -52,8 +52,8 @@ Go to the `draw` function and call your new `shoot_arrow` function.
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 38
-line_highlights: 40-41
+line_number_start: 42
+line_highlights: 44
 ---
   fill(middle)    
   circle(200, 200, 30)    
@@ -123,7 +123,7 @@ language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
 line_number_start: 7
-line_highlights: 8-9
+line_highlights: 8, 9
 ---
 
 # The mouse_pressed function goes here    

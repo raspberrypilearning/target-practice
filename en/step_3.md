@@ -26,8 +26,8 @@ Draw a triangle using the x and y coordinates for each of the corners.
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 26
-line_highlights: 28-29
+line_number_start: 27
+line_highlights: 29, 30
 ---
   fill(grass)   
   rect(0, 250, 400, 150) 
@@ -63,8 +63,8 @@ Draw a circle with x and y coordinates for its centre and a width.
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 28
-line_highlights: 30-31
+line_number_start: 29
+line_highlights: 31, 32
 ---
 
   fill(wood)   
@@ -98,7 +98,7 @@ language: python
 filename: main.py - draw()
 line_numbers: true
 line_number_start: 17
-line_highlights: 23-24
+line_highlights: 24, 25
 ---
 def draw():   
   # Things to do in every frame
@@ -125,8 +125,8 @@ Add coloured circles for the inner and middle parts of the target.
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 30
-line_highlights: 34-37
+line_number_start: 31
+line_highlights: 35, 36, 37, 38
 ---
   fill(wood)    
   triangle(150, 350, 200, 150, 250, 350)  

@@ -78,8 +78,8 @@ def setup():
 language: python
 filename: main.py — draw()
 line_numbers: true
-line_number_start: 24
-line_highlights: 33, 34
+line_number_start: 17
+line_highlights: 27, 28
 ---
 def draw():
 # Things to do in every frame
@@ -96,7 +96,7 @@ def draw():
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the stand fill colour to brown`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
