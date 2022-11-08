@@ -25,7 +25,7 @@ The starter project has some code already written for you.
 
 Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky. 
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="300px"}
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
 **Tip:** Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used. 
 
@@ -67,7 +67,7 @@ def setup():
 
 **Add** code to draw a green rectangle at the bottom of the screen.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png)
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -99,7 +99,7 @@ def draw():
 
 **Test:** Run your project again to view the finished background. 
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png)
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 

@@ -19,7 +19,7 @@ Set the fill colour to `wood` (brown).
 
 Draw a triangle using the x and y coordinates for each of the corners.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png)
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -42,7 +42,7 @@ line_highlights: 28-29
 
 **Test:** Run your code to see the stand for your target: 
 
-![A brown triangle on grass and against a sky.](images/target-stand.png)
+![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
@@ -54,9 +54,9 @@ The largest part of the target is a blue **circle**.
 
 Set the fill colour to `outer` (blue). 
 
-Draw an ellipse with coordinates for its centre, and give it equal width and height.
+Draw an ellipse with coordinates for its centre and a width. The width is also used for the height to create a circle. 
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png)
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -82,7 +82,7 @@ line_highlights: 30-31
 
 The blue circle was drawn after the stand so it is in front:
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
@@ -130,11 +130,11 @@ line_highlights: 34-37
   fill(wood)    
   triangle(150, 350, 200, 150, 250, 350)  
   fill(outer)   
-  ellipse(200, 200, 170, 170)
+  ellipse(200, 200, 170)
   fill(inner) # Set the circle fill colour to inner      
-  ellipse(200, 200, 110, 110) # Inner circle   
+  ellipse(200, 200, 110) # Inner circle - x, y, width of the circle  
   fill(middle) # Set the circle fill colour to middle      
-  ellipse(200, 200, 30, 30) # Middle circle  
+  ellipse(200, 200, 30) # Middle circle - x, y, width of the circle 
   
 --- /code ---
 
@@ -144,7 +144,7 @@ line_highlights: 34-37
 
 **Test:** Run your project to see the target with three coloured circles. 
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
 
 **Debug:** Check that you have used the American spelling of 'color' (without a 'u').
 
@@ -156,7 +156,7 @@ line_highlights: 34-37
 
 [[[generic-theory-simple-colours]]]
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="300px"}
+![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
 
 --- /task ---

@@ -27,7 +27,7 @@ line_highlights: 10-11
 ---
 # The shoot_arrow function goes here    
 def shoot_arrow():   
-  ellipse(200, 200, 15, 15)
+  ellipse(200, 200, 15) # Arrow - x, y, width of the circle
 
 --- /code ---
 
@@ -46,7 +46,7 @@ line_number_start: 38
 line_highlights: 40-41
 ---
   fill(bullseye)    
-  ellipse(200, 200, 30, 30)    
+  ellipse(200, 200, 30)    
   fill(wood)   
   shoot_arrow()   
 
@@ -98,7 +98,7 @@ line_highlights: 11-13
 def shoot_arrow():    
   arrow_x = randint(100, 300)   
   arrow_y = randint(100, 300)    
-  ellipse(arrow_x, arrow_y, 15, 15) # Update to random coordinates    
+  ellipse(arrow_x, arrow_y, 15) # Update to random coordinates    
 
 --- /code ---
 
@@ -129,7 +129,7 @@ def shoot_arrow():
   arrow_x = randint(100, 300)    
   arrow_y = randint(100, 300)    
   hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow   
-  ellipse(arrow_x, arrow_y, 15, 15)   
+  ellipse(arrow_x, arrow_y, 15)   
 
 --- /code ---
 
@@ -184,7 +184,7 @@ def shoot_arrow():
   arrow_x = randint(100, 300)     
   arrow_y = randint(100, 300)     
   hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow     
-  ellipse(arrow_x, arrow_y, 15, 15)     
+  ellipse(arrow_x, arrow_y, 15)     
 
 --- /code ---
 
