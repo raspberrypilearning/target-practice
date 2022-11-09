@@ -4,7 +4,7 @@
 legend: Cwestiwn 3 o 3
 ---
 
-Mae elips yn cael ei lunio gan ddefnyddio'r cod canlynol:
+A circle is drawn using the following code:
 
 --- code ---
 ---
@@ -13,17 +13,17 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0,255,0)   
+fill(0, 255, 0)   
 no_stroke()
 
 def draw():   
-ellipse(0,0,300,300)
+circle(0, 0, 300)
 
 run()
 
 --- /code ---
 
-Pa un o'r lluniau isod sy'n dangos safle cywir yr elips yn yr ardal allbwn?
+Which of the images below show the correct position of this circle in the output area?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ Pa un o'r lluniau isod sy'n dangos safle cywir yr elips yn yr ardal allbwn?
 
   --- feedback ---
 
-  Ddim yn hollol. I gael canol y cylch yn y gornel dde isaf, byddai angen i'r cyfesurynnau fod yr un peth â maint y sgrin. Yn yr enghraifft hon, byddai'r elips yn `ellipse(400,400,300,300)`.
+  Ddim yn hollol. I gael canol y cylch yn y gornel dde isaf, byddai angen i'r cyfesurynnau fod yr un peth â maint y sgrin. In this example, the ellipse would be `circle(400, 400, 300)`.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Pa un o'r lluniau isod sy'n dangos safle cywir yr elips yn yr ardal allbwn?
 
   --- feedback ---
 
-  Ddim yn hollol. I gael canol y cylch yn y canol, byddai angen i'r cyfesurynnau fod hanner maint y sgrin. Yn yr enghraifft hon, `ellipse(200,200,300,300)`.
+  Ddim yn hollol. I gael canol y cylch yn y canol, byddai angen i'r cyfesurynnau fod hanner maint y sgrin. In this example, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ Pa un o'r lluniau isod sy'n dangos safle cywir yr elips yn yr ardal allbwn?
 
   --- feedback ---
 
-  Na, byddai gan y cylch hwn y cod `ellipse(350,150,300,300)` i'w ganoli tua cornel dde uchaf y sgrin. Mae'r cyfesuryn `x` yn dangos pa mor bell ar draws y sgrin mae'r elips, a'r cyfesuryn `y` yw pa mor bell i lawr y sgrin mae'r elips.
+  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. Mae'r cyfesuryn `x` yn dangos pa mor bell ar draws y sgrin mae'r elips, a'r cyfesuryn `y` yw pa mor bell i lawr y sgrin mae'r elips.
 
   --- /feedback ---
 
