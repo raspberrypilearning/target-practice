@@ -1,20 +1,18 @@
-## تفكير
+## Quick quiz
 
-أحسنت لقد صنعت لعبة! الآن ، حان وقت التفكير - التفكير جزء مهم من التعلم ، لأنه يساعد في إنشاء روابط جديدة في عقلك.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-أجب عن الأسئلة الثلاثة أدناه لتفكر فيما تعلمته.
+When you have answered each question, click on **Check my answer**.
 
-بعد كل سؤال ، اضغط على **إرسال**. سيتم توجيهك نحو الإجابة الصحيحة. يمكنك القيام بهذا النشاط عدة مرات كما تريد.
-
-إستمتع!
+Have fun!
 
 --- question ---
 ---
 legend: السؤال 1 من 3
 ---
-هذا مربع أزرق ، ما هي قيم RGB التي ستنشئه؟
+Here is a blue square, what are the RGB values that will create it?
 
-![كتلة واحدة من اللون الأزرق.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +20,7 @@ legend: السؤال 1 من 3
 
   --- feedback ---
 
-ليس تمامًا ، عندما يتم ضبط جميع قيم الألوان على `0`، يكون اللون **أسود**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -30,7 +28,7 @@ legend: السؤال 1 من 3
 
   --- feedback ---
 
-ليس تمامًا ، فالألوان تتبع نموذج RGB. هذا اللون له قيمة R قصوى وليس G أو B ، لذلك سيكون **أحمر**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
