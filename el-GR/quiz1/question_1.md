@@ -1,20 +1,18 @@
-## Αναστοχασμός
+## Quick quiz
 
-Μπράβο, έφτιαξες ένα παιχνίδι! Τώρα, ήρθε η ώρα να εξετάσεις τις νέες γνώσεις- ο αναστοχασμός είναι σημαντικό μέρος της μάθησης, επειδή βοηθά στη δημιουργία νέων συνδέσεων στον εγκέφαλό σου.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Απάντησε στις τρεις ερωτήσεις παρακάτω για να διαπιστώσεις τι έμαθες.
+When you have answered each question, click on **Check my answer**.
 
-Μετά από κάθε ερώτηση, πάτα **υποβολή**. Θα οδηγηθείς στη σωστή απάντηση. Μπορείς να επαναλάβεις αυτήν τη δραστηριότητα όσες φορές θέλεις.
-
-Καλή διασκέδαση!
+Have fun!
 
 --- question ---
 ---
 legend: Ερώτηση 1 από 3
 ---
-Εδώ είναι ένα μπλε τετράγωνο, ποιες είναι οι τιμές RGB που θα το δημιουργήσουν;
+Here is a blue square, what are the RGB values that will create it?
 
-![Ένα μπλοκ μπλε χρώματος.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +20,7 @@ legend: Ερώτηση 1 από 3
 
   --- feedback ---
 
-Όχι ακριβώς, όταν όλες οι τιμές χρώματος έχουν οριστεί σε `0`, το χρώμα είναι **μαύρο**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -30,7 +28,7 @@ legend: Ερώτηση 1 από 3
 
   --- feedback ---
 
-Όχι ακριβώς, τα χρώματα ακολουθούν το μοντέλο RGB. Αυτό το χρώμα έχει μέγιστη τιμή R και δεν έχει G ή B, επομένως θα είναι **κόκκινο**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
