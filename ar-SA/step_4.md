@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-حان الوقت الآن لإضافة سهم يتحرك بشكل عشوائي عبر المنطقة المستهدفة.
+When you click or tap, an arrow will fire at the position of a moving target circle. 
 </div>
 <div>
 
@@ -11,21 +11,30 @@
 </div>
 </div>
 
+### Draw a target circle every frame
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
+</p>
+
 --- task ---
 
-ابحث عن التعليق **# تذهب دالة shoot_arrow هنا** وأضف التعليمات البرمجية اسفلها لتعريف دالتك `shoot_arrow()`.
+Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
 
-أضف قطع ناقص صغير `ellipse()` في وسط الشاشة لتمثيل السهم.
+Add code to randomly draw a brown circle within a target area:
+
+![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 11-12
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+line_highlights: 10, 11, 12, 13, 14
 ---
-
 # تذهب دالة shoot_arrow هنا
 def shoot_arrow():   
-ellipse(200, 200, 15, 15)
+arrow_x = randint(100, 300) # Store a random number between 100 and 300    
+arrow_y = randint(100, 300) # Store a random number between 100 and 300    
+fill(wood) # Set the arrow to fill colour to wood   
+circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- /code ---
 
@@ -33,18 +42,15 @@ ellipse(200, 200, 15, 15)
 
 --- task ---
 
-اذهب إلى الكود `draw()` الذي ينشئ الهدف وأضف الكود في النهاية لتعيين `fill()` إلى `wood`، ثم استدعي وظيفة `shoot_arrow()` الجديدة.
+Go to the `draw` function and call your new `shoot_arrow` function.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 41
-line_highlights: 44-45
+language: python filename: main.py — draw() line_numbers: true line_number_start: 42
+line_highlights: 44
 ---
-
-  fill(bullseye)    
-ellipse(200, 200, 30, 30)
-
-  fill(wood)   
+  fill(middle)    
+circle(200, 200, 30)    
 shoot_arrow()
 
 --- /code ---
@@ -53,114 +59,61 @@ shoot_arrow()
 
 --- task ---
 
-**اختبار:** قم بتشغيل التعليمات البرمجية الخاصة بك وشاهد السهم يظهر في مركز الهدف.
+**Test:** 🔄 Run you code and see the arrow appear in a random position each frame.
 
-![الهدف على الخلفية مع سهم دائري بني عليه.](images/arrow-middle.png)
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
---- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> ألعاب الكمبيوتر ومقاطع الفيديو والرسوم المتحركة تخلق تأثير الحركة من خلال عرض الكثير من الصور واحدة تلو الأخرى. كل صورة تسمى <span style="color: #0faeb0; font-weight: bold;"> إطار </span>. تسمى السرعة التي تتغير بها الصورة  <span style="color: #800080;">معدل الإطارات</span> وتعطى بمعدل <span style="color: #800080;">إطارًا في الثانية</span> أو إطارات في الثانية.  
-</p>
-
-`frame_rate(2)` في سطر `setup()` يضبط معدل الإطارات على إطارين في الثانية.
-
-دالة `draw()` تستدعى في كل اطار. ستقوم برسم السهم في موضع عشوائي في كل مرة يتم استدعاء `draw()`.
-
-سيتم رسم الخلفية والهدف فوق السهم القديم. هذا يعني أنك ترى سهمًا واحدًا فقط في كل مرة.
-
---- task ---
-
-ابحث عن عبارات `import` ، في الجزء العلوي من الكود الخاص بك ، ستستخدم `randint` من مكتبة `random`.
-
---- code ---
----
-language: python filename: main.py line_numbers: true
-line_number_start: 3
----
-
-# استيراد مكتبة الشفرات البرمجية
-from p5 import *    
-from math import *    
-from random import randint
-
---- /code ---
+The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
 
 --- /task ---
 
---- task ---
+### Get the colour hit by the arrow
 
-انتقل إلى الدالة `shoot_arrow()` وأضف متغيرين جديدين `arrow_x` و `arrow_y` لتخزين الأرقام العشوائية بين `100` و `300`.
-
-سيسمح هذا لبعض التسديدات بتفويت الهدف ، دون أن تصل إلى أطراف لعبتك.
-
-قم بتغيير `ellipse()` لاستخدام المتغيرات الجديدة لموقع السهم الخاص بك.
-
-![مستطيل يوضح إحداثيات المنطقة المستهدفة في مستطيل شبه شفاف.](images/target_area.png)
-
---- code ---
----
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 12-14
----
-
-# تذهب دالة shoot_arrow هنا
-def shoot_arrow():    
-arrow_x = randint(100, 300)   
-arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #التحديث إلى الإحداثيات العشوائية
-
---- /code ---
-
---- /task ---
-
-### احصل على اللون الذي يضربه السهم
-
-ترجع الدالة `get()` لون البكسل.
+The `get()` function returns the colour of a pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0; font-weight: bold;">بكسل</span>، اختصار لعنصر الصورة ، هو نقطة ملونة واحدة داخل الصورة. تتكون الصور من الكثير من وحدات البكسل الملونة.
+A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
 </p>
 
 --- task ---
 
-تحتاج إلى تخزين اللون الذي يستهدفه السهم قبل رسم سهم فوقه.
-
-أضف رمزًا لتخزين `hit_color`. استخدم دالة `get()`، للحصول على لون البكسل عند إحداثيات `arrow_x` و `arrow_y` - مركز السهم.
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 14
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+line_highlights: 13
 ---
-
-# تذهب دالة shoot_arrow هنا
+# The shoot_arrow function goes here
 def shoot_arrow():    
 arrow_x = randint(100, 300)    
 arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) #احفظ اللون قبل رسم السهم   
-ellipse(arrow_x, arrow_y, 15, 15)
+hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
-**نصيحة:** يجب أن يكون التعليمات البرمجية للحصول على اللون وحفظه هو **قبل** التعليمات البرمجية لرسم القطع الناقص وإلا ستحفظ دائمًا لون الخشب للسهم!
+**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
 
 --- /task ---
 
-مكتبة `p5` 'تستمع' لأحداث معينة ، أحد هذه الأحداث هو الضغط على زر الفأرة. عندما يكتشف أنه تم الضغط على الزر ، فإنه سيعمل على تشغيل أي كود تم تقديمه في دالة `mouse_pressed()`.
+### Print the colour when the mouse is pressed
+
+The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
 
 --- task ---
 
-ابحث عن التعليق **# تنتقل دالة mouse_pressed هنا** وأدناه أضف رمزًا لتعريف دالة ` ()mouse_pressed`.
+Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
 
-أضف رمزًا لطباعة كميات الأحمر والأخضر والأزرق في البكسل الذي يستقر عليه السهم.
+Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
-line_highlights: 9-10
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+line_highlights: 8, 9
 ---
 
-# تذهب دالة mouse_pressed هنا
+# The mouse_pressed function goes here
 def mouse_pressed():    
 print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -170,23 +123,20 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- task ---
 
-لقد عينت دالتين `shoot_arrow()` و `mouse_pressed()`، كلتا دالتين تحتاجان إلى استخدام المتغير `hit_color`.
-
-يُعرف المتغير الذي يجب استخدامه في جميع أنحاء البرنامج بــ** المتغير العام**. أضف الكود إلى الدالة `shoot_arrow()` لجعل `hit_color` متغيرًا عالميًا:
+Make `hit_color` a **global variable** so that it can be used throughout your code:
 
 --- code ---
 ---
-language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 12
-line_highlights: 14
+language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
+line_highlights: 13
 ---
-
 # تذهب دالة shoot_arrow هنا
 def shoot_arrow():    
-global hit_color #يمكن استخدامها في دالة أخرى     
+global hit_color # Can be used in other functions     
 arrow_x = randint(100, 300)     
 arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) #احفظ اللون قبل رسم السهم     
-ellipse(arrow_x, arrow_y, 15, 15)
+hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow fill(wood)     
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -194,17 +144,16 @@ ellipse(arrow_x, arrow_y, 15, 15)
 
 --- task ---
 
-**اختبار:** قم بتشغيل مشروعك. يتم إعادة رسم السهم في إحداثيات عشوائية.
+**Test:** 🔄 Run your project.
 
-يحصل المشروع على `hit_color` في كل مرة يتم فيها إعادة رسم السهم ويطبع قيمة اللون في منطقة المخرجات أسفل الهدف.
+The project prints the `hit_color` each time the arrow is redrawn.
 
-![الهدف ، مع سهم دائري بني يظهر في مواضع مختلفة.](images/fire_arrow.gif)
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-**التصحيح:** إذا كنت ترى رسالة حول `hit_colour` 'غير معرّف' ، فارجع إلى `shoot_arrow()` وتأكد من أن لديك سطر`global hit_color`.
+**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
 
-**تصحيح الأخطاء:** تحقق من سطر `print` بعناية بحثًا عن الفواصل والأقواس.
+**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
 
 --- /task ---
 
---- save ---
 
