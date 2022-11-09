@@ -1,20 +1,18 @@
-## ふりかえり
+## Quick quiz
 
-よくやった、あなたはゲームを作りました！ 次はふりかえりの時間です。ふりかえりを行うことで、脳内に新しいつながりを作ることができます。このため、ふりかえりは学習の大事な部分です。
+Answer the three questions. There are hints to guide you to the correct answer.
 
-以下の3つの質問に答えて、学んだことをふりかえってみましょう。
+When you have answered each question, click on **Check my answer**.
 
-各質問の後、**ボタン**を押してください。 正しい答えが表示されます。 このアクティビティは何度でも実行できます。
-
-お楽しみください!
+Have fun!
 
 --- question ---
 ---
 legend: 質問1/3
 ---
-ここに青い正方形がありますが、これを作成するRGBの値は？
+Here is a blue square, what are the RGB values that will create it?
 
-![青い色の単一ブロック。](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +20,7 @@ legend: 質問1/3
 
   --- feedback ---
 
-ちょっと違います、すべての色の値が `0`に設定されている場合、色は **黒**です。
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -30,7 +28,7 @@ legend: 質問1/3
 
   --- feedback ---
 
-ちょっと違います、色はRGBモデルに従います。 この色はR値が最大でGやBがないので、**赤**になります。
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
