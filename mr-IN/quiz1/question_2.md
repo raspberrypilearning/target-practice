@@ -6,13 +6,12 @@ legend: Question 2 of 3
 
 In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
 
-When this code is run, what would be printed in the output area?
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
 language: python
 ---
-
 speed = 6
 
 if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
@@ -41,7 +40,7 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  No, with the else statement, there will always be something that is true. Therefore, an output will be printed.
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
