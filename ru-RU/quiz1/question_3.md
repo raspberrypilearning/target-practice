@@ -4,7 +4,7 @@
 legend: Question 3 of 3
 ---
 
-An ellipse is drawn using the following code:
+A circle is drawn using the following code:
 
 --- code ---
 ---
@@ -13,17 +13,17 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0,255,0)   
+fill(0, 255, 0)   
 no_stroke()
 
 def draw():   
-ellipse(0,0,300,300)
+circle(0, 0, 300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this ellipse in the output area?
+Which of the images below show the correct position of this circle in the output area?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ Which of the images below show the correct position of this ellipse in the outpu
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `ellipse(400,400,300,300)`.
+  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Which of the images below show the correct position of this ellipse in the outpu
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `ellipse(200,200,300,300)`.
+  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ Which of the images below show the correct position of this ellipse in the outpu
 
   --- feedback ---
 
-  No, this circle would have code of `ellipse(350,150,300,300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
 
   --- /feedback ---
 
