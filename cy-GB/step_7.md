@@ -15,10 +15,10 @@ Fe allwch chi bersonoli eich prosiect ac ychwanegu ato. Fe allech chi ei wneud y
 
 Fe allech chi:
 
-+ Ychwanegu `pedwerydd` a `phumed` cylch, mewn lliwiau newydd, sy'n sgorio nifer gwahanol o bwyntiau ar sail eu lleoliad
-+ Rhoi emoji yn eich negeseuon print ([dyma restr o emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} i chi gopio ohoni)
-+ Gwneud y gêm yn haws neu'n anoddach drwy newid y gwerth `frame_rate(2)`
-+ Defnyddio `input()` i ofyn i'r defnyddiwr pa mor anodd mae'n dymuno i'r gêm fod
++ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
++ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
++ Make the game easier or harder by changing the `frame_rate(2)` value 💨
++ Use `input()` to ask the user which difficulty level they want to play at 🗣️
 
 --- /task ---
 
@@ -33,4 +33,3 @@ Fe allwch chi weld y [prosiect gorffenedig yma](https://trinket.io/python/f686c8
 
 --- /collapse ---
 
---- save ---
