@@ -1,20 +1,18 @@
-## Beth nesaf?
+## Quick quiz
 
-Da iawn, rydych chi wedi gwneud gêm! Amser myfyrio nawr — mae myfyrio'n rhan bwysig o ddysgu oherwydd mae'n helpu i wneud cysylltiadau newydd yn eich ymennydd.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Atebwch y tri chwestiwn isod i fyfyrio ar yr hyn rydych chi wedi'i ddysgu.
+When you have answered each question, click on **Check my answer**.
 
-Ar ôl bob cwestiwn, pwyswch **cyflwyno**. Byddi di'n cael dy dywys i'r ateb cywir. Galli di wneud hyn gymaint ag y mynni.
-
-Mwynhewch!
+Have fun!
 
 --- question ---
 ---
 legend: Cwestiwn 1 o 3
 ---
-Dyma sgŵar glas. Beth yw'r gwerthoedd RGB a fydd yn ei greu?
+Here is a blue square, what are the RGB values that will create it?
 
-![Un bloc lliw glas.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +20,7 @@ Dyma sgŵar glas. Beth yw'r gwerthoedd RGB a fydd yn ei greu?
 
   --- feedback ---
 
-Ddim yn hollol, pan fydd yr holl werthoedd lliw wedi'u gosod ar `0`, **du** yw'r lliw.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -30,7 +28,7 @@ Ddim yn hollol, pan fydd yr holl werthoedd lliw wedi'u gosod ar `0`, **du** yw'r
 
   --- feedback ---
 
-Ddim yn hollol, mae lliwiau'n dilyn y model RGB. Mae gan y lliw hwn y gwerth R uchaf a dim G na B, felly bydd yn **goch**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
