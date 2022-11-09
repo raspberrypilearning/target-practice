@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Le ciel et l'herbe sont créés en écrivant du code pour dessiner des rectangles colorés.
+Your game needs a colourful background.
 </div>
 <div>
 
@@ -11,60 +11,44 @@ Le ciel et l'herbe sont créés en écrivant du code pour dessiner des rectangle
 </div>
 </div>
 
+### Open the starter project
+
 --- task ---
 
-Ouvre le projet [Archery starter](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-Si tu as un compte Trinket, tu peux cliquer sur le bouton **Remix** pour enregistrer une copie dans ta bibliothèque `My Trinkets`.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
-Le projet de démarrage contient du code déjà écrit pour que tu importes la bibliothèque `p5`, tu utiliseras cette bibliothèque pour créer ton jeu de tir à l'arc.
-
-[[[p5-processing-library]]]
+### Edit the sky
 
 --- task ---
 
-La fonction `fill()` définit la couleur intérieure des formes. Le projet de démarrage contient déjà des couleurs RVB que tu peux utiliser pour ce faire.
+The starter project has some code already written for you.
 
-Trouve ta fonction `dessin()` et prépare-toi à dessiner le ciel en ajoutant du code indenté pour définir la couleur `fill()` sur `ciel` :
+Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 18
-line_highlights: 25
----
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
-def dessin():     
-#Choses à faire dans chaque image     
-ciel = color(92, 204, 206) #Rouge = 92, Vert = 204, Bleu = 206     
-herbe = color(149, 212, 122)     
-bois = color(145, 96, 51)     
-exterieur = color(0, 120, 180)
-
-  fill(ciel)
-
---- /code ---
+**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
 --- /task ---
 
-L'appel de fonction `size()` dans `configuration()` définit la taille de l'écran à 400 pixels sur 400 pixels.
-
-[[[p5-coordinates]]]
-
 --- task ---
 
-Après ton code `fill()` , dessine un `rect()` pour le ciel avec des coordonnées en haut à gauche (`0`,`0`), une largeur de `400` pour correspondre à la largeur de l'écran et une hauteur de `250`.
+The sky has been drawn with a black border (stroke).
 
-![Un rectangle bleu avec une grille de coordonnées indiquant la position du rectangle du ciel commençant dans le coin supérieur, au-dessus d'un rectangle gris.](images/sky_coords.png)
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 25
-line_highlights: 26
+language: python filename: main.py — setup() line_numbers: true line_number_start: 11
+line_highlights: 15
 ---
-
-  fill(ciel) rect(0, 0, 400, 250) #Départ x, départ y, largeur, hauteur
+def setup():
+# Setup your game here
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -72,70 +56,42 @@ line_highlights: 26
 
 --- task ---
 
-**Test :** Exécute ton code pour voir le ciel que tu as dessiné. Rappelle-toi qu'avec la bibliothèque `p5`, la fonction `run()` appelle la fonction `configuration()` une fois, puis la fonction `dessin()` à plusieurs reprises.
-
-![Un rectangle bleu entouré d'une bordure noire, au-dessus d'un rectangle gris.](images/sky_stroke.png){:width="300px"}
-
-C'est un peu étrange : il y a une ligne noire autour de ton ciel ! En effet, lorsque le programme démarre, il définit automatiquement une bordure noire - appelée **trait** - autour de tout ce qu'il dessine.
+**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
 
 --- /task ---
 
+### Draw the grass
+
 --- task ---
 
-Désactive le trait en ajoutant `no_stroke()` avant de commencer à dessiner le ciel.
+**Add** code to draw a green rectangle at the bottom of the screen.
+
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 25
+language: python filename: main.py — draw() line_numbers: true line_number_start: 17
+line_highlights: 27, 28
 ---
+def draw():
+# Things to do in every frame
+  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  exterieur = color(0, 120, 180)
-
-  no_stroke()   
-fill(ciel)   
-rect(0, 0, 400, 250) #x, y, largeur, hauteur
+  fill(sky)     
+rect(0, 0, 400, 250)     
+fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
 
 --- /code ---
 
---- /task ---
-
---- task ---
-
-**Test :** Exécute à nouveau ton projet pour vérifier que le trait a disparu.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-`fill()` change la couleur de remplissage pour toutes les formes dessinées jusqu'à ce que `fill()` soit appelé à nouveau avec une nouvelle couleur.
+**Test:** 🔄 Run your project again to view the finished background.
 
-Change la couleur `fill()` en `herbe` et ajoute encore `rect(x, y, width, height)`.
-
-Ce rectangle doit être positionné sous le ciel aux coordonnées (0, 250), de sorte qu'il commence dans la partie inférieure de l'écran.
-
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 28-29
----
-
-  exterieur = color(0, 120, 180)
-
-  no_stroke()     
-fill(ciel)     
-rect(0, 0, 400, 250) #x, y, largeur, hauteur    
-fill(herbe)    
-rect(0, 250, 400, 150)
-
---- /code ---
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
---- task ---
-
-**Test :** Exécute à nouveau ton projet pour afficher l'arrière-plan terminé.
-
---- /task ---
-
---- save ---
