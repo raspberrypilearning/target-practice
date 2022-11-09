@@ -22,9 +22,15 @@ hit_color
 
 内側の円に当たった、 200点！
 
+You hit the middle, 500 points!
+
 ブルズアイに当たった、500ポイント！
 
 外した！ ポイントなし！
+
+How fast do you want the arrow? slow, medium, fast
+
+You hit red, 200 points!
 
 speed
 
