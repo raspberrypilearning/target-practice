@@ -22,9 +22,15 @@ hit_color
 
 Έχεις πετύχει τον εσωτερικό κύκλο, 200 βαθμοί!
 
+You hit the middle, 500 points!
+
 Έχεις πετύχει το κέντρο του στόχου, 500 πόντοι!
 
 Έχασες! Δεν παίρνεις πόντους!
+
+How fast do you want the arrow? slow, medium, fast
+
+You hit red, 200 points!
 
 speed
 
