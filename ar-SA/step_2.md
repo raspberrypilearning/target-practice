@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-تتكون السماء والعشب من خلال كتابة كود لرسم مستطيلات ملونة.
+Your game needs a colourful background.
 </div>
 <div>
 
@@ -11,60 +11,44 @@
 </div>
 </div>
 
+### Open the starter project
+
 --- task ---
 
-افتح مشروع [بداية الرماية](https://trinket.io/python/9973649e5c){: "target = "_ blank}.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-إذا كان لديك حساب Trinket ، فيمكنك النقر فوق الزر **Remix** لحفظ نسخة في مكتبة `My Trinkets`.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
-يحتوي مشروع البداية على بعض التعليمات البرمجية المكتوبة بالفعل لاستيراد مكتبة `p5` ، وسوف تستخدم هذه المكتبة لبناء لعبة الرماية الخاصة بك.
-
-[[[p5-processing-library]]]
+### Edit the sky
 
 --- task ---
 
-تقوم دالة `fill()` بتعيين اللون الداخلي للأشكال. يحتوي مشروع مبتدئ بالفعل على بعض ألوان RGB التي يمكنك استخدامها للقيام بذلك.
+The starter project has some code already written for you.
 
-ابحث عن دالة `()draw` واستعد لرسم السماء عن طريق إضافة تعليمات البرمجية ذي مسافة بادئة لتعيين ` ()fill` لون إلى `سماء`:
+Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 18
-line_highlights: 25
----
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
-def draw():     
-#أشياء للقيام بها في كل إطار     
-sky = color(92, 204, 206) #احمر = 92, اخضر = 204, ازرق = 206     
-grass = color(149, 212, 122)     
-wood = color(145, 96, 51)     
-outer = color(0, 120, 180)
-
-  fill(sky)
-
---- /code ---
+**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
 --- /task ---
 
-دالة `size()` تستدعى في`setup()` يعين حجم الشاشة على 400 بكسل × 400 بكسل.
-
-[[[p5-coordinates]]]
-
 --- task ---
 
-بعد التعليمات البرمجية الخاصة بالدالة `fill()`، ارسم مستطيل `rect()` للسماء يبدأ من الإحداثيات العلوية اليسرى (`0`,`0`)، بعرض `400` ليطابق عرض الشاشة وارتفاع `250`.
+The sky has been drawn with a black border (stroke).
 
-![مستطيل أزرق مع شبكة إحداثيات توضح موضع مستطيل السماء بدءًا من الزاوية العلوية ، فوق مستطيل رمادي.](images/sky_coords.png)
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 25
-line_highlights: 26
+language: python filename: main.py — setup() line_numbers: true line_number_start: 11
+line_highlights: 15
 ---
-
-  fill(sky) rect(0, 0, 400, 250) #بداية المحور س, بداية المحور ص, عرض, ارتفاع
+def setup():
+# Setup your game here
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -72,70 +56,42 @@ line_highlights: 26
 
 --- task ---
 
-**اختبار:** قم بتشغيل الكود الخاص بك لرؤية السماء التي رسمتها. تذكر أنه مع مكتبة `p5` ، تستدعي وظيفة `run()` وظيفة `setup()` مرة واحدة ، ثم دالة `draw()` بشكل متكرر.
-
-![مستطيل أزرق حوله حدود سوداء وفوق مستطيل رمادي.](images/sky_stroke.png){:width="300px"}
-
-هذا غريب بعض الشيء: هناك خط أسود حول السماء! هذا لأنه ، عندما يبدأ البرنامج ، يقوم تلقائيًا بتعيين حد أسود - يسمى **ضربة** - حول كل شيء يرسمه.
+**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
 
 --- /task ---
 
+### Draw the grass
+
 --- task ---
 
-قم بإيقاف تشغيل الحد بإضافة `no_stroke()` قبل أن تبدأ في رسم السماء.
+**Add** code to draw a green rectangle at the bottom of the screen.
+
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 25
+language: python filename: main.py — draw() line_numbers: true line_number_start: 17
+line_highlights: 27, 28
 ---
+def draw():
+# Things to do in every frame
+  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  outer = color(0, 120, 180)
-
-  no_stroke()   
-fill(sky)   
-rect(0, 0, 400, 250) #المحور x, المحور  y, العرض, الارتفاع
+  fill(sky)     
+rect(0, 0, 400, 250)     
+fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
 
 --- /code ---
 
---- /task ---
-
---- task ---
-
-**اختبار:** قم بتشغيل مشروعك مرة أخرى لعرض الخلفية النهائية.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-الدالة `fill()` تغير لون التعبئة لجميع الأشكال المرسومة حتى يتم استدعاء`fill()` مرة أخرى بلون جديد.
+**Test:** 🔄 Run your project again to view the finished background.
 
-قم بتغيير لون التعبئة `fill()` إلى `grass` وأضف `rect(x, y, width, height)`.
-
-يجب وضع هذا المستطيل أسفل السماء عند الإحداثيات (0 ، 250) ، بحيث يبدأ في الجزء السفلي من الشاشة.
-
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 28-29
----
-
-  outer = color(0, 120, 180)
-
-  no_stroke()     
-fill(sky)     
-rect(0, 0, 400, 250) #المحور x, المحور y, العرض, الارتفاع    
-fill(grass)    
-rect(0, 250, 400, 150)
-
---- /code ---
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
---- task ---
-
-**اختبار:** قم بتشغيل مشروعك مرة أخرى لعرض الخلفية النهائية.
-
---- /task ---
-
---- save ---
