@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Τώρα ήρθε η ώρα να προσθέσεις ένα βέλος που κινείται τυχαία στην περιοχή του στόχου.
+When you click or tap, an arrow will fire at the position of a moving target circle. 
 </div>
 <div>
 
@@ -11,21 +11,30 @@
 </div>
 </div>
 
+### Draw a target circle every frame
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
+</p>
+
 --- task ---
 
-Βρες το σχόλιο **#Η συνάρτηση shoot_arrow πηγαίνει εδώ** και από κάτω πρόσθεσε κώδικα για να ορίσεις τη συνάρτηση `shoot_arrow()`.
+Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
 
-Πρόσθεσε μία μικρή έλλειψη με τη συνάρτηση `ellipse()` στο κέντρο της οθόνης για να απεικονίσει το βέλος.
+Add code to randomly draw a brown circle within a target area:
+
+![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 11-12
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+line_highlights: 10, 11, 12, 13, 14
 ---
-
 # Η συνάρτηση shoot_arrow πηγαίνει εδώ
 def shoot_arrow():   
-ellipse(200, 200, 15, 15)
+arrow_x = randint(100, 300) # Store a random number between 100 and 300    
+arrow_y = randint(100, 300) # Store a random number between 100 and 300    
+fill(wood) # Set the arrow to fill colour to wood   
+circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- /code ---
 
@@ -33,18 +42,15 @@ ellipse(200, 200, 15, 15)
 
 --- task ---
 
-Πήγαινε στον κώδικα `draw()` που δημιουργεί τον στόχο και πρόσθεσε κώδικα στο τέλος για να ορίσεις τη συνάρτηση `fill()` ως `wood` (ξύλο, άρα χρώμα καφέ), και μετά κάλεσε τη νέα σου συνάρτηση `shoot_arrow()`.
+Go to the `draw` function and call your new `shoot_arrow` function.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 41
-line_highlights: 44-45
+language: python filename: main.py — draw() line_numbers: true line_number_start: 42
+line_highlights: 44
 ---
-
-  fill(bullseye)    
-ellipse(200, 200, 30, 30)
-
-  fill(wood)   
+  fill(middle)    
+circle(200, 200, 30)    
 shoot_arrow()
 
 --- /code ---
@@ -53,114 +59,61 @@ shoot_arrow()
 
 --- task ---
 
-**Δοκιμή:** Εκτέλεσε τον κώδικά σου και δες το βέλος να εμφανίζεται στο κέντρο του στόχου.
+**Test:** 🔄 Run you code and see the arrow appear in a random position each frame.
 
-![Ο στόχος στο φόντο με ένα καφέ κυκλικό βέλος πάνω του.](images/arrow-middle.png)
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
---- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Παιχνίδια στον υπολογιστή, βίντεο και κινούμενα σχέδια δημιουργούν το εφέ της κίνησης προβάλλοντας πολλές εικόνες τη μία μετά την άλλη. Κάθε εικόνα ονομάζεται <span style="color: #0faeb0; font-weight: bold;"> καρέ </span>. Η ταχύτητα με την οποία αλλάζει η εικόνα ονομάζεται <span style="color: #800080;"> ρυθμός καρέ </span> και μετριέται σε <span style="color: #800080;">fps</span> ή καρέ ανά δευτερόλεπτο.  
-</p>
-
-Η γραμμή `frame_rate(2)` στη συνάρτηση `setup()` ορίζει τον ρυθμό καρέ σε 2 καρέ ανά δευτερόλεπτο.
-
-Η συνάρτηση `draw()` καλείται σε κάθε καρέ. Θα σχεδιάζεις το βέλος σε τυχαία θέση κάθε φορά που καλείται η συνάρτηση `draw()`.
-
-Το υπόβαθρο και ο στόχος θα σχεδιάζονται πάνω από το παλιό βέλος. Αυτό σημαίνει ότι βλέπεις μόνο ένα βέλος κάθε φορά.
-
---- task ---
-
-Βρες τις δηλώσεις εισαγωγής `import`, στην αρχή του κώδικά σου, θα χρησιμοποιήσεις το `randint` από τη βιβλιοθήκη `random`.
-
---- code ---
----
-language: python filename: main.py line_numbers: true
-line_number_start: 3
----
-
-# Εισαγωγή του κώδικα της βιβλιοθήκης
-from p5 import *    
-from math import *    
-from random import randint
-
---- /code ---
+The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
 
 --- /task ---
 
---- task ---
+### Get the colour hit by the arrow
 
-Πήγαινε στη συνάρτηση `shoot_arrow()` και πρόσθεσε δύο νέες μεταβλητές `arrow_x` και `arrow_y` για να αποθηκεύσεις τυχαίους αριθμούς μεταξύ `100` και `300`.
-
-Αυτό θα κάνει μερικές βολές να χάσουν τον στόχο, αλλά να βρίσκονται εντός των ορίων του παιχνιδιού σου.
-
-Άλλαξε την `ellipse()` για να χρησιμοποιήσεις τις νέες μεταβλητές για να τοποθετήσεις το βέλος σου.
-
-![Ένα ορθογώνιο που δείχνει τις συντεταγμένες της περιοχής στόχου σε ένα ημιδιαφανές ορθογώνιο.](images/target_area.png)
-
---- code ---
----
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 12-14
----
-
-# Η συνάρτηση shoot_arrow πηγαίνει εδώ
-def shoot_arrow():    
-arrow_x = randint(100, 300)   
-arrow_y = randint(100, 300)    
-ellipse(arrow_x, arrow_y, 15, 15) #Ενημέρωσε με τυχαίες συντεταγμένες
-
---- /code ---
-
---- /task ---
-
-### Μάθε το χρώμα που χτυπά το βέλος
-
-Η συνάρτηση `get()` επιστρέφει το χρώμα ενός εικονοστοιχείου.
+The `get()` function returns the colour of a pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Ένα <span style="color: #0faeb0; font-weight: bold;">pixel</span>, συντομογραφία (στα αγγλικά) για το στοιχείο εικόνας (picture element) και στα ελληνικά εικονοστοιχείο, είναι μια μονή έγχρωμη κουκκίδα μέσα σε μια εικόνα. Οι εικόνες αποτελούνται από πολλά έγχρωμα εικονοστοιχεία.
+A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
 </p>
 
 --- task ---
 
-Πρέπει να αποθηκεύσεις το χρώμα στο οποίο στοχεύει το βέλος πριν σχεδιάσεις ένα βέλος πάνω του.
-
-Πρόσθεσε κώδικα για να αποθηκεύσεις το `hit_color`. Χρησιμοποίησε τη συνάρτηση `get()`, για να λάβεις το χρώμα του εικονοστοιχείου στις συντεταγμένες `arrow_x` και `arrow_y` — το κέντρο του βέλους.
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 14
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+line_highlights: 13
 ---
-
-# Η συνάρτηση shoot_arrow πηγαίνει εδώ
+# The shoot_arrow function goes here
 def shoot_arrow():    
 arrow_x = randint(100, 300)    
 arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) #Αποθήκευσε το χρώμα πριν σχεδιάσεις το βέλος   
-ellipse(arrow_x, arrow_y, 15, 15)
+hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
-**Συμβουλή:** Ο κώδικας για να μάθεις το χρώμα και να το αποθηκεύσεις πρέπει να βρίσκεται **πριν από** τον κώδικα που σχεδιάζει την έλλειψη, διαφορετικά θα αποθηκεύεις πάντα το χρώμα του ξύλου του βέλους!
+**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
 
 --- /task ---
 
-Η βιβλιοθήκη `p5` «ακούει» ορισμένα συμβάντα, ένα από αυτά είναι το πάτημα του κουμπιού του ποντικιού. Όταν εντοπίσει ότι το κουμπί έχει πατηθεί, θα εκτελέσει όποιον κώδικα έχει δοθεί στη συνάρτηση `mouse_pressed()`.
+### Print the colour when the mouse is pressed
+
+The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
 
 --- task ---
 
-Βρες το σχόλιο **#Η συνάρτηση mouse_pressed πηγαίνει εδώ** και από κάτω πρόσθεσε κώδικα για να ορίσεις τη συνάρτηση `mouse_pressed()`.
+Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
 
-Πρόσθεσε κώδικα για να εμφανίσεις τις ποσότητες κόκκινου, πράσινου και μπλε στο εικονοστοιχείο στο οποίο προσγειώνεται το βέλος.
+Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
-line_highlights: 9-10
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+line_highlights: 8, 9
 ---
 
-# Η συνάρτηση mouse_pressed πηγαίνει εδώ
+# The mouse_pressed function goes here
 def mouse_pressed():    
 print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -170,23 +123,20 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- task ---
 
-Έχεις ορίσει δύο συναρτήσεις `shoot_arrow()` και `mouse_pressed()`, και οι δύο αυτές συναρτήσεις πρέπει να χρησιμοποιούν τη μεταβλητή `hit_color`.
-
-Μια μεταβλητή που χρειάζεται να χρησιμοποιείται σε ολόκληρη την έκταση ενός προγράμματος είναι γνωστή ως **καθολική μεταβλητή** (global). Πρόσθεσε κώδικα στη συνάρτηση `shoot_arrow()` για να μετατρέψεις το `hit_color` σε καθολική μεταβλητή:
+Make `hit_color` a **global variable** so that it can be used throughout your code:
 
 --- code ---
 ---
-language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 12
-line_highlights: 14
+language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
+line_highlights: 13
 ---
-
 # Η συνάρτηση shoot_arrow πηγαίνει εδώ
 def shoot_arrow():    
-global hit_color #Μπορεί να χρησιμοποιηθεί και σε άλλες συναρτήσεις     
+global hit_color # Can be used in other functions     
 arrow_x = randint(100, 300)     
 arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) #Σώσε το χρώμα πριν σχεδιάσεις το βέλος     
-ellipse(arrow_x, arrow_y, 15, 15)
+hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow fill(wood)     
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -194,17 +144,16 @@ ellipse(arrow_x, arrow_y, 15, 15)
 
 --- task ---
 
-**Δοκιμή:** Τρέξε το έργο σου. Το βέλος σχεδιάζεται ξανά σε τυχαίες συντεταγμένες.
+**Test:** 🔄 Run your project.
 
-Το έργο λαμβάνει το `hit_color` κάθε φορά που επανασχεδιάζεται το βέλος κι εμφανίζει την τιμή χρώματος στην περιοχή εξόδου κάτω από τον στόχο.
+The project prints the `hit_color` each time the arrow is redrawn.
 
-![Ο στόχος, με ένα καφέ κυκλικό βέλος να εμφανίζεται σε διάφορες θέσεις.](images/fire_arrow.gif)
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-**Εντοπισμός σφαλμάτων:** Εάν βλέπεις ένα μήνυμα σχετικά με το ότι το `hit_colour` δεν έχει οριστεί, τότε πρέπει να επστρέψεις στο `shoot_arrow()` και να ελέγξεις ότι έχεις την γραμμή `global hit_color`.
+**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
 
-**Εντοπισμός σφαλμάτων:** Έλεγξε πολύ προσεκτικά τη γραμμή `print` για κόμματα και παρενθέσεις.
+**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
 
 --- /task ---
 
---- save ---
 
