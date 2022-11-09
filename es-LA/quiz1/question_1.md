@@ -1,16 +1,14 @@
-## Reflection
+## Quick quiz
 
-Well done, you made a game! Now it's time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Answer the three questions below to reflect on what you've learnt.
-
-After each question, press **submit**. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+When you have answered each question, click on **Check my answer**.
 
 Have fun!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: Pregunta 1 de 3
 ---
 Here is a blue square, what are the RGB values that will create it?
 
@@ -38,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  ¡Correcto! Los colores siguen el modelo RGB. Este color no tiene R ni G, pero sí máximo B, por lo que será **azul**.
 
   --- /feedback ---
 
@@ -46,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  No del todo, cuando todos los valores de color se establecen en el máximo de `255`, el color es **blanco**.
 
   --- /feedback ---
 
