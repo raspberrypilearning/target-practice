@@ -1,7 +1,8 @@
 ## Teken je doelwit
+
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-De standaard van het doelwit is een driehoekige vorm. Het doelwit is gemaakt met gekleurde cirkels - kleinere cirkels zijn meer punten waard dan grotere. 
+Your game needs a target to shoot arrows at.
 </div>
 <div>
 
@@ -10,83 +11,117 @@ De standaard van het doelwit is een driehoekige vorm. Het doelwit is gemaakt met
 </div>
 </div>
 
-Vormen worden getekend in de volgorde waarin de coderegels lopen. De driehoekige houten standaard staat deels achter de doelcirkels en moet dus als eerste worden getekend.
-
-Stel je voor dat je alle vormen uit papier knipt. Afhankelijk van hoe je dat papier rangschikt en overlapt, kan het eindresultaat er heel anders uitzien.
-
-### Teken de standaard
+### Draw a triangular stand
 
 --- task ---
 
-Wanneer je de functie `triangle()` oproept, moet je drie sets coördinaten opgeven, `x1, y1, x2, y2, x3, y3` die ieder de positie van een van de hoeken van de driehoek aangeven.
+Set the fill colour to `wood` (brown).
 
---- collapse ---
----
-title: Driehoekscoördinaten
----
+Draw a triangle using the x and y coordinates for each of the corners.
 
-  Hier zijn drie voorbeelddriehoeken, elk met verschillende sets coördinaten. Kijk naar de rasterpositie van elke driehoek om te zien hoe de `x` en `y` coördinaten de hoeken van de driehoeken positioneren:
-  + Groene driehoek: triangle(50, 50, 150, 50, 180, 100)
-  + Blauwe driehoek: triangle(210, 280, 300, 350, 380, 100)
-  + Bruine driehoek: triangle(50, 150, 200, 250, 180, 350)
-
-  ![Het uitvoergebied met drie driehoeken.](images/triangles-coords.png)
-
---- /collapse ---
-
-Teken een `triangle()` voor de standaard met hoeken op (150, 350), (200, 150) en (250, 350).
-
-![Een bruine driehoek op gras en tegen een lucht met de coördinaatpunten gelabeld.](images/stand_coords.png)
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 28
-line_highlights: 31-32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 27
+line_highlights: 29, 30
 ---
-
-  fill(gras)   
-rect(0, 250, 400, 150) #x, y, breedte, hoogte
-
-  fill(hout) #Stel de vulkleur van de standaard in op bruin     
+  fill(grass)   
+rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
 triangle(150, 350, 200, 150, 250, 350)
-
 
 --- /code ---
 
-**Tip:** We hebben opmerkingen aan onze code toegevoegd, zoals `#Stel de vulkleur van de standaard in op bruin`, om je te vertellen wat deze code doet. Je hoeft deze opmerkingen niet aan je code toe te voegen, maar ze kunnen nuttig zijn om je eraan te herinneren wat coderegels doen.
+--- /task ---
+
+--- task ---
+
+**Test:** 🔄 Run your code to see the stand for your target:
+
+![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+
+--- /task ---
+
+### Draw the target circles
+
+--- task ---
+
+The largest part of the target is a blue **circle**.
+
+Set the fill colour to `outer` (blue).
+
+Draw a circle with x and y coordinates for its centre and a width.
+
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+
+--- code ---
+---
+language: python filename: main.py - draw() line_numbers: true line_number_start: 29
+line_highlights: 31, 32
+---
+
+  fill(wood)   
+triangle(150, 350, 200, 150, 250, 350)   
+fill(outer) # Set the circle fill colour to outer    
+circle(200, 200, 170) # x, y, width of the circle
+
+--- /code ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Voer je code uit om de standaard voor je doelwit te zien.
+**Test:** Run your code to see the first large blue circle.
 
-![Een bruine driehoek op gras en tegen een lucht.](images/target-stand.png)
+The blue circle was drawn after the stand so it is in front:
+
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-### Teken je doelwit
+--- task ---
+
+👀 Find your colour variables in the `draw` function.
+
+Create two variables called `inner` and `middle` to store colours for the other circles.
+
+The `color` function expects three numbers: one each for red, green, and blue.
+
+--- code ---
+---
+language: python filename: main.py - draw() line_numbers: true line_number_start: 17
+line_highlights: 24, 25
+---
+def draw():   
+# Things to do in every frame global wood sky = color(92, 204, 206)   
+grass = color(149, 212, 122)   
+wood = color(145, 96, 51)   
+outer = color(0, 120, 180) # Blue    
+inner = color(210, 60, 60) # Red    
+middle = color(220, 200, 0) # Yellow
+
+--- /code ---
+
+--- /task ---
+
+The target is made of different-sized circles with the same centre coordinates (200, 200).
 
 --- task ---
 
-Het grootste deel van het doelwit zal een blauwe **cirkel** zijn, gemaakt met behulp van de functie `ellipse()`. Een ellips is een vorm met één zijde en geen hoeken. Hij kan platgedrukt worden, zoals een ovaal, of perfect rond, zoals een cirkel.
-
-Een ellips heeft `x` en `y` coördinaten, breedte en hoogte nodig. De `x` en `y` coördinaten van een ellips geven de middenpositie aan.
-
-De blauwe cirkel zal de bruine driehoek bedekken waar ze elkaar overlappen, omdat die cirkel later is getekend.
-
-**Tip:** Om een cirkel te maken, moeten de **breedte** en **hoogte** gelijk zijn.
+**Add** coloured circles for the inner and middle parts of the target.
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 33-34
+line_highlights: 35, 36, 37, 38
 ---
-
-  fill(hout)   
-triangle(150, 350, 200, 150, 250, 350)   
-fill(buitenste)    
-ellipse(200, 200, 170, 170) #Buitenste cirkel. 200, 200 is het midden van het scherm
+  fill(wood)    
+triangle(150, 350, 200, 150, 250, 350)  
+fill(outer)   
+circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
+circle(200, 200, 110) # Inner circle - x, y, width of the circle  
+fill(middle) # Set the circle fill colour to middle      
+circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 --- /code ---
 
@@ -94,78 +129,24 @@ ellipse(200, 200, 170, 170) #Buitenste cirkel. 200, 200 is het midden van het sc
 
 --- task ---
 
-**Test:** Voer je code uit om de eerste grote blauwe cirkel te zien.
+**Test:** 🔄 Run your project to see the target with three coloured circles.
 
-![Een bruine driehoek en blauwe cirkel op gras en tegen een lucht.](images/blue-circle.png)
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+
+**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
 
 --- /task ---
 
 --- task ---
 
-Maak twee nieuwe variabelen om de kleuren voor de resterende `binnenste` en `roos` cirkels op te slaan.
-
-Wijs kleuren toe aan de `binnenste` en `roos` variabelen met `color()`.
-
-De functie `color()` verwacht drie getallen: één voor rood, groen en blauw.
-
-We gebruikten cijfers die traditionele boogschietkleuren geven, maar je kunt alle kleuren gebruiken die je wilt, zolang ze maar van elkaar verschillen.
+**Choose:** 💭 Change any of the colours.
 
 [[[generic-theory-simple-colours]]]
 
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 24-25
----
+![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
-def draw():   
-#Dingen om te doen in elk frame
-
-  lucht = color(92, 204, 206)   
-gras = color(149, 212, 122)   
-hout = color(145, 96, 51)   
-buitenste = color(0, 120, 180) #Blauw    
-binnenste = color(210, 60, 60) # Rood    
-roos = color(220, 200, 0) # Geel
-
---- /code ---
 
 --- /task ---
 
---- task ---
 
-Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale coördinaten (200, 200) - het midden van het scherm.
-
-Voeg nog twee cirkels toe om een binnenste cirkel en de roos weer te geven. Wijzig de `fill()` voordat je elke cirkel tekent.
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 33
-line_highlights: 37-40
----
-
-  fill(hout)    
-triangle(150, 350, 200, 150, 250, 350) #Standaard    
-fill(buitenste)   
-ellipse(200, 200, 170, 170) #Buitenste cirkel   
-fill(binnenste)   
-ellipse(200, 200, 110, 110) #Binnenste cirkel   
-fill(roos)   
-ellipse(200, 200, 30, 30) #Roos
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test:** Voer je project opnieuw uit om het doel met drie gekleurde cirkels te zien. Verander de kleuren totdat je er tevreden mee bent.
-
-![Een bruine driehoek met drie gekleurde cirkels op gras en tegen een lucht.](images/three-circles.png)
-
-**Debuggen:** Python gebruikt de Amerikaanse spelling van 'color' (zonder een 'u'), dus zorg ervoor dat jij dat ook doet.
-
---- /task ---
-
---- save ---
 
