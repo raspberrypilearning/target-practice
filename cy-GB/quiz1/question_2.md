@@ -6,13 +6,12 @@ legend: Cwestiwn 2 o 3
 
 Yn eich prosiect roeddech chi wedi defnyddio'r amodau `if` , `elif`, ac `else` i wirio ar ba liw glaniodd y saeth.
 
-Pan fydd y cod hwn yn cael ei redeg, beth fyddai'n cael ei brintio yn yr ardal allbwn?
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
 language: python
 ---
-
 speed = 6
 
 if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
@@ -41,7 +40,7 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  Na, mae'r datganiad else yn golygu y bydd rhywbeth yn wir bob amser. Felly, bydd allbwn yn cael ei brintio.
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
