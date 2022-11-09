@@ -4,7 +4,7 @@
 legend: 質問3/3
 ---
 
-次のコードで楕円を描画します。
+A circle is drawn using the following code:
 
 --- code ---
 ---
@@ -13,17 +13,17 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0,255,0)   
+fill(0, 255, 0)   
 no_stroke()
 
 def draw():   
-ellipse(0,0,300,300)
+circle(0, 0, 300)
 
 run()
 
 --- /code ---
 
-次の画像のうち、出力領域でのこの楕円の正しい位置を示しているのはどれですか？
+Which of the images below show the correct position of this circle in the output area?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ run()
 
   --- feedback ---
 
-  ちょっと違います、右下の円を中央に配置するには、画面サイズと同じ座標にする必要があります。 この例では、楕円は `ellipse(400,400,300,300)`になります。
+  ちょっと違います、右下の円を中央に配置するには、画面サイズと同じ座標にする必要があります。 In this example, the ellipse would be `circle(400, 400, 300)`.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ run()
 
   --- feedback ---
 
-  ちょっと違います、円を中央に配置するためには、座標が画面サイズの半分になる必要があるのです。 この例では、 `ellipse(200,200,300,300)`です。
+  ちょっと違います、円を中央に配置するためには、座標が画面サイズの半分になる必要があるのです。 In this example, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ run()
 
   --- feedback ---
 
-  いいえ、この円のコードは `ellipse(350,150,300,300)` で、画面の右上に向かって中央に配置されます。 `x`座標は楕円が画面の横方向にどれだけあるか、`y`座標は画面の下方向にどれだけあるかを示しています。
+  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. `x`座標は楕円が画面の横方向にどれだけあるか、`y`座標は画面の下方向にどれだけあるかを示しています。
 
   --- /feedback ---
 
