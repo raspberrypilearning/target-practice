@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Mae'r awyr a'r gwair yn cael eu gwneud drwy ysgrifennu cod i lunio petryalau lliw.
+Your game needs a colourful background.
 </div>
 <div>
 
@@ -11,60 +11,44 @@ Mae'r awyr a'r gwair yn cael eu gwneud drwy ysgrifennu cod i lunio petryalau lli
 </div>
 </div>
 
+### Open the starter project
+
 --- task ---
 
-Agorwch y [prosiect dechreuol Saethyddiaeth](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-Os oes gennych chi gyfrif Trinket, fe allwch chi glicio'r botwm **Remix** i gadw copi yn eich llyfrgell `My Trinkets`.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
-Mae rhywfaint o god wedi'i ysgrifennu i chi yn barod yn y prosiect dechreuol er mwyn i chi fewngludo'r llyfrgell `p5`. Byddwch yn defnyddio'r llyfrgell hon i adeiladu eich gêm saethyddiaeth.
-
-[[[p5-processing-library]]]
+### Edit the sky
 
 --- task ---
 
-Mae'r swyddogaeth `fill()` yn gosod y lliw tu mewn i'r siapiau. Mae'r prosiect dechreuol eisoes yn cynnwys rhai lliwiau RGB gallwch chi eu defnyddio i wneud hyn.
+The starter project has some code already written for you.
 
-Dewch o hyd i'ch swyddogaeth `draw()` a pharatoi i lunio'r awyr drwy ychwanegu cod wedi'i fewnoli i osod y lliw `fill()` ar `awyr`:
+Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 18
-line_highlights: 25
----
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
-def draw():     
-#Things to do in every frame     
-sky = color(92, 204, 206) #Red = 92, Green = 204, Blue = 206     
-grass = color(149, 212, 122)     
-wood = color(145, 96, 51)     
-outer = color(0, 120, 180)
-
-  fill(sky)
-
---- /code ---
+**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
 --- /task ---
 
-Mae'r swyddogaeth `size()` yn `setup()` yn gosod maint y sgrin ar 400 picsel wrth 400 picsel.
-
-[[[p5-coordinates]]]
-
 --- task ---
 
-Ar ôl eich cod `fill()` lluniwch betryal - `rect()` - ar gyfer yr awyr gyda'r cyfesurynnau chwith uchaf (`0`,`0`), lled o `400` i gyfateb i led y sgrin ac uchder o `250`.
+The sky has been drawn with a black border (stroke).
 
-![Petryal glas gyda grid cyfesurynnau yn dangos safle'r petryal awyr yn dechrau yn y gornel uchaf, uwchben petryal llwyd.](images/sky_coords.png)
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 25
-line_highlights: 26
+language: python filename: main.py — setup() line_numbers: true line_number_start: 11
+line_highlights: 15
 ---
-
-  fill(sky) rect(0, 0, 400, 250) #Start x, start y, width, height
+def setup():
+# Setup your game here
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -72,70 +56,42 @@ line_highlights: 26
 
 --- task ---
 
-**Profi:** Rhedwch eich cod i weld yr awyr rydych chi wedi'i llunio. Cofiwch, gyda'r llyfrgell `p5` mae'r swyddogaeth `run()` yn galw'r swyddogaeth `setup()` unwaith, wedyn y swyddogaeth `draw()` drosodd a throsodd.
-
-![Petryal glas gyda border du o'i amgylch, uwchben petryal llwyd.](images/sky_stroke.png){:width="300px"}
-
-Dyna ryfedd: mae llinell ddu o amgylch eich awyr! Y rheswm am hyn yw, pan fydd rhaglen yn dechrau, mae'n gosod border du — o'r enw **stroke** — o amgylch popeth mae'n ei lunio yn awtomatig.
+**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
 
 --- /task ---
 
+### Draw the grass
+
 --- task ---
 
-I gael gwared ar y strôc, ychwanegwch `no_stroke()` cyn dechrau llunio'r awyr.
+**Add** code to draw a green rectangle at the bottom of the screen.
+
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 25
+language: python filename: main.py — draw() line_numbers: true line_number_start: 17
+line_highlights: 27, 28
 ---
+def draw():
+# Things to do in every frame
+  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  outer = color(0, 120, 180)
-
-  no_stroke()   
-fill(sky)   
-rect(0, 0, 400, 250) #x, y, width, height
+  fill(sky)     
+rect(0, 0, 400, 250)     
+fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
 
 --- /code ---
 
---- /task ---
-
---- task ---
-
-**Profi:** Rhedwch eich prosiect eto i wneud yn siŵr bod y strôc wedi diflannu.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-Mae `fill()` yn newid y lliw llenwi ar gyfer pob siâp sy'n cael ei lunio nes bod `fill()` yn cael ei galw eto gyda lliw newydd.
+**Test:** 🔄 Run your project again to view the finished background.
 
-Newidiwch y lliw `fill()` i `gwair` ac ychwanegu `rect(x, y, lled, uchder)` arall.
-
-Mae angen i'r petryal hwn fod o dan yr awyr ar y cyfesurynnau (0, 250) er mwyn iddo ddechrau yn y rhan isaf o'r sgrin.
-
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 28-29
----
-
-  outer = color(0, 120, 180)
-
-  no_stroke()     
-fill(sky)     
-rect(0, 0, 400, 250) #x, y, width, height    
-fill(grass)    
-rect(0, 250, 400, 150)
-
---- /code ---
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
---- task ---
-
-**Profi:** Rhedwch eich prosiect eto i weld y cefndir gorffenedig.
-
---- /task ---
-
---- save ---
