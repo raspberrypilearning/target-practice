@@ -6,7 +6,23 @@
 
 x, y, 幅, 高さ
 
-スタンドフィルカラーをブラウンに設定
+Set the stand fill colour to wood
+
+Set the arrow to fill colour to wood
+
+Set the stand fill colour to grass
+
+Set the circle fill colour to outer
+
+Set the circle fill colour to inner
+
+Set the circle fill colour to middle
+
+x, y, width of the circle
+
+Inner circle - x, y, width of the circle
+
+Middle circle - x, y, width of the circle
 
 外側の円 200, 200は画面の中央です
 
@@ -61,3 +77,11 @@ p5py処理ライブラリとの互換性のための定義
 キーボード
 
 コードを実行するのに必要
+
+Store a random number between 100 and 300
+
+Get the hit colour
+
+Draw a small circle at random coordinates
+
+width and height of screen
