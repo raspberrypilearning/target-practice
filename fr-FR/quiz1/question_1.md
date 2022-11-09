@@ -1,20 +1,18 @@
-## Réflexion
+## Quick quiz
 
-Bravo, tu as créé un jeu ! Maintenant, il est temps de réfléchir - la réflexion est une partie importante de l'apprentissage, car elle aide à établir de nouvelles connexions dans ton cerveau.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris.
+When you have answered each question, click on **Check my answer**.
 
-Après chaque question, appuie sur **soumettre**. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
-
-Amuse-toi bien !
+Have fun!
 
 --- question ---
 ---
 legend : Question 1 sur 3
 ---
-Voici un carré bleu, quelles sont les valeurs RVB qui vont le créer ?
+Here is a blue square, what are the RGB values that will create it?
 
-![Un seul bloc de couleur bleue.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -22,7 +20,7 @@ Voici un carré bleu, quelles sont les valeurs RVB qui vont le créer ?
 
   --- feedback ---
 
-Pas tout à fait, lorsque toutes les valeurs de couleur sont définies sur `0`, la couleur est le **noir**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -30,7 +28,7 @@ Pas tout à fait, lorsque toutes les valeurs de couleur sont définies sur `0`, 
 
   --- feedback ---
 
-Pas tout à fait, les couleurs suivent le modèle RVB. Cette couleur a une valeur R maximale et pas de V ou B, donc sera **rouge**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
