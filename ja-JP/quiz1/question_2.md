@@ -6,13 +6,12 @@ legend: 質問2/3
 
 あなたのプロジェクトでは、`if` , `elif`, `else`条件を使って、矢がどの色に着地したかをチェックしましたね。
 
-このコードを実行すると、出力領域には何が表示されるでしょうか？
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
 language: python
 ---
-
 speed = 6
 
 if speed == 7: print('超高速') elif speed == 5: print('かなり速い') elif speed == 6: print('非常に速い') else: print('速度が認識されない！')
@@ -41,7 +40,7 @@ if speed == 7: print('超高速') elif speed == 5: print('かなり速い') elif
 
   --- feedback ---
 
-  違います、elseステートメントを使用すると、常にtrueになることがあります。 そのため、出力が行われます。
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
