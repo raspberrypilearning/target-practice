@@ -6,13 +6,12 @@ legend : Question 2 sur 3
 
 Dans ton projet, tu as utilisé les conditions`if`, `elif`et `else` pour vérifier sur quelle couleur la flèche a atterri.
 
-Lorsque ce code est exécuté, qu'est-ce qui sera imprimé dans la zone de sortie ?
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
 language: python
 ---
-
 vitesse = 6
 
 if vitesse == 7: print('Super rapide') elif speed == 5: print('Assez rapide') elif speed == 6: print('Très rapide') else: print('Vitesse non reconnue !')
@@ -41,7 +40,7 @@ if vitesse == 7: print('Super rapide') elif speed == 5: print('Assez rapide') el
 
   --- feedback ---
 
-  Non, avec l'instruction else, il y aura toujours quelque chose de vrai. Par conséquent, une sortie sera imprimée.
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
