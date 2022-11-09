@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-De lucht en het gras worden gemaakt door code te schrijven om gekleurde rechthoeken te tekenen.
+Your game needs a colourful background.
 </div>
 <div>
 
@@ -11,60 +11,44 @@ De lucht en het gras worden gemaakt door code te schrijven om gekleurde rechthoe
 </div>
 </div>
 
+### Open the starter project
+
 --- task ---
 
-Open het [Boogschieten starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-Als je een Trinket-account hebt, kun je op de knop **Remix** klikken om een kopie op te slaan in je `My Trinkets`-bibliotheek.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
-Het startproject heeft al code voor je geschreven om in je `p5` -bibliotheek te importeren, je gaat deze bibliotheek gebruiken om je boogschietspel te bouwen.
-
-[[[p5-processing-library]]]
+### Edit the sky
 
 --- task ---
 
-De functie `fill()` stelt de opvulkleur van vormen in. Het startproject bevat al enkele RGB-kleuren die je hiervoor kunt gebruiken.
+The starter project has some code already written for you.
 
-Zoek je `draw()` functie om de lucht te tekenen, je doet dit door ingesprongen code toe te voegen om de `fill()` kleur in te stellen op `lucht`:
+Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 18
-line_highlights: 25
----
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
-def draw():     
-#Dingen die je in elk frame moet doen     
-lucht = color(92, 204, 206) #Rood = 92, Groen = 204, Blauw = 206     
-gras = color(149, 212, 122)     
-hout = color(145, 96, 51)     
-buitenste = color(0, 120, 180)
-
-  fill(lucht)
-
---- /code ---
+**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
 --- /task ---
 
-De `size()` functie in `setup()` stelt de schermgrootte in op 400 pixels bij 400 pixels.
-
-[[[p5-coordinates]]]
-
 --- task ---
 
-Teken na je `fill()`-code een `rect()` voor de lucht met coördinaten linksboven (`0`,`0`), een breedte van `400` die overeenkomt met de breedte van het scherm en een hoogte van `250`.
+The sky has been drawn with a black border (stroke).
 
-![Een blauwe rechthoek met een coördinatenraster die de positie van de luchtrechthoek toont, beginnend in de bovenhoek, boven een grijze rechthoek.](images/sky_coords.png)
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 25
-line_highlights: 26
+language: python filename: main.py — setup() line_numbers: true line_number_start: 11
+line_highlights: 15
 ---
-
-  fill(lucht) rect(0, 0, 400, 250) #Start x, start y, breedte, hoogte
+def setup():
+# Setup your game here
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -72,70 +56,42 @@ line_highlights: 26
 
 --- task ---
 
-**Test:** Voer je code uit om de lucht te zien die je hebt getekend. Onthoud dat met de `p5` bibliotheek, de `run()` functie de `setup()` functie eenmaal aanroept, daarna de `draw()` functie herhaaldelijk.
-
-![Een blauwe rechthoek met een zwarte rand eromheen, daarboven een grijze rechthoek.](images/sky_stroke.png){:width="300px"}
-
-Hé wat raar: er staat een zwarte lijn om je lucht! Dit komt omdat, wanneer het programma start, het automatisch een zwarte rand plaatst — een zogenaamde **stroke** — rond alles wat het tekent.
+**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
 
 --- /task ---
 
+### Draw the grass
+
 --- task ---
 
-Schakel de lijn uit door `no_stroke()` toe te voegen voordat je de lucht begint te tekenen.
+**Add** code to draw a green rectangle at the bottom of the screen.
+
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 25
+language: python filename: main.py — draw() line_numbers: true line_number_start: 17
+line_highlights: 27, 28
 ---
+def draw():
+# Things to do in every frame
+  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  buitenste = color(0, 120, 180)
-
-  no_stroke()   
-fill(lucht)   
-rect(0, 0, 400, 250) #x, y, breedte, hoogte
+  fill(sky)     
+rect(0, 0, 400, 250)     
+fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
 
 --- /code ---
 
---- /task ---
-
---- task ---
-
-**Test:** Voer je project opnieuw uit om te controleren of de lijn is verdwenen.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-`fill()` verandert de vulkleur voor alle getekende vormen totdat `fill()` opnieuw wordt aangeroepen met een nieuwe kleur.
+**Test:** 🔄 Run your project again to view the finished background.
 
-Verander de `fill()` kleur in `gras` en voeg nog eens `rect(x, y, breedte, hoogte)`toe.
-
-Deze rechthoek moet op coördinaten (0, 250) onder de lucht worden geplaatst, zodat deze in het onderste deel van het scherm begint.
-
---- code ---
----
-language: python filename: main.py — draw() line_numbers: true line_number_start: 23
-line_highlights: 28-29
----
-
-  buitenste = color(0, 120, 180)
-
-  no_stroke()     
-fill(lucht)     
-rect(0, 0, 400, 250) #x, y, breedte, hoogte    
-fill(gras)    
-rect(0, 250, 400, 150)
-
---- /code ---
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
---- task ---
-
-**Test:** Voer je project opnieuw uit om de voltooide achtergrond te bekijken.
-
---- /task ---
-
---- save ---
