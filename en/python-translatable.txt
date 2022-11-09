@@ -22,6 +22,8 @@ You hit the outer circle, 50 points!
 
 You hit the inner circle, 200 points!
 
+You hit the middle, 500 points!
+
 You hit the bullseye, 500 points!
 
 You missed! No points!
