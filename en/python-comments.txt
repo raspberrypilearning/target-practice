@@ -83,3 +83,5 @@ Store a random number between 100 and 300
 Get the hit colour
 
 Draw a small circle at random coordinates
+
+width and height of screen
