@@ -1,18 +1,17 @@
 
 --- question ---
 ---
-legend: तीन में से दूसरा प्रश्न
+legend: Question 2 of 3
 ---
 
-अपने प्रोजेक्ट में, आपने `if`, `elif`, और `else` शर्तों का उपयोग किया है ताकि यह पता लगाया जा सके कि तीर किस रंग में उतरा।
+In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
 
-जब यह कोड चलाया जाता है, तो आउटपुट क्षेत्र में क्या प्रिंट किया जाएगा?
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
 language: python
 ---
-
 speed = 6
 
 if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
@@ -21,11 +20,11 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
 --- choices ---
 
-- (x) `बहुत तेज़`
+- (x) `Very fast`
 
   --- feedback ---
 
-  यह सही है! **speed** वेरिएबल को `6` का मान सौंपा गया है, जो `speed == 6` स्थिति को **True** बनाता है और `बहुत तेज` प्रिंट करता है।
+  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
 
   --- /feedback ---
 
@@ -33,15 +32,15 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  बिल्कुल नहीं, **speed** वेरिएबल को असाइन किए गए मान को देखें।
+  Not quite, look at the value assigned to the **speed** variable.
 
   --- /feedback ---
 
-- () कुछ भी नहीं छपा
+- ( ) Nothing gets printed
 
   --- feedback ---
 
-  नहीं, दूसरे कथन के साथ, हमेशा कुछ ऐसा होगा जो सच हो। इसलिए, एक आउटपुट प्रिंट किया जाएगा।
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
