@@ -6,7 +6,23 @@ Start x, start y, breedte, hoogte
 
 x, y, breedte, hoogte
 
-Stel de vulkleur van de standaard in op bruin
+Set the stand fill colour to wood
+
+Set the arrow to fill colour to wood
+
+Set the stand fill colour to grass
+
+Set the circle fill colour to outer
+
+Set the circle fill colour to inner
+
+Set the circle fill colour to middle
+
+x, y, width of the circle
+
+Inner circle - x, y, width of the circle
+
+Middle circle - x, y, width of the circle
 
 Buitenste cirkel. 200, 200 is het midden van het scherm
 
@@ -61,3 +77,11 @@ Omzetten
 Toetsenbord
 
 Bewaar dit om je code uit te voeren
+
+Store a random number between 100 and 300
+
+Get the hit colour
+
+Draw a small circle at random coordinates
+
+width and height of screen
