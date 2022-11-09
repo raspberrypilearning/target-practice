@@ -15,10 +15,10 @@
 
 Θα μπορούσες να:
 
-+ Προσθέσεις έναν `τέταρτο` και `πέμπτο` κύκλο, με νέα χρώματα, που δίνουν διαφορετικούς πόντους με βάση τη θέση τους
-+ Τοποθετήσεις emoji στα μηνύματα που εμφανίζονται ([εδώ είναι μια λίστα με emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} από την οποία μπορείς να αντιγράψεις)
-+ Κάνεις το παιχνίδι ευκολότερο ή δυσκολότερο αλλάζοντας την τιμή `frame_rate(2)`
-+ Χρησιμοποιήσεις το `input()` για να ρωτήσεις τον χρήστη σε ποιο επίπεδο δυσκολίας θέλει να παίξει
++ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
++ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
++ Make the game easier or harder by changing the `frame_rate(2)` value 💨
++ Use `input()` to ask the user which difficulty level they want to play at 🗣️
 
 --- /task ---
 
@@ -33,4 +33,3 @@ title: Ολοκληρωμένο έργο
 
 --- /collapse ---
 
---- save ---
