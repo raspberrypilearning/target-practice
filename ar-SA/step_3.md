@@ -1,7 +1,8 @@
 ## ارسم هدفك
+
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-حامل الهدف هو شكل المثلث الهدف مكون من دوائر ملونة - الدوائر الأصغر تساوي نقاطًا أكثر من الدوائر الأكبر. 
+Your game needs a target to shoot arrows at.
 </div>
 <div>
 
@@ -11,83 +12,59 @@
 </div>
 </div>
 
-يتم رسم الأشكال بالترتيب الذي تعمل به أسطر التعليمات البرمجية. يقع الحامل الخشبي المثلث جزئيًا خلف الدوائر المستهدفة لذا يجب رسمه أولاً.
-
-تخيل قص كل الأشكال من الورق. اعتمادًا على كيفية ترتيب وتداخل تلك الورقة، قد تبدو النتيجة النهائية مختلفة تمامًا.
-
-### ارسم الحامل
+### Draw a triangular stand
 
 --- task ---
 
-عندما تستدعي دالة `()triangle` ، تحتاج إلى توفير ثلاث مجموعات من الإحداثيات ، `x1, y1, x2, y2, x3, y3` تمثل كل منها موضع إحدى زوايا المثلث.
+Set the fill colour to `wood` (brown).
 
---- collapse ---
----
-title: إحداثيات مثلث
----
+Draw a triangle using the x and y coordinates for each of the corners.
 
-  فيما يلي ثلاثة أمثلة على المثلثات، لكل منها مجموعات مختلفة من الإحداثيات. انظر إلى موضع الشبكة لكل منها لترى كيف تضع إحداثيات `×` و `y` زوايا المثلثين:
-  + المثلث الأخضر: triangle(50, 50, 150, 50, 180, 100)
-  + المثلث الأزرق: triangle(210, 280, 300, 350, 380, 100)
-  + المثلث البني: triangle(50, 150, 200, 250, 180, 350)
-
-  ![منطقة المخرجات مع ثلاثة مثلثات.](images/triangles-coords.png)
-
---- /collapse ---
-
-ارسم `() triangle` للحامل ذي الزوايا عند (150، 350) ،(200، 150) ،(250 ،350).
-
-![مثلث بني على العشب وضد السماء مع تحديد نقاط الإحداثيات.](images/stand_coords.png)
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 28
-line_highlights: 31-32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 27
+line_highlights: 29, 30
 ---
-
   fill(grass)   
-rect(0, 250, 400, 150) #x, y, width, height
-
-  fill(wood) # اضبط لون تعبئة الحامل على البني     
+rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
 triangle(150, 350, 200, 150, 250, 350)
-
 
 --- /code ---
 
-**نصيحة:** لقد أضفنا تعليقات إلى الكود الخاص بنا ، مثل `# اضبط لون تعبئة الحامل على البني`، لنخبرك بما يفعله. لا تحتاج إلى إضافة هذه التعليقات إلى التعليمات البرمجية الخاصة بك ، ولكنها يمكن أن تكون مفيدة لتذكيرك بما تفعله سطور التعليمات البرمجية.
-
 --- /task ---
 
 --- task ---
 
-**اختبار:** قم بتشغيل التعليمات برمجية الخاص بك لمعرفة الحامل لهدفك.
+**Test:** 🔄 Run your code to see the stand for your target:
 
-![مثلث بني على العشب وقبالة السماء.](images/target-stand.png)
+![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### ارسم الهدف
+### Draw the target circles
 
 --- task ---
 
-سيكون الجزء الأكبر من الهدف عبارة عن دائرة **circle** مصنوعة باستخدام دالة `ellipse()`. القطع الناقص هو شكل ذو جانب واحد وبدون زوايا. يمكن سحقها ، مثل شكل بيضاوي ، أو دائري تمامًا ، مثل الدائرة.
+The largest part of the target is a blue **circle**.
 
-يحتاج القطع الناقص إلى إحداثيات `×` و `y` وعرض وارتفاع. إحداثيات `x` و `y` للقطع الناقص هي موضع المركز.
+Set the fill colour to `outer` (blue).
 
-ستغطي الدائرة الزرقاء المثلث البني حيث يتداخلان ، لأن الدائرة تم رسمها لاحقًا.
+Draw a circle with x and y coordinates for its centre and a width.
 
-**نصيحة:** لعمل دائرة ، يجب أن يكون **العرض** و **ارتفاع** هو نفسه.
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 33-34
+language: python filename: main.py - draw() line_numbers: true line_number_start: 29
+line_highlights: 31, 32
 ---
 
   fill(wood)   
 triangle(150, 350, 200, 150, 250, 350)   
-fill(outer)    
-ellipse(200, 200, 170, 170) #الدائرة الخارجية. 200، 200 هو منتصف الشاشة
+fill(outer) # Set the circle fill colour to outer    
+circle(200, 200, 170) # x, y, width of the circle
 
 --- /code ---
 
@@ -95,78 +72,82 @@ ellipse(200, 200, 170, 170) #الدائرة الخارجية. 200، 200 هو م�
 
 --- task ---
 
-**اختبار:** قم بتشغيل التعليمات البرمجية الخاص بك لرؤية أول دائرة زرقاء كبيرة.
+**Test:** Run your code to see the first large blue circle.
 
-![مثلث بني ودائرة زرقاء على العشب وقبالة السماء.](images/blue-circle.png)
+The blue circle was drawn after the stand so it is in front:
+
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-قم بإنشاء متغيرين جديدين لتخزين الألوان `inner` و `bullseye` للدوائر المتبقية.
+👀 Find your colour variables in the `draw` function.
 
-قم بتعيين الألوان للمتغيرات `inner` و `bullseye` باستخدام `color()`.
+Create two variables called `inner` and `middle` to store colours for the other circles.
 
-تتوقع الدالة `color()` ثلاثة أرقام: رقم واحد للأحمر والأخضر والأزرق.
+The `color` function expects three numbers: one each for red, green, and blue.
 
-استخدمنا الأرقام التي تعطي ألوانًا تقليدية لهدف الرماية ، ولكن يمكنك استخدام الألوان التي تريدها طالما أنها مختلفة عن بعضها البعض.
+--- code ---
+---
+language: python filename: main.py - draw() line_numbers: true line_number_start: 17
+line_highlights: 24, 25
+---
+def draw():   
+# Things to do in every frame global wood sky = color(92, 204, 206)   
+grass = color(149, 212, 122)   
+wood = color(145, 96, 51)   
+outer = color(0, 120, 180) # Blue    
+inner = color(210, 60, 60) # Red    
+middle = color(220, 200, 0) # Yellow
+
+--- /code ---
+
+--- /task ---
+
+The target is made of different-sized circles with the same centre coordinates (200, 200).
+
+--- task ---
+
+**Add** coloured circles for the inner and middle parts of the target.
+
+--- code ---
+---
+language: python filename: main.py - draw() line_numbers: true line_number_start: 31
+line_highlights: 35, 36, 37, 38
+---
+  fill(wood)    
+triangle(150, 350, 200, 150, 250, 350)  
+fill(outer)   
+circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
+circle(200, 200, 110) # Inner circle - x, y, width of the circle  
+fill(middle) # Set the circle fill colour to middle      
+circle(200, 200, 30) # Middle circle - x, y, width of the circle
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** 🔄 Run your project to see the target with three coloured circles.
+
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+
+**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
+
+--- /task ---
+
+--- task ---
+
+**Choose:** 💭 Change any of the colours.
 
 [[[generic-theory-simple-colours]]]
 
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 24-25
----
+![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
-def draw():   
-# أشياء يجب القيام بها في كل إطار
-
-  sky = color(92, 204, 206)   
-grass = color(149, 212, 122)   
-wood = color(145, 96, 51)   
-outer = color(0, 120, 180) #ازرق    
-inner = color(210, 60, 60) # احمر     
-bullseye = color(220, 200, 0) #اصفر
-
---- /code ---
 
 --- /task ---
 
---- task ---
 
-الهدف مكون من دوائر مختلفة الحجم بنفس إحداثيات المركز (200 ، 200) - منتصف الشاشة.
-
-أضف دائرتين إضافيتين لتمثل الدائرة الداخلية والمركز. قم بتغيير `fill()` قبل رسم كل دائرة.
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 33
-line_highlights: 37-40
----
-
-  fill(wood)    
-triangle(150, 350, 200, 150, 250, 350) #حامل الهدف    
-fill(outer)   
-ellipse(200, 200, 170, 170) #الدائرة الخارجية   
-fill(inner)   
-ellipse(200, 200, 110, 110) #الدائرة الداخلية    
-fill(bullseye)   
-ellipse(200, 200, 30, 30) #مركز الهدف
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**اختبار:** قم بتشغيل مشروعك مرة أخرى لرؤية الهدف بثلاث دوائر ملونة. قم بتغيير الألوان حتى تكون سعيدًا بها.
-
-![مثلث بني به ثلاث دوائر ملونة على العشب ومقابل السماء.](images/three-circles.png)
-
-**تتبع الخطأ:** تستخدم Python التهجئة الأمريكية لـ "color" (بدون "u") لذا تأكد من فعل الشيء نفسه.
-
---- /task ---
-
---- save ---
 
