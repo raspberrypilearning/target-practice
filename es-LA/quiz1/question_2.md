@@ -6,7 +6,7 @@ legend: Pregunta 2 de 3
 
 En su proyecto, usaste condiciones `if`, `elif` y `else` para verificar en qué color aterrizó la flecha.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+En el siguiente ejemplo, una variable llamada `velocidad` `6` almacena el número 6. Cuando se ejecuta esta instrucción `if`, ¿qué se imprimirá en el área de salida?
 
 --- code ---
 ---
@@ -40,7 +40,7 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
+  Inténtalo de nuevo, `else` se usa como una opción final para cuando todas las condiciones anteriores son falsas. Mira nuevamente las condiciones, ¿alguna de las condiciones es verdadera?
 
   --- /feedback ---
 
