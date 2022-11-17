@@ -48,7 +48,7 @@ Actualizar a coordenadas aleatorias
 
 Guardar el color antes de dibujar la flecha
 
-La función mouse_presionado va aquí
+La función mouse_pressed va aquí
 
 Se puede utilizar en otras funciones
 
