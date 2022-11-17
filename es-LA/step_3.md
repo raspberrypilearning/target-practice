@@ -108,7 +108,7 @@ El blanco está formado por círculos de diferentes tamaños con las mismas coor
 
 --- task ---
 
-**Add** círculos de colores para las partes interior y media del objetivo.
+**Agregue** círculos de colores para las partes interior y media del objetivo.
 
 --- code ---
 ---
