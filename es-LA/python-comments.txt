@@ -1,0 +1,87 @@
+Cosas que hacer en cada cuadro
+
+Rojo = 92, Verde = 204, Azul = 206
+
+x inicial, y inicial, ancho, alto
+
+x, y, ancho, alto
+
+Establece el color de relleno del soporte en madera
+
+Establece el color de relleno de la flecha en madera
+
+Establece el color de relleno del soporte en césped
+
+Establece el color de relleno del círculo en exterior
+
+Establece el color de relleno del círculo en interior
+
+Establece el color de relleno del círculo en medio
+
+x, y, ancho del círculo
+
+Círculo interior - x, y, ancho del círculo
+
+Círculo medio - x, y, ancho del círculo
+
+Círculo exterior. 200, 200 es el centro de la pantalla
+
+Azul
+
+Rojo
+
+Amarillo
+
+Base
+
+Círculo exterior
+
+Círculo interior
+
+Diana
+
+La función disparar_flecha va aquí
+
+Importa la biblioteca de código
+
+Actualizar a coordenadas aleatorias
+
+Guardar el color antes de dibujar la flecha
+
+La función mouse_presionado va aquí
+
+Se puede utilizar en otras funciones
+
+Al igual que las funciones, las declaraciones 'if' están indentandas
+
+Configura tu juego aquí
+
+ancho y alto
+
+Definiciones de compatibilidad con la biblioteca de procesamiento p5py
+
+Forma
+
+Tipos de letra
+
+Texto
+
+Color
+
+Imágenes
+
+Entorno informático
+
+Transformar
+
+Teclado
+
+Mantén esto para ejecutar tu código
+
+Almacena un número aleatorio entre 100 y 300
+
+Consigue el color en que cayó la flecha
+
+Dibuja un pequeño círculo en coordenadas aleatorias
+
+ancho y alto de la pantalla
