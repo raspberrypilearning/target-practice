@@ -15,7 +15,7 @@ Tu juego necesita un fondo colorido.
 
 --- task ---
 
-Abre el proyecto [Target Practice starter](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Abre el [proyecto inicial de Tiro al blanco](https://trinket.io/python/9973649e5c){:target="_blank"}.
 
 Si tienes una cuenta en Trinket, puedes hacer clic en el botón **Remix** para guardar una copia en tu biblioteca **My Trinkets**.
 
@@ -56,7 +56,7 @@ def setup():
 
 --- task ---
 
-**Run** tu código nuevamente y observa 👀 que el borde (stroke) ha desaparecido.
+**Ejecute** (run) tu código nuevamente y observa 👀 que el borde (stroke) ha desaparecido.
 
 --- /task ---
 
@@ -64,7 +64,7 @@ def setup():
 
 --- task ---
 
-**Add** código para dibujar un rectángulo verde en la parte inferior de la pantalla.
+**Agregue** código para dibujar un rectángulo verde en la parte inferior de la pantalla.
 
 ![El área de salida con un rectángulo color cielo sobre un rectángulo color hierba para crear el fondo. La esquina superior izquierda del rectángulo está marcada como x=0, y=250, este es el origen del rectángulo. El ancho de 400 y la altura de 150 están resaltados. Se muestra el código rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
 
