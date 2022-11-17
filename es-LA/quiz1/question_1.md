@@ -1,36 +1,36 @@
-## Quick quiz
+## Test rápido
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Contesta las tres preguntas. Hay sugerencias que te guían hacia la respuesta correcta.
 
-When you have answered each question, click on **Check my answer**.
+Cuando hayas respondido a cada pregunta, haz clic en **Revisar mi respuesta**.
 
-Have fun!
+¡Qué te diviertas!
 
---- question ---
+--- pregunta ---
 ---
 legend: Pregunta 1 de 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Aquí hay un cuadrado azul, ¿cuáles son los valores RGB que lo crearán?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Un solo bloque de color azul.](images/quiz-colour.png)
 
---- choices ---
+--- opciones ---
 
 - ( ) (0, 0, 0)
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+No exactamente, cuando todos los valores de color se establecen en `0`, el color es **negro**.
 
-  --- /feedback ---
+  --- /retroalimentación ---
 
 - ( ) (255, 0, 0)
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+No exactamente, los colores siguen el modelo RGB. Este color tiene un valor R máximo y no tiene G ni B, por lo que será **rojo**.
 
-  --- /feedback ---
+  --- /retroalimentación ---
 
 - (x) (0, 0, 255)
 
@@ -48,6 +48,6 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- /feedback ---
 
---- /choices ---
+--- /opciones ---
 
---- /question ---
+--- /pregunta ---
