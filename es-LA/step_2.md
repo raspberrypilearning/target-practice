@@ -6,7 +6,7 @@ Tu juego necesita un fondo colorido.
 </div>
 <div>
 
-![El área de resultados con un rectángulo de color cielo sobre otro rectángulo de color césped para crear un fondo.](imagenes/fondo.png){ancho="300px"}
+![El área de resultados con un rectángulo de color cielo sobre otro rectángulo de color césped para crear un fondo.](imagenes/background.png){:width="300px"}
 
 </div>
 </div>

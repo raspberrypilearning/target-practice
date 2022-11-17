@@ -89,7 +89,7 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Ejecuta tu proyecto. Intenta detener la flecha en el círculo exterior azul para ver su mensaje.
+**Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en el círculo exterior azul para ver su mensaje.
 
 **Consejo:** 💡 `frame_rate()`, en `setup`, controla qué tan rápido se dibuja tu juego. Si va demasiado rápido, configúralo en un número más bajo.
 
