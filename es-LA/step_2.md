@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a colourful background.
+Tu juego necesita un fondo colorido.
 </div>
 <div>
 
@@ -11,35 +11,35 @@ Your game needs a colourful background.
 </div>
 </div>
 
-### Open the starter project
+### Abre el proyecto inicial
 
 --- task ---
 
-Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+Abre el proyecto [Target Practice starter](https://trinket.io/python/9973649e5c){:target="_blank"}.
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
+Si tienes una cuenta en Trinket, puedes hacer clic en el botón **Remix** para guardar una copia en tu biblioteca **My Trinkets**.
 
 --- /task ---
 
-### Edit the sky
+### Edita el cielo
 
 --- task ---
 
-The starter project has some code already written for you.
+El proyecto de inicio ya tiene código pre escrito para ti.
 
-Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
+Haz clic en **'Run'** para ver un rectángulo relleno de azul dibujado de x=`0`, y=`0` (la parte superior de la pantalla). Este rectángulo de `400` x `250` píxeles es el cielo.
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
+![Un rectángulo azul con un borde negro alrededor, encima de un rectángulo gris. La esquina superior izquierda del lienzo está marcada como x=0, y=0, este es el origen del rectángulo. El ancho se resalta como 400 y la altura como 250. Se muestra el código rect(0, 0, 400, 250).](images/sky_stroke.png){:width="400px"}
 
-**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
+**Consejo:** 💡 Las coordenadas comienzan desde (x=0, y=0) en la esquina superior izquierda. Esto puede ser diferente a otros sistemas de coordenadas que hayas utilizado.
 
 --- /task ---
 
 --- task ---
 
-The sky has been drawn with a black border (stroke).
+El cielo se ha dibujado con un borde negro (stroke).
 
-To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
+Para desactivar el trazo para todas las formas, agrega `no_stroke()` a la función `setup`:
 
 --- code ---
 ---
@@ -47,7 +47,7 @@ language: python filename: main.py — setup() line_numbers: true line_number_st
 line_highlights: 15
 ---
 def setup():
-# Setup your game here
+# Configura aquí tu juego
   size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
@@ -56,17 +56,17 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+**Run** tu código nuevamente y observa 👀 que el borde (stroke) ha desaparecido.
 
 --- /task ---
 
-### Draw the grass
+### Dibuja el césped
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen.
+**Add** código para dibujar un rectángulo verde en la parte inferior de la pantalla.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![El área de salida con un rectángulo color cielo sobre un rectángulo color hierba para crear el fondo. La esquina superior izquierda del rectángulo está marcada como x=0, y=250, este es el origen del rectángulo. El ancho de 400 y la altura de 150 están resaltados. Se muestra el código rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -74,7 +74,7 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 27, 28
 ---
 def draw():
-# Things to do in every frame
+# Cosas que hacer en cada cuadro
   global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
   fill(sky)     
@@ -83,15 +83,15 @@ fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, 
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Consejo:** 💡 Hemos agregado comentarios a nuestro código, como `# Establecer el color de relleno en hierba`, para decir lo que hace. No necesits agregar estos comentarios a tu código, pero pueden ser útiles para recordarte qué hacen.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+**Prueba:** Ejecuta tu proyecto de nuevo para ver el fondo terminado.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![El área de salida con un rectángulo color cielo sobre un rectángulo color hierba para crear el fondo.](images/background.png){:width="400px"}
 
 --- /task ---
 
