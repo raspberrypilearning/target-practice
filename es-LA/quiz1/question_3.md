@@ -4,7 +4,7 @@
 legend: Pregunta 3 de 3
 ---
 
-A circle is drawn using the following code:
+Un círculo se dibuja usando el siguiente código:
 
 --- code ---
 ---
@@ -23,7 +23,7 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+¿Cuál de las siguientes imágenes muestra la posición correcta de este círculo en el área de salida?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  No del todo, para centrar el círculo en la esquina inferior derecha, las coordenadas deberían ser las mismas que el tamaño de la pantalla. In this example, the ellipse would be `circle(400, 400, 300)`.
+  No del todo, para centrar el círculo en la esquina inferior derecha, las coordenadas deberían ser las mismas que el tamaño de la pantalla. En este ejemplo, la elipse sería `circle(400, 400, 300)`.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  No del todo, para centrar el círculo en el medio, las coordenadas tendrían que ser la mitad del tamaño de la pantalla. In this example, `circle(200, 200, 300)`.
+  No del todo, para centrar el círculo en el medio, las coordenadas tendrían que ser la mitad del tamaño de la pantalla. En este ejemplo, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. La coordenada `x` es qué tan lejos está la elipse a través de la pantalla, y la coordenada `y` es qué tan lejos está hacia abajo de la pantalla.
+  No, el código de este círculo sería `circle(350, 150, 300)` para centrarlo hacia la parte superior derecha de la pantalla. La coordenada `x` es qué tan lejos está la elipse a través de la pantalla, y la coordenada `y` es qué tan lejos está hacia abajo de la pantalla.
 
   --- /feedback ---
 
