@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game will add scores based on where the arrow hits.
+Tu juego agregará puntajes según el lugar donde golpea la flecha.
 </div>
 <div>
 
@@ -13,7 +13,7 @@ Your game will add scores based on where the arrow hits.
 
 --- task ---
 
-Go to the `draw()` function and add `, outer, inner, middle` to the list of global variables.
+Ve a la función `draw()` y agrega `, outer, inner, middle` a la lista de variables globales.
 
 --- code ---
 ---
@@ -36,14 +36,14 @@ middle = color(220, 200, 0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Usamos <span style="color: #0faeb0; font-weight: bold;">condiciones</span> todo el tiempo para tomar decisiones. Podríamos decir 'si el lápiz está desafilado, entonces afilalo'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+Usamos <span style="color: #0faeb0; font-weight: bold;">condiciones</span> todo el tiempo para tomar decisiones. Podríamos decir 'si el lápiz está desafilado, entonces afilalo'. De manera similar, las condiciones `if` nos permiten escribir código que hace algo diferente dependiendo de si una condición es verdadera o falsa.
 </p>
 
-### Display the scores
+### Mostrar el puntaje
 
 --- task ---
 
-Delete ❌ the `print( red(hit_color), green(hit_color), blue(hit_color) )` line of code.
+Borra❌ la línea de código `print( red(hit_color), green(hit_color), blue(hit_color) )`.
 
 --- code ---
 ---
@@ -62,7 +62,7 @@ def mouse_pressed():
 
 `print` a message `if` the `hit_color` is equal to `outer` 🎯.
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
+Nota 👀 que el código usa dos signos de igual `==` para significar **igual a**.
 
 --- code ---
 ---
@@ -70,10 +70,10 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 9, 10
 ---
 
-# The mouse_pressed function goes here
+# La función mouse_pressed va aquí
 def mouse_pressed():     
 if hit_color == outer:      
-print('You hit the outer circle, 50 points!') # Like functions, 'if' statements are indented
+print('You hit the outer circle, 50 points!') # Al igual que las funciones, las declaraciones 'if' están indentandas
 
 --- /code ---
 
@@ -81,21 +81,21 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to stop the arrow on the blue outer circle to see your message.
+**Test:** Ejecuta tu proyecto. Intenta detener la flecha en el círculo exterior azul para ver su mensaje.
 
-**Tip:** 💡 `frame_rate()`, in `setup`, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**Consejo:** 💡 `frame_rate()`, en `setup`, controla qué tan rápido se dibuja tu juego. Si va demasiado rápido, configúralo en un número más bajo.
 
-![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
+![El área de salida con la flecha tocando el círculo exterior. La declaración de impresión de puntos aparece en el área de salida.](images/blue-points.png)
 
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+**Depurar:** Asegúrate de que tu código coincida exactamente y de que hayas indentado el código dentro de tu declaración `if`.
 
 --- /task ---
 
-`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. The remaining conditions will be ignored.
+`elif` (else - if) se puede usar para agregar más condiciones a tu declaración `if`. Estos se leerán de arriba a abajo. Tan pronto como se encuentre una condición **Verdadera**, se actuará. Las condiciones restantes serán ignoradas.
 
 --- task ---
 
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
+Gana puntos si la flecha cae en los círculos `interior` o `medio` 🎯:
 
 --- code ---
 ---
@@ -117,25 +117,25 @@ print('You hit the middle, 500 points!')
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to stop the arrow on the inner and middle circles to see their messages.
+**Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en los círculos interior y medio para ver sus mensajes.
 
-![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
+![El área de salida con la flecha tocando el círculo interior. La declaración de impresión de puntos aparece en el área de salida.](images/yellow-points.png)
 
-**Debug:** 🐞 Check your indentation matches the example.
+**Depuración:** 🐞 Comprueba que tu sangría coincida con el ejemplo.
 
-**Debug:** 🐞 If you see a message about `inner` or `middle` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+**Depuración:** 🐞 Si ve un mensaje sobre `inner` o `middle` que están 'not defined', vuelve a `draw()` y verifica que estén en la línea que declara variables globales.
 
 --- /task ---
 
-### Missing the target
+### Fallar el blanco
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
+Hay una decisión más que debes tomar: ¿qué sucede si la flecha no aterriza en ninguno de los círculos del blanco? ❌
 
-To do this last check, you use `else`.
+Para hacer esta última verificación, usa `else`.
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Agrega código a `print` para mostrar un mensaje `else` ya que ninguna de las condiciones `if` y `elif` se han cumplido.
 
 --- code ---
 ---
@@ -151,7 +151,7 @@ print('You hit the inner circle, 200 points!')
 elif hit_color == middle:    
 print('You hit the middle, 500 points!')   
 else:   
-print('You missed! No points!')
+print('You missed! ¡Sin puntos!')
 
 --- /code ---
 
@@ -159,11 +159,11 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to stop the arrow in the grass or sky to see the miss message.
+**Prueba:** 🔄 Ejecuta tu proyecto. Intenta detener la flecha en el pasto o el cielo para ver el mensaje de error.
 
-**Choose:** 💭 Change the number of points scored for the different colours if you like.
+**Elije:** 💭 Cambia la cantidad de puntos que ganas para los diferentes colores si así lo deseas.
 
-![The output area with an arrow missing the target. The points print statement appears in the output area.](images/missed-points.png)
+![El área de salida con una flecha que no da en el blanco. La declaración de impresión de puntos aparece en el área de salida.](images/missed-points.png)
 
 --- /task ---
 
