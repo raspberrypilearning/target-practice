@@ -1,0 +1,43 @@
+cielo
+
+pasto
+
+madera
+
+externo
+
+interno
+
+diana
+
+disparar_flecha
+
+flecha_x
+
+flecha_y
+
+color_de_impacto
+
+Le diste al círculo externo, ¡50 puntos!
+
+Le diste al círculo interno, ¡200 puntos!
+
+¡Le diste al centro, 500 puntos!
+
+¡Le diste a la diana, 500 puntos!
+
+¡Fallaste! ¡Sin puntos!
+
+¿Qué tan rápido quieres la flecha? lento, medio, rápido
+
+¡Llegaste a rojo, 200 puntos!
+
+velocidad
+
+Súper rápido
+
+Bastante rápido
+
+Muy rapido
+
+¡Velocidad no reconocida!
