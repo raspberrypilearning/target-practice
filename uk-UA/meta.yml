@@ -1,28 +1,28 @@
 ---
-title: Target practice
+title: Стрільба по мішені
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: Використовуй Python, щоб намалювати мішень та набирати бали, влучаючи в неї стрілами
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: Ти зробиш
   - 
-    title: Create a background
+    title: Створення фону
   - 
-    title: Draw your target
+    title: Малювання мішені
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Пусти стрілу
   - 
-    title: Score points
+    title: Набирай бали
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Швидкий тест
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Вдосконалення твого проєкту
   - 
-    title: What next?
+    title: Що далі?
