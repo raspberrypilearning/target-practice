@@ -4,7 +4,7 @@
 legend: Cwestiwn 3 o 3
 ---
 
-A circle is drawn using the following code:
+Mae elips yn cael ei lunio gan ddefnyddio'r cod canlynol:
 
 --- code ---
 ---
@@ -13,17 +13,17 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0, 255, 0)   
+fill(0,255,0)   
 no_stroke()
 
 def draw():   
-circle(0, 0, 300)
+ellipse(0,0,300,300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Pa un o'r lluniau isod sy'n dangos safle cywir yr elips yn yr ardal allbwn?
 
 --- choices ---
 
