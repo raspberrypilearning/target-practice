@@ -15,10 +15,10 @@ Personnalise et ajoute plus à ton projet. Peut-être pourrais-tu changer le niv
 
 Tu pourrais :
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
-+ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate(2)` value 💨
-+ Use `input()` to ask the user which difficulty level they want to play at 🗣️
++ Ajouter un `quatrième` et `cinquième` cercle, dans de nouvelles couleurs, qui marquent différents nombres de points en fonction de leur position 🟠🟣
++ Mettre des emoji dans tes messages imprimés ([voici une liste d'emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} que tu peux copier) 🎯
++ Rendre le jeu plus facile ou plus difficile en modifiant la valeur `frame_rate(2)` 💨
++ Utiliser `input()` pour demander à l'utilisateur à quel niveau de difficulté il veut jouer 🗣️
 
 --- /task ---
 
@@ -26,7 +26,7 @@ Tu pourrais :
 
 --- collapse ---
 ---
-title: Le projet achevé
+title: Le projet terminé
 ---
 
 Tu peux voir le [projet terminé ici](https://trinket.io/python/f686c82d8a){:target="_blank"}.
