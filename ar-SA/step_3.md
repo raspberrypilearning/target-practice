@@ -24,12 +24,11 @@ Draw a triangle using the x and y coordinates for each of the corners.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 27
-line_highlights: 29, 30
+language: python filename: main.py - draw() line_numbers: true line_number_start: 28
+line_highlights: 37-40
 ---
   fill(grass)   
-rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
-triangle(150, 350, 200, 150, 250, 350)
+rect(0, 250, 400, 150) #محور س, محور ص, العرض, الارتفاع
 
 --- /code ---
 
@@ -37,17 +36,17 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**اختبار:** قم بتشغيل التعليمات برمجية الخاص بك لمعرفة الحامل لهدفك.
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![مثلث بني على العشب وقبالة السماء.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### ارسم الهدف
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+حامل الهدف هو شكل المثلث الهدف مكون من دوائر ملونة - الدوائر الأصغر تساوي نقاطًا أكثر من الدوائر الأكبر.
 
 Set the fill colour to `outer` (blue).
 
@@ -57,14 +56,12 @@ Draw a circle with x and y coordinates for its centre and a width.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 29
-line_highlights: 31, 32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 31
+line_highlights: 31-32
 ---
 
-  fill(wood)   
-triangle(150, 350, 200, 150, 250, 350)   
-fill(outer) # Set the circle fill colour to outer    
-circle(200, 200, 170) # x, y, width of the circle
+  fill(wood) # اضبط لون تعبئة الحامل على البني     
+triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -72,57 +69,57 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**نصيحة:** لعمل دائرة ، يجب أن يكون **العرض** و **ارتفاع** هو نفسه.
 
 The blue circle was drawn after the stand so it is in front:
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![مثلث بني ودائرة زرقاء على العشب وقبالة السماء.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-👀 Find your colour variables in the `draw` function.
+قم بتعيين الألوان للمتغيرات `inner` و `bullseye` باستخدام `color()`.
 
-Create two variables called `inner` and `middle` to store colours for the other circles.
+قم بإنشاء متغيرين جديدين لتخزين الألوان `inner` و `bullseye` للدوائر المتبقية.
 
-The `color` function expects three numbers: one each for red, green, and blue.
+تتوقع الدالة `color()` ثلاثة أرقام: رقم واحد للأحمر والأخضر والأزرق.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 17
-line_highlights: 24, 25
+language: python filename: main.py - draw() line_numbers: true line_number_start: 33
+line_highlights: 33-34
 ---
-def draw():   
-# Things to do in every frame global wood sky = color(92, 204, 206)   
+sky = color(92, 204, 206)   
 grass = color(149, 212, 122)   
 wood = color(145, 96, 51)   
-outer = color(0, 120, 180) # Blue    
-inner = color(210, 60, 60) # Red    
-middle = color(220, 200, 0) # Yellow
+outer = color(0, 120, 180) #ازرق     
+inner = color(210, 60, 60) # احمر     
+bullseye = color(220, 200, 0) #أصفر
 
 --- /code ---
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+الهدف مكون من دوائر مختلفة الحجم بنفس إحداثيات المركز (200 ، 200) - منتصف الشاشة.
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**اختبار:** قم بتشغيل مشروعك مرة أخرى لرؤية الهدف بثلاث دوائر ملونة.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 35, 36, 37, 38
+language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+line_highlights: 24-25
 ---
   fill(wood)    
-triangle(150, 350, 200, 150, 250, 350)  
+triangle(150, 350, 200, 150, 250, 350) #حامل الهدف    
 fill(outer)   
-circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
-circle(200, 200, 110) # Inner circle - x, y, width of the circle  
-fill(middle) # Set the circle fill colour to middle      
-circle(200, 200, 30) # Middle circle - x, y, width of the circle
+ellipse(200, 200, 170, 170) #الدائرة الخارجية   
+fill(inner)   
+ellipse(200, 200, 110, 110) #الدائرة الداخلية    
+fill(bullseye)   
+ellipse(200, 200, 30, 30) #مركز الهدف
 
 --- /code ---
 
@@ -130,21 +127,21 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+**اختبار:** قم بتشغيل التعليمات البرمجية الخاص بك لرؤية أول دائرة زرقاء كبيرة.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![مثلث بني به ثلاث دوائر ملونة على العشب ومقابل السماء.](images/three-circles.png){:width="400px"}
 
-**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
+**تتبع الخطأ:** تستخدم Python التهجئة الأمريكية لـ "color" (بدون "u") لذا تأكد من فعل الشيء نفسه.
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours.
+استخدمنا الأرقام التي تعطي ألوانًا تقليدية لهدف الرماية ، ولكن يمكنك استخدام الألوان التي تريدها طالما أنها مختلفة عن بعضها البعض.
 
 [[[generic-theory-simple-colours]]]
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![مثلث بني على العشب وضد السماء مع تحديد نقاط الإحداثيات. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
 
 --- /task ---
