@@ -1,25 +1,25 @@
-## Draw your target
+## Малювання мішені
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+У твоїй грі потрібно намалювати мішень, в яку можна випускати стріли.
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![Зона виводу з мішенню та стендом.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-### Draw a triangular stand
+### Намалюй підставку у вигляді трикутника
 
 --- task ---
 
-Set the fill colour to `wood` (brown).
+Встановлення кольору заливки на `wood` (коричневий).
 
-Draw a triangle using the x and y coordinates for each of the corners.
+Намалюй трикутник, використовуючи координати x та y для кожного з кутів.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
+![Коричневий трикутник, який розташований на траві, на фоні неба з координатами 150, 350 та 200, 150 та 250, 350). Кути фона також позначені як x=0, y=0 у верхньому лівому куті та x=400, y=400 у нижньому правому куті.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -27,7 +27,7 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 29, 30
 ---
   fill(grass)   
-rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
+rect(0, 250, 400, 150) fill(wood) # Встановлення кольору заливки підставки на wood     
 triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
@@ -36,23 +36,23 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Тест:** 🔄 Запусти свій код, щоб побачити підставку для твоєї мішені:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Коричневий трикутник на траві та на фоні неба.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### Намалюй коло для мішені
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+Найбільша частина мішені - це синє **коло**.
 
-Set the fill colour to `outer` (blue).
+Встановлення кольору заливки на `outer` (синій).
 
-Draw a circle with x and y coordinates for its centre and a width.
+Намалюй коло з координатами x та y для визначення його центру та ширини.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Коричневий трикутник та синє коло на траві, на фоні неба. Коло позначено координатами x=200, y=200 як центр і шириною кола 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -62,8 +62,8 @@ line_highlights: 31, 32
 
   fill(wood)   
 triangle(150, 350, 200, 150, 250, 350)   
-fill(outer) # Set the circle fill colour to outer    
-circle(200, 200, 170) # x, y, width of the circle
+fill(outer) # Встановлення кольору заливки кола на outer    
+circle(200, 200, 170) # x, y, ширина кола
 
 --- /code ---
 
@@ -71,21 +71,21 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Тест:** Запусти свій код, щоб отримати перше велике синє коло.
 
-The blue circle was drawn after the stand so it is in front:
+Синє коло було намальоване після підставки, тому воно знаходиться спереду:
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Коричневий трикутник та синє коло на траві, на фоні неба.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-👀 Find your colour variables in the `draw` function.
+👀 Знайди свої змінні для кольорів у функції `draw`.
 
-Create two variables called `inner` and `middle` to store colours for the other circles.
+Створи дві змінні з назвою `inner` та `middle`, щоб зберігати кольори для наступних елементів.
 
-The `color` function expects three numbers: one each for red, green, and blue.
+У функції `color` передбачено три цифри: для червоного, зеленого та синього кольорів.
 
 --- code ---
 ---
@@ -93,22 +93,22 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 24, 25
 ---
 def draw():   
-# Things to do in every frame global wood sky = color(92, 204, 206)   
+# Що відбувається на кожному кадрі global wood sky = color(92, 204, 206)   
 grass = color(149, 212, 122)   
 wood = color(145, 96, 51)   
-outer = color(0, 120, 180) # Blue    
-inner = color(210, 60, 60) # Red    
-middle = color(220, 200, 0) # Yellow
+outer = color(0, 120, 180) # Синій     
+inner = color(210, 60, 60) # Червоний     
+middle = color(220, 200, 0) # Жовтий
 
 --- /code ---
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Мішень складається з кругів різного розміру з однаковими координатами центру (200, 200).
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**Додай** кольорові кружечки для позначення внутрішньої та середньої частин мішені.
 
 --- code ---
 ---
@@ -118,10 +118,10 @@ line_highlights: 35, 36, 37, 38
   fill(wood)    
 triangle(150, 350, 200, 150, 250, 350)  
 fill(outer)   
-circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
-circle(200, 200, 110) # Inner circle - x, y, width of the circle  
-fill(middle) # Set the circle fill colour to middle      
-circle(200, 200, 30) # Middle circle - x, y, width of the circle
+circle(200, 200, 170) fill(inner) # Встановлення кольору заливки кола на inner      
+circle(200, 200, 110) # Внутрішнє коло - x, y, ширина кола  
+fill(middle) # Встановлення кольору заливки кола на middle      
+circle(200, 200, 30) # Середнє коло - x, y, ширина кола
 
 --- /code ---
 
@@ -129,21 +129,21 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+**Тест:** 🔄 Запусти свій проєкт, щоб побачити мішень з трьома кольоровими колами.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![Коричневий трикутник з трьома кольоровими колами на траві та на фоні неба.](images/three-circles.png){:width="400px"}
 
-**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
+**Налагодження:** 🐞 Переконайся, що ти використовуєш американське написання слова 'color' (без літери 'u').
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours.
+**Обирай:** 💭 Змінюй будь-які кольори.
 
 [[[generic-theory-simple-colours]]]
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Коричневий трикутник з трьома кольоровими колами на траві та на фоні неба. Кольори змінилися на рожевий та фіолетовий.](images/alternative-colours.png){:width="400px"}
 
 
 --- /task ---
