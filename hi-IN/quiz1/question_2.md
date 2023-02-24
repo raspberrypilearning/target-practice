@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: तीन में से दूसरा प्रश्न
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+अपने प्रोजेक्ट में, आपने `if`, `elif`, और `else` शर्तों का उपयोग किया है ताकि यह पता लगाया जा सके कि तीर किस रंग में उतरा।
 
 In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
@@ -24,7 +24,7 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  यह सही है! **speed** वेरिएबल को `6` का मान सौंपा गया है, जो `speed == 6` स्थिति को **True** बनाता है और `Very fast` प्रिंट करता है।
 
   --- /feedback ---
 
@@ -32,11 +32,11 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  बिल्कुल नहीं, **speed** वेरिएबल को असाइन किए गए मान को देखें।
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- () कुछ भी नहीं छपा
 
   --- feedback ---
 
