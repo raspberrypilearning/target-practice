@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: Питання 3 з 3
 ---
 
-A circle is drawn using the following code:
+За допомогою наступного коду можна намалювати коло:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+На якому з наведених нижче зображень показано правильне положення кола в області виводу результатів?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Зелене коло з центром у правому нижньому куті області виводу.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Не зовсім так. Для центрування кола в правому нижньому куті необхідно, щоб його координати збігалися з розміром екрана. У наведеному прикладі еліпс матиме такий вигляд `circle(400, 400, 300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Зелене коло з центром посередині у вихідній області.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  Не зовсім так. Щоб відцентрувати коло посередині, координати повинні бути вдвічі меншими за розмір екрана. У даному прикладі, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Зелене коло в центрі лівого верхнього кута області виводу.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Правильно! Центр цього кола знаходиться в точці з координатами (0,0), верхній лівий кут екрана.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Зелене коло з центром у верхньому правому куті області виводу.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Ні, код цього кола мав би бути `circle(350, 150, 300)`, щоб відцентрувати його у верхньому правому куті екрана. Координата `x` встановлює позицію еліпса на екрані по горизонталі, а координата `y` встановлює позицію по вертикалі.
 
   --- /feedback ---
 
