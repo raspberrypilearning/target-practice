@@ -15,7 +15,7 @@ Je gaat:
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Klik op de knop **Run** hieronder om het spel te starten. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
+Klik op de knop **Run** hieronder om het spel te starten. Wanneer de stip op het doel komt, klik je met de muis (of tik je op je tablet) om je pijl af te schieten. 
 
 Probeer het een paar keer. Je score verschijnt in het uitvoergebied onder het doel. Hoe verandert je score als de pijl op de verschillende kleuren landt? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -29,12 +29,12 @@ Probeer het een paar keer. Je score verschijnt in het uitvoergebied onder het do
 
 --- print-only ---
 
-![Completed project.](images/yellow-points.png)
+![Voltooid project.](images/yellow-points.png)
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+Het oudste bewijs van <span style="color: #0faeb0; font-weight: bold;"> boogschieten </span> komt uit de Sibudu-grot in KwaZulu-Natal, Zuid-Afrika. Er zijn overblijfselen gevonden van pijlpunten van steen en been, die dateren van 60.000 tot 70.000 jaar geleden. 
 </p>
 
 ![](http://code.org/api/hour/begin_coderdojo_target.png)
