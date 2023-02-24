@@ -12,7 +12,7 @@ Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org
 
 --- task ---
 
-**Essaye :** Ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
+**Essaie-le :** Ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
 
 **Astuce :** Environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
 
