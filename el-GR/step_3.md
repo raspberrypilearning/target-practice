@@ -11,7 +11,7 @@ Your game needs a target to shoot arrows at.
 </div>
 </div>
 
-### Draw a triangular stand
+### Σχεδίασε τη βάση
 
 --- task ---
 
@@ -19,16 +19,14 @@ Set the fill colour to `wood` (brown).
 
 Draw a triangle using the x and y coordinates for each of the corners.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png)Όταν καλείς τη συνάρτηση `triangle()`, πρέπει να παρέχεις τρία σύνολα συντεταγμένων, `x1, y1, x2, y2, x3, y3` που το καθένα αντιπροσωπεύει τη θέση μιας από τις κορυφές του τριγώνου.
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 27
-line_highlights: 29, 30
+title: Συντεταγμένες τριγώνων
 ---
-  fill(grass)   
-rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
-triangle(150, 350, 200, 150, 250, 350)
+  --- /collapse ---
 
 --- /code ---
 
@@ -36,13 +34,14 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+language: python filename: main.py - draw() line_numbers: true line_number_start: 28
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![A brown triangle on grass and against a sky.](images/target-stand.png)fill(grass)   
+rect(0, 250, 400, 150) #x, y, πλάτος, ύψος
 
 --- /task ---
 
-### Draw the target circles
+### Σχεδίασε τον στόχο
 
 --- task ---
 
@@ -52,12 +51,12 @@ Set the fill colour to `outer` (blue).
 
 Draw a circle with x and y coordinates for its centre and a width.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png)**Δοκιμή:** Εκτέλεσε τον κώδικά σου για να δεις την βάση για τον στόχο σου.
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 29
-line_highlights: 31, 32
+line_highlights: 31-32
 ---
 
   fill(wood)   
@@ -71,11 +70,11 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Συμβουλή:** Για να φτιάξεις έναν κύκλο, το **πλάτος** και το **ύψος** πρέπει να είναι τα ίδια.
 
 The blue circle was drawn after the stand so it is in front:
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png)language: python filename: main.py - draw() line_numbers: true line_number_start: 31
 
 --- /task ---
 
@@ -85,12 +84,12 @@ The blue circle was drawn after the stand so it is in front:
 
 Create two variables called `inner` and `middle` to store colours for the other circles.
 
-The `color` function expects three numbers: one each for red, green, and blue.
+**Δοκιμή:** Εκτέλεσε τον κώδικά σου για να δεις τον πρώτο μεγάλο μπλε κύκλο.
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 17
-line_highlights: 24, 25
+line_highlights: 33-34
 ---
 def draw():   
 # Things to do in every frame global wood sky = color(92, 204, 206)   
@@ -104,7 +103,7 @@ middle = color(220, 200, 0) # Yellow
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Η συνάρτηση `color()` χρειάζεται τρεις αριθμούς: έναν για το κόκκινο, έναν για το πράσινο κι έναν για το μπλε.
 
 --- task ---
 
@@ -112,16 +111,11 @@ The target is made of different-sized circles with the same centre coordinates (
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 35, 36, 37, 38
+language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+line_highlights: 24-25
 ---
-  fill(wood)    
-triangle(150, 350, 200, 150, 250, 350)  
-fill(outer)   
-circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
-circle(200, 200, 110) # Inner circle - x, y, width of the circle  
-fill(middle) # Set the circle fill colour to middle      
-circle(200, 200, 30) # Middle circle - x, y, width of the circle
+  def draw():   
+#Πράγματα που πρέπει να κάνεις σε κάθε καρέ
 
 --- /code ---
 
@@ -131,7 +125,7 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 **Test:** 🔄 Run your project to see the target with three coloured circles.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)Ο στόχος αποτελείται από κύκλους διαφορετικού μεγέθους με τις ίδιες συντεταγμένες του κέντρου (200, 200) — το μέσο της οθόνης.
 
 **Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
 
@@ -139,7 +133,14 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours.
+fill(wood)    
+triangle(150, 350, 200, 150, 250, 350) #Βάση    
+fill(outer)   
+ellipse(200, 200, 170, 170) #Εξωτερικός κύκλος   
+fill(inner)   
+ellipse(200, 200, 110, 110) #Εσωτερικός κύκλος   
+fill(bullseye)   
+ellipse(200, 200, 30, 30) #Κέντρο στόχου
 
 [[[generic-theory-simple-colours]]]
 
