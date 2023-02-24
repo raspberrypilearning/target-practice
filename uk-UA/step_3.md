@@ -69,7 +69,7 @@ line_highlights: 31, 32
 
   fill(wood)   
   triangle(150, 350, 200, 150, 250, 350)   
-  fill(outer) # Встановлення кольору заливки кола на outer    
+  fill(outer) # Встановлення кольору заливки кола на outer 
   circle(200, 200, 170) # x, y, ширина кола
 
 --- /code ---
