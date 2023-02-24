@@ -146,13 +146,13 @@ circle(arrow_x, arrow_y, 15)
 
 **Test:** Ejecuta tu proyecto.
 
-El proyecto imprime el `hit_color` cada vez que se vuelve a dibujar la flecha.
+El proyecto escribe el `hit_color` cada vez que se vuelve a dibujar la flecha.
 
 ![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
 
-**Depuración:** 🐞 Si ves un mensaje sobre `hit_color` 'not defined', vuelve a `shoot_arrow()` y comprueba que tienes la línea `global hit_color`.
+**Debug:** 🐞 Si ves un mensaje sobre `hit_color` 'not defined', vuelve a `shoot_arrow()` y comprueba que tienes la línea `global hit_color`.
 
-**Depurar:** Verifica la línea `print` con mucho cuidado en busca de comas y paréntesis.
+**Debug:** Verifica la línea `print` con mucho cuidado en busca de comas y paréntesis.
 
 --- /task ---
 
