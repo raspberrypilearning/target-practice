@@ -6,7 +6,7 @@ legend: السؤال 2 من 3
 
 في مشروعك ، استخدمت `if` و `elif`و `else` للتحقق من اللون الذي سقط عليه السهم.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+In the example below, a variable called `speed` has the number `6` stored in it. عند تشغيل هذا التعليمات البرمجية ، ما الذي سيتم طباعته في منطقة المخرجات ؟
 
 --- code ---
 ---
