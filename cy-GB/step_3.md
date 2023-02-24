@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+Siâp triongl yw stand y targed. Mae'r targed yn cael ei wneud â chylchoedd lliw — mae'r cylchoedd llai werth mwy o bwyntiau na'r rhai mwy.
 </div>
 <div>
 
@@ -11,24 +11,22 @@ Your game needs a target to shoot arrows at.
 </div>
 </div>
 
-### Draw a triangular stand
+### Llunio'r stand
 
 --- task ---
 
-Set the fill colour to `wood` (brown).
+Dychmygwch dorri'r holl siapiau allan o bapur. Yn dibynnu ar sut rydych chi'n trefnu ac yn croesi'r papur hwnnw, gallai'r canlyniad edrych yn wahanol iawn.
 
 Draw a triangle using the x and y coordinates for each of the corners.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png)Pan fyddwch yn galw'r swyddogaeth `triangle()`, rhaid i chi ddarparu tair set o gyfesurynnau, `x1, y1, x2, y2, x3, y3` lle mae pob un yn cynrychioli un o gorneli'r triongl.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 27
-line_highlights: 29, 30
+Dyma dri triongl enghreifftiol ac mae gan bob un set wahanol o gyfesurynnau. 'Drychwch ar safle grid pob un i weld sut mae'r cyfesurynnau `x` a `y` yn lleoli corneli'r trionglau:
+title: Cyfesurynnau triongl
 ---
-  fill(grass)   
-rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
-triangle(150, 350, 200, 150, 250, 350)
+  --- /collapse ---
 
 --- /code ---
 
@@ -36,28 +34,29 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+language: python filename: main.py - draw() line_numbers: true line_number_start: 28
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![A brown triangle on grass and against a sky.](images/target-stand.png)fill(gwair)   
+rect(0, 250, 400, 150) #x, y, lled, uchder
 
 --- /task ---
 
-### Draw the target circles
+### Llunio'r targed
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+**Cyngor:** Rydyn ni wedi ychwanegu sylwadau at ein cod, fel `#Gosod lliw llenwi'r stand ar frown`, i roi gwybod i chi beth mae'n ei wneud. Does dim rhaid i chi ychwanegu'r sylwadau hyn at eich cod, ond maen nhw'n gallu bod yn ddefnyddiol i'ch atgoffa beth mae llinellau cod yn ei wneud.
 
 Set the fill colour to `outer` (blue).
 
 Draw a circle with x and y coordinates for its centre and a width.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png)**Profi:** Rhedwch eich cod i weld stand eich targed.
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 29
-line_highlights: 31, 32
+line_highlights: 31-32
 ---
 
   fill(wood)   
@@ -71,7 +70,7 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Cyngor:** I wneud cylch, rhaid i'r **lled** a'r **uchder** fod yr un fath.
 
 The blue circle was drawn after the stand so it is in front:
 
@@ -85,12 +84,12 @@ The blue circle was drawn after the stand so it is in front:
 
 Create two variables called `inner` and `middle` to store colours for the other circles.
 
-The `color` function expects three numbers: one each for red, green, and blue.
+**Profi:** Rhedwch eich cod i weld y cylch glas mawr cyntaf.
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 17
-line_highlights: 24, 25
+line_highlights: 33-34
 ---
 def draw():   
 # Things to do in every frame global wood sky = color(92, 204, 206)   
@@ -104,7 +103,7 @@ middle = color(220, 200, 0) # Yellow
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Mae'r swyddogaeth `color()` yn disgwyl tri rhif: un yr un i goch, gwyrdd a glas.
 
 --- task ---
 
@@ -113,15 +112,10 @@ The target is made of different-sized circles with the same centre coordinates (
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 35, 36, 37, 38
+line_highlights: 24-25
 ---
-  fill(wood)    
-triangle(150, 350, 200, 150, 250, 350)  
-fill(outer)   
-circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
-circle(200, 200, 110) # Inner circle - x, y, width of the circle  
-fill(middle) # Set the circle fill colour to middle      
-circle(200, 200, 30) # Middle circle - x, y, width of the circle
+  def draw():   
+#Pethau i'w gwneud ym mhob ffrâm
 
 --- /code ---
 
@@ -131,15 +125,22 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 **Test:** 🔄 Run your project to see the target with three coloured circles.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)Mae'r targed wedi'i ffurffio o gylchoedd o wahanol faint gyda'r un cyfesurynnau canol (200, 200) — canol y sgrin.
 
-**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
+Ychwanegwch ddau gylch arall i gynrychioli cylch mewnol a chanol y nod (y canol_y_nod). Newidiwch `fill()` cyn llunio pob cylch.
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours.
+fill(pren)    
+triangle(150, 350, 200, 150, 250, 350) #Stand    
+fill(allanol)   
+ellipse(200, 200, 170, 170) #Cylch allanol   
+fill(mewnol)   
+ellipse(200, 200, 110, 110) #Cylch mewnol   
+fill(canol_y_nod)   
+ellipse(200, 200, 30, 30) #Canol y nod
 
 [[[generic-theory-simple-colours]]]
 
