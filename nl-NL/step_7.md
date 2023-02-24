@@ -15,10 +15,10 @@ Nu is het jouw beurt! Wat kun jij nog meer toevoegen aan je project?  Misschien 
 
 Je kunt:
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
-+ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate(2)` value 💨
-+ Use `input()` to ask the user which difficulty level they want to play at 🗣️
++ Een `vierde` en `vijfde` cirkel toevoegen, in nieuwe kleuren, die verschillende punten scoren op basis van hun positie
++ Emoji in je gedrukte berichten zetten ([hier is een lijst met emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} waaruit je kunt kopiëren)
++ Het spel gemakkelijker of moeilijker maken door de waarde van `frame_rate(2)` te wijzigen
++ `input()` gebruiken om de gebruiker te vragen op welk moeilijkheidsniveau ze willen spelen
 
 --- /task ---
 
