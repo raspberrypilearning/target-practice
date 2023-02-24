@@ -1,35 +1,35 @@
-## Upgrade your project
+## Вдосконалення твого проєкту
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
+Персоналізуй та додай більше до свого проєкту. Можливо, ти захочеш збільшити складність влучення, або додати більше кружечків до своєї мішені.
 </div>
 <div>
 
-![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
+![У вихідній області відображається мішень з п'ятьма колами.](images/five_circles.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-You could:
+Ти можеш:
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
-+ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate(2)` value 💨
-+ Use `input()` to ask the user which difficulty level they want to play at 🗣️
++ Додати додатково коло `fourth` та `fifth`, у нових кольорах, які будуть давати різну кількість балів в залежності від свого розташування 🟠🟣
++ Додати емодзі до повідомлень ([список емодзі](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"}, які можна скопіювати та використати) 🎯
++ Зробити гру легшою або складнішою, змінивши значення `frame_rate(2)` 💨
++ Скористатися `input()`, щоб запитати користувача, на якому рівні складності він хоче зіграти 🗣️
 
 --- /task ---
 
-![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
+![Оновлені ідеї проєктів: перший - з п'ятьма колами, другий - зі складним запитанням, третій - з емодзі у повідомленні про бали.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
-title: Completed project
+title: Завершений проєкт
 ---
 
-You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+Ти можеш переглянути [завершений проєкт тут](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
