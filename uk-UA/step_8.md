@@ -1,4 +1,4 @@
-## Challenge: створіть власну групу
+## Що далі?
 
 Якщо ти йдеш по мануалу [Знайомство з Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro), можеш перейти до проєкту [Запуск ракети](https://projects.raspberrypi.org/en/projects/rocket-launch). У цьому проєкті ти будеш створювати інтерактивну анімацію ракети, яка буде виводити супутник на орбіту.
 
