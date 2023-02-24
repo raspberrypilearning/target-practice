@@ -8,7 +8,7 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Harás
+    title: Lo que harás
   - 
     title: Crea un fondo
   - 
@@ -22,7 +22,7 @@ steps:
     completion:
       - internal
   - 
-    title: Test rápido
+    title: Examen rapido
     knowledge_quiz:
       path: quiz1
       version: 1
