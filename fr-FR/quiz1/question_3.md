@@ -4,26 +4,26 @@
 legend : Question 3 sur 3
 ---
 
-A circle is drawn using the following code:
+Un cercle est dessiné en utilisant le code suivant :
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
+def configuration():   
 size(400, 400)   
 fill(0, 255, 0)   
 no_stroke()
 
-def draw():   
+def dessin():   
 circle(0, 0, 300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Laquelle des images ci-dessous montre la position correcte de ce cercle dans la zone de sortie ?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  Pas tout à fait, pour centrer le cercle dans le coin inférieur droit, les coordonnées doivent être identiques à la taille de l'écran. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Pas tout à fait, pour centrer le cercle dans le coin inférieur droit, les coordonnées doivent être identiques à la taille de l'écran. Dans cet exemple, le cercle serait `circle(400, 400, 300)`.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  Pas tout à fait, pour centrer le cercle au milieu, les coordonnées devraient être la moitié de la taille de l'écran. In this example, `circle(200, 200, 300)`.
+  Pas tout à fait, pour centrer le cercle au centre, les coordonnées devraient être la moitié de la taille de l'écran. Dans cet exemple, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. La coordonnée `x` est la distance horizontale entre l'éllipse et le bord de l'écran, et la coordonnée `y` est la distance verticale sur l'écran.
+  Non, cette ellipse aurait le code `circle(350, 150, 300)` pour le centrer vers le haut à droite de l'écran. La coordonnée `x` est la distance horizontale entre l'ellipse et le bord de l'écran, et la coordonnée `y` est la distance verticale sur l'écran.
 
   --- /feedback ---
 
