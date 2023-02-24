@@ -1,4 +1,4 @@
-## Fire your arrow
+## अपने तीर को चलाये
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ When you click or tap, an arrow will fire at the position of a moving target cir
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![लक्ष्य, एक भूरे वृत्त तीर के साथ विभिन्न स्थानों में दिखाई देता है।](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
@@ -29,7 +29,7 @@ Add code to randomly draw a brown circle within a target area:
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
 line_highlights: 10, 11, 12, 13, 14
 ---
-# The shoot_arrow function goes here
+# shoot_arrow फ़ंक्शन यहाँ जाता है
 def shoot_arrow():   
 arrow_x = randint(100, 300) # Store a random number between 100 and 300    
 arrow_y = randint(100, 300) # Store a random number between 100 and 300    
@@ -130,7 +130,7 @@ Make `hit_color` a **global variable** so that it can be used throughout your co
 language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
 line_highlights: 13
 ---
-# The shoot_arrow function goes here
+# shoot_arrow फ़ंक्शन यहाँ जाता है
 def shoot_arrow():    
 global hit_color # Can be used in other functions     
 arrow_x = randint(100, 300)     
