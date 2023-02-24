@@ -16,7 +16,7 @@ Personaliza y agrega más a tu proyecto. Quizás podrías cambiar el nivel de di
 Tú podrías:
 
 + Agregar un `cuarto` y `quinto` círculo, en nuevos colores, que darán diferentes cantidades de puntos según su posición 🟠🟣
-+ Pon emoji en tus mensajes impresos ([aquí hay una lista de emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} desde los que puedes copiar) 🎯
++ Pon emoji en tus mensajes escritos ([aquí hay una lista de emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} desde los que puedes copiar) 🎯
 + Haz que el juego sea más fácil o más difícil cambiando el valor de `frame_rate(2)` 💨
 + Usar `input()` para preguntar al usuario en qué nivel de dificultad quiere jugar 🗣️
 
