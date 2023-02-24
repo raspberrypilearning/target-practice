@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When you click or tap, an arrow will fire at the position of a moving target circle. 
+Lorsque tu cliques ou appuies, une flèche est tirée à la position d'un cercle cible en mouvement. 
 </div>
 <div>
 
@@ -11,30 +11,30 @@ When you click or tap, an arrow will fire at the position of a moving target cir
 </div>
 </div>
 
-### Draw a target circle every frame
+### Dessiner un cercle cible à chaque image
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Les ordinateurs créent l'effet de mouvement en montrant beaucoup d'images les unes après les autres. Chaque image est appelée une <span style="color: #0faeb0; font-weight: bold;">frame</span>.   
 </p>
 
 --- task ---
 
-Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
+Définis ta fonction `tire_fleche()` sous le commentaire **# La fonction tire_fleche vient ici**.
 
-Add code to randomly draw a brown circle within a target area:
+Ajoute du code pour dessiner au hasard un cercle marron dans une zone cible :
 
-![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
+![Un rectangle montrant les coordonnées de la zone cible dans un rectangle semi-transparent. La zone cible est comprise entre x=100 et y=100 et x=300 et y=300, ce qui couvre toute la cible et même plus.](images/target_area.png)
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+language: python filename: main.py — tire_fleche() line_numbers: true line_number_start: 9
 line_highlights: 10, 11, 12, 13, 14
 ---
 # La fonction tire_fleche vient ici
-def shoot_arrow():   
-arrow_x = randint(100, 300) # Store a random number between 100 and 300    
-arrow_y = randint(100, 300) # Store a random number between 100 and 300    
-fill(wood) # Set the arrow to fill colour to wood   
-circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
+def tire_fleche():   
+fleche_x = randint(100, 300) # Stocke un nombre aléatoire entre 100 et 300    
+fleche_y = randint(100, 300) # Stocke un nombre aléatoire entre 100 et 300    
+fill(bois) # Défini la couleur de remplissage de la flèche sur bois   
+circle(fleche_x, fleche_y, 15) # Dessine un petit cercle à des coordonnées aléatoires
 
 --- /code ---
 
@@ -42,16 +42,16 @@ circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- task ---
 
-Go to the `draw` function and call your new `shoot_arrow` function.
+Va dans la fonction `dessin` et appelle ta nouvelle fonction `tire_fleche`.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 42
+language: python filename: main.py — dessiner() line_numbers: true line_number_start: 42
 line_highlights: 44
 ---
-  fill(middle)    
+  fill(centre)    
 circle(200, 200, 30)    
-shoot_arrow()
+tire_fleche()
 
 --- /code ---
 
@@ -59,84 +59,63 @@ shoot_arrow()
 
 --- task ---
 
-**Test:** 🔄 Run you code and see the arrow appear in a random position each frame.
+**Test :** 🔄 Exécute ton code et vois la flèche apparaître dans une position aléatoire à chaque image.
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![La cible, avec une flèche en forme de cercle marron, apparaît dans différentes positions.](images/fire_arrow.gif)
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+L'arrière-plan et la cible seront dessinés sur l'ancienne flèche. Cela signifie que tu ne vois qu'une seule flèche à la fois.
 
 --- /task ---
 
-### Get the colour hit by the arrow
+### Obtenir la couleur touchée par la flèche
 
-The `get()` function returns the colour of a pixel.
+La fonction `get()` renvoie la couleur d'un pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+Un <span style="color: #0faeb0; font-weight: bold;">pixel</span>, abréviation d'élément d'image, est un point coloré unique dans une image. Les images sont composées d'un grand nombre de pixels colorés.
 </p>
 
 --- task ---
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
+Ajouter du code pour `obtenir` la couleur du pixel au centre de la flèche et la stocker dans la variable `couleur_touche`.
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
-line_highlights: 13
----
-# The shoot_arrow function goes here
-def shoot_arrow():    
-arrow_x = randint(100, 300)    
-arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
-circle(arrow_x, arrow_y, 15)
-
---- /code ---
-
-**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
-
---- /task ---
-
-### Print the colour when the mouse is pressed
-
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
-
---- task ---
-
-Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
-
-Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
-
---- code ---
----
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 8, 9
----
-
-# The mouse_pressed function goes here
-def mouse_pressed():    
-print( red(hit_color), green(hit_color), blue(hit_color) )
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Make `hit_color` a **global variable** so that it can be used throughout your code:
-
---- code ---
----
-language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
+language: python filename: main.py — tire_fleche() line_numbers: true line_number_start: 9
 line_highlights: 13
 ---
 # La fonction tire_fleche vient ici
-def shoot_arrow():    
-global hit_color # Can be used in other functions     
-arrow_x = randint(100, 300)     
-arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow fill(wood)     
-circle(arrow_x, arrow_y, 15)
+def tire_fleche():    
+fleche_x = randint(100, 300)    
+fleche_y = randint(100, 300)    
+touche_couleur = get(fleche_x, fleche_y) # Obtenir la couleur touchée fill(bois)  
+circle(fleche_x, fleche_y, 15)
+
+--- /code ---
+
+**Astuce :** 💡 Le code pour `obtenir` la couleur doit être **avant** le code pour dessiner le `cercle` sinon tu enregistreras toujours la couleur bois de la flèche !
+
+--- /task ---
+
+### Imprimer la couleur lorsque la souris est pressée
+
+La bibliothèque `p5` « écoute » certains événements, l'un d'eux est la pression du bouton de la souris. Lorsqu'elle détecte que le bouton a été pressé, elle exécute le code qui lui a été donné dans la fonction `souris_pressee`.
+
+--- task ---
+
+Définis ta fonction `souris_pressee()` sous le commentaire **# La fonction souris_pressee vient ici**.
+
+Ajoute du code pour imprimer les quantités de rouge, de vert et de bleu dans le pixel sur lequel la flèche atterrit.
+
+--- code ---
+---
+language: python filename: main.py - souris_pressee() line_numbers: true line_number_start: 7
+line_highlights: 8, 9
+---
+
+# La fonction souris_pressee vient ici
+def souris_pressee():    
+print( red(couleur_touche), green(couleur_touche), blue(couleur_touche) )
 
 --- /code ---
 
@@ -144,15 +123,36 @@ circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-**Test:** 🔄 Run your project.
+Fais de `couleur_touche` une** variable globale** pour qu'elle puisse être utilisée dans tout ton code :
 
-The project prints the `hit_color` each time the arrow is redrawn.
+--- code ---
+---
+language: python filename: main.py - tire_fleche() line_numbers: true line_number_start: 11
+line_highlights: 13
+---
+# La fonction tire_fleche vient ici
+def tire_fleche():    
+global couleur_touche #Peut être utilisé dans d'autres fonctions     
+fleche_x = randint(100, 300)     
+fleche_y = randint(100, 300)     
+couleur_touche = get(fleche_x, fleche_y) #Enregistrer la couleur avant de dessiner la flèche fill(bois)     
+circle(fleche_x, fleche_y, 15)
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+--- /code ---
 
-**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+--- /task ---
 
-**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
+--- task ---
+
+**Test :** 🔄Exécute ton code.
+
+Le projet imprime le `couleur_touche` chaque fois que la flèche est redessinée.
+
+![La cible, avec une flèche circulaire marron apparaissant dans une variété de positions.](images/fire_arrow.gif)
+
+**Débogage :** 🐞 Si tu vois un message indiquant que `couleur_touche` n'est pas « défini », reviens à `tire_fleche()` et vérifie que tu as bien la ligne `global couleur_touche`.
+
+**Débogage :** 🐞 Vérifie très attentivement la ligne `print` pour les virgules et les parenthèses.
 
 --- /task ---
 
