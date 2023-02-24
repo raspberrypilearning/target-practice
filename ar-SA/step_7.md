@@ -15,10 +15,10 @@
 
 يمكنك ذلك:
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
-+ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate(2)` value 💨
-+ Use `input()` to ask the user which difficulty level they want to play at 🗣️
++ أضف دائرة `رابعة` و `خامس` ، بألوان جديدة ، والتي تسجل كميات مختلفة من النقاط بناءً على موضعها
++ ضع رمزًا تعبيريًا في رسائلك المطبوعة ([هذه قائمة بالرموز التعبيرية](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank} يمكنك النسخ منها)
++ اجعل اللعبة أسهل أو أصعب من خلال تغيير قيمة `frame_rate(2)`
++ استخدم `input()` لسؤال المستخدم عن مستوى الصعوبة الذي يريد اللعب به
 
 --- /task ---
 
