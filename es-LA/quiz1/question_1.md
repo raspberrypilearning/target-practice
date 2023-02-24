@@ -1,4 +1,4 @@
-## Test rápido
+## Examen rápido
 
 Contesta las tres preguntas. Hay sugerencias que te guían hacia la respuesta correcta.
 
