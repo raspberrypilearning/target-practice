@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legenda: Pergunta 3 de 3
 ---
 
 A circle is drawn using the following code:
