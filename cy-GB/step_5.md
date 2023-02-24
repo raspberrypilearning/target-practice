@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game will add scores based on where the arrow hits.
+Yn y cam hwn, byddwch chi'n ychwanegu sgoriau ar sail lle mae'r saeth yn taro.
 </div>
 <div>
 
@@ -13,7 +13,7 @@ Your game will add scores based on where the arrow hits.
 
 --- task ---
 
-Go to the `draw()` function and add `, outer, inner, middle` to the list of global variables.
+Bydd y newidynnau lliw yn y swyddogaeth `draw()` yn cael eu defnyddio i wirio'r sgôr yn y swyddogaeth `mouse_pressed()`. I wneud hyn, bydd angen eu gosod fel newidynnau cyffredinol:
 
 --- code ---
 ---
@@ -23,13 +23,13 @@ line_highlights: 28
 
 def draw():
 # Pethau i'w gwneud ym mhob ffrâm
-  global wood, outer, inner, middle    
-sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206    
-grass = color(149, 212, 122)    
-wood = color(145, 96, 51)    
-outer = color(0, 120, 180)    
-inner = color(210, 60, 60)   
-middle = color(220, 200, 0)
+  global allanol, mewnol, canol_y_nod    
+awyr = color(92, 204, 206) #Coch = 92, Gwyrdd = 204, Glas = 206    
+gwair = color(149, 212, 122)    
+pren = color(145, 96, 51)    
+allanol = color(0, 120, 180)    
+mewnol = color(210, 60, 60)   
+canol_y_nod = color(220, 200, 0)
 
 --- /code ---
 
@@ -43,12 +43,12 @@ Rydyn ni'n defnyddio <span style="color: #0faeb0; font-weight: bold;">amodau</sp
 
 --- task ---
 
-Delete ❌ the `print( red(hit_color), green(hit_color), blue(hit_color) )` line of code.
+I brintio neges ar gyfer cylch allanol y targed, ychwanegwch god at eich swyddogaeth `mouse_pressed()` i wneud yn siŵr bod y `lliw_taro` `==` to `allanol`.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 9
+Newidiwch y cod yn eich `print()` i roi sgôr:
+line_highlights: 10-11
 ---
 # Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
 def mouse_pressed():
@@ -66,8 +66,8 @@ Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 9, 10
+**Cyngor:** Mae `frame_rate()` yn `setup()` yn rheoli pa mor gyflym mae eich gêm yn llunio. Os yw'n mynd yn rhy gyflym, rhowch rif is.
+line_highlights: 12-15
 ---
 
 # The mouse_pressed function goes here
@@ -87,7 +87,7 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 ![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
 
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+Yr hyn sy'n gwneud `elif` yn wahanol yw y bydd yn gwirio dim ond os yw amodau `if` ac unrhyw `elif` o'i flaen yn `False`.
 
 --- /task ---
 
@@ -95,12 +95,18 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 --- task ---
 
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
+def mouse_pressed():    
+if lliw_taro == allanol:    
+print('Ti wedi taro'r cylch allanol, 50 pwynt!')    
+elif lliw_taro == mewnol:    
+print('Ti wedi taro'r cylch mewnol, 200 pwynt!')   
+elif lliw_taro == canol_y_nod:    
+print('Canol y nod! 500 pwynt!')
 
 --- code ---
 ---
 language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
-line_highlights: 11, 12, 13, 14
+line_highlights: 16-17
 ---
 
 def mouse_pressed():    
@@ -121,9 +127,9 @@ print('You hit the middle, 500 points!')
 
 ![The output area with arrow touching the inner circle. The points print statement appears in the output area.](images/yellow-points.png)
 
-**Debug:** 🐞 Check your indentation matches the example.
+Mae un penderfyniad arall i chi ei wneud: beth sy'n digwydd os nad yw'r saeth yn glanio ar unrhyw un o gylchoedd y targed? Rydych chi'n defnyddio `else` i wneud y gwiriad olaf hwn.
 
-**Debug:** 🐞 If you see a message about `inner` or `middle` being 'not defined', then go back to `draw()` and check that they are on the line that declares variables global.
+Rydyn ni'n defnyddio <span style="color: #0faeb0; font-weight: bold;"> os (if) … fel arall (else) </span> i wneud penderfyniadau. Pan fyddwch chi'n deffro, rydych chi'n gweld a yw hi'n fore ac os felly, yn deffro. Fel arall, rydych chi'n mynd yn ôl i gysgu. Allwch chi feddwl am unrhyw benderfyniadau os ... fel arall rydych chi'n eu gwneud?
 
 --- /task ---
 
@@ -135,7 +141,15 @@ To do this last check, you use `else`.
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+def mouse_pressed():    
+if lliw_taro == allanol:   
+print('Ti wedi taro'r cylch allanol, 50 pwynt!')   
+elif lliw_taro == mewnol:   
+print('Ti wedi taro'r cylch mewnol, 200 pwynt!')   
+elif lliw_taro == canol_y_nod:    
+print('Canol y nod! 500 pwynt!')   
+else:   
+print('Ti wedi methu! Dim pwyntiau!')
 
 --- code ---
 ---
