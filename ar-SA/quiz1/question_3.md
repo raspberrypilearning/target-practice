@@ -4,7 +4,7 @@
 legend: السؤال 3 من 3
 ---
 
-A circle is drawn using the following code:
+يتم رسم القطع الناقص باستخدام التعليمات البرمجية التالي:
 
 --- code ---
 ---
@@ -13,17 +13,17 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0, 255, 0)   
+fill(0,255,0)   
 no_stroke()
 
 def draw():   
-circle(0, 0, 300)
+ellipse(0,0,300,300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+أي من الصور أدناه توضح الموضع الصحيح لهذا القطع الناقص في منطقة المخرجات؟
 
 --- choices ---
 
@@ -31,7 +31,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  ليس تمامًا ، لتوسيط الدائرة في الزاوية اليمنى السفلية ، يجب أن تكون الإحداثيات هي نفس حجم الشاشة. In this example, the ellipse would be `circle(400, 400, 300)`.
+  ليس تمامًا ، لتوسيط الدائرة في الزاوية اليمنى السفلية ، يجب أن تكون الإحداثيات هي نفس حجم الشاشة. في هذا المثال ، سيكون القطع الناقص `ellipse(400,400,300,300)`.
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  ليس تمامًا ، لتوسيط الدائرة في المنتصف ، يجب أن تكون الإحداثيات نصف حجم الشاشة. In this example, `circle(200, 200, 300)`.
+  ليس تمامًا ، لتوسيط الدائرة في المنتصف ، يجب أن تكون الإحداثيات نصف حجم الشاشة. في هذا المثال ، `ellipse(200,200,300,300)`.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. الإحداثي `×` هو مدى المسافة بين القطع الناقص عبر الشاشة ، والإحداثي `y` هو مدى المسافة أسفل الشاشة.
+  لا ، سيكون لهذه الدائرة التعليمات البرمجية `ellipse(350,150,300,300)` لتوسيطها في أعلى يمين الشاشة. الإحداثي `×` هو مدى المسافة بين القطع الناقص عبر الشاشة ، والإحداثي `y` هو مدى المسافة أسفل الشاشة.
 
   --- /feedback ---
 
