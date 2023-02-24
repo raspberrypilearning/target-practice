@@ -6,7 +6,7 @@ legend: Vraag 2 van 3
 
 In je project heb je `if` , `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+In the example below, a variable called `speed` has the number `6` stored in it. Als deze code wordt uitgevoerd, wat wordt er dan afgedrukt in het uitvoergebied?
 
 --- code ---
 ---
