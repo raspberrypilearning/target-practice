@@ -8,7 +8,7 @@ Have fun!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: प्रश्न 3 पैकी 1
 ---
 Here is a blue square, what are the RGB values that will create it?
 
