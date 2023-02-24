@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game will add scores based on where the arrow hits.
+Σε αυτό το βήμα, θα προσθέσεις πόντους ανάλογα με το σημείο που χτυπάει το βέλος.
 </div>
 <div>
 
@@ -23,13 +23,13 @@ line_highlights: 28
 
 def draw():
 # Ενέργειες που πρέπει να γίνονται σε κάθε καρέ
-  global wood, outer, inner, middle    
-sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206    
+  global outer, inner, bullseye    
+sky = color(92, 204, 206) #Κόκκινο = 92, Πράσινο = 204, Μπλε = 206    
 grass = color(149, 212, 122)    
 wood = color(145, 96, 51)    
 outer = color(0, 120, 180)    
 inner = color(210, 60, 60)   
-middle = color(220, 200, 0)
+bullseye = color(220, 200, 0)
 
 --- /code ---
 
@@ -43,12 +43,12 @@ middle = color(220, 200, 0)
 
 --- task ---
 
-Delete ❌ the `print( red(hit_color), green(hit_color), blue(hit_color) )` line of code.
+Για να `εμφανίσεις` μήνυμα για τον εξωτερικό κύκλο του στόχου, πρόσθεσε κώδικα στη συνάρτηση `mouse_pressed()` για να ελέγξεις εάν το `hit_color` είναι `==` με το `outer`.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 9
+Άλλαξε τον κώδικα στο `print()` για να εμφανίσει τη βαθμολογία:
+line_highlights: 10-11
 ---
 # Η συνάρτηση mouse_pressed πηγαίνει εδώ
 def mouse_pressed():
@@ -67,7 +67,7 @@ Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
 --- code ---
 ---
 language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 9, 10
+line_highlights: 12-15
 ---
 
 # The mouse_pressed function goes here
@@ -87,7 +87,7 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 ![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
 
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+Αυτό που κάνει το `elif` διαφορετικό είναι ότι θα κάνει αυτόν τον έλεγχο μόνο εάν οι συνθήκες του `if` και οποιωνδήποτε `elif` πριν από αυτό είναι `Ψευδείς`.
 
 --- /task ---
 
@@ -95,12 +95,18 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 --- task ---
 
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
+def mouse_pressed():    
+if hit_color == outer:    
+print('Χτύπησες τον εξωτερικό κύκλο, 50 πόντοι!')    
+elif hit_color == inner:    
+print('Χτύπησες τον εσωτερικό κύκλο, 200 πόντοι!')   
+elif hit_color == bullseye:    
+print('Χτύπησες το κέντρο του στόχου, 500 πόντοι!')
 
 --- code ---
 ---
 language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
-line_highlights: 11, 12, 13, 14
+line_highlights: 16-17
 ---
 
 def mouse_pressed():    
