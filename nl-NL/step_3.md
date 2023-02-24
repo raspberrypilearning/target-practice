@@ -23,12 +23,11 @@ Draw a triangle using the x and y coordinates for each of the corners.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 27
-line_highlights: 29, 30
+language: python filename: main.py - draw() line_numbers: true line_number_start: 28
+line_highlights: 37-40
 ---
-  fill(grass)   
-rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
-triangle(150, 350, 200, 150, 250, 350)
+  fill(gras)   
+rect(0, 250, 400, 150) #x, y, breedte, hoogte
 
 --- /code ---
 
@@ -36,9 +35,9 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Test:** Voer je code uit om de standaard voor je doelwit te zien.
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Een bruine driehoek op gras en tegen een lucht.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
@@ -46,7 +45,7 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+**Test:** Voer je code uit om de eerste grote blauwe cirkel te zien.
 
 Set the fill colour to `outer` (blue).
 
@@ -56,14 +55,12 @@ Draw a circle with x and y coordinates for its centre and a width.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 29
-line_highlights: 31, 32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 31
+line_highlights: 31-32
 ---
 
-  fill(wood)   
-triangle(150, 350, 200, 150, 250, 350)   
-fill(outer) # Set the circle fill colour to outer    
-circle(200, 200, 170) # x, y, width of the circle
+  fill(hout) #Stel de vulkleur van de standaard in op bruin     
+triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -71,69 +68,70 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Tip:** Om een cirkel te maken, moeten de **breedte** en **hoogte** gelijk zijn.
 
 The blue circle was drawn after the stand so it is in front:
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Een bruine driehoek en blauwe cirkel op gras en tegen een lucht.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-👀 Find your colour variables in the `draw` function.
+Wijs kleuren toe aan de `binnenste` en `roos` variabelen met `color()`.
 
-Create two variables called `inner` and `middle` to store colours for the other circles.
+Maak twee nieuwe variabelen om de kleuren voor de resterende `binnenste` en `roos` cirkels op te slaan.
 
-The `color` function expects three numbers: one each for red, green, and blue.
+De functie `color()` verwacht drie getallen: één voor rood, groen en blauw.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 17
-line_highlights: 24, 25
+language: python filename: main.py - draw() line_numbers: true line_number_start: 33
+line_highlights: 33-34
 ---
+lucht = color(92, 204, 206)   
+gras = color(149, 212, 122)   
+hout = color(145, 96, 51)   
+buitenste = color(0, 120, 180) #Blauw    
+binnenste = color(210, 60, 60) # Rood    
+roos = color(220, 200, 0) # Geel
+
+--- /code ---
+
+--- /task ---
+
+Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale coördinaten (200, 200) - het midden van het scherm.
+
+--- task ---
+
+**Test:** Voer je project opnieuw uit om het doel met drie gekleurde cirkels te zien.
+
+--- code ---
+---
+language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+line_highlights: 24-25
+---
+  fill(hout)    
+triangle(150, 350, 200, 150, 250, 350) #Standaard    
+fill(buitenste)   
+ellipse(200, 200, 170, 170) #Buitenste cirkel   
+fill(binnenste)   
+ellipse(200, 200, 110, 110) #Binnenste cirkel   
+fill(roos)   
+ellipse(200, 200, 30, 30) #Roos
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
 def draw():   
-# Things to do in every frame global wood sky = color(92, 204, 206)   
-grass = color(149, 212, 122)   
-wood = color(145, 96, 51)   
-outer = color(0, 120, 180) # Blue    
-inner = color(210, 60, 60) # Red    
-middle = color(220, 200, 0) # Yellow
+#Dingen om te doen in elk frame
 
---- /code ---
+![Een bruine driehoek met drie gekleurde cirkels op gras en tegen een lucht.](images/three-circles.png){:width="400px"}
 
---- /task ---
-
-The target is made of different-sized circles with the same centre coordinates (200, 200).
-
---- task ---
-
-**Add** coloured circles for the inner and middle parts of the target.
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 35, 36, 37, 38
----
-  fill(wood)    
-triangle(150, 350, 200, 150, 250, 350)  
-fill(outer)   
-circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
-circle(200, 200, 110) # Inner circle - x, y, width of the circle  
-fill(middle) # Set the circle fill colour to middle      
-circle(200, 200, 30) # Middle circle - x, y, width of the circle
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test:** 🔄 Run your project to see the target with three coloured circles.
-
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
-
-**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
+**Debuggen:** Python gebruikt de Amerikaanse spelling van 'color' (zonder een 'u'), dus zorg ervoor dat jij dat ook doet.
 
 --- /task ---
 
@@ -143,7 +141,7 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 [[[generic-theory-simple-colours]]]
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Een bruine driehoek op gras en tegen een lucht met de coördinaatpunten gelabeld. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
 
 --- /task ---
