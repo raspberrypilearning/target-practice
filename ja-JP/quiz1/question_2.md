@@ -6,7 +6,7 @@ legend: 質問2/3
 
 あなたのプロジェクトでは、`if` , `elif`, `else`条件を使って、矢がどの色に着地したかをチェックしましたね。
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+In the example below, a variable called `speed` has the number `6` stored in it. このコードを実行すると、出力領域には何が表示されるでしょうか？
 
 --- code ---
 ---
