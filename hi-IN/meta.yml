@@ -1,7 +1,7 @@
 ---
-title: Target practice
+title: लक्ष्य अभ्यास
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: एक लक्ष्य बनाने के लिए पाइथन का उपयोग करें और इसे तीर से मारते हुए अंक स्कोर करें
 version: 4
 listed: true
 copyedit: true
@@ -10,15 +10,15 @@ steps:
   - 
     title: You will make
   - 
-    title: Create a background
+    title: एक पृष्ठभूमि बनाएँ
   - 
-    title: Draw your target
+    title: अपना लक्ष्य बनाएँ
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: अपनी तीर चलाएँ
   - 
-    title: Score points
+    title: अंक स्कोर करें
     completion:
       - internal
   - 
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: प्रोजेक्ट को अपग्रेड करें
   - 
-    title: What next?
+    title: आगे क्या?
