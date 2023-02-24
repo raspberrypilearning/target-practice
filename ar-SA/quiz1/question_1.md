@@ -2,17 +2,17 @@
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-When you have answered each question, click on **Check my answer**.
+بعد كل سؤال ، اضغط على **إرسال**. سيتم توجيهك نحو الإجابة الصحيحة.
 
-Have fun!
+إستمتع!
 
 --- question ---
 ---
 legend: السؤال 1 من 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+هذا مربع أزرق ، ما هي قيم RGB التي ستنشئه؟
 
-![A single block of blue colour.](images/quiz-colour.png)
+![كتلة واحدة من اللون الأزرق.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+ليس تمامًا ، عندما يتم ضبط جميع قيم الألوان على `0`، يكون اللون **أسود**.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+ليس تمامًا ، فالألوان تتبع نموذج RGB. هذا اللون له قيمة R قصوى وليس G أو B ، لذلك سيكون **أحمر**.
 
   --- /feedback ---
 
