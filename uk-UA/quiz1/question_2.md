@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: Питання 2 з 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+У твоєму проєкті використовувалися умови `if` , `elif`, та `else`, щоб перевірити, на який колір влучила стріла.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+У наступному прикладі, змінна з назвою `speed` має число `6`, який вказано в ній. Коли інструкція `if` буде виконуватися, що буде надруковано в області виводу?
 
 --- code ---
 ---
@@ -20,27 +20,27 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Дуже швидко`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  Правильно! Змінній **speed** було присвоєно значення `6`, що робить умову `speed == 6` **True** та надрукує `Дуже швидко`.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Швидкість не визначено!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Не зовсім так, подивись на значення, яке присвоєно змінній **speed**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Нічого не буде надруковано
 
   --- feedback ---
 
-  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
+  Спробуй ще раз, `else` використовується лише в тому випадку, коли всі вищезазначені умови є хибними. Подивись ще раз на умови, чи відповідають вони істині?
 
   --- /feedback ---
 
