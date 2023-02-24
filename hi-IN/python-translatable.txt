@@ -1,14 +1,14 @@
-sky
+आकाश
 
-grass
+घास
 
-wood
+लकड़ी
 
-outer
+बाहरी
 
-inner
+भीतरी
 
-bullseye
+बुल्सआई
 
 shoot_arrow
 
@@ -18,26 +18,26 @@ arrow_y
 
 hit_color
 
-You hit the outer circle, 50 points!
+आपने बाहरी गोले पर तीर लगायी हैं 50 पॉइंट!
 
-You hit the inner circle, 200 points!
+आपने भीतरी गोले पर तीर लगायी हैं, 200 अंक!
 
 You hit the middle, 500 points!
 
-You hit the bullseye, 500 points!
+आपने बुलसेए को मारा, 500 अंक!
 
-You missed! No points!
+आप चूक गए! कोई अंक नहीं!
 
 How fast do you want the arrow? slow, medium, fast
 
 You hit red, 200 points!
 
-speed
+गति
 
-Super fast
+बहुत तेज
 
-Pretty quick
+काफी तेज़
 
-Very fast
+बहुत तेज़
 
-Speed not recognised!
+गति पहचानी नहीं गई!
