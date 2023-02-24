@@ -1,11 +1,11 @@
 ## You will make
 
-Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
+Python में, `p5` ग्राफिक्स लाइब्रेरी के साथ, एक लक्ष्य बनाये और अंक स्कोर करने के लिए तीर से मारा।
 
-You will:
- + Personalise your game with **RGB colours**
- + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
- + Position shapes with **x, y coordinates**
+आप
+ + अपने खेल को **RGB रंगों** के साथ वैयक्तिकृत करेंगे
+ + निर्णय लेने के लिए **शर्त कथनों (कंडीशनल स्टेटमेंट)** (`if`, `elif`, `else`) का उपयोग करेंगे
+ + आकार को **x, y निर्देशांक** के साथ बनाएंगे
 
 --- no-print ---
 
@@ -15,9 +15,9 @@ You will:
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Click the **Run** button below to start the game. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
+खेल शुरू करने के लिए नीचे **रन (चलाएँ)** बटन पर क्लिक करें। When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
 
-Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
+कय बार प्रयास करे। आपका स्कोर लक्ष्य के नीचे आउटपुट में दिखाई देगा। जब विभिन्न रंगों पर तीर लैंड करता है तो आपका स्कोर कैसे बदलेगा? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
