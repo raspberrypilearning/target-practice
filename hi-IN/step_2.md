@@ -1,4 +1,4 @@
-## Create a background
+## एक पृष्ठभूमि बनाएँ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ Your game needs a colourful background.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![आउटपुट जहां पृष्ठभूमि बनाने के लिए एक आसमान-रंग वाली रेक्टेंगल घास-रंग वाली रेक्टेंगल के ऊपर हैं।](images/background.png){:width="300px"}
 
 </div>
 </div>
