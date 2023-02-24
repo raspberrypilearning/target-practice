@@ -22,15 +22,15 @@ Tu as touché le cercle extérieur, 50 points !
 
 Tu as touché le cercle intérieur, 200 points !
 
-You hit the middle, 500 points!
-
 Tu as touché le centre, 500 points !
+
+Tu as touché le mille, 500 points !
 
 Tu as loupé la cible ! Aucun point !
 
-How fast do you want the arrow? slow, medium, fast
+À quelle vitesse veux-tu la flèche ? lent, moyen, rapide
 
-You hit red, 200 points!
+Tu as touché le rouge, 200 points !
 
 vitesse
 
