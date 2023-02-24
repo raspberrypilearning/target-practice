@@ -1,45 +1,45 @@
-## Create a background
+## Створення фону
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a colourful background.
+Для твоєї гри потрібен барвистий фон.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![Область виводу з прямокутником небесного кольору, над прямокутником зеленого кольору, які створюють фон.](images/background.png){:width="300px"}
 
 </div>
 </div>
 
-### Open the starter project
+### Відкрий початковий проєкт
 
 --- task ---
 
-Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+Відкрий стартовий проєкт [Стрільба по мішені](https://trinket.io/python/9973649e5c){:target="_blank"}.
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
+Якщо у тебе є обліковий запис в Trinket, ти можеш натиснути на кнопку **Remix**, щоб зберегти копію до своєї бібліотеки **My Trinkets**.
 
 --- /task ---
 
-### Edit the sky
+### Редагування неба
 
 --- task ---
 
-The starter project has some code already written for you.
+Стартовий проєкт вже містить деякий код, написаний для тебе.
 
-Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
+Натисни **'Запуск'**, щоб побачити синій прямокутник, намальований з x=`0`, y=`0` (верхня частина екрана). Цей піксельний прямокутник `400` x `250` зображує небо.
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
+![Синій прямокутник з чорною рамкою вздовж нього, над сірим прямокутником. Верхній лівий кут полотна позначено як x=0, y=0 - це початок прямокутника. Ширина позначена як 400, а висота - як 250. Показано код rect(0, 0, 400, 250).](images/sky_stroke.png){:width="400px"}
 
-**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
+**Порада:** 💡 Координати починаються з (x=0, y=0) від лівого верхнього кута. Можливо, це буде відрізнятися від інших систем координат, які використовувались тобою раніше.
 
 --- /task ---
 
 --- task ---
 
-The sky has been drawn with a black border (stroke).
+Небо обведено чорною рамкою (обведенням).
 
-To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
+Щоб вимкнути обведення для всіх фігур необхідно додати `no_stroke()` до функції `setup`:
 
 --- code ---
 ---
@@ -47,8 +47,8 @@ language: python filename: main.py — setup() line_numbers: true line_number_st
 line_highlights: 15
 ---
 def setup():
-# Setup your game here
-  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
+# Налаштуй свою гру тут
+  size(400, 400) # ширина та висота екрана frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -56,17 +56,17 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+**Запускай** знову свій код та зверни увагу 👀 на те, як зникла рамка (обведення).
 
 --- /task ---
 
-### Draw the grass
+### Намалюй траву
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen.
+**Додай** код, щоб намалювати зелений прямокутник в нижній частині екрана.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![Область виводу з прямокутником небесного кольору, над прямокутником зеленого кольору, які створюють фон. Верхній лівий кут прямокутника позначено як x=0, y=250 - це початок прямокутника. Ширина виділена як 400, а висота - як 150. Показано код rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -74,24 +74,24 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 27, 28
 ---
 def draw():
-# Things to do in every frame
-  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
+# Що відбувається на кожному кадрі
+  global wood sky = color(92, 204, 206) # Червоний = 92, Зелений = 204, Синій = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
   fill(sky)     
 rect(0, 0, 400, 250)     
-fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
+fill(grass) # Встановлення кольору заливки на grass rect(0, 250, 400, 150) # x, y, ширина, висота
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Порада:** 💡 Ми додали коментарі до нашого коду, наприклад, `# Встановлення кольору заливки на трава`, щоб пояснити тобі, що робить цей код. Тобі не потрібно додавати ці коментарі до коду, але вони можуть бути корисними, щоб нагадувати тобі про призначення рядків коду.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+**Тест:** 🔄 Запусти свій проєкт ще раз, щоб побачити готовий фон.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![Область виводу з прямокутником небесного кольору, над прямокутником зеленого кольору, які створюють фон.](images/background.png){:width="400px"}
 
 --- /task ---
 
