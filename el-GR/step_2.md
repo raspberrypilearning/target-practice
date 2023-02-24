@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a colourful background.
+Ο ουρανός και το γρασίδι φτιάχνονται γράφοντας κώδικα για να σχεδιάσεις χρωματιστά ορθογώνια.
 </div>
 <div>
 
@@ -15,9 +15,9 @@ Your game needs a colourful background.
 
 --- task ---
 
-Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+Άνοιξε το [αρχικό έργο Τοξοβολίας](https://trinket.io/python/1e11252c65){:target="_blank"}.
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
+Εάν έχεις λογαριασμό Trinket, μπορείς να κάνεις κλικ στο κουμπί **Remix** για να αποθηκεύσεις ένα αντίγραφο στη βιβλιοθήκη `My Trinkets`.
 
 --- /task ---
 
@@ -25,7 +25,7 @@ If you have a Trinket account, you can click on the **Remix** button to save a c
 
 --- task ---
 
-The starter project has some code already written for you.
+[[[p5-processing-library]]]
 
 Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
@@ -37,18 +37,23 @@ Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top 
 
 --- task ---
 
-The sky has been drawn with a black border (stroke).
+def draw():     
+#Πράγματα που θα συμβαίνουν σε κάθε καρέ     
+sky = color(92, 204, 206) #Κόκκινο = 92, Πράσινο = 204, Μπλε = 206     
+grass = color(149, 212, 122)     
+wood = color(145, 96, 51)     
+outer = color(0, 120, 180)
 
-To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
+fill(sky)
 
 --- code ---
 ---
 language: python filename: main.py — setup() line_numbers: true line_number_start: 11
-line_highlights: 15
+line_highlights: 25
 ---
-def setup():
+Η κλήση της συνάρτησης `size()` στο `setup()` ορίζει το μέγεθος της οθόνης σε 400 pixel επί 400 pixel.
 # Setup your game here
-  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
+  [[[p5-coordinates]]]
 
 --- /code ---
 
@@ -71,9 +76,9 @@ def setup():
 --- code ---
 ---
 language: python filename: main.py — draw() line_numbers: true line_number_start: 17
-line_highlights: 27, 28
+line_highlights: 26
 ---
-def draw():
+{:width="300px"}
 # Things to do in every frame
   global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
@@ -89,9 +94,11 @@ fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, 
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+outer = color(0, 120, 180)
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png)no_stroke()   
+fill(sky)   
+rect(0, 0, 400, 250) #x, y, πλάτος, ύψος
 
 --- /task ---
 
