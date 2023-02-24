@@ -1,87 +1,87 @@
-Things to do in every frame
+Що відбувається на кожному кадрі
 
-Red = 92, Green = 204, Blue = 206
+Червоний = 92, Зелений = 204, Синій = 206
 
-Start x, start y, width, height
+Початок x, Початок y, ширина, висота
 
-x, y, width, height
+Зроби ширину та висоту однаковими, щоб намалювати коло
 
-Set the stand fill colour to wood
+Встановлення кольору заливки підставки на wood
 
-Set the arrow to fill colour to wood
+Встановлення кольору заливки стріли на wood
 
-Set the stand fill colour to grass
+Встановлення кольору заливки підставки на grass
 
-Set the circle fill colour to outer
+Встановлення кольору заливки кола на outer
 
-Set the circle fill colour to inner
+Встановлення кольору заливки кола на inner
 
-Set the circle fill colour to middle
+Встановлення кольору заливки кола на middle
 
-x, y, width of the circle
+x, y, ширина кола
 
-Inner circle - x, y, width of the circle
+Внутрішнє коло - x, y, ширина кола
 
-Middle circle - x, y, width of the circle
+Середнє коло - x, y, ширина кола
 
-Outer circle.200, 200 is the middle of the screen
+Зовнішнє коло. 200, 200 - це середина екрана
 
-Blue
+Синій
 
-Red
+Червоний
 
-Yellow
+Жовтий
 
-Stand
+Підставка
 
-Outer circle
+Зовнішнє коло
 
-Inner circle
+Внутрішнє коло
 
-Bullseye
+Яблучко
 
-The shoot_arrow function goes here
+Функція shoot_arrow викликається тут
 
-Import library code
+Імпорт коду бібліотеки
 
-Update to random coordinates
+Оновити до рандомних координат
 
-Save the colour before drawing the arrow
+Збереження кольору перед малюванням стріли
 
-The mouse_pressed function goes here
+Функція mouse_pressed викликається тут
 
-Can be used in other functions
+Можна використовувати в інших функціях
 
-Like functions, 'if' statements are indented
+Подібно до функцій, оператори 'if' починаються з абзацного відступу
 
-Setup your game here
+Налаштуй свою гру тут
 
-width and height
+ширина та висота
 
-Definitions for compatibility with the p5py processing library
+Визначення для сумісності з бібліотекою p5py
 
-Shape
+Фігура
 
-Fonts
+Шрифти
 
-Text
+Текст
 
-Colour
+Колір
 
-Images
+Зображення
 
-Environment
+Довкілля
 
-Transform
+Перетворення
 
-Keyboard
+Клавіатура
 
-Keep this to run your code
+За допомогою цього ти зможеш запустити свій код
 
-Store a random number between 100 and 300
+Зберігання випадкового числа в діапазоні від 100 до 300
 
-Get the hit colour
+Визначити, в який колір влучено
 
-Draw a small circle at random coordinates
+Намалювати маленьке коло на випадкових координатах
 
-width and height of screen
+ширина та висота екрана
