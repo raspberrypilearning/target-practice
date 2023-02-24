@@ -1,18 +1,18 @@
-## Quick quiz
+## Швидкий тест
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Дай відповідь на три запитання. Підказки допоможуть знайти правильну відповідь.
 
-When you have answered each question, click on **Check my answer**.
+Відповівши на кожне питання, натисни на **Перевірити мою відповідь**.
 
-Have fun!
+Розважайся!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend: Питання 1 з 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Ось синій квадрат. Якими RGB-значеннями він буде створений?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Одинарний блок синього кольору.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Не зовсім так. Коли всі значення кольору встановлені на `0`, колір буде **чорним**.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Не зовсім так, кольори відповідають стандарту RGB. Цей колір має максимальне значення R, але без G або B, тому колір буде **червоним**.
 
   --- /feedback ---
 
@@ -36,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  Правильно! Кольори відповідають RGB стандарту. Цей колір не має ні R, ні G, а лише B (на максимум), тому колір буде **синім**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Не зовсім так. Коли всі значення кольору встановлені на максимальні `255`, колір буде **білим**.
 
   --- /feedback ---
 
