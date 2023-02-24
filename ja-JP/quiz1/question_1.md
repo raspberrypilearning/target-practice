@@ -2,17 +2,17 @@
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-When you have answered each question, click on **Check my answer**.
+各質問の後、**ボタン**を押してください。 正しい答えが表示されます。
 
-Have fun!
+お楽しみください!
 
 --- question ---
 ---
 legend: 質問1/3
 ---
-Here is a blue square, what are the RGB values that will create it?
+ここに青い正方形がありますが、これを作成するRGBの値は？
 
-![A single block of blue colour.](images/quiz-colour.png)
+![青い色の単一ブロック。](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+ちょっと違います、すべての色の値が `0`に設定されている場合、色は **黒**です。
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+ちょっと違います、色はRGBモデルに従います。 この色はR値が最大でGやBがないので、**赤**になります。
 
   --- /feedback ---
 
