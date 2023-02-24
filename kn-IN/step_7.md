@@ -1,4 +1,4 @@
-## Upgrade your project
+## ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ ಅಪ್‌ಗ್ರೇಡ್‌ ಮಾಡಿ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -13,7 +13,7 @@ Personalise and add more to your project. Perhaps you could change the difficult
 
 --- task ---
 
-You could:
+ನೀವು:
 
 + Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
 + Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
@@ -26,10 +26,10 @@ You could:
 
 --- collapse ---
 ---
-title: Completed project
+ಶೀರ್ಷಿಕೆ: ಪೂರ್ಣಗೊಂಡ ಪ್ರಾಜೆಕ್ಟ್
 ---
 
-You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+ನೀವು [ಇಲ್ಲಿ ಪೂರ್ಣಗೊಂಡ ಪ್ರಾಜೆಕ್ಟ್ ನೋಡಬಹುದು](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
