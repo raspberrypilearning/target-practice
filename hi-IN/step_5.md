@@ -1,4 +1,4 @@
-## Score points
+## अंक स्कोर करें
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ Your game will add scores based on where the arrow hits.
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![लक्ष्य, तीर विभिन्न स्थानों के साथ, और खेल के नीचे टेक्स्ट के रूप में दिखने वाला स्कोर।](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
@@ -22,7 +22,7 @@ line_highlights: 28
 ---
 
 def draw():
-# Things to do in every frame
+# हर फ्रेम में करने के लिए चीजें
   global wood, outer, inner, middle    
 sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206    
 grass = color(149, 212, 122)    
@@ -36,7 +36,7 @@ middle = color(220, 200, 0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+हम निर्णय लेने के लिए हर समय <span style="color: #0faeb0; font-weight: bold;">कंडीशन्स</span> का उपयोग करते हैं। हम कह सकते हैं 'अगर पेंसिल को कुंद कर दिया जाए, तो उसे तेज कर दें'। Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
 </p>
 
 ### Display the scores
@@ -50,7 +50,7 @@ Delete ❌ the `print( red(hit_color), green(hit_color), blue(hit_color) )` line
 language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
 line_highlights: 9
 ---
-# The mouse_pressed function goes here
+# mouse_pressed फ़ंक्शन यहाँ जाता है
 def mouse_pressed():
 
 
