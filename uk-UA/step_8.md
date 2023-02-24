@@ -1,10 +1,10 @@
-## What next?
+## Challenge: створіть власну групу
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Якщо ти йдеш по мануалу [Знайомство з Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro), можеш перейти до проєкту [Запуск ракети](https://projects.raspberrypi.org/en/projects/rocket-launch). У цьому проєкті ти будеш створювати інтерактивну анімацію ракети, яка буде виводити супутник на орбіту.
 
 --- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png)
+![Проект запуск ракети.](images/showcase_rocket.png)
 
 --- /print-only ---
 
@@ -12,20 +12,20 @@ If you are following the [Introduction to Python](https://projects.raspberrypi.o
 
 --- task ---
 
-**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use to reach orbit but not waste too much extra fuel?
+**Спробуй:** Твоя програма буде регулювати анімацію в залежності від того, скільки пального буде використано та чи вдасться досягти орбіти. Скільки палива необхідно використати, щоб досягти орбіти, але не витратити занадто багато зайвого палива?
 
-**Tip:** Around 25,000kg should be enough, but experiment with the numbers to see what happens.
+**Порада:** Приблизно 25,000 кг має вистачити, але поекспериментуй з цифрами, щоб дізнатися, що може статися.
 
 <iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Rocket launch project](images/showcase_rocket.png)
+![Проєкт Запуск ракети](images/showcase_rocket.png)
 
 --- /task ---
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Якщо ти хочеш отримати більше задоволення від вивчення Python, спробуй один з [цих проєктів](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
 
 
 
