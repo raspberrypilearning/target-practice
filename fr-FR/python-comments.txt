@@ -6,23 +6,23 @@ Départ x, départ y, largeur, hauteur
 
 x, y, largeur, hauteur
 
-Set the stand fill colour to wood
+Définir la couleur de remplissage du support sur bois
 
-Set the arrow to fill colour to wood
+Définir la couleur de remplissage de la flèche sur bois
 
-Set the stand fill colour to grass
+Définir la couleur de remplissage du support sur herbe
 
-Set the circle fill colour to outer
+Définir la couleur de remplissage de l'ellipse sur extérieur
 
-Set the circle fill colour to inner
+Définir la couleur de remplissage de l'ellipse sur intérieur
 
-Set the circle fill colour to middle
+Définir la couleur de remplissage de l'ellipse sur milieu
 
-x, y, width of the circle
+x, y, largeur de l'ellipse
 
-Inner circle - x, y, width of the circle
+Cercle intérieur - x, y, largeur de l'ellipse
 
-Middle circle - x, y, width of the circle
+Cercle du centre - x, y, largeur de l'ellipse
 
 Cercle extérieur. 200, 200 est le milieu de l'écran
 
@@ -38,7 +38,7 @@ Cercle extérieur
 
 Cercle intérieur
 
-Centre
+Mille
 
 La fonction tire_fleche vient ici
 
@@ -48,7 +48,7 @@ Mise à jour des coordonnées aléatoires
 
 Enregistrer la couleur avant de dessiner la flèche
 
-La fonction mouse_pressed vient ici
+La fonction souris_pressee vient ici
 
 Peut être utilisé dans d'autres fonctions
 
@@ -78,10 +78,10 @@ Clavier
 
 Garde ceci pour exécuter ton code
 
-Store a random number between 100 and 300
+Stocker un nombre aléatoire entre 100 et 300
 
-Get the hit colour
+Obtenir la couleur du succès
 
-Draw a small circle at random coordinates
+Dessiner une petite ellipse à des coordonnées aléatoires
 
-width and height of screen
+largeur et hauteur de l'écran
