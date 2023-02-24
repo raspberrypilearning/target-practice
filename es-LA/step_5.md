@@ -81,13 +81,13 @@ print('You hit the outer circle, 50 points!') # Al igual que las funciones, las 
 
 --- task ---
 
-**Test:** Ejecuta tu proyecto. Intenta detener la flecha en el círculo exterior azul para ver su mensaje.
+**Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en el círculo exterior azul para ver su mensaje.
 
 **Consejo:** 💡 `frame_rate()`, en `setup`, controla qué tan rápido se dibuja tu juego. Si va demasiado rápido, configúralo en un número más bajo.
 
 ![El área de salida con la flecha tocando el círculo exterior. La declaración de impresión de puntos aparece en el área de salida.](images/blue-points.png)
 
-**Depurar:** Asegúrate de que tu código coincida exactamente y de que hayas indentado el código dentro de tu declaración `if`.
+**Debug:** Asegúrate de que tu código coincida exactamente y de que hayas indentado el código dentro de tu declaración `if`.
 
 --- /task ---
 
@@ -119,11 +119,11 @@ print('You hit the middle, 500 points!')
 
 **Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en los círculos interior y medio para ver sus mensajes.
 
-![El área de salida con la flecha tocando el círculo interior. La declaración de impresión de puntos aparece en el área de salida.](images/yellow-points.png)
+![El área de salida con la flecha tocando el círculo interior. La declaración escrita de puntos aparece en el área de salida.](images/yellow-points.png)
 
-**Depuración:** 🐞 Comprueba que tu sangría coincida con el ejemplo.
+**Debug:** 🐞 Comprueba que tu sangría coincida con el ejemplo.
 
-**Depuración:** 🐞 Si ve un mensaje sobre `inner` o `middle` que están 'not defined', vuelve a `draw()` y verifica que estén en la línea que declara variables globales.
+**Debug:** 🐞 Si ve un mensaje sobre `inner` o `middle` que están 'not defined', vuelve a `draw()` y verifica que estén en la línea que declara variables globales.
 
 --- /task ---
 
@@ -163,7 +163,7 @@ print('You missed! ¡Sin puntos!')
 
 **Elije:** 💭 Cambia la cantidad de puntos que ganas para los diferentes colores si así lo deseas.
 
-![El área de salida con una flecha que no da en el blanco. La declaración de impresión de puntos aparece en el área de salida.](images/missed-points.png)
+![El área de salida con una flecha que no da en el blanco. La declaración escrita de puntos aparece en el área de salida.](images/missed-points.png)
 
 --- /task ---
 
