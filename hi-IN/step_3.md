@@ -1,4 +1,4 @@
-## Draw your target
+## अपना लक्ष्य बनाएँ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ Your game needs a target to shoot arrows at.
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![लक्ष्य और स्टैंड वाला आउटपुट क्षेत्र।](images/three-circle.png){:width="300px"}
 
 </div>
 </div>
