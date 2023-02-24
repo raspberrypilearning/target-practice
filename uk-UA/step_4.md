@@ -1,40 +1,40 @@
-## Fire your arrow
+## Пусти стрілу
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When you click or tap, an arrow will fire at the position of a moving target circle. 
+Коли ти будеш натискати або торкатися, стріла буде вистрілювати в місці розташування рухомого круга-мішені. 
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![Мішень з коричневою круговою стрілою, що з'являється в різних положеннях.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Draw a target circle every frame
+### Намалюй коло для мішені для кожного кадра
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Комп'ютери створюють ефект руху, показуючи зображення одне за одним. Кожне зображення має назву <span style="color: #0faeb0; font-weight: bold;"> кадр</span>.   
 </p>
 
 --- task ---
 
-Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
+Визнач свою функцію `shoot_arrow()` під коментарем **# Функція shoot_arrow викликається тут**.
 
-Add code to randomly draw a brown circle within a target area:
+Додай код, щоб випадковим чином з'являвся коричневий кружок всередині мішені:
 
-![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
+![Прямокутник, що показує координати області мішені в напівпрозорому прямокутнику. Область мішені знаходиться в межах від x=100 і y=100 до x=300 і y=300, тобто охоплює всю мішень та більше.](images/target_area.png)
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
 line_highlights: 10, 11, 12, 13, 14
 ---
-# The shoot_arrow function goes here
+# Функція shoot_arrow викликається тут
 def shoot_arrow():   
-arrow_x = randint(100, 300) # Store a random number between 100 and 300    
-arrow_y = randint(100, 300) # Store a random number between 100 and 300    
-fill(wood) # Set the arrow to fill colour to wood   
-circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
+arrow_x = randint(100, 300) # Зберігає випадкове число від 100 до 300    
+arrow_y = randint(100, 300) # Зберігає випадкове число від 100 до 300    
+fill(wood) # Встановлення кольору заливки стріли на wood   
+circle(arrow_x, arrow_y, 15) # Малювання маленького кола на випадкових координатах
 
 --- /code ---
 
@@ -42,7 +42,7 @@ circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- task ---
 
-Go to the `draw` function and call your new `shoot_arrow` function.
+Перейди до функцій `draw` та зроби виклик твоєї нової функції `shoot_arrow`.
 
 --- code ---
 ---
@@ -59,53 +59,53 @@ shoot_arrow()
 
 --- task ---
 
-**Test:** 🔄 Run you code and see the arrow appear in a random position each frame.
+**Тест:** 🔄 Запусти свій код та подивись, як стріла з'являється у випадковому місці в кожному кадрі.
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Мішень з коричневою стрілою у вигляді кружечка, що з'являється в різних положеннях.](images/fire_arrow.gif)
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+Фон та мішень будуть перемальовані поверх старої стріли. Це означає, що ти побачиш лише одну стрілу за один раз.
 
 --- /task ---
 
-### Get the colour hit by the arrow
+### Визнач колір, на який потрапила стріла
 
-The `get()` function returns the colour of a pixel.
+Функція `get()` повертає колір пікселя.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+<span style="color: #0faeb0; font-weight: bold;">Піксель</span>, скорочено від picture element - це окрема кольорова точка у зображенні. Зображення складаються з великої кількості кольорових пікселів.
 </p>
 
 --- task ---
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
+Додай код, щоб `get` колір пікселя з центру стріли та зберегти його у змінній `hit_color`.
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
 line_highlights: 13
 ---
-# The shoot_arrow function goes here
+# Функція shoot_arrow викликається тут
 def shoot_arrow():    
 arrow_x = randint(100, 300)    
 arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
+hit_color = get(arrow_x, arrow_y) # Визначення, в який колір влучено fill(wood)  
 circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
-**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
+**Порада:** 💡 Код для визначення кольору `get` повинен бути **перед** кодом, який малює коло `circle`, інакше колір wood для стріли збережеться назавжди!
 
 --- /task ---
 
-### Print the colour when the mouse is pressed
+### Виведення кольору, коли натиснута кнопка миші
 
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
+Бібліотека `p5` 'слухає' та реагує на певні події, однією з яких є натискання кнопки миші. Коли буде виявлено, що кнопка натиснута, буде виконано той код, який було задано у функції `mouse_pressed`.
 
 --- task ---
 
-Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
+Визнач свою функцію `mouse_pressed()` під коментарем **# Функція mouse_pressed викликається тут**.
 
-Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
+Додай код, щоб надрукувати кількість червоного, зеленого та синього кольорів у пікселі, на який потрапляє стріла.
 
 --- code ---
 ---
@@ -113,7 +113,7 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 8, 9
 ---
 
-# The mouse_pressed function goes here
+# Функція mouse_pressed викликається тут
 def mouse_pressed():    
 print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -123,19 +123,19 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- task ---
 
-Make `hit_color` a **global variable** so that it can be used throughout your code:
+Зроби `hit_color` **глобальною змінною**, щоб її можна було використовувати для всього твого коду:
 
 --- code ---
 ---
 language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
 line_highlights: 13
 ---
-# The shoot_arrow function goes here
+# Функція shoot_arrow викликається тут
 def shoot_arrow():    
-global hit_color # Can be used in other functions     
+global hit_color # Можна використовувати в інших функціях     
 arrow_x = randint(100, 300)     
 arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow fill(wood)     
+hit_color = get(arrow_x, arrow_y) # Збереження кольору перед малюванням стріли fill(wood)     
 circle(arrow_x, arrow_y, 15)
 
 --- /code ---
@@ -144,15 +144,15 @@ circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-**Test:** 🔄 Run your project.
+**Тест:** 🔄 Запусти свій проєкт.
 
-The project prints the `hit_color` each time the arrow is redrawn.
+Проєкт буде виводити `hit_color` щоразу, коли стріла буде перемальовуватися.
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Мішень з коричневою стрілою у вигляді кружечка, що з'являється в різних положеннях.](images/fire_arrow.gif)
 
-**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+**Налагодження:** 🐞 Якщо ти побачиш повідомлення про те, що `hit_color` "не визначено", то повернись до `shoot_arrow()` та перевір, чи є у тебе рядок `global hit_color`.
 
-**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
+**Налагодження:** 🐞 Уважно перевір рядок `print` на наявність ком і дужок.
 
 --- /task ---
 
