@@ -1,43 +1,43 @@
-sky
+небо
 
-grass
+трава
 
-wood
+деревина
 
-outer
+зовнішній
 
-inner
+внутрішній
 
-bullseye
+яблучко
 
-shoot_arrow
+стріляти_стрілка
 
-arrow_x
+стрілка_x
 
-arrow_y
+стрілка_y
 
-hit_color
+удар_колір
 
-You hit the outer circle, 50 points!
+Влучення в зовнішнє коло - 50 балів!
 
-You hit the inner circle, 200 points!
+Влучення в внутрішнє коло - 200 балів!
 
-You hit the middle, 500 points!
+Влучення в центр - 500 балів!
 
-You hit the bullseye, 500 points!
+В яблучко - 500 балів!
 
-You missed! No points!
+Промах! Ніяких балів!
 
-How fast do you want the arrow? slow, medium, fast
+З якою швидкістю ти хочеш, щоб стріла рухалася? повільно, середньо, швидко
 
-You hit red, 200 points!
+Влучення в червоне - 200 балів!
 
-speed
+швидкість
 
-Super fast
+Надзвичайно швидко
 
-Pretty quick
+Досить швидко
 
-Very fast
+Дуже швидко
 
-Speed not recognised!
+Швидкість не розпізнано!
