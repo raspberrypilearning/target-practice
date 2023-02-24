@@ -1,4 +1,4 @@
-## You will make
+## Cyflwyniad
 
 Defnyddiwch Python, a'r llyfrgell graffeg `p5`, i lunio targed a sgorio pwyntiau drwy ei daro â saethau.
 
@@ -9,7 +9,7 @@ Byddi di'n:
 
 --- no-print ---
 
-### Play ▶️
+### Rhowch gynnig arni
 
 --- task ---
 
