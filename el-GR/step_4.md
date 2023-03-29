@@ -1,24 +1,24 @@
-## Ρίξε το βέλος σου
+## Fire your arrow
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Τώρα ήρθε η ώρα να προσθέσεις ένα βέλος που κινείται τυχαία στην περιοχή του στόχου. 
+When you click or tap, an arrow will fire at the position of a moving target circle. 
 </div>
 <div>
 
-![Ο στόχος, με ένα καφέ κυκλικό βέλος να εμφανίζεται σε διάφορες θέσεις.](images/fire_arrow.gif){:width="300px"}
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Μάθε το χρώμα που χτυπά το βέλος
+### Draw a target circle every frame
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
 </p>
 
 --- task ---
 
-Πρόσθεσε μία μικρή έλλειψη με τη συνάρτηση `ellipse()` στο κέντρο της οθόνης για να απεικονίσει το βέλος.
+Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
 
 Add code to randomly draw a brown circle within a target area:
 
@@ -27,9 +27,9 @@ Add code to randomly draw a brown circle within a target area:
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
-line_highlights: 11-12
+line_highlights: 10, 11, 12, 13, 14
 ---
-# Η συνάρτηση shoot_arrow πηγαίνει εδώ
+# The shoot_arrow function goes here
 def shoot_arrow():   
 arrow_x = randint(100, 300) # Store a random number between 100 and 300    
 arrow_y = randint(100, 300) # Store a random number between 100 and 300    
@@ -42,13 +42,12 @@ circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- task ---
 
-language: python filename: main.py — draw() line_numbers: true line_number_start: 41
+Go to the `draw` function and call your new `shoot_arrow` function.
 
 --- code ---
 ---
-fill(wood)   
-shoot_arrow()
-line_highlights: 44-45
+language: python filename: main.py — draw() line_numbers: true line_number_start: 42
+line_highlights: 44
 ---
   fill(middle)    
 circle(200, 200, 30)    
@@ -78,17 +77,19 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 
 --- task ---
 
-Βρες τις δηλώσεις εισαγωγής `import`, στην αρχή του κώδικά σου, θα χρησιμοποιήσεις το `randint` από τη βιβλιοθήκη `random`.
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true
-line_number_start: 3
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+line_highlights: 13
 ---
-# Εισαγωγή του κώδικα της βιβλιοθήκης
-from p5 import *    
-from math import *    
-from random import randint
+# The shoot_arrow function goes here
+def shoot_arrow():    
+arrow_x = randint(100, 300)    
+arrow_y = randint(100, 300)    
+hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -102,17 +103,17 @@ The `p5` library 'listens' for certain events, one of these is the press of the 
 
 --- task ---
 
-Άλλαξε την `ellipse()` για να χρησιμοποιήσεις τις νέες μεταβλητές για να τοποθετήσεις το βέλος σου.
+Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
 
 Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 10
-line_highlights: 12-14
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+line_highlights: 8, 9
 ---
 
-# Η συνάρτηση shoot_arrow πηγαίνει εδώ
+# The mouse_pressed function goes here
 def mouse_pressed():    
 print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -126,10 +127,10 @@ Make `hit_color` a **global variable** so that it can be used throughout your co
 
 --- code ---
 ---
-Πρέπει να αποθηκεύσεις το χρώμα στο οποίο στοχεύει το βέλος πριν σχεδιάσεις ένα βέλος πάνω του.
-line_highlights: 14
+language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
+line_highlights: 13
 ---
-# Η συνάρτηση shoot_arrow πηγαίνει εδώ
+# The shoot_arrow function goes here
 def shoot_arrow():    
 global hit_color # Can be used in other functions     
 arrow_x = randint(100, 300)     
@@ -145,7 +146,7 @@ circle(arrow_x, arrow_y, 15)
 
 **Test:** 🔄 Run your project.
 
-**Συμβουλή:** Ο κώδικας για να μάθεις το χρώμα και να το αποθηκεύσεις πρέπει να βρίσκεται **πριν από** τον κώδικα που σχεδιάζει την έλλειψη, διαφορετικά θα αποθηκεύεις πάντα το χρώμα του ξύλου του βέλους!
+The project prints the `hit_color` each time the arrow is redrawn.
 
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
