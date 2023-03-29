@@ -1,35 +1,35 @@
-## Αναβάθμιση του έργου σου
+## Upgrade your project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Κάνε τις δικές σου επιλογές και πρόσθεσε περισσότερα στο έργο σου. Ίσως θα μπορούσες να αλλάξεις το επίπεδο δυσκολίας ή να προσθέσεις περισσότερους κύκλους στον στόχο σου.
+Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
 </div>
 <div>
 
-![Η περιοχή εξόδου δείχνει έναν στόχο με πέντε κύκλους.](images/five_circles.png){:width="300px"}
+![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Θα μπορούσες να:
+You could:
 
-+ Προσθέσεις έναν `τέταρτο` και `πέμπτο` κύκλο, με νέα χρώματα, που δίνουν διαφορετικούς πόντους με βάση τη θέση τους
-+ Τοποθετήσεις emoji στα μηνύματα που εμφανίζονται ([εδώ είναι μια λίστα με emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} από την οποία μπορείς να αντιγράψεις)
-+ Κάνεις το παιχνίδι ευκολότερο ή δυσκολότερο αλλάζοντας την τιμή `frame_rate(2)`
-+ Χρησιμοποιήσεις το `input()` για να ρωτήσεις τον χρήστη σε ποιο επίπεδο δυσκολίας θέλει να παίξει
++ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
++ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
++ Make the game easier or harder by changing the `frame_rate(2)` value 💨
++ Use `input()` to ask the user which difficulty level they want to play at 🗣️
 
 --- /task ---
 
-![Ιδέες αναβάθμισης του έργου: μία με πέντε κύκλους, μία με ερώτηση εισαγωγής δυσκολίας, μία με emoji στο μήνυμα πόντων.](images/upgrade-ideas.png)
+![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
-title: Ολοκληρωμένο έργο
+title: Completed project
 ---
 
-Μπορείς να δεις [ολοκληρωμένο το έργο εδώ](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
