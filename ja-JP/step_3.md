@@ -1,4 +1,4 @@
-## ターゲットを描く
+## Draw your target
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,27 +6,28 @@ Your game needs a target to shoot arrows at.
 </div>
 <div>
 
-![ターゲットとスタンドのある出力エリア。](images/three-circles.png){:width="300px"}
+![The output area with the target and stand.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-### スタンドを描く
+### Draw a triangular stand
 
 --- task ---
 
 Set the fill colour to `wood` (brown).
 
-ここでは、それぞれ異なる座標を持つ3つの三角形の例を示します。
+Draw a triangle using the x and y coordinates for each of the corners.
 
 ![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 28
-line_highlights: 37-40
+language: python filename: main.py - draw() line_numbers: true line_number_start: 27
+line_highlights: 29, 30
 ---
-  fill(wood) #スタンドフィルカラーをブラウンに設定     
+  fill(grass)   
+rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
 triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
@@ -35,17 +36,17 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**テスト：** コードを実行して、ターゲットのスタンドを確認します。
+**Test:** 🔄 Run your code to see the stand for your target:
 
-![草の上と空を背景にした茶色の三角形。](images/target-stand.png){:width="400px"}
+![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### ターゲットを描く
+### Draw the target circles
 
 --- task ---
 
-**Test:** コードを実行すると、最初の大きな青い丸が表示されます。
+The largest part of the target is a blue **circle**.
 
 Set the fill colour to `outer` (blue).
 
@@ -55,14 +56,14 @@ Draw a circle with x and y coordinates for its centre and a width.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 31-32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 29
+line_highlights: 31, 32
 ---
 
   fill(wood)   
 triangle(150, 350, 200, 150, 250, 350)   
-fill(outer)    
-ellipse(200, 200, 170, 170) #外側の円 200、200は画面の中央です
+fill(outer) # Set the circle fill colour to outer    
+circle(200, 200, 170) # x, y, width of the circle
 
 --- /code ---
 
@@ -70,11 +71,11 @@ ellipse(200, 200, 170, 170) #外側の円 200、200は画面の中央です
 
 --- task ---
 
-**ヒント：**円を作るには、**幅**と**高さ**が同じである必要があります。
+**Test:** Run your code to see the first large blue circle.
 
-青い丸は、後から描いたものなので、茶色の三角が重なる部分を覆います。
+The blue circle was drawn after the stand so it is in front:
 
-![草の上と空を背景にした茶色の三角形と青い円。](images/blue-circle.png){:width="400px"}
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
@@ -82,45 +83,45 @@ ellipse(200, 200, 170, 170) #外側の円 200、200は画面の中央です
 
 👀 Find your colour variables in the `draw` function.
 
-残りの円の色 `inner` と `bullseye` を格納するために2つの新しい変数を作成します。
+Create two variables called `inner` and `middle` to store colours for the other circles.
 
-`color()`関数は、赤、緑、青にそれぞれ1つずつ、計3つの数値を想定しています。
+The `color` function expects three numbers: one each for red, green, and blue.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 33
-line_highlights: 33-34
+language: python filename: main.py - draw() line_numbers: true line_number_start: 17
+line_highlights: 24, 25
 ---
-sky = color(92, 204, 206)   
+def draw():   
+# Things to do in every frame global wood sky = color(92, 204, 206)   
 grass = color(149, 212, 122)   
 wood = color(145, 96, 51)   
-outer = color(0, 120, 180) #青    
-inner = color(210, 60, 60) # 赤    
-bullseye = color(220, 200, 0) #黄
+outer = color(0, 120, 180) # Blue    
+inner = color(210, 60, 60) # Red    
+middle = color(220, 200, 0) # Yellow
 
 --- /code ---
 
 --- /task ---
 
-ターゲットは、同じ中心座標(200, 200)、つまり画面の真ん中にある、大きさの異なる円でできています。
+The target is made of different-sized circles with the same centre coordinates (200, 200).
 
 --- task ---
 
-**Test:** プロジェクトを再度実行すると、ターゲットに3色の丸が表示されます。
+**Add** coloured circles for the inner and middle parts of the target.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 24-25
+language: python filename: main.py - draw() line_numbers: true line_number_start: 31
+line_highlights: 35, 36, 37, 38
 ---
   fill(wood)    
-triangle(150, 350, 200, 150, 250, 350) #スタンド    
+triangle(150, 350, 200, 150, 250, 350)  
 fill(outer)   
-ellipse(200, 200, 170, 170) #外側の円   
-fill(inner)   
-ellipse(200, 200, 110, 110) #内側の円   
-fill(bullseye)   
-ellipse(200, 200, 30, 30) #ブルズアイ
+circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
+circle(200, 200, 110) # Inner circle - x, y, width of the circle  
+fill(middle) # Set the circle fill colour to middle      
+circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 --- /code ---
 
@@ -128,21 +129,21 @@ ellipse(200, 200, 30, 30) #ブルズアイ
 
 --- task ---
 
-`triangle()` 関数を呼び出すとき、`x1, y1, x2, y2, x3, y3` という3組の座標が必要で、それぞれが三角形の角の1つの位置を表します。
+**Test:** 🔄 Run your project to see the target with three coloured circles.
 
-![草の上と空を背景に3色の円が描かれた茶色の三角形。](images/three-circles.png){:width="400px"}
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
 
-**デバッグ：** Python は 'color' のアメリカ綴り('u' がない) を使うので、同じようにしてください。
+**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
 
 --- /task ---
 
 --- task ---
 
-`color()`で`inner`と`bullseye`の変数に色を代入する。
+**Choose:** 💭 Change any of the colours.
 
 [[[generic-theory-simple-colours]]]
 
-![草原と空に描かれた茶色の三角形とその座標点。 The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
 
 --- /task ---
