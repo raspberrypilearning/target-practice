@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: السؤال 2 من 3
+legend: Question 2 of 3
 ---
 
-في مشروعك ، استخدمت `if` و `elif`و `else` للتحقق من اللون الذي سقط عليه السهم.
+In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
 
-In the example below, a variable called `speed` has the number `6` stored in it. عند تشغيل هذا التعليمات البرمجية ، ما الذي سيتم طباعته في منطقة المخرجات ؟
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
@@ -20,23 +20,23 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
 --- choices ---
 
-- سريع جدًا
+- (x) `Very fast`
 
   --- feedback ---
 
-  هذا صحيح! تم تخصيص متغير **speed** للقيمة `6`، مما يجعل `speed == 6` شرط **صحيح** ويطبع `سريع جدًا`.
+  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
 
   --- /feedback ---
 
-- ( ) `لا يمكن تمييز السرعة!`
+- ( ) `Speed not recognised!`
 
   --- feedback ---
 
-  ليس تمامًا ، انظر إلى القيمة المخصصة للمتغير **speed**.
+  Not quite, look at the value assigned to the **speed** variable.
 
   --- /feedback ---
 
-- لا تتم طباعة أي شيء
+- ( ) Nothing gets printed
 
   --- feedback ---
 
