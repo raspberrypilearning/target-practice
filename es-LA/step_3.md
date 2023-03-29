@@ -1,25 +1,25 @@
-## Dibuja tu blanco
+## Draw your target
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Tu juego necesita un blanco al que disparar flechas.
+Your game needs a target to shoot arrows at.
 </div>
 <div>
 
-![El área de salida con el blanco y el soporte.](images/three-circles.png){:width="300px"}
+![The output area with the target and stand.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-### Dibuja un soporte triangular
+### Draw a triangular stand
 
 --- task ---
 
-Establece el color de relleno a `wood` (marrón).
+Set the fill colour to `wood` (brown).
 
-Dibuja un triángulo usando las coordenadas x e y para cada una de las esquinas.
+Draw a triangle using the x and y coordinates for each of the corners.
 
-![Un triángulo marrón sobre hierba y contra un cielo con los puntos de coordenadas etiquetados en 150, 350 y 200, 150 y 250, 350). Las esquinas del lienzo también están etiquetadas como x=0, y=0 en la parte superior izquierda y x=400, y=400 en la parte inferior derecha.](images/stand_coords.png){:width="400px"}
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -27,7 +27,7 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 29, 30
 ---
   fill(grass)   
-rect(0, 250, 400, 150) fill(wood) #Establece el color de relleno del soporte a wood (madera)     
+rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
 triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
@@ -36,23 +36,23 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Prueba:** Ejecuta tu código para ver el soporte de tu blanco:
+**Test:** 🔄 Run your code to see the stand for your target:
 
-![Un triángulo marrón sobre el césped y contra el cielo.](images/target-stand.png){:width="400px"}
+![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Dibuja los círculos del blanco
+### Draw the target circles
 
 --- task ---
 
-La parte más grande del blanco es un **círculo** azul.
+The largest part of the target is a blue **circle**.
 
-Establece el color de relleno en `ouoter` (azul).
+Set the fill colour to `outer` (blue).
 
-Dibuja un círculo con coordenadas x e y para su centro y un ancho.
+Draw a circle with x and y coordinates for its centre and a width.
 
-![Un triángulo marrón y un círculo azul sobre el césped y contra el cielo. El círculo está etiquetado con las coordenadas x=200, y=200 como el centro y el ancho del círculo de 170.](images/circle-coords.png){:width="400px"}
+![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -71,21 +71,21 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Prueba:** Ejecuta tu código para ver el primer círculo grande azul.
+**Test:** Run your code to see the first large blue circle.
 
-El círculo azul se dibujó después del soporte, por lo que está al frente:
+The blue circle was drawn after the stand so it is in front:
 
-![Un triángulo marrón y un círculo azul sobre el césped y contra el cielo.](images/blue-circle.png){:width="400px"}
+![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-👀 Encuentra tus variables de color en la función `draw`.
+👀 Find your colour variables in the `draw` function.
 
-Crea dos variables llamadas `inner` y `middle` para almacenar colores para los otros círculos.
+Create two variables called `inner` and `middle` to store colours for the other circles.
 
-La función `color` espera tres números: uno para el rojo, uno para el verde y uno para el azul.
+The `color` function expects three numbers: one each for red, green, and blue.
 
 --- code ---
 ---
@@ -104,11 +104,11 @@ middle = color(220, 200, 0) # Yellow
 
 --- /task ---
 
-El blanco está formado por círculos de diferentes tamaños con las mismas coordenadas centrales (200, 200); el centro de la pantalla.
+The target is made of different-sized circles with the same centre coordinates (200, 200).
 
 --- task ---
 
-**Agregue** círculos de colores para las partes interior y media del objetivo.
+**Add** coloured circles for the inner and middle parts of the target.
 
 --- code ---
 ---
@@ -129,21 +129,21 @@ circle(200, 200, 30) # Middle circle - x, y, width of the circle
 
 --- task ---
 
-**Prueba:** Vuelve a ejecutar tu proyecto para ver el blanco con tres círculos de colores.
+**Test:** 🔄 Run your project to see the target with three coloured circles.
 
-![Un triángulo marrón con tres círculos de colores sobre el césped y contra el cielo.](images/three-circles.png){:width="400px"}
+![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
 
-**Depuración:** 🐞 Comprueba que has utilizado la ortografía americana de 'color' (sin 'u').
+**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
 
 --- /task ---
 
 --- task ---
 
-**Elige:** 💭 Cambia cualquiera de los colores.
+**Choose:** 💭 Change any of the colours.
 
 [[[generic-theory-simple-colours]]]
 
-![Un triángulo marrón con tres círculos de colores sobre el césped y contra el cielo. Los colores han cambiado a rosas y morados.](images/alternative-colours.png){:width="400px"}
+![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
 
 
 --- /task ---
