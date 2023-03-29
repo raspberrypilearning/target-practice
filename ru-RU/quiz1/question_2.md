@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Вопрос 2 из 3
+legend: Question 2 of 3
 ---
 
 In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
