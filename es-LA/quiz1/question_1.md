@@ -1,42 +1,42 @@
-## Examen rápido
+## Quick quiz
 
-Contesta las tres preguntas. Hay sugerencias que te guían hacia la respuesta correcta.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Cuando hayas respondido a cada pregunta, haz clic en **Revisar mi respuesta**.
+When you have answered each question, click on **Check my answer**.
 
-¡Qué te diviertas!
+Have fun!
 
---- pregunta ---
+--- question ---
 ---
-legend: Pregunta 1 de 3
+legend: Question 1 of 3
 ---
-Aquí hay un cuadrado azul, ¿cuáles son los valores RGB que lo crearán?
+Here is a blue square, what are the RGB values that will create it?
 
-![Un solo bloque de color azul.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
---- opciones ---
+--- choices ---
 
 - ( ) (0, 0, 0)
 
   --- feedback ---
 
-No exactamente, cuando todos los valores de color se establecen en `0`, el color es **negro**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
-  --- /retroalimentación ---
+  --- /feedback ---
 
 - ( ) (255, 0, 0)
 
   --- feedback ---
 
-No exactamente, los colores siguen el modelo RGB. Este color tiene un valor R máximo y no tiene G ni B, por lo que será **rojo**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
-  --- /retroalimentación ---
+  --- /feedback ---
 
 - (x) (0, 0, 255)
 
   --- feedback ---
 
-  ¡Correcto! Los colores siguen el modelo RGB. Este color no tiene R ni G, pero sí máximo B, por lo que será **azul**.
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -44,10 +44,10 @@ No exactamente, los colores siguen el modelo RGB. Este color tiene un valor R m�
 
   --- feedback ---
 
-  No del todo, cuando todos los valores de color se establecen en el máximo de `255`, el color es **blanco**.
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 
---- /opciones ---
+--- /choices ---
 
---- /pregunta ---
+--- /question ---
