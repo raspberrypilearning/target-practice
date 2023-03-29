@@ -1,35 +1,35 @@
-## Dispara tu flecha
+## Fire your arrow
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Al hacer clic o tocar, se disparará una flecha en la posición de un blanco en movimiento. 
+When you click or tap, an arrow will fire at the position of a moving target circle. 
 </div>
 <div>
 
-![El blanco, con una flecha circular marrón que aparece en una variedad de posiciones.](images/fire_arrow.gif){:width="300px"}
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Dibuja un blanco en cada cuadro
+### Draw a target circle every frame
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Las computadoras crean el efecto de movimiento al mostrar muchas imágenes una tras otra. Cada imagen se llama un <span style="color: #0faeb0; font-weight: bold;"> fotograma </span>.   
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
 </p>
 
 --- task ---
 
-Define tu función `shoot_arrow()` debajo del comentario **# La función shoot_arrow va aquí**.
+Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
 
-Agrega código para dibujar aleatoriamente un círculo marrón dentro de un área objetivo:
+Add code to randomly draw a brown circle within a target area:
 
-![Un rectángulo que muestra las coordenadas del área objetivo en un rectángulo semitransparente. El área objetivo está entre x=100 e y=100 a x=300 e y=300, por lo que cubre todo el blanco y más.](images/target_area.png)
+![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
 line_highlights: 10, 11, 12, 13, 14
 ---
-# La función disparar_flecha va aquí
+# The shoot_arrow function goes here
 def shoot_arrow():   
 arrow_x = randint(100, 300) # Store a random number between 100 and 300    
 arrow_y = randint(100, 300) # Store a random number between 100 and 300    
@@ -42,7 +42,7 @@ circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- task ---
 
-Ve a la función `draw` y llama a tu nueva función `shoot_arrow`.
+Go to the `draw` function and call your new `shoot_arrow` function.
 
 --- code ---
 ---
@@ -59,32 +59,32 @@ shoot_arrow()
 
 --- task ---
 
-**Prueba:** 🔄 Ejecuta tu código y observa que la flecha aparece en una posición aleatoria en cada cuadro.
+**Test:** 🔄 Run you code and see the arrow appear in a random position each frame.
 
-![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-El fondo y el objetivo se dibujarán sobre la flecha anterior. Esto significa que solo verás una flecha a la vez.
+The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
 
 --- /task ---
 
-### Obtener el color donde se clavó la flecha
+### Get the colour hit by the arrow
 
-La función `get()` devuelve el color de un píxel.
+The `get()` function returns the colour of a pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Un <span style="color: #0faeb0; font-weight: bold;">píxel</span>, abreviatura de elemento de imagen (picture element), es un punto de un solo color dentro de una imagen. Las imágenes están formadas por muchos píxeles de colores.
+A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
 </p>
 
 --- task ---
 
-Agrega código a `get` el color del píxel en el centro de la flecha y guárdalo en la variable `hit_color`.
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
 line_highlights: 13
 ---
-# La función shoot_arrow va aquí
+# The shoot_arrow function goes here
 def shoot_arrow():    
 arrow_x = randint(100, 300)    
 arrow_y = randint(100, 300)    
@@ -93,19 +93,19 @@ circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
-**Consejo:** 💡 El código para `obtener` el color debe estar**antes** del código para dibujar el `círculo` lo contrario, ¡siempre guardará el color de madera de la flecha!
+**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
 
 --- /task ---
 
-### Imprime el color cuando se presiona el mouse
+### Print the colour when the mouse is pressed
 
-La biblioteca `p5` "escucha" por ciertos eventos, uno de ellos es presionar el botón del mouse. Cuando detecta que el botón ha sido presionado, ejecutará el código que se le haya dado en la función `mouse_pressed`.
+The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
 
 --- task ---
 
-Define tu función `mouse_pressed()` debajo del comentario **# La función mouse_pressed va aquí**.
+Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
 
-Agrega código para imprimir las cantidades de rojo, verde y azul en el píxel en el que aterriza la flecha.
+Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
 
 --- code ---
 ---
@@ -113,7 +113,7 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 8, 9
 ---
 
-# La función mouse_pressed va aquí
+# The mouse_pressed function goes here
 def mouse_pressed():    
 print( red(hit_color), green(hit_color), blue(hit_color) )
 
@@ -123,14 +123,14 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- task ---
 
-Convierte `hit_color` en un **variable global** para que pueda usarse en todo tu código:
+Make `hit_color` a **global variable** so that it can be used throughout your code:
 
 --- code ---
 ---
 language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
 line_highlights: 13
 ---
-# La función disparar_flecha va aquí
+# The shoot_arrow function goes here
 def shoot_arrow():    
 global hit_color # Can be used in other functions     
 arrow_x = randint(100, 300)     
@@ -144,15 +144,15 @@ circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-**Test:** Ejecuta tu proyecto.
+**Test:** 🔄 Run your project.
 
-El proyecto escribe el `hit_color` cada vez que se vuelve a dibujar la flecha.
+The project prints the `hit_color` each time the arrow is redrawn.
 
-![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-**Debug:** 🐞 Si ves un mensaje sobre `hit_color` 'not defined', vuelve a `shoot_arrow()` y comprueba que tienes la línea `global hit_color`.
+**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
 
-**Debug:** Verifica la línea `print` con mucho cuidado en busca de comas y paréntesis.
+**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
 
 --- /task ---
 
