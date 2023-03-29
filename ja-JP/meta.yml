@@ -1,28 +1,28 @@
 ---
-title: 射的
+title: Target practice
 hero_image: images/banner.png
-description: Pythonでターゲットを描き、矢を当てて得点を表示します
+description: Use Python to draw a target and score points by hitting it with arrows
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: はじめに
+    title: You will make
   - 
-    title: 背景を作成する
+    title: Create a background
   - 
-    title: ターゲットを描く
+    title: Draw your target
     completion:
       - engaged
   - 
-    title: 矢を放つ
+    title: Fire your arrow
   - 
-    title: 得点
+    title: Score points
     completion:
       - internal
   - 
-    title: ふりかえり
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: プロジェクトをアップグレードする
+    title: Upgrade your project
   - 
-    title: 次は何をしますか？
+    title: What next?
