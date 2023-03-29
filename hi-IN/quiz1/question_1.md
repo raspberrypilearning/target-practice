@@ -8,7 +8,7 @@ Have fun!
 
 --- question ---
 ---
-legend: प्रश्न 1 का 3
+legend: Question 1 of 3
 ---
 Here is a blue square, what are the RGB values that will create it?
 
@@ -36,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  यह सही है! रंग RGB मॉडल का पालन करते हैं। इस रंग में कोई R या G नहीं है, लेकिन अधिकतम B है, इसलिए **नीला (blue)** होगा।
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  बिल्कुल नहीं, जब सभी रंग मान `255` अधिकतम पर सेट होते हैं, तो रंग **सफ़ेद (white)** होता है।
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 
