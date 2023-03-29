@@ -1,35 +1,35 @@
-## Verbeter je project
+## Upgrade your project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Nu is het jouw beurt! Wat kun jij nog meer toevoegen aan je project?  Misschien kun je de moeilijkheidsgraad aanpassen of meer cirkels aan je doel toevoegen.
+Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
 </div>
 <div>
 
-![Het uitvoergebied toont een doel met vijf cirkels.](images/five_circles.png){:width="300px"}
+![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Je kunt:
+You could:
 
-+ Een `vierde` en `vijfde` cirkel toevoegen, in nieuwe kleuren, die verschillende punten scoren op basis van hun positie
-+ Emoji in je gedrukte berichten zetten ([hier is een lijst met emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} waaruit je kunt kopiëren)
-+ Het spel gemakkelijker of moeilijker maken door de waarde van `frame_rate(2)` te wijzigen
-+ `input()` gebruiken om de gebruiker te vragen op welk moeilijkheidsniveau ze willen spelen
++ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
++ Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
++ Make the game easier or harder by changing the `frame_rate(2)` value 💨
++ Use `input()` to ask the user which difficulty level they want to play at 🗣️
 
 --- /task ---
 
-![Verbeterde projectideeën: één met vijf cirkels, één met een moeilijkheidsvraag, één met emoji in het puntenbericht.](images/upgrade-ideas.png)
+![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
-title: Voltooid project
+title: Completed project
 ---
 
-Je kunt het [voltooide project hier](https://trinket.io/python/f686c82d8a){:target="_blank"} bekijken.
+You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
