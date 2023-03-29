@@ -1,54 +1,54 @@
-## Créer un arrière-plan
+## Create a background
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Ton jeu a besoin d'un arrière-plan coloré.
+Your game needs a colourful background.
 </div>
 <div>
 
-![La zone de sortie avec un rectangle de couleur ciel au-dessus d'un rectangle de couleur herbe pour créer l'arrière-plan.](images/background.png){:width="300px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
 
 </div>
 </div>
 
-### Ouvrir le projet de démarrage
+### Open the starter project
 
 --- task ---
 
-Ouvre le [projet de démarrage Tir à l'arc](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-Si tu as un compte Trinket, tu peux cliquer sur le bouton **Remix** pour enregistrer une copie dans ta bibliothèque `My Trinkets`.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
-### Modifier le ciel
+### Edit the sky
 
 --- task ---
 
-Le projet de démarrage contient du code déjà écrit pour toi.
+The starter project has some code already written for you.
 
-Clique sur **« Run »** pour voir un rectangle rempli de bleu dessiné à partir de x=`0`, y=`0` (le haut de l'écran). Ce rectangle de `400` x `250` pixels représente le ciel.
+Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
-![Un rectangle bleu entouré d'une bordure noire, au-dessus d'un rectangle gris. Le coin supérieur gauche du canevas est marqué par x=0, y=0 c'est l'origine du rectangle. La largeur est surlignée à 400 et la hauteur à 250. Le code rect(0, 0, 400, 250) s'affiche.](images/sky_stroke.png){:width="400px"}
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
-**Astuce :** 💡 Les coordonnées commencent à partir de (x=0, y=0) dans le coin supérieur gauche. Cela peut être différent des autres systèmes de coordonnées que tu as utilisés.
+**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
 --- /task ---
 
 --- task ---
 
-Le ciel a été dessiné avec une bordure noire (trait).
+The sky has been drawn with a black border (stroke).
 
-Pour désactiver le trait pour toutes les formes, ajoute `no_stroke()` à la fonction `configuration` :
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — configuration() line_numbers: true line_number_start: 11
-line_highlights: 25
+language: python filename: main.py — setup() line_numbers: true line_number_start: 11
+line_highlights: 15
 ---
-def configuration():
-# Configurer ton jeu ici
-  size(400, 400) # largeur et hauteur de l'écran frame_rate(2) no_stroke()
+def setup():
+# Setup your game here
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -56,42 +56,42 @@ def configuration():
 
 --- task ---
 
-**Exécute** à nouveau ton projet pour vérifier 👀 que la bordure (trait) a disparue.
+**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
 
 --- /task ---
 
-### Dessiner l'herbe
+### Draw the grass
 
 --- task ---
 
-**Ajoute** du code pour dessiner un rectangle vert en bas de l'écran.
+**Add** code to draw a green rectangle at the bottom of the screen.
 
-![La zone de sortie avec un rectangle de couleur ciel au-dessus d'un rectangle de couleur herbe pour créer l'arrière-plan. Le coin supérieur gauche du rectangle est marqué x=0, y=250 ; c'est l'origine du rectangle. La largeur est surlignée à 400 et la hauteur à 150. Le code rect(0, 0, 400, 250) s'affiche.](images/green-grass.png){:width="400px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py — dessin() line_numbers: true line_number_start: 17
+language: python filename: main.py — draw() line_numbers: true line_number_start: 17
 line_highlights: 27, 28
 ---
-def dessin():
-# Choses à faire dans chaque image
-  global bois ciel= color(92, 204, 206) # Rouge = 92, Vert = 204, Bleu = 206 herbe = color(149, 212, 122) bois = color(145, 96, 51) exterieur = color(0, 120, 180)
+def draw():
+# Things to do in every frame
+  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  fill(ciel)     
+  fill(sky)     
 rect(0, 0, 400, 250)     
-fill(herbe) # Défini la couleur de remplissage de l'herbe rect(0, 250, 400, 150) # x, y, largeur, hauteur
+fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
 
 --- /code ---
 
-**Astuce :** 💡 Nous avons ajouté des commentaires à notre code, comme `# Définir la couleur de remplissage à l'herbe`, pour t'indiquer ce qu'il fait. Tu n'as pas besoin d'ajouter ces commentaires à ton code, mais ils peuvent être utiles pour te rappeler ce que font les lignes de code.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-**Test :** 🔄 Exécute à nouveau ton projet pour afficher l'arrière-plan terminé.
+**Test:** 🔄 Run your project again to view the finished background.
 
-![La zone de sortie avec un rectangle de couleur ciel au-dessus d'un rectangle de couleur herbe pour créer l'arrière-plan.](images/background.png){:width="400px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
