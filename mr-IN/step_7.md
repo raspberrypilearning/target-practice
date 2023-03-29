@@ -1,4 +1,4 @@
-## तुमचा प्रोजेक्ट अपग्रेड करा
+## Upgrade your project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -26,12 +26,10 @@ You could:
 
 --- collapse ---
 ---
-title: पूर्ण झालेला प्रोजेक्ट
+title: Completed project
 ---
 
-तुम्ही
-
-येथे पूर्ण झालेला प्रोजेक्ट<0>{:target="_blank"} बघू शकता.</p> 
+You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
