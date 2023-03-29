@@ -1,28 +1,28 @@
 ---
-title: Εξάσκηση στόχου
+title: Target practice
 hero_image: images/banner.png
-description: Χρησιμοποίησε την Python για να σχεδιάσεις έναν στόχο και να κερδίζεις πόντους χτυπώντας τον με βέλη
+description: Use Python to draw a target and score points by hitting it with arrows
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Εισαγωγή
+    title: You will make
   - 
-    title: Δημιούργησε ένα υπόβαθρο
+    title: Create a background
   - 
-    title: Σχεδίασε τον στόχο σου
+    title: Draw your target
     completion:
       - engaged
   - 
-    title: Ρίξε το βέλος σου
+    title: Fire your arrow
   - 
-    title: Κέρδισε πόντους
+    title: Score points
     completion:
       - internal
   - 
-    title: Αναστοχασμός
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Αναβάθμιση του έργου σου
+    title: Upgrade your project
   - 
-    title: Και τώρα;
+    title: What next?
