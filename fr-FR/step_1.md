@@ -1,23 +1,23 @@
-## Ce que tu vas faire
+## You will make
 
-Utilise Python, avec la bibliothèque graphique `p5` , pour dessiner une cible et marquer des points en la frappant avec des flèches.
+Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
 
-Tu vas devoir :
- + Personnaliser ton jeu avec des **couleurs RVB**
- + Utiliser les **instructions conditionnelles** (`if`, `elif`, `else`) pour prendre des décisions
- + Positionner les formes avec les coordonnées **x, y**
+You will:
+ + Personalise your game with **RGB colours**
+ + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
+ + Position shapes with **x, y coordinates**
 
 --- no-print ---
 
-### Joue ▶️
+### Play ▶️
 
 --- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Clique sur le bouton **Run** ci-dessous pour démarrer le jeu. Lorsque le point apparaît sur la cible 🎯, clique sur la souris (ou appuie sur ta tablette) pour tirer ta flèche. 
+Click the **Run** button below to start the game. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
 
-Fais quelques essais. Ton score apparaît dans la zone de sortie sous la cible. Comment ton score change-t-il lorsque la flèche atterrit sur les différentes couleurs ? 
+Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
@@ -29,12 +29,12 @@ Fais quelques essais. Ton score apparaît dans la zone de sortie sous la cible. 
 
 --- print-only ---
 
-![Projet terminé.](images/yellow-points.png)
+![Completed project.](images/yellow-points.png)
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Les plus anciennes preuves de <span style="color: #0faeb0; font-weight: bold;">tir à l'arc</span> proviennent de la grotte de Sibudu, dans le KwaZulu-Natal, en Afrique du Sud. On y a trouvé des restes de pointes de flèches en pierre et en os, qui datent d'il y a entre 60 000 et 70 000 ans. 
+The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
 </p>
 
 ![](http://code.org/api/hour/begin_coderdojo_target.png)
