@@ -1,14 +1,14 @@
-## Beth nesaf?
+## Quick quiz
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-Atebwch y tri chwestiwn isod i fyfyrio ar yr hyn rydych chi wedi'i ddysgu.
+When you have answered each question, click on **Check my answer**.
 
-Ar ôl bob cwestiwn, pwyswch **cyflwyno**. Byddi di'n cael dy dywys i'r ateb cywir. Galli di wneud hyn gymaint ag y mynni.
+Have fun!
 
 --- question ---
 ---
-legend: Cwestiwn 1 o 3
+legend: Question 1 of 3
 ---
 Here is a blue square, what are the RGB values that will create it?
 
@@ -36,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Cywir! Mae lliwiau'n dilyn y model RGB. Does gan y lliw hwn ddim R na G, ond y gwerth B uchaf, felly bydd yn **las**.
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Ddim yn hollol, pan fydd yr holl werthoedd lliw wedi'u gosod ar y gwerth uchaf o `255`, **gwyn** yw'r lliw.
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 
