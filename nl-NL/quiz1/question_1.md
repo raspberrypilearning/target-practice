@@ -2,17 +2,17 @@
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-Druk na elke vraag op **indienen**. Je wordt naar het juiste antwoord geleid.
+When you have answered each question, click on **Check my answer**.
 
-Veel plezier!
+Have fun!
 
 --- question ---
 ---
-legend: Vraag 1 van 3
+legend: Question 1 of 3
 ---
-Hier is een blauw vierkant, wat zijn de RGB-waarden die het zal creëren?
+Here is a blue square, what are the RGB values that will create it?
 
-![Een enkel blok met een blauwe kleur.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Hier is een blauw vierkant, wat zijn de RGB-waarden die het zal creëren?
 
   --- feedback ---
 
-Niet helemaal, als alle kleurwaarden zijn ingesteld op `0`, is de kleur **zwart**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Niet helemaal, als alle kleurwaarden zijn ingesteld op `0`, is de kleur **zwart*
 
   --- feedback ---
 
-Niet helemaal, kleuren volgen het RGB-model. Deze kleur heeft een maximale R-waarde en geen G of B, dus **rood**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
@@ -36,7 +36,7 @@ Niet helemaal, kleuren volgen het RGB-model. Deze kleur heeft een maximale R-waa
 
   --- feedback ---
 
-  Dat is correct! Kleuren volgen het RGB-model. Deze kleur heeft geen R of G, maar maximaal B, dus is **blauw**.
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Niet helemaal, kleuren volgen het RGB-model. Deze kleur heeft een maximale R-waa
 
   --- feedback ---
 
-  Niet helemaal, als alle kleurwaarden zijn ingesteld op het maximum van `255` is de kleur **wit**.
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 
