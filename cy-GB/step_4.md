@@ -1,24 +1,24 @@
-## Saethu
+## Fire your arrow
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Nawr mae'n amser ychwanegu saeth sy'n symud ar hap ar draws yr ardal targed. 
+When you click or tap, an arrow will fire at the position of a moving target circle. 
 </div>
 <div>
 
-![Y targed, gyda chylch brown, y saeth, yn ymddangos mewn amrywiaeth o safleoedd.](images/fire_arrow.gif){:width="300px"}
+![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Cael y lliw mae'r saeth yn ei daro
+### Draw a target circle every frame
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
 </p>
 
 --- task ---
 
-Ychwanegwch `ellipse()` bach yng nghanol y sgrin i gynrychioli'r saeth.
+Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
 
 Add code to randomly draw a brown circle within a target area:
 
@@ -27,9 +27,9 @@ Add code to randomly draw a brown circle within a target area:
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
-line_highlights: 11-12
+line_highlights: 10, 11, 12, 13, 14
 ---
-# Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
+# The shoot_arrow function goes here
 def shoot_arrow():   
 arrow_x = randint(100, 300) # Store a random number between 100 and 300    
 arrow_y = randint(100, 300) # Store a random number between 100 and 300    
@@ -42,13 +42,12 @@ circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
 
 --- task ---
 
-language: python filename: main.py — draw() line_numbers: true line_number_start: 41
+Go to the `draw` function and call your new `shoot_arrow` function.
 
 --- code ---
 ---
-fill(pren)   
-saethu_saeth()
-line_highlights: 44-45
+language: python filename: main.py — draw() line_numbers: true line_number_start: 42
+line_highlights: 44
 ---
   fill(middle)    
 circle(200, 200, 30)    
@@ -70,7 +69,7 @@ The background and target will be drawn over the old arrow. This means you only 
 
 ### Get the colour hit by the arrow
 
-Mae'r swyddogaeth `draw()` yn cael ei galw bob ffrâm. Byddwch chi'n llunio'r saeth mewn safle ar hap bob tro mae `draw()` yn cael ei galw.
+The `get()` function returns the colour of a pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
@@ -78,17 +77,19 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 
 --- task ---
 
-Dewch o hyd i'r datganiadau `import` ar frig eich cod. Byddwch chi'n defnyddio `randint` o'r llyfrgell `random`.
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true
-line_number_start: 3
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
+line_highlights: 13
 ---
-# Import library code
-from p5 import *    
-from math import *    
-from random import randint
+# The shoot_arrow function goes here
+def shoot_arrow():    
+arrow_x = randint(100, 300)    
+arrow_y = randint(100, 300)    
+hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -102,21 +103,19 @@ The `p5` library 'listens' for certain events, one of these is the press of the 
 
 --- task ---
 
-Newidiwch eich `ellipse()` i ddefnyddio'r newidynnau newidd i leoli eich saeth.
+Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
 
 Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
 
 --- code ---
 ---
-language: python filename: main.py — saethu_saeth() line_numbers: true line_number_start: 10
-line_highlights: 12-14
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+line_highlights: 8, 9
 ---
 
-# Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
-def saethu_saeth():    
-saeth_x = randint(100, 300)   
-saeth_y = randint(100, 300)    
-ellipse(saeth_x, saeth_y, 15, 15) #Diweddaru i gyfesurynnau ar hap
+# The mouse_pressed function goes here
+def mouse_pressed():    
+print( red(hit_color), green(hit_color), blue(hit_color) )
 
 --- /code ---
 
@@ -124,15 +123,20 @@ ellipse(saeth_x, saeth_y, 15, 15) #Diweddaru i gyfesurynnau ar hap
 
 --- task ---
 
-Ystyr <span style="color: #0faeb0; font-weight: bold;">picsel</span>, sy'n deillio o 'picture element' yn Saesneg, yw un dot lliw mewn delwedd. Mae delweddau wedi'u ffurfio o lawer o bicselau lliw.
+Make `hit_color` a **global variable** so that it can be used throughout your code:
 
 --- code ---
 ---
-Mae angen i chi storio'r lliw mae'r saeth yn anelu ato cyn llunio saeth ar ei ben.
-line_highlights: 14
+language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
+line_highlights: 13
 ---
-# Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
-Ychwanegwch god i storio'r `lliw_taro`. Defnyddiwch y swyddogaeth `get()` i gael lliw'r picsel yn y cyfesurynnau `saeth_x` a `saeth_y` — canol y saeth.
+# The shoot_arrow function goes here
+def shoot_arrow():    
+global hit_color # Can be used in other functions     
+arrow_x = randint(100, 300)     
+arrow_y = randint(100, 300)     
+hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow fill(wood)     
+circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -142,11 +146,11 @@ Ychwanegwch god i storio'r `lliw_taro`. Defnyddiwch y swyddogaeth `get()` i gael
 
 **Test:** 🔄 Run your project.
 
-**Cyngor:** Mae angen i'r cod i gael y lliw a'i gadw fod **cyn** y cod i lunio'r elips neu byddwch chi'n cadw lliw pren y saeth bob tro!
+The project prints the `hit_color` each time the arrow is redrawn.
 
 ![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-Mae'r llyfrgell `p5` yn 'gwrando' am rai digwyddiadau. Un o'r rhain yw botwm y llygoden yn cael ei bwyso. Pan fydd yn synhwyro bod y botwm wedi'i bwyso, bydd yn rhedeg pa god bynnag sydd wedi'i roi iddi yn y swyddogaeth `mouse_pressed()`.
+**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
 
 **Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
 
