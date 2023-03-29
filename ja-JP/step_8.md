@@ -1,10 +1,10 @@
-## 次は何をしましょうか？
+## What next?
 
-[Python入門](https://projects.raspberrypi.org/en/raspberrypi/python-intro)パスに沿って進めている方は、[ロケット打ち上げ](https://projects.raspberrypi.org/en/projects/rocket-launch)プロジェクトに進みましょう。 このプロジェクトでは、ロケットが人工衛星を軌道に乗せる様子をインタラクティブにアニメーション化します。
+If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
 
 --- print-only ---
 
-![ロケット打ち上げプロジェクト。](images/showcase_rocket.png)
+![Rocket launch project.](images/showcase_rocket.png)
 
 --- /print-only ---
 
@@ -12,20 +12,20 @@
 
 --- task ---
 
-**試してみてください：**あなたのプログラムは、あなたが与えた燃料の量に基づいてアニメーションを調整し、軌道に到達することに成功するか失敗するかを決定します。 軌道に乗るためにどれくらいの燃料を使いたいのか、でも燃料をあまり無駄にしたくない。
+**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use to reach orbit but not waste too much extra fuel?
 
-**ヒント：** 25,000kg程度で十分だと思いますが、どうなるか試してみてください。
+**Tip:** Around 25,000kg should be enough, but experiment with the numbers to see what happens.
 
 <iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![ロケット打ち上げプロジェクト](images/showcase_rocket.png)
+![Rocket launch project](images/showcase_rocket.png)
 
 --- /task ---
 
 --- /no-print ---
 
-Pythonのさまざまな機能を触ってみたい場合は[これらのプロジェクト](https://projects.raspberrypi.org/en/projects?software%5B%5D=python)を試してみてください。
+If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
 
 
 
