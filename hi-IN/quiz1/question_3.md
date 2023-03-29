@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: 3 प्रश्नों में तीसरा
+legend: Question 3 of 3
 ---
 
 A circle is drawn using the following code:
@@ -27,35 +27,35 @@ Which of the images below show the correct position of this circle in the output
 
 --- choices ---
 
-- ( ) ![आउटपुट क्षेत्र के निचले-दाएँ कोने में केंद्रित एक हरा वृत्त।](images/bottom-right.png)
+- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
 
   --- feedback ---
 
-  नहीं, निचले-दाएँ कोने में वृत्त को केंद्र में लाने के लिए, निर्देशांक स्क्रीन के आकार के समान होने चाहिए। In this example, the ellipse would be `circle(400, 400, 300)`.
+  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
 
   --- /feedback ---
 
-- ( ) ![आउटपुट क्षेत्र के मध्य में केंद्रित एक हरा वृत्त।](images/centre.png)
+- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
 
   --- feedback ---
 
-  बिल्कुल नहीं, मध्य में वृत्त को केंद्रित करने के लिए, निर्देशांक स्क्रीन के आकार का आधा होना चाहिए। In this example, `circle(200, 200, 300)`.
+  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
-- (x) ![आउटपुट क्षेत्र के ऊपरी-बाएँ कोने में केंद्रित एक हरा वृत्त।](images/top-left.png)
+- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
 
   --- feedback ---
 
-  यह सही है! यह वृत्त निर्देशांक (0,0) पर केंद्रित है, जो स्क्रीन का ऊपरी-बायाँ कोना है।
+  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
 
   --- /feedback ---
 
-- ( ) ![आउटपुट क्षेत्र के ऊपरी-दाईं ओर केंद्रित एक हरा वृत्त।](images/random-side.png)
+- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. `x` निर्देशांक यह है कि कितनी दूर स्क्रीन पर दीर्घवृत्त है, और `y` निर्देशांक है कि स्क्रीन कितनी नीचे है।
+  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
 
   --- /feedback ---
 
