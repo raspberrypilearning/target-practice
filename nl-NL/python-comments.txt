@@ -1,10 +1,10 @@
-Dingen om te doen in elk frame
+Things to do in every frame
 
-Rood = 92, Groen = 204, Blauw = 206
+Red = 92, Green = 204, Blue = 206
 
-Start x, start y, breedte, hoogte
+Start x, start y, width, height
 
-x, y, breedte, hoogte
+x, y, width, height
 
 Set the stand fill colour to wood
 
@@ -24,59 +24,59 @@ Inner circle - x, y, width of the circle
 
 Middle circle - x, y, width of the circle
 
-Buitenste cirkel. 200, 200 is het midden van het scherm
+Outer circle.200, 200 is the middle of the screen
 
-Blauw
+Blue
 
-Rood
+Red
 
-Geel
+Yellow
 
-Standaard
+Stand
 
-Buitenste cirkel
+Outer circle
 
-Binnenste cirkel
+Inner circle
 
-Roos
+Bullseye
 
-De schiet_pijl functie komt hier
+The shoot_arrow function goes here
 
-Bibliotheekcode importeren
+Import library code
 
-Update naar willekeurige coördinaten
+Update to random coordinates
 
-Sla de kleur op voordat je de pijl tekent
+Save the colour before drawing the arrow
 
-De mouse_pressed functie komt hier
+The mouse_pressed function goes here
 
-Kan ook gebruikt worden in andere functies
+Can be used in other functions
 
-Net als functies, zijn 'if'-instructies ingesprongen
+Like functions, 'if' statements are indented
 
-Stel je spel hier in
+Setup your game here
 
-breedte en hoogte
+width and height
 
-Definities voor de p5py-bibliotheek
+Definitions for compatibility with the p5py processing library
 
-Vormgeving
+Shape
 
-Lettertypen
+Fonts
 
-Tekst
+Text
 
-Kleur
+Colour
 
-Afbeeldingen
+Images
 
-Omgeving
+Environment
 
-Omzetten
+Transform
 
-Toetsenbord
+Keyboard
 
-Bewaar dit om je code uit te voeren
+Keep this to run your code
 
 Store a random number between 100 and 300
 
