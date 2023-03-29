@@ -1,43 +1,43 @@
-ciel
+sky
 
-herbe
+grass
 
-bois
+wood
 
-exterieur
+outer
 
-interieur
+inner
 
-centre
+bullseye
 
-tire_fleche
+shoot_arrow
 
-fleche_x
+arrow_x
 
-fleche_y
+arrow_y
 
-couleur_touche
+hit_color
 
-Tu as touché le cercle extérieur, 50 points !
+You hit the outer circle, 50 points!
 
-Tu as touché le cercle intérieur, 200 points !
+You hit the inner circle, 200 points!
 
-Tu as touché le centre, 500 points !
+You hit the middle, 500 points!
 
-Tu as touché le mille, 500 points !
+You hit the bullseye, 500 points!
 
-Tu as loupé la cible ! Aucun point !
+You missed! No points!
 
-À quelle vitesse veux-tu la flèche ? lent, moyen, rapide
+How fast do you want the arrow? slow, medium, fast
 
-Tu as touché le rouge, 200 points !
+You hit red, 200 points!
 
-vitesse
+speed
 
-Super rapide
+Super fast
 
-Assez rapide
+Pretty quick
 
-Très rapide
+Very fast
 
-Vitesse non reconnue !
+Speed not recognised!
