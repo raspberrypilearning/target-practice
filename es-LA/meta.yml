@@ -1,28 +1,28 @@
 ---
-title: Tiro al blanco
+title: Target practice
 hero_image: images/banner.png
-description: Usa Python para dibujar un blanco y ganar puntos golpeándolo con flechas
+description: Use Python to draw a target and score points by hitting it with arrows
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Lo que harás
+    title: You will make
   - 
-    title: Crea un fondo
+    title: Create a background
   - 
-    title: Dibuja tu blanco
+    title: Draw your target
     completion:
       - engaged
   - 
-    title: Dispara tu flecha
+    title: Fire your arrow
   - 
-    title: Gana puntos
+    title: Score points
     completion:
       - internal
   - 
-    title: Examen rapido
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Mejora tu proyecto
+    title: Upgrade your project
   - 
-    title: '¿Qué sigue?'
+    title: What next?
