@@ -1,28 +1,28 @@
 ---
-title: Oefening doelwit schieten
+title: Target practice
 hero_image: images/banner.png
-description: Gebruik Python om een doel te tekenen en punten te scoren door het met pijlen te raken
+description: Use Python to draw a target and score points by hitting it with arrows
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Inleiding
+    title: You will make
   - 
-    title: Een achtergrond maken
+    title: Create a background
   - 
-    title: Teken je doelwit
+    title: Draw your target
     completion:
       - engaged
   - 
-    title: Schiet de pijl af
+    title: Fire your arrow
   - 
-    title: Punten scoren
+    title: Score points
     completion:
       - internal
   - 
-    title: Reflectie
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Verbeter je project
+    title: Upgrade your project
   - 
-    title: Wat kun je verder nog doen?
+    title: What next?
