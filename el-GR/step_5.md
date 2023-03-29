@@ -1,12 +1,12 @@
-## Κέρδισε πόντους
+## Score points
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Σε αυτό το βήμα, θα προσθέσεις πόντους ανάλογα με το σημείο που χτυπάει το βέλος.
+Your game will add scores based on where the arrow hits.
 </div>
 <div>
 
-![Ο στόχος, με το βέλος να εμφανίζεται σε διάφορες θέσεις και τους πόντους να εμφανίζονται ως κείμενο κάτω από το παιχνίδι.](images/points-scored.gif){:width="300px"}
+![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
@@ -22,35 +22,35 @@ line_highlights: 28
 ---
 
 def draw():
-# Ενέργειες που πρέπει να γίνονται σε κάθε καρέ
-  global outer, inner, bullseye    
-sky = color(92, 204, 206) #Κόκκινο = 92, Πράσινο = 204, Μπλε = 206    
+# Things to do in every frame
+  global wood, outer, inner, middle    
+sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206    
 grass = color(149, 212, 122)    
 wood = color(145, 96, 51)    
 outer = color(0, 120, 180)    
 inner = color(210, 60, 60)   
-bullseye = color(220, 200, 0)
+middle = color(220, 200, 0)
 
 --- /code ---
 
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Χρησιμοποιούμε <span style="color: #0faeb0; font-weight: bold;">συνθήκες</span> όλη την ώρα για να λάβουμε αποφάσεις. Θα μπορούσαμε να πούμε «αν το μολύβι δεν είναι μυτερό, τότε πρέπει να το ξύσεις». Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
 </p>
 
 ### Display the scores
 
 --- task ---
 
-Για να `εμφανίσεις` μήνυμα για τον εξωτερικό κύκλο του στόχου, πρόσθεσε κώδικα στη συνάρτηση `mouse_pressed()` για να ελέγξεις εάν το `hit_color` είναι `==` με το `outer`.
+Delete ❌ the `print( red(hit_color), green(hit_color), blue(hit_color) )` line of code.
 
 --- code ---
 ---
-Άλλαξε τον κώδικα στο `print()` για να εμφανίσει τη βαθμολογία:
-line_highlights: 10-11
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+line_highlights: 9
 ---
-# Η συνάρτηση mouse_pressed πηγαίνει εδώ
+# The mouse_pressed function goes here
 def mouse_pressed():
 
 
@@ -67,7 +67,7 @@ Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
 --- code ---
 ---
 language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 12-15
+line_highlights: 9, 10
 ---
 
 # The mouse_pressed function goes here
@@ -87,7 +87,7 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 ![The output area with arrow touching the outer circle. The points print statement appears in the output area.](images/blue-points.png)
 
-Αυτό που κάνει το `elif` διαφορετικό είναι ότι θα κάνει αυτόν τον έλεγχο μόνο εάν οι συνθήκες του `if` και οποιωνδήποτε `elif` πριν από αυτό είναι `Ψευδείς`.
+**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
 
 --- /task ---
 
@@ -95,18 +95,12 @@ print('You hit the outer circle, 50 points!') # Like functions, 'if' statements 
 
 --- task ---
 
-def mouse_pressed():    
-if hit_color == outer:    
-print('Χτύπησες τον εξωτερικό κύκλο, 50 πόντοι!')    
-elif hit_color == inner:    
-print('Χτύπησες τον εσωτερικό κύκλο, 200 πόντοι!')   
-elif hit_color == bullseye:    
-print('Χτύπησες το κέντρο του στόχου, 500 πόντοι!')
+Score points if the arrow lands on the `inner` or `middle` circles 🎯:
 
 --- code ---
 ---
 language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
-line_highlights: 16-17
+line_highlights: 11, 12, 13, 14
 ---
 
 def mouse_pressed():    
