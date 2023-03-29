@@ -8,7 +8,7 @@ Have fun!
 
 --- question ---
 ---
-legend: Вопрос 1 из 3
+legend: Question 1 of 3
 ---
 Here is a blue square, what are the RGB values that will create it?
 
