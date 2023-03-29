@@ -1,12 +1,12 @@
-## Δημιούργησε ένα υπόβαθρο
+## Create a background
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Ο ουρανός και το γρασίδι φτιάχνονται γράφοντας κώδικα για να σχεδιάσεις χρωματιστά ορθογώνια.
+Your game needs a colourful background.
 </div>
 <div>
 
-![Η περιοχή εξόδου με ένα ορθογώνιο στο χρώμα του ουρανού πάνω από ένα ορθογώνιο χρώματος γρασιδιού για τη δημιουργία του φόντου.](images/background.png){:width="300px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
 
 </div>
 </div>
@@ -15,9 +15,9 @@
 
 --- task ---
 
-Άνοιξε το [αρχικό έργο Τοξοβολίας](https://trinket.io/python/1e11252c65){:target="_blank"}.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-Εάν έχεις λογαριασμό Trinket, μπορείς να κάνεις κλικ στο κουμπί **Remix** για να αποθηκεύσεις ένα αντίγραφο στη βιβλιοθήκη `My Trinkets`.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
@@ -25,7 +25,7 @@
 
 --- task ---
 
-[[[p5-processing-library]]]
+The starter project has some code already written for you.
 
 Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
@@ -37,23 +37,18 @@ Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top 
 
 --- task ---
 
-def draw():     
-#Πράγματα που θα συμβαίνουν σε κάθε καρέ     
-sky = color(92, 204, 206) #Κόκκινο = 92, Πράσινο = 204, Μπλε = 206     
-grass = color(149, 212, 122)     
-wood = color(145, 96, 51)     
-outer = color(0, 120, 180)
+The sky has been drawn with a black border (stroke).
 
-fill(sky)
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
 language: python filename: main.py — setup() line_numbers: true line_number_start: 11
-line_highlights: 25
+line_highlights: 15
 ---
-Η κλήση της συνάρτησης `size()` στο `setup()` ορίζει το μέγεθος της οθόνης σε 400 pixel επί 400 pixel.
+def setup():
 # Setup your game here
-  [[[p5-coordinates]]]
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -76,9 +71,9 @@ line_highlights: 25
 --- code ---
 ---
 language: python filename: main.py — draw() line_numbers: true line_number_start: 17
-line_highlights: 26
+line_highlights: 27, 28
 ---
-{:width="300px"}
+def draw():
 # Things to do in every frame
   global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
@@ -94,11 +89,9 @@ fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, 
 
 --- task ---
 
-outer = color(0, 120, 180)
+**Test:** 🔄 Run your project again to view the finished background.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png)no_stroke()   
-fill(sky)   
-rect(0, 0, 400, 250) #x, y, πλάτος, ύψος
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
