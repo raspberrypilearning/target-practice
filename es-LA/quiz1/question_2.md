@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Pregunta 2 de 3
+legend: Question 2 of 3
 ---
 
-En su proyecto, usaste condiciones `if`, `elif` y `else` para verificar en qué color aterrizó la flecha.
+In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
 
-En el siguiente ejemplo, una variable llamada `velocidad` `6` almacena el número 6. Cuando se ejecuta esta instrucción `if`, ¿qué se imprimirá en el área de salida?
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
@@ -20,27 +20,27 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
 --- choices ---
 
-- (x) `Muy rápido`
+- (x) `Very fast`
 
   --- feedback ---
 
-  ¡Correcto! A la variable **velocidad** se le ha asignado el valor `6`, lo que hace que la `velocidad == 6` Sea **Verdadero** e imprima `Muy rápido`.
+  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
 
   --- /feedback ---
 
-- ( ) `¡Velocidad no reconocida!`
+- ( ) `Speed not recognised!`
 
   --- feedback ---
 
-  No del todo, mira el valor asignado a la variable **velocidad**.
+  Not quite, look at the value assigned to the **speed** variable.
 
   --- /feedback ---
 
-- ( ) No se escribe nada
+- ( ) Nothing gets printed
 
   --- feedback ---
 
-  Inténtalo de nuevo, `else` se usa como una opción final para cuando todas las condiciones anteriores son falsas. Mira nuevamente las condiciones, ¿alguna de las condiciones es verdadera?
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
