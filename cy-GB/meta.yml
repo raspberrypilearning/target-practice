@@ -1,28 +1,28 @@
 ---
-title: Ymarfer saethu
+title: Target practice
 hero_image: images/banner.png
-description: Defnyddiwch Python i lunio targed a sgorio pwyntiau drwy ei daro â saethau
+description: Use Python to draw a target and score points by hitting it with arrows
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Cyflwyniad
+    title: You will make
   - 
-    title: Creu cefndir
+    title: Create a background
   - 
-    title: Llunio eich targed
+    title: Draw your target
     completion:
       - engaged
   - 
-    title: Saethu
+    title: Fire your arrow
   - 
-    title: Sgorio pwyntiau
+    title: Score points
     completion:
       - internal
   - 
-    title: Myfyrio
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Uwchraddio dy brosiect
+    title: Upgrade your project
   - 
-    title: Beth nesaf?
+    title: What next?
