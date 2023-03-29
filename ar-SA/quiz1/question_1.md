@@ -2,17 +2,17 @@
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-بعد كل سؤال ، اضغط على **إرسال**. سيتم توجيهك نحو الإجابة الصحيحة.
+When you have answered each question, click on **Check my answer**.
 
-إستمتع!
+Have fun!
 
 --- question ---
 ---
-legend: السؤال 1 من 3
+legend: Question 1 of 3
 ---
-هذا مربع أزرق ، ما هي قيم RGB التي ستنشئه؟
+Here is a blue square, what are the RGB values that will create it?
 
-![كتلة واحدة من اللون الأزرق.](images/quiz-colour.png)
+![A single block of blue colour.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ legend: السؤال 1 من 3
 
   --- feedback ---
 
-ليس تمامًا ، عندما يتم ضبط جميع قيم الألوان على `0`، يكون اللون **أسود**.
+Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ legend: السؤال 1 من 3
 
   --- feedback ---
 
-ليس تمامًا ، فالألوان تتبع نموذج RGB. هذا اللون له قيمة R قصوى وليس G أو B ، لذلك سيكون **أحمر**.
+Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
 
   --- /feedback ---
 
@@ -36,7 +36,7 @@ legend: السؤال 1 من 3
 
   --- feedback ---
 
-  هذا صحيح! الألوان تتبع نموذج RGB. هذا اللون لا يحتوي على R أو G ، ولكن الحد الأقصى B ، لذلك سيكون **أزرق**.
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ legend: السؤال 1 من 3
 
   --- feedback ---
 
-  ليس تمامًا ، عندما يتم ضبط جميع قيم اللون على `255` أقصى ، يكون اللون **أبيض**.
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 
