@@ -18,15 +18,15 @@ arrow_y
 
 hit_color
 
-外側の円に当たった、50点！
+You hit the outer circle, 50 points!
 
-内側の円に当たった、 200点！
+You hit the inner circle, 200 points!
 
 You hit the middle, 500 points!
 
-ブルズアイに当たった、500ポイント！
+You hit the bullseye, 500 points!
 
-外した！ ポイントなし！
+You missed! No points!
 
 How fast do you want the arrow? slow, medium, fast
 
@@ -34,10 +34,10 @@ You hit red, 200 points!
 
 speed
 
-超高速
+Super fast
 
-かなり速い
+Pretty quick
 
-非常に速い
+Very fast
 
-速度が認識されない！
+Speed not recognised!
