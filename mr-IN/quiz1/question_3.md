@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: प्रश्न 3 पैकी 3
+legend: Question 3 of 3
 ---
 
 A circle is drawn using the following code:
