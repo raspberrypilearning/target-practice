@@ -1,23 +1,23 @@
-## Cyflwyniad
+## You will make
 
-Defnyddiwch Python, a'r llyfrgell graffeg `p5`, i lunio targed a sgorio pwyntiau drwy ei daro â saethau.
+Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
 
-Byddi di'n:
- + Personoli eich gêm gyda **lliwiau RGB**
- + Defnyddio **datganiadau amodol** (`if`, `elif`, `else`) i wneud penderfyniadau
- + Lleoli siapiau gyda **chyfesurynnau x, y**
+You will:
+ + Personalise your game with **RGB colours**
+ + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
+ + Position shapes with **x, y coordinates**
 
 --- no-print ---
 
-### Rhowch gynnig arni
+### Play ▶️
 
 --- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Cliciwch y botwm **Run** isod i ddechrau'r gêm. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
+Click the **Run** button below to start the game. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
 
-Rhowch ambell gynnig arni. Bydd eich sgôr yn ymddangos yn yr ardal allbwn o dan y targed. Sut mae eich sgôr yn newid pan fydd y saeth yn glanio ar y gwahanol liwiau? 
+Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
