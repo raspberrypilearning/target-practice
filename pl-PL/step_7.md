@@ -1,4 +1,4 @@
-## Ulepsz swój projekt
+## Upgrade your project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -13,7 +13,7 @@ Personalise and add more to your project. Perhaps you could change the difficult
 
 --- task ---
 
-Możesz:
+You could:
 
 + Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
 + Put emoji in your print messages ([here's a list of emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
@@ -26,10 +26,10 @@ Możesz:
 
 --- collapse ---
 ---
-title: Ukończony projekt
+title: Completed project
 ---
 
-Tutaj możesz zobaczyć [ukończony projekt](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
