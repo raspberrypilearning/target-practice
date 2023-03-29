@@ -2,7 +2,7 @@
 
 Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
 
-Ты будешь:
+You will:
  + Personalise your game with **RGB colours**
  + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
  + Position shapes with **x, y coordinates**
