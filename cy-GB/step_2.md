@@ -1,12 +1,12 @@
-## Creu cefndir
+## Create a background
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Mae'r awyr a'r gwair yn cael eu gwneud drwy ysgrifennu cod i lunio petryalau lliw.
+Your game needs a colourful background.
 </div>
 <div>
 
-![Yr ardal allbwn gyda phetryal lliw awyr uwchben petryal lliw gwair i greu'r cefndir.](images/background.png){:width="300px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
 
 </div>
 </div>
@@ -15,9 +15,9 @@ Mae'r awyr a'r gwair yn cael eu gwneud drwy ysgrifennu cod i lunio petryalau lli
 
 --- task ---
 
-Agorwch y [prosiect dechreuol Saethyddiaeth](https://trinket.io/python/23a6f02447){:target="_blank"}.
+Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
 
-Os oes gennych chi gyfrif Trinket, fe allwch chi glicio'r botwm **Remix** i gadw copi yn eich llyfrgell `My Trinkets`.
+If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
 
 --- /task ---
 
@@ -25,11 +25,11 @@ Os oes gennych chi gyfrif Trinket, fe allwch chi glicio'r botwm **Remix** i gadw
 
 --- task ---
 
-[[[p5-processing-library]]]
+The starter project has some code already written for you.
 
 Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png)Mae'r swyddogaeth `fill()` yn gosod y lliw tu mewn i'r siapiau. Mae'r prosiect dechreuol eisoes yn cynnwys rhai lliwiau RGB gallwch chi eu defnyddio i wneud hyn.
+![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
 
 **Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
@@ -37,23 +37,18 @@ Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top 
 
 --- task ---
 
-def draw():     
-#Pethau i'w gwneud ym mhob ffrâm     
-awyr = color(92, 204, 206) #Coch = 92, Gwyrdd = 204, Glas = 206     
-gwair = color(149, 212, 122)     
-pren = color(145, 96, 51)     
-allanol = color(0, 120, 180)
+The sky has been drawn with a black border (stroke).
 
-fill(awyr)
+To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
 language: python filename: main.py — setup() line_numbers: true line_number_start: 11
-line_highlights: 25
+line_highlights: 15
 ---
-Mae'r swyddogaeth `size()` yn `setup()` yn gosod maint y sgrin ar 400 picsel wrth 400 picsel.
+def setup():
 # Setup your game here
-  [[[p5-coordinates]]]
+  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
 
 --- /code ---
 
@@ -75,12 +70,12 @@ Mae'r swyddogaeth `size()` yn `setup()` yn gosod maint y sgrin ar 400 picsel wrt
 
 --- code ---
 ---
-**Profi:** Rhedwch eich cod i weld yr awyr rydych chi wedi'i llunio. Cofiwch, gyda'r llyfrgell `p5` mae'r swyddogaeth `run()` yn galw'r swyddogaeth `setup()` unwaith, wedyn y swyddogaeth `draw()` drosodd a throsodd.
-line_highlights: 26
+language: python filename: main.py — draw() line_numbers: true line_number_start: 17
+line_highlights: 27, 28
 ---
-{:width="300px"}
+def draw():
 # Things to do in every frame
-  Dyna ryfedd: mae llinell ddu o amgylch eich awyr! Y rheswm am hyn yw, pan fydd rhaglen yn dechrau, mae'n gosod border du — o'r enw **stroke** — o amgylch popeth mae'n ei lunio yn awtomatig.
+  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
   fill(sky)     
 rect(0, 0, 400, 250)     
@@ -94,11 +89,9 @@ fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, 
 
 --- task ---
 
-allanol = color(0, 120, 180)
+**Test:** 🔄 Run your project again to view the finished background.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png)no_stroke()   
-fill(awyr)   
-rect(0, 0, 400, 250) #x, y, lled, uchder
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
