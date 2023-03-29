@@ -1,1 +1,1 @@
-## Questionnaire rapide
+## Quick quiz
