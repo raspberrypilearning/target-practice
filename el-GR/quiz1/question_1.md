@@ -1,14 +1,14 @@
-## Αναστοχασμός
+## Quick quiz
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-Απάντησε στις τρεις ερωτήσεις παρακάτω για να διαπιστώσεις τι έμαθες.
+When you have answered each question, click on **Check my answer**.
 
 Have fun!
 
 --- question ---
 ---
-legend: Ερώτηση 1 από 3
+legend: Question 1 of 3
 ---
 Here is a blue square, what are the RGB values that will create it?
 
@@ -36,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Αυτό είναι το σωστό! Τα χρώματα ακολουθούν το μοντέλο RGB. Αυτό το χρώμα δεν έχει R ή G, αλλά το μέγιστο B, επομένως θα είναι **μπλε**.
+  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Όχι ακριβώς, όταν όλες οι τιμές χρώματος έχουν οριστεί στο μέγιστο `255`, το χρώμα είναι **λευκό**.
+  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
 
   --- /feedback ---
 
