@@ -1,46 +1,46 @@
 
 --- question ---
 ---
-legend : Question 2 sur 3
+legend: Question 2 of 3
 ---
 
-Dans ton projet, tu as utilisé les conditions`if`, `elif` et `else` pour vérifier sur quelle couleur la flèche a atterri.
+In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
 
-Dans l'exemple ci-dessous, une variable appelée `vitesse` contient le nombre `6` stocké. Lorsque cette instruction `if` est exécutée, que serait imprimé dans la zone de sortie ?
+In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
 --- code ---
 ---
 language: python
 ---
-vitesse = 6
+speed = 6
 
-if vitesse == 7: print('Super rapide') elif speed == 5: print('Assez rapide') elif speed == 6: print('Très rapide') else: print('Vitesse non reconnue !')
+if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Très rapide`
+- (x) `Very fast`
 
   --- feedback ---
 
-  C'est correct ! La variable **vitesse** a reçu la valeur `6`, ce qui rend la condition `vitesse == 6` **True** et imprime `Très rapide`.
+  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
 
   --- /feedback ---
 
-- ( ) `Vitesse non reconnue !`
+- ( ) `Speed not recognised!`
 
   --- feedback ---
 
-  Pas tout à fait, regarde la valeur attribuée à la variable **vitesse**.
+  Not quite, look at the value assigned to the **speed** variable.
 
   --- /feedback ---
 
-- ( ) Rien ne s'imprime
+- ( ) Nothing gets printed
 
   --- feedback ---
 
-  Réessaie, `else` est utilisé comme option finale lorsque toutes les conditions ci-dessus sont fausses. Regarde à nouveau les conditions, est-ce que l'une d'entre elles est vraie ?
+  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
 
   --- /feedback ---
 
