@@ -1,4 +1,4 @@
-## Улучшение своего проекта
+## Upgrade your project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -26,10 +26,10 @@ You could:
 
 --- collapse ---
 ---
-title: Завершённый проект
+title: Completed project
 ---
 
-Ты можешь увидеть [завершённый проект здесь](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+You can view the [completed project here](https://trinket.io/python/f686c82d8a){:target="_blank"}.
 
 --- /collapse ---
 
