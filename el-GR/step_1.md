@@ -1,23 +1,23 @@
-## Εισαγωγή
+## You will make
 
-Χρησιμοποίησε την Python, με τη βιβλιοθήκη γραφικών `p5`, για να σχεδιάσεις έναν στόχο και να κερδίσεις πόντους χτυπώντας τον με βέλη.
+Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
 
-Θα χρειαστεί να:
- + Προσαρμόσεις το παιχνίδι σου σύμφωνα με τις επιθυμίες σου με τα **χρώματα RGB**
- + Χρησιμοποιήσεις **υποθετικές προτάσεις** (`if`, `elif`, `else`) για να λάβεις αποφάσεις
- + Τοποθετήσεις σχήματα με συντεταγμένες **x, y**
+You will:
+ + Personalise your game with **RGB colours**
+ + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
+ + Position shapes with **x, y coordinates**
 
 --- no-print ---
 
-### Δοκίμασέ το
+### Play ▶️
 
 --- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Κάνε κλικ στο κουμπί **Run** παρακάτω για να ξεκινήσει το παιχνίδι. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
+Click the **Run** button below to start the game. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
 
-Δοκίμασε μερικές φορές. Η βαθμολογία σου εμφανίζεται στην περιοχή εξόδου κάτω από τον στόχο. Πώς αλλάζει η βαθμολογία σου όταν το βέλος καρφώνεται σε διαφορετικά χρώματα; 
+Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
   <iframe src="https://trinket.io/embed/python/f686c82d8a?outputOnly=true" width="600" height="560" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
