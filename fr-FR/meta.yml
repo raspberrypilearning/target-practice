@@ -1,28 +1,28 @@
 ---
-title: Tir sur cible
+title: Target practice
 hero_image: images/banner.png
-description: Utiliser Python pour dessiner une cible et marquer des points en la frappant avec des flèches
+description: Use Python to draw a target and score points by hitting it with arrows
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Ce que tu vas faire
+    title: You will make
   - 
-    title: Créer un arrière-plan
+    title: Create a background
   - 
-    title: Dessiner ta cible
+    title: Draw your target
     completion:
       - engaged
   - 
-    title: Tirer la flèche
+    title: Fire your arrow
   - 
-    title: Marquer des points
+    title: Score points
     completion:
       - internal
   - 
-    title: Questionnaire rapide
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +31,6 @@ steps:
     completion:
       - external
   - 
-    title: Améliorer ton projet
+    title: Upgrade your project
   - 
-    title: Et ensuite ?
+    title: What next?
