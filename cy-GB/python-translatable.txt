@@ -1,43 +1,43 @@
-awyr
+sky
 
-gwair
+grass
 
-pren
+wood
 
-allanol
+outer
 
-mewnol
+inner
 
-canol_y_nod
+bullseye
 
-saethu_saeth
+shoot_arrow
 
-saeth_x
+arrow_x
 
-saeth_y
+arrow_y
 
-lliw_taro
+hit_color
 
-Ti wedi taro'r cylch allanol, 50 pwynt!
+You hit the outer circle, 50 points!
 
-Ti wedi taro'r cylch mewnol, 200 pwynt!
+You hit the inner circle, 200 points!
 
 You hit the middle, 500 points!
 
-Canol y nod! 500 pwynt!
+You hit the bullseye, 500 points!
 
-Ti wedi methu! Dim pwyntiau!
+You missed! No points!
 
 How fast do you want the arrow? slow, medium, fast
 
 You hit red, 200 points!
 
-cyflymder
+speed
 
-Cyflym iawn iawn
+Super fast
 
-Eithaf cyflym
+Pretty quick
 
-Cyflym iawn
+Very fast
 
-Heb adnabod y cyflymder!
+Speed not recognised!
