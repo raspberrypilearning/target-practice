@@ -1,10 +1,10 @@
-Pethau i'w gwneud ym mhob ffrâm
+Things to do in every frame
 
-Coch = 92, Gwyrdd = 204, Glas = 206
+Red = 92, Green = 204, Blue = 206
 
-x dechrau, y dechrau, lled, uchder
+Start x, start y, width, height
 
-x, y, lled, uchder
+x, y, width, height
 
 Set the stand fill colour to wood
 
@@ -24,59 +24,59 @@ Inner circle - x, y, width of the circle
 
 Middle circle - x, y, width of the circle
 
-Cylch allanol.200, 200 yw canol y sgrin
+Outer circle.200, 200 is the middle of the screen
 
-Glas
+Blue
 
-Coch
+Red
 
-Melyn
+Yellow
 
 Stand
 
-Cylch allanol
+Outer circle
 
-Cylch mewnol
+Inner circle
 
-Canol y nod
+Bullseye
 
-Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
+The shoot_arrow function goes here
 
-Mewngludo cod llyfrgell
+Import library code
 
-Diweddaru i gyfesurynnau ar hap
+Update to random coordinates
 
-Cadw'r lliw cyn llunio'r saeth
+Save the colour before drawing the arrow
 
-Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
+The mouse_pressed function goes here
 
-Gellir ei ddefnyddio mewn swyddogaethau eraill
+Can be used in other functions
 
-Fel swyddogaethau, mae datganiadau 'if' yn cael eu mewnoli
+Like functions, 'if' statements are indented
 
-Gosodwch eich gêm yma
+Setup your game here
 
-lled ac uchder
+width and height
 
-Diffiniadau ar gyfer cydnawsedd â'r llyfrgell brosesu p5py
+Definitions for compatibility with the p5py processing library
 
-Siâp
+Shape
 
-Ffontiau
+Fonts
 
-Testun
+Text
 
-Lliw
+Colour
 
-Delweddau
+Images
 
-Amgylchedd
+Environment
 
-Trawsnewid
+Transform
 
-Bysellfwrdd
+Keyboard
 
-Cadwch hwn i redeg eich cod
+Keep this to run your code
 
 Store a random number between 100 and 300
 
