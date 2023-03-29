@@ -1,10 +1,10 @@
-すべてのフレームで行うこと
+Things to do in every frame
 
-赤 = 92, 緑 = 204, 青 = 206
+Red = 92, Green = 204, Blue = 206
 
-開始 x, 開始 y, 幅, 高さ
+Start x, start y, width, height
 
-x, y, 幅, 高さ
+x, y, width, height
 
 Set the stand fill colour to wood
 
@@ -24,59 +24,59 @@ Inner circle - x, y, width of the circle
 
 Middle circle - x, y, width of the circle
 
-外側の円 200, 200は画面の中央です
+Outer circle.200, 200 is the middle of the screen
 
-青
+Blue
 
-赤
+Red
 
-黄
+Yellow
 
-スタンド
+Stand
 
-外側の円
+Outer circle
 
-内側の円
+Inner circle
 
-ブルズアイ
+Bullseye
 
-shoot_arrow関数はここにあります
+The shoot_arrow function goes here
 
-ライブラリコードをインポートする
+Import library code
 
-ランダム座標へのアップデイト
+Update to random coordinates
 
-矢印を描く前に色を保存する
+Save the colour before drawing the arrow
 
-mouse_pressed関数はここにあります
+The mouse_pressed function goes here
 
-他の機能でも使用可能
+Can be used in other functions
 
-関数と同様に'if'文はインデントが必要です
+Like functions, 'if' statements are indented
 
-ここでゲームをセットアップします
+Setup your game here
 
-幅と高さ
+width and height
 
-p5py処理ライブラリとの互換性のための定義
+Definitions for compatibility with the p5py processing library
 
-形
+Shape
 
-フォント
+Fonts
 
-文章
+Text
 
-色
+Colour
 
-画像
+Images
 
-環境
+Environment
 
-トランスフォーム
+Transform
 
-キーボード
+Keyboard
 
-コードを実行するのに必要
+Keep this to run your code
 
 Store a random number between 100 and 300
 
