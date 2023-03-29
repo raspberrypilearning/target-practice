@@ -1,87 +1,87 @@
-Choses à faire dans chaque image
+Things to do in every frame
 
-Rouge = 92, Vert = 204, Bleu = 206
+Red = 92, Green = 204, Blue = 206
 
-Départ x, départ y, largeur, hauteur
+Start x, start y, width, height
 
-x, y, largeur, hauteur
+x, y, width, height
 
-Définir la couleur de remplissage du support sur bois
+Set the stand fill colour to wood
 
-Définir la couleur de remplissage de la flèche sur bois
+Set the arrow to fill colour to wood
 
-Définir la couleur de remplissage du support sur herbe
+Set the stand fill colour to grass
 
-Définir la couleur de remplissage de l'ellipse sur extérieur
+Set the circle fill colour to outer
 
-Définir la couleur de remplissage de l'ellipse sur intérieur
+Set the circle fill colour to inner
 
-Définir la couleur de remplissage de l'ellipse sur milieu
+Set the circle fill colour to middle
 
-x, y, largeur de l'ellipse
+x, y, width of the circle
 
-Cercle intérieur - x, y, largeur de l'ellipse
+Inner circle - x, y, width of the circle
 
-Cercle du centre - x, y, largeur de l'ellipse
+Middle circle - x, y, width of the circle
 
-Cercle extérieur. 200, 200 est le milieu de l'écran
+Outer circle.200, 200 is the middle of the screen
 
-Bleu
+Blue
 
-Rouge
+Red
 
-Jaune
+Yellow
 
-Support
+Stand
 
-Cercle extérieur
+Outer circle
 
-Cercle intérieur
+Inner circle
 
-Mille
+Bullseye
 
-La fonction tire_fleche vient ici
+The shoot_arrow function goes here
 
-Importer le code de la bibliothèque
+Import library code
 
-Mise à jour des coordonnées aléatoires
+Update to random coordinates
 
-Enregistrer la couleur avant de dessiner la flèche
+Save the colour before drawing the arrow
 
-La fonction souris_pressee vient ici
+The mouse_pressed function goes here
 
-Peut être utilisé dans d'autres fonctions
+Can be used in other functions
 
-Comme les fonctions, les instructions "if" sont indentées
+Like functions, 'if' statements are indented
 
-Configure ton jeu ici
+Setup your game here
 
-largeur et hauteur
+width and height
 
-Définitions pour la compatibilité avec la bibliothèque de traitement p5py
+Definitions for compatibility with the p5py processing library
 
-Forme
+Shape
 
-Polices
+Fonts
 
-Texte
+Text
 
-Couleur
+Colour
 
 Images
 
-Environnement
+Environment
 
-Transformer
+Transform
 
-Clavier
+Keyboard
 
-Garde ceci pour exécuter ton code
+Keep this to run your code
 
-Stocker un nombre aléatoire entre 100 et 300
+Store a random number between 100 and 300
 
-Obtenir la couleur du succès
+Get the hit colour
 
-Dessiner une petite ellipse à des coordonnées aléatoires
+Draw a small circle at random coordinates
 
-largeur et hauteur de l'écran
+width and height of screen
