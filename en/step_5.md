@@ -58,8 +58,8 @@ line_highlights: 7, 8
 
 # The mouse_pressed function goes here     
 def mouse_pressed():     
-    if hit_colour == Color('blue'):   
-        print('You hit the outer circle, 50 points!') # Like the code in functions, the code in 'if' statements is indented
+    if hit_colour == Color('blue'):   # Like the code in functions, the code in 'if' statements is indented
+        print('You hit the outer circle, 50 points!')
 
 --- /code ---
 
