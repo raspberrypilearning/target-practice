@@ -28,6 +28,8 @@ Have a few goes. Your score appears in the output area below the target. How doe
 </div>
 </div>
 
+**Tip:** 💡 When you press **Stop** you will see a prompt that says 'Execution interrupted'. This just means that you have stopped the program whilst the code was still running. 
+
 --- /task ---
 
 --- /no-print ---
