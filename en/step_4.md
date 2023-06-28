@@ -83,9 +83,9 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 
 --- task ---
 
-Add a **global variable** called `hit_color` that can be used throughout your code.
+Add a **global variable** called `hit_colour` that can be used throughout your code.
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable. 
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. 
 
 --- code ---
 ---
@@ -97,7 +97,7 @@ line_highlights: 8, 11
 ---
 # The shoot_arrow function goes here     
 def shoot_arrow():
-  global hit_color # Can be used in other functions  
+  global hit_colour # Can be used in other functions  
   arrow_x = randint(100, 300) # Store a random number between 100 and 300    
   arrow_y = randint(100, 300) # Store a random number between 100 and 300
   hit_color = get(arrow_x, arrow_y) # Get the hit colour     
@@ -126,7 +126,7 @@ language: python
 filename: main.py - mouse_pressed()
 line_numbers: true
 line_number_start: 5
-line_highlights: 6-7
+line_highlights: 6
 ---
 
 # The mouse_pressed function goes here    
@@ -150,3 +150,5 @@ The project prints 🎯 each time the arrow is redrawn.
 **Debug:** 🐞 Check the `print` line really carefully for commas and brackets. 
 
 --- /task ---
+
+--- save ---
