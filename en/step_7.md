@@ -22,7 +22,7 @@ You could:
 
 --- /task ---
 
-![Upgraded project ideas: one with five circles, one with a difficulty input question, one with emoji in the points message.](images/upgrade-ideas.png)
+![Three project ideas, one has five circles, one has a difficulty input question and one has emojis in the points message.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
@@ -32,4 +32,3 @@ title: Completed project
 You can view the [completed project here](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
-
