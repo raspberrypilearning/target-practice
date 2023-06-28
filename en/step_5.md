@@ -6,14 +6,20 @@ Your game will add scores based on where the arrow hits.
 </div>
 <div>
 
-![The target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+</p>
+
+### Display the scores
 
 --- task ---
 
-Go to the `draw()` function and add `, outer, inner, middle` to the list of global variables.
+Delete ❌ the `print('🎯')` line of code.
 
 --- code ---
 ---
