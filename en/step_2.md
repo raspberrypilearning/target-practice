@@ -51,7 +51,7 @@ line_highlights: 12
 ---
 def setup():
 # Setup your game here
-  size(400, 400) # width and height of screen
+  size(400, 400)  # Width and height of screen
   no_stroke()
 
 --- /code ---
@@ -84,14 +84,14 @@ line_highlights: 18-19
 ---
 def draw():
 # Things to do in every frame
-    fill('cyan') # Set the fill color for the sky to cyan
-    rect(0, 0, 400, 250) # Draw a rectangle for the sky with these values for x, y, width, height
-    fill('lightgreen') # Set the fill color for the grass to light green
-    rect(0, 250, 400, 150) # Draw a rectangle for the grass with these values for x, y, width, height
+    fill('cyan')  # Set the fill colour for the sky to cyan
+    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
+    fill('lightgreen')  # Set the fill colour for the grass to light green
+    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill color for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
 
 --- /task ---
 

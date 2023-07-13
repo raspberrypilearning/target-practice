@@ -58,7 +58,7 @@ line_highlights: 7, 8
 
 # The mouse_pressed function goes here     
 def mouse_pressed():     
-    if hit_colour == Color('blue'):   # Like the code in functions, the code in 'if' statements is indented
+    if hit_colour == Color('blue'):  # Like the code in functions, the code in 'if' statements is indented
         print('You hit the outer circle, 50 points!')
 
 --- /code ---
@@ -74,6 +74,8 @@ def mouse_pressed():
 **Tip:** 💡 `frame_rate=2`, in `run` at the bottom of your code, controls how fast your game draws. If it's going too fast, set it to a lower number. 
 
 ![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
+
+**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
 
 **Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement. 
 
@@ -160,8 +162,6 @@ def mouse_pressed():
 **Test:** 🔄 Run your project. Fire the arrow in the grass or sky to see the miss message. 
 
 **Choose:** 💭 Change the number of points scored for the different colours.
-
-![The output area with an arrow missing the target. The points message is displayed in the output area.](images/missed-points.png)
 
 --- /task ---
 
