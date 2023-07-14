@@ -51,8 +51,8 @@ line_highlights: 12
 ---
 def setup():
 # Setup your game here
-  size(400, 400)  # Width and height of screen
-  no_stroke()
+    size(400, 400)  # Width and height of screen
+    no_stroke()
 
 --- /code ---
 

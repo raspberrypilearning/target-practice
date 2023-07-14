@@ -34,10 +34,10 @@ line_highlights: 8-12
 ---
 # The shoot_arrow function goes here    
 def shoot_arrow():   
-  arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
-  arrow_y = randint(100, 300)  # Store a random number between 100 and 300    
-  fill('sienna')  # Set the arrow to fill colour to brown   
-  circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+    arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
+    arrow_y = randint(100, 300)  # Store a random number between 100 and 300    
+    fill('sienna')  # Set the arrow to fill colour to brown   
+    circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- /code ---
 
@@ -55,9 +55,9 @@ line_numbers: true
 line_number_start: 31
 line_highlights: 33
 ---
-  fill('yellow')  # Set the colour for the circle fill to yellow      
-  circle(200, 200, 30)  # Draw the middle circle using x, y, width
-  shoot_arrow()
+    fill('yellow')  # Set the colour for the circle fill to yellow      
+    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    shoot_arrow()
 
 --- /code ---
 
@@ -97,12 +97,12 @@ line_highlights: 8, 11
 ---
 # The shoot_arrow function goes here     
 def shoot_arrow():
-  global hit_colour  # Can be used in other functions  
-  arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
-  arrow_y = randint(100, 300)  # Store a random number between 100 and 300
-  hit_color = get(arrow_x, arrow_y)  # Get the hit colour     
-  fill('sienna')  # Set the arrow to fill colour to brown   
-  circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+    global hit_colour  # Can be used in other functions  
+    arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
+    arrow_y = randint(100, 300)  # Store a random number between 100 and 300
+    hit_color = get(arrow_x, arrow_y)  # Get the hit colour     
+    fill('sienna')  # Set the arrow to fill colour to brown   
+    circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
   
 --- /code ---
 
@@ -131,7 +131,7 @@ line_highlights: 6
 
 # The mouse_pressed function goes here    
 def mouse_pressed():    
-  print('🎯')
+    print('🎯')
 
 --- /code ---
 

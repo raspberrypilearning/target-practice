@@ -29,10 +29,10 @@ line_numbers: true
 line_number_start: 18
 line_highlights: 20, 21
 ---
-  fill('lightgreen')  # Set the fill colour for the grass to light green
-  rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-  fill('sienna')  # Brown colour
-  triangle(150, 350, 200, 150, 250, 350) # Draw a triangle for the target's stand
+    fill('lightgreen')  # Set the fill colour for the grass to light green
+    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
+    fill('sienna')  # Brown colour
+    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
 
 --- /code ---
 
@@ -67,10 +67,10 @@ line_number_start: 20
 line_highlights: 22, 23
 ---
 
-  fill('sienna')  # Brown colour
-  triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-  fill('blue')  # Set the circle fill colour to blue
-  circle(200, 200, 170)  # Draw the outer circle
+    fill('sienna')  # Brown colour
+    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
+    fill('blue')  # Set the circle fill colour to blue
+    circle(200, 200, 170)  # Draw the outer circle
   
 --- /code ---
 
@@ -101,14 +101,14 @@ line_number_start: 20
 line_highlights: 24, 25
 ---
 
-  fill('sienna')  # Brown colour
-  triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-  fill('blue')  # Set the circle fill colour to blue
-  circle(200, 200, 170)  # Draw the outer circle
-  fill('red')  # Set the colour for the circle fill to red
-  circle(200, 200, 110)  # Draw the inner circle using x, y, width
-  fill('yellow')  # Set the colour for the circle fill to yellow      
-  circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna')  # Brown colour
+    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
+    fill('blue')  # Set the circle fill colour to blue
+    circle(200, 200, 170)  # Draw the outer circle
+    fill('red')  # Set the colour for the circle fill to red
+    circle(200, 200, 110)  # Draw the inner circle using x, y, width
+    fill('yellow')  # Set the colour for the circle fill to yellow      
+    circle(200, 200, 30)  # Draw the middle circle using x, y, width
 
 --- /code ---
 
@@ -155,7 +155,7 @@ def draw():
     fill('DeepPink')
     circle(200, 200, 110)  # Inner circle
     fill('BlueViolet')
-    circle(200, 200, 30)   # Middle circle
+    circle(200, 200, 30)  # Middle circle
   
 --- /code ---
 
