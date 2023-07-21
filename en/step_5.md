@@ -99,11 +99,11 @@ line_highlights: 9-12
 ---
 
 def mouse_pressed():
-    if hit_colour == Color('blue'):   
+    if hit_colour == Color('blue').hex:   
         print('You hit the outer circle, 50 points!')
-    elif hit_colour == Color('red'):
+    elif hit_colour == Color('red').hex:
         print('You hit the inner circle, 200 points!')
-    elif hit_colour == Color('yellow'):
+    elif hit_colour == Color('yellow').hex:
         print('You hit the middle, 500 points!')
 
 --- /code ---
@@ -121,6 +121,8 @@ def mouse_pressed():
 **Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
 
 **Debug:** 🐞 Make sure that you have entered the correct colour name for **your** circles. 
+
+**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours. 
 
 --- /task ---
 
@@ -144,11 +146,11 @@ line_highlights: 13-14
 ---
 
 def mouse_pressed():
-    if hit_colour == Color('blue'):   
+    if hit_colour == Color('blue').hex:   
         print('You hit the outer circle, 50 points!')
-    elif hit_colour == Color('red'):
+    elif hit_colour == Color('red').hex:
         print('You hit the inner circle, 200 points!')
-    elif hit_colour == Color('yellow'):
+    elif hit_colour == Color('yellow').hex:
         print('You hit the middle, 500 points!')
     else:   
         print('You missed! No points!')
