@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legenda: Pergunta 3 de 3
 ---
 
-A circle is drawn using the following code:
+Um círculo é desenhado usando o seguinte código:
 
 --- code ---
 ---
@@ -14,7 +14,7 @@ language: python
 def setup():   
 size(400, 400)   
 fill(0, 255, 0)   
-no_stroke()
+sem_batida()
 
 def draw():   
 circle(0, 0, 300)
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Qual das imagens abaixo mostra a posição correta deste círculo na área de saída?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Um círculo verde centralizado no canto inferior direito da área de saída.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Não necessariamente. Para centralizar o círculo no canto inferior direito, as coordenadas precisariam ser iguais ao tamanho da tela. Neste exemplo, a elipse seria `circle(400, 400, 300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Um círculo verde centralizado no meio da área de saída.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  Não necessariamente. Para centralizar o círculo no meio, as coordenadas precisariam ser metade do tamanho da tela. Neste exemplo, `circle(200, 200, 300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Um círculo verde centralizado no canto superior esquerdo da área de saída.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Está correto! Este círculo está centralizado nas coordenadas (0,0), no canto superior esquerdo da tela.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Um círculo verde centralizado no canto superior direito da área de saída.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Não, este círculo teria o código `circle(350, 150, 300)` para centralizá-lo no canto superior direito da tela. A coordenada `x` é a posição horizontal da elipse na tela, e a coordenada `y` é posição vertical da elipse na tela.
 
   --- /feedback ---
 
