@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: 質問2/3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+あなたのプロジェクトでは、`if` , `elif`, `else`条件を使って、矢がどの色に着地したかをチェックしましたね。
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+In the example below, a variable called `speed` has the number `6` stored in it. このコードを実行すると、出力領域には何が表示されるでしょうか？
 
 --- code ---
 ---
@@ -14,29 +14,29 @@ language: python
 ---
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if speed == 7: print('超高速') elif speed == 5: print('かなり速い') elif speed == 6: print('非常に速い') else: print('速度が認識されない！')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x)`非常に速い`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  そのとおりです！ **speed**変数に`6`という値が代入され、`speed == 6`という条件が**True**となり、`非常に速い`と表示されます。
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `速度が認識されない！`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  ちょっと違います、**speed**変数に割り当てられている値を見てください。
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) 何も表示されない
 
   --- feedback ---
 
