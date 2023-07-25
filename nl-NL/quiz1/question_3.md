@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
 
-A circle is drawn using the following code:
+Een ellips wordt getekend met behulp van de volgende code:
 
 --- code ---
 ---
@@ -13,49 +13,49 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0, 255, 0)   
+fill(0,255,0)   
 no_stroke()
 
 def draw():   
-circle(0, 0, 300)
+ellipse(0,0,300,300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Welke van de onderstaande afbeeldingen toont de juiste positie van deze ellips in het uitvoergebied?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Een groene cirkel in het midden van de rechterbenedenhoek van het uitvoergebied.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Niet helemaal, om de cirkel in de rechterbenedenhoek te centreren, zouden de coördinaten hetzelfde moeten zijn als de schermgrootte. In dit voorbeeld zou de ellips `ellipse(400,400,300,300)`zijn.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Een groene cirkel in het midden van het uitvoergebied.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  Niet helemaal, om de cirkel in het midden te centreren, zouden de coördinaten de helft van de schermgrootte moeten zijn. In dit voorbeeld `ellipse(200,200,300,300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Een groene cirkel in het midden van de linkerbovenhoek van het uitvoergebied.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Dat is correct! Deze cirkel is gecentreerd op coördinaten (0,0), de linkerbovenhoek van het scherm.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Een groene cirkel gecentreerd bij de rechterbovenhoek van het uitvoergebied.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Nee, deze cirkel zou de code `ellipse(350,150,300,300)` hebben om deze bij de rechterbovenhoek van het scherm te centreren. De `x` coördinaat is hoe ver naar rechts over het scherm de ellips is, en de `y` coördinaat is hoe ver het naar beneden op het scherm is.
 
   --- /feedback ---
 
