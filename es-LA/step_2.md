@@ -15,9 +15,9 @@ Tu juego necesita un fondo colorido.
 
 --- task ---
 
-Abre el [proyecto inicial de Tiro al blanco](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-Si tienes una cuenta en Trinket, puedes hacer clic en el botón **Remix** para guardar una copia en tu biblioteca **My Trinkets**.
+If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
 
 --- /task ---
 
