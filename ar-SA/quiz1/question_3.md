@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: السؤال 3 من 3
 ---
 
-A circle is drawn using the following code:
+يتم رسم القطع الناقص باستخدام التعليمات البرمجية التالي:
 
 --- code ---
 ---
@@ -13,49 +13,49 @@ language: python
 
 def setup():   
 size(400, 400)   
-fill(0, 255, 0)   
+fill(0,255,0)   
 no_stroke()
 
 def draw():   
-circle(0, 0, 300)
+ellipse(0,0,300,300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+أي من الصور أدناه توضح الموضع الصحيح لهذا القطع الناقص في منطقة المخرجات؟
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![دائرة خضراء متمركزة في الركن الأيمن السفلي من منطقة المخرجات.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  ليس تمامًا ، لتوسيط الدائرة في الزاوية اليمنى السفلية ، يجب أن تكون الإحداثيات هي نفس حجم الشاشة. في هذا المثال ، سيكون القطع الناقص `ellipse(400,400,300,300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![دائرة خضراء تتمركز في منتصف منطقة المخرجات.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  ليس تمامًا ، لتوسيط الدائرة في المنتصف ، يجب أن تكون الإحداثيات نصف حجم الشاشة. في هذا المثال ، `ellipse(200,200,300,300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![دائرة خضراء متمركزة في الزاوية العلوية اليسرى من منطقة المخرجات.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  هذا صحيح! تتركز هذه الدائرة عند الإحداثيات (0،0) ، الزاوية العلوية اليسرى من الشاشة.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![دائرة خضراء متمركزة في الجانب العلوي الأيمن من منطقة المخرجات.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  لا ، سيكون لهذه الدائرة التعليمات البرمجية `ellipse(350,150,300,300)` لتوسيطها في أعلى يمين الشاشة. الإحداثي `×` هو مدى المسافة بين القطع الناقص عبر الشاشة ، والإحداثي `y` هو مدى المسافة أسفل الشاشة.
 
   --- /feedback ---
 
