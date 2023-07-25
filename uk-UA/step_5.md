@@ -11,25 +11,24 @@
 </div>
 </div>
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+</p>
+
+### Відображення балів
+
 --- task ---
 
-Перейди до функції `draw()` та додай до списку глобальних змінних `, outer, inner, middle`.
+Delete ❌ the `print('🎯')` line of code.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 26
+def draw():
 line_highlights: 28
 ---
+# Things to do in every frame
+def mouse_pressed():
 
-def draw():
-# Що відбувається на кожному кадрі
-  global wood, outer, inner, middle    
-sky = color(92, 204, 206) # Червоний = 92, Зелений = 204, Синій = 206    
-grass = color(149, 212, 122)    
-wood = color(145, 96, 51)    
-outer = color(0, 120, 180)    
-inner = color(210, 60, 60)   
-middle = color(220, 200, 0)
 
 --- /code ---
 
@@ -39,77 +38,58 @@ middle = color(220, 200, 0)
 Ми завжди використовуємо <span style="color: #0faeb0; font-weight: bold;"> умови</span>, щоб приймати рішення. Скажімо так: "Якщо олівець затупився, його треба нагострити". Аналогічно, умови `if` дозволяють писати код, який виконує різні дії в залежності від того, чи умова істинна або хибна.
 </p>
 
-### Відображення балів
-
 --- task ---
 
 Видали ❌ рядок коду `print( red(hit_color), green(hit_color), blue(hit_color) )`.
 
+Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
+
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
 line_highlights: 9
----
-# Функція mouse_pressed викликається тут
-def mouse_pressed():
-
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Код `print` виведе повідомлення, `if` якщо `hit_color` дорівнює `outer` 🎯.
-
-Зверни увагу 👀, що в коді використовуються два символи дорівнювання `==`, що означатиме **дорівнює**.
-
---- code ---
----
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 9, 10
 ---
 
 # Функція mouse_pressed викликається тут
 def mouse_pressed():     
-if hit_color == outer:      
-print('Влучення в зовнішнє коло - 50 балів!') # Як і функції, оператори 'if' починаються з абзацного відступу
+if hit_colour == Color('blue').hex:  # Like the code in functions, the code in 'if' statements is indented print('You hit the outer circle, 50 points!')
 
 --- /code ---
+
+**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `'blue'` with the colour name that you have chosen.
 
 --- /task ---
 
 --- task ---
 
-**Тест:** 🔄 Запусти свій проєкт. Спробуй зафіксувати стрілу на синьому зовнішньому колі, щоб побачити, як виглядає повідомлення.
+**Test:** 🔄 Run your project. Try to fire the arrow on the blue outer circle to see the message.
 
-**Порада:** 💡 `frame_rate()`, у `setup`, контролює швидкість подій у твоїй грі. Якщо швидкість занадто висока, встанови меншу цифру.
+**Tip:** 💡 `frame_rate=2`, in `run` at the bottom of your code, controls how fast your game draws. If it's going too fast, set it to a lower number.
 
-![Область виведення зі стрілою, яка влучила у зовнішнє коло. Оператор виводу балів відображається в області виводу.](images/blue-points.png)
+![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
+
+**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
+
+**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+
+**Debug:** 🐞 Make sure that you have entered the correct colour name you used for **your** outer circle.
+
+--- /task ---
+
+`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. Any remaining conditions will be ignored.
+
+--- task ---
 
 **Налагодження:** 🐞 Переконайся, що твій код точно збігається з кодом, і не забудь про відступ всередині оператора `if`.
 
---- /task ---
-
-`elif` (else - if) використовується для додавання додаткових умов до оператора `if`. Вони будуть виконуватися зверху вниз. Вона буде виконуватися, як тільки буде виконана умова **True**. А решта умов будуть проігноровані.
-
---- task ---
-
-Заробляй бали, коли стріла влучає в коло 🎯 `inner` або `middle`:
-
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
-line_highlights: 11, 12, 13, 14
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 6
+line_highlights: 9, 10
 ---
 
-def mouse_pressed():    
-if hit_color == outer:    
-print('Влучення в зовнішнє коло - 50 балів!')    
-elif hit_color == inner:    
-print('Влучення в внутрішнє коло - 200 балів!')   
-elif hit_color == middle:    
-print('Влучення в центр - 500 балів!')
+def mouse_pressed(): if hit_colour == Color('blue').hex:   
+print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!')
 
 --- /code ---
 
@@ -117,41 +97,39 @@ print('Влучення в центр - 500 балів!')
 
 --- task ---
 
-**Тест:** 🔄 Запусти свій проєкт. Спробуй влучити стрілою у внутрішнє та внутрішнє коло, щоб побачити повідомлення.
+**Test:** 🔄 Run your project. Try to fire the arrow on the inner and middle circles to see their messages.
 
-![Зона виведення зі стрілою, що торкається внутрішнього кола. Оператор виводу балів відображається в області виводу.](images/yellow-points.png)
+![The output area with arrow touching the inner circle. The points message is displayed in the output area.](images/yellow-points.png)
 
-**Налагодження:** 🐞 Перевір, чи правильно зроблено відступ, як у прикладі.
+**Debug:** 🐞 Check your indentation matches the example.
 
-**Налагодження:** 🐞 Якщо ти бачиш повідомлення, що `inner` або `middle` "не визначено", то повернись до `draw()` та перевір, що вони знаходяться в рядку, який визначає змінні як глобальні.
+**Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
+
+**Debug:** 🐞 Make sure that you have entered the correct colour name for **your** circles.
+
+**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours.
 
 --- /task ---
 
 ### Мимо мішені
 
-Треба вирішити: що буде, якщо стріла не влучить у мішень? ❌
+There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
 
-Щоб зробити це, скористайся `else`.
+To do this last check, you use `else`.
 
 --- task ---
 
-Додай код, щоб зробити `print` повідомлення `else`, якщо не було виконано ні одного оператора `if` або `elif`.
+Щоб зробити це, скористайся `else`.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 8
-line_highlights: 15, 16
+Додай код, щоб зробити `print` повідомлення `else`, якщо не було виконано ні одного оператора `if` або `elif`.
+line_highlights: 11, 12, 13, 14
 ---
 
-def mouse_pressed():    
-if hit_color == outer:   
-print('Влучення в зовнішнє коло - 50 балів!')   
-elif hit_color == inner:   
-print('Влучення в внутрішнє коло - 200 балів!')   
-elif hit_color == middle:    
-print('Влучення в центр - 500 балів!')   
-else:   
-print('Промах! Ніяких балів!")
+def mouse_pressed(): if hit_colour == Color('blue').hex:   
+print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!') else:   
+print('You missed! No points!')
 
 --- /code ---
 
@@ -159,11 +137,10 @@ print('Промах! Ніяких балів!")
 
 --- task ---
 
-**Тест:** 🔄 Запусти свій проєкт. Спробуй зафіксувати стрілу в траві або на небі, щоб побачити повідомлення про промах.
+**Test:** 🔄 Run your project. Fire the arrow in the grass or sky to see the miss message.
 
-**Обирай:** 💭 Змінюй число балів, які нараховуються за різні кольори, як захочеш.
-
-![Область виводу зі стрілою, що не потрапляє в мішень. Оператор виводу балів відображається в області виводу.](images/missed-points.png)
+**Choose:** 💭 Change the number of points scored for the different colours.
 
 --- /task ---
 
+**Обирай:** 💭 Змінюй число балів, які нараховуються за різні кольори, як захочеш.
