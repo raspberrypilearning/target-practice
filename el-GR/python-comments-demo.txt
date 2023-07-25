@@ -6,7 +6,7 @@ Things to do in every frame
 
 Red = 92, Green = 204, Blue = 206
 
-Set the fill color to grass
+Set the fill colour to grass
 
 x, y, width, height
 
@@ -70,4 +70,4 @@ Transform
 
 Keyboard
 
-Set the fill color to grass
+Set the fill colour to grass
