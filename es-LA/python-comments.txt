@@ -1,87 +1,87 @@
-Things to do in every frame
+Cosas que hacer en cada cuadro
 
-Red = 92, Green = 204, Blue = 206
+Rojo = 92, Verde = 204, Azul = 206
 
-Start x, start y, width, height
+x inicial, y inicial, ancho, alto
 
-x, y, width, height
+x, y, ancho, alto
 
-Set the stand fill colour to wood
+Establece el color de relleno del soporte en madera
 
-Set the arrow to fill colour to wood
+Establece el color de relleno de la flecha en madera
 
-Set the stand fill colour to grass
+Establece el color de relleno del soporte en césped
 
-Set the circle fill colour to outer
+Establece el color de relleno del círculo en exterior
 
-Set the circle fill colour to inner
+Establece el color de relleno del círculo en interior
 
-Set the circle fill colour to middle
+Establece el color de relleno del círculo en medio
 
-x, y, width of the circle
+x, y, ancho del círculo
 
-Inner circle - x, y, width of the circle
+Círculo interior - x, y, ancho del círculo
 
-Middle circle - x, y, width of the circle
+Círculo medio - x, y, ancho del círculo
 
-Outer circle.200, 200 is the middle of the screen
+Círculo exterior. 200, 200 es el centro de la pantalla
 
-Blue
+Azul
 
-Red
+Rojo
 
-Yellow
+Amarillo
 
-Stand
+Base
 
-Outer circle
+Círculo exterior
 
-Inner circle
+Círculo interior
 
-Bullseye
+Diana
 
-The shoot_arrow function goes here
+La función disparar_flecha va aquí
 
-Import library code
+Importa la biblioteca de código
 
-Update to random coordinates
+Actualizar a coordenadas aleatorias
 
-Save the colour before drawing the arrow
+Guardar el color antes de dibujar la flecha
 
-The mouse_pressed function goes here
+La función mouse_pressed va aquí
 
-Can be used in other functions
+Se puede utilizar en otras funciones
 
-Like functions, 'if' statements are indented
+Al igual que las funciones, las declaraciones 'if' están indentandas
 
-Setup your game here
+Configura tu juego aquí
 
-width and height
+ancho y alto
 
-Definitions for compatibility with the p5py processing library
+Definiciones de compatibilidad con la biblioteca de procesamiento p5py
 
-Shape
+Forma
 
-Fonts
+Tipos de letra
 
-Text
+Texto
 
-Colour
+Color
 
-Images
+Imágenes
 
-Environment
+Entorno informático
 
-Transform
+Transformar
 
-Keyboard
+Teclado
 
-Keep this to run your code
+Mantén esto para ejecutar tu código
 
-Store a random number between 100 and 300
+Almacena un número aleatorio entre 100 y 300
 
-Get the hit colour
+Consigue el color en que cayó la flecha
 
-Draw a small circle at random coordinates
+Dibuja un pequeño círculo en coordenadas aleatorias
 
-width and height of screen
+ancho y alto de la pantalla
