@@ -15,9 +15,9 @@ Seu jogo precisa de um fundo colorido.
 
 --- task ---
 
-Abra o [Iniciador do projeto tiro ao alvo](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-Se você tiver uma conta Trinket, você pode clicar no botão **Remix** para salvar uma cópia em sua biblioteca **My Trinkets**.
+If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
 
 --- /task ---
 
