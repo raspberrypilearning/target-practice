@@ -1,18 +1,18 @@
-## Quick quiz
+## Teste rápido
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Responda às três perguntas. Há dicas para guiá-lo para a resposta correta.
 
-When you have answered each question, click on **Check my answer**.
+Após responder cada pergunta, clique em **Verificar minha resposta**.
 
-Have fun!
+Divirta-se!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legenda: Pergunta 1 de 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Aqui temos um quadrado azul, quais são os valores RGB que irão criá-lo?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Um único bloco de cor azul.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Não necessariamente. Quando todos os valores são definidos para `0`, a cor é **preta**.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Não necessariamente. As cores seguem o modelo RGB. Esta cor tem valor R máximo e nenhum G ou B, então ela será **vermelha**.
 
   --- /feedback ---
 
@@ -36,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  Está correto! As cores seguem o modelo RGB. Esta cor não tem R ou G, mas máximo B, então ela será **azul**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Não necessariamente. Quanto todas as cores são definidas para o máximo `255`, a cor é **branca**.
 
   --- /feedback ---
 
