@@ -15,9 +15,9 @@ Your game needs a colourful background.
 
 --- task ---
 
-[アーチェリースターター](https://trinket.io/python/cbf88a8458){:target="_blank"}プロジェクトを開く。
+Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-Trinketアカウントをお持ちの方は、**Remix**ボタンをクリックすると、`My Trinkets`ライブラリにコピーを保存することができます。
+If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
 
 --- /task ---
 
