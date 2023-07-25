@@ -1,4 +1,4 @@
-## Create a background
+## एक पृष्ठभूमि बनाएँ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ Your game needs a colourful background.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![आउटपुट जहां पृष्ठभूमि बनाने के लिए एक आसमान-रंग वाली रेक्टेंगल घास-रंग वाली रेक्टेंगल के ऊपर हैं।](images/background.png){:width="300px"}
 
 </div>
 </div>
@@ -43,12 +43,14 @@ To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — setup() line_numbers: true line_number_start: 11
-line_highlights: 15
+language: python filename: main.py — setup() line_numbers: true line_number_start: 9
+line_highlights: 12
 ---
 def setup():
 # Setup your game here
-  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
+
+    size(400, 400)  # Width and height of screen
+    no_stroke()
 
 --- /code ---
 
@@ -57,6 +59,8 @@ def setup():
 --- task ---
 
 **Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+
+**Tip:** 💡 You will need to press **Stop** to stop your program, this will make the **Run** button reappear.
 
 --- /task ---
 
@@ -70,20 +74,20 @@ def setup():
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 17
-line_highlights: 27, 28
+language: python filename: main.py — draw() line_numbers: true line_number_start: 14
+line_highlights: 18-19
 ---
 def draw():
 # Things to do in every frame
-  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  fill(sky)     
-rect(0, 0, 400, 250)     
-fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
+    fill('cyan')  # Set the fill colour for the sky to cyan
+    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
+    fill('lightgreen')  # Set the fill colour for the grass to light green
+    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
 
 --- /task ---
 
@@ -95,3 +99,4 @@ fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, 
 
 --- /task ---
 
+--- save ---
