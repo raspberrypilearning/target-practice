@@ -1,28 +1,30 @@
 ---
-title: Target practice
+title: Tiro ao alvo
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: Use Python para desenhar um alvo e marcar pontos acertando-o com flechas
+meta_title: Python coding projects for kids and teens | Target practice
+meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: Você vai fazer
   - 
-    title: Create a background
+    title: Crie um plano de fundo
   - 
-    title: Draw your target
+    title: Desenhe o seu alvo
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Atire sua flecha
   - 
-    title: Score points
+    title: Marque pontos
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Teste rápido
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Melhore o seu projeto
   - 
-    title: What next?
+    title: E agora?
