@@ -1,10 +1,10 @@
-Things to do in every frame
+हर फ्रेम में करने के लिए चीजें
 
-Red = 92, Green = 204, Blue = 206
+लाल = 92, हरा = 204, नीला = 206
 
-Start x, start y, width, height
+प्रारंभ x, प्रारंभ y, चौड़ाई, ऊँचाई
 
-x, y, width, height
+x, y, चौड़ाई, ऊंचाई
 
 Set the stand fill colour to wood
 
@@ -24,59 +24,59 @@ Inner circle - x, y, width of the circle
 
 Middle circle - x, y, width of the circle
 
-Outer circle.200, 200 is the middle of the screen
+बाहरी गोल. 200, 200 स्क्रीन का मध्य है
 
-Blue
+नीला
 
-Red
+लाल
 
-Yellow
+पीला
 
-Stand
+स्टैंड
 
-Outer circle
+बाहरी गोल
 
-Inner circle
+भीतरी गोल
 
-Bullseye
+बुल्ज़ाइ
 
-The shoot_arrow function goes here
+shoot_arrow फ़ंक्शन यहाँ जाता है
 
-Import library code
+लाइब्रेरी कोड इम्पोर्ट करें
 
-Update to random coordinates
+अयादृच्छिक निर्देशांक में अपडेट करें
 
-Save the colour before drawing the arrow
+तीर बनाने से पहले रंग सेव करें
 
-The mouse_pressed function goes here
+mouse_pressed फ़ंक्शन यहाँ जाता है
 
-Can be used in other functions
+अन्य फंक्शन में उपयोग किया जा सकता है
 
-Like functions, 'if' statements are indented
+फ़ंक्शंस जैसे, 'if' कथन इंडेंट किए जाते हैं
 
-Setup your game here
+अपना गेम यहां सेट करें
 
-width and height
+चौड़ाई और ऊंचाई
 
-Definitions for compatibility with the p5py processing library
+p5py संसाधन लाइब्रेरी के साथ संगतता के लिए परिभाषाएँ
 
-Shape
+आकृति
 
-Fonts
+फ़ॉन्ट
 
-Text
+टेक्स्ट
 
-Colour
+रंग
 
-Images
+छवि
 
-Environment
+दुनिया
 
-Transform
+रूपांतरित करें
 
-Keyboard
+कीबोर्ड
 
-Keep this to run your code
+अपना कोड चलाने के लिए इसे रखें
 
 Store a random number between 100 and 300
 
