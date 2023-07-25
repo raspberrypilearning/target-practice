@@ -1,28 +1,30 @@
 ---
-title: Target practice
+title: Ymarfer saethu
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: Defnyddiwch Python i lunio targed a sgorio pwyntiau drwy ei daro â saethau
+meta_title: Python coding projects for kids and teens | Target practice
+meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: Cyflwyniad
   - 
-    title: Create a background
+    title: Creu cefndir
   - 
-    title: Draw your target
+    title: Llunio eich targed
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Saethu
   - 
-    title: Score points
+    title: Sgorio pwyntiau
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Myfyrio
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Uwchraddio dy brosiect
   - 
-    title: What next?
+    title: Beth nesaf?
