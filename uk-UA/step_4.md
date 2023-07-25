@@ -31,10 +31,10 @@ line_highlights: 10, 11, 12, 13, 14
 ---
 # Функція shoot_arrow викликається тут
 def shoot_arrow():   
-arrow_x = randint(100, 300) # Зберігає випадкове число від 100 до 300    
-arrow_y = randint(100, 300) # Зберігає випадкове число від 100 до 300    
+arrow_x = randint(100, 300) # Зберігання випадкового числа в діапазоні від 100 до 300    
+arrow_y = randint(100, 300) # Зберігання випадкового числа в діапазоні від 100 до 300    
 fill(wood) # Встановлення кольору заливки стріли на wood   
-circle(arrow_x, arrow_y, 15) # Малювання маленького кола на випадкових координатах
+circle(arrow_x, arrow_y, 15) # Намалювати маленьке коло на випадкових координатах
 
 --- /code ---
 
@@ -49,9 +49,10 @@ circle(arrow_x, arrow_y, 15) # Малювання маленького кола 
 language: python filename: main.py — draw() line_numbers: true line_number_start: 42
 line_highlights: 44
 ---
-  fill(middle)    
-circle(200, 200, 30)    
-shoot_arrow()
+
+    fill('yellow')  # Set the colour for the circle fill to yellow      
+    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    shoot_arrow()
 
 --- /code ---
 
@@ -59,25 +60,27 @@ shoot_arrow()
 
 --- task ---
 
-**Тест:** 🔄 Запусти свій код та подивись, як стріла з'являється у випадковому місці в кожному кадрі.
+**Test:** 🔄 Run your code and see the arrow appear in a random position each frame.
 
-![Мішень з коричневою стрілою у вигляді кружечка, що з'являється в різних положеннях.](images/fire_arrow.gif)
+![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-Фон та мішень будуть перемальовані поверх старої стріли. Це означає, що ти побачиш лише одну стрілу за один раз.
+The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
 
 --- /task ---
 
 ### Визнач колір, на який потрапила стріла
 
-Функція `get()` повертає колір пікселя.
+The `get()` function returns the colour of a pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0; font-weight: bold;">Піксель</span>, скорочено від picture element - це окрема кольорова точка у зображенні. Зображення складаються з великої кількості кольорових пікселів.
+A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
 </p>
 
 --- task ---
 
-Додай код, щоб `get` колір пікселя з центру стріли та зберегти його у змінній `hit_color`.
+Add a **global variable** called `hit_colour` that can be used throughout your code.
+
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code this can be done with the `.hex` string.
 
 --- code ---
 ---
@@ -88,7 +91,7 @@ line_highlights: 13
 def shoot_arrow():    
 arrow_x = randint(100, 300)    
 arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) # Визначення, в який колір влучено fill(wood)  
+hit_color = get(arrow_x, arrow_y) # Визначити, в який колір влучено fill(wood)  
 circle(arrow_x, arrow_y, 15)
 
 --- /code ---
@@ -125,12 +128,10 @@ print( red(hit_color), green(hit_color), blue(hit_color) )
 
 Зроби `hit_color` **глобальною змінною**, щоб її можна було використовувати для всього твого коду:
 
---- code ---
----
-language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
-line_highlights: 13
----
-# Функція shoot_arrow викликається тут
+The project prints 🎯 each time the arrow is redrawn.
+
+![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+
 def shoot_arrow():    
 global hit_color # Можна використовувати в інших функціях     
 arrow_x = randint(100, 300)     
@@ -138,22 +139,8 @@ arrow_y = randint(100, 300)
 hit_color = get(arrow_x, arrow_y) # Збереження кольору перед малюванням стріли fill(wood)     
 circle(arrow_x, arrow_y, 15)
 
---- /code ---
+**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
 
 --- /task ---
 
---- task ---
-
-**Тест:** 🔄 Запусти свій проєкт.
-
-Проєкт буде виводити `hit_color` щоразу, коли стріла буде перемальовуватися.
-
-![Мішень з коричневою стрілою у вигляді кружечка, що з'являється в різних положеннях.](images/fire_arrow.gif)
-
-**Налагодження:** 🐞 Якщо ти побачиш повідомлення про те, що `hit_color` "не визначено", то повернись до `shoot_arrow()` та перевір, чи є у тебе рядок `global hit_color`.
-
-**Налагодження:** 🐞 Уважно перевір рядок `print` на наявність ком і дужок.
-
---- /task ---
-
-
+--- save ---
