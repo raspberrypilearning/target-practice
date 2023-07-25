@@ -29,7 +29,6 @@
 title: Завершений проєкт
 ---
 
-Ти можеш переглянути [завершений проєкт тут](https://trinket.io/python/f686c82d8a){:target="_blank"}.
+Ти можеш переглянути [завершений проєкт тут](https://trinket.io/python/8444210ec1){:target="_blank"}.
 
 --- /collapse ---
-
