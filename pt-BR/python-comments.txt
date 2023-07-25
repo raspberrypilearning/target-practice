@@ -1,87 +1,87 @@
-Things to do in every frame
+Coisas para fazer em cada imagem
 
-Red = 92, Green = 204, Blue = 206
+Vermelho = 92, Verde = 204, Azul = 206
 
-Start x, start y, width, height
+Inicializa x, inicializa y, largura, altura
 
-x, y, width, height
+x, y, largura, altura
 
-Set the stand fill colour to wood
+Define a cor de preenchimento do suporte para madeira
 
-Set the arrow to fill colour to wood
+Define a cor de preenchimento da flecha para madeira
 
-Set the stand fill colour to grass
+Define a cor de preenchimento do suporte para grama
 
-Set the circle fill colour to outer
+Define a cor de preenchimento do círculo como externa
 
-Set the circle fill colour to inner
+Define a cor de preenchimento do círculo como interna
 
-Set the circle fill colour to middle
+Define a cor de preenchimento do círculo para meio
 
-x, y, width of the circle
+x, y, largura do círculo
 
-Inner circle - x, y, width of the circle
+Círculo interno - x, y, largura do círculo
 
-Middle circle - x, y, width of the circle
+Círculo do meio - x, y, largura do círculo
 
-Outer circle.200, 200 is the middle of the screen
+Círculo externo.200, 200 é o meio da tela
 
-Blue
+Azul
 
-Red
+Vermelho
 
-Yellow
+Amarelo
 
-Stand
+Suporte
 
-Outer circle
+Círculo externo
 
-Inner circle
+Círculo interno
 
-Bullseye
+Alvo
 
-The shoot_arrow function goes here
+A função atirar_flecha vai aqui
 
-Import library code
+Importa código da biblioteca
 
-Update to random coordinates
+Atualiza para coordenadas aleatórias
 
-Save the colour before drawing the arrow
+Salva a cor antes de desenhar a flecha
 
-The mouse_pressed function goes here
+A função mouse_pressed vai aqui
 
-Can be used in other functions
+Pode ser usado em outras funções
 
-Like functions, 'if' statements are indented
+Como as funções, as instruções 'if' são indentadas
 
-Setup your game here
+Configure seu jogo aqui
 
-width and height
+largura e altura
 
-Definitions for compatibility with the p5py processing library
+Definições para compatibilidade com a biblioteca de processamento p5py
 
-Shape
+Forma
 
-Fonts
+Fontes
 
-Text
+Texto
 
-Colour
+Cor
 
-Images
+Imagens
 
-Environment
+Ambiente
 
-Transform
+Transformar
 
-Keyboard
+Teclado
 
-Keep this to run your code
+Mantenha isso para executar seu código
 
-Store a random number between 100 and 300
+Armazena um número aleatório entre 100 e 300
 
-Get the hit colour
+Obtém a cor de acerto
 
-Draw a small circle at random coordinates
+Desenha um pequeno círculo em coordenadas aleatórias
 
-width and height of screen
+largura e altura da tela
