@@ -15,7 +15,7 @@
 
 --- task ---
 
-Відкрий стартовий проєкт [Стрільба по мішені](https://trinket.io/python/9973649e5c){:target="_blank"}.
+Відкрий стартовий проєкт [Стрільба по мішені](https://trinket.io/python/ba27b1e043){:target="_blank"}.
 
 Якщо у тебе є обліковий запис в Trinket, ти можеш натиснути на кнопку **Remix**, щоб зберегти копію до своєї бібліотеки **My Trinkets**.
 
@@ -48,13 +48,17 @@ line_highlights: 15
 ---
 def setup():
 # Налаштуй свою гру тут
-  size(400, 400) # ширина та висота екрана frame_rate(2) no_stroke()
+
+    size(400, 400)  # Width and height of screen
+    no_stroke()
 
 --- /code ---
 
 --- /task ---
 
 --- task ---
+
+**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
 
 **Запускай** знову свій код та зверни увагу 👀 на те, як зникла рамка (обведення).
 
@@ -75,23 +79,24 @@ line_highlights: 27, 28
 ---
 def draw():
 # Що відбувається на кожному кадрі
-  global wood sky = color(92, 204, 206) # Червоний = 92, Зелений = 204, Синій = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  fill(sky)     
-rect(0, 0, 400, 250)     
-fill(grass) # Встановлення кольору заливки на grass rect(0, 250, 400, 150) # x, y, ширина, висота
+    fill('cyan')  # Set the fill colour for the sky to cyan
+    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
+    fill('lightgreen')  # Set the fill colour for the grass to light green
+    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
 
 --- /code ---
 
-**Порада:** 💡 Ми додали коментарі до нашого коду, наприклад, `# Встановлення кольору заливки на трава`, щоб пояснити тобі, що робить цей код. Тобі не потрібно додавати ці коментарі до коду, але вони можуть бути корисними, щоб нагадувати тобі про призначення рядків коду.
+**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-**Тест:** 🔄 Запусти свій проєкт ще раз, щоб побачити готовий фон.
+**Test:** 🔄 Run your project again to view the finished background.
 
-![Область виводу з прямокутником небесного кольору, над прямокутником зеленого кольору, які створюють фон.](images/background.png){:width="400px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
 --- /task ---
 
+--- save ---
