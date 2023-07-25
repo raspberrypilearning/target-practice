@@ -4,7 +4,7 @@
 
 --- print-only ---
 
-![Проект запуск ракети.](images/showcase_rocket.png)
+![Rocket launch project.](images/showcase_rocket.png){:width="600px"}
 
 --- /print-only ---
 
@@ -16,16 +16,15 @@
 
 **Порада:** Приблизно 25,000 кг має вистачити, але поекспериментуй з цифрами, щоб дізнатися, що може статися.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Click the **Run** button to view an example of this project.
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Проєкт Запуск ракети](images/showcase_rocket.png)
+![Rocket launch project](images/showcase_rocket.png){:width="600px"}
 
 --- /task ---
 
 --- /no-print ---
 
-Якщо ти хочеш отримати більше задоволення від вивчення Python, спробуй один з [цих проєктів](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
-
-
-
+If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
