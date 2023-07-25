@@ -1,4 +1,4 @@
-## Draw your target
+## Teken je doelwit
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ Your game needs a target to shoot arrows at.
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![Het uitvoergebied met het doel en de standaard.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
@@ -15,20 +15,22 @@ Your game needs a target to shoot arrows at.
 
 --- task ---
 
-Set the fill colour to `wood` (brown).
+Set the fill colour to `sienna` (brown).
 
 Draw a triangle using the x and y coordinates for each of the corners.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 i the bottom right.](images/stand_coords.png){:width="400px"}
+![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 27
-line_highlights: 29, 30
+language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+line_highlights: 24-25
 ---
-  fill(grass)   
-rect(0, 250, 400, 150) fill(wood) # Set the stand fill colour to wood     
-triangle(150, 350, 200, 150, 250, 350)
+
+    fill('lightgreen')  # Set the fill colour for the grass to light green
+    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
+    fill('sienna')  # Brown colour
+    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
 
 --- /code ---
 
@@ -36,9 +38,9 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Test:** Voer je code uit om de standaard voor je doelwit te zien.
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Een bruine driehoek op gras en tegen een lucht.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
@@ -46,9 +48,9 @@ triangle(150, 350, 200, 150, 250, 350)
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+**Tip:** Om een cirkel te maken, moeten de **breedte** en **hoogte** gelijk zijn.
 
-Set the fill colour to `outer` (blue).
+Set the fill colour to `blue`.
 
 Draw a circle with x and y coordinates for its centre and a width.
 
@@ -56,14 +58,14 @@ Draw a circle with x and y coordinates for its centre and a width.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 29
-line_highlights: 31, 32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 33
+line_highlights: 31-32
 ---
 
-  fill(wood)   
-triangle(150, 350, 200, 150, 250, 350)   
-fill(outer) # Set the circle fill colour to outer    
-circle(200, 200, 170) # x, y, width of the circle
+    fill(hout)<br x-id="3" />
+      triangle(150, 350, 200, 150, 250, 350)<br x-id="3" />
+      fill(buitenste)<br x-id="4" />
+      ellipse(200, 200, 170, 170) #Buitenste cirkel.
 
 --- /code ---
 
@@ -71,82 +73,84 @@ circle(200, 200, 170) # x, y, width of the circle
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Test:** Voer je code uit om de eerste grote blauwe cirkel te zien.
 
-The blue circle was drawn after the stand so it is in front:
+The blue circle was drawn after the stand so it is in front.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Een bruine driehoek en blauwe cirkel op gras en tegen een lucht.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
+Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale coördinaten (200, 200) - het midden van het scherm.
+
 --- task ---
 
-👀 Find your colour variables in the `draw` function.
-
-Create two variables called `inner` and `middle` to store colours for the other circles.
-
-The `color` function expects three numbers: one each for red, green, and blue.
+Maak twee nieuwe variabelen om de kleuren voor de resterende `binnenste` en `roos` cirkels op te slaan.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 17
-line_highlights: 24, 25
+language: python filename: main.py - draw() line_numbers: true line_number_start: 28
+line_highlights: 33-34
 ---
-def draw():   
-# Things to do in every frame global wood sky = color(92, 204, 206)   
-grass = color(149, 212, 122)   
-wood = color(145, 96, 51)   
-outer = color(0, 120, 180) # Blue    
-inner = color(210, 60, 60) # Red    
-middle = color(220, 200, 0) # Yellow
+
+    fill('sienna')  # Brown colour
+    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
+    fill('blue')  # Set the circle fill colour to blue
+    circle(200, 200, 170)  # Draw the outer circle
+    fill('red')  # Set the colour for the circle fill to red
+    circle(200, 200, 110)  # Draw the inner circle using x, y, width
+    fill('yellow')  # Set the colour for the circle fill to yellow      
+    circle(200, 200, 30)  # Draw the middle circle using x, y, width
 
 --- /code ---
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+--- task ---
+
+**Debuggen:** Python gebruikt de Amerikaanse spelling van 'color' (zonder een 'u'), dus zorg ervoor dat jij dat ook doet.
+
+![Een bruine driehoek met drie gekleurde cirkels op gras en tegen een lucht.](images/three-circles.png){:width="400px"}
+
+--- /task ---
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**Test:** Voer je project opnieuw uit om het doel met drie gekleurde cirkels te zien. Verander de kleuren totdat je er tevreden mee bent. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+
+![Een bruine driehoek op gras en tegen een lucht met de coördinaatpunten gelabeld. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+
+--- collapse ---
+---
+title: Example code using different colours
+---
 
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 35, 36, 37, 38
+line_highlights: 37-40
 ---
-  fill(wood)    
-triangle(150, 350, 200, 150, 250, 350)  
-fill(outer)   
-circle(200, 200, 170) fill(inner) # Set the circle fill colour to inner      
-circle(200, 200, 110) # Inner circle - x, y, width of the circle  
-fill(middle) # Set the circle fill colour to middle      
-circle(200, 200, 30) # Middle circle - x, y, width of the circle
+
+def draw():
+# Things to do in every frame
+
+    fill('BlueViolet')
+    rect(0, 0, 400, 250)  # Sky
+    fill('DeepSkyBlue')
+    rect(0, 250, 400, 150)  # Ground
+    fill('FireBrick')
+    triangle(150, 350, 200, 150, 250, 350)  # Stand
+    fill('LemonChiffon')
+    circle(200, 200, 170)  # Outer circle
+    fill('DeepPink')
+    circle(200, 200, 110)  # Inner circle
+    fill('BlueViolet')
+    circle(200, 200, 30)  # Middle circle
 
 --- /code ---
 
---- /task ---
-
---- task ---
-
-**Test:** 🔄 Run your project to see the target with three coloured circles.
-
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
-
-**Debug:** 🐞 Check that you have used the American spelling of 'color' (without a 'u').
+--- /collapse ---
 
 --- /task ---
 
---- task ---
-
-**Choose:** 💭 Change any of the colours.
-
-[[[generic-theory-simple-colours]]]
-
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
-
-
---- /task ---
-
-
-
+--- save ---
