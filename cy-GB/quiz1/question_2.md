@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: Cwestiwn 2 o 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+Yn eich prosiect roeddech chi wedi defnyddio'r amodau `if` , `elif`, ac `else` i wirio ar ba liw glaniodd y saeth.
 
 In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
 
@@ -20,23 +20,23 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Cyflym iawn`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  Cywir! Mae'r gwerth `6` wedi cael ei neilltuo i'r newidyn **cyflymder**, sy'n golygu mai **True** yw'r amod `cyflymder == 6` a bydd yn printio `Cyflym iawn`.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Heb adnabod y cyflymder!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Ddim yn hollol, 'drychwch ar y gwerth sydd wedi'i neilltuo i'r newidyn **cyflymder**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Dim byd yn cael ei brintio
 
   --- feedback ---
 
