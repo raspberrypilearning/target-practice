@@ -1,4 +1,4 @@
-## Create a background
+## قم بإنشاء خلفية
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ Your game needs a colourful background.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+! [منطقة مخرجات مع مستطيل بلون السماء فوق مستطيل بلون العشب لإنشاء الخلفية.] (images / background.png) {: "width = "300px}
 
 </div>
 </div>
@@ -15,9 +15,9 @@ Your game needs a colourful background.
 
 --- task ---
 
-Open the [Target practice starter](https://trinket.io/python/9973649e5c){:target="_blank"} project.
+افتح مشروع [بداية الرماية](https://trinket.io/python/eb67937f99){:target="_blank}.
 
-If you have a Trinket account, you can click on the **Remix** button to save a copy to your **My Trinkets** library.
+إذا كان لديك حساب Trinket ، فيمكنك النقر فوق الزر **Remix** لحفظ نسخة في مكتبة `My Trinkets`.
 
 --- /task ---
 
@@ -29,7 +29,9 @@ The starter project has some code already written for you.
 
 Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
+![مستطيل أزرق حوله حدود سوداء وفوق مستطيل رمادي. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png)no_stroke()   
+fill(sky)   
+rect(0, 0, 400, 250) #محور س, محور ص, العرض, الارتفاع
 
 **Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
 
@@ -43,12 +45,14 @@ To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
 
 --- code ---
 ---
-language: python filename: main.py — setup() line_numbers: true line_number_start: 11
-line_highlights: 15
+language: python filename: main.py — draw() line_numbers: true line_number_start: 23
+line_highlights: 25
 ---
 def setup():
 # Setup your game here
-  size(400, 400) # width and height of screen frame_rate(2) no_stroke()
+
+    size(400, 400)  # Width and height of screen
+    no_stroke()
 
 --- /code ---
 
@@ -56,7 +60,9 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+قم بإيقاف تشغيل الحد بإضافة `no_stroke()` قبل أن تبدأ في رسم السماء.
+
+**اختبار:** قم بتشغيل مشروعك مرة أخرى لعرض الخلفية النهائية.
 
 --- /task ---
 
@@ -66,32 +72,33 @@ def setup():
 
 **Add** code to draw a green rectangle at the bottom of the screen.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png)دالة `size()` تستدعى في `setup()` يعين حجم الشاشة على 400 بكسل × 400 بكسل.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 17
-line_highlights: 27, 28
+language: python filename: main.py — draw() line_numbers: true line_number_start: 18
+line_highlights: 26
 ---
 def draw():
 # Things to do in every frame
-  global wood sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206 grass = color(149, 212, 122) wood = color(145, 96, 51) outer = color(0, 120, 180)
 
-  fill(sky)     
-rect(0, 0, 400, 250)     
-fill(grass) # Set the fill color to grass rect(0, 250, 400, 150) # x, y, width, height
+    fill('cyan')  # Set the fill colour for the sky to cyan
+    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
+    fill('lightgreen')  # Set the fill colour for the grass to light green
+    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill color to grass`, to tell you what it does. You don't need to add these comments to your code, but they can be helpful to remind you what lines of code do.
+**اختبار:** قم بتشغيل الكود الخاص بك لرؤية السماء التي رسمتها. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+**اختبار:** قم بتشغيل مشروعك مرة أخرى لعرض الخلفية النهائية.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
 
 --- /task ---
 
+--- save ---
