@@ -1,18 +1,18 @@
-## Quick quiz
+## Questionnaire rapide
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-When you have answered each question, click on **Check my answer**.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
-Have fun!
+Amuse-toi bien !
 
 --- question ---
 ---
-legend: Question 1 of 3
+legend : Question 1 sur 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+Voici un carré bleu, quelles sont les valeurs RVB qui vont le créer ?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![Un seul bloc de couleur bleue.](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Pas tout à fait, lorsque toutes les valeurs de couleur sont définies sur `0`, la couleur est le **noir**.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Pas tout à fait, les couleurs suivent le modèle RVB. Cette couleur a une valeur R maximale et pas de V ou B, donc sera **rouge**.
 
   --- /feedback ---
 
@@ -36,7 +36,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  C'est correct ! Les couleurs suivent le modèle RVB. Cette couleur n'a ni R ni V, mais un maximum de B, donc sera **bleu**.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Pas tout à fait, lorsque toutes les valeurs de couleur sont réglées au maximum `255` , la couleur est le **blanc**.
 
   --- /feedback ---
 
