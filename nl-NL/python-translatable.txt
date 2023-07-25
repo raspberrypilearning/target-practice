@@ -1,43 +1,43 @@
-sky
+lucht
 
-grass
+gras
 
-wood
+hout
 
-outer
+buitenste
 
-inner
+binnenste
 
-bullseye
+roos
 
-shoot_arrow
+schiet_pijl
 
-arrow_x
+pijl_x
 
-arrow_y
+pijl_y
 
-hit_color
+raak_kleur
 
-You hit the outer circle, 50 points!
+Je raakt de buitenste cirkel, 50 punten!
 
-You hit the inner circle, 200 points!
+Je hebt de binnenste cirkel geraakt, 200 punten!
 
 You hit the middle, 500 points!
 
-You hit the bullseye, 500 points!
+In de roos, 500 punten!
 
-You missed! No points!
+Je hebt gemist! Geen punten!
 
 How fast do you want the arrow? slow, medium, fast
 
 You hit red, 200 points!
 
-speed
+snelheid
 
-Super fast
+Super snel
 
-Pretty quick
+Aardig snel
 
-Very fast
+Zeer snel
 
-Speed not recognised!
+Snelheid niet herkend!
