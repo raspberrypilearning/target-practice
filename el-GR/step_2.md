@@ -15,9 +15,9 @@
 
 --- task ---
 
-Άνοιξε το [αρχικό έργο Τοξοβολίας](https://trinket.io/python/1e11252c65){:target="_blank"}.
+Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-Εάν έχεις λογαριασμό Trinket, μπορείς να κάνεις κλικ στο κουμπί **Remix** για να αποθηκεύσεις ένα αντίγραφο στη βιβλιοθήκη `My Trinkets`.
+If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
 
 --- /task ---
 
