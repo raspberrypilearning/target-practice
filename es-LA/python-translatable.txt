@@ -1,43 +1,43 @@
-sky
+cielo
 
-grass
+pasto
 
-wood
+madera
 
-outer
+externo
 
-inner
+interno
 
-bullseye
+diana
 
-shoot_arrow
+disparar_flecha
 
-arrow_x
+flecha_x
 
-arrow_y
+flecha_y
 
-hit_color
+color_de_impacto
 
-You hit the outer circle, 50 points!
+Le diste al círculo externo, ¡50 puntos!
 
-You hit the inner circle, 200 points!
+Le diste al círculo interno, ¡200 puntos!
 
-You hit the middle, 500 points!
+¡Le diste al centro, 500 puntos!
 
-You hit the bullseye, 500 points!
+¡Le diste a la diana, 500 puntos!
 
-You missed! No points!
+¡Fallaste! ¡Sin puntos!
 
-How fast do you want the arrow? slow, medium, fast
+¿Qué tan rápido quieres la flecha? lento, medio, rápido
 
-You hit red, 200 points!
+¡Llegaste a rojo, 200 puntos!
 
-speed
+velocidad
 
-Super fast
+Súper rápido
 
-Pretty quick
+Bastante rápido
 
-Very fast
+Muy rapido
 
-Speed not recognised!
+¡Velocidad no reconocida!
