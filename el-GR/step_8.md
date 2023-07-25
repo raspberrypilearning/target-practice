@@ -1,10 +1,10 @@
-## What next?
+## Και τώρα;
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Εάν ακολουθείς το μονοπάτι [Εισαγωγή στην Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro), μπορείς να προχωρήσεις στο έργο [Εκτόξευση πυραύλου](https://projects.raspberrypi.org/en/projects/rocket-launch). Σε αυτό το έργο, θα δημιουργήσεις μία διαδραστική κινούμενη εικόνα ενός πυραύλου που εκτοξεύει έναν δορυφόρο σε τροχιά.
 
 --- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png)
+![Rocket launch project.](images/showcase_rocket.png){:width="600px"}
 
 --- /print-only ---
 
@@ -12,20 +12,19 @@ If you are following the [Introduction to Python](https://projects.raspberrypi.o
 
 --- task ---
 
-**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use to reach orbit but not waste too much extra fuel?
+**Δοκίμασέ το:** Το πρόγραμμά σου θα προσαρμόσει το κινούμενο σχέδιο με βάση την ποσότητα καυσίμου που του δίνεις και ή θα τα καταφέρει ή θα αποτύχει να φτάσει σε τροχιά. Πόσο καύσιμο θέλεις να χρησιμοποιήσεις για να φτάσει σε τροχιά, αλλά να μην σπαταλήσεις πάρα πολύ επιπλέον καύσιμο;
 
-**Tip:** Around 25,000kg should be enough, but experiment with the numbers to see what happens.
+**Συμβουλή:** Περίπου 25.000 κιλά θα είναι αρκετά, αλλά πειραματίσου με τους αριθμούς για να δεις τι συμβαίνει.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Click the **Run** button to view an example of this project.
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Rocket launch project](images/showcase_rocket.png)
+![Rocket launch project](images/showcase_rocket.png){:width="600px"}
 
 --- /task ---
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
-
-
-
+Το έργο αυτό μεταφράστηκε από τους εθελοντές:
