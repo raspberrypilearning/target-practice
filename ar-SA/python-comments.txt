@@ -1,10 +1,10 @@
-Things to do in every frame
+أشياء للقيام بها في كل إطار
 
-Red = 92, Green = 204, Blue = 206
+احمر = 92, اخضر = 204, ازرق = 206
 
-Start x, start y, width, height
+ابداء محور س, ابداء محور ص, عرض, ارتفاع
 
-x, y, width, height
+محور س, محور ص, العرض, الارتفاع
 
 Set the stand fill colour to wood
 
@@ -24,59 +24,59 @@ Inner circle - x, y, width of the circle
 
 Middle circle - x, y, width of the circle
 
-Outer circle.200, 200 is the middle of the screen
+الدائرة الخارجية. 200, 200 هو منتصف الشاشة
 
-Blue
+ازرق
 
-Red
+احمر
 
-Yellow
+أصفر
 
-Stand
+حامل الهدف
 
-Outer circle
+الدائرة الخارجية
 
-Inner circle
+الدائرة الداخلية
 
-Bullseye
+مركز الهدف
 
-The shoot_arrow function goes here
+نضع دالة shoot_arrow هنا
 
-Import library code
+استيراد مكتبة التعليمات البرمجية
 
-Update to random coordinates
+التحديث إلى الإحداثيات العشوائية
 
-Save the colour before drawing the arrow
+احفظ اللون قبل رسم السهم
 
-The mouse_pressed function goes here
+نضع دالة mouse_pressed هنا
 
-Can be used in other functions
+يمكن استخدامها في دالة أخرى
 
-Like functions, 'if' statements are indented
+Like دالة ، يتم وضع مسافة بادئة لعبارات 'if'
 
-Setup your game here
+قم بإعداد لعبتك هنا
 
-width and height
+العرض والارتفاع
 
-Definitions for compatibility with the p5py processing library
+تعاريف للتوافق مع مكتبة مع
 
-Shape
+شكل
 
-Fonts
+الخطو
 
-Text
+نص
 
-Colour
+اللون
 
-Images
+صور
 
-Environment
+بيئة
 
-Transform
+تحول
 
-Keyboard
+لوحة المفاتيح
 
-Keep this to run your code
+احتفظ بهذا لتشغيل التعليمات البرمجية الخاصة بك
 
 Store a random number between 100 and 300
 
