@@ -1,28 +1,30 @@
 ---
-title: Target practice
+title: Oefening doelwit schieten
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: Gebruik Python om een doel te tekenen en punten te scoren door het met pijlen te raken
+meta_title: Python coding projects for kids and teens | Target practice
+meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: Inleiding
   - 
-    title: Create a background
+    title: Een achtergrond maken
   - 
-    title: Draw your target
+    title: Teken je doelwit
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Schiet de pijl af
   - 
-    title: Score points
+    title: Punten scoren
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Reflectie
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
