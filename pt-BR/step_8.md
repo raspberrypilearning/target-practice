@@ -1,10 +1,10 @@
-## What next?
+## E agora?
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Se você estiver seguindo a trilha [Introdução ao Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro), poderá passar para o projeto [Lança Foguetes](https://projects.raspberrypi.org/en/projects/rocket-launch). Neste projeto, você fará uma animação interativa de um foguete lançando um satélite em órbita.
 
 --- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png)
+![Rocket launch project.](images/showcase_rocket.png){:width="600px"}
 
 --- /print-only ---
 
@@ -12,20 +12,19 @@ If you are following the [Introduction to Python](https://projects.raspberrypi.o
 
 --- task ---
 
-**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use to reach orbit but not waste too much extra fuel?
+**Experimente:** Seu programa ajustará a animação com base na quantidade de combustível que você fornecer e terá sucesso ou falha ao atingir a órbita. Quanto combustível você deseja usar para atingir a órbita, mas sem desperdiçar muito combustível extra?
 
-**Tip:** Around 25,000kg should be enough, but experiment with the numbers to see what happens.
+**Dica:** Cerca de 25.000 kg devem ser suficientes, mas experimente os números para ver o que acontece.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Click the **Run** button to view an example of this project.
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Rocket launch project](images/showcase_rocket.png)
+![Rocket launch project](images/showcase_rocket.png){:width="600px"}
 
 --- /task ---
 
 --- /no-print ---
 
 If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
-
-
-
