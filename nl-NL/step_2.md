@@ -15,9 +15,9 @@ Your game needs a colourful background.
 
 --- task ---
 
-Open het [Boogschieten starter](https://trinket.io/python/ed9eefbca2){:target="_blank"} project.
+Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-Als je een Trinket-account hebt, kun je op de knop **Remix** klikken om een kopie op te slaan in je `My Trinkets`-bibliotheek.
+If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
 
 --- /task ---
 
