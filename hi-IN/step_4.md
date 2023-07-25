@@ -1,4 +1,4 @@
-## Fire your arrow
+## अपने तीर को चलाये
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@ When you click or tap, an arrow will fire at the position of a moving target cir
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![लक्ष्य, एक भूरे वृत्त तीर के साथ विभिन्न स्थानों में दिखाई देता है।](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
@@ -26,15 +26,15 @@ Add code to randomly draw a brown circle within a target area:
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
-line_highlights: 10, 11, 12, 13, 14
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
+line_highlights: 8-12
 ---
-# The shoot_arrow function goes here
+# shoot_arrow फ़ंक्शन यहाँ जाता है
 def shoot_arrow():   
-arrow_x = randint(100, 300) # Store a random number between 100 and 300    
-arrow_y = randint(100, 300) # Store a random number between 100 and 300    
-fill(wood) # Set the arrow to fill colour to wood   
-circle(arrow_x, arrow_y, 15) # Draw a small circle at random coordinates
+arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
+arrow_y = randint(100, 300)  # Store a random number between 100 and 300    
+fill('sienna')  # Set the arrow to fill colour to brown   
+circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- /code ---
 
@@ -46,12 +46,13 @@ Go to the `draw` function and call your new `shoot_arrow` function.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 42
-line_highlights: 44
+language: python filename: main.py — draw() line_numbers: true line_number_start: 31
+line_highlights: 33
 ---
-  fill(middle)    
-circle(200, 200, 30)    
-shoot_arrow()
+
+    fill('yellow')  # Set the colour for the circle fill to yellow      
+    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    shoot_arrow()
 
 --- /code ---
 
@@ -59,9 +60,9 @@ shoot_arrow()
 
 --- task ---
 
-**Test:** 🔄 Run you code and see the arrow appear in a random position each frame.
+**Test:** 🔄 Run your code and see the arrow appear in a random position each frame.
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
 The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
 
@@ -77,19 +78,21 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 
 --- task ---
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_color` variable.
+Add a **global variable** called `hit_colour` that can be used throughout your code.
+
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code this can be done with the `.hex` string.
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 9
-line_highlights: 13
+language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
+line_highlights: 8, 11
 ---
 # The shoot_arrow function goes here
-def shoot_arrow():    
-arrow_x = randint(100, 300)    
-arrow_y = randint(100, 300)    
-hit_color = get(arrow_x, arrow_y) # Get the hit colour fill(wood)  
-circle(arrow_x, arrow_y, 15)
+def shoot_arrow(): global hit_colour  # Can be used in other functions  
+arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
+arrow_y = randint(100, 300)  # Store a random number between 100 and 300 hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour     
+fill('sienna')  # Set the arrow to fill colour to brown   
+circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- /code ---
 
@@ -105,38 +108,17 @@ The `p5` library 'listens' for certain events, one of these is the press of the 
 
 Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
 
-Add code to print the amounts of red, green, and blue in the pixel the arrow lands on.
+Add code to print the target emoji 🎯 when the mouse is clicked.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 8, 9
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
+line_highlights: 6
 ---
 
 # The mouse_pressed function goes here
 def mouse_pressed():    
-print( red(hit_color), green(hit_color), blue(hit_color) )
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Make `hit_color` a **global variable** so that it can be used throughout your code:
-
---- code ---
----
-language: python filename: main.py - shoot_arrow() line_numbers: true line_number_start: 11
-line_highlights: 13
----
-# The shoot_arrow function goes here
-def shoot_arrow():    
-global hit_color # Can be used in other functions     
-arrow_x = randint(100, 300)     
-arrow_y = randint(100, 300)     
-hit_color = get(arrow_x, arrow_y) # Save the colour before drawing the arrow fill(wood)     
-circle(arrow_x, arrow_y, 15)
+print('🎯')
 
 --- /code ---
 
@@ -146,14 +128,14 @@ circle(arrow_x, arrow_y, 15)
 
 **Test:** 🔄 Run your project.
 
-The project prints the `hit_color` each time the arrow is redrawn.
+The project prints 🎯 each time the arrow is redrawn.
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
 
-**Debug:** 🐞 If you are seeing a message about `hit_color` being 'not defined', then go back to `shoot_arrow()` and check that you have the `global hit_color` line.
+**Debug:** 🐞 If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have included the `global hit_colour` line.
 
 **Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
 
 --- /task ---
 
-
+--- save ---
