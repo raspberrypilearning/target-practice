@@ -15,9 +15,9 @@ Your game needs a colourful background.
 
 --- task ---
 
-افتح مشروع [بداية الرماية](https://trinket.io/python/eb67937f99){:target="_blank}.
+Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-إذا كان لديك حساب Trinket ، فيمكنك النقر فوق الزر **Remix** لحفظ نسخة في مكتبة `My Trinkets`.
+If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
 
 --- /task ---
 
