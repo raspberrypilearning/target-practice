@@ -1,28 +1,30 @@
 ---
-title: Target practice
+title: تمرين الرماية
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: استخدم Python لرسم هدف وتسجيل نقاط بضربه بالسهام
+meta_title: Python coding projects for kids and teens | Target practice
+meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: المقدمة
   - 
-    title: Create a background
+    title: قم بإنشاء خلفية
   - 
-    title: Draw your target
+    title: ارسم هدفك
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: أطلق سهمك
   - 
-    title: Score points
+    title: تسجيل النقاط
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: تفكير
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -31,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: قم بتطوير مشروعك
   - 
-    title: What next?
+    title: ما التالي؟
