@@ -94,7 +94,7 @@ language: python
 filename: main.py — shoot_arrow() 
 line_numbers: true
 line_number_start: 7
-line_highlights: 9,12
+line_highlights: 9, 12
 ---
 # The shoot_arrow function goes here     
 def shoot_arrow():
