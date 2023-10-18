@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legenda: Pergunta 3 de 3
+legend: Pergunta 3 de 3
 ---
 
 Um círculo é desenhado usando o seguinte código:
@@ -14,7 +14,7 @@ language: python
 def setup():   
 size(400, 400)   
 fill(0, 255, 0)   
-sem_batida()
+no_stroke()
 
 def draw():   
 circle(0, 0, 300)
