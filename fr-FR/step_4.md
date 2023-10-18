@@ -80,7 +80,7 @@ Un <span style="color: #0faeb0; font-weight: bold;">pixel</span>, abréviation d
 
 Tu as défini deux fonctions `tire_fleche()` et `mouse_pressed()`, ces deux fonctions doivent utiliser la variable `couleur_touche`.
 
-Ajoute du code pour stocker le `touche_couleur`. Utilise la fonction `get()` pour obtenir la couleur du pixel aux coordonnées `fleche_x` et `fleche_y` — le centre de la flèche.
+Ajoute du code pour stocker le `touche_couleur`. Utilise la fonction `get()` pour obtenir la couleur du pixel aux coordonnées `fleche_x` et `fleche_y` — le centre de la flèche. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
