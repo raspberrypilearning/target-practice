@@ -15,19 +15,19 @@ Seu jogo precisa de um fundo colorido.
 
 --- task ---
 
-Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
+Abra o projeto [Tiro ao alvo inicial](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}. O editor de código será aberto em outra guia do navegador.
 
-If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
+Se você possui uma conta Raspberry Pi, você pode clicar no botão **Salvar** para salvar uma cópia do seu projeto em seus **Projetos**.
 
 --- /task ---
 
-### Editar o céu
+### Edite o céu
 
 --- task ---
 
-O projeto inicial tem algum código já escrito para você.
+O projeto inicial já possui algum código escrito para você.
 
-Clique em **'Executar'** para ver um retângulo azul desenhado com x=`0`, y=`0` (topo da tela). Este retângulo com `400` x `250` píxels é o céu.
+Clique em **'Executar'** para ver um retângulo azul desenhado com x=`0`, y=`0` (topo da tela). Este retângulo com `400` x `250` píxeis é o céu.
 
 ![Um retângulo azul com uma borda preta ao redor, acima de um retângulo cinza. O canto superior esquerdo da tela é marcado como x=0, y=0 esta é a origem do retângulo. A largura é destacada como 400 e a altura como 250. O código rect(0, 0, 400, 250) é mostrado.](images/sky_stroke.png){:width="400px"}
 
@@ -58,9 +58,9 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+**Execute** seu código novamente e observe 👀 que a borda (traço) agora desapareceu.
 
-**Tip:** 💡 You will need to press **Stop** to stop your program, this will make the **Run** button reappear.
+**Dica:** 💡 Você precisará pressionar **Stop** para parar seu programa, isso fará com que o botão **Run** reapareça.
 
 --- /task ---
 
@@ -78,24 +78,24 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 18-19
 ---
 def draw():
-# Coisas para fazer em cada imagem
+# Coisas para fazer em cada quadro
 
-    fill('cyan')  # Set the fill colour for the sky to cyan
-    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
+    fill('cyan') # Define a cor de preenchimento do céu para ciano
+    rect(0, 0, 400, 250) # Desenha um retângulo para o céu com estes valores para x, y, largura, altura
+    fill('lightgreen ') # Define a cor de preenchimento da grama para verde claro
+    rect(0, 250, 400, 150) # Desenha um retângulo para a grama com esses valores para x, y, largura, altura
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
+**Dica:** 💡 Adicionamos comentários ao nosso código, como `# Define a cor de preenchimento do céu para ciano`, para informar o que ele faz. Você não precisa adicionar esses comentários ao seu código, mas eles podem ser úteis para lembrá-lo do que as linhas de código fazem.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+**Teste:** 🔄 Execute seu projeto novamente para visualizar o plano de fundo finalizado.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![A área de saída com um retângulo da cor do céu acima de um retângulo da cor da grama para criar o plano de fundo.](images/background.png){:width="400px"}
 
 --- /task ---
 
