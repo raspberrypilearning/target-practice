@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a colourful background.
+आपके गेम को एक रंगीन बैकग्राउंड की आवश्यकता है।
 </div>
 <div>
 
@@ -11,46 +11,45 @@ Your game needs a colourful background.
 </div>
 </div>
 
-### Open the starter project
+### स्टार्टर प्रोजेक्ट खोलें
 
 --- task ---
 
-Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
+[ PLASS Statch starding ](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} प्रोजेक्ट खोलें। कोड संपादक एक अन्य ब्राउज़र टैब में खुलेगा।
 
-If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
+यदि आपके पास एक Raspberry Pi खाता है, तो आप अपने ** ** के लिए एक प्रतिलिपि सहेजने के लिए ** > ** बटन पर क्लिक कर सकते हैं।
 
 --- /task ---
 
-### Edit the sky
+### आकाश को संपादित करें
 
 --- task ---
 
-The starter project has some code already written for you.
+स्टार्टर प्रोजेक्ट में आपके लिए पहले से ही कुछ कोड लिखा हुआ है।
 
-Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
+x=` > `, y=` औसत ` (स्क्रीन का शीर्ष) से बनाया गया नीला भरा हुआ आयत देखने के लिए **'Run'** पर क्लिक करें। यह ` current ` x ` galpeton ` pixels आयत आकाश है।
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
+![एक नीले रंग का आयत जिसके चारों ओर एक काली बॉर्डर है, जो एक धूसर आयत के ऊपर है। कैनवास के ऊपरी बाएँ कोने को x=0, y=0 के रूप में चिह्नित किया गया है यह आयत का मूल है। चौड़ाई 400 और ऊंचाई 250 के रूप में हाइलाइट की गई है। कोड रेक्ट(0, 0, 400, 250) दिखाया गया है।](images/sky_stroke.png){:width="400px"}
 
-**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
+** >:** ? निर्देशांक ऊपर बाएँ कोने में (x=0, y=0) से शुरू होता है। यह आपके द्वारा उपयोग किए गए अन्य निर्देशांक प्रणालियों से भिन्न हो सकता है।
 
 --- /task ---
 
 --- task ---
 
-The sky has been drawn with a black border (stroke).
+आकाश को एक काली सीमा (स्ट्रोक) से खींचा गया है।
 
-To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
+सभी आकृतियों के लिए स्ट्रोक बंद करने के लिए, ` >_stroke()` को ` >> ` फ़ंक्शन में जोड़ें:
 
 --- code ---
 ---
-language: python filename: main.py — setup() line_numbers: true line_number_start: 9
+भाषा: Python फ़ाइल नाम: main.py — setup() line_number: True line_number_start: 9
 line_highlights: 12
 ---
 def setup():
-# Setup your game here
+# अपना गेम यहां सेट करें
 
-    size(400, 400)  # Width and height of screen
-    no_stroke()
+    size(400, 400) # width and height of Screen no_stroke()
 
 --- /code ---
 
@@ -58,44 +57,41 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+** > ** अपना कोड फिर से और ध्यान दें? कि सीमा (स्ट्रोक) अब गायब हो गई है।
 
-**Tip:** 💡 You will need to press **Stop** to stop your program, this will make the **Run** button reappear.
+** >:** ? आपको अपने प्रोग्राम को रोकने के </strong> लिए ** >> को दबाने की आवश्यकता होगी, इससे ** > ** बटन फिर से दिखाई देगा। </p>
 
 --- /task ---
 
-### Draw the grass
+### घास बनाएं
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen.
+स्क्रीन के निचले भाग पर हरा आयत बनाने के लिए ** > dday ** कोड।
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![पृष्ठभूमि बनाने के लिए एक घास के रंग के आयत के ऊपर आकाश-रंगीन आयत वाला आउटपुट क्षेत्र। आयत का ऊपरी बायाँ कोना x=0, y=250 के रूप में चिह्नित है यह आयत का मूल है। चौड़ाई 400 और ऊंचाई 150 के रूप में हाइलाइट की गई है। कोड रेक्ट(0, 250, 400, 150) दिखाया गया है।](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 14
+भाषा: Python फ़ाइल नाम: main.py — draway() line_number: True line_number_start: 14
 line_highlights: 18-19
 ---
-def draw():
-# Things to do in every frame
+def draway():
+# हर फ्रेम में करने के लिए चीजें
 
-    fill('cyan')  # Set the fill colour for the sky to cyan
-    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
+    fill('cyan') # आकाश के लिए भरण रंग सेट करें to cyan(0, 0, 400, 250) # आकाश के लिए x, y, width, height fill('lightgreen') के लिए इन मानों के साथ एक आयत बनाएं#घास के लिए भरण रंग को हल्का हरा रेटरेक्ट (0, 250, 400, 150) सेट करें # x, y, width, height के लिए इन मानों के साथ घास के लिए एक आयत बनाएं
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
+** >:** ? हमने हमारे कोड में टिप्पणियाँ जोड़ी हैं, जैसे `# आकाश के लिए भरण रंग को > ` पर सेट करें, यह आपको बताने के लिए कि यह क्या करता है। आपको अपने कोड में टिप्पणियाँ जोड़ने की आवश्यकता नहीं है, लेकिन वे आपको यह याद दिलाने में मददगार हैं कि कोड की कौन सी पंक्तियाँ करती हैं।
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+** >:** ? तैयार पृष्ठभूमि देखने के लिए अपना प्रोजेक्ट फिर से चलाएँ।
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![पृष्ठभूमि बनाने के लिए एक घास के रंग के आयत के ऊपर आकाश-रंगीन आयत वाला आउटपुट क्षेत्र।](images/background.png){:width="400px"}
 
 --- /task ---
 
