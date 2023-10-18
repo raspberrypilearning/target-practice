@@ -1,18 +1,18 @@
-## Quick quiz
+## शीघ्र क्विज़
 
-Answer the three questions. There are hints to guide you to the correct answer.
+तीनों सवालों के जवाब दें। सही उत्तर के लिए आपका मार्गदर्शन करने के लिए संकेत हैं।
 
-When you have answered each question, click on **Check my answer**.
+जब आप प्रत्येक प्रश्न का उत्तर दे चुके हैं, तो ** > मेरे जंडैक ** पर क्लिक करें।
 
-Have fun!
+आनंद लें!
 
 --- question ---
 ---
 legend: प्रश्न 1 का 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+यहाँ एक नीला वर्ग है, RGB मान क्या हैं जो इसे बनाएंगे?
 
-![A single block of blue colour.](images/quiz-colour.png)
+![नीले रंग का एक एकल ब्लॉक।](images/quiz-colour.png)
 
 --- choices ---
 
@@ -20,7 +20,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+बिल्कुल नहीं, जब सभी रंग मान ` > ` पर सेट होते हैं, तो रंग ** > ** होता है।
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+बिल्कुल नहीं, रंग RGB मॉडल का पालन करते हैं। इस रंग में अधिकतम R मान है और कोई G या B नहीं है, इसलिए ** > ** होगा।
 
   --- /feedback ---
 
