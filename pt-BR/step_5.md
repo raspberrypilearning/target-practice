@@ -6,37 +6,33 @@ Seu jogo adicionará pontuações com base em onde a flecha acerta.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Uma animação do alvo, com a seta aparecendo em diversas posições e as pontuações aparecendo como texto abaixo do jogo.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+Usamos <span style="color: #0faeb0; font-weight: bold;"> condições</span> o tempo todo para tomar decisões. Poderíamos dizer 'se o lápis está cego, aponte-o'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
 </p>
 
 ### Exiba as pontuações
 
 --- task ---
 
-Delete ❌ the `print('🎯')` line of code.
+Exclua ❌ a linha de código `print('🎯')`.
 
 --- code ---
 ---
 language: python filename: main.py line_numbers: true line_number_start: 5
 line_highlights: 7
 ---
-# The mouse_pressed function goes here
+# A função mouse_pressed vai aqui
 def mouse_pressed():
 
 
 --- /code ---
 
 --- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Usamos <span style="color: #0faeb0; font-weight: bold;"> condições</span> o tempo todo para tomar decisões. Poderíamos dizer 'se o lápis está cego, aponte-o'. Da mesma forma, as condições `if` nos permitem escrever código que faz algo diferente dependendo se uma condição é verdadeira ou falsa.
-</p>
 
 --- task ---
 
