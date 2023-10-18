@@ -1,8 +1,8 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank"> अपने कोड एडिटर को बेहतर बनाने में मदद के लिए हमारे सर्वेक्षक </a> बनाएँ!
 </div>
 
-## You will make
+## आप बनाएँगे
 
 Python में, `p5` ग्राफिक्स लाइब्रेरी के साथ, एक लक्ष्य बनाये और अंक स्कोर करने के लिए तीर से मारा।
 
@@ -13,7 +13,7 @@ Python में, `p5` ग्राफिक्स लाइब्रेरी �
 
 --- no-print ---
 
-### Play ▶️
+### खेलें ▶️
 
 --- task ---
 
@@ -28,7 +28,7 @@ Python में, `p5` ग्राफिक्स लाइब्रेरी �
 </div>
 </div>
 
-**Tip:** 💡 When you press **Stop** you will see a prompt that says 'Execution interrupted'. This just means that you have stopped the program whilst the code was still running.
+** >:** ? जब आप ** PLASS ** दबाते हैं, तो आपको एक संकेत दिखाई देगा जो 'निष्पादन में बाधा' कहता है। इसका मतलब यह है कि आपने कोड चलने के दौरान प्रोग्राम को बंद कर दिया है।
 
 --- /task ---
 
@@ -36,12 +36,12 @@ Python में, `p5` ग्राफिक्स लाइब्रेरी �
 
 --- print-only ---
 
-![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
+![बाहरी सर्कल पर एक हिट पॉइंट के साथ एक तीरंदाजी लक्ष्य। 'आप बाहरी वृत्त से टकराए, 50 अंक!' पाठ नीचे प्रदर्शित होता है](images/blue-points.png){:width="640px"}
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+<span style="color: #0faeb0; font-weight: bold;"> तीरंदाजी </span> का सबसे पुराना सबूत दक्षिण अफ्रीका के क्वाज़ुलु-नटाल में सिबुडू गुफा से मिलता है। पत्थर और हड्डी के arrowrums के अवशेष मिले हैं, जो तारीख 60,000 से 70,000 साल पहले के बीच है। 
 </p>
 
 ![](http://code.org/api/hour/begin_coderdojo_target.png)
