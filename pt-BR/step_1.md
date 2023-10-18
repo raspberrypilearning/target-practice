@@ -1,15 +1,15 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Responda à nossa pesquisa</a> para ajudar a melhorar nosso Editor de código!
 </div>
 
-## Você vai fazer
+## O que você vai fazer
 
 Use Python, com a biblioteca de gráficos `p5`, para desenhar um alvo e marcar pontos acertando-o com flechas.
 
 Você deve:
- + Personalize seu jogo com **cores RGB**
- + Use **instruções condicionais** (`if`, `elif`, `else`) para tomar decisões
- + Posicione formas com **coordenadas x, y**
+ + Personalizar seu jogo com **cores RGB**
+ + Usar **instruções condicionais** (`if`, `elif`, `else`) para tomar decisões
+ + Posicionar formas com **coordenadas x, y**
 
 --- no-print ---
 
@@ -28,7 +28,7 @@ Você deve:
 </div>
 </div>
 
-**Tip:** 💡 When you press **Stop** you will see a prompt that says 'Execution interrupted'. This just means that you have stopped the program whilst the code was still running.
+**Dica:** 💡 Ao pressionar **Stop** você verá um prompt que diz 'Execution interrupted'. Isso significa que você interrompeu o programa enquanto o código ainda estava em execução.
 
 --- /task ---
 
@@ -36,12 +36,12 @@ Você deve:
 
 --- print-only ---
 
-![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
+![Um alvo de tiro com arco com um ponto de impacto no círculo externo. O texto 'Você atingiu o círculo externo, 50 pontos!' é exibido abaixo](images/blue-points.png){:width="640px"}
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+A evidência mais antiga de <span style="color: #0faeb0; font-weight: bold;"> tiro com arco </span> vem da Caverna Sibudu em KwaZulu-Natal, África do Sul. Restos de pontas de flechas de pedra e osso foram encontrados, que datam entre 60.000 a 70.000 anos atrás. 
 </p>
 
 ![](http://code.org/api/hour/begin_coderdojo_target.png)
