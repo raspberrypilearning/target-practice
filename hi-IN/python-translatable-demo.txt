@@ -1,37 +1,37 @@
 wood
 
-sky
+आकाश
 
-grass
+घास
 
-outer
+आउटर
 
-inner
+अंदर
 
-middle
+मध्य
 
-shoot_arrow
+boot_arrow
 
-arrow_x
+row_x
 
-arrow_y
+row_y
 
-hit_color
+rop_color
 
-You hit the outer circle, 50 points!
+आप बाहरी सर्कल को हिट करते हैं, 50 पॉइंट!
 
-You hit the inner circle, 200 points!
+आपने आंतरिक वृत्त को मारा, 200 अंक!
 
-You hit the middle, 500 points!
+आपने बीच में मारा, 500 अंक!
 
-You missed! No points!
+आप चूक गए! कोई अंक नहीं!
 
-Super fast
+बहुत तेज
 
-Pretty quick
+बहुत जल्दी है
 
-Very fast
+बहुत तेज
 
-Speed not recognised!
+गति नहीं पहचानी गई!
 
-speed
+गति
