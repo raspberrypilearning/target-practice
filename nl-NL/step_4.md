@@ -80,7 +80,7 @@ Een <span style="color: #0faeb0; font-weight: bold;">pixel</span>, een afkorting
 
 Je hebt twee functies gedefinieerd `schiet_pijl()` en `mouse_pressed()`, beide functies moeten de variabele `raak_kleur` gebruiken.
 
-Voeg code toe om de `raak_kleur` op te slaan. Gebruik de functie `get()` om de kleur van de pixel te vinden op de coördinaten `pijl_x` en `pijl_y` — het midden van de pijl.
+Voeg code toe om de `raak_kleur` op te slaan. Gebruik de functie `get()` om de kleur van de pixel te vinden op de coördinaten `pijl_x` en `pijl_y` — het midden van de pijl. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
