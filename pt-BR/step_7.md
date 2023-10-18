@@ -15,20 +15,20 @@ Personalize e adicione mais ao seu projeto. Talvez você possa alterar o nível 
 
 Você poderia:
 
-+ Adicione um `quarto` e `quinto` círculo, em novas cores, que marcam diferentes quantidades de pontos com base em suas posições 🟠🟣
-+ Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate=2` value 💨
-+ Use `input()` para perguntar ao usuário em qual nível de dificuldade ele deseja jogar 🗣️
++ Adicionar um `quarto` e `quinto` círculo, em novas cores, que marcam diferentes quantidades de pontos com base em suas posições 🟠🟣
++ Colocar emojis em suas mensagens impressas ([aqui está uma lista de emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} dos quais você pode copiar) 🎯
++ Tornar o jogo mais fácil ou mais difícil alterando o valor de `frame_rate=2`💨
++ Usar `input()` para perguntar ao usuário em qual nível de dificuldade ele deseja jogar 🗣️
 
 --- /task ---
 
-![Three project ideas, one has five circles, one has a difficulty input question and one has emojis in the points message.](images/upgrade-ideas.png)
+![Três ideias de projetos, uma com cinco círculos, uma com entrada input através de pergunta para definir a dificuldade e outra com emojis na mensagem de pontos.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
-título: Projeto Concluído
+title: Projeto concluído
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
+Você pode ver o [projeto concluído aqui](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
