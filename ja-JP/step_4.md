@@ -80,7 +80,7 @@ line_highlights: 44-45
 
 2つの関数 `shoot_arrow()` と `mouse_pressed()` を定義していますが、これらの関数は両方とも `hit_color` 変数を使用する必要があります。
 
-`hit_color`を格納するコードを追加します。 `get()`関数で、`arrow_x`と`arrow_y`座標（矢の中心）のピクセルの色を取得することができます。
+`hit_color`を格納するコードを追加します。 `get()`関数で、`arrow_x`と`arrow_y`座標（矢の中心）のピクセルの色を取得することができます。 In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
