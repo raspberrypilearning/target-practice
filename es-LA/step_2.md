@@ -17,7 +17,7 @@ Tu juego necesita un fondo colorido.
 
 Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
 
-If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
+Si tienes una cuenta en Trinket, puedes hacer clic en el botón **Remix** para guardar una copia en tu biblioteca **My Trinkets**.
 
 --- /task ---
 
@@ -59,7 +59,7 @@ def setup():
 
 --- task ---
 
-global madera cielo = color(92, 204, 206) # Rojo = 92, Verde = 204, Azul = 206 pasto = color(149, 212, 122) madera = color(145, 96, 51) externo = color(0, 120, 180)
+Abre el [proyecto inicial de Tiro al blanco](https://trinket.io/python/88502d5879){:target="_blank"}.
 
 **Ejecute** (run) tu código nuevamente y observa 👀 que el borde (stroke) ha desaparecido.
 
