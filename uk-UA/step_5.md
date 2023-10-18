@@ -12,7 +12,7 @@
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
 </p>
 
 ### Відображення балів
@@ -34,19 +34,15 @@ def mouse_pressed():
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Ми завжди використовуємо <span style="color: #0faeb0; font-weight: bold;"> умови</span>, щоб приймати рішення. Скажімо так: "Якщо олівець затупився, його треба нагострити". Аналогічно, умови `if` дозволяють писати код, який виконує різні дії в залежності від того, чи умова істинна або хибна.
-</p>
-
 --- task ---
+
+Display a message **if** the `hit_colour` is equal to the `outer` circle colour (blue) 🎯.
 
 Видали ❌ рядок коду `print( red(hit_color), green(hit_color), blue(hit_color) )`.
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
-
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
 line_highlights: 9
 ---
 
@@ -68,7 +64,9 @@ if hit_colour == Color('blue').hex:  # Like the code in functions, the code in '
 
 ![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
 
-**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
+def mouse_pressed():     
+if hit_color == outer:      
+print('Влучення в зовнішнє коло - 50 балів!') # Подібно до функцій, оператори 'if' починаються з абзацного відступу
 
 **Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
 
@@ -80,7 +78,7 @@ if hit_colour == Color('blue').hex:  # Like the code in functions, the code in '
 
 --- task ---
 
-**Налагодження:** 🐞 Переконайся, що твій код точно збігається з кодом, і не забудь про відступ всередині оператора `if`.
+Score points if the arrow lands on the `inner` or `middle` circles 🎯:
 
 --- code ---
 ---
@@ -115,15 +113,15 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
 
-To do this last check, you use `else`.
+**Налагодження:** 🐞 Якщо ти бачиш повідомлення, що `inner` або `middle` "не визначено", то повернись до `draw()` та перевір, що вони знаходяться в рядку, який визначає змінні як глобальні.
 
 --- task ---
 
-Щоб зробити це, скористайся `else`.
+Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
 
 --- code ---
 ---
-Додай код, щоб зробити `print` повідомлення `else`, якщо не було виконано ні одного оператора `if` або `elif`.
+language: python filename: main.py line_numbers: true line_number_start: 6
 line_highlights: 11, 12, 13, 14
 ---
 
@@ -143,4 +141,4 @@ print('You missed! No points!')
 
 --- /task ---
 
-**Обирай:** 💭 Змінюй число балів, які нараховуються за різні кольори, як захочеш.
+--- save ---
