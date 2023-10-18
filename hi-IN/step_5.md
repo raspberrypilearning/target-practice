@@ -2,41 +2,37 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game will add scores based on where the arrow hits.
+आपका गेम जहां हिट होता है, उसके आधार पर स्कोर जोड़ेगा।
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![लक्ष्य का एक एनीमेशन, जिसमें तीर विभिन्न स्थानों में दिखाई देता है, और स्कोर खेल के नीचे टेक्स्ट के रूप में दिखाई देता है।](images/points-score.gif){:width="300px"}
 
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+हम निर्णय लेने के लिए हर समय </span> के लिए <span style="color: #0faeb0; font-weight: bold;"> शर्तों का उपयोग करते हैं। हम कह सकते हैं 'अगर पेंसिल को कुंद कर दिया जाए, तो उसे तेज कर दें'। Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
 </p>
 
-### Display the scores
+### स्कोर प्रदर्शित करें
 
 --- task ---
 
-Delete ❌ the `print('🎯')` line of code.
+❌ ` >('?')` पंक्ति कोड हटाएँ।
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 5
+भाषा: Python फ़ाइल नाम: main.py line_number: True line_number_start: 5
 line_highlights: 7
 ---
-# The mouse_pressed function goes here
-def mouse_pressed():
+# mouse_powed फ़ंक्शन यहाँ जाता है
+def mouse_powed():
 
 
 --- /code ---
 
 --- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-हम निर्णय लेने के लिए हर समय <span style="color: #0faeb0; font-weight: bold;">कंडीशन्स</span> का उपयोग करते हैं। हम कह सकते हैं 'अगर पेंसिल को कुंद कर दिया जाए, तो उसे तेज कर दें'। Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
-</p>
 
 --- task ---
 
@@ -111,7 +107,7 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 --- /task ---
 
-### Missing the target
+### लक्ष्य गुम है
 
 There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
 
