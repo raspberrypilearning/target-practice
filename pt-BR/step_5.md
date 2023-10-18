@@ -12,7 +12,7 @@ Seu jogo adicionará pontuações com base em onde a flecha acerta.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Usamos <span style="color: #0faeb0; font-weight: bold;"> condições</span> o tempo todo para tomar decisões. Poderíamos dizer 'se o lápis está cego, aponte-o'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+Usamos <span style="color: #0faeb0; font-weight: bold;"> condições</span> o tempo todo para tomar decisões. Poderíamos dizer 'se o lápis está cego, aponte-o'. Da mesma forma, as condições `if` nos permitem escrever código que faz algo diferente dependendo se uma condição é verdadeira ou falsa.
 </p>
 
 ### Exiba as pontuações
@@ -36,9 +36,9 @@ def mouse_pressed():
 
 --- task ---
 
-Display a message **if** the `hit_colour` is equal to the `outer` circle colour (blue) 🎯.
+Exiba uma mensagem **if** a `cor_acerto` for igual à cor dos `círculos` externos (azul) 🎯.
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
+Observe 👀 que o código usa dois sinais de igual `==` para significar **igual a**.
 
 --- code ---
 ---
@@ -52,31 +52,31 @@ if hit_colour == Color('blue').hex:  # Like the code in functions, the code in '
 
 --- /code ---
 
-**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `'blue'` with the colour name that you have chosen.
+**Dica:** 💡 Se você mudou a cor do seu círculo externo, você precisará substituir `'blue'` pelo nome da cor que você escolheu.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to fire the arrow on the blue outer circle to see the message.
+**Teste:** 🔄 Execute seu projeto. Tente parar a flecha no círculo externo azul para ver sua mensagem.
 
-**Tip:** 💡 `frame_rate=2`, in `run` at the bottom of your code, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**Dica:** 💡 `frame_rate=2`, em `run` na parte inferior do seu código, controla a rapidez com que seu jogo desenha. Se estiver indo muito rápido, defina-o para um número menor.
 
-![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
+![A área de saída com a flecha tocando o círculo externo. A mensagem de pontos é exibida na área de saída.](images/blue-points.png)
 
-**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
+**Depurar:** 🐞 Verifique se você usou a grafia americana de 'Color' (sem 'u') e se 'Color' está em maiúscula.
 
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+**Depurar:** 🐞 Certifique-se de que seu código corresponda exatamente e de que você recuou o código dentro de sua instrução `if`.
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name you used for **your** outer circle.
+**Depurar:** 🐞 Certifique-se de ter inserido o nome correto da cor utilizada para **seu** círculo externo.
 
 --- /task ---
 
-`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. Any remaining conditions will be ignored.
+`elif` (else - if) pode ser usado para adicionar mais condições à sua instrução `if`. Eles serão lidos de cima para baixo. Assim que uma condição verdadeira **True** for encontrada, ela será acionada. As condições restantes serão ignoradas.
 
 --- task ---
 
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
+Marque pontos se a flecha atingir os círculos `interno` ou do `meio` 🎯:
 
 --- code ---
 ---
@@ -93,29 +93,29 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to fire the arrow on the inner and middle circles to see their messages.
+**Teste:** 🔄 Execute seu projeto. Tente disparar a flecha nos círculos interno e do meio para ver suas mensagens.
 
-![The output area with arrow touching the inner circle. The points message is displayed in the output area.](images/yellow-points.png)
+![A área de saída com a flecha tocando o círculo interno. A mensagem de pontos é exibida na área de saída.](images/yellow-points.png)
 
-**Debug:** 🐞 Check your indentation matches the example.
+**Depurar:** 🐞 Verifique se seu recuo corresponde ao exemplo.
 
-**Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
+**Depurar:** 🐞 Se você vir uma mensagem sobre `cor_acerto` como 'não definido', volte para `draw()` e verifique se a linha declara `cor_acerto` como uma variável global.
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name for **your** circles.
+**Depurar:** 🐞 Certifique-se de ter inserido o nome correto da cor para **seus** círculos.
 
-**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours.
+**Depurar:** 🐞 Certifique-se de ter usado `.hex` para as cores dos **seus** círculos.
 
 --- /task ---
 
 ### Errando o alvo
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
+Há mais uma decisão que você precisa tomar: o que acontece se a flecha não atingir nenhum dos círculos alvo? ❌
 
-To do this last check, you use `else`.
+Para fazer esta última verificação, você usa o `else`.
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Adicione código para imprimir `print` uma mensagem `else` caso nenhuma das condições `if` e `elif` forem atendidas.
 
 --- code ---
 ---
@@ -133,9 +133,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** 🔄 Run your project. Fire the arrow in the grass or sky to see the miss message.
+**Teste:** 🔄 Execute seu projeto. Dispare a flecha na grama ou no céu para ver a mensagem de erro.
 
-**Choose:** 💭 Change the number of points scored for the different colours.
+**Escolha:** 💭 Altere o número de pontos marcados para as diferentes cores.
 
 --- /task ---
 
