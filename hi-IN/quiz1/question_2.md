@@ -6,7 +6,7 @@ legend: तीन में से दूसरा प्रश्न
 
 अपने प्रोजेक्ट में, आपने `if`, `elif`, और `else` शर्तों का उपयोग किया है ताकि यह पता लगाया जा सके कि तीर किस रंग में उतरा।
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+नीचे दिए गए उदाहरण में, एक वेरिएबल जिसे ` > ` कहा जाता है उसमें संख्या ` > ` संग्रहीत है। जब यह ` > ` स्टेटमेंट चलाया जाता है, तो आउटपुट क्षेत्र में क्या प्रिंट किया जाएगा?
 
 --- code ---
 ---
@@ -40,7 +40,7 @@ if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif s
 
   --- feedback ---
 
-  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
+  फिर से प्रयास करें, जब उपरोक्त सभी स्थितियाँ झूठी होती हैं, तो के लिए अंतिम विकल्प के रूप में ` account ` का उपयोग किया जाता है। शर्तों को फिर से देखें, क्या कोई भी स्थिति सच है?
 
   --- /feedback ---
 
