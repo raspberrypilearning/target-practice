@@ -26,15 +26,15 @@ Adicione código para desenhar aleatoriamente um círculo marrom dentro de uma �
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
+language: python filename: main.py — atirar_flecha() line_numbers: true line_number_start: 7
 line_highlights: 8-12
 ---
 # A função atirar_flecha vai aqui
-def shoot_arrow():   
-arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
-arrow_y = randint(100, 300)  # Store a random number between 100 and 300    
-fill('sienna')  # Set the arrow to fill colour to brown   
-circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+def atirar_flecha():   
+flecha_x = randint(100, 300) # Armazena um número aleatório entre 100 e 300    
+flecha_y = randint(100, 300) # Armazena um número aleatório entre 100 e 300    
+fill('sienna') # Define a cor de preenchimento da flecha como marrom   
+circle(flecha_x, flecha_y, 15) # Desenha um pequeno círculo em coordenadas aleatórias
 
 --- /code ---
 
@@ -50,9 +50,9 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 33
 ---
 
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
-    shoot_arrow()
+    fill('yellow') # Define a cor de preenchimento do círculo para amarelo      
+    circle(200, 200, 30) # Desenha o círculo do meio usando x, y, width
+    atirar_flecha()
 
 --- /code ---
 
@@ -60,39 +60,39 @@ line_highlights: 33
 
 --- task ---
 
-**Test:** 🔄 Run your code and see the arrow appear in a random position each frame.
+**Teste:** 🔄 Execute seu código e veja a flecha aparecer em uma posição aleatória a cada quadro.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Uma animação do alvo com uma seta circular marrom aparecendo em diversas posições.](images/fire_arrow.gif)
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+O plano de fundo e o alvo serão desenhados sobre a flecha antiga. Isso significa que você só vê uma flecha de cada vez.
 
 --- /task ---
 
 ### Obtenha a cor atingida pela flecha
 
-The `get()` function returns the colour of a pixel.
+A função `get()` retorna a cor de um píxel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+Um <span style="color: #0faeb0; font-weight: bold;">píxel</span>, abreviação de elemento de imagem, é um único ponto colorido dentro de uma imagem. As imagens são compostas de muitos píxels coloridos.
 </p>
 
 --- task ---
 
-Add a **global variable** called `hit_colour` that can be used throughout your code.
+Adicione uma **variável global** chamada `cor_acerto` que pode ser usada em todo o seu código.
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code this can be done with the `.hex` string.
+Adicione o código para obter `get` a cor do píxel no centro da flecha e armazene-o na variável `cor_acerto`. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
-line_highlights: 8, 11
+language: python filename: main.py — atirar_flecha() line_numbers: true line_number_start: 7
+line_highlights: 9, 12
 ---
 # A função atirar_flecha vai aqui
-def shoot_arrow(): global hit_colour  # Can be used in other functions  
-arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
-arrow_y = randint(100, 300)  # Store a random number between 100 and 300 hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour     
-fill('sienna')  # Set the arrow to fill colour to brown   
-circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+def atirar_flecha(): global cor_acerto # Pode ser usado em outras funções  
+flecha_x = randint(100, 300) # Armazena um número aleatório entre 100 e 300    
+flecha_y = randint(100, 300) # Armazena um número aleatório entre 100 e 300 cor_acerto = get(flecha_x, flecha_y).hex # Obtêm a cor do acerto     
+fill('sienna') # Define a cor de preenchimento da flecha como marrom   
+circle(flecha_x, flecha_y, 15) # Desenha um pequeno círculo em coordenadas aleatórias
 
 --- /code ---
 
@@ -108,7 +108,7 @@ A biblioteca `p5` 'escuta' certos eventos, um deles é o pressionamento do botã
 
 Defina a sua função `mouse_pressed()` sob o comentário **# A função mouse_pressed vai aqui**.
 
-Add code to print the target emoji 🎯 when the mouse is clicked.
+Adicione o código para imprimir o emoji alvo 🎯 quando o mouse for clicado.
 
 --- code ---
 ---
@@ -126,15 +126,15 @@ print('🎯')
 
 --- task ---
 
-**Test:** 🔄 Run your project.
+**Teste:** 🔄 Execute seu projeto.
 
-The project prints 🎯 each time the arrow is redrawn.
+O projeto imprime 🎯 cada vez que a seta é redesenhada.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Uma animação do alvo com uma seta circular marrom aparecendo em diversas posições.](images/fire_arrow.gif)
 
-**Debug:** 🐞 If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have included the `global hit_colour` line.
+**Depurar:** 🐞 Se você estiver vendo uma mensagem sobre `cor_acerto` como 'não definido', volte para `atirar_flecha()` e verifique se você incluiu a linha `global cor_acerto`.
 
-**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
+**Depurar:** 🐞 Verifique a linha `print` com muito cuidado para ver se há vírgulas e colchetes.
 
 --- /task ---
 
