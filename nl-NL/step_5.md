@@ -12,7 +12,7 @@ In deze stap voeg je scores toe afhankelijk van waar de pijl raakt.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We gebruiken <span style="color: #0faeb0; font-weight: bold;"> if ... else</span> om beslissingen te nemen. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+We gebruiken voortdurende <span style="color: #0faeb0; font-weight: bold;"> voorwaarden</span> om beslissingen te nemen. We zouden kunnen zeggen 'als het potlood bot is, slijp het dan'. Evenzo laten `if`-voorwaarden ons code schrijven die iets anders doet, afhankelijk van of een voorwaarde waar of onwaar is.
 </p>
 
 ### Display the scores
@@ -23,7 +23,7 @@ Delete ❌ the `print('🎯')` line of code.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 9
+language: python filename: main.py line_numbers: true line_number_start: 26
 line_highlights: 28
 ---
 # The mouse_pressed function goes here
@@ -33,10 +33,6 @@ def draw():
 --- /code ---
 
 --- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We gebruiken de hele tijd <span style="color: #0faeb0; font-weight: bold;"> voorwaarden</span> om beslissingen te nemen. We zouden kunnen zeggen 'als het potlood bot is, slijp het dan'. Evenzo laten `if`-voorwaarden ons code schrijven die iets anders doet, afhankelijk van of een voorwaarde waar of onwaar is.
-</p>
 
 --- task ---
 
@@ -130,7 +126,7 @@ Voeg code toe om een bericht `te tonen` `als` aan geen van de `if` en `elif` voo
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 26
+language: python filename: main.py line_numbers: true line_number_start: 9
 line_highlights: 16-17
 ---
 
