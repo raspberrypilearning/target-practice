@@ -12,7 +12,7 @@
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
 </p>
 
 ### Display the scores
@@ -40,24 +40,21 @@ bullseye = color(220, 200, 0)
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Χρησιμοποιούμε <span style="color: #0faeb0; font-weight: bold;">συνθήκες</span> όλη την ώρα για να λάβουμε αποφάσεις. Θα μπορούσαμε να πούμε «αν το μολύβι δεν είναι μυτερό, τότε πρέπει να το ξύσεις». Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
-</p>
-
 --- task ---
+
+Display a message **if** the `hit_colour` is equal to the `outer` circle colour (blue) 🎯.
 
 Για να `εμφανίσεις` μήνυμα για τον εξωτερικό κύκλο του στόχου, πρόσθεσε κώδικα στη συνάρτηση `mouse_pressed()` για να ελέγξεις εάν το `hit_color` είναι `==` με το `outer`.
 
-Να είσαι προσεκτικός/ή όταν χρησιμοποιείς το σύμβολο `=` στην Python:
-
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
+Άλλαξε τον κώδικα στο `print()` για να εμφανίσει τη βαθμολογία:
 line_highlights: 10-11
 ---
 
 # Η συνάρτηση mouse_pressed πηγαίνει εδώ
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
+def mouse_pressed():     
+if hit_colour == Color('blue').hex:  # Like the code in functions, the code in 'if' statements is indented print('You hit the outer circle, 50 points!')
 
 --- /code ---
 
@@ -85,11 +82,11 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 
 --- task ---
 
-Αυτό που κάνει το `elif` διαφορετικό είναι ότι θα κάνει αυτόν τον έλεγχο μόνο εάν οι συνθήκες του `if` και οποιωνδήποτε `elif` πριν από αυτό είναι `Ψευδείς`.
+Score points if the arrow lands on the `inner` or `middle` circles 🎯:
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 6
+Πρόσθεσε δηλώσεις `elif` για τον `εσωτερικό κύκλο` και το `κέντρο του στόχου`.
 line_highlights: 12-15
 ---
 
@@ -108,11 +105,11 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 **Debug:** 🐞 Check your indentation matches the example.
 
+**Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
+
 **Εντοπισμός σφαλμάτων:** Βεβαιώσου ότι το `elif` βρίσκεται στο ίδιο επίπεδο εσοχής με το `if`και ο κώδικας μέσα στο `elif` είναι στο ίδιο επίπεδο με τον κώδικα μέσα στο `if`.
 
 **Εντοπισμός σφαλμάτων:** Εάν δεις ένα μήνυμα σχετικά με το ότι το `inner` ή το `bullseye` δεν έχει οριστεί, τότε πρέπει να επιστρέψεις στο `draw()` και να ελέγξεις ότι βρίσκονται στη γραμμή που δηλώνει τις καθολικές μεταβλητές.
-
-**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours.
 
 --- /task ---
 
@@ -124,11 +121,11 @@ To do this last check, you use `else`.
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Πρόσθεσε κώδικα για να `εμφανίσεις` ένα μήνυμα `στην περίπτωση που` καμία από τις συνθήκες`if` και `elif` δεν πληρούνται.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 6
+language: python filename: main.py line_numbers: true line_number_start: 9
 line_highlights: 16-17
 ---
 
