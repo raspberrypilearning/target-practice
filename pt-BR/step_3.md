@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Seu jogo precisa de um alvo para atirar as flechas.
+Seu jogo precisa de um alvo para atirarmos as flechas.
 </div>
 <div>
 
@@ -15,11 +15,11 @@ Seu jogo precisa de um alvo para atirar as flechas.
 
 --- task ---
 
-Set the fill colour to `sienna` (brown).
+Defina a cor de preenchimento como `sienna` (marrom).
 
 Desenhe um triângulo usando as coordenadas x e y para cada um dos cantos.
 
-![Um triângulo marrom na grama e um céu com os pontos de coordenadas rotulados em 150, 350 e 200, 150 e 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Um triângulo marrom na grama e um céu com os pontos de coordenadas rotulados em 150, 350 e 200, 150 e 250, 350). Os cantos da tela também são rotulados como x=0, y=0 no canto superior esquerdo e x=400, y=400 no canto inferior direito.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -27,10 +27,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 20, 21
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen') # Define a cor de preenchimento da grama para verde claro
+    rect(0, 250, 400, 150) # Desenha um retângulo para a grama com estes valores para x, y, largura, altura
+    fill(' sienna') # Cor marrom
+    triangle(150, 350, 200, 150, 250, 350) # Desenha um triângulo para o suporte do alvo
 
 --- /code ---
 
@@ -38,9 +38,9 @@ line_highlights: 20, 21
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Teste:** 🔄 Execute seu código para ver o suporte para o seu alvo:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Um triângulo marrom na grama e um céu de fundo.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
@@ -48,13 +48,13 @@ line_highlights: 20, 21
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+A maior parte do alvo é um **círculo** azul.
 
-Set the fill colour to `blue`.
+Defina a cor de preenchimento como `azul`.
 
-Draw a circle with x and y coordinates for its centre and a width.
+Desenhe um círculo com coordenadas x e y para seu centro e largura.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Um triângulo marrom e um círculo azul na grama e um céu de fundo. O círculo é rotulado com as coordenadas x=200, y=200 como centro e a largura do círculo de 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -62,10 +62,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 22, 23
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('sienna') # Cor marrom
+    triângulo(150, 350, 200, 150, 250, 350) # Desenha um triângulo para o suporte do alvo 
+    fill('blue') # Define a cor de preenchimento do círculo para azul
+    circle( 200, 200, 170) # Desenha o círculo externo
 
 --- /code ---
 
@@ -73,19 +73,19 @@ line_highlights: 22, 23
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Teste:** Execute seu código para ver o primeiro grande círculo azul.
 
-The blue circle was drawn after the stand so it is in front.
+O círculo azul foi desenhado depois do suporte, então fica na frente.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Um triângulo marrom e um círculo azul na grama e um céu de fundo.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+O alvo é feito de círculos de tamanhos diferentes com as mesmas coordenadas centrais (200, 200).
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**Adicione** círculos coloridos para as partes interna e medianas do alvo.
 
 --- code ---
 ---
@@ -93,14 +93,14 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 24, 25, 26, 27
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna') # Cor marrom
+    triangle(150, 350, 200, 150, 250, 350) # Desenha um triângulo para o suporte do alvo 
+    fill('blue') # Define a cor de preenchimento do círculo para azul
+    circle( 200, 200, 170) # Desenha o círculo externo
+    fill('red') # Define a cor do preenchimento do círculo para vermelho
+    circle(200, 200, 110) # Desenha o círculo interno usando x, y, width
+    fill ('yellow') # Define a cor de preenchimento do círculo para amarelo      
+    circle(200, 200, 30) # Desenha o círculo do meio usando x, y, largura
 
 --- /code ---
 
@@ -108,21 +108,21 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+**Teste:** 🔄 Execute seu projeto para ver o alvo com três círculos coloridos.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![Um triângulo marrom com três círculos coloridos na grama e um céu de fundo.](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+**Escolha:** 💭 Altere qualquer uma das cores usando um nome de cor diferente. Você pode encontrar uma lista de todos os nomes de cores disponíveis em [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Um triângulo marrom com três círculos coloridos na grama e um céu de fundo. As cores mudaram para rosa e roxo.](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Example code using different colours
+title: Exemplo de código usando cores diferentes
 ---
 
 --- code ---
@@ -132,20 +132,20 @@ line_highlights:
 ---
 
 def draw():
-# Things to do in every frame
+# Coisas para fazer em cada quadro
 
     fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
+    rect(0, 0, 400, 250) # Céu
     fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
+    rect(0, 250, 400, 150) # Solo
     fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
+    triangle(150, 350, 200, 150, 250, 350) # Suporte
     fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
+    circle(200, 200, 170) # Círculo externo
     fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
+    circle(200, 200, 110) # Círculo interno
     fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
+    circle(200, 200, 30) # Círculo do meio
 
 --- /code ---
 
