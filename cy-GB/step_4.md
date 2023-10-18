@@ -81,7 +81,7 @@ A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for pictu
 
 Add a **global variable** called `hit_colour` that can be used throughout your code.
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code this can be done with the `.hex` string.
+Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
