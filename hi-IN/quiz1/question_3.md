@@ -4,7 +4,7 @@
 legend: 3 प्रश्नों में तीसरा
 ---
 
-A circle is drawn using the following code:
+निम्नलिखित कोड का उपयोग करके एक वृत्त बनाया जाता है:
 
 --- code ---
 ---
@@ -14,16 +14,16 @@ language: python
 def setup():   
 size(400, 400)   
 fill(0, 255, 0)   
-no_stroke()
+no_strop()
 
-def draw():   
+def draway():   
 circle(0, 0, 300)
 
 run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+निम्न में से कौन सी छवियां आउटपुट क्षेत्र में इस वृत्त की सही स्थिति दिखाती हैं?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  नहीं, निचले-दाएँ कोने में वृत्त को केंद्र में लाने के लिए, निर्देशांक स्क्रीन के आकार के समान होने चाहिए। In this example, the ellipse would be `circle(400, 400, 300)`.
+  नहीं, निचले-दाएँ कोने में वृत्त को केंद्र में लाने के लिए, निर्देशांक स्क्रीन के आकार के समान होने चाहिए। इस उदाहरण में, दीर्घवृत्त ` >(400, 400, 300)` होगा।
 
   --- /feedback ---
 
@@ -39,7 +39,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  बिल्कुल नहीं, मध्य में वृत्त को केंद्रित करने के लिए, निर्देशांक स्क्रीन के आकार का आधा होना चाहिए। In this example, `circle(200, 200, 300)`.
+  बिल्कुल नहीं, मध्य में वृत्त को केंद्रित करने के लिए, निर्देशांक स्क्रीन के आकार का आधा होना चाहिए। इस उदाहरण में, ` >(200, 200, 300)`।
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ Which of the images below show the correct position of this circle in the output
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. `x` निर्देशांक यह है कि कितनी दूर स्क्रीन पर दीर्घवृत्त है, और `y` निर्देशांक है कि स्क्रीन कितनी नीचे है।
+  नहीं, इस सर्कल में स्क्रीन </code> के शीर्ष-दाईं ओर इसे केंद्रित करने के लिए ` >> (350, 150, 300) का कोड होगा। <code>x` निर्देशांक यह है कि कितनी दूर स्क्रीन पर दीर्घवृत्त है, और `y` निर्देशांक है कि स्क्रीन कितनी नीचे है।
 
   --- /feedback ---
 
