@@ -15,9 +15,9 @@ Ton jeu a besoin d'un arrière-plan coloré.
 
 --- task ---
 
-Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
+Ouvre le projet [Archery starter](https://trinket.io/python/cd149de1b6){:target="_blank"}. The code editor will open in another browser tab.
 
-If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
+Si tu as un compte Trinket, tu peux cliquer sur le bouton **Remix** pour enregistrer une copie dans ta bibliothèque `My Trinkets`.
 
 --- /task ---
 
