@@ -2,15 +2,15 @@
 title: लक्ष्य अभ्यास
 hero_image: images/banner.png
 description: एक लक्ष्य बनाने के लिए पाइथन का उपयोग करें और इसे तीर से मारते हुए अंक स्कोर करें
-meta_title: Python coding projects for kids and teens | Target practice
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
+meta_title: Python बच्चों और किशोरों के लिए प्रोजेक्ट कोडिंग | लक्ष्य अभ्यास
+meta_description: बच्चों और किशोरों के लिए Raspberry Pi फाउंडेशन की कोडिंग प्रोजेक्ट्स के साथ Python जानें। एक लक्ष्य बनाने के लिए Python का उपयोग करें और इसे तीर से मारते हुए अंक स्कोर करें।
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: आप बनाएँगे
   - 
     title: एक पृष्ठभूमि बनाएँ
   - 
@@ -24,7 +24,7 @@ steps:
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: शीघ्र क्विज़
     knowledge_quiz:
       path: quiz1
       version: 1
