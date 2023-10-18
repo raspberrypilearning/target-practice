@@ -80,7 +80,7 @@ Um <span style="color: #0faeb0; font-weight: bold;">píxel</span>, abreviação 
 
 Adicione uma **variável global** chamada `cor_acerto` que pode ser usada em todo o seu código.
 
-Adicione o código para obter `get` a cor do píxel no centro da flecha e armazene-o na variável `cor_acerto`. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
+Adicione o código para obter `get` a cor do píxel no centro da flecha e armazene-o na variável `cor_acerto`. Para comparar as cores, precisamos usar o código hexadecimal. Isso pode ser feito com a string `.hex`.
 
 --- code ---
 ---
