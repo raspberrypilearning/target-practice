@@ -2,13 +2,13 @@
 
 Responda às três perguntas. Há dicas para guiá-lo para a resposta correta.
 
-Após responder cada pergunta, clique em **Verificar minha resposta**.
+Após responder cada pergunta, clique em **Ver minha resposta**.
 
 Divirta-se!
 
 --- question ---
 ---
-legenda: Pergunta 1 de 3
+legend: Pergunta 1 de 3
 ---
 Aqui temos um quadrado azul, quais são os valores RGB que irão criá-lo?
 
