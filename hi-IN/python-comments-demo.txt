@@ -1,73 +1,73 @@
-Setup your game here
+अपना गेम यहां सेट करें
 
-width and height of screen
+स्क्रीन की चौड़ाई और ऊंचाई
 
-Things to do in every frame
+हर फ्रेम में करने के लिए चीजें
 
-Red = 92, Green = 204, Blue = 206
+red = 92, green = 204, blue = 206
 
-Set the fill colour to grass
+भरण रंग को घास पर सेट करें
 
-x, y, width, height
+X, y, width, height
 
-Set the stand fill colour to wood
+स्टैंड भरण रंग को लकड़ी पर सेट करें
 
-Set the circle fill colour to outer
+सर्कल भरण रंग को बाहरी पर सेट करें
 
-x, y, width of the circle
+X, y, चौड़ाई ऑफ़ द सर्कल
 
-Blue
+नीला
 
-Red
+लाल
 
-Yellow
+पीला
 
-Set the circle fill colour to inner
+सर्कल भरण रंग को अंदर की ओर सेट करें
 
-Inner circle - x, y, width of the circle
+भीतरी वृत्त - x, y, वृत्त की चौड़ाई
 
-Set the circle fill colour to middle
+सर्कल भरण रंग को बीच में सेट करें
 
-Middle circle - x, y, width of the circle
+मध्य वृत्त - x, y, वृत्त की चौड़ाई
 
-The shoot_arrow function goes here
+move_arrow फ़ंक्शन यहाँ जाता है
 
-Store a random number between 100 and 300
+100 और 300 के बीच एक यादृच्छिक संख्या स्टोर करें
 
-Set the arrow to fill colour to wood
+लकड़ी में रंग भरने के लिए तीर सेट करें
 
-Draw a small circle at random coordinates
+यादृच्छिक निर्देशांक पर एक छोटा वृत्त बनाएं
 
-Get the hit colour
+हिट रंग प्राप्त करें
 
-The mouse_pressed function goes here
+mouse_powed फ़ंक्शन यहाँ जाता है
 
-Can be used in other functions
+अन्य फंक्शन में उपयोग किया जा सकता है
 
-Save the colour before drawing the arrow
+तीर बनाने से पहले रंग सेव करें
 
-Like functions, 'if' statements are indented
+जैसे फ़ंक्शंस, 'if' कथन इंडेंट किए गए हैं
 
-Import library code
+लाइब्रेरी कोड आयात करें
 
-Keep this to run your code
+अपना कोड चलाने के लिए इसे रखें
 
-Definitions for compatibility with the p5py processing library
+p5psi संसाधन लाइब्रेरी के साथ संगतता के लिए परिभाषाएँ
 
-Shape
+आकृति
 
-Fonts
+फ़ॉन्ट
 
-Text
+टेक्स्ट
 
-Colour
+कलर
 
-Images
+images
 
-Environment
+environment
 
-Transform
+रूपांतरित करें
 
-Keyboard
+कीबोर्ड
 
-Set the fill colour to grass
+भरण रंग को घास पर सेट करें
