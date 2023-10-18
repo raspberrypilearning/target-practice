@@ -12,7 +12,7 @@ Your game will add scores based on where the arrow hits.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-نستخدم  <span style="color: #0faeb0; font-weight: bold;"> if … else </span> لاتخاذ القرارات. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+نحن نستخدم <span style="color: #0faeb0; font-weight: bold;"> شروط</span> طوال الوقت لاتخاذ القرارات. يمكننا أن نقول 'إذا كان القلم غير حاد ، فقم جعله حادا'. وبالمثل ، تتيح لنا شروط `if` كتابة رمز يقوم بشيء مختلف اعتمادًا على ما إذا كان الشرط صحيحًا أم خطأ.
 </p>
 
 ### Display the scores
@@ -23,7 +23,7 @@ Delete ❌ the `print('🎯')` line of code.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 9
+language: python filename: main.py line_numbers: true line_number_start: 26
 line_highlights: 28
 ---
 # The mouse_pressed function goes here
@@ -33,10 +33,6 @@ def draw():
 --- /code ---
 
 --- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-نحن نستخدم <span style="color: #0faeb0; font-weight: bold;"> شروط</span> طوال الوقت لاتخاذ القرارات. يمكننا أن نقول 'إذا كان القلم غير حاد ، فقم جعله حادا'. وبالمثل ، تتيح لنا شروط `if` كتابة رمز يقوم بشيء مختلف اعتمادًا على ما إذا كان الشرط صحيحًا أم خطأ.
-</p>
 
 --- task ---
 
@@ -128,7 +124,7 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 26
+language: python filename: main.py line_numbers: true line_number_start: 9
 line_highlights: 16-17
 ---
 
