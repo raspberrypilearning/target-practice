@@ -80,7 +80,7 @@ Un <span style="color: #0faeb0; font-weight: bold;">píxel</span>, abreviatura d
 
 Convierte `color_de_impacto` en un **variable global** para que pueda usarse en todo tu código:
 
-Agrega código a `get` el color del píxel en el centro de la flecha y guárdalo en la variable `color_de_impacto`. In order to compare the colours, we need to use the hexadecimal code this can be done with the `.hex` string.
+Agrega código a `get` el color del píxel en el centro de la flecha y guárdalo en la variable `color_de_impacto`. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
