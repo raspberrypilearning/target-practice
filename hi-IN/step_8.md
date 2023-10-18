@@ -4,7 +4,7 @@
 
 --- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png){:width="600px"}
+![रॉकेट प्रक्षेपण प्रोजेक्ट।](images/showcase_rocket.png){:width="600px"}
 
 --- /print-only ---
 
@@ -16,15 +16,15 @@
 
 **सुझाव:** लगभग 25000 किलो अधिकतम है, लेकिन आप इन अंकों के साथ खेल सकते है
 
-Click the **Run** button to view an example of this project.
+इस प्रोजेक्ट का एक उदाहरण देखने के लिए ** > ** बटन पर क्लिक करें।
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Rocket launch project](images/showcase_rocket.png){:width="600px"}
+![रॉकेट प्रक्षेपण प्रोजेक्ट](images/showcase_rocket.png){:width="600px"}
 
 --- /task ---
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+यदि आप Python को खोजने में अधिक आनंद लेना चाहते हैं, तो आप [ में से किसी भी ब्रांड के प्रोग्राम को आज़मा सकते ](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) हैं।
