@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+आपके गेम को पर तीर चलाने के लिए एक लक्ष्य की आवश्यकता है।
 </div>
 <div>
 
@@ -11,26 +11,23 @@ Your game needs a target to shoot arrows at.
 </div>
 </div>
 
-### Draw a triangular stand
+### एक त्रिकोणीय स्टैंड बनाएं
 
 --- task ---
 
-Set the fill colour to `sienna` (brown).
+भरण रंग को ` > endrocoding ` (ब्राउन) पर सेट करें।
 
-Draw a triangle using the x and y coordinates for each of the corners.
+प्रत्येक कोनों के लिए x और y निर्देशांक का उपयोग करके एक त्रिकोण बनाएं।
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![घास पर एक भूरा त्रिकोण और एक आकाश के खिलाफ 150, 350 और 200, 150 और 250, 350 पर लेबल निर्देशांक बिंदुओं के साथ)। कैनवास के कोने भी ऊपर बाएँ x=0, y=0 और नीचे दाईं ओर x=400, y=400 के रूप में लेबल किए गए हैं।](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+भाषा: Python फ़ाइल नाम: main.py - draway() line_number: True line_number_start: 18
 line_highlights: 20, 21
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen') # घास के लिए भरण रंग को हल्के हरे रंग में रखें(0, 250, 400, 150) # x, y, width, height fill('Sienna') # ब्राउन कलर त्रिकोण(150, 350, 200, 150, 250,,,, के लिए इन मानों के साथ घास के लिए एक आयत बनाएं 350) # लक्ष्य के स्टैंड के लिए एक त्रिकोण बनाएं
 
 --- /code ---
 
@@ -38,34 +35,31 @@ line_highlights: 20, 21
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+** >:** ? अपने लक्ष्य के लिए स्टैंड देखने के लिए अपना कोड चलाएँ:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![घास पर एक भूरा त्रिकोण और एक आकाश के खिलाफ।](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### लक्ष्य वृत्त बनाएं
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+लक्ष्य का सबसे बड़ा भाग एक नीला ** अपलोड ** है।
 
-Set the fill colour to `blue`.
+भरण रंग को ` > ` पर सेट करें।
 
-Draw a circle with x and y coordinates for its centre and a width.
+इसके केंद्र और चौड़ाई के लिए x और y निर्देशांक के साथ एक वृत्त बनाएं।
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![एक भूरा त्रिकोण और घास पर नीला घेरा और एक आकाश के खिलाफ। वृत्त को निर्देशांक x=200, y=200 के साथ केंद्र के रूप में और 170 की वृत्त चौड़ाई के साथ लेबल किया गया है।](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+भाषा: Python फ़ाइल नाम: main.py - draway() line_number: True line_number_start: 20
 line_highlights: 22, 23
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('sienna') # ब्राउन कलर त्रिकोण(150, 350, 200, 150, 250, 350) # लक्ष्य के स्टैंड भरण('blue') # सर्कल भरण रंग को नीले घेरे में सेट करें(200, 200, 170) # बाहरी सर्कल को बनाएं
 
 --- /code ---
 
@@ -73,34 +67,27 @@ line_highlights: 22, 23
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+** >:** पहला बड़ा नीला वृत्त देखने के लिए अपना कोड चलाता है।
 
-The blue circle was drawn after the stand so it is in front.
+नीले घेरे को स्टैंड के बाद खींचा गया था इसलिए यह सामने है।
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![एक भूरा त्रिकोण और घास पर नीला घेरा और एक आकाश के खिलाफ।](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+लक्ष्य एक ही केंद्र निर्देशांक (200, 200) के साथ अलग-अलग आकार के वृत्तों से बना होता है।
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+लक्ष्य के भीतरी और मध्य भागों के लिए ** > ** रंगीन घेरे।
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+भाषा: Python फ़ाइल नाम: main.py - draway() line_number: True line_number_start: 20
 line_highlights: 24, 25, 26, 27
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna') # ब्राउन कलर त्रिकोण(150, 350, 200, 150, 250, 350) # लक्ष्य के स्टैंड भरण('नीला') के लिए एक त्रिकोण बनाएं # सर्कल भरण रंग को नीले घेरे में सेट करें(200, 200, 170) # बाहरी वृत्त भरण को बनाएं('लाल') # सर्कल भरण के लिए रंग को लाल घेरे में सेट करें(200, 200, 110) # x, y, का उपयोग करके आंतरिक वृत्त बनाएं width fill('yellow') # सर्कल भरण के लिए रंग को पीले रंग में सेट करें circle(200, 200, 30) # x, y, width का उपयोग करके मध्य वृत्त बनाएं
 
 --- /code ---
 
@@ -108,44 +95,33 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+** >:** ? तीन रंगीन वृत्तों के साथ लक्ष्य देखने के लिए अपना प्रोजेक्ट चलाएँ।
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![एक भूरा त्रिकोण जिसमें तीन रंगीन घेरे घास पर और एक आकाश के खिलाफ हैं।](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+** dampions:** ? किसी भी रंग को अलग रंग नाम का उपयोग करके बदलें। आप [ पर सभी उपलब्ध रंग नामों की सूची देख सकते हैं। ](https://www.w3schools.com/colors/colors_names.asp)
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![एक भूरा त्रिकोण जिसमें तीन रंगीन घेरे घास पर और एक आकाश के खिलाफ हैं। रंग बदलकर pinks और purbles हो गए हैं।](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Example code using different colours
+title: विभिन्न रंगों का उपयोग करके उदाहरण कोड
 ---
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: false line_number_start: 14
+भाषा: Python फ़ाइल नाम: main.py - draway() line_number: False line_number_start: 14
 line_highlights:
 ---
 
-def draw():
-# Things to do in every frame
+def draway():
+# हर फ्रेम में करने के लिए चीजें
 
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
+    fill('bleViolet') receive(0, 0, 400, 250) # Sky fill('dipsky blue') receive(0, 250, 400, 150) # gended fill('fireFrebrick') triangle(150, 350, 200, 150, 250, 350) # stand fill('lemonchiffon') circle(200, 200, 170) # आउटर सर्कल भरण('diproपिंक') circle(200, 200, 110) # internal circle fill('bleViolet') circle(200, 200, 30) # middid circle circle
 
 --- /code ---
 
