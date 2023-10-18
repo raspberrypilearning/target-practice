@@ -1,4 +1,4 @@
-Coisas para fazer em cada imagem
+Coisas para fazer em cada quadro
 
 Vermelho = 92, Verde = 204, Azul = 206
 
