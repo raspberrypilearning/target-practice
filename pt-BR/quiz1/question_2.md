@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legenda: Pergunta 2 de 3
+legend: Pergunta 2 de 3
 ---
 
 Em seu projeto, você usou as condições `if` , `elif`e `else` para verificar em qual cor a flecha acertou.
