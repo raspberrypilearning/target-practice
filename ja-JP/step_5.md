@@ -12,7 +12,7 @@
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-私たちは実生活の中で、<span style="color: #0faeb0; font-weight: bold;"> else - if </span> を使って意思決定をしています。 We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+私たちは常に<span style="color: #0faeb0; font-weight: bold;">条件</span>で判断しています。 「鉛筆の芯がとがっていなければ、削る」と言えます。 同様に、`if`条件では、ある条件が真か偽かによって異なる処理を行うコードを書くことができます。
 </p>
 
 ### Display the scores
@@ -23,7 +23,7 @@
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 9
+language: python filename: main.py line_numbers: true line_number_start: 26
 line_highlights: 28
 ---
 # The mouse_pressed function goes here
@@ -33,10 +33,6 @@ def draw():
 --- /code ---
 
 --- /task ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-私たちは常に<span style="color: #0faeb0; font-weight: bold;">条件</span>で判断しています。 「鉛筆の芯がとがっていなければ、削る」と言えます。 同様に、`if`条件では、ある条件が真か偽かによって異なる処理を行うコードを書くことができます。
-</p>
 
 --- task ---
 
@@ -106,11 +102,11 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 ![矢が内側の円に接している出力領域。 ポイントプリント文が出力エリアに表示されます。](images/yellow-points.png)
 
-**デバッグ：** `elif`が`if`と同じインデントレベルであり、`elif`内のコードが`if`内のコードと同じレベルにあることを確認してください。
+**デバッグ：** コードが正確に一致し、`if`文の中でコードをインデントしていることを確認してください。
 
 **デバッグ：** `inner` や `bullseye` が「定義されていない」というメッセージが表示されたら、 `draw()` に戻って、それらがグローバル変数を宣言している行にあるかどうかチェックしてみてください。
 
-images/missed-points.png
+**デバッグ：** `elif`が`if`と同じインデントレベルであり、`elif`内のコードが`if`内のコードと同じレベルにあることを確認してください。
 
 は**代入**に使用されます - `arrow_x = 200`のように、変数の値を設定します。
 
@@ -128,7 +124,7 @@ images/missed-points.png
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 26
+language: python filename: main.py line_numbers: true line_number_start: 9
 line_highlights: 16-17
 ---
 
