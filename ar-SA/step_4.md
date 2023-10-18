@@ -80,7 +80,7 @@ line_highlights: 44-45
 
 لقد عينت دالتين `shoot_arrow()` و `mouse_pressed()`، كلتا دالتين تحتاجان إلى استخدام المتغير `hit_color`.
 
-أضف رمزًا لتخزين `hit_color`. استخدم وظيفة `get()` ، للحصول على لون البكسل عند إحداثيات `arrow_x` و `arrow_y` - مركز السهم.
+أضف رمزًا لتخزين `hit_color`. استخدم وظيفة `get()` ، للحصول على لون البكسل عند إحداثيات `arrow_x` و `arrow_y` - مركز السهم. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
 
 --- code ---
 ---
