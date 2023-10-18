@@ -12,7 +12,7 @@ Tu juego agregará puntajes según el lugar donde golpea la flecha.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that do something different depending on whether a condition is true or false.
+Usamos <span style="color: #0faeb0; font-weight: bold;">condiciones</span> todo el tiempo para tomar decisiones. Podríamos decir 'si el lápiz está desafilado, entonces afilalo'. De manera similar, las condiciones `if` nos permiten escribir código que hace algo diferente dependiendo de si una condición es verdadera o falsa.
 </p>
 
 ### Mostrar el puntaje
@@ -34,10 +34,6 @@ def mouse_pressed():
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Usamos <span style="color: #0faeb0; font-weight: bold;">condiciones</span> todo el tiempo para tomar decisiones. Podríamos decir 'si el lápiz está desafilado, entonces afilalo'. De manera similar, las condiciones `if` nos permiten escribir código que hace algo diferente dependiendo de si una condición es verdadera o falsa.
-</p>
-
 --- task ---
 
 `print` a message `if` the `color_de_impacto` is equal to `externo` 🎯.
@@ -46,7 +42,7 @@ Nota 👀 que el código usa dos signos de igual `==` para significar **igual a*
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
 line_highlights: 9
 ---
 
