@@ -15,13 +15,13 @@ language: python
 speed = 6
 
 if speed == 7:
-  print('Super fast')
+    print('Super fast')
 elif speed == 5:
-  print('Pretty quick')
+    print('Pretty quick')
 elif speed == 6:
-  print('Very fast')
+    print('Very fast')
 else:
- print('Speed not recognised!') 
+    print('Speed not recognised!') 
 
 --- /code ---
 
