@@ -29,7 +29,7 @@ def setup():
 
   --- feedback ---
 
-Not quite. The size() fucntion does this in this example.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
@@ -45,7 +45,7 @@ Not quite. The fill() function does this and will usually include a given colour
 
   --- feedback ---
 
-  That's correct. A black border will be drawn aorund your shapes if you do not use this function.
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
