@@ -25,7 +25,7 @@ def setup():
 
 --- choices ---
 
-- It draws a shape using the coordinates given.
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
@@ -33,7 +33,7 @@ Not quite. The size() fucntion does this in this example.
 
   --- /feedback ---
 
-- It fills the shape with a given colour.
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
@@ -41,7 +41,7 @@ Not quite. The fill() function does this and will usually include a given colour
 
   --- /feedback ---
 
-- It turns off the border(stroke) for all the shapes.
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
@@ -49,7 +49,7 @@ Not quite. The fill() function does this and will usually include a given colour
 
   --- /feedback ---
 
-- It will draw a circle shape in your program.
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
