@@ -10,41 +10,50 @@ Amuse-toi bien !
 ---
 legend : Question 1 sur 3
 ---
-Voici un carré bleu, quelles sont les valeurs RVB qui vont le créer ?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![Un seul bloc de couleur bleue.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-Pas tout à fait, lorsque toutes les valeurs de couleur sont définies sur `0`, la couleur est le **noir**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-Pas tout à fait, les couleurs suivent le modèle RVB. Cette couleur a une valeur R maximale et pas de V ou B, donc sera **rouge**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  C'est correct ! Les couleurs suivent le modèle RVB. Cette couleur n'a ni R ni V, mais un maximum de B, donc sera **bleu**.
+  C'est correct ! A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  Pas tout à fait, lorsque toutes les valeurs de couleur sont réglées au maximum `255` , la couleur est le **blanc**.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
