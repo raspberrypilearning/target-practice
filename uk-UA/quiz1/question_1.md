@@ -10,9 +10,18 @@
 ---
 legend: Питання 1 з 3
 ---
-Ось синій квадрат. Якими RGB-значеннями він буде створений?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![Одинарний блок синього кольору.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
@@ -20,7 +29,7 @@ legend: Питання 1 з 3
 
   --- feedback ---
 
-Не зовсім так. Коли всі значення кольору встановлені на `0`, колір буде **чорним**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
@@ -28,7 +37,7 @@ legend: Питання 1 з 3
 
   --- feedback ---
 
-Не зовсім так, кольори відповідають стандарту RGB. Цей колір має максимальне значення R, але без G або B, тому колір буде **червоним**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
@@ -36,7 +45,7 @@ legend: Питання 1 з 3
 
   --- feedback ---
 
-  Правильно! Кольори відповідають RGB стандарту. Цей колір не має ні R, ні G, а лише B (на максимум), тому колір буде **синім**.
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
@@ -44,7 +53,7 @@ legend: Питання 1 з 3
 
   --- feedback ---
 
-  Не зовсім так. Коли всі значення кольору встановлені на максимальні `255`, колір буде **білим**.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
