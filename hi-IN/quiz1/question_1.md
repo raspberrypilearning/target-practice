@@ -10,41 +10,50 @@
 ---
 legend: प्रश्न 1 का 3
 ---
-यहाँ एक नीला वर्ग है, RGB मान क्या हैं जो इसे बनाएंगे?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![नीले रंग का एक एकल ब्लॉक।](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-बिल्कुल नहीं, जब सभी रंग मान ` > ` पर सेट होते हैं, तो रंग ** > ** होता है।
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-बिल्कुल नहीं, रंग RGB मॉडल का पालन करते हैं। इस रंग में अधिकतम R मान है और कोई G या B नहीं है, इसलिए ** > ** होगा।
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  यह सही है! रंग RGB मॉडल का पालन करते हैं। इस रंग में कोई R या G नहीं है, लेकिन अधिकतम B है, इसलिए **नीला (blue)** होगा।
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  बिल्कुल नहीं, जब सभी रंग मान `255` अधिकतम पर सेट होते हैं, तो रंग **सफ़ेद (white)** होता है।
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
