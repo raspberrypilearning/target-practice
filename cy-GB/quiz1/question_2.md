@@ -14,7 +14,7 @@ language: python
 ---
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if cyflymder == 7: print('Cyflym iawn iawn') elif cyflymder == 5: print('Eithaf cyflym') elif cyflymder == 6: print('Cyflym iawn') else: print('Heb adnabod y cyflymder!')
 
 --- /code ---
 
