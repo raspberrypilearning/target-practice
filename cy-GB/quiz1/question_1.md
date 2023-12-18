@@ -10,9 +10,18 @@ Ar ôl bob cwestiwn, pwyswch **cyflwyno**. Byddi di'n cael dy dywys i'r ateb cyw
 ---
 legend: Cwestiwn 1 o 3
 ---
-Here is a blue square, what are the RGB values that will create it?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![A single block of blue colour.](images/quiz-colour.png)
+Dyma sgŵar glas. Beth yw'r gwerthoedd RGB a fydd yn ei greu?
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
@@ -20,7 +29,7 @@ Here is a blue square, what are the RGB values that will create it?
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
@@ -28,7 +37,7 @@ Not quite, when all the colour values are set to `0`, the color is **black**.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
@@ -36,7 +45,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Cywir! Mae lliwiau'n dilyn y model RGB. Does gan y lliw hwn ddim R na G, ond y gwerth B uchaf, felly bydd yn **las**.
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
@@ -44,7 +53,7 @@ Not quite, colours follow the RGB model. This colour has maximum R value and no 
 
   --- feedback ---
 
-  Ddim yn hollol, pan fydd yr holl werthoedd lliw wedi'u gosod ar y gwerth uchaf o `255`, **gwyn** yw'r lliw.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
