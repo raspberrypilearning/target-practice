@@ -14,7 +14,7 @@ language: python
 ---
 speed = 6
 
-if speed == 7: print('超高速') elif speed == 5: print('かなり速い') elif speed == 6: print('非常に速い') else: print('速度が認識されない！')
+if speed == 7: print('超高速') elif speed == 5: print('かなり速い') elif speed == 6: print('非常に速い') else: print('速度が認識されない！ ')
 
 --- /code ---
 
