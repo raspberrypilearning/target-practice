@@ -10,41 +10,50 @@ Answer the three questions. There are hints to guide you to the correct answer.
 ---
 legend: 質問1/3
 ---
-ここに青い正方形がありますが、これを作成するRGBの値は？
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![青い色の単一ブロック。](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-ちょっと違います、すべての色の値が `0`に設定されている場合、色は **黒**です。
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-ちょっと違います、色はRGBモデルに従います。 この色はR値が最大でGやBがないので、**赤**になります。
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  そのとおりです！ 色はRGBモデルに従います。 この色はRもGもなく、Bが最大なので、**青**になる。
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  ちょっと違います、すべての色の値を`255`の最大値に設定すると、色は**白**になります。
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
