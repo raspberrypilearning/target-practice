@@ -2,8 +2,8 @@
 title: Tiro al blanco
 hero_image: images/banner.png
 description: Usa Python para dibujar un blanco y ganar puntos golpeándolo con flechas
-meta_title: Python coding projects for kids and teens | Target practice
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
+meta_title: Proyectos de codificación Python para niños y adolescentes | Práctica de tiro al blanco
+meta_description: Aprende Python con los proyectos de codificación de la Fundación Raspberry Pi para niños y adolescentes. Usa Python para dibujar un objetivo y ganar puntos tirando flechas.
 version: 4
 listed: true
 copyedit: true
@@ -16,22 +16,22 @@ steps:
   - 
     title: Dibuja tu blanco
     completion:
-      - engaged
+      - comprometido
   - 
     title: Dispara tu flecha
   - 
     title: Gana puntos
     completion:
-      - internal
+      - interno
   - 
     title: Examen rapido
     knowledge_quiz:
-      path: quiz1
+      path: prueba1
       version: 1
       questions: 3
       passing_score: 3
     completion:
-      - external
+      - externo
   - 
     title: Mejora tu proyecto
   - 
