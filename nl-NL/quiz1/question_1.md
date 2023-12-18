@@ -10,41 +10,50 @@ Veel plezier!
 ---
 legend: Vraag 1 van 3
 ---
-Hier is een blauw vierkant, wat zijn de RGB-waarden die het zal creëren?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![Een enkel blok met een blauwe kleur.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-Niet helemaal, als alle kleurwaarden zijn ingesteld op `0`, is de kleur **zwart**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-Niet helemaal, kleuren volgen het RGB-model. Deze kleur heeft een maximale R-waarde en geen G of B, dus **rood**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  Dat is correct! Kleuren volgen het RGB-model. Deze kleur heeft geen R of G, maar maximaal B, dus is **blauw**.
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  Niet helemaal, als alle kleurwaarden zijn ingesteld op het maximum van `255` is de kleur **wit**.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
