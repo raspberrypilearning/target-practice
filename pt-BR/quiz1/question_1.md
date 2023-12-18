@@ -10,41 +10,50 @@ Divirta-se!
 ---
 legend: Pergunta 1 de 3
 ---
-Aqui temos um quadrado azul, quais são os valores RGB que irão criá-lo?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![Um único bloco de cor azul.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-Não necessariamente. Quando todos os valores são definidos para `0`, a cor é **preta**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-Não necessariamente. As cores seguem o modelo RGB. Esta cor tem valor R máximo e nenhum G ou B, então ela será **vermelha**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  Está correto! As cores seguem o modelo RGB. Esta cor não tem R ou G, mas máximo B, então ela será **azul**.
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  Não necessariamente. Quanto todas as cores são definidas para o máximo `255`, a cor é **branca**.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
