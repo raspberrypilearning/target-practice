@@ -10,41 +10,50 @@ Have fun!
 ---
 ವಿಷಯಸೂಚಿ: ಪ್ರಶ್ನೆ 1
 ---
-Here is a blue square, what are the RGB values that will create it?
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![A single block of blue colour.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-Not quite, when all the colour values are set to `0`, the color is **black**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-Not quite, colours follow the RGB model. This colour has maximum R value and no G or B, so will be **red**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  That's correct! Colours follow the RGB model. This colour has no R or G, but maximum B, so will be **blue**.
+  That's correct. A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  Not quite, when all the colour values are set to the `255` maximum, the color is **white**.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
