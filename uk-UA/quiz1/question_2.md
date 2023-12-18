@@ -14,7 +14,7 @@ language: python
 ---
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if speed == 7: print('Надзвичайно швидко') elif speed == 5: print('Досить швидко') elif speed == 6: print('Дуже швидко') else: print('Швидкість не розпізнано!')
 
 --- /code ---
 
