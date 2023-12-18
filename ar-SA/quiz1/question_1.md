@@ -10,41 +10,50 @@ Answer the three questions. There are hints to guide you to the correct answer.
 ---
 legend: السؤال 1 من 3
 ---
-هذا مربع أزرق ، ما هي قيم RGB التي ستنشئه؟
+In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
 
-![كتلة واحدة من اللون الأزرق.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+size(400, 400)      
+no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) It draws a shape using the coordinates given.
 
   --- feedback ---
 
-ليس تمامًا ، عندما يتم ضبط جميع قيم الألوان على `0`، يكون اللون **أسود**.
+Not quite. The size() function does this in this example.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) It fills the shape with a given colour.
 
   --- feedback ---
 
-ليس تمامًا ، فالألوان تتبع نموذج RGB. هذا اللون له قيمة R قصوى وليس G أو B ، لذلك سيكون **أحمر**.
+Not quite. The fill() function does this and will usually include a given colour.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) It turns off the border(stroke) for all the shapes.
 
   --- feedback ---
 
-  هذا صحيح! الألوان تتبع نموذج RGB. هذا اللون لا يحتوي على R أو G ، ولكن الحد الأقصى B ، لذلك سيكون **أزرق**.
+  هذا صحيح! A black border will be drawn around your shapes if you do not use this function.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) It will draw a circle shape in your program.
 
   --- feedback ---
 
-  ليس تمامًا ، عندما يتم ضبط جميع قيم اللون على `255` أقصى ، يكون اللون **أبيض**.
+  Not quite. The circle() function would be used to draw a circle.
 
   --- /feedback ---
 
