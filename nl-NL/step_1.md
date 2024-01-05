@@ -20,10 +20,10 @@ Je gaat:
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-  
+Klik op de knop **Run** hieronder om het spel te starten. Wanneer de stip op het doel komt, klik je met de muis (of tik je op je tablet) om je pijl af te schieten. 
 
-   
-  <iframe src="" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Probeer een paar keer. Je score verschijnt in het uitvoergebied onder het doel. Hoe verandert je score als de pijl op de verschillende kleuren landt? 
+  <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
