@@ -20,10 +20,10 @@ Tu vas devoir :
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-  
+Clique sur le bouton **Run** ci-dessous pour démarrer le jeu. Lorsque le point apparaît sur la cible, clique sur la souris (ou appuye sur ta tablette) pour tirer ta flèche. 
 
-   
-  <iframe src="" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Fais quelques essais. Ton score apparaît dans la zone de sortie sous la cible. Comment ton score change-t-il lorsque la flèche atterrit sur les différentes couleurs ? 
+  <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
