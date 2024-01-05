@@ -18,7 +18,7 @@ Si estás siguiendo la ruta [Introducción a Python](https://projects.raspberryp
 
 Click the **Run** button to view an example of this project.
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 ![Proyecto lanzamiento de cohete](images/showcase_rocket.png){:width="600px"}
