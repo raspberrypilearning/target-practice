@@ -18,7 +18,7 @@
 
 इस प्रोजेक्ट का एक उदाहरण देखने के लिए ** > ** बटन पर क्लिक करें।
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 ![रॉकेट प्रक्षेपण प्रोजेक्ट](images/showcase_rocket.png){:width="600px"}
