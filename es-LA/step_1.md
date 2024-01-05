@@ -20,10 +20,10 @@ Vas a:
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-  
+Haz clic en el botón **Ejecutar** abajo para iniciar el juego. Cuando aparezca el punto en el objetivo 🎯, haz clic con el mouse (o toca en tu tableta) para disparar tu flecha. 
 
-   
-  <iframe src="" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+Inténtalo. Tu puntaje aparece en el área de resultados debajo del objetivo. ¿Cómo cambia to puntaje cuando la flecha cae en colores diferentes? 
+  <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
