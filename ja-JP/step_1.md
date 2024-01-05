@@ -20,10 +20,10 @@ Pythonと`p5`グラフィックスライブラリを使って、ターゲット�
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-  
+下の**Run**ボタンをクリックするとゲームが開始されます。 ターゲットに点が表示されたら、マウスをクリック(タブレットではタップ) して矢を放ちます。 
 
-   
-  <iframe src="" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+数回行ってみてください。 スコアは的の下の出力エリアに表示されます。 矢印が異なる色に着弾したとき、スコアはどのように変化しますか？ 
+  <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
