@@ -15,15 +15,15 @@ Ton jeu a besoin d'une cible pour tirer des flèches.
 
 --- task ---
 
-Set the fill colour to `sienna` (brown).
+Définis la couleur de remplissage sur `sienna` (marron).
 
 Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
 
-![Un triangle marron sur de l'herbe et sur un ciel dont les points de coordonnées sont marqués 150, 350 et 200, 150 et 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Un triangle marron sur de l'herbe et sur un ciel dont les points de coordonnées sont marqués 150, 350 et 200, 150 et 250, 350). Les coins du canevas sont également marqués x=0, y=0 en haut à gauche et x=400, y=400 en bas à droite.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+language: python filename: main.py - dessin() line_numbers: true line_number_start: 18
 line_highlights: 24-25
 ---
 
@@ -38,9 +38,9 @@ line_highlights: 24-25
 
 --- task ---
 
-**Test :** Exécute ton code pour voir le support de ta cible.
+**Test :** 🔄 exécute ton code pour voir le support de ta cible :
 
-![Un triangle marron sur l'herbe et contre un ciel.](images/target-stand.png){:width="400px"}
+![Un triangle marron sur l'herbe et sur fond de ciel.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
@@ -48,13 +48,13 @@ line_highlights: 24-25
 
 --- task ---
 
-**Astuce :** Pour faire un cercle, les **largeur** et **hauteur** doivent être identiques.
+La plus grande partie de la cible est un **cercle** bleu.
 
-Set the fill colour to `blue`.
+Définis la couleur de remplissage sur `blue`.
 
-Draw a circle with x and y coordinates for its centre and a width.
+Dessine un cercle avec des coordonnées x et y pour son centre et une largeur.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Un triangle marron et un cercle bleu sur l'herbe et sur fond de ciel. Le cercle est nommé avec les coordonnées x=200, y=200 comme centre et une largeur de cercle de 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -73,19 +73,19 @@ line_highlights: 31-32
 
 --- task ---
 
-**Test :** Exécute ton code pour voir le premier grand cercle bleu.
+**Test :** exécute ton code pour voir le premier grand cercle bleu.
 
-Le cercle bleu couvrira le triangle marron où ils se chevauchent, car le cercle a été dessiné plus tard.
+Le cercle bleu a été dessiné après le support donc il est devant.
 
-![Un triangle marron et un cercle bleu sur l'herbe et contre un ciel.](images/blue-circle.png){:width="400px"}
+![Un triangle marron et un cercle bleu sur l'herbe et sur fond de ciel.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-La cible est constituée de cercles de tailles différentes avec les mêmes coordonnées centrales (200, 200) - le milieu de l'écran.
+La cible est constituée de cercles de tailles différentes ayant les mêmes coordonnées centrales (200, 200).
 
 --- task ---
 
-**Test :** Exécute à nouveau ton projet pour voir la cible avec trois cercles colorés.
+**Ajoute** des cercles de couleur pour les parties intérieure et centrale de la cible.
 
 --- code ---
 ---
@@ -108,21 +108,21 @@ line_highlights: 33-34
 
 --- task ---
 
-**Débogage:** Python utilise l'orthographe américaine de « color » (sans "u") alors assure-toi de faire de même.
+**Test :** 🔄 exécute ton projet pour voir la cible avec trois cercles colorés.
 
-![Un triangle marron avec trois cercles colorés sur l'herbe et contre un ciel.](images/three-circles.png){:width="400px"}
+![Un triangle marron avec trois cercles colorés sur de l'herbe et sur fond de ciel.](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+**Choisir :** 💭 modifie l'une des couleurs en utilisant un nom de couleur différent. Tu peux trouver une liste de tous les noms de couleurs disponibles sur [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
 
-![Un triangle marron sur l'herbe et contre un ciel avec les points de coordonnées étiquetés. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Un triangle marron avec trois cercles colorés sur l'herbe et sur fond de ciel. Les couleurs sont devenues roses et violettes.](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Example code using different colours
+title: Exemple de code utilisant différentes couleurs
 ---
 
 --- code ---
@@ -132,7 +132,7 @@ line_highlights: 37-40
 ---
 
 def draw():
-# Things to do in every frame
+# Choses à faire dans chaque frame
 
     fill('BlueViolet')
     rect(0, 0, 400, 250)  # Sky
