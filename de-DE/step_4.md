@@ -1,35 +1,35 @@
-## Fire your arrow
+## Feuere deinen Pfeil ab
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When you click or tap, an arrow will fire at the position of a moving target circle. 
+Wenn du klickst oder tippst, wird ein Pfeil auf die Position eines sich bewegenden Zielkreises abgefeuert. 
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![Die Zielscheibe, mit einem braunen kreisförmigen Pfeil, der an verschiedenen Positionen erscheint.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Draw a target circle every frame
+### Zeichne in jedem Frame einen Zielkreis
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computer erzeugen den Bewegungseffekt, indem sie viele Bilder nacheinander anzeigen. Jedes Bild wird als <span style="color: #0faeb0; font-weight: bold;"> Frame </span> (deutsch: „Einzelbild“) bezeichnet.   
 </p>
 
 --- task ---
 
-Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
+Definiere deine Funktion `schiess_pfeil()` unter dem Kommentar **# Die Funktion „schiess_pfeil“ kommt hierher**.
 
-Add code to randomly draw a brown circle within a target area:
+Füge Code hinzu, um zufällig einen braunen Kreis innerhalb eines Zielbereichs zu zeichnen:
 
-![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
+![Ein Rechteck, das die Koordinaten des Zielbereichs in einem halbtransparenten Rechteck anzeigt. Der Zielbereich liegt zwischen x=100 und y=100 bis x=300 und y=300, deckt also die gesamte Zielscheibe und darüber hinaus ab.](images/target_area.png)
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
 line_highlights: 8-12
 ---
-# The shoot_arrow function goes here
+# Die Funktion „schiess_pfeil“ kommt hierher
 def shoot_arrow():   
 arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
 arrow_y = randint(100, 300)  # Store a random number between 100 and 300    
@@ -42,7 +42,7 @@ circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- task ---
 
-Go to the `draw` function and call your new `shoot_arrow` function.
+Finde die Funktion `draw` (deutsch: „Zeichne“) und rufe dort deine neue Funktion `schiess_pfeil` auf.
 
 --- code ---
 ---
@@ -60,34 +60,34 @@ line_highlights: 33
 
 --- task ---
 
-**Test:** 🔄 Run your code and see the arrow appear in a random position each frame.
+**Test:** 🔄 Führe deinen Code aus und sieh, wie der Pfeil in jedem Frame an einer zufälligen Position erscheint.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Eine Animation eines Ziels mit einem braunen Kreispfeil, der an verschiedenen Positionen erscheint.](images/fire_arrow.gif)
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+Der Hintergrund und die Zielscheibe werden über den alten Pfeil gezeichnet. Das bedeutet, dass du immer nur einen Pfeil siehst.
 
 --- /task ---
 
-### Get the colour hit by the arrow
+### Hol dir die Farbe, die vom Pfeil getroffen wird
 
-The `get()` function returns the colour of a pixel.
+Die Funktion `get()` (deutsch: „holen“) gibt die Farbe eines Pixels zurück.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+Ein <span style="color: #0faeb0; font-weight: bold;">Pixel</span> ist ein einzelner farbiger Punkt innerhalb eines Bildes. Bilder bestehen aus vielen farbigen Pixeln.
 </p>
 
 --- task ---
 
-Add a **global variable** called `hit_colour` that can be used throughout your code.
+Füge eine **globale Variable** mit dem Namen `getroffene_farbe` hinzu, die im gesamten Code verwendet werden kann.
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
+Füge Code zu `get` hinzu, um die Farbe des Pixels in der Mitte des Pfeils zu erhalten, und sie in der Variablen `getroffene_farbe` zu speichern. Um die Farben vergleichen zu können, müssen wir den Hexadezimalcode verwenden. Dies kann mit der Zeichenfolge `.hex` erfolgen.
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
 line_highlights: 9, 12
 ---
-# The shoot_arrow function goes here
+# Die Funktion „schiess_pfeil“ kommt hierher
 def shoot_arrow(): global hit_colour  # Can be used in other functions  
 arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
 arrow_y = randint(100, 300)  # Store a random number between 100 and 300 hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour     
@@ -96,19 +96,19 @@ circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- /code ---
 
-**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
+​**Tipp:** 💡 Der Code in `get` zum Abrufen der Farbe muss **vor** dem Code zum Zeichnen des `circle` (deutsch: „Kreis“) stehen, sonst speicherst du immer die Holzfarbe des Pfeils!
 
 --- /task ---
 
-### Print the colour when the mouse is pressed
+### Gib die Farbe aus, wenn die Maus gedrückt wird
 
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
+Die `p5`-Bibliothek „horcht“ auf bestimmte Ereignisse, eines davon ist das Drücken der Maustaste. Wenn sie erkennt, dass die Taste gedrückt wurde, führt es den Code aus, die ihr in der Funktion `mouse_pressed` (deutsch: mouse = Maus, pressed = gedrückt) gegeben wurde.
 
 --- task ---
 
-Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
+Definiere deine Funktion `mouse_pressed()` unter dem Kommentar **# Die Funktion „mouse_pressed“ kommt hierher**.
 
-Add code to print the target emoji 🎯 when the mouse is clicked.
+Füge Code hinzu, um das Ziel-Emoji 🎯 auszudrucken, wenn mit der Maus geklickt wird.
 
 --- code ---
 ---
@@ -116,7 +116,7 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 6
 ---
 
-# The mouse_pressed function goes here
+# Die Funktion „mouse_pressed“ kommt hierher
 def mouse_pressed():    
 print('🎯')
 
@@ -126,15 +126,15 @@ print('🎯')
 
 --- task ---
 
-**Test:** 🔄 Run your project.
+**Test:** 🔄 Führe dein Projekt aus.
 
-The project prints 🎯 each time the arrow is redrawn.
+Das Projekt gibt jedes Mal 🎯 aus, wenn der Pfeil neu gezeichnet wird.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Eine Animation eines Ziels mit einem braunen Kreispfeil, der an verschiedenen Positionen erscheint.](images/fire_arrow.gif)
 
-**Debug:** 🐞 If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have included the `global hit_colour` line.
+**Debug:** 🐞 Wenn du eine Meldung siehst, dass `getroffene_farbe` „not defined“ (deutsch: „nicht definiert“) ist, gehe zurück zu `schiess_pfeil()` und überprüfe, ob du die Zeile `global getroffene_farbe` hinzugefügt hast.
 
-**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
+**Debug:** 🐞 Überprüfe die `print`-Zeile sehr sorgfältig auf Kommas und Klammern.
 
 --- /task ---
 
