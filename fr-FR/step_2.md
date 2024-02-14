@@ -15,9 +15,9 @@ Ton jeu a besoin d'un arrière-plan coloré.
 
 --- task ---
 
-Ouvre le projet [Archery starter](https://trinket.io/python/cd149de1b6){:target="_blank"}. The code editor will open in another browser tab.
+Ouvre le [projet de démarrage Tir sur cible](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}. Le Code Editor s'ouvrira dans un autre onglet du navigateur.
 
-Si tu as un compte Trinket, tu peux cliquer sur le bouton **Remix** pour enregistrer une copie dans ta bibliothèque `My Trinkets`.
+Si tu as un compte Raspberry Pi, tu peux cliquer sur le bouton **Enregistrer** pour enregistrer une copie dans tes **Projets**.
 
 --- /task ---
 
@@ -31,7 +31,7 @@ Clique sur **« Run »** pour voir un rectangle rempli de bleu dessiné à par
 
 ![Un rectangle bleu entouré d'une bordure noire, au-dessus d'un rectangle gris. Le coin supérieur gauche du canevas est marqué par x=0, y=0 c'est l'origine du rectangle. La largeur est surlignée à 400 et la hauteur à 250. Le code rect(0, 0, 400, 250) s'affiche.](images/sky_stroke.png){:width="400px"}
 
-**Astuce :** 💡 Les coordonnées commencent à partir de (x=0, y=0) dans le coin supérieur gauche. Cela peut être différent des autres systèmes de coordonnées que tu as utilisés.
+**Astuce :** 💡 les coordonnées commencent à partir de (x=0, y=0) dans le coin supérieur gauche. Cela peut être différent des autres systèmes de coordonnées que tu as utilisés.
 
 --- /task ---
 
@@ -39,7 +39,7 @@ Clique sur **« Run »** pour voir un rectangle rempli de bleu dessiné à par
 
 Le ciel a été dessiné avec une bordure noire (trait).
 
-Pour désactiver le trait pour toutes les formes, ajoute `no_stroke()` à la fonction `configuration` :
+Pour désactiver le trait pour toutes les formes, ajoute `no_stroke()` à la fonction `setup` :
 
 --- code ---
 ---
@@ -58,9 +58,9 @@ def configuration():
 
 --- task ---
 
-Change la couleur `fill()` en `herbe` et ajoute encore `rect(x, y, largeur, hauteur)`.
+**Exécute** à nouveau ton projet pour vérifier 👀 que la bordure (trait) a disparue.
 
-**Test :** Exécute à nouveau ton projet pour vérifier que le trait a disparu.
+**Astuce :** 💡 tu devras appuyer sur **Stop** pour arrêter ton programme, cela fera réapparaître le bouton **Run**.
 
 --- /task ---
 
@@ -78,7 +78,7 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 26
 ---
 def dessin():
-# Choses à faire dans chaque image
+# Choses à faire dans chaque frame
 
     fill('cyan')  # Set the fill colour for the sky to cyan
     rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
@@ -87,15 +87,15 @@ def dessin():
 
 --- /code ---
 
-**Test :** Exécute ton code pour voir le ciel que tu as dessiné. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
+**Astuce :** 💡 nous avons ajouté des commentaires à notre code, comme `# Définir la couleur de remplissage du ciel en cyan`, pour t'indiquer ce qu'il fait. Tu n'as pas besoin d'ajouter des commentaires à ton code, mais ils peuvent être utiles pour te rappeler ce que font les lignes de code.
 
 --- /task ---
 
 --- task ---
 
-**Test :** Exécute à nouveau ton projet pour afficher l'arrière-plan terminé.
+**Test :** 🔄 exécute à nouveau ton projet pour voir l'arrière-plan terminé.
 
-![Le ciel et l'herbe sont créés en écrivant du code pour dessiner des rectangles colorés.](images/background.png){:width="300px"}
+![La zone de sortie avec un rectangle de couleur ciel au-dessus d'un rectangle de couleur herbe pour créer l'arrière-plan.](images/background.png){:width="300px"}
 
 --- /task ---
 
