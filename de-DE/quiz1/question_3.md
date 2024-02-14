@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legend: Frage 3 von 3
 ---
 
-A circle is drawn using the following code:
+Ein Kreis wird mit dem folgenden Code gezeichnet:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Welches der folgenden Bilder zeigt die korrekte Position dieses Kreises im Ausgabebereich?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Ein grüner Kreis in der Mitte der unteren rechten Ecke des Ausgabebereichs.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Nicht ganz. Um den Kreis in der unteren rechten Ecke zu zentrieren, müssten die Koordinaten mit der Bildschirmgröße übereinstimmen. In diesem Beispiel wäre die Ellipse `circle(400, 400, 300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Ein grüner Kreis in der Mitte des Ausgabebereichs.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  Nicht ganz. Um den Kreis in der Mitte zu zentrieren, müssten die Koordinaten die Hälfte der Bildschirmgröße betragen. In diesem Beispiel `circle(200, 200, 300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Ein grüner Kreis in der Mitte der oberen linken Ecke des Ausgabebereichs.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Richtig! Der Mittelpunkt dieses Kreises liegt auf den Koordinaten (0,0), der oberen linken Ecke des Bildschirms.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Ein grüner Kreis mit der Mitte oben rechts im Ausgabebereich.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Nein, dieser Kreis entspräche dem Code `circle(350, 150, 300)`, um ihn oben rechts auf dem Bildschirm zu zentrieren. Die Koordinate `x` gibt an, wie weit die Ellipse über den Bildschirm verläuft, und die Koordinate `y` gibt an, wie weit unten auf dem Bildschirm sie liegt.
 
   --- /feedback ---
 
