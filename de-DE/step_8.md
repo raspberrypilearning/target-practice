@@ -1,10 +1,10 @@
-## What next?
+## Wie geht es weiter?
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Wenn du dem Pfad [Einführung in Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) folgst, könntest du mit dem Projekt [Raketenstart](https://projects.raspberrypi.org/en/projects/rocket-launch) fortfahren. In diesem Projekt erstellst du eine interaktive Animation einer Rakete, die einen Satelliten in die Umlaufbahn bringt.
 
 --- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png){:width="600px"}
+![Raketenstartprojekt.](images/showcase_rocket.png){:width="600px"}
 
 --- /print-only ---
 
@@ -12,19 +12,19 @@ If you are following the [Introduction to Python](https://projects.raspberrypi.o
 
 --- task ---
 
-**Try it:** Your program will adjust the animation based on how much fuel you give it and will succeed or fail in reaching orbit. How much fuel do you want to use to reach orbit but not waste too much extra fuel?
+**Probiere es aus:** Dein Programm passt die Animation an, je nachdem, wie viel Treibstoff Du ihm gibst, und ob es ihm gelingt, die Umlaufbahn zu erreichen oder nicht. Wie viel Treibstoff möchtest du verbrauchen, um die Umlaufbahn zu erreichen, ohne aber zu viel zusätzlichen Treibstoff zu verschwenden?
 
-**Tip:** Around 25,000kg should be enough, but experiment with the numbers to see what happens.
+**Tipp:** Etwa 25.000 kg sollten ausreichen, aber experimentiere mit den Zahlen, um zu sehen, was passiert.
 
-Click the **Run** button to view an example of this project.
+Klick auf die Schaltfläche **Ausführen**, um ein Beispiel dieses Projekts anzuzeigen.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Rocket launch project](images/showcase_rocket.png){:width="600px"}
+![Raketenstartprojekt](images/showcase_rocket.png){:width="600px"}
 
 --- /task ---
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Wenn du mehr Spaß beim Erkunden von Python haben willst, dann könntest du einige [dieser Projekte](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) ausprobieren.
