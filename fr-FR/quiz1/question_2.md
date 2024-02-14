@@ -4,7 +4,7 @@
 legend : Question 2 sur 3
 ---
 
-Dans ton projet, tu as utilisé les conditions`if`, `elif` et `else` pour vérifier sur quelle couleur la flèche a atterri.
+Dans ton projet, tu as utilisé les conditions `if`, `elif` et `else` pour vérifier sur quelle couleur la flèche a atterri.
 
 Dans l'exemple ci-dessous, une variable appelée `vitesse` contient le nombre `6` stocké. Lorsque cette instruction `if` est exécutée, que serait imprimé dans la zone de sortie ?
 
