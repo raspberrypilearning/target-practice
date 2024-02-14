@@ -1,8 +1,8 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Je wordt naar het juiste antwoord geleid.
 
-Druk na elke vraag op **indienen**. Je wordt naar het juiste antwoord geleid.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
 Veel plezier!
 
@@ -10,7 +10,7 @@ Veel plezier!
 ---
 legend: Vraag 1 van 3
 ---
-In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
+In je project heb je no_stroke() aan je setup-functie toegevoegd. Wat doet de functie no_stroke()?
 
 --- code ---
 ---
@@ -25,35 +25,35 @@ no_stroke()
 
 --- choices ---
 
-- ( ) It draws a shape using the coordinates given.
+- ( ) Het tekent een vorm met behulp van de opgegeven coördinaten.
 
   --- feedback ---
 
-Not quite. The size() function does this in this example.
+Niet helemaal. De functie size() doet dit in dit voorbeeld.
 
   --- /feedback ---
 
-- ( ) It fills the shape with a given colour.
+- ( ) Het vult de vorm met een bepaalde kleur.
 
   --- feedback ---
 
-Not quite. The fill() function does this and will usually include a given colour.
+Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
 
   --- /feedback ---
 
-- (x) It turns off the border(stroke) for all the shapes.
+- (x) Het schakelt de rand (stroke) voor alle vormen uit.
 
   --- feedback ---
 
-  That's correct. A black border will be drawn around your shapes if you do not use this function.
+  Dat klopt. Als je deze functie niet gebruikt, wordt er een zwarte rand rond je vormen getekend.
 
   --- /feedback ---
 
-- ( ) It will draw a circle shape in your program.
+- ( ) Er wordt een cirkelvorm in jouw programma getekend.
 
   --- feedback ---
 
-  Not quite. The circle() function would be used to draw a circle.
+  Niet helemaal. De functie circle() zou worden gebruikt om een cirkel te tekenen.
 
   --- /feedback ---
 
