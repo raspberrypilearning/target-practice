@@ -12,7 +12,7 @@ En el siguiente ejemplo, una variable llamada `velocidad` `6` almacena el númer
 ---
 language: python
 ---
-speed = 6
+velocidad = 6
 
 if velocidad == 7: print('Súper rápido') elif velocidad == 5: print('Bastante rápido') elif velocidad == 6: print('Muy rápido') else: print('¡Velocidad no reconocida!')
 
