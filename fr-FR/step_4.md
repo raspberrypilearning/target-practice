@@ -11,9 +11,9 @@ Lorsque tu cliques ou appuies, une flèche est tirée à la position d'un cercle
 </div>
 </div>
 
-### Dessiner un cercle cible à chaque image
+### Dessiner un cercle cible à chaque frame
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Les ordinateurs créent l'effet de mouvement en montrant beaucoup d'images les unes après les autres. Chaque image est appelée une <span style="color: #0faeb0; font-weight: bold;">frame</span>.   
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Les ordinateurs créent l'effet de mouvement en montrant de nombreuses images l'une après l'autre. Chaque image est appelée une <span style="color: #0faeb0; font-weight: bold;">frame</span>.   
 </p>
 
 --- task ---
@@ -60,9 +60,9 @@ line_highlights: 44-45
 
 --- task ---
 
-**Test :** Exécute ton code et vois la flèche apparaître dans le centre.
+**Test :** 🔄 exécute ton code et vois la flèche apparaître dans une position aléatoire à chaque frame.
 
-![La cible sur l'arrière-plan avec une flèche de cercle marron dessus.](images/fire_arrow.gif)
+![Une animation de cible avec une flèche circulaire marron apparaissant dans diverses positions.](images/fire_arrow.gif)
 
 L'arrière-plan et la cible seront dessinés sur l'ancienne flèche. Cela signifie que tu ne vois qu'une seule flèche à la fois.
 
@@ -78,9 +78,9 @@ Un <span style="color: #0faeb0; font-weight: bold;">pixel</span>, abréviation d
 
 --- task ---
 
-Tu as défini deux fonctions `tire_fleche()` et `mouse_pressed()`, ces deux fonctions doivent utiliser la variable `couleur_touche`.
+Ajoute une **variable globale** appelée `touche_couleur` qui peut être utilisée dans tout ton code.
 
-Ajoute du code pour stocker le `touche_couleur`. Utilise la fonction `get()` pour obtenir la couleur du pixel aux coordonnées `fleche_x` et `fleche_y` — le centre de la flèche. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
+Ajoute du code pour `obtenir` la couleur du pixel au centre de la flèche et stocke-le dans la variable `touche_couleur` . Afin de comparer les couleurs, nous devons utiliser le code hexadécimal. Cela peut être fait avec la chaîne `.hex` .
 
 --- code ---
 ---
@@ -97,7 +97,7 @@ ellipse(fleche_x, fleche_y, 15, 15)
 
 --- /code ---
 
-**Astuce :** 💡 Le code pour `obtenir` la couleur doit être **avant** le code pour dessiner le `cercle` sinon tu enregistreras toujours la couleur bois de la flèche !
+**Astuce :** 💡 le code pour `obtenir` la couleur doit être **avant** le code pour dessiner le `cercle` sinon tu enregistreras toujours la couleur bois de la flèche !
 
 --- /task ---
 
@@ -109,7 +109,7 @@ La bibliothèque `p5` « écoute » certains événements, l'un d'eux est la pre
 
 Définis ta fonction `souris_pressee()` sous le commentaire **# La fonction souris_pressee vient ici**.
 
-Add code to print the target emoji 🎯 when the mouse is clicked.
+Ajoute du code pour imprimer l'emoji cible 🎯 lorsque tu cliques sur la souris.
 
 --- code ---
 ---
@@ -127,15 +127,15 @@ print( red(couleur_touche), green(couleur_touche), blue(couleur_touche) )
 
 --- task ---
 
-**Test :** Exécute ton projet.
+**Test :** 🔄 exécute ton projet.
 
-The project prints 🎯 each time the arrow is redrawn.
+Le projet imprime 🎯 à chaque fois que la flèche est redessinée.
 
-![La cible, avec une flèche circulaire marron apparaissant dans une variété de positions.](images/fire_arrow.gif)
+![Une animation de cible avec une flèche circulaire marron apparaissant dans diverses positions.](images/fire_arrow.gif)
 
-**Débogage :** Si tu vois un message indiquant que `couleur_touche` n'est pas défini, reviens à `tire_fleche()` et vérifie que tu as bien la ligne `global couleur_touche`.
+**Débogage :** si tu vois un message indiquant que `touche_couleur` n'est pas défini, reviens à `tire_fleche()` et vérifie que tu as bien la ligne `global touche_couleur`.
 
-**Débogage :** Vérifie très attentivement la ligne `print` pour les virgules et les parenthèses.
+**Débogage :** vérifie très attentivement la ligne `print` pour les virgules et les parenthèses.
 
 --- /task ---
 
