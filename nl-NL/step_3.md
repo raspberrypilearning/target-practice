@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+Je spel heeft een doel nodig om pijlen op te schieten.
 </div>
 <div>
 
@@ -11,15 +11,15 @@ Your game needs a target to shoot arrows at.
 </div>
 </div>
 
-### Draw a triangular stand
+### Teken een driehoekige standaard
 
 --- task ---
 
-Set the fill colour to `sienna` (brown).
+Stel de vulkleur in op `sienna` (bruin).
 
-Draw a triangle using the x and y coordinates for each of the corners.
+Teken een driehoek met de x- en y-coördinaten voor elk van de hoeken.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Een bruine driehoek op gras en tegen een lucht met de coördinatenpunten gelabeld op 150, 350 en 200, 150 en 250, 350). De hoeken van het canvas zijn ook gelabeld als x=0, y=0 linksboven en x=400, y=400 rechtsonder.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -38,23 +38,23 @@ line_highlights: 24-25
 
 --- task ---
 
-**Test:** Voer je code uit om de standaard voor je doelwit te zien.
+**Test:** 🔄 Voer je code uit om de standaard voor je doelwit te zien:
 
 ![Een bruine driehoek op gras en tegen een lucht.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### Teken de doelcirkels
 
 --- task ---
 
-**Tip:** Om een cirkel te maken, moeten de **breedte** en **hoogte** gelijk zijn.
+Het grootste deel van het doel is een blauwe **cirkel**.
 
-Set the fill colour to `blue`.
+Stel de vulkleur in op `blue` (blauw).
 
-Draw a circle with x and y coordinates for its centre and a width.
+Teken een cirkel met x- en y-coördinaten voor het midden en de breedte.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Een bruine driehoek en blauwe cirkel op gras en tegen een lucht. De cirkel is gelabeld met de coördinaten x=200, y=200 als het midden en de cirkelbreedte van 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -62,10 +62,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 31-32
 ---
 
-    fill(hout)<br x-id="3" />
-      triangle(150, 350, 200, 150, 250, 350)<br x-id="3" />
-      fill(buitenste)<br x-id="4" />
-      ellipse(200, 200, 170, 170) #Buitenste cirkel.
+    fill('sienna') # Bruine kleur
+    triangle(150, 350, 200, 150, 250, 350) # Teken een driehoek voor de stand van het doelwit 
+    fill('blue') # Stel de vulkleur van cirkel naar blauw
+    circle(200, 200, 170) # Teken de buitenste cirkel
 
 --- /code ---
 
@@ -75,17 +75,17 @@ line_highlights: 31-32
 
 **Test:** Voer je code uit om de eerste grote blauwe cirkel te zien.
 
-The blue circle was drawn after the stand so it is in front.
+De blauwe cirkel is na de standaard getekend, dus deze staat vooraan.
 
 ![Een bruine driehoek en blauwe cirkel op gras en tegen een lucht.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale coördinaten (200, 200) - het midden van het scherm.
+Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale coördinaten (200, 200).
 
 --- task ---
 
-Maak twee nieuwe variabelen om de kleuren voor de resterende `binnenste` en `roos` cirkels op te slaan.
+**Voeg** gekleurde cirkels toe voor de binnenste en middelste delen van het doel.
 
 --- code ---
 ---
@@ -108,7 +108,7 @@ line_highlights: 33-34
 
 --- task ---
 
-**Debuggen:** Python gebruikt de Amerikaanse spelling van 'color' (zonder een 'u'), dus zorg ervoor dat jij dat ook doet.
+**Test:** 🔄 Voer je project uit om het doel met drie gekleurde cirkels te zien.
 
 ![Een bruine driehoek met drie gekleurde cirkels op gras en tegen een lucht.](images/three-circles.png){:width="400px"}
 
@@ -116,13 +116,13 @@ line_highlights: 33-34
 
 --- task ---
 
-**Test:** Voer je project opnieuw uit om het doel met drie gekleurde cirkels te zien. Verander de kleuren totdat je er tevreden mee bent. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+**Kies:** 💭 Verander een van de kleuren met een andere kleurnaam. Je kunt een lijst met alle beschikbare kleurnamen vinden op [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
 
-![Een bruine driehoek op gras en tegen een lucht met de coördinaatpunten gelabeld. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Een bruine driehoek op gras en tegen een lucht met de coördinaatpunten gelabeld. De kleuren zijn veranderd in verschilende tinten roze en paars.](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Example code using different colours
+title: Voorbeeldcode met verschillende kleuren
 ---
 
 --- code ---
@@ -132,7 +132,7 @@ line_highlights: 37-40
 ---
 
 def draw():
-# Things to do in every frame
+# Dingen om te doen in elk frame
 
     fill('BlueViolet')
     rect(0, 0, 400, 250)  # Sky
