@@ -1,47 +1,47 @@
-# Import library code!
+# Bibliotheekcode importeren!
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# De mouse_pressed functie komt hier
 def mouse_pressed():
-    if hit_colour == Color('blue').hex:  # Like functions, 'if' statements are indented
-        print('You hit the outer circle, 50 points!')
-    elif hit_colour == Color('red').hex:
-        print('You hit the inner circle, 200 points!')
-    elif hit_colour == Color('yellow').hex:
-        print('You hit the middle, 500 points!')
+    if raak_kleur == Color('blue').hex: # Net als bij functies worden 'if'-instructies ingesprongen
+        print('Je hebt de buitenste cirkel geraakt, 50 punten!')
+    elif raak_kleur == Color('red').hex:
+        print('Je hebt de binnenste cirkel geraakt, 200 punten!')
+    elif raak_kleur == Color('yellow').hex:
+        print('In de roos, 500 punten!')
     else:
-        print('You missed! No points!')
+        print('Je hebt gemist! Geen punten!')
 
-# The shoot_arrow function goes here
-def shoot_arrow():
-    global hit_colour  # Can be used in other functions
-    arrow_x = randint(100, 300)  # Store a random number between 100 and 300
-    arrow_y = randint(100, 300)  # Store a random number between 100 and 300
-    hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour
-    fill('sienna')  # Set the arrow to fill colour to brown
-    circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+# De schiet_pijl functie komt hier
+def schiet_pijl():
+    global raak_kleur # Kan in andere functies worden gebruikt
+    pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
+    pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
+    raak_kleur = get(pijl_x, pijl_y).hex # Haal de geraakte kleur op
+    fill('sienna') # Stel vulkeur van de pijl in op bruin
+    circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
 
 def setup():
-    # Setup your game here
-    size(400, 400)  # width and height
+    # Stel je spel hier in
+    size(400, 400) # breedte en hoogte
     no_stroke()
 
 def draw():
-    # Things to do in every frame
+    # Dingen om te doen in elk frame
     fill('cyan')
-    rect(0, 0, 400, 250)  # Sky
+    rect(0, 0, 400, 250) # Lucht
     fill('lightgreen')
-    rect(0, 250, 400, 150)  # Grass
+    rect(0, 250, 400, 150) # Gras
     fill('sienna')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
+    triangle(150, 350, 200, 150, 250, 350) # Standaard
     fill('blue')
-    circle(200, 200, 170)  # Outer circle
+    circle(200, 200, 170) # Buitenste cirkel
     fill('red')
-    circle(200, 200, 110)  # Inner circle
+    circle(200, 200, 110) # Binnenste cirkel
     fill('yellow')
-    circle(200, 200, 30)  # Middle circle
-    shoot_arrow()
+    circle(200, 200, 30) # Middelste cirkel
+    schiet_pijl()
 
-# Keep this to run your code
+# Bewaar dit om je code uit te voeren
 run(frame_rate=2)
