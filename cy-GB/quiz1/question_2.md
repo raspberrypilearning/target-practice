@@ -12,7 +12,7 @@ In the example below, a variable called `speed` has the number `6` stored in it.
 ---
 language: python
 ---
-speed = 6
+cyflymder = 6
 
 if cyflymder == 7: print('Cyflym iawn iawn') elif cyflymder == 5: print('Eithaf cyflym') elif cyflymder == 6: print('Cyflym iawn') else: print('Heb adnabod y cyflymder!')
 
