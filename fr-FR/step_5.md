@@ -6,7 +6,7 @@ Ton jeu ajoutera des scores en fonction de l'endroit où la flèche frappe.
 </div>
 <div>
 
-![La cible, avec la flèche apparaissant dans diverses positions et les scores apparaissant sous forme de texte sous le jeu.](images/points-scored.gif){:width="300px"}
+![Une animation de la cible, avec la flèche apparaissant dans diverses positions et les scores apparaissant sous forme de texte sous le jeu.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
@@ -19,14 +19,14 @@ Nous utilisons des <span style="color: #0faeb0; font-weight: bold;"> conditions<
 
 --- task ---
 
-Delete ❌ the `print('🎯')` line of code.
+Supprime ❌ la ligne de code `print('🎯')` .
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 26
+language: python filename: main.py line_numbers: true line_number_start: 5
 line_highlights: 28
 ---
-# The mouse_pressed function goes here
+# La fonction souris_pressee vient ici
 def mouse_pressed():
 
 
@@ -36,13 +36,13 @@ def mouse_pressed():
 
 --- task ---
 
-Pour `imprimer` un message pour le cercle extérieur de la cible, ajoute du code à ta fonction `mouse_pressed()` pour vérifier si le `couleur_touche` est `==` à `exterieur`.
+Affiche un message **if** la `touche_couleur` est égale à la couleur du cercle `extérieur` (bleu) 🎯.
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
+Remarque 👀 que le code utilise deux signes égal `==` pour signifier **égal à**.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 8
+language: python filename: main.py - souris_pressee() line_numbers: true line_number_start: 5
 line_highlights: 10-11
 ---
 
@@ -53,31 +53,31 @@ print('tu as touché le cercle extérieur, 50 points !') #Comme les fonctions, l
 
 --- /code ---
 
-**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `'blue'` with the colour name that you have chosen.
+**Astuce :** 💡 si tu as modifié la couleur de ton cercle extérieur alors tu devras remplacer `'blue'` par le nom de couleur que tu as choisi.
 
 --- /task ---
 
 --- task ---
 
-**Test :** Exécute ton projet. Essaye d'arrêter la flèche sur les cercles rouges et jaunes pour voir leurs messages.
+**Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur le cercle extérieur bleu pour voir le message.
 
-**Astuce :** `frame_rate()`, dans `setup()`, contrôle la vitesse à laquelle ton jeu dessine. S'il va trop vite, régle-le sur un nombre inférieur.
+**Astuce :** `frame_rate()`, dans `setup()`, contrôle la vitesse à laquelle ton jeu dessine. S'il va trop vite, règle-le sur un nombre inférieur.
 
-![La zone de sortie avec une flèche touchant le cercle extérieur. L'instruction d'impression des points apparaît dans la zone de sortie.](images/blue-points.png)
+![La zone de sortie avec une flèche touchant le cercle extérieur. Le message des points s'affiche dans la zone de sortie.](images/blue-points.png)
 
-**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
+**Débogage :** 🐞 vérifie que tu as utilisé l'orthographe américaine de 'Color' (sans 'u') et que 'Color' est en majuscule.
 
-est utilisé pour **affectation** — comme `fleche_x = 200` pour définir la valeur d'une variable
+**Debogage :** 🐞 assure-toi que ton code correspond exactement et que tu as indenté le code à l'intérieur de ta déclaration `if`.
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name you used for **your** outer circle.
+**Débogage :** 🐞 assure-toi d'avoir entré le nom de couleur correct que tu as utilisé pour **ton** cercle extérieur.
 
 --- /task ---
 
-Un `elif` ne peut être utilisé qu'avec une instruction `if` et, comme un `if`, il vérifie une condition. Si la condition est `True`, le `elif` exécute du code. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. Any remaining conditions will be ignored.
+`elif` (else - if) peut être utilisé pour ajouter des conditions supplémentaires à ta déclaration `if`. Elles seront lues de haut en bas. Dès qu'une condition **True** est trouvée, elle sera traitée. Toutes les conditions restantes seront ignorées.
 
 --- task ---
 
-Comme des points seront marqués si la flèche atterrit également sur les cercles `intérieur` ou `centre`, `extérieur` n'est pas le seul cercle que tu dois vérifier. Pour ce faire, utilise `elif` (une version abrégée de else - if).
+Marque des points si la flèche atterrit sur les cercles `interieur` ou `centre` 🎯 :
 
 --- code ---
 ---
@@ -94,17 +94,17 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 --- task ---
 
-**Test :** Exécute ton projet. Essaye d'arrêter la flèche sur le cercle extérieur bleu pour voir ton message.
+**Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur les cercles intérieurs et intermédiaires pour voir leurs messages.
 
-![La zone de sortie avec une flèche touchant le cercle intérieur. L'instruction d'impression des points apparaît dans la zone de sortie.](images/yellow-points.png)
+![La zone de sortie avec une flèche touchant le cercle intérieur. Le message des points s'affiche dans la zone de sortie.](images/yellow-points.png)
 
-**Debogage :** Assure-toi que ton code correspond exactement et que tu as indenté le code dans ton instruction `if`.
+**Débogage :** 🐞 vérifie que ton indentation correspond à l'exemple.
 
-**Débogage :** Si tu vois un message indiquant que `interieur` ou `centre` sont « non définis », reviens à `draw()` et vérifie qu'ils se trouvent sur la ligne qui déclare les variables globales.
+**Débogage :** 🐞 si tu vois un message indiquant que `touche_couleur` n'est pas « défini », reviens à `dessine()` et vérifie que la ligne déclaration `touche_couleur` comme une variable globale.
 
-**Debogage :** Assure-toi que ton `elif` est au même niveau d'indentation que ton `if`, et que le code à l'intérieur de ton `elif` est au même niveau que le code à l'intérieur de ton `if`.
+**Débogage :** 🐞 assure-toi d'avoir entré le nom de couleur correct pour **tes** cercles.
 
-est utilisé pour tester **équivalence** — comme `couleur_touche == centre` — si les choses de chaque côté ont la même valeur, alors le test est `True`, sinon c'est `False`
+**Débogage :** 🐞 assure-toi d'avoir utilisé la chaîne `.hex` pour **tes** couleurs de cercle.
 
 --- /task ---
 
@@ -140,9 +140,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test :** Exécute ton projet. Essaye d'arrêter la flèche dans l'herbe ou le ciel pour voir le message manqué.
+**Test :** 🔄 exécute ton projet. Tire la flèche dans l'herbe ou dans le ciel pour voir le message manqué.
 
-**Choose:** 💭 Change the number of points scored for the different colours.
+**Choisir :** 💭 modifie le nombre de points marqués pour les différentes couleurs.
 
 --- /task ---
 
