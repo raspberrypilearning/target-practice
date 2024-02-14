@@ -10,7 +10,7 @@ Amuse-toi bien !
 ---
 legend : Question 1 sur 3
 ---
-In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
+Dans ton projet, tu as ajouté no_stroke() à ta fonction de configuration. Que fait la fonction no_stroke() ?
 
 --- code ---
 ---
@@ -25,35 +25,35 @@ no_stroke()
 
 --- choices ---
 
-- ( ) It draws a shape using the coordinates given.
+- ( ) Elle dessine une forme en utilisant les coordonnées données.
 
   --- feedback ---
 
-Not quite. The size() function does this in this example.
+Pas tout à fait. La fonction size() fait cela dans cet exemple.
 
   --- /feedback ---
 
-- ( ) It fills the shape with a given colour.
+- ( ) Elle remplit la forme avec une couleur donnée.
 
   --- feedback ---
 
-Not quite. The fill() function does this and will usually include a given colour.
+Pas tout à fait. La fonction fill() fait cela et inclura généralement une couleur donnée.
 
   --- /feedback ---
 
-- (x) It turns off the border(stroke) for all the shapes.
+- (x) Elle désactive la bordure (stroke) pour toutes les formes.
 
   --- feedback ---
 
-  C'est correct ! A black border will be drawn around your shapes if you do not use this function.
+  C'est correct ! Une bordure noire sera dessinée autour de tes formes si tu n'utilises pas cette fonction.
 
   --- /feedback ---
 
-- ( ) It will draw a circle shape in your program.
+- ( ) Elle dessinera une forme de cercle dans ton programme.
 
   --- feedback ---
 
-  Not quite. The circle() function would be used to draw a circle.
+  Pas tout à fait. La fonction circle() serait utilisée pour dessiner un cercle.
 
   --- /feedback ---
 
