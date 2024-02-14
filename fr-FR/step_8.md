@@ -12,11 +12,11 @@ Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org
 
 --- task ---
 
-**Essaie-le :** Ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
+**Essaie-le :** ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
 
-**Astuce :** Environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
+**Astuce :** environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
 
-Click the **Run** button to view an example of this project.
+Clique sur le bouton **Run** pour afficher un exemple de ce projet.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
@@ -27,4 +27,4 @@ Click the **Run** button to view an example of this project.
 
 --- /no-print ---
 
-Si tu veux t'amuser davantage en explorant Python, tu peux essayer n'importe lequel de [ces projets](https://projects.raspberrypi.org/fr-FR/projects?software%5B%5D=python).
+Si tu veux t'amuser davantage en explorant Python, tu peux essayer n'importe lequel de [ces projets](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
