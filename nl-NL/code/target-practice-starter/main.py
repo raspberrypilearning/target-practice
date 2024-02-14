@@ -1,19 +1,19 @@
-# Import library code
+# Bibliotheekcode importeren
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# De mouse_pressed functie komt hier
 
-# The shoot_arrow function goes here
+# De schiet_pijl functie komt hier
 
 def setup():
-    # Setup your game here
-    size(400, 400)  # width and height of screen
+    # Stel je spel hier in
+    size(400, 400) # breedte en hoogte
 
 def draw():
-    # Things to do in every frame
-    fill('cyan')  # Set the fill color for the sky to cyan
-    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
+    # Dingen om te doen in elk frame
+    fill('cyan') # Stel de vulkleur voor de lucht in op cyaan
+    rect(0, 0, 400, 250) # Teken een rechthoek voor de lucht met deze waarden voor x, y, breedte, hoogte
 
-# Keep this to run your code
+# Bewaar dit om je code uit te voeren
 run(frame_rate=2)
