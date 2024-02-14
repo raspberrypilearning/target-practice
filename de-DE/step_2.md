@@ -1,45 +1,45 @@
-## Create a background
+## Erstelle einen Hintergrund
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a colourful background.
+Dein Spiel braucht einen farbenfrohen Hintergrund.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![Der Ausgabebereich mit einem himmelfarbenen Rechteck über einem grasfarbenen Rechteck, um den Hintergrund zu erstellen.](images/background.png){:width="300px"}
 
 </div>
 </div>
 
-### Open the starter project
+### Öffne das Starterprojekt
 
 --- task ---
 
-Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
+Öffne das Projekt [Zielübungsstarter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}. Der Code Editor wird in einem anderen Tab im Browser geöffnet.
 
-If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
+Wenn du ein Raspberry Pi Konto hast, kannst du auf **Speichern** klicken, um eine Kopie in deinen **Projekten**zu speichern.
 
 --- /task ---
 
-### Edit the sky
+### Bearbeite den Himmel
 
 --- task ---
 
-The starter project has some code already written for you.
+Für das Starterprojekt ist bereits Code geschrieben.
 
-Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
+Klicke auf **„Ausführen“**, um ein blau gefülltes Rechteck zu sehen, das bei x=`0`, y=`0` (oben auf dem Bildschirm) beginnt. Dieses `400` x `250` Pixel große Rechteck ist der Himmel.
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
+![Ein blaues Rechteck mit einem schwarzen Rand darüber, darüber ein graues Rechteck. Die obere linke Ecke der Leinwand ist mit x=0, y=0 markiert. Dies ist der Ursprung des Rechtecks. Die Breite wird mit 400 und die Höhe mit 250 hervorgehoben. Der Code rect(0, 0, 400, 250) wird angezeigt.](images/sky_stroke.png){:width="400px"}
 
-**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
+**Tipp:** 💡 Die Koordinaten beginnen bei (x=0, y=0) in der oberen linken Ecke. Dies kann sich von anderen Koordinatensystemen unterscheiden, die Du mal verwendet hast.
 
 --- /task ---
 
 --- task ---
 
-The sky has been drawn with a black border (stroke).
+Der Himmel wurde mit einem schwarzen Rand (Strich, engl.: „stroke“) gezeichnet.
 
-To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
+Um den Strich für alle Formen auszuschalten, füge `no_stroke()` zur `aufsetzen` Funktion hinzu:
 
 --- code ---
 ---
@@ -47,7 +47,7 @@ language: python filename: main.py — setup() line_numbers: true line_number_st
 line_highlights: 12
 ---
 def setup():
-# Setup your game here
+# Richte hier Dein Spiel ein
 
     size(400, 400)  # Width and height of screen
     no_stroke()
@@ -58,19 +58,19 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+Führe mit **Ausführen** deinen Code erneut aus und beachte 👀, dass der Rand (stroke) jetzt verschwunden ist.
 
-**Tip:** 💡 You will need to press **Stop** to stop your program, this will make the **Run** button reappear.
+**Tipp:** 💡 Du musst **Stopp** drücken, um dein Programm zu stoppen. Dadurch wird die Schaltfläche **Ausführen** wieder erscheinen.
 
 --- /task ---
 
-### Draw the grass
+### Zeichne das Gras
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen.
+**Füge** Code hinzu, um ein grünes Rechteck am unteren Bildschirmrand zu zeichnen.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![Der Ausgabebereich mit einem himmelfarbenen Rechteck über einem grasfarbenen Rechteck, um den Hintergrund zu erstellen. Die obere linke Ecke des Rechtecks ist mit x=0, y=250 markiert. Dies ist der Ursprung des Rechtecks. Die Breite wird mit 400 und die Höhe mit 150 hervorgehoben. Der Code rect(0, 250, 400, 150) wird angezeigt.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -78,7 +78,7 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 18-19
 ---
 def draw():
-# Things to do in every frame
+# Dinge die in jedem Frame passieren
 
     fill('cyan')  # Set the fill colour for the sky to cyan
     rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
@@ -87,15 +87,15 @@ def draw():
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
+**Tipp:** 💡 Wir haben Kommentare zu unserem Code hinzugefügt, wie etwa `# Setzt die Füllfarbe für den Himmel auf Cyan`, um dir zu sagen, was es bewirkt. Du musst deinem Code keine Kommentare hinzufügen, aber sie sind hilfreich, um dich daran zu erinnern, was Codezeilen bewirken.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+**Test:** 🔄 Führe dein Projekt erneut aus, um den fertigen Hintergrund anzuzeigen.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![Der Ausgabebereich mit einem himmelfarbenen Rechteck über einem grasfarbenen Rechteck, um den Hintergrund zu erstellen.](images/background.png){:width="400px"}
 
 --- /task ---
 
