@@ -1,46 +1,46 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: Frage 2 von 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+In deinem Projekt hast du die Bedingungen `if`, `elif` und `else` verwendet, um zu überprüfen, welche Farbe der Pfeil erreicht hat.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+Im folgenden Beispiel ist in einer Variablen namens `geschwindigkeit` die Zahl `6` gespeichert. Was würde im Ausgabebereich stehen, wenn diese `if`-Anweisung ausgeführt wird?
 
 --- code ---
 ---
 language: python
 ---
-speed = 6
+geschwindigkeit = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if geschwindigkeit == 7: print('Superschnell') elif geschwindigkeit == 5: print('Ziemlich schnell') elif geschwindigkeit == 6: print('Sehr schnell') else: print('Geschwindigkeit unbekannt!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Sehr schnell`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  Richtig! Der Variablen **geschwindigkeit** wurde der Wert `6` zugewiesen, wodurch die Bedingung `geschwindigkeit == 6` **wahr** wird und `Sehr schnell` ausgegeben wird.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Geschwindigkeit unbekannt!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Nicht ganz, schau dir den Wert an, der der Variablen **geschwindigkeit** zugewiesen ist.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Es wird nichts ausgegeben
 
   --- feedback ---
 
-  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
+  Versuch es erneut, `else` (deutsch: sonst) wird als letzte Option verwendet, wenn alle darüber gestellten Bedingungen falsch sind. Schau dir die Bedingungen noch einmal an. Sind einige der Bedingungen wahr?
 
   --- /feedback ---
 
