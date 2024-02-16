@@ -29,8 +29,8 @@ line_numbers: true
 line_number_start: 5
 line_highlights: 7
 ---
-# La fonction souris_pressee vient ici
-def souris_pressee():
+# La fonction mouse_pressed vient ici
+def mouse_pressed():
 
 
 --- /code ---
@@ -52,8 +52,8 @@ line_number_start: 5
 line_highlights: 7, 8
 ---
 
-# La fonction souris_pressee vient ici
-def souris_pressee():     
+# La fonction mouse_pressed vient ici
+def mouse_pressed():     
     if touche_couleur == Color('blue').hex: #Comme les fonctions, les instructions "if" sont indentées   
         print('tu as touché le cercle extérieur, 50 points !') 
 
@@ -94,7 +94,7 @@ line_number_start: 6
 line_highlights: 9-12
 ---
 
-def souris_pressee():
+def mouse_pressed():
     if touche_couleur == Color('blue').hex:   
         print('Tu as touché le cercle extérieur, 50 points !')
     elif touche_couleur == Color('red').hex:
@@ -141,7 +141,7 @@ line_number_start: 6
 line_highlights: 13-14
 ---
 
-def souris_pressee():    
+def mouse_pressed():    
     if touche_couleur == Color('blue').hex: 
         print('Tu as touché le cercle extérieur, 50 points !')   
     elif touche_couleur == Color('red').hex: 

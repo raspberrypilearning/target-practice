@@ -2,7 +2,7 @@
 from p5 import *
 from random import randint
 
-# La fonction souris_pressee vient ici
+# La fonction mouse_pressed vient ici
 
 # La fonction tire_fleche vient ici
 
