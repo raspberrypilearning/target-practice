@@ -4,7 +4,7 @@ pijl_x
 
 pijl_y
 
-hit_colour
+hit_kleur
 
-mouse_pressed
+muis_ingedrukt
 
