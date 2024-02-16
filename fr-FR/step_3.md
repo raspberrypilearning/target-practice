@@ -1,7 +1,8 @@
 ## Dessiner ta cible
+
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Le support cible est en forme de triangle. La cible est constituée de cercles colorés - les cercles plus petits valent plus de points que les plus grands. 
+Ton jeu a besoin d'une cible pour tirer des flèches.
 </div>
 <div>
 
@@ -10,174 +11,158 @@ Le support cible est en forme de triangle. La cible est constituée de cercles c
 </div>
 </div>
 
-Les formes sont dessinées dans l'ordre d'exécution des lignes de code. Le support triangulaire en bois se trouve en partie derrière les cercles cibles, il doit donc être dessiné en premier.
-
-Imagine découper toutes les formes dans du papier. Selon la façon dont tu organises et superposes ce papier, le résultat final peut être très différent.
-
-### Dessiner le support
+### Dessiner un support triangulaire
 
 --- task ---
 
-Lorsque tu appelles la fonction `triangle()`, tu dois fournir trois ensembles de coordonnées, `x1, y1, x2, y2, x3, y3` représentant chacun la position de l'un des coins du triangle.
+Définis la couleur de remplissage sur `sienna` (marron).
+
+Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
+
+![Un triangle marron sur de l'herbe et sur un ciel dont les points de coordonnées sont marqués 150, 350 et 200, 150 et 250, 350). Les coins du canevas sont également marqués x=0, y=0 en haut à gauche et x=400, y=400 en bas à droite.](images/stand_coords.png){:width="400px"}
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: true
+line_number_start: 18
+line_highlights: 20, 21
+---
+
+    fill('lightgreen')  # Définis la couleur de remplissage de l'herbe sur vert clair
+    rect(0, 250, 400, 150)  # Dessine un rectangle pour l'herbe avec ces valeurs pour x, y, largeur, hauteur
+    fill('sienna')  # Couleur marron
+    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test :** 🔄 exécute ton code pour voir le support de ta cible :
+
+![Un triangle marron sur l'herbe et sur fond de ciel.](images/target-stand.png){:width="400px"}
+
+--- /task ---
+
+### Dessiner les cibles
+
+--- task ---
+
+La plus grande partie de la cible est un **cercle** bleu.
+
+Définis la couleur de remplissage sur `blue`.
+
+Dessine un cercle avec des coordonnées x et y pour son centre et une largeur.
+
+![Un triangle marron et un cercle bleu sur l'herbe et sur fond de ciel. Le cercle est nommé avec les coordonnées x=200, y=200 comme centre et une largeur de cercle de 170.](images/circle-coords.png){:width="400px"}
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: true
+line_number_start: 20
+line_highlights: 22, 23
+---
+
+    fill('sienna')  # Couleur marron
+    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+    fill('blue')  # Définis la couleur de remplissage sur blue
+    circle(200, 200, 170)  # Dessine le cercle extérieur
+  
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test :** exécute ton code pour voir le premier grand cercle bleu.
+
+Le cercle bleu a été dessiné après le support donc il est devant.
+
+![Un triangle marron et un cercle bleu sur l'herbe et sur fond de ciel.](images/blue-circle.png){:width="400px"}
+
+--- /task ---
+
+La cible est constituée de cercles de tailles différentes ayant les mêmes coordonnées centrales (200, 200).
+
+--- task ---
+
+**Ajoute** des cercles de couleur pour les parties intérieure et centrale de la cible.
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: true
+line_number_start: 20
+line_highlights: 24, 25, 26, 27
+---
+
+    fill('sienna')  # Couleur marron
+    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+    fill('blue')  # Définis la couleur de remplissage sur blue
+    circle(200, 200, 170)  # Dessine le cercle extérieur
+    fill('red')  # Définis la couleur du remplissage du cercle sur rouge
+    circle(200, 200, 110)  # Dessine le cercle intérieur en utilisant x, y, largeur
+    fill('yellow')  # Définis la couleur du remplissage du cercle sur jaune
+    circle(200, 200, 30)  # Dessine le cercle du milieu en utilisant x, y, largeur
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test :** 🔄 exécute ton projet pour voir la cible avec trois cercles colorés.
+
+![Un triangle marron avec trois cercles colorés sur de l'herbe et sur fond de ciel.](images/three-circles.png){:width="400px"}
+
+--- /task ---
+
+--- task ---
+
+**Choisir :** 💭 modifie l'une des couleurs en utilisant un nom de couleur différent. Tu peux trouver une liste de tous les noms de couleurs disponibles sur [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+
+![Un triangle marron avec trois cercles colorés sur l'herbe et sur fond de ciel. Les couleurs sont devenues roses et violettes.](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Coordonnées du triangle
+title: Exemple de code utilisant différentes couleurs
 ---
 
-  Voici trois exemples de triangles, chacun avec différents ensembles de coordonnées. Regarde la position de grille de chacun pour voir comment les coordonnées `x` et `y` positionnent les coins des triangles :
-  + Triangle vert : triangle(50, 50, 150, 50, 180, 100)
-  + Triangle bleu : triangle(210, 280, 300, 350, 380, 100)
-  + Triangle marron : triangle(50, 150, 200, 250, 180, 350)
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: false
+line_number_start: 14
+line_highlights: 
+---
 
-  ![La zone de sortie avec trois triangles.](images/triangles-coords.png)
+def draw():
+# Choses à faire dans chaque frame
+
+    fill('BlueViolet')
+    rect(0, 0, 400, 250)  # Ciel
+    fill('DeepSkyBlue')
+    rect(0, 250, 400, 150)  # Sol
+    fill('FireBrick')
+    triangle(150, 350, 200, 150, 250, 350)  # Support
+    fill('LemonChiffon')
+    circle(200, 200, 170)  # Cercle extérieur
+    fill('DeepPink')
+    circle(200, 200, 110)  # Cercle intérieur
+    fill('BlueViolet')
+    circle(200, 200, 30)  # Cercle du milieu
+
+--- /code ---
 
 --- /collapse ---
-
-Dessine un `triangle()` pour le support avec des coins à (150, 350), (200, 150) et (250, 350).
-
-![Un triangle marron sur l'herbe et contre un ciel avec les points de coordonnées étiquetés.](images/stand_coords.png)
-
---- code ---
----
-language: python 
-filename: main.py - draw() 
-line_numbers: true 
-line_number_start: 28
-line_highlights: 31-32
----
-
-  fill(herbe)   
-  rect(0, 250, 400, 150) #x, y, largeur, hauteur
-
-  fill(bois) #Définir la couleur de remplissage du support sur marron     
-  triangle(150, 350, 200, 150, 250, 350)
-
-
---- /code ---
-
-**Astuce :** Nous avons ajouté des commentaires à notre code, comme `#Définir la couleur de remplissage du support sur marron`, pour te dire ce qu'il fait. Tu n'as pas besoin d'ajouter ces commentaires à ton code, mais ils peuvent être utiles pour te rappeler ce que font les lignes de code.
-
---- /task ---
-
---- task ---
-
-**Test :** Exécute ton code pour voir le support de ta cible.
-
-![Un triangle marron sur l'herbe et contre un ciel.](images/target-stand.png)
-
---- /task ---
-
-### Dessiner la cible
-
---- task ---
-
-La plus grande partie de la cible sera un **cercle bleu** créé en utilisant la fonction `ellipse()`. Une ellipse est une forme avec un seul côté et sans coins. Elle peut être écrasée, comme un ovale, ou parfaitement ronde, comme un cercle.
-
-Une ellipse nécessite des coordonnées `x` et `y` , largeur et hauteur. Les coordonnées `x` et `y` d'une ellipse sont la position centrale.
-
-Le cercle bleu couvrira le triangle marron où ils se chevauchent, car le cercle a été dessiné plus tard.
-
-**Astuce :** Pour faire un cercle, les **largeur** et **hauteur** doivent être identiques.
-
---- code ---
----
-language: python 
-filename: main.py - draw() 
-line_numbers: true 
-line_number_start: 31
-line_highlights: 33-34
----
-
-  fill(bois)   
-  triangle(150, 350, 200, 150, 250, 350)   
-  fill(exterieur)    
-  ellipse(200, 200, 170, 170) #Cercle extérieur. 200, 200 est le milieu de l'écran
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test :** Exécute ton code pour voir le premier grand cercle bleu.
-
-![Un triangle marron et un cercle bleu sur l'herbe et contre un ciel.](images/blue-circle.png)
-
---- /task ---
-
---- task ---
-
-Crée deux nouvelles variables pour stocker les couleurs `intérieur` et `centre` pour les cercles restants.
-
-Attribue des couleurs aux variables `intérieure` et `centre` en utilisant `color()`.
-
-La fonction `color()` attend trois nombres : un pour le rouge, le vert et le bleu.
-
-Nous avons utilisé des chiffres qui donnent les couleurs traditionnelles des cibles de tir à l'arc, mais tu peux utiliser les couleurs que tu aimes tant qu'elles sont différentes les unes des autres.
-
-[[[generic-theory-simple-colours]]]
-
---- code ---
----
-language: python 
-filename: main.py - draw() 
-line_numbers: true 
-line_number_start: 18
-line_highlights: 24-25
----
-
-def draw():   
-#Choses à faire dans chaque image
-
-  ciel = color(92, 204, 206)   
-  herbe = color(149, 212, 122)   
-  bois = color(145, 96, 51)   
-  exterieur = color(0, 120, 180) #Bleu    
-  interieur = color(210, 60, 60) #Rouge    
-  centre = color(220, 200, 0) #Jaune
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-La cible est constituée de cercles de tailles différentes avec les mêmes coordonnées centrales (200, 200) - le milieu de l'écran.
-
-Ajoute deux autres cercles pour représenter un cercle intérieur et le centre. Change le `fill()` avant de dessiner chaque cercle.
-
---- code ---
----
-language: python 
-filename: main.py - draw() 
-line_numbers: true 
-line_number_start: 33
-line_highlights: 37-40
----
-
-  fill(bois)    
-  triangle(150, 350, 200, 150, 250, 350) #Support    
-  fill(exterieur)   
-  ellipse(200, 200, 170, 170) #Cercle extérieur   
-  fill(interieur)   
-  ellipse(200, 200, 110, 110) #Cercle interieur   
-  fill(centre)   
-  ellipse(200, 200, 30, 30) #Centre
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test :** Exécute à nouveau ton projet pour voir la cible avec trois cercles colorés. Change les couleurs jusqu'à ce que tu en sois satisfait.
-
-![Un triangle marron avec trois cercles colorés sur l'herbe et contre un ciel.](images/three-circles.png)
-
-**Débogage:** Python utilise l'orthographe américaine de « color » (sans "u") alors assure-toi de faire de même.
 
 --- /task ---
 
 --- save ---
-

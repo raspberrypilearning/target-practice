@@ -4,7 +4,7 @@ Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org
 
 --- print-only ---
 
-![Projet de lancement de fusée.](images/showcase_rocket.png)
+![Projet de lancement de fusée.](images/showcase_rocket.png){:width="600px"}
 
 --- /print-only ---
 
@@ -12,14 +12,16 @@ Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org
 
 --- task ---
 
-**Essaye :** Ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
+**Essaie-le :** ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
 
-**Astuce :** Environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
+**Astuce :** environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
 
-<iframe src="https://trinket.io/embed/python/622b4dd113?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen mark="crwd-mark">
+Clique sur le bouton **Run** pour afficher un exemple de ce projet.
+
+<iframe src="https://editor.raspberrypi.org/fr-FR/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-![Projet de lancement de fusée](images/showcase_rocket.png)
+![Projet de lancement de fusée](images/showcase_rocket.png){:width="600px"}
 
 --- /task ---
 
@@ -28,6 +30,7 @@ Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org
 Si tu veux t'amuser davantage en explorant Python, tu peux essayer n'importe lequel de [ces projets](https://projects.raspberrypi.org/fr-FR/projects?software%5B%5D=python).
 
 ***
+
 Ce projet a été traduit par des bénévoles:
 
 Michel Arnols
