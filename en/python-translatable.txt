@@ -1,43 +1,10 @@
-sky
-
-grass
-
-wood
-
-outer
-
-inner
-
-bullseye
-
 shoot_arrow
 
 arrow_x
 
 arrow_y
 
-hit_color
+hit_colour
 
-You hit the outer circle, 50 points!
+mouse_pressed
 
-You hit the inner circle, 200 points!
-
-You hit the middle, 500 points!
-
-You hit the bullseye, 500 points!
-
-You missed! No points!
-
-How fast do you want the arrow? slow, medium, fast
-
-You hit red, 200 points!
-
-speed
-
-Super fast
-
-Pretty quick
-
-Very fast
-
-Speed not recognised!
