@@ -114,7 +114,7 @@ def souris_pressee():
 
 **Débogage :** 🐞 vérifie que ton indentation correspond à l'exemple.
 
-**Débogage :** 🐞 si tu vois un message indiquant que `touche_couleur` n'est pas « défini », reviens à `dessine()` et vérifie que la ligne déclaration `touche_couleur` comme une variable globale.
+**Débogage :** 🐞 si tu vois un message indiquant que `touche_couleur` n'est pas « défini », reviens à `draw()` et vérifie que la ligne déclaration `touche_couleur` comme une variable globale.
 
 **Débogage :** 🐞 assure-toi d'avoir entré le nom de couleur correct pour **tes** cercles.
 

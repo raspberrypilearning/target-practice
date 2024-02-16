@@ -45,7 +45,7 @@ def tire_fleche():
 
 --- task ---
 
-Va dans la fonction `dessin` et appelle ta nouvelle fonction `tire_fleche`.
+Va dans la fonction `draw` et appelle ta nouvelle fonction `tire_fleche`.
 
 --- code ---
 ---
