@@ -1,36 +1,36 @@
+अपना गेम यहां सेट करें
+
+Width and height of screen
+
 हर फ्रेम में करने के लिए चीजें
 
-लाल = 92, हरा = 204, नीला = 206
+Set the fill colour for the sky to cyan
 
-प्रारंभ x, प्रारंभ y, चौड़ाई, ऊँचाई
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, चौड़ाई, ऊंचाई
+Set the fill colour for the grass to light green
 
-स्टैंड भरण रंग को लकड़ी पर सेट करें
+Draw a rectangle for the grass with these values for x, y, width, height
 
-लकड़ी में रंग भरने के लिए तीर सेट करें
+Brown colour
 
-स्टैंड भरण रंग को घास पर सेट करें
+Draw a triangle for the target's stand
 
-सर्कल भरण रंग को बाहरी पर सेट करें
+Set the circle fill colour to blue
 
-सर्कल भरण रंग को अंदर की ओर सेट करें
+Draw the outer circle
 
-सर्कल भरण रंग को बीच में सेट करें
+Set the colour for the circle fill to red
 
-X, y, चौड़ाई ऑफ़ द सर्कल
+Draw the inner circle using x, y, width
 
-भीतरी वृत्त - x, y, वृत्त की चौड़ाई
+Set the colour for the circle fill to yellow
 
-मध्य वृत्त - x, y, वृत्त की चौड़ाई
+Draw the middle circle using x, y, width
 
-बाहरी गोल. 200, 200 स्क्रीन का मध्य है
+Sky
 
-नीला
-
-लाल
-
-पीला
+Ground
 
 स्टैंड
 
@@ -38,50 +38,31 @@ X, y, चौड़ाई ऑफ़ द सर्कल
 
 भीतरी गोल
 
-बुल्ज़ाइ
+Middle circle
 
 shoot_arrow फ़ंक्शन यहाँ जाता है
 
-लाइब्रेरी कोड इम्पोर्ट करें
-
-अयादृच्छिक निर्देशांक में अपडेट करें
-
-तीर बनाने से पहले रंग सेव करें
-
-mouse_pressed फ़ंक्शन यहाँ जाता है
-
-अन्य फंक्शन में उपयोग किया जा सकता है
-
-फ़ंक्शंस जैसे, 'if' कथन इंडेंट किए जाते हैं
-
-अपना गेम यहां सेट करें
-
-चौड़ाई और ऊंचाई
-
-p5py संसाधन लाइब्रेरी के साथ संगतता के लिए परिभाषाएँ
-
-आकृति
-
-फ़ॉन्ट
-
-टेक्स्ट
-
-रंग
-
-छवि
-
-दुनिया
-
-रूपांतरित करें
-
-कीबोर्ड
-
-अपना कोड चलाने के लिए इसे रखें
-
 100 और 300 के बीच एक यादृच्छिक संख्या स्टोर करें
 
-हिट रंग प्राप्त करें
+Set the arrow to fill colour to brown
 
 यादृच्छिक निर्देशांक पर एक छोटा वृत्त बनाएं
 
-स्क्रीन की चौड़ाई और ऊंचाई
+अन्य फंक्शन में उपयोग किया जा सकता है
+
+हिट रंग प्राप्त करें
+
+mouse_pressed फ़ंक्शन यहाँ जाता है
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
