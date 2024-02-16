@@ -1,36 +1,36 @@
+Όρισε τις παραμέτρους του παιχνιδιού σου εδώ
+
+Width and height of screen
+
 Ενέργειες που πρέπει να γίνονται σε κάθε καρέ
 
-Κόκκινο = 92, Πράσινο = 204, Μπλε = 206
+Set the fill colour for the sky to cyan
 
-Αρχή x, αρχή y, πλάτος, ύψος
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, πλάτος, ύψος
+Set the fill colour for the grass to light green
 
-Set the stand fill colour to wood
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Set the arrow to fill colour to wood
+Brown colour
 
-Set the stand fill colour to grass
+Draw a triangle for the target's stand
 
-Set the circle fill colour to outer
+Set the circle fill colour to blue
 
-Set the circle fill colour to inner
+Draw the outer circle
 
-Set the circle fill colour to middle
+Set the colour for the circle fill to red
 
-x, y, width of the circle
+Draw the inner circle using x, y, width
 
-Inner circle - x, y, width of the circle
+Set the colour for the circle fill to yellow
 
-Middle circle - x, y, width of the circle
+Draw the middle circle using x, y, width
 
-Εξωτερικός κύκλος. 200, 200 είναι το μέσο της οθόνης
+Sky
 
-Μπλε
-
-Κόκκινο
-
-Κίτρινο
+Ground
 
 Βάση
 
@@ -38,50 +38,31 @@ Middle circle - x, y, width of the circle
 
 Εσωτερικός κύκλος
 
-Κέντρο στόχου
+Middle circle
 
 Η συνάρτηση shoot_arrow πηγαίνει εδώ
 
-Εισαγωγή του κώδικα της βιβλιοθήκης
-
-Ενημέρωσε με τυχαίες συντεταγμένες
-
-Αποθήκευσε το χρώμα πριν σχεδιάσεις το βέλος
-
-Η συνάρτηση mouse_pressed πηγαίνει εδώ
-
-Μπορεί να χρησιμοποιηθεί και σε άλλες συναρτήσεις
-
-Όπως οι συναρτήσεις, οι δηλώσεις "if" έχουν εσοχή
-
-Όρισε τις παραμέτρους του παιχνιδιού σου εδώ
-
-πλάτος και ύψος
-
-Ορισμοί για συμβατότητα με τη βιβλιοθήκη επεξεργασίας p5py
-
-Σχήμα
-
-Γραμματοσειρές
-
-Κείμενο
-
-Χρώμα
-
-Εικόνες
-
-Περιβάλλον
-
-Μετασχηματισμοί
-
-Πληκτρολόγιο
-
-Από εδώ εκτελείς τον κώδικά σου
-
 Store a random number between 100 and 300
 
-Get the hit colour
+Set the arrow to fill colour to brown
 
 Draw a small circle at random coordinates
 
-width and height of screen
+Μπορεί να χρησιμοποιηθεί και σε άλλες συναρτήσεις
+
+Get the hit colour
+
+Η συνάρτηση mouse_pressed πηγαίνει εδώ
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
