@@ -1,36 +1,36 @@
+Configure seu jogo aqui
+
+Width and height of screen
+
 Coisas para fazer em cada quadro
 
-Vermelho = 92, Verde = 204, Azul = 206
+Set the fill colour for the sky to cyan
 
-Inicializa x, inicializa y, largura, altura
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, largura, altura
+Set the fill colour for the grass to light green
 
-Define a cor de preenchimento do suporte para madeira
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Define a cor de preenchimento da flecha para madeira
+Brown colour
 
-Define a cor de preenchimento do suporte para grama
+Draw a triangle for the target's stand
 
-Define a cor de preenchimento do círculo como externa
+Set the circle fill colour to blue
 
-Define a cor de preenchimento do círculo como interna
+Draw the outer circle
 
-Define a cor de preenchimento do círculo para meio
+Set the colour for the circle fill to red
 
-x, y, largura do círculo
+Draw the inner circle using x, y, width
 
-Círculo interno - x, y, largura do círculo
+Set the colour for the circle fill to yellow
 
-Círculo do meio - x, y, largura do círculo
+Draw the middle circle using x, y, width
 
-Círculo externo.200, 200 é o meio da tela
+Sky
 
-Azul
-
-Vermelho
-
-Amarelo
+Ground
 
 Suporte
 
@@ -38,50 +38,31 @@ Círculo externo
 
 Círculo interno
 
-Alvo
+Middle circle
 
 A função atirar_flecha vai aqui
 
-Importa código da biblioteca
-
-Atualiza para coordenadas aleatórias
-
-Salva a cor antes de desenhar a flecha
-
-A função mouse_pressed vai aqui
-
-Pode ser usado em outras funções
-
-Como as funções, as instruções 'if' são indentadas
-
-Configure seu jogo aqui
-
-largura e altura
-
-Definições para compatibilidade com a biblioteca de processamento p5py
-
-Forma
-
-Fontes
-
-Texto
-
-Cor
-
-Imagens
-
-Ambiente
-
-Transformar
-
-Teclado
-
-Mantenha isso para executar seu código
-
 Armazena um número aleatório entre 100 e 300
 
-Obtém a cor de acerto
+Set the arrow to fill colour to brown
 
 Desenha um pequeno círculo em coordenadas aleatórias
 
-largura e altura da tela
+Pode ser usado em outras funções
+
+Obtém a cor de acerto
+
+A função mouse_pressed vai aqui
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
