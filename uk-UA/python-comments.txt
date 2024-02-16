@@ -1,36 +1,36 @@
+Налаштуй свою гру тут
+
+Width and height of screen
+
 Що відбувається на кожному кадрі
 
-Червоний = 92, Зелений = 204, Синій = 206
+Set the fill colour for the sky to cyan
 
-Початок x, Початок y, ширина, висота
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, ширина, висота
+Set the fill colour for the grass to light green
 
-Встановлення кольору заливки підставки на wood
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Встановлення кольору заливки стріли на wood
+Brown colour
 
-Встановлення кольору заливки підставки на grass
+Draw a triangle for the target's stand
 
-Встановлення кольору заливки кола на outer
+Set the circle fill colour to blue
 
-Встановлення кольору заливки кола на inner
+Draw the outer circle
 
-Встановлення кольору заливки кола на middle
+Set the colour for the circle fill to red
 
-x, y, ширина кола
+Draw the inner circle using x, y, width
 
-Внутрішнє коло - x, y, ширина кола
+Set the colour for the circle fill to yellow
 
-Середнє коло - x, y, ширина кола
+Draw the middle circle using x, y, width
 
-Зовнішнє коло. 200, 200 - це середина екрана
+Sky
 
-Синій
-
-Червоний
-
-Жовтий
+Ground
 
 Підставка
 
@@ -38,50 +38,31 @@ x, y, ширина кола
 
 Внутрішнє коло
 
-Яблучко
+Middle circle
 
 Функція shoot_arrow викликається тут
 
-Імпорт коду бібліотеки
-
-Оновити до рандомних координат
-
-Збереження кольору перед малюванням стріли
-
-Функція mouse_pressed викликається тут
-
-Можна використовувати в інших функціях
-
-Подібно до функцій, оператори 'if' починаються з абзацного відступу
-
-Налаштуй свою гру тут
-
-ширина та висота
-
-Визначення для сумісності з бібліотекою p5py
-
-Фігура
-
-Шрифти
-
-Текст
-
-Колір
-
-Зображення
-
-Довкілля
-
-Перетворення
-
-Клавіатура
-
-За допомогою цього ти зможеш запустити свій код
-
 Зберігання випадкового числа в діапазоні від 100 до 300
 
-Визначити, в який колір влучено
+Set the arrow to fill colour to brown
 
 Намалювати маленьке коло на випадкових координатах
 
-ширина та висота екрана
+Можна використовувати в інших функціях
+
+Визначити, в який колір влучено
+
+Функція mouse_pressed викликається тут
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
