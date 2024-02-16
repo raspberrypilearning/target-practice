@@ -1,37 +1,37 @@
-wood
+hout
 
-sky
+lucht
 
-grass
+gras
 
-outer
+buitenste
 
-inner
+binnenste
 
-middle
+midden
 
-shoot_arrow
+schiet_pijl
 
-arrow_x
+pijl_x
 
-arrow_y
+pijl_y
 
-hit_color
+raak_kleur
 
-You hit the outer circle, 50 points!
+Je raakt de buitenste cirkel, 50 punten!
 
-You hit the inner circle, 200 points!
+Je hebt de binnenste cirkel geraakt, 200 punten!
 
-You hit the middle, 500 points!
+Je raakt het midden, 500 punten!
 
-You missed! No points!
+Je hebt gemist! Geen punten!
 
-Super fast
+Super snel
 
-Pretty quick
+Vrij snel
 
-Very fast
+Zeer snel
 
-Speed not recognised!
+Snelheid niet herkend!
 
-speed
+snelheid
