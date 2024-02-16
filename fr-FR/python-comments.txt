@@ -1,36 +1,36 @@
+Configure ton jeu ici
+
+Width and height of screen
+
 Choses à faire dans chaque image
 
-Rouge = 92, Vert = 204, Bleu = 206
+Set the fill colour for the sky to cyan
 
-Départ x, départ y, largeur, hauteur
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, largeur, hauteur
+Set the fill colour for the grass to light green
 
-Définir la couleur de remplissage du support sur bois
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Définir la couleur de remplissage de la flèche sur bois
+Brown colour
 
-Définir la couleur de remplissage du support sur herbe
+Draw a triangle for the target's stand
 
-Définir la couleur de remplissage de l'ellipse sur extérieur
+Set the circle fill colour to blue
 
-Définir la couleur de remplissage de l'ellipse sur intérieur
+Draw the outer circle
 
-Définir la couleur de remplissage de l'ellipse sur milieu
+Set the colour for the circle fill to red
 
-x, y, largeur de l'ellipse
+Draw the inner circle using x, y, width
 
-Cercle intérieur - x, y, largeur de l'ellipse
+Set the colour for the circle fill to yellow
 
-Cercle du centre - x, y, largeur de l'ellipse
+Draw the middle circle using x, y, width
 
-Cercle extérieur. 200, 200 est le milieu de l'écran
+Sky
 
-Bleu
-
-Rouge
-
-Jaune
+Ground
 
 Support
 
@@ -38,50 +38,31 @@ Cercle extérieur
 
 Cercle intérieur
 
-Mille
+Middle circle
 
 La fonction tire_fleche vient ici
 
-Importer le code de la bibliothèque
-
-Mise à jour des coordonnées aléatoires
-
-Enregistrer la couleur avant de dessiner la flèche
-
-La fonction souris_pressee vient ici
-
-Peut être utilisé dans d'autres fonctions
-
-Comme les fonctions, les instructions "if" sont indentées
-
-Configure ton jeu ici
-
-largeur et hauteur
-
-Définitions pour la compatibilité avec la bibliothèque de traitement p5py
-
-Forme
-
-Polices
-
-Texte
-
-Couleur
-
-Images
-
-Environnement
-
-Transformer
-
-Clavier
-
-Garde ceci pour exécuter ton code
-
 Stocker un nombre aléatoire entre 100 et 300
 
-Obtenir la couleur du succès
+Set the arrow to fill colour to brown
 
 Dessiner une petite ellipse à des coordonnées aléatoires
 
-largeur et hauteur de l'écran
+Peut être utilisé dans d'autres fonctions
+
+Obtenir la couleur du succès
+
+La fonction souris_pressee vient ici
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
