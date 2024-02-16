@@ -1,36 +1,36 @@
 Stel je spel hier in
 
-Width and height of screen
+Breedte en hoogte van het scherm
 
 Dingen om te doen in elk frame
 
-Set the fill colour for the sky to cyan
+Stel de kleur voor de lucht in op cyaan
 
-Draw a rectangle for the sky with these values for x, y, width, height
+Teken een rechthoek voor de lucht met deze waarden voor x, y, breedte en hoogte
 
-Set the fill colour for the grass to light green
+Stel de kleur voor het gras in op lichtgroen
 
-Draw a rectangle for the grass with these values for x, y, width, height
+Teken een rechthoek voor het gras met deze waarden voor x, y, breedte en hoogte
 
-Brown colour
+Bruine kleur
 
-Draw a triangle for the target's stand
+Teken een driehoek voor de standaard van het doel
 
-Set the circle fill colour to blue
+Stel de kleur van de cirkel in op blauw
 
-Draw the outer circle
+Teken de buitenste cirkel
 
-Set the colour for the circle fill to red
+Stel de kleur voor de cirkel in op rood
 
-Draw the inner circle using x, y, width
+Teken de binnenste cirkel met x, y, breedte
 
-Set the colour for the circle fill to yellow
+Stel de kleur voor de cirkel in op geel
 
-Draw the middle circle using x, y, width
+Teken de middelste cirkel met x, y, breedte
 
-Sky
+Lucht
 
-Ground
+Grond
 
 Standaard
 
@@ -38,31 +38,31 @@ Buitenste cirkel
 
 Binnenste cirkel
 
-Middle circle
+Middelste cirkel
 
 De schiet_pijl functie komt hier
 
-Store a random number between 100 and 300
+Sla een willekeurig getal op tussen 100 en 300
 
-Set the arrow to fill colour to brown
+Stel de pijl in om de kleur op bruin te zetten
 
-Draw a small circle at random coordinates
+Teken een kleine cirkel op willekeurige coördinaten
 
 Kan ook gebruikt worden in andere functies
 
-Get the hit colour
+Pak de kleur van de hit
 
 De mouse_pressed functie komt hier
 
-Like the code in functions, the code in 'if' statements is indented
+Net als de code in functies, is de code in 'if' statements ingesprongen
 
-You hit the outer circle, 50 points!
+Je raakt de buitenste cirkel, 50 punten!
 
-You hit the inner circle, 200 points!
+Je hebt de binnenste cirkel geraakt, 200 punten!
 
-You hit the middle, 500 points!
+Je raakt het midden, 500 punten!
 
-You missed! No points!
+Je hebt gemist! Geen punten!
 
 
 
