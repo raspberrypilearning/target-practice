@@ -1,36 +1,36 @@
+قم بإعداد لعبتك هنا
+
+Width and height of screen
+
 أشياء للقيام بها في كل إطار
 
-احمر = 92, اخضر = 204, ازرق = 206
+Set the fill colour for the sky to cyan
 
-ابداء محور س, ابداء محور ص, عرض, ارتفاع
+Draw a rectangle for the sky with these values for x, y, width, height
 
-محور س, محور ص, العرض, الارتفاع
+Set the fill colour for the grass to light green
 
-Set the stand fill colour to wood
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Set the arrow to fill colour to wood
+Brown colour
 
-Set the stand fill colour to grass
+Draw a triangle for the target's stand
 
-Set the circle fill colour to outer
+Set the circle fill colour to blue
 
-Set the circle fill colour to inner
+Draw the outer circle
 
-Set the circle fill colour to middle
+Set the colour for the circle fill to red
 
-x, y, width of the circle
+Draw the inner circle using x, y, width
 
-Inner circle - x, y, width of the circle
+Set the colour for the circle fill to yellow
 
-Middle circle - x, y, width of the circle
+Draw the middle circle using x, y, width
 
-الدائرة الخارجية. 200, 200 هو منتصف الشاشة
+Sky
 
-ازرق
-
-احمر
-
-أصفر
+Ground
 
 حامل الهدف
 
@@ -38,50 +38,31 @@ Middle circle - x, y, width of the circle
 
 الدائرة الداخلية
 
-مركز الهدف
+Middle circle
 
 نضع دالة shoot_arrow هنا
 
-استيراد مكتبة التعليمات البرمجية
-
-التحديث إلى الإحداثيات العشوائية
-
-احفظ اللون قبل رسم السهم
-
-نضع دالة mouse_pressed هنا
-
-يمكن استخدامها في دالة أخرى
-
-Like دالة ، يتم وضع مسافة بادئة لعبارات 'if'
-
-قم بإعداد لعبتك هنا
-
-العرض والارتفاع
-
-تعاريف للتوافق مع مكتبة مع
-
-شكل
-
-الخطو
-
-نص
-
-اللون
-
-صور
-
-بيئة
-
-تحول
-
-لوحة المفاتيح
-
-احتفظ بهذا لتشغيل التعليمات البرمجية الخاصة بك
-
 Store a random number between 100 and 300
 
-Get the hit colour
+Set the arrow to fill colour to brown
 
 Draw a small circle at random coordinates
 
-width and height of screen
+يمكن استخدامها في دالة أخرى
+
+Get the hit colour
+
+نضع دالة mouse_pressed هنا
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
