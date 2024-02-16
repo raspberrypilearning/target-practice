@@ -23,7 +23,7 @@ Tu vas devoir :
 Clique sur le bouton **Run** ci-dessous pour démarrer le jeu. Lorsque le point apparaît sur la cible, clique sur la souris (ou appuie sur ta tablette) pour tirer ta flèche. 
 
 Fais quelques essais. Ton score apparaît dans la zone de sortie sous la cible. Comment ton score change-t-il lorsque la flèche atterrit sur les différentes couleurs ? 
-  <iframe src="https://editor.raspberrypi.org/fr-FR/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://editor.raspberrypi.org/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
