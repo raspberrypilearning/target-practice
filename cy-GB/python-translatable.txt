@@ -1,43 +1,10 @@
-awyr
-
-gwair
-
-pren
-
-allanol
-
-mewnol
-
-canol_y_nod
-
 saethu_saeth
 
 saeth_x
 
 saeth_y
 
-lliw_taro
+hit_colour
 
-Ti wedi taro'r cylch allanol, 50 pwynt!
+mouse_pressed
 
-Ti wedi taro'r cylch mewnol, 200 pwynt!
-
-You hit the middle, 500 points!
-
-Canol y nod! 500 pwynt!
-
-Ti wedi methu! Dim pwyntiau!
-
-How fast do you want the arrow? slow, medium, fast
-
-You hit red, 200 points!
-
-cyflymder
-
-Cyflym iawn iawn
-
-Eithaf cyflym
-
-Cyflym iawn
-
-Heb adnabod y cyflymder!
