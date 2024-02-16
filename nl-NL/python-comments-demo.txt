@@ -1,73 +1,73 @@
-Setup your game here
+Stel je spel hier in
 
-width and height of screen
+breedte en hoogte van het scherm
 
-Things to do in every frame
+Dingen om te doen in elk frame
 
-Red = 92, Green = 204, Blue = 206
+Rood = 92, Groen = 204, Blauw = 206
 
-Set the fill colour to grass
+Stel de vulkleur in op gras
 
-x, y, width, height
+x, y, breedte, hoogte
 
-Set the stand fill colour to wood
+Stel de vulkleur van de standaard in op hout
 
-Set the circle fill colour to outer
+Stel de kleur van de cirkelvulling in op buitenste
 
-x, y, width of the circle
+x, y, breedte van de cirkel
 
-Blue
+Blauw
 
-Red
+Rood
 
-Yellow
+Geel
 
-Set the circle fill colour to inner
+Zet de kleur van de cirkelvulling op de binnenste
 
-Inner circle - x, y, width of the circle
+Binnenste cirkel - x, y, breedte van de cirkel
 
-Set the circle fill colour to middle
+Zet de kleur van de cirkelvulling in op midden
 
-Middle circle - x, y, width of the circle
+Middelste cirkel - x, y, breedte van de cirkel
 
-The shoot_arrow function goes here
+De schiet_pijl functie komt hier
 
-Store a random number between 100 and 300
+Sla een willekeurig getal op tussen 100 en 300
 
-Set the arrow to fill colour to wood
+Stel de pijl in om met kleur hout te vullen
 
-Draw a small circle at random coordinates
+Teken een kleine cirkel op willekeurige coördinaten
 
-Get the hit colour
+Pak de kleur van de hit
 
-The mouse_pressed function goes here
+De muis_ingedrukt functie komt hier
 
-Can be used in other functions
+Kan ook gebruikt worden in andere functies
 
-Save the colour before drawing the arrow
+Sla de kleur op voordat je de pijl tekent
 
-Like functions, 'if' statements are indented
+Net als functies, zijn 'if'-statements ingesprongen
 
-Import library code
+Bibliotheekcode importeren
 
-Keep this to run your code
+Bewaar dit om je code uit te voeren
 
-Definitions for compatibility with the p5py processing library
+Definities voor compatibiliteit met de p5py-processing library
 
-Shape
+Vorm
 
-Fonts
+Lettertypen
 
-Text
+Tekst
 
-Colour
+Kleur
 
-Images
+Afbeeldingen
 
-Environment
+Omgeving
 
-Transform
+Omzetten
 
-Keyboard
+Toetsenbord
 
-Set the fill colour to grass
+Stel de vulkleur in op gras
