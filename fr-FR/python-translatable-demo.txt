@@ -1,0 +1,37 @@
+wood
+
+sky
+
+grass
+
+outer
+
+inner
+
+middle
+
+shoot_arrow
+
+arrow_x
+
+arrow_y
+
+hit_color
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+Super fast
+
+Pretty quick
+
+Very fast
+
+Speed not recognised!
+
+speed

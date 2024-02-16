@@ -1,0 +1,43 @@
+ciel
+
+herbe
+
+bois
+
+exterieur
+
+interieur
+
+centre
+
+tire_fleche
+
+fleche_x
+
+fleche_y
+
+couleur_touche
+
+Tu as touché le cercle extérieur, 50 points !
+
+Tu as touché le cercle intérieur, 200 points !
+
+Tu as touché le centre, 500 points !
+
+Tu as touché le mille, 500 points !
+
+Tu as loupé la cible ! Aucun point !
+
+À quelle vitesse veux-tu la flèche ? lent, moyen, rapide
+
+Tu as touché le rouge, 200 points !
+
+vitesse
+
+Super rapide
+
+Assez rapide
+
+Très rapide
+
+Vitesse non reconnue !

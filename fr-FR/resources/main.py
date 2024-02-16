@@ -1,61 +1,61 @@
 #!/bin/python3
 
-# Importer le code de la bibliothèque
+# Import library code
 from p5 import *
 from math import *
 from random import randint
 
-# La fonction mouse_pressed vient ici
+# The mouse_pressed function goes here
 def mouse_pressed():
-  if couleur_touche == exterieur:  
-    print('Tu as touché le cercle extérieur, 50 points !') #Comme les fonctions, les déclarations "if" sont indentés
-  elif couleur_touche == interieur:    
-    print('Tu as touché le cercle intérieur, 200 points !')   
-  elif couleur_touche == centre:    
-    print('Tu as touché le centre, 500 points !')   
+  if hit_color == outer:  
+    print('You hit the outer circle, 50 points!') #Like functions, 'if' statements are indented
+  elif hit_color == inner:    
+    print('You hit the inner circle, 200 points!')   
+  elif hit_color == bullseye:    
+    print('You hit the bullseye, 500 points!')   
   else:   
-    print('Tu as loupé la cible ! Aucun point !')    
+    print('You missed! No points!')    
     
-# La fonction tire_fleche vient ici
-def tire_fleche():
-  global couleur_touche 
-  fleche_x = randint(100, 300)
-  fleche_y = randint(100, 300)
-  couleur_touche = get(fleche_x, fleche_y)
-  ellipse(fleche_x, fleche_y, 15, 15)
+# The shoot_arrow function goes here
+def shoot_arrow():
+  global hit_color 
+  arrow_x = randint(100, 300)
+  arrow_y = randint(100, 300)
+  hit_color = get(arrow_x, arrow_y)
+  ellipse(arrow_x, arrow_y, 15, 15)
 
 def setup():
-# Configure ton jeu ici
-  size(400, 400) # largeur et hauteur
+# Setup your game here
+  size(400, 400) # width and height
   frame_rate(2)
 
 
 def draw():
-# Choses à faire dans chaque image
-  global exterieur, interieur, centre
-  ciel = color(92, 204, 206) # Rouge = 92, Vert = 204, Bleu = 206
-  herbe = color(149, 212, 122)
-  bois = color(145, 96, 51)
-  exterieur = color(0, 120, 180) 
-  interieur = color(210, 60, 60)
-  centre = color(220, 200, 0)
+# Things to do in every frame
+  global outer, inner, bullseye
+  sky = color(92, 204, 206) # Red = 92, Green = 204, Blue = 206
+  grass = color(149, 212, 122)
+  wood = color(145, 96, 51)
+  outer = color(0, 120, 180) 
+  inner = color(210, 60, 60)
+  bullseye = color(220, 200, 0)
 
   no_stroke()
-  fill(ciel)
+  fill(sky)
   rect(0, 0, 400, 250)
-  fill(herbe)
+  fill(grass)
   rect(0, 250, 400, 150)
   
-  fill(bois)
+  fill(wood)
   triangle(150, 350, 200, 150, 250, 350)
-  fill(exterieur)
+  fill(outer)
   ellipse(200, 200, 170, 170)
-  fill(interieur)   
-  ellipse(200, 200, 110, 110) #Cercle intérieur   
-  fill(centre)   
-  ellipse(200, 200, 30, 30) #centre 
+  fill(inner)   
+  ellipse(200, 200, 110, 110) #Inner circle   
+  fill(bullseye)   
+  ellipse(200, 200, 30, 30) #Bullseye 
   
-  fill(bois)
-  tire_fleche() 
-# Garde ceci pour exécuter ton code
+  fill(wood)
+  shoot_arrow()
+# Keep this to run your code
 run()

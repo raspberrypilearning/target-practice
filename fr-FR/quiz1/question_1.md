@@ -1,10 +1,8 @@
-## Réflexion
+## Questionnaire rapide
 
-Bravo, tu as créé un jeu ! Maintenant, il est temps de réfléchir - la réflexion est une partie importante de l'apprentissage, car elle aide à établir de nouvelles connexions dans ton cerveau.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris.
-
-Après chaque question, appuie sur **soumettre**. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
 Amuse-toi bien !
 
@@ -12,41 +10,50 @@ Amuse-toi bien !
 ---
 legend: Question 1 sur 3
 ---
-Voici un carré bleu, quelles sont les valeurs RVB qui vont le créer ?
+Dans ton projet, tu as ajouté no_stroke() à ta fonction de configuration. Que fait la fonction no_stroke() ?
 
-![Un seul bloc de couleur bleue.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+  size(400, 400)      
+  no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) Elle dessine une forme en utilisant les coordonnées données.
 
   --- feedback ---
 
-Pas tout à fait, lorsque toutes les valeurs de couleur sont définies sur `0`, la couleur est le **noir**.
+Pas tout à fait. La fonction size() fait cela dans cet exemple.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) Elle remplit la forme avec une couleur donnée.
 
   --- feedback ---
 
-Pas tout à fait, les couleurs suivent le modèle RVB. Cette couleur a une valeur R maximale et pas de V ou B, donc sera **rouge**.
+Pas tout à fait. La fonction fill() fait cela et inclura généralement une couleur donnée.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) Elle désactive la bordure (stroke) pour toutes les formes.
 
   --- feedback ---
 
-  C'est correct ! Les couleurs suivent le modèle RVB. Cette couleur n'a ni R ni V, mais un maximum de B, donc sera **bleu**.
+  C'est correct ! Une bordure noire sera dessinée autour de tes formes si tu n'utilises pas cette fonction.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) Elle dessinera une forme de cercle dans ton programme.
 
   --- feedback ---
 
-  Pas tout à fait, lorsque toutes les valeurs de couleur sont réglées au maximum `255`, la couleur est le **blanc**.
+  Pas tout à fait. La fonction circle() serait utilisée pour dessiner un cercle.
 
   --- /feedback ---
 

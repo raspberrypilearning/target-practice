@@ -1,0 +1,87 @@
+Choses à faire dans chaque image
+
+Rouge = 92, Vert = 204, Bleu = 206
+
+Départ x, départ y, largeur, hauteur
+
+x, y, largeur, hauteur
+
+Définir la couleur de remplissage du support sur bois
+
+Définir la couleur de remplissage de la flèche sur bois
+
+Définir la couleur de remplissage du support sur herbe
+
+Définir la couleur de remplissage de l'ellipse sur extérieur
+
+Définir la couleur de remplissage de l'ellipse sur intérieur
+
+Définir la couleur de remplissage de l'ellipse sur milieu
+
+x, y, largeur de l'ellipse
+
+Cercle intérieur - x, y, largeur de l'ellipse
+
+Cercle du centre - x, y, largeur de l'ellipse
+
+Cercle extérieur. 200, 200 est le milieu de l'écran
+
+Bleu
+
+Rouge
+
+Jaune
+
+Support
+
+Cercle extérieur
+
+Cercle intérieur
+
+Mille
+
+La fonction tire_fleche vient ici
+
+Importer le code de la bibliothèque
+
+Mise à jour des coordonnées aléatoires
+
+Enregistrer la couleur avant de dessiner la flèche
+
+La fonction souris_pressee vient ici
+
+Peut être utilisé dans d'autres fonctions
+
+Comme les fonctions, les instructions "if" sont indentées
+
+Configure ton jeu ici
+
+largeur et hauteur
+
+Définitions pour la compatibilité avec la bibliothèque de traitement p5py
+
+Forme
+
+Polices
+
+Texte
+
+Couleur
+
+Images
+
+Environnement
+
+Transformer
+
+Clavier
+
+Garde ceci pour exécuter ton code
+
+Stocker un nombre aléatoire entre 100 et 300
+
+Obtenir la couleur du succès
+
+Dessiner une petite ellipse à des coordonnées aléatoires
+
+largeur et hauteur de l'écran

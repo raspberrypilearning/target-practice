@@ -2,69 +2,36 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Dans cette étape, tu ajouteras des points en fonction de l'endroit où la flèche frappe.
+Ton jeu ajoutera des scores en fonction de l'endroit où la flèche frappe.
 </div>
 <div>
 
-![La cible, avec la flèche apparaissant dans diverses positions et les scores apparaissant sous forme de texte sous le jeu.](images/points-scored.gif){:width="300px"}
+![Une animation de la cible, avec la flèche apparaissant dans diverses positions et les scores apparaissant sous forme de texte sous le jeu.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
-
---- task ---
-
-Les variables de couleur dans la fonction `draw()` seront utilisées pour vérifier le score dans la fonction `mouse_pressed()`. Pour ce faire, elles doivent être définies en tant que variables globales :
-
---- code ---
----
-language: python 
-filename: main.py 
-line_numbers: true 
-line_number_start: 26
-line_highlights: 28
----
-
-def dessin():
-#Choses à faire dans chaque image
-  global exterieur, interieur, centre    
-  ciel = color(92, 204, 206) #Rouge = 92, Vert = 204, Bleu = 206    
-  herbe = color(149, 212, 122)    
-  bois = color(145, 96, 51)    
-  exterieur = color(0, 120, 180)    
-  interieur = color(210, 60, 60)   
-  centre = color(220, 200, 0)
-
---- /code ---
-
---- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 Nous utilisons des <span style="color: #0faeb0; font-weight: bold;"> conditions</span> tout le temps pour prendre des décisions. On pourrait dire « si le crayon est émoussé, alors taille-le ». De même, les conditions "if" nous permettent d'écrire du code qui fait quelque chose de différent selon qu'une condition est vraie ou fausse.
 </p>
 
+### Afficher les scores
+
 --- task ---
 
-Pour `imprimer` un message pour le cercle extérieur de la cible, ajoute du code à ta fonction `mouse_pressed()` pour vérifier si le `couleur_touche` est `==` à `exterieur`.
-
-Sois prudent lorsque tu utilise le symbole `=` en Python :
- + `=` est utilisé pour **affectation** — comme `fleche_x = 200` pour définir la valeur d'une variable
- + `==` est utilisé pour tester **équivalence** — comme `couleur_touche == centre` — si les choses de chaque côté ont la même valeur, alors le test est `True`, sinon c'est `False`
-
-Change le code dans ton `print()` pour donner un score :
+Supprime ❌ la ligne de code `print('🎯')` .
 
 --- code ---
 ---
-language: python 
-filename: main.py - mouse_pressed() 
-line_numbers: true 
-line_number_start: 8
-line_highlights: 10-11
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 5
+line_highlights: 7
 ---
+# La fonction souris_pressee vient ici
+def souris_pressee():
 
-#La fonction mouse_pressed vient ici
-def mouse_pressed():     
-  if couleur_touche == exterieur:      
-    print('tu as touché le cercle extérieur, 50 points !') #Comme les fonctions, les instructions "if" sont indentées
 
 --- /code ---
 
@@ -72,46 +39,68 @@ def mouse_pressed():
 
 --- task ---
 
-**Test :** Exécute ton projet. Essaye d'arrêter la flèche sur le cercle extérieur bleu pour voir ton message. La couleur du pixel au centre de la flèche est la couleur enregistrée et vérifiée.
+Affiche un message **if** la `touche_couleur` est égale à la couleur du cercle `extérieur` (bleu) 🎯.
 
-**Astuce :** `frame_rate()`, dans `setup()`, contrôle la vitesse à laquelle ton jeu dessine. S'il va trop vite, régle-le sur un nombre inférieur.
-
-![La zone de sortie avec une flèche touchant le cercle extérieur. L'instruction d'impression des points apparaît dans la zone de sortie.](images/blue-points.png)
-
-**Debogage :** Assure-toi que ton code correspond exactement et que tu as indenté le code dans ton instruction `if`. L'indentation indique à Python que le code ne doit s'exécuter que si la condition est `True`.
-
---- /task ---
-
-Comme des points seront marqués si la flèche atterrit également sur les cercles `intérieur` ou `centre`, `extérieur` n'est pas le seul cercle que tu dois vérifier. Pour ce faire, utilise `elif` (une version abrégée de else - if).
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Nous utilisons <span style="color: #0faeb0; font-weight: bold;"> else - if </span> pour prendre des décisions dans la vraie vie. Lorsque tu peins une image du ciel, tu peux vérifier s'il y a une peinture jaune pour le soleil. Sinon, s'il n'y a pas de peinture jaune, tu recherches de l'orange. Sinon, s'il n'y a pas de peinture jaune ou orange, tu peux utiliser du rouge - très légèrement !
-</p>
-
---- task ---
-
-Un `elif` ne peut être utilisé qu'avec une instruction `if` et, comme un `if`, il vérifie une condition. Si la condition est `True`, le `elif` exécute du code.
-
-Ce qui rend `elif` différent, c'est qu'il ne fera cette vérification que si les conditions du `if` et de tout `elif`s avant lui sont `False`.
-
-Ajoute `elif` déclarations pour `intérieur` et `centre`.
+Remarque 👀 que le code utilise deux signes égal `==` pour signifier **égal à**.
 
 --- code ---
 ---
-language: python 
-filename: main.py - mouse_pressed() 
-line_numbers: true 
-line_number_start: 9
-line_highlights: 12-15
+language: python
+filename: main.py - mouse_pressed()
+line_numbers: true
+line_number_start: 5
+line_highlights: 7, 8
 ---
 
-def mouse_pressed():    
-  if couleur_touche == exterieur:    
-    print('Tu as touché le cercle extérieur, 50 points !')    
-  elif couleur_touche == interieur:    
-    print('Tu as touché le cercle intérieur, 200 points !')   
-  elif couleur_touche == centre:    
-    print('Tu as touché le centre, 500 points !')
+# La fonction souris_pressee vient ici
+def souris_pressee():     
+    if touche_couleur == Color('blue').hex: #Comme les fonctions, les instructions "if" sont indentées   
+        print('tu as touché le cercle extérieur, 50 points !') 
+
+--- /code ---
+
+**Astuce :** 💡 si tu as modifié la couleur de ton cercle extérieur alors tu devras remplacer `'blue'` par le nom de couleur que tu as choisi.
+
+--- /task ---
+
+--- task ---
+
+**Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur le cercle extérieur bleu pour voir le message.
+
+**Astuce :** `frame_rate()`, dans `setup()`, contrôle la vitesse à laquelle ton jeu dessine. S'il va trop vite, règle-le sur un nombre inférieur.
+
+![La zone de sortie avec une flèche touchant le cercle extérieur. Le message des points s'affiche dans la zone de sortie.](images/blue-points.png)
+
+**Débogage :** 🐞 vérifie que tu as utilisé l'orthographe américaine de 'Color' (sans 'u') et que 'Color' est en majuscule.
+
+**Debogage :** 🐞 assure-toi que ton code correspond exactement et que tu as indenté le code à l'intérieur de ta déclaration `if`.
+
+**Débogage :** 🐞 assure-toi d'avoir entré le nom de couleur correct que tu as utilisé pour **ton** cercle extérieur.
+
+--- /task ---
+
+`elif` (else - if) peut être utilisé pour ajouter des conditions supplémentaires à ta déclaration `if`. Elles seront lues de haut en bas. Dès qu'une condition **True** est trouvée, elle sera traitée. Toutes les conditions restantes seront ignorées.
+
+--- task ---
+
+Marque des points si la flèche atterrit sur les cercles `interieur` ou `centre` 🎯 :
+
+--- code ---
+---
+language: python
+filename: main.py - mouse_pressed()
+line_numbers: true
+line_number_start: 6
+line_highlights: 9-12
+---
+
+def souris_pressee():
+    if touche_couleur == Color('blue').hex:   
+        print('Tu as touché le cercle extérieur, 50 points !')
+    elif touche_couleur == Color('red').hex:
+        print('Tu as touché le cercle intérieur, 200 points !')
+    elif touche_couleur == Color('yellow').hex:
+        print('Tu as touché le centre, 500 points !')
 
 --- /code ---
 
@@ -119,25 +108,25 @@ def mouse_pressed():
 
 --- task ---
 
-**Test :** Exécute ton projet. Essaye d'arrêter la flèche sur les cercles rouges et jaunes pour voir leurs messages.
+**Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur les cercles intérieurs et intermédiaires pour voir leurs messages.
 
-![La zone de sortie avec une flèche touchant le cercle intérieur. L'instruction d'impression des points apparaît dans la zone de sortie.](images/yellow-points.png)
+![La zone de sortie avec une flèche touchant le cercle intérieur. Le message des points s'affiche dans la zone de sortie.](images/yellow-points.png)
 
-**Debogage :** Assure-toi que ton `elif` est au même niveau d'indentation que ton `if`, et que le code à l'intérieur de ton `elif` est au même niveau que le code à l'intérieur de ton `if`.
+**Débogage :** 🐞 vérifie que ton indentation correspond à l'exemple.
 
-**Débogage :** Si tu vois un message indiquant que `interieur` ou `centre` sont « non définis », reviens à `draw()` et vérifie qu'ils se trouvent sur la ligne qui déclare les variables globales.
+**Débogage :** 🐞 si tu vois un message indiquant que `touche_couleur` n'est pas « défini », reviens à `dessine()` et vérifie que la ligne déclaration `touche_couleur` comme une variable globale.
 
-```python
-global exterieur, interieur, centre
-```
+**Débogage :** 🐞 assure-toi d'avoir entré le nom de couleur correct pour **tes** cercles.
+
+**Débogage :** 🐞 assure-toi d'avoir utilisé la chaîne `.hex` pour **tes** couleurs de cercle.
 
 --- /task ---
 
-Il te reste une décision à prendre : que se passe-t-il si la flèche n'atterrit sur aucun des cercles cibles ? Pour faire cette dernière vérification, tu utilises `else`.
+### Manquer la cible
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Nous utilisons <span style="color: #0faeb0; font-weight: bold;"> si … sinon </span> pour prendre des décisions. Quand tu te réveilles, tu vérifies et si c'est le matin tu te leves, sinon tu te rendors. Peux-tu penser à des décisions si ... sinon que tu prends ? 
-</p>
+Il te reste une décision à prendre : que se passe-t-il si la flèche n'atterrit sur aucun des cercles cibles ? ❌
+
+Pour faire cette dernière vérification, tu utilises `else`.
 
 --- task ---
 
@@ -145,22 +134,22 @@ Ajoute du code à `print` un message `else` si aucune des déclarations `if` et 
 
 --- code ---
 ---
-language: python 
-filename: main.py 
-line_numbers: true 
-line_number_start: 9
-line_highlights: 16-17
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 6
+line_highlights: 13-14
 ---
 
-def mouse_pressed():    
-  if couleur_touche == exterieur:   
-    print('Tu as touché le cercle extérieur, 50 points !')   
-  elif couleur_touche == interieur:   
-    print('Tu as touché le cercle intérieur, 200 points !')   
-  elif couleur_touche == centre:    
-    print('Tu as touché le centre, 500 points !') 
-  else:   
-    print('Tu as loupé la cible ! Aucun point !')
+def souris_pressee():    
+    if touche_couleur == Color('blue').hex: 
+        print('Tu as touché le cercle extérieur, 50 points !')   
+    elif touche_couleur == Color('red').hex: 
+        print('Tu as touché le cercle intérieur, 200 points !')   
+    elif touche_couleur == Color('yellow').hex:   
+        print('Tu as touché le centre, 500 points !')
+    else:   
+       print('Tu as loupé la cible ! Aucun point !')
 
 --- /code ---
 
@@ -168,9 +157,9 @@ def mouse_pressed():
 
 --- task ---
 
-**Test :** Exécute ton projet. Essaye d'arrêter la flèche dans l'herbe ou le ciel pour voir le message manqué. Modifie le nombre de points marqués pour les différentes couleurs si tu le souhaites.
+**Test :** 🔄 exécute ton projet. Tire la flèche dans l'herbe ou dans le ciel pour voir le message manqué.
 
-![La zone de sortie avec une flèche manquant la cible. L'instruction d'impression des points apparaît dans la zone de sortie.](images/missed-points.png)
+**Choisir :** 💭 modifie le nombre de points marqués pour les différentes couleurs.
 
 --- /task ---
 
