@@ -1,36 +1,36 @@
+Gosodwch eich gêm yma
+
+Width and height of screen
+
 Pethau i'w gwneud ym mhob ffrâm
 
-Coch = 92, Gwyrdd = 204, Glas = 206
+Set the fill colour for the sky to cyan
 
-x dechrau, y dechrau, lled, uchder
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, lled, uchder
+Set the fill colour for the grass to light green
 
-Set the stand fill colour to wood
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Set the arrow to fill colour to wood
+Brown colour
 
-Set the stand fill colour to grass
+Draw a triangle for the target's stand
 
-Set the circle fill colour to outer
+Set the circle fill colour to blue
 
-Set the circle fill colour to inner
+Draw the outer circle
 
-Set the circle fill colour to middle
+Set the colour for the circle fill to red
 
-x, y, width of the circle
+Draw the inner circle using x, y, width
 
-Inner circle - x, y, width of the circle
+Set the colour for the circle fill to yellow
 
-Middle circle - x, y, width of the circle
+Draw the middle circle using x, y, width
 
-Cylch allanol.200, 200 yw canol y sgrin
+Sky
 
-Glas
-
-Coch
-
-Melyn
+Ground
 
 Stand
 
@@ -38,50 +38,31 @@ Cylch allanol
 
 Cylch mewnol
 
-Canol y nod
+Middle circle
 
 Mae'r swyddogaeth saethu_saeth yn mynd fan hyn
 
-Mewngludo cod llyfrgell
-
-Diweddaru i gyfesurynnau ar hap
-
-Cadw'r lliw cyn llunio'r saeth
-
-Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
-
-Gellir ei ddefnyddio mewn swyddogaethau eraill
-
-Fel swyddogaethau, mae datganiadau 'if' yn cael eu mewnoli
-
-Gosodwch eich gêm yma
-
-lled ac uchder
-
-Diffiniadau ar gyfer cydnawsedd â'r llyfrgell brosesu p5py
-
-Siâp
-
-Ffontiau
-
-Testun
-
-Lliw
-
-Delweddau
-
-Amgylchedd
-
-Trawsnewid
-
-Bysellfwrdd
-
-Cadwch hwn i redeg eich cod
-
 Store a random number between 100 and 300
 
-Get the hit colour
+Set the arrow to fill colour to brown
 
 Draw a small circle at random coordinates
 
-width and height of screen
+Gellir ei ddefnyddio mewn swyddogaethau eraill
+
+Get the hit colour
+
+Mae'r swyddogaeth mouse_pressed yn mynd fan hyn
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
