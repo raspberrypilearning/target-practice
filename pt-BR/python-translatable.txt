@@ -1,43 +1,10 @@
-ceu
-
-grama
-
-madeira
-
-externo
-
-interno
-
-alvo
-
 atirar_flecha
 
 flecha_x
 
 flecha_y
 
-cor_acerto
+hit_colour
 
-Você acertou o círculo externo, 50 pontos!
+mouse_pressed
 
-Você acertou o círculo interno, 200 pontos!
-
-Você acertou o meio, 500 pontos!
-
-Você acertou o alvo, 500 pontos!
-
-Você errou! Sem pontos!
-
-Quão rápida você quer a flecha? lenta, média, rápida
-
-Você acertou o vermelho, 200 pontos!
-
-velocidade
-
-Super rápida
-
-Bem rápida
-
-Muito rápida
-
-Velocidade não reconhecida!
