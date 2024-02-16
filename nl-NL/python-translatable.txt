@@ -1,43 +1,10 @@
-lucht
-
-gras
-
-hout
-
-buitenste
-
-binnenste
-
-roos
-
 schiet_pijl
 
 pijl_x
 
 pijl_y
 
-raak_kleur
+hit_colour
 
-Je raakt de buitenste cirkel, 50 punten!
+mouse_pressed
 
-Je hebt de binnenste cirkel geraakt, 200 punten!
-
-You hit the middle, 500 points!
-
-In de roos, 500 punten!
-
-Je hebt gemist! Geen punten!
-
-How fast do you want the arrow? slow, medium, fast
-
-You hit red, 200 points!
-
-snelheid
-
-Super snel
-
-Aardig snel
-
-Zeer snel
-
-Snelheid niet herkend!
