@@ -1,36 +1,36 @@
+ここでゲームをセットアップします
+
+Width and height of screen
+
 すべてのフレームで行うこと
 
-赤 = 92, 緑 = 204, 青 = 206
+Set the fill colour for the sky to cyan
 
-開始 x, 開始 y, 幅, 高さ
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, 幅, 高さ
+Set the fill colour for the grass to light green
 
-Set the stand fill colour to wood
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Set the arrow to fill colour to wood
+Brown colour
 
-Set the stand fill colour to grass
+Draw a triangle for the target's stand
 
-Set the circle fill colour to outer
+Set the circle fill colour to blue
 
-Set the circle fill colour to inner
+Draw the outer circle
 
-Set the circle fill colour to middle
+Set the colour for the circle fill to red
 
-x, y, width of the circle
+Draw the inner circle using x, y, width
 
-Inner circle - x, y, width of the circle
+Set the colour for the circle fill to yellow
 
-Middle circle - x, y, width of the circle
+Draw the middle circle using x, y, width
 
-外側の円 200, 200は画面の中央です
+Sky
 
-青
-
-赤
-
-黄
+Ground
 
 スタンド
 
@@ -38,50 +38,31 @@ Middle circle - x, y, width of the circle
 
 内側の円
 
-ブルズアイ
+Middle circle
 
 shoot_arrow関数はここにあります
 
-ライブラリコードをインポートする
-
-ランダム座標へのアップデイト
-
-矢印を描く前に色を保存する
-
-mouse_pressed関数はここにあります
-
-他の機能でも使用可能
-
-関数と同様に'if'文はインデントが必要です
-
-ここでゲームをセットアップします
-
-幅と高さ
-
-p5py処理ライブラリとの互換性のための定義
-
-形
-
-フォント
-
-文章
-
-色
-
-画像
-
-環境
-
-トランスフォーム
-
-キーボード
-
-コードを実行するのに必要
-
 Store a random number between 100 and 300
 
-Get the hit colour
+Set the arrow to fill colour to brown
 
 Draw a small circle at random coordinates
 
-width and height of screen
+他の機能でも使用可能
+
+Get the hit colour
+
+mouse_pressed関数はここにあります
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
