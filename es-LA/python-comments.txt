@@ -1,36 +1,36 @@
+Configura tu juego aquí
+
+Width and height of screen
+
 Cosas que hacer en cada cuadro
 
-Rojo = 92, Verde = 204, Azul = 206
+Set the fill colour for the sky to cyan
 
-x inicial, y inicial, ancho, alto
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, ancho, alto
+Set the fill colour for the grass to light green
 
-Establece el color de relleno del soporte en madera
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Establece el color de relleno de la flecha en madera
+Brown colour
 
-Establece el color de relleno del soporte en césped
+Draw a triangle for the target's stand
 
-Establece el color de relleno del círculo en exterior
+Set the circle fill colour to blue
 
-Establece el color de relleno del círculo en interior
+Draw the outer circle
 
-Establece el color de relleno del círculo en medio
+Set the colour for the circle fill to red
 
-x, y, ancho del círculo
+Draw the inner circle using x, y, width
 
-Círculo interior - x, y, ancho del círculo
+Set the colour for the circle fill to yellow
 
-Círculo medio - x, y, ancho del círculo
+Draw the middle circle using x, y, width
 
-Círculo exterior. 200, 200 es el centro de la pantalla
+Sky
 
-Azul
-
-Rojo
-
-Amarillo
+Ground
 
 Base
 
@@ -38,50 +38,31 @@ Círculo exterior
 
 Círculo interior
 
-Diana
+Middle circle
 
 La función disparar_flecha va aquí
 
-Importa la biblioteca de código
-
-Actualizar a coordenadas aleatorias
-
-Guardar el color antes de dibujar la flecha
-
-La función mouse_pressed va aquí
-
-Se puede utilizar en otras funciones
-
-Al igual que las funciones, las declaraciones 'if' están indentandas
-
-Configura tu juego aquí
-
-ancho y alto
-
-Definiciones de compatibilidad con la biblioteca de procesamiento p5py
-
-Forma
-
-Tipos de letra
-
-Texto
-
-Color
-
-Imágenes
-
-Entorno informático
-
-Transformar
-
-Teclado
-
-Mantén esto para ejecutar tu código
-
 Almacena un número aleatorio entre 100 y 300
 
-Consigue el color en que cayó la flecha
+Set the arrow to fill colour to brown
 
 Dibuja un pequeño círculo en coordenadas aleatorias
 
-ancho y alto de la pantalla
+Se puede utilizar en otras funciones
+
+Consigue el color en que cayó la flecha
+
+La función mouse_pressed va aquí
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
