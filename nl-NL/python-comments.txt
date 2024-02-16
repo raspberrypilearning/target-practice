@@ -1,36 +1,36 @@
+Stel je spel hier in
+
+Width and height of screen
+
 Dingen om te doen in elk frame
 
-Rood = 92, Groen = 204, Blauw = 206
+Set the fill colour for the sky to cyan
 
-Start x, start y, breedte, hoogte
+Draw a rectangle for the sky with these values for x, y, width, height
 
-x, y, breedte, hoogte
+Set the fill colour for the grass to light green
 
-Set the stand fill colour to wood
+Draw a rectangle for the grass with these values for x, y, width, height
 
-Set the arrow to fill colour to wood
+Brown colour
 
-Set the stand fill colour to grass
+Draw a triangle for the target's stand
 
-Set the circle fill colour to outer
+Set the circle fill colour to blue
 
-Set the circle fill colour to inner
+Draw the outer circle
 
-Set the circle fill colour to middle
+Set the colour for the circle fill to red
 
-x, y, width of the circle
+Draw the inner circle using x, y, width
 
-Inner circle - x, y, width of the circle
+Set the colour for the circle fill to yellow
 
-Middle circle - x, y, width of the circle
+Draw the middle circle using x, y, width
 
-Buitenste cirkel. 200, 200 is het midden van het scherm
+Sky
 
-Blauw
-
-Rood
-
-Geel
+Ground
 
 Standaard
 
@@ -38,50 +38,31 @@ Buitenste cirkel
 
 Binnenste cirkel
 
-Roos
+Middle circle
 
 De schiet_pijl functie komt hier
 
-Bibliotheekcode importeren
-
-Update naar willekeurige coördinaten
-
-Sla de kleur op voordat je de pijl tekent
-
-De mouse_pressed functie komt hier
-
-Kan ook gebruikt worden in andere functies
-
-Net als functies, zijn 'if'-instructies ingesprongen
-
-Stel je spel hier in
-
-breedte en hoogte
-
-Definities voor de p5py-bibliotheek
-
-Vormgeving
-
-Lettertypen
-
-Tekst
-
-Kleur
-
-Afbeeldingen
-
-Omgeving
-
-Omzetten
-
-Toetsenbord
-
-Bewaar dit om je code uit te voeren
-
 Store a random number between 100 and 300
 
-Get the hit colour
+Set the arrow to fill colour to brown
 
 Draw a small circle at random coordinates
 
-width and height of screen
+Kan ook gebruikt worden in andere functies
+
+Get the hit colour
+
+De mouse_pressed functie komt hier
+
+Like the code in functions, the code in 'if' statements is indented
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+
+
