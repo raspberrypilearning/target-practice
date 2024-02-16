@@ -1,43 +1,10 @@
-sky
-
-grass
-
-wood
-
-outer
-
-inner
-
-bullseye
-
 shoot_arrow
 
 arrow_x
 
 arrow_y
 
-hit_color
+hit_colour
 
-Έχεις πετύχει τον εξωτερικό κύκλο, 50 πόντοι!
+mouse_pressed
 
-Έχεις πετύχει τον εσωτερικό κύκλο, 200 βαθμοί!
-
-You hit the middle, 500 points!
-
-Έχεις πετύχει το κέντρο του στόχου, 500 πόντοι!
-
-Έχασες! Δεν παίρνεις πόντους!
-
-How fast do you want the arrow? slow, medium, fast
-
-You hit red, 200 points!
-
-speed
-
-Υπερβολικά γρήγορα
-
-Αρκετά γρήγορα
-
-Πολύ γρήγορα
-
-Δεν αναγνωρίστηκε η ταχύτητα!
