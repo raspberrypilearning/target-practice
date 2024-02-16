@@ -2,8 +2,8 @@
 from p5 import *
 from random import randint
 
-# La fonction souris_pressee vient ici
-def souris_pressee():
+# La fonction mouse_pressed vient ici
+def mouse_pressed():
     if touche_couleur == Color('blue').hex: # Comme les fonctions, les instructions 'if' sont indentées
         print('Tu as touché le cercle extérieur, 50 points !')
     elif touche_couleur == Color('red').hex:

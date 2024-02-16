@@ -112,11 +112,11 @@ def tire_fleche():
 
 ### Imprimer la couleur lorsque la souris est pressée
 
-La bibliothèque `p5` « écoute » certains événements, l'un d'eux est la pression du bouton de la souris. Lorsqu'elle détecte que le bouton a été pressé, elle exécute le code qui lui a été donné dans la fonction `souris_pressee`.
+La bibliothèque `p5` « écoute » certains événements, l'un d'eux est la pression du bouton de la souris. Lorsqu'elle détecte que le bouton a été pressé, elle exécute le code qui lui a été donné dans la fonction `mouse_pressed`.
 
 --- task ---
 
-Définis ta fonction `souris_pressee()` sous le commentaire **# La fonction souris_pressee vient ici**.
+Définis ta fonction `mouse_pressed()` sous le commentaire **# La fonction mouse_pressed vient ici**.
 
 Ajoute du code pour imprimer l'emoji cible 🎯 lorsque tu cliques sur la souris.
 
@@ -129,8 +129,8 @@ line_number_start: 5
 line_highlights: 6
 ---
 
-# La fonction souris_pressee vient ici
-def souris_pressee():    
+# La fonction mouse_pressed vient ici
+def mouse_pressed():    
     print('🎯')
 
 --- /code ---
