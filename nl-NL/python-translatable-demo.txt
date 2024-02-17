@@ -18,15 +18,15 @@ pijl_y
 
 raak_kleur
 
-Je raakt de buitenste cirkel, 50 punten!
+Je hebt de buitenste cirkel geraakt, 50 punten!
 
 Je hebt de binnenste cirkel geraakt, 200 punten!
 
-Je raakt het midden, 500 punten!
+Je hebt het midden geraakt, 500 punten!
 
 Je hebt gemist! Geen punten!
 
-Super snel
+Supersnel
 
 Vrij snel
 
