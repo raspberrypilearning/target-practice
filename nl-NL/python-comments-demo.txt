@@ -52,7 +52,7 @@ Bibliotheekcode importeren
 
 Bewaar dit om je code uit te voeren
 
-Definities voor compatibiliteit met de p5py-processing library
+Definities voor compatibiliteit met de p5py-processing-bibliotheek
 
 Vorm
 
