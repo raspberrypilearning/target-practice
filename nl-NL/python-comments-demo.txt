@@ -1,0 +1,73 @@
+Stel je spel hier in
+
+breedte en hoogte van het scherm
+
+Dingen om te doen in elk frame
+
+Rood = 92, Groen = 204, Blauw = 206
+
+Stel de vulkleur in op gras
+
+x, y, breedte, hoogte
+
+Stel de vulkleur van de standaard in op hout
+
+Stel de kleur van de cirkelvulling in op buitenste
+
+x, y, breedte van de cirkel
+
+Blauw
+
+Rood
+
+Geel
+
+Zet de kleur van de cirkelvulling op de binnenste
+
+Binnenste cirkel - x, y, breedte van de cirkel
+
+Zet de kleur van de cirkelvulling in op midden
+
+Middelste cirkel - x, y, breedte van de cirkel
+
+De schiet_pijl functie komt hier
+
+Sla een willekeurig getal op tussen 100 en 300
+
+Stel de pijl in om met kleur hout te vullen
+
+Teken een kleine cirkel op willekeurige coördinaten
+
+Pak de kleur van de hit
+
+De muis_ingedrukt functie komt hier
+
+Kan ook gebruikt worden in andere functies
+
+Sla de kleur op voordat je de pijl tekent
+
+Net als functies, zijn 'if'-statements ingesprongen
+
+Bibliotheekcode importeren
+
+Bewaar dit om je code uit te voeren
+
+Definities voor compatibiliteit met de p5py-processing-bibliotheek
+
+Vorm
+
+Lettertypen
+
+Tekst
+
+Kleur
+
+Afbeeldingen
+
+Omgeving
+
+Omzetten
+
+Toetsenbord
+
+Stel de vulkleur in op gras

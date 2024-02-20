@@ -1,10 +1,8 @@
-## Reflectie
+## Snelle quiz
 
-Goed gedaan, je hebt een spel gemaakt! Nu is het tijd om te reflecteren - reflecteren is een belangrijk onderdeel van leren, omdat het helpt om nieuwe verbindingen in je hersenen te maken.
+Beantwoord de drie vragen. Je wordt naar het juiste antwoord geleid.
 
-Beantwoord de drie onderstaande vragen om terug te kijken op wat je hebt geleerd.
-
-Druk na elke vraag op **indienen**. Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
 Veel plezier!
 
@@ -12,41 +10,50 @@ Veel plezier!
 ---
 legend: Vraag 1 van 3
 ---
-Hier is een blauw vierkant, wat zijn de RGB-waarden die het zal creëren?
+In je project heb je no_stroke() aan je setup-functie toegevoegd. Wat doet de functie no_stroke()?
 
-![Een enkel blok met een blauwe kleur.](images/quiz-colour.png)
+--- code ---
+---
+language: python
+---
+
+def setup():   
+  size(400, 400)      
+  no_stroke()
+
+--- /code ---
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- ( ) Het tekent een vorm met behulp van de opgegeven coördinaten.
 
   --- feedback ---
 
-Niet helemaal, als alle kleurwaarden zijn ingesteld op `0`, is de kleur **zwart**.
+Niet helemaal. De functie size() doet dit in dit voorbeeld.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) Het vult de vorm met een bepaalde kleur.
 
   --- feedback ---
 
-Niet helemaal, kleuren volgen het RGB-model. Deze kleur heeft een maximale R-waarde en geen G of B, dus **rood**.
+Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- (x) Het schakelt de rand (stroke) voor alle vormen uit.
 
   --- feedback ---
 
-  Dat is correct! Kleuren volgen het RGB-model. Deze kleur heeft geen R of G, maar maximaal B, dus is **blauw**.
+  Dat klopt. Als je deze functie niet gebruikt, wordt er een zwarte rand rond je vormen getekend.
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) Er wordt een cirkelvorm in jouw programma getekend.
 
   --- feedback ---
 
-  Niet helemaal, als alle kleurwaarden zijn ingesteld op het maximum van `255` is de kleur **wit**.
+  Niet helemaal. De functie circle() zou worden gebruikt om een cirkel te tekenen.
 
   --- /feedback ---
 
