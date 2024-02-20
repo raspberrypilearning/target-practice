@@ -149,7 +149,7 @@ def mouse_pressed():
     elif hit_kleur == Color('yellow').hex:
         print('Je raakt het midden, 500 punten!')
     else:   
-        print('You missed! Geen punten!')
+        print('Je hebt gemist! Geen punten!')
 
 --- /code ---
 
