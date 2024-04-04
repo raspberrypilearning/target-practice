@@ -1,32 +1,32 @@
-## Score points
+## Punteggio
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game will add scores based on where the arrow hits.
+Il tuo gioco aggiungerà punteggi in base a dove colpisce la freccia.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Un'animazione del bersaglio, con la freccia che appare in una varietà di posizioni e i punteggi che appaiono come testo sotto il gioco.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+Usiamo sempre le <span style="color: #0faeb0; font-weight: bold;"> condizioni</span> per prendere decisioni. Potremmo dire "se la matita è spuntata, allora falle la punta". Allo stesso modo, le condizioni "if" ci permettono di scrivere codice che fa qualcosa di diverso a seconda che una condizione sia vera o falsa.
 </p>
 
-### Display the scores
+### Visualizza i punteggi
 
 --- task ---
 
-Delete ❌ the `print('🎯')` line of code.
+Elimina ❌ la riga di codice `print('🎯')` .
 
 --- code ---
 ---
 language: python filename: main.py line_numbers: true line_number_start: 5
 line_highlights: 7
 ---
-# The mouse_pressed function goes here
+# La funzione mouse_pressed va qui
 def mouse_pressed():
 
 
@@ -36,9 +36,9 @@ def mouse_pressed():
 
 --- task ---
 
-Display a message **if** the `hit_colour` is equal to the `outer` circle colour (blue) 🎯.
+Visualizza un messaggio **se** il `hit_color` è uguale al `` colore del cerchio esterno (blu) 🎯.
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
+Nota 👀 che il codice utilizza due segni di uguale `==` per indicare **uguale a**.
 
 --- code ---
 ---
@@ -46,37 +46,37 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 7, 8
 ---
 
-# The mouse_pressed function goes here
+# La funzione mouse_pressed va qui
 def mouse_pressed():     
 if hit_colour == Color('blue').hex:  # Like the code in functions, the code in 'if' statements is indented print('You hit the outer circle, 50 points!')
 
 --- /code ---
 
-**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `'blue'` with the colour name that you have chosen.
+**Suggerimento:** 💡 Se hai cambiato il colore del cerchio esterno, dovrai sostituire `'blu'` con il nome del colore che hai scelto.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to fire the arrow on the blue outer circle to see the message.
+**Test:** 🔄 Esegui il tuo progetto. Prova a lanciare la freccia sul cerchio esterno blu per vedere il messaggio.
 
-**Tip:** 💡 `frame_rate=2`, in `run` at the bottom of your code, controls how fast your game draws. If it's going too fast, set it to a lower number.
+**Suggerimento:** 💡 `frame_rate=2`, in `run` in fondo al codice, controlla la velocità di disegno del tuo gioco. Se sta andando troppo veloce, impostalo su un numero inferiore.
 
-![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
+![L'area di output con la freccia che tocca il cerchio esterno. Il messaggio dei punti viene visualizzato nell'area di output.](images/blue-points.png)
 
-**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
+**Debug:** 🐞 Controlla di aver utilizzato l'ortografia americana di "Color" (senza "u") e che "Color" sia in maiuscolo.
 
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+**Debug:** 🐞 Assicurati che il tuo codice corrisponda esattamente e di aver rientrato il codice all'interno dell'istruzione `if` .
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name you used for **your** outer circle.
+**Debug:** 🐞 Assicurati di aver inserito il nome corretto del colore che hai utilizzato per **il tuo** cerchio esterno.
 
 --- /task ---
 
-`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. Any remaining conditions will be ignored.
+`elif` (else - if) può essere utilizzato per aggiungere più condizioni alla tua istruzione `if` . Questi verranno letti dall'alto verso il basso. Non appena viene trovata una condizione **True** , verrà eseguita. Eventuali condizioni rimanenti verranno ignorate.
 
 --- task ---
 
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
+Ottieni punti se la freccia si ferma sui cerchi `interni ` o sui cerchi `centrali ` 🎯:
 
 --- code ---
 ---
@@ -93,29 +93,29 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to fire the arrow on the inner and middle circles to see their messages.
+**Test:** 🔄 Esegui il tuo progetto. Prova a lanciare la freccia sul cerchio interno e su quello esterno per vedere il messaggio.
 
-![The output area with arrow touching the inner circle. The points message is displayed in the output area.](images/yellow-points.png)
+![L'area di output con la freccia che tocca il cerchio interno. Il messaggio dei punti viene visualizzato nell'area di output.](images/yellow-points.png)
 
-**Debug:** 🐞 Check your indentation matches the example.
+**Debug:** 🐞 Controlla che il tuo rientro corrisponda all'esempio.
 
-**Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
+**Debug:** 🐞Se vedi un messaggio `hit_colour` being 'not defined', torna indietro alla funzione `draw()` e controlla la riga che dichiara `hit_colour` come variabile globale.
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name for **your** circles.
+**Debug:** 🐞 Assicurati di aver inserito il nome corretto del colore per **il tuo** cerchio esterno.
 
-**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours.
+**Debug:** 🐞 Assicurati di aver utilizzato la stringa `.hex` per i colori del **tuo cerchio**.
 
 --- /task ---
 
-### Missing the target
+### Bersaglio mancato
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
+C'è un'altra decisione che devi prendere: cosa succede se la freccia non si ferma su nessuno dei cerchi bersaglio? ❌
 
-To do this last check, you use `else`.
+Per fare quest'ultimo controllo, usi `else`.
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Aggiungi del codice per `stampare` un messaggio `else` se nessuna della condizioni `if` e `elif` è stata soddisfatta.
 
 --- code ---
 ---
@@ -133,9 +133,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** 🔄 Run your project. Fire the arrow in the grass or sky to see the miss message.
+**Test:** 🔄 Esegui il tuo progetto. Spara la freccia nell'erba o nel cielo per vedere il messaggio "mancato".
 
-**Choose:** 💭 Change the number of points scored for the different colours.
+**Scegli:** 💭 Cambia il numero di punti segnati per i diversi colori.
 
 --- /task ---
 
