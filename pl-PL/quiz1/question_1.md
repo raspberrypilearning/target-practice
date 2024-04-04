@@ -1,16 +1,16 @@
-## Quick quiz
+## Szybki quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Odpowiedz na trzy pytania. Istnieją wskazówki, które poprowadzą Cię do prawidłowej odpowiedzi.
 
-When you have answered each question, click on **Check my answer**.
+Po udzieleniu odpowiedzi na każde pytanie kliknij ** Sprawdź moją odpowiedź **.
 
-Have fun!
+Miłej zabawy!
 
 --- question ---
 ---
 legend: Pytanie 1 z 3
 ---
-In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
+W swoim projekcie dodałeś no_stroke() do funkcji konfiguracji. Co robi funkcja no_stroke()?
 
 --- code ---
 ---
@@ -25,35 +25,35 @@ no_stroke()
 
 --- choices ---
 
-- ( ) It draws a shape using the coordinates given.
+- ( ) Rysuje kształt za pomocą podanych współrzędnych.
 
   --- feedback ---
 
-Not quite. The size() function does this in this example.
+Nie do końca. Funkcja size() robi to w tym przykładzie.
 
   --- /feedback ---
 
-- ( ) It fills the shape with a given colour.
+- ( ) Wypełnia kształt określonym kolorem.
 
   --- feedback ---
 
-Not quite. The fill() function does this and will usually include a given colour.
+Nie do końca. Funkcja fill() to robi i zwykle zawiera dany kolor.
 
   --- /feedback ---
 
-- (x) It turns off the border(stroke) for all the shapes.
+- (X) wyłącza obramowanie(obrys) dla wszystkich kształtów.
 
   --- feedback ---
 
-  That's correct. A black border will be drawn around your shapes if you do not use this function.
+  Zgadza się. Jeśli nie korzystasz z tej funkcji, wokół twoich kształtów zostanie narysowana czarna ramka.
 
   --- /feedback ---
 
-- ( ) It will draw a circle shape in your program.
+- ( ) Narysuje kształt koła w twoim programie.
 
   --- feedback ---
 
-  Not quite. The circle() function would be used to draw a circle.
+  Nie do końca. Funkcja circle() zostanie użyta do narysowania koła.
 
   --- /feedback ---
 
