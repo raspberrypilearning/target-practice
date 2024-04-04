@@ -1,6 +1,6 @@
 Configure ton jeu ici
 
-Width and height of screen
+largeur et hauteur de l'écran
 
 Choses à faire dans chaque image
 
@@ -8,25 +8,25 @@ Set the fill colour for the sky to cyan
 
 Draw a rectangle for the sky with these values for x, y, width, height
 
-Set the fill colour for the grass to light green
+Définir la couleur de remplissage du support sur herbe
 
-Draw a rectangle for the grass with these values for x, y, width, height
+x, y, largeur, hauteur
 
-Brown colour
+Couleur
 
 Draw a triangle for the target's stand
 
-Set the circle fill colour to blue
+Définir la couleur de remplissage de l'ellipse sur milieu
 
-Draw the outer circle
+Cercle extérieur
 
-Set the colour for the circle fill to red
+Définir la couleur de remplissage de l'ellipse sur extérieur
 
-Draw the inner circle using x, y, width
+Cercle intérieur - x, y, largeur de l'ellipse
 
-Set the colour for the circle fill to yellow
+Définir la couleur de remplissage de l'ellipse sur intérieur
 
-Draw the middle circle using x, y, width
+Cercle du centre - x, y, largeur de l'ellipse
 
 Sky
 
@@ -44,7 +44,7 @@ La fonction tire_fleche vient ici
 
 Stocker un nombre aléatoire entre 100 et 300
 
-Set the arrow to fill colour to brown
+Définir la couleur de remplissage de la flèche sur bois
 
 Dessiner une petite ellipse à des coordonnées aléatoires
 
@@ -54,7 +54,7 @@ Obtenir la couleur du succès
 
 La fonction souris_pressee vient ici
 
-Like the code in functions, the code in 'if' statements is indented
+Comme les fonctions, les instructions "if" sont indentées
 
 You hit the outer circle, 50 points!
 
