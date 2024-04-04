@@ -99,7 +99,7 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 **Depurar:** 🐞 Verifique se seu recuo corresponde ao exemplo.
 
-**Depurar:** 🐞 Se você vir uma mensagem sobre `cor_acerto` como 'não definido', volte para `draw()` e verifique se a linha declara `cor_acerto` como uma variável global.
+**Depurar:** 🐞 Se você vir uma mensagem sobre `cor_acertada` como 'não definido', volte para `draw()` e verifique se a linha declara `cor_acertada` como uma variável global.
 
 **Depurar:** 🐞 Certifique-se de ter inserido o nome correto da cor para **seus** círculos.
 
