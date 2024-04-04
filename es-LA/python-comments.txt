@@ -1,6 +1,6 @@
 Configura tu juego aquí
 
-Width and height of screen
+ancho y alto de la pantalla
 
 Cosas que hacer en cada cuadro
 
@@ -8,29 +8,29 @@ Set the fill colour for the sky to cyan
 
 Draw a rectangle for the sky with these values for x, y, width, height
 
-Set the fill colour for the grass to light green
+Establece el color de relleno del soporte en césped
 
 Draw a rectangle for the grass with these values for x, y, width, height
 
-Brown colour
+Color
 
 Draw a triangle for the target's stand
 
-Set the circle fill colour to blue
+Establece el color de relleno del círculo en medio
 
-Draw the outer circle
+Círculo exterior
 
-Set the colour for the circle fill to red
+Establece el color de relleno del círculo en exterior
 
-Draw the inner circle using x, y, width
+Círculo interior - x, y, ancho del círculo
 
-Set the colour for the circle fill to yellow
+Establece el color de relleno del círculo en interior
 
-Draw the middle circle using x, y, width
+Círculo medio - x, y, ancho del círculo
 
 Sky
 
-Ground
+Base
 
 Base
 
@@ -38,13 +38,13 @@ Círculo exterior
 
 Círculo interior
 
-Middle circle
+Círculo interior
 
 La función disparar_flecha va aquí
 
 Almacena un número aleatorio entre 100 y 300
 
-Set the arrow to fill colour to brown
+Establece el color de relleno de la flecha en madera
 
 Dibuja un pequeño círculo en coordenadas aleatorias
 
@@ -54,7 +54,7 @@ Consigue el color en que cayó la flecha
 
 La función mouse_pressed va aquí
 
-Like the code in functions, the code in 'if' statements is indented
+Al igual que las funciones, las declaraciones 'if' están indentandas
 
 You hit the outer circle, 50 points!
 
