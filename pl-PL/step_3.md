@@ -1,29 +1,29 @@
-## Draw your target
+## Narysuj swój cel
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+Twoja gra potrzebuje celu do strzelania strzałkami.
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![Obszar wyjściowy z obiektem docelowym i stojakiem.](images/three-cirles.png){:width="300px"}
 
 </div>
 </div>
 
-### Draw a triangular stand
+### Narysuj stojak trójkątny
 
 --- task ---
 
-Set the fill colour to `sienna` (brown).
+Ustaw kolor wypełnienia na ` ` (brązowy).
 
-Draw a triangle using the x and y coordinates for each of the corners.
+Narysuj trójkąt używając współrzędnych x i y dla każdego z rogów.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Brązowy trójkąt na trawie i na niebie z punktami współrzędnych oznaczonymi jako 150, 350 i 200, 150 i 250, 350). Narożniki płótna są również oznaczone jako x=0, y=0 w lewym górnym rogu i x=400, y=400 w prawym dolnym rogu.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+język: python nazwa pliku: main.py - draw() line_numbers: true line_number_start: 18
 line_highlights: 20, 21
 ---
 
@@ -38,23 +38,23 @@ line_highlights: 20, 21
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+Test **:** ? Uruchom swój kod, aby zobaczyć stojak dla swojego celu:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Brązowy trójkąt na trawie i na tle nieba.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### Narysuj docelowe okręgi
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+Największa część celu to niebieski okrąg ** **.
 
-Set the fill colour to `blue`.
+Ustaw kolor wypełnienia na ` `.
 
-Draw a circle with x and y coordinates for its centre and a width.
+Narysuj okrąg ze współrzędnymi x i y dla jego środka i szerokości.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Brązowy trójkąt i niebieskie kółko na trawie i na niebie. Okrąg jest oznaczony współrzędnymi x=200, y=200 jako środek i szerokość okręgu 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -73,19 +73,19 @@ line_highlights: 22, 23
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+** Test:** Uruchom swój kod, aby zobaczyć pierwsze duże niebieskie kółko.
 
-The blue circle was drawn after the stand so it is in front.
+Niebieskie kółko zostało narysowane za stojakiem, więc jest z przodu.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Brązowy trójkąt i niebieskie kółko na trawie i na niebie.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Cel składa się z okręgów o różnych rozmiarach o tych samych współrzędnych środka (200, 200).
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+** ** kolorowe kółka dla wewnętrznej i środkowej części celu.
 
 --- code ---
 ---
@@ -108,21 +108,21 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+Test **:** ? Uruchom swój projekt, aby zobaczyć cel z trzema kolorowymi kółkami.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![Brązowy trójkąt z trzema kolorowymi kółkami na trawie i na tle nieba.](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+** Wybierz:** ? Zmień dowolny kolor używając innej nazwy koloru. Możesz znaleźć listę wszystkich nazw kolorów dostępnych w [ W3 ](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Brązowy trójkąt z trzema kolorowymi kółkami na trawie i na tle nieba. Kolory zmieniły się na różowe i fioletowe.](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Example code using different colours
+Title: Przykładowy kod używający różnych kolorów
 ---
 
 --- code ---
@@ -132,7 +132,7 @@ line_highlights:
 ---
 
 def draw():
-# Things to do in every frame
+# Rzeczy do zrobienia w każdej klatce
 
     fill('BlueViolet')
     rect(0, 0, 400, 250)  # Sky
