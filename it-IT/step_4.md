@@ -1,35 +1,35 @@
-## Fire your arrow
+## Scocca la tua freccia
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When you click or tap, an arrow will fire at the position of a moving target circle. 
+Quando fai clic o tocchi, una freccia sarà lanciata verso la posizione di un bersaglio rotondo in movimento. 
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![Il bersaglio, con una freccia circolare marrone che appare in varie posizioni.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Draw a target circle every frame
+### Disegna un obiettivo rotondo in ogni fotogramma
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Computers create the effect of movement by showing lots of images one after another. Each image is called a <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> I computer creano l'effetto del movimento mostrando molte immagini una dopo l'altra. Ogni immagine è chiamata <span style="color: #0faeb0; font-weight: bold;"> frame </span>.   
 </p>
 
 --- task ---
 
-Define your `shoot_arrow()` function under the comment **# The shoot_arrow function goes here**.
+Definisci la tua funzione `shoot_arrow()` sotto il commento **# La funzione shoot_arrow() va qui**.
 
-Add code to randomly draw a brown circle within a target area:
+Aggiungi il codice per disegnare casualmente un cerchio marrone all'interno di un'area target:
 
-![A rectangle showing the target area coordinates in a semi transparent rectangle. The target area is between x=100 and y=100 to x=300 and y=300 so covers the whole target and wider.](images/target_area.png)
+![Un rettangolo che mostra le coordinate dell'area target in un rettangolo semitrasparente. L'area target è compresa tra x=100 e y=100 fino a x=300 e y=300, quindi copre l'intero target e anche oltre.](images/target_area.png)
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
 line_highlights: 8-12
 ---
-# The shoot_arrow function goes here
+# La funzione shoot_arrow va qui
 def shoot_arrow():   
 arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
 arrow_y = randint(100, 300)  # Store a random number between 100 and 300    
@@ -42,7 +42,7 @@ circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- task ---
 
-Go to the `draw` function and call your new `shoot_arrow` function.
+Vai alla funzione `draw` e chiama la tua nuova funzione `shoot_arrow` .
 
 --- code ---
 ---
@@ -60,34 +60,34 @@ line_highlights: 33
 
 --- task ---
 
-**Test:** 🔄 Run your code and see the arrow appear in a random position each frame.
+**Test:** 🔄 Esegui il codice e osserva la freccia apparire in una posizione casuale in ogni fotogramma.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Un'animazione del bersaglio con una freccia circolare marrone che appare in diverse posizioni.](images/fire_arrow.gif)
 
-The background and target will be drawn over the old arrow. This means you only see one arrow at a time.
+Lo sfondo e il bersaglio verranno disegnati sopra la vecchia freccia. Ciò significa che vedi solo una freccia alla volta.
 
 --- /task ---
 
-### Get the colour hit by the arrow
+### Ottieni il colore colpito dalla freccia
 
-The `get()` function returns the colour of a pixel.
+La funzione `get()` restituisce il colore di un pixel.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
+Un <span style="color: #0faeb0; font-weight: bold;">pixel</span>, abbreviazione di picture element, è un singolo punto colorato all'interno di un'immagine. Le immagini sono composte da molti pixel colorati.
 </p>
 
 --- task ---
 
-Add a **global variable** called `hit_colour` that can be used throughout your code.
+Aggiungi una  **variabile globale** chiamata `hit_color` che può essere utilizzata in tutto il codice.
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
+Aggiungi il codice er `ottenere` il colore del pixel al centro della freccia e memorizzalo nella variabile `hit_color` . Per confrontare i colori dobbiamo utilizzare il codice esadecimale. Questo può essere fatto con la stringa `.hex` .
 
 --- code ---
 ---
 language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
 line_highlights: 9, 12
 ---
-# The shoot_arrow function goes here
+# La funzione shoot_arrow va qui
 def shoot_arrow(): global hit_colour  # Can be used in other functions  
 arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
 arrow_y = randint(100, 300)  # Store a random number between 100 and 300 hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour     
@@ -96,19 +96,19 @@ circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
 
 --- /code ---
 
-**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow!
+**Suggerimento** 💡Il codice per `ottenere (get)` i colori deve essere inserito **prima** del codice per disegnare il `cerchio` altrimenti salverai sempre il color legno della freccia!
 
 --- /task ---
 
-### Print the colour when the mouse is pressed
+### Stampa il colore quando si preme il mouse
 
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
+La libreria `p5` 'ascolta' determinati eventi, uno di questi è la pressione del pulsante del mouse. Quando rileva che il pulsante è stato premuto, eseguirà qualunque codice sia stato inserito nella funzione `mouse_pressed` .
 
 --- task ---
 
-Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**.
+Definisci la tua funzione `mouse_pressed()` sotto il commento **# La funzione mouse_pressed va qui**.
 
-Add code to print the target emoji 🎯 when the mouse is clicked.
+Aggiungi il codice per stampare l'emoji target 🎯 quando si fa clic con il mouse.
 
 --- code ---
 ---
@@ -116,7 +116,7 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 6
 ---
 
-# The mouse_pressed function goes here
+# La funzione mouse_pressed va qui
 def mouse_pressed():    
 print('🎯')
 
@@ -126,15 +126,15 @@ print('🎯')
 
 --- task ---
 
-**Test:** 🔄 Run your project.
+**Test:** 🔄 Esegui il tuo progetto.
 
-The project prints 🎯 each time the arrow is redrawn.
+Il progetto stampa 🎯 ogni volta che la freccia viene ridisegnata.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Un'animazione del bersaglio con una freccia circolare marrone che appare in diverse posizioni.](images/fire_arrow.gif)
 
-**Debug:** 🐞 If you are seeing a message about `hit_colour` being 'not defined', then go back to `shoot_arrow()` and check that you have included the `global hit_colour` line.
+**Debug:** 🐞Se vedi un messaggio `hit_colour` being 'not defined', torna indietro alla funzione `shoot_arrow()` e controlla di aver incluso la riga `global hit_colour` .
 
-**Debug:** 🐞 Check the `print` line really carefully for commas and brackets.
+**Debug:** 🐞 Controlla con molta attenzione le virgole e le parentesi alla riga `print` .
 
 --- /task ---
 
