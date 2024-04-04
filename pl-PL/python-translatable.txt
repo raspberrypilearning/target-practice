@@ -1,10 +1,10 @@
-shoot_arrow
+strzałka_strzałka
 
 arrow_x
 
 arrow_y
 
-hit_colour
+hit_color
 
 mouse_pressed
 
