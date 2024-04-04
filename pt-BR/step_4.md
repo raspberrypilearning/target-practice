@@ -78,9 +78,9 @@ Um <span style="color: #0faeb0; font-weight: bold;">píxel</span>, abreviação 
 
 --- task ---
 
-Adicione uma **variável global** chamada `cor_acerto` que pode ser usada em todo o seu código.
+Adicione uma **variável global** chamada `cor_acertada` que pode ser usada em todo o seu código.
 
-Adicione o código para obter `get` a cor do píxel no centro da flecha e armazene-o na variável `cor_acerto`. Para comparar as cores, precisamos usar o código hexadecimal. Isso pode ser feito com a string `.hex`.
+Adicione o código para obter `get` a cor do píxel no centro da flecha e armazene-o na variável `cor_acertada`. Para comparar as cores, precisamos usar o código hexadecimal. Isso pode ser feito com a string `.hex`.
 
 --- code ---
 ---
@@ -132,7 +132,7 @@ O projeto imprime 🎯 cada vez que a seta é redesenhada.
 
 ![Uma animação do alvo com uma seta circular marrom aparecendo em diversas posições.](images/fire_arrow.gif)
 
-**Depurar:** 🐞 Se você estiver vendo uma mensagem sobre `cor_acerto` como 'não definido', volte para `atirar_flecha()` e verifique se você incluiu a linha `global cor_acerto`.
+**Depurar:** 🐞 Se você estiver vendo uma mensagem sobre `cor_acertada` como 'não definido', volte para `atirar_flecha()` e verifique se você incluiu a linha `global cor_acertada`.
 
 **Depurar:** 🐞 Verifique a linha `print` com muito cuidado para ver se há vírgulas e colchetes.
 
