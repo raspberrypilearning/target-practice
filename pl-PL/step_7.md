@@ -2,11 +2,11 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
+Spersonalizuj i dodaj więcej do swojego projektu. Być może możesz zmienić poziom trudności lub dodać więcej okręgów do celu.
 </div>
 <div>
 
-![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
+![Obszar wyjściowy pokazujący cel z pięcioma okręgami.](images/five_cirles.png){:width="300px"}
 
 </div>
 </div>
@@ -15,20 +15,20 @@ Personalise and add more to your project. Perhaps you could change the difficult
 
 Możesz:
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
-+ Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate=2` value 💨
-+ Use `input()` to ask the user which difficulty level they want to play at 🗣️
++ Dodaj koło ` ` i ` ` w nowych kolorach, które zdobywają różne ilości punktów w zależności od ich pozycji ??
++ Umieść emoji w wiadomościach drukowanych ([ Oto lista emoji ](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"}, z których możesz skopiować) ?
++ Spraw, aby gra była łatwiejsza lub trudniejsza, zmieniając wartość ` frame_rate=2 ` ?
++ Użyj ` input()`, aby zapytać użytkownika, na jakim poziomie trudności chce grać ?️
 
 --- /task ---
 
-![Three project ideas, one has five circles, one has a difficulty input question and one has emojis in the points message.](images/upgrade-ideas.png)
+![Trzy pomysły na projekt, jeden ma pięć okręgów, jeden ma pytanie o trudność i jeden ma emoji w wiadomości punktów.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
 title: Ukończony projekt
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
+Możesz wyświetlić ukończony projekt [ tutaj ](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
