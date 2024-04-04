@@ -1,16 +1,16 @@
-wood
+drewno
 
-sky
+niebo
 
-grass
+trawa
 
-outer
+zewnętrzny
 
-inner
+wewnętrzny
 
-middle
+środkowy
 
-shoot_arrow
+strzałka_strzałka
 
 arrow_x
 
@@ -18,20 +18,20 @@ arrow_y
 
 hit_color
 
-You hit the outer circle, 50 points!
+Trafiłeś w zewnętrzne koło, 50 punktów!
 
-You hit the inner circle, 200 points!
+Trafiłeś w wewnętrzne koło, 200 punktów!
 
-You hit the middle, 500 points!
+Trafiłeś na środek, 500 punktów!
 
-You missed! No points!
+Przegapiłeś! Brak punktów!
 
-Super fast
+Super szybki
 
-Pretty quick
+Dość szybko
 
-Very fast
+Bardzo szybko
 
-Speed not recognised!
+Prędkość nie rozpoznana!
 
-speed
+prędkość
