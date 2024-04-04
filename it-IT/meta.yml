@@ -1,30 +1,30 @@
 ---
-title: Target practice
+title: Allenamento di tiro al bersaglio
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
+description: Usa Python per disegnare un bersaglio e fare punti colpendolo con le frecce
 meta_title: Python coding projects for kids and teens | Target practice
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
+meta_description: Impara Python con i progetti di codifica della Raspberry Pi Foundation per bambini e adolescenti. Usa Python per disegnare un bersaglio e segnare punti colpendolo con le frecce.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: Quello che farai
   - 
-    title: Create a background
+    title: Crea uno sfondo
   - 
-    title: Draw your target
+    title: Disegna il tuo bersaglio
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Scocca la tua freccia
   - 
-    title: Score points
+    title: Punteggio
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Quiz veloce
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Migliora il tuo progetto
   - 
-    title: What next?
+    title: E adesso?
