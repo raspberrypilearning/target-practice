@@ -1,32 +1,32 @@
-## Score points
+## Zdobądź punkty
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game will add scores based on where the arrow hits.
+Twoja gra doda wyniki w zależności od tego, gdzie trafiła strzałka.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![animacja celu, ze strzałką pojawiającą się w różnych pozycjach, a wyniki wyświetlane jako tekst poniżej gry.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-We use <span style="color: #0faeb0; font-weight: bold;"> conditions</span> all the time to make decisions. We could say 'if the pencil is blunt, then sharpen it'. Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
+Używamy <span style="color: #0faeb0; font-weight: bold;"> </span> cały czas do podejmowania decyzji. Moglibyśmy powiedzieć "jeśli ołówek jest tępy, to wyostrz go". Podobnie warunki „jeśli” pozwalają nam napisać kod, który robi coś innego w zależności od tego, czy warunek jest prawdziwy, czy fałszywy.
 </p>
 
-### Display the scores
+### Wyświetl wyniki
 
 --- task ---
 
-Delete ❌ the `print('🎯')` line of code.
+Usuń ❌ Linia kodu ` print('?')`.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 5
+język: python nazwa pliku: main.py line_numbers: true line_number_start: 5
 line_highlights: 7
 ---
-# The mouse_pressed function goes here
+# Tutaj pojawi się funkcja Mouse_pressed
 def mouse_pressed():
 
 
@@ -36,47 +36,47 @@ def mouse_pressed():
 
 --- task ---
 
-Display a message **if** the `hit_colour` is equal to the `outer` circle colour (blue) 🎯.
+Wyświetl komunikat ** ** `_` jest równy kolorowi koła ` ` (niebieski) ?.
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
+Uwaga ? że kod używa dwóch znaków równości `==`, aby oznaczać ** równe to **.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
+język: python nazwa pliku: main.py - mouse_pressed() line_numbers: true line_number_start: 5
 line_highlights: 7, 8
 ---
 
-# The mouse_pressed function goes here
+# Tutaj pojawi się funkcja Mouse_pressed
 def mouse_pressed():     
 if hit_colour == Color('blue').hex:  # Like the code in functions, the code in 'if' statements is indented print('You hit the outer circle, 50 points!')
 
 --- /code ---
 
-**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `'blue'` with the colour name that you have chosen.
+** Wskazówka:** ? Jeśli zmieniłeś kolor zewnętrznego koła, będziesz musiał zastąpić `'blue'` wybraną nazwą koloru.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to fire the arrow on the blue outer circle to see the message.
+Test **:** ? Uruchom swój projekt. Spróbuj wystrzelić strzałkę na niebieskim zewnętrznym kole, aby zobaczyć komunikat.
 
-**Tip:** 💡 `frame_rate=2`, in `run` at the bottom of your code, controls how fast your game draws. If it's going too fast, set it to a lower number.
+** Wskazówka:** ? ` frame_rate=2 `, w programie ` ` na dole kodu, kontroluje szybkość rysowania gry. Jeśli idzie zbyt szybko, ustaw go na niższą liczbę.
 
-![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
+![Obszar wyjściowy ze strzałką dotykającą zewnętrznego okręgu. Komunikat Points jest wyświetlany w obszarze wyjściowym.](images/blue-points.png)
 
-**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
+Debugowanie **:** ? Upewnij się, że użyłeś amerykańskiej pisowni „Color” (bez „u”) i że „Color” jest wielkie.
 
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
+Debugowanie **:** ? Upewnij się, że kod jest dokładnie zgodny i wcięto kod wewnątrz instrukcji ` `.
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name you used for **your** outer circle.
+Debugowanie **:** ? Upewnij się, że wprowadziłeś poprawną nazwę koloru użytą dla koła zewnętrznego ** **.
 
 --- /task ---
 
-`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. Any remaining conditions will be ignored.
+za pomocą programu ` ` (else - if) można dodać więcej warunków do instrukcji ` `. Będą one odczytywane od góry do dołu. Jak tylko zostanie znaleziony warunek ** **, zostanie on zadziałał. Wszelkie pozostałe warunki zostaną zignorowane.
 
 --- task ---
 
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
+Zdobądź punkty, jeśli strzałka wyląduje na okręgach ` ` lub ` ` ?:
 
 --- code ---
 ---
@@ -93,29 +93,29 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 --- task ---
 
-**Test:** 🔄 Run your project. Try to fire the arrow on the inner and middle circles to see their messages.
+Test **:** ? Uruchom swój projekt. Spróbuj wystrzelić strzałkę na wewnętrznym i środkowym kole, aby zobaczyć ich wiadomości.
 
-![The output area with arrow touching the inner circle. The points message is displayed in the output area.](images/yellow-points.png)
+![Obszar wyjściowy ze strzałką dotykającą wewnętrznego okręgu. Komunikat Points jest wyświetlany w obszarze wyjściowym.](images/yellow-points.png)
 
-**Debug:** 🐞 Check your indentation matches the example.
+Debugowanie **:** ? Sprawdź, czy wcięcie pasuje do przykładu.
 
-**Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
+Debugowanie **:** ? Jeśli zobaczysz komunikat o tym, że ` hit_` jest 'niezdefiniowany', wróć do ` draw()` i sprawdź, czy linia deklaruje `_` jako zmienną globalną.
 
-**Debug:** 🐞 Make sure that you have entered the correct colour name for **your** circles.
+Debugowanie **:** ? Upewnij się, że wprowadziłeś poprawną nazwę koloru dla okręgów ** **.
 
-**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours.
+Debugowanie **:** ? Upewnij się, że użyłeś ciągu `.` dla kolorów okręgu ** **.
 
 --- /task ---
 
-### Missing the target
+### Brak celu
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
+Jest jeszcze jedna decyzja, którą musisz podjąć: Co się stanie, jeśli strzałka nie wyląduje na żadnym z kół docelowych? ❌
 
-To do this last check, you use `else`.
+Aby wykonać to ostatnie sprawdzenie, użyj ` `.
 
 --- task ---
 
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
+Dodaj kod do ` wydrukuj ` Komunikat ` ` żadne z instrukcji ` ` i ` elilife ` nie zostały spełnione.
 
 --- code ---
 ---
@@ -133,9 +133,9 @@ print('You missed! No points!')
 
 --- task ---
 
-**Test:** 🔄 Run your project. Fire the arrow in the grass or sky to see the miss message.
+Test **:** ? Uruchom swój projekt. Wystrzel strzałkę na trawie lub niebie, aby zobaczyć komunikat o błędzie.
 
-**Choose:** 💭 Change the number of points scored for the different colours.
+** Wybierz:** ? Zmień liczbę punktów zdobytych dla różnych kolorów.
 
 --- /task ---
 
