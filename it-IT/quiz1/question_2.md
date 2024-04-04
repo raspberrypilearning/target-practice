@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legend: Domanda 2 di 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+Nel tuo progetto, hai utilizzato le condizioni `if` , `elif`e `else` per verificare su quale colore è atterrata la freccia.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+Nell'esempio seguente, una variabile chiamata `speed` ha il numero `6` memorizzato al suo interno. Quando viene eseguita questa istruzione `if` , cosa verrà stampato nell'area di output?
 
 --- code ---
 ---
@@ -14,33 +14,33 @@ language: python
 ---
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if speed == 7: print('Super veloce') elif speed == 5: print('Abbastanza veloce') elif speed == 6: print('Molto veloce') else: print('Velocità non rilevata!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Molto veloce`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  È corretto! Alla variabile **speed** è stato assegnato il valore </>6</code>, in modo che la condizione `speed==6` sia </strong>vera</0> a stampi `Molto veloce`
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Velocità non riconosciuta!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Non proprio, guarda il valore assegnato alla variabile **velocità** .
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Non viene stampato nulla
 
   --- feedback ---
 
-  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
+  Riprova, `else` viene utilizzato come opzione finale quando tutte le condizioni di cui sopra sono false. Esamina nuovamente le condizioni: qualcuna di esse è vera?
 
   --- /feedback ---
 
