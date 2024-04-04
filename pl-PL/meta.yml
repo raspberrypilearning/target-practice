@@ -1,30 +1,30 @@
 ---
-title: Target practice
+title: Praktyka docelowa
 hero_image: images/banner.png
-description: Use Python to draw a target and score points by hitting it with arrows
-meta_title: Python coding projects for kids and teens | Target practice
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
+description: Użyj Pythona, aby narysować cel i zdobywać punkty, uderzając go strzałkami
+meta_title: Projekty kodowania w Pythonie dla dzieci i młodzieży | Praktyka docelowa
+meta_description: Naucz się języka Python z projektami programistycznymi Fundacji Raspberry Pi dla dzieci i młodzieży. Użyj Pythona, aby narysować cel i zdobywać punkty, uderzając go strzałkami.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: Zrobisz to
   - 
-    title: Create a background
+    title: Utwórz tło
   - 
-    title: Draw your target
+    title: Narysuj swój cel
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Wystrzel strzałkę
   - 
-    title: Score points
+    title: Zdobądź punkty
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Szybki quiz
     knowledge_quiz:
       path: quiz1
       version: 1
