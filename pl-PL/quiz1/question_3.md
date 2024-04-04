@@ -4,7 +4,7 @@
 legend: Pytanie 3 z 3
 ---
 
-A circle is drawn using the following code:
+Okrąg jest rysowany przy użyciu następującego kodu:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Które z poniższych obrazów pokazują prawidłową pozycję tego okręgu w obszarze wyjściowym?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Zielone kółko wyśrodkowane w prawym dolnym rogu obszaru wyjściowego.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Nie do końca, aby wyśrodkować okrąg w prawym dolnym rogu, współrzędne musiałyby być takie same jak rozmiar ekranu. W tym przykładzie elipsa byłaby ` circle(400, 400, 300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Zielone kółko wyśrodkowane pośrodku obszaru wyjściowego.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  Nie do końca, aby wyśrodkować okrąg na środku, współrzędne musiałyby być o połowę mniejsze od rozmiaru ekranu. W tym przykładzie ` circle(200, 200, 300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Zielone kółko wyśrodkowane w lewym górnym rogu obszaru wyjściowego.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Zgadza się! Ten okrąg jest wyśrodkowany w współrzędnych (0,0), lewym górnym rogu ekranu.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Zielone kółko wyśrodkowane w kierunku prawej górnej części obszaru wyjściowego.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Nie, to koło będzie miało kod ` circle(350, 150, 300)`, który wyśrodkuje go w kierunku prawego górnego rogu ekranu. Współrzędna ` ` określa odległość elipsy na ekranie, a współrzędna `.` określa odległość ekranu od niego do dołu.
 
   --- /feedback ---
 
