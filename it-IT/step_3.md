@@ -1,25 +1,25 @@
-## Draw your target
+## Disegna il tuo bersaglio
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+Il tuo gioco ha bisogno di un bersaglio contro il quale lanciare le frecce.
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![L'area di output con il bersaglio e il supporto.](images/tre-circles.png){:width="300px"}
 
 </div>
 </div>
 
-### Draw a triangular stand
+### Disegna un supporto triangolare
 
 --- task ---
 
-Set the fill colour to `sienna` (brown).
+Imposta il colore di riempimento su `sienna` (marrone).
 
-Draw a triangle using the x and y coordinates for each of the corners.
+Disegna un triangolo utilizzando le coordinate x e y per ciascuno degli angoli.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Un triangolo marrone sull'erba, contro un cielo con i punti delle coordinate etichettati 150, 350 e 200, 150 e 250, 350). Anche gli angoli del nostro spazio sono etichettati come x=0, y=0 in alto a sinistra e x=400, y=400 in basso a destra.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -38,23 +38,23 @@ line_highlights: 20, 21
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Test:** 🔄 Esegui il codice per vedere il supporto del tuo obiettivo:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Un triangolo marrone sull'erba e contro il cielo.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### Disegna i cerchi bersaglio
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+La parte più grande del bersaglio è un **cerchio** blu.
 
-Set the fill colour to `blue`.
+Imposta il colore di riempimento su `blu`.
 
-Draw a circle with x and y coordinates for its centre and a width.
+Disegna un cerchio con le coordinate x e y per il centro e una larghezza.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Un triangolo marrone e un cerchio blu sull'erba e sopra il cielo. Il cerchio è etichettato con le coordinate x=200, y=200 come centro e la larghezza del cerchio pari a 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -73,19 +73,19 @@ line_highlights: 22, 23
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Test:** Esegui il codice per vedere il primo grande cerchio blu.
 
-The blue circle was drawn after the stand so it is in front.
+Il cerchio blu è stato disegnato dopo lo stand, quindi appare davanti.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Un triangolo marrone e un cerchio blu sull'erba e sopra il cielo.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Il bersaglio è composto da cerchi di diverse dimensioni ma con le stesse coordinate centrali (200, 200).
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**Aggiungi** cerchi colorati per le parti interne e centrali del bersaglio.
 
 --- code ---
 ---
@@ -108,21 +108,21 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+**Test:** 🔄 Esegui il tuo progetto per vedere il bersaglio con i tre cerchi colorati.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![Un triangolo marrone e tre cerchi colorati sull'erba e sopra il cielo.](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
 --- task ---
 
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
+**Scegli:** 💭 Cambia uno qualsiasi dei colori utilizzando un nome di colore diverso. Puoi trovare un elenco di tutti i nomi dei colori disponibili su [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
 
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
+![Un triangolo marrone e tre cerchi colorati sull'erba e sopra il cielo. I colori sono cambiati in rosa e viola.](images/alternative-colours.png){:width="400px"}
 
 --- collapse ---
 ---
-title: Example code using different colours
+title: codice di esempio che utilizza colori diversi
 ---
 
 --- code ---
@@ -132,7 +132,7 @@ line_highlights:
 ---
 
 def draw():
-# Things to do in every frame
+# Cose da fare in ogni fotogramma
 
     fill('BlueViolet')
     rect(0, 0, 400, 250)  # Sky
