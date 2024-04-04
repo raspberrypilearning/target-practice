@@ -1,47 +1,47 @@
-# Import library code!
+# Importuj kod biblioteki!
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# Funkcja mouse_pressed pojawi się tutaj
 def mouse_pressed():
-    if hit_colour == Color('blue').hex:  # Like functions, 'if' statements are indented
-        print('You hit the outer circle, 50 points!')
-    elif hit_colour == Color('red').hex:
-        print('You hit the inner circle, 200 points!')
-    elif hit_colour == Color('yellow').hex:
-        print('You hit the middle, 500 points!')
+    if hit_colour == Color('blue').hex:  # Like functions, if statements are indented
+        Print('trafiłeś w zewnętrzne koło, 50 punktów!')
+    elif hit_color == Kolor('czerwony').hex:
+        Print('trafiłeś w wewnętrzny okrąg, 200 punkty!')
+    elif hit_color == Kolor('żółty').hex:
+        Print('trafiłeś na środek, 500 punktów!')
     else:
-        print('You missed! No points!')
+        Print('przegapiłeś! Żadnych punktów!')
 
-# The shoot_arrow function goes here
+# Funkcja shoot_arrow pojawia się tutaj
 def shoot_arrow():
-    global hit_colour  # Can be used in other functions
-    arrow_x = randint(100, 300)  # Store a random number between 100 and 300
-    arrow_y = randint(100, 300)  # Store a random number between 100 and 300
-    hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour
-    fill('sienna')  # Set the arrow to fill colour to brown
-    circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+    Global hit_color # może być używany w innych funkcjach
+    Arrow_x = randint(100, 300) # Zapisz losową liczbę z zakresu od 100 do 300
+    Arrow_y = randint(100, 300) # Zachowuj losową liczbę z zakresu od 100 do 300
+    Hit_color = get(arrow_x, arrow_y).hex # Uzyskaj kolor trafienia
+    fill('sienna')  # Set the arrow fill colour to brown
+    Circle(arrow_x, arrow_y, 15) # Narysuj małe kółko o losowych współrzędnych
 
 def setup():
-    # Setup your game here
-    size(400, 400)  # width and height
+    # Skonfiguruj swoją grę tutaj
+    rozmiar(400, 400) # szerokość i wysokość
     no_stroke()
 
 def draw():
-    # Things to do in every frame
-    fill('cyan')
-    rect(0, 0, 400, 250)  # Sky
+    # Rzeczy do zrobienia w każdej klatce
+    fill('cyjan')
+    Rect(0, 0, 400, 250) # Niebo
     fill('lightgreen')
-    rect(0, 250, 400, 150)  # Grass
+    Rect(0, 250, 400, 150) # trawa
     fill('sienna')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('blue')
-    circle(200, 200, 170)  # Outer circle
-    fill('red')
-    circle(200, 200, 110)  # Inner circle
+    trójkąt(150, 350, 200, 150, 250, 350) # Stojak
+    fill('niebieski')
+    Okrąg(200, 200, 170) # Koło zewnętrzne
+    fill(czerwony)
+    Okrąg(200, 200, 110) # Koło wewnętrzne
     fill('yellow')
-    circle(200, 200, 30)  # Middle circle
-    shoot_arrow()
+    Okrąg(200, 200, 30) # Środkowy okrąg
+    strzałka_strzałka()
 
-# Keep this to run your code
+# Zatrzymaj to, aby uruchomić swój kod
 run(frame_rate=2)
