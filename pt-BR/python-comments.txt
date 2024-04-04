@@ -1,36 +1,36 @@
 Configure seu jogo aqui
 
-Width and height of screen
+Largura e altura da tela
 
 Coisas para fazer em cada quadro
 
-Set the fill colour for the sky to cyan
+Defina a cor de preenchimento do céu como ciano
 
-Draw a rectangle for the sky with these values for x, y, width, height
+Desenhe um retângulo para o céu com estes valores para x, y, largura, altura
 
-Set the fill colour for the grass to light green
+Defina a cor de preenchimento da grama para verde-claro
 
-Draw a rectangle for the grass with these values for x, y, width, height
+Desenhe um retângulo para a grama com estes valores para x, y, largura, altura
 
-Brown colour
+Cor marrom
 
-Draw a triangle for the target's stand
+Desenhe um triângulo para o suporte do alvo
 
-Set the circle fill colour to blue
+Defina a cor de preenchimento como azul
 
-Draw the outer circle
+Desenhe o círculo externo
 
-Set the colour for the circle fill to red
+Defina a cor do preenchimento do círculo como vermelho
 
-Draw the inner circle using x, y, width
+Desenhe o círculo interno usando x, y, largura
 
-Set the colour for the circle fill to yellow
+Defina a cor do preenchimento do círculo como amarelo
 
-Draw the middle circle using x, y, width
+Desenhe o círculo do meio usando x, y, largura
 
-Sky
+Céu
 
-Ground
+Chão
 
 Suporte
 
@@ -38,31 +38,31 @@ Círculo externo
 
 Círculo interno
 
-Middle circle
+Círculo do meio
 
 A função atirar_flecha vai aqui
 
 Armazena um número aleatório entre 100 e 300
 
-Set the arrow to fill colour to brown
+Defina a cor de preenchimento da flecha como marrom
 
 Desenha um pequeno círculo em coordenadas aleatórias
 
 Pode ser usado em outras funções
 
-Obtém a cor de acerto
+Obtém a cor acertada
 
 A função mouse_pressed vai aqui
 
-Like the code in functions, the code in 'if' statements is indented
+Assim como o código nas funções, o código nas instruções 'if' é recuado
 
-You hit the outer circle, 50 points!
+Você acertou o círculo externo, 50 pontos!
 
-You hit the inner circle, 200 points!
+Você acertou o círculo interno, 200 pontos!
 
-You hit the middle, 500 points!
+Você acertou o meio, 500 pontos!
 
-You missed! No points!
+Você errou! Sem pontos!
 
 
 
