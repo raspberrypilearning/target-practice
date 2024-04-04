@@ -1,73 +1,73 @@
-Setup your game here
+Tutaj skonfiguruj swoją grę
 
-width and height of screen
+szerokość i wysokość ekranu
 
-Things to do in every frame
+Rzeczy do zrobienia w każdej klatce
 
-Red = 92, Green = 204, Blue = 206
+Czerwony = 92, zielony = 204, niebieski = 206
 
-Set the fill colour to grass
+Ustaw kolor wypełnienia na trawę
 
-x, y, width, height
+x, y, szerokość, wysokość
 
-Set the stand fill colour to wood
+Ustaw kolor wypełnienia stojaka na drewno
 
-Set the circle fill colour to outer
+Ustaw kolor wypełnienia okręgu na zewnętrzny
 
-x, y, width of the circle
+x, y, szerokość okręgu
 
-Blue
+Niebieski
 
-Red
+Czerwony
 
-Yellow
+Żółty
 
-Set the circle fill colour to inner
+Ustaw kolor wypełnienia okręgu na wewnętrzny
 
-Inner circle - x, y, width of the circle
+Wewnętrzny okrąg - x, y, szerokość okręgu
 
-Set the circle fill colour to middle
+Ustaw kolor wypełnienia okręgu na środkowy
 
-Middle circle - x, y, width of the circle
+Środkowe koło - x, y, szerokość okręgu
 
-The shoot_arrow function goes here
+Pojawi się tutaj funkcja shoot_arrow
 
-Store a random number between 100 and 300
+Przechowuj losową liczbę z zakresu od 100 do 300
 
-Set the arrow to fill colour to wood
+Ustaw strzałkę, aby wypełnić kolor na drewno
 
-Draw a small circle at random coordinates
+Narysuj małe kółko o losowych współrzędnych
 
-Get the hit colour
+Zdobądź kolor uderzenia
 
-The mouse_pressed function goes here
+Tutaj pojawi się funkcja Mouse_pressed
 
-Can be used in other functions
+Może być używany w innych funkcjach
 
-Save the colour before drawing the arrow
+Zapisz kolor przed narysowaniem strzałki
 
-Like functions, 'if' statements are indented
+Podobnie jak funkcje, polecenia „jeśli” są wcięte
 
-Import library code
+Importuj kod biblioteki
 
-Keep this to run your code
+Zachowaj to, aby uruchomić swój kod
 
-Definitions for compatibility with the p5py processing library
+Definicje zgodności z biblioteką przetwarzania p5py
 
-Shape
+Kształt
 
-Fonts
+Czcionki
 
-Text
+Tekst
 
-Colour
+Kolor
 
-Images
+Obrazy
 
-Environment
+Środowisko
 
-Transform
+Przekształć
 
-Keyboard
+Klawiatura
 
-Set the fill colour to grass
+Ustaw kolor wypełnienia na trawę
