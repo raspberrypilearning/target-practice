@@ -1,68 +1,68 @@
-Setup your game here
+Tutaj skonfiguruj swoją grę
 
-Width and height of screen
+Szerokość i wysokość ekranu
 
-Things to do in every frame
+Rzeczy do zrobienia w każdej klatce
 
-Set the fill colour for the sky to cyan
+Ustaw kolor wypełnienia nieba na błękitny
 
-Draw a rectangle for the sky with these values for x, y, width, height
+Narysuj prostokąt nieba z tymi wartościami dla x, y, width, height
 
-Set the fill colour for the grass to light green
+Ustaw kolor wypełnienia dla trawy na jasnozielony
 
-Draw a rectangle for the grass with these values for x, y, width, height
+Narysuj prostokąt dla trawy z tymi wartościami dla x, y, width, height
 
-Brown colour
+Brązowy kolor
 
-Draw a triangle for the target's stand
+Narysuj trójkąt dla pozycjonera celu
 
-Set the circle fill colour to blue
+Ustaw kolor wypełnienia okręgu na niebieski
 
-Draw the outer circle
+Narysuj zewnętrzny okrąg
 
-Set the colour for the circle fill to red
+Ustaw kolor wypełnienia okręgu na czerwony
 
-Draw the inner circle using x, y, width
+Narysuj wewnętrzny okrąg używając x, y, width
 
-Set the colour for the circle fill to yellow
+Ustaw kolor wypełnienia okręgu na żółty
 
-Draw the middle circle using x, y, width
+Narysuj środkowy okrąg używając x, y, width
 
-Sky
+Niebo
 
-Ground
+Masa
 
-Stand
+Stań
 
-Outer circle
+Koło zewnętrzne
 
-Inner circle
+Wewnętrzny okrąg
 
-Middle circle
+Środkowy okrąg
 
-The shoot_arrow function goes here
+Pojawi się tutaj funkcja shoot_arrow
 
-Store a random number between 100 and 300
+Przechowuj losową liczbę z zakresu od 100 do 300
 
-Set the arrow to fill colour to brown
+Ustaw strzałkę, aby wypełnić kolor na brązowy
 
-Draw a small circle at random coordinates
+Narysuj małe kółko o losowych współrzędnych
 
-Can be used in other functions
+Może być używany w innych funkcjach
 
-Get the hit colour
+Zdobądź kolor uderzenia
 
-The mouse_pressed function goes here
+Tutaj pojawi się funkcja Mouse_pressed
 
-Like the code in functions, the code in 'if' statements is indented
+Podobnie jak kod w funkcjach, kod w instrukcji "IF" jest wcięty
 
-You hit the outer circle, 50 points!
+Trafiłeś w zewnętrzne koło, 50 punktów!
 
-You hit the inner circle, 200 points!
+Trafiłeś w wewnętrzne koło, 200 punktów!
 
-You hit the middle, 500 points!
+Trafiłeś na środek, 500 punktów!
 
-You missed! No points!
+Przegapiłeś! Brak punktów!
 
 
 
