@@ -1,34 +1,34 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank"> Weź naszą ankietę </a>, aby pomóc ulepszyć nasz edytor kodu!
 </div>
 
-## You will make
+## Zrobisz to
 
-Use Python, with the `p5` graphics library, to draw a target and score points by hitting it with arrows.
+Użyj Pythona z biblioteką graficzną ` `, aby narysować cel i zdobywać punkty, uderzając go strzałkami.
 
 Co zrobisz:
- + Personalise your game with **RGB colours**
- + Use **conditional statements** (`if`, `elif`, `else`) to make decisions
- + Position shapes with **x, y coordinates**
+ + Spersonalizuj swoją grę za pomocą kolorów ** RGB **
+ + Użyj instrukcji warunkowych ** (** </code>, ` <code> `, ` `), aby podejmować decyzje
+ + Ustaw kształty za pomocą ** x, y **
 
 --- no-print ---
 
-### Play ▶️
+### Graj ▶️
 
 --- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-Click the **Run** button below to start the game. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
+Kliknij przycisk **Run** poniżej, aby rozpocząć grę. Kiedy kropka pojawi się na obiekcie docelowym ?, kliknij mysz (lub stuknij w tablet), aby wystrzelić strzałkę. 
 
-Have a few goes. Your score appears in the output area below the target. How does your score change when the arrow lands on the different colours? 
+Zrób kilka kroków. Twój wynik pojawi się w obszarze wyjściowym poniżej celu. Jak zmienia się Twój wynik, gdy strzałka wyląduje na różnych kolorach? 
   <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
 
-**Tip:** 💡 When you press **Stop** you will see a prompt that says 'Execution interrupted'. This just means that you have stopped the program whilst the code was still running.
+** Wskazówka:** ? Po naciśnięciu przycisku ** Stop ** pojawi się monit z napisem „wykonanie przerwane”. Oznacza to tylko, że zatrzymałeś program, gdy kod był jeszcze uruchomiony.
 
 --- /task ---
 
@@ -36,12 +36,12 @@ Have a few goes. Your score appears in the output area below the target. How doe
 
 --- print-only ---
 
-![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
+![Cel łuczniczy z punktem uderzenia na zewnętrznym kole. Tekst "trafiłeś w zewnętrzne koło, 50 punktów!" jest wyświetlany poniżej](images/blue-points.png){:width="640px"}
 
 --- /print-only ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The oldest evidence of <span style="color: #0faeb0; font-weight: bold;"> archery </span> comes from the Sibudu Cave in KwaZulu-Natal, South Africa. Remains of stone and bone arrowheads have been found, which date to between 60,000 and 70,000 years ago. 
+Najstarsze dowody na łucznictwo <span style="color: #0faeb0; font-weight: bold;"> </span> pochodzą z jaskini Sibudu w KwaZulu-Natal w Republice Południowej Afryki. Znaleziono szczątki kamiennych i kostnych grotów strzałek, które datują się od 60,000 do 70,000 lat temu. 
 </p>
 
 ![](http://code.org/api/hour/begin_coderdojo_target.png)
