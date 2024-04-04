@@ -4,7 +4,7 @@ fleche_x
 
 fleche_y
 
-hit_colour
+couleur_touche
 
 mouse_pressed
 
