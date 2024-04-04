@@ -4,7 +4,7 @@
 legend: Pergunta 2 de 3
 ---
 
-Em seu projeto, você usou as condições `if` , `elif`e `else` para verificar em qual cor a flecha acertou.
+Em seu projeto, você usou as condições `if` , `elif` e `else` para verificar em qual cor a flecha acertou.
 
 No exemplo abaixo, uma variável chamada `velocidade` possui o número `6` armazenado nela. Quando esta instrução `if` for executada, o que será impresso na área de saída?
 
@@ -12,9 +12,9 @@ No exemplo abaixo, uma variável chamada `velocidade` possui o número `6` armaz
 ---
 language: python
 ---
-speed = 6
+velocidade = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if velocidade == 7: print('Super rápido') elif velocidade == 5: print('Bem rápido') elif velocidade == 6: print('Muito rápido') else: print('Velocidade não reconhecida!')
 
 --- /code ---
 
