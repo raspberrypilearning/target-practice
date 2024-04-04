@@ -1,45 +1,45 @@
-## Create a background
+## Utwórz tło
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a colourful background.
+Twoja gra potrzebuje kolorowego tła.
 </div>
 <div>
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="300px"}
+![Obszar wyjściowy z prostokątem w kolorze nieba nad prostokątem w kolorze trawy, aby utworzyć tło.](images/background.png){:width="300px"}
 
 </div>
 </div>
 
-### Open the starter project
+### Otwórz projekt startowy
 
 --- task ---
 
-Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project. The code editor will open in another browser tab.
+Otwórz projekt [ Praktyka docelowa ](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}. Edytor kodu otworzy się w innej karcie przeglądarki.
 
-If you have a Raspberry Pi account, you can click on the **Save** button to save a copy to your **Projects**.
+Jeśli masz konto Raspberry Pi, możesz kliknąć przycisk ** Saved ** , aby zapisać kopię w swoich projektach ** **.
 
 --- /task ---
 
-### Edit the sky
+### Edytuj niebo
 
 --- task ---
 
-The starter project has some code already written for you.
+Projekt startowy ma już napisany dla Ciebie kod.
 
-Click **'Run'** to see a blue filled rectangle drawn from x=`0`, y=`0` (the top of the screen). This `400` x `250` pixels rectangle is the sky.
+Kliknij **'Run'** , aby zobaczyć wypełniony niebieski prostokąt narysowany z x=` 0 `, y=` 0 ` (u góry ekranu). Ten prostokąt pikseli ` 400 ` x ` 250 ` to niebo.
 
-![A blue rectangle with a black border around it, above a grey rectangle. The top left corner of the canvas is marked as x=0, y=0 this is the origin of the rectangle. The width is highlighted as 400 and the height as 250. The code rect(0, 0, 400, 250) is shown.](images/sky_stroke.png){:width="400px"}
+![Niebieski prostokąt z czarną obwódką wokół niego, nad szarym prostokątem. Lewy górny róg płótna jest oznaczony jako x=0, y=0 to jest początek prostokąta. Szerokość jest podświetlona jako 400, a wysokość jako 250. Wyświetlany jest kod rect(0, 0, 400, 250).](images/sky_stroke.png){:width="400px"}
 
-**Tip:** 💡 Coordinates start from (x=0, y=0) in the top left corner. This might be different to other coordinate systems you have used.
+** Wskazówka:** ? Współrzędne zaczynają się od (x=0, y=0) w lewym górnym rogu. Może się to różnić od innych używanych układów współrzędnych.
 
 --- /task ---
 
 --- task ---
 
-The sky has been drawn with a black border (stroke).
+Niebo zostało narysowane czarną obwódką (obrys).
 
-To turn the stroke off for all shapes add `no_stroke()` to the `setup` function:
+Aby wyłączyć obrys dla wszystkich kształtów, dodaj ` no_stroke()` do funkcji ` setup `:
 
 --- code ---
 ---
@@ -47,7 +47,7 @@ language: python filename: main.py — setup() line_numbers: true line_number_st
 line_highlights: 12
 ---
 def setup():
-# Setup your game here
+# Tutaj skonfiguruj swoją grę
 
     size(400, 400)  # Width and height of screen
     no_stroke()
@@ -58,19 +58,19 @@ def setup():
 
 --- task ---
 
-**Run** your code again and notice 👀 that the border (stroke) has now disappeared.
+** uruchom ponownie ** swój kod i zwróć uwagę? że obramowanie (obrys) zniknęło.
 
-**Tip:** 💡 You will need to press **Stop** to stop your program, this will make the **Run** button reappear.
+** Wskazówka:** ? Aby zatrzymać program, musisz nacisnąć klawisz ** Stop **. Spowoduje to ponowne wyświetlenie przycisku ** ** .
 
 --- /task ---
 
-### Draw the grass
+### Narysuj trawę
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen.
+** Dodano kod **, aby narysować zielony prostokąt u dołu ekranu.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![Obszar wyjściowy z prostokątem w kolorze nieba nad prostokątem w kolorze trawy, aby utworzyć tło. Lewy górny róg prostokąta jest oznaczony jako x=0, y=250 to jest początek początku prostokąta. Szerokość jest podświetlona jako 400, a wysokość jako 150. Wyświetlany jest kod rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -78,7 +78,7 @@ language: python filename: main.py — draw() line_numbers: true line_number_sta
 line_highlights: 18-19
 ---
 def draw():
-# Things to do in every frame
+# Rzeczy do zrobienia w każdej klatce
 
     fill('cyan')  # Set the fill colour for the sky to cyan
     rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
@@ -87,15 +87,15 @@ def draw():
 
 --- /code ---
 
-**Tip:** 💡 We have added comments to our code, like `# Set the fill colour for the sky to cyan`, to tell you what it does. You don't need to add comments to your code, but they are helpful to remind you what lines of code do.
+** Wskazówka:** ? Dodaliśmy komentarze do naszego kodu, takie jak `# Ustaw kolor wypełnienia nieba na `, aby powiedzieć, co robi. Nie musisz dodawać komentarzy do kodu, ale są one pomocne, aby przypomnieć, co robią linie kodu.
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Run your project again to view the finished background.
+Test **:** ? Uruchom swój projekt ponownie, aby wyświetlić ukończone tło.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![Obszar wyjściowy z prostokątem w kolorze nieba nad prostokątem w kolorze trawy, aby utworzyć tło.](images/background.png){:width="400px"}
 
 --- /task ---
 
