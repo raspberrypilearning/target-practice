@@ -1,34 +1,34 @@
-## Upgrade your project
+## Migliora il tuo progetto
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Personalise and add more to your project. Perhaps you could change the difficulty level or add more circles to your target.
+Personalizza e aggiungi altro al tuo progetto. Forse potresti cambiare il livello di difficoltà o aggiungere più cerchi al tuo obiettivo.
 </div>
 <div>
 
-![The output area showing a target with five circles.](images/five_circles.png){:width="300px"}
+![L'area di output che mostra un bersaglio con cinque cerchi.](images/five_circles.png){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-You could:
+Potresti:
 
-+ Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 🟠🟣
-+ Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from) 🎯
-+ Make the game easier or harder by changing the `frame_rate=2` value 💨
-+ Use `input()` to ask the user which difficulty level they want to play at 🗣️
++ Aggiungere un `quarto` e `quinto` cerchio, in nuovi colori, che ottengono quantità diverse di punti in base alla loro posizione 🟠🟣
++ Inserisci emoji nei tuoi messaggi stampati ([ecco un elenco di emoji](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} da cui puoi copiare) 🎯
++ Rendi il gioco più facile o più difficile modificando il valore `frame_rate=2`💨
++ Usa `input()` per chiedere all'utente a quale livello di difficoltà vuole giocare 🗣️
 
 --- /task ---
 
-![Three project ideas, one has five circles, one has a difficulty input question and one has emojis in the points message.](images/upgrade-ideas.png)
+![Tre idee di progetto, una con cinque cerchi, una con una domanda di inserimento del livello di difficoltà e una con emoji nel messaggio dei punti.](images/upgrade-ideas.png)
 
 --- collapse ---
 ---
-title: Completed project
+title: Il progetto completo
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
+Qui puoi visualizzare i [progetti completati](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
