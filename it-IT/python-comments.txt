@@ -1,68 +1,68 @@
-Setup your game here
+Imposta il tuo gioco qui
 
-Width and height of screen
+Larghezza e altezza dello schermo
 
-Things to do in every frame
+Cose da fare in ogni fotogramma
 
-Set the fill colour for the sky to cyan
+Imposta il colore di riempimento del cielo su ciano
 
-Draw a rectangle for the sky with these values for x, y, width, height
+Disegna un rettangolo per il cielo con questi valori per x, y, larghezza, altezza
 
-Set the fill colour for the grass to light green
+Imposta il colore di riempimento dell'erba su verde chiaro
 
-Draw a rectangle for the grass with these values for x, y, width, height
+Disegna un rettangolo per il cielo con questi valori per x, y, larghezza, altezza
 
-Brown colour
+Colore marrone
 
-Draw a triangle for the target's stand
+Disegna un triangolo per la posizione del bersaglio
 
-Set the circle fill colour to blue
+Imposta il colore di riempimento del cerchio su blu
 
-Draw the outer circle
+Disegna il cerchio esterno
 
-Set the colour for the circle fill to red
+Imposta il colore di riempimento del cerchio su rosso
 
-Draw the inner circle using x, y, width
+Disegna il cerchio interno usando x, y, larghezza
 
-Set the colour for the circle fill to yellow
+Imposta il colore di riempimento del cerchio su giallo
 
-Draw the middle circle using x, y, width
+Disegna il cerchio interno usando x, y, larghezza
 
-Sky
+Cielo
 
-Ground
+Terra
 
-Stand
+Supporto
 
-Outer circle
+Cerchio esterno
 
-Inner circle
+Cerchio interno
 
-Middle circle
+Cerchio centrale
 
-The shoot_arrow function goes here
+La funzione shoot_arrow va qui
 
-Store a random number between 100 and 300
+Memorizza un numero a caso fra 100 e 300
 
-Set the arrow to fill colour to brown
+Imposta la freccia in modo che il colore di riempimento sia marrone
 
-Draw a small circle at random coordinates
+Disegna un piccolo cerchio a coordinate casuali
 
-Can be used in other functions
+Può essere utilizzato in altre funzioni
 
-Get the hit colour
+Ottieni il colore colpito
 
-The mouse_pressed function goes here
+La funzione mouse_pressed va qui
 
-Like the code in functions, the code in 'if' statements is indented
+Come il codice delle funzioni, il codice delle istruzioni 'if' è rientrato
 
-You hit the outer circle, 50 points!
+Hai colpito il cerchio esterno, 50 punti!
 
-You hit the inner circle, 200 points!
+Hai colpito il cerchio interno, 200 punti!
 
-You hit the middle, 500 points!
+Hai colpito a metà bersaglio, 500 punti!
 
-You missed! No points!
+Mancato! Zero punti!
 
 
 
