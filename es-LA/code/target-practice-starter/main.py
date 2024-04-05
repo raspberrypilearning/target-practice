@@ -7,12 +7,12 @@ from random import randint
 # The shoot_arrow function goes here
 
 def setup():
-    # Set up your game here
+    # Configura tu juego aquí
     size(400, 400)  # width and height of screen
 
 def draw():
     # Things to do in every frame
-    fill('cyan')  # Set the fill colour for the sky to cyan
+    fill('cyan') # Establece el color de relleno del cielo en cian
     rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
 
 # Keep this to run your code
