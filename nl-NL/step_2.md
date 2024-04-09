@@ -73,7 +73,7 @@ def setup():
 
 **Voeg** code toe om een groene rechthoek onder aan het scherm te tekenen.
 
-![Het uitvoergebied met een luchkleurige rechthoek boven een graskleurige rechthoek om de achtergrond te creëren. De linkerbovenhoek van de rechthoek is gemarkeerd als x=0, y=250 dit is de oorsprong van de rechthoek. De breedte wordt gemarkeerd als 400 en de hoogte als 150. De code rect(0, 250, 400, 150) wordt weergegeven.](images/green-grass.png)
+![Het uitvoergebied met een luchkleurige rechthoek boven een graskleurige rechthoek om de achtergrond te creëren. De linkerbovenhoek van de rechthoek is gemarkeerd als x=0, y=250 dit is de oorsprong van de rechthoek. De breedte wordt gemarkeerd als 400 en de hoogte als 150. De code rect(0, 250, 400, 150) wordt weergegeven.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
