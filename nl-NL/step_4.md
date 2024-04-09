@@ -37,7 +37,7 @@ def schiet_pijl():
     pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300    
     pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300    
     fill('sienna') # Stel vulkeur van de pijl in op bruin   
-    cicle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
+    circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
 
 --- /code ---
 
@@ -100,13 +100,13 @@ def schiet_pijl():
     global raak_kleur # Kan ook gebruikt worden in andere functies  
     pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300    
     pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
-    raak_kleur = get(pijl_x, pijl_y) # Haal de geraakte kleur op     
+    raak_kleur = get(pijl_x, pijl_y).hex # Haal de geraakte kleur op     
     fill('sienna') # Stel vulkeur van de pijl in op bruin   
     circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
 
 --- /code ---
 
-**Tip:** De `get`-code om de kleur op te halen en op te slaan moet **vóór** de code om de `cirkel` te tekenen staan, anders bewaar je altijd de (hout) kleur van de pijl!
+**Tip:** 💡 De `get`-code om de kleur op te halen en op te slaan moet **vóór** de code om de `cirkel` te tekenen staan, anders bewaar je altijd de (hout) kleur van de pijl!
 
 --- /task ---
 
@@ -145,9 +145,9 @@ Het project drukt 🎯 af telkens wanneer de pijl opnieuw wordt getekend.
 
 ![Een animatie van een doelwit met een bruine cirkelpijl die in verschillende posities verschijnt.](images/fire_arrow.gif)
 
-**Debuggen:** Als je een bericht ziet dat `raak_kleur` 'niet gedefinieerd' is, ga dan terug naar `schiet_pijl()` functie en controleer of je de regel `global raak_kleur` hebt.
+**Debuggen:** 🐞 Als je een bericht ziet dat `raak_kleur` 'niet gedefinieerd' is, ga dan terug naar `schiet_pijl()` functie en controleer of je de regel `global raak_kleur` hebt.
 
-**Debuggen:** Controleer de `print` regel heel goed op komma's en haakjes.
+**Debuggen:** 🐞 Controleer de `print` regel heel goed op komma's en haakjes.
 
 --- /task ---
 

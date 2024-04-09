@@ -51,7 +51,6 @@ line_highlights: 12
 ---
 def setup():
 # Stel je spel hier in
-
     size(400, 400)  # Breedte en hoogte van het scherm
     no_stroke()
 
@@ -73,7 +72,7 @@ def setup():
 
 **Voeg** code toe om een groene rechthoek onder aan het scherm te tekenen.
 
-![Het uitvoergebied met een luchkleurige rechthoek boven een graskleurige rechthoek om de achtergrond te creëren. De linkerbovenhoek van de rechthoek is gemarkeerd als x=0, y=250 dit is de oorsprong van de rechthoek. De breedte wordt gemarkeerd als 400 en de hoogte als 150. De code rect(0, 250, 400, 150) wordt weergegeven.](images/green-grass.png)
+![Het uitvoergebied met een luchkleurige rechthoek boven een graskleurige rechthoek om de achtergrond te creëren. De linkerbovenhoek van de rechthoek is gemarkeerd als x=0, y=250 dit is de oorsprong van de rechthoek. De breedte wordt gemarkeerd als 400 en de hoogte als 150. De code rect(0, 250, 400, 150) wordt weergegeven.](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -85,7 +84,6 @@ line_highlights: 18-19
 ---
 def draw():
 # Dingen om te doen in elk frame
-
     fill('cyan')  # Stel de kleur voor de lucht in op cyaan
     rect(0, 0, 400, 250)  # Teken een rechthoek voor de lucht met deze waarden voor x, y, breedte en hoogte
     fill('lightgreen')  # Stel de kleur voor het gras in op lichtgroen
@@ -101,7 +99,7 @@ def draw():
 
 **Test:** 🔄 Voer je project opnieuw uit om de voltooide achtergrond te bekijken.
 
-![Het uitvoergebied met een luchtkleurige rechthoek boven een graskleurige rechthoek om de achtergrond te creëren.](images/background.png)De `size()` functie in `setup()` stelt de schermgrootte in op 400 pixels bij 400 pixels.
+![Het uitvoergebied met een luchtkleurige rechthoek boven een graskleurige rechthoek om de achtergrond te creëren.](images/background.png){:width="400px"}
 
 --- /task ---
 
