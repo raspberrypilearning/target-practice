@@ -24,7 +24,7 @@ if speed == 7: print('Super veloce') elif speed == 5: print('Abbastanza veloce')
 
   --- feedback ---
 
-  È corretto! Alla variabile **speed** è stato assegnato il valore </>6</code>, in modo che la condizione `speed==6` sia </strong>vera</0> a stampi `Molto veloce`
+  È corretto! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
 
   --- /feedback ---
 
@@ -32,7 +32,7 @@ if speed == 7: print('Super veloce') elif speed == 5: print('Abbastanza veloce')
 
   --- feedback ---
 
-  Non proprio, guarda il valore assegnato alla variabile **velocità** .
+  Non proprio, guarda il valore assegnato alla variabile **speed**.
 
   --- /feedback ---
 
