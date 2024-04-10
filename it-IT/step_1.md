@@ -13,7 +13,7 @@ Tu:
 
 --- no-print ---
 
-### Play ▶️
+### Gioca ▶️
 
 --- task ---
 
