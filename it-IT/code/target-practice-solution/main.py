@@ -4,7 +4,7 @@ from random import randint
 
 # La funzione mouse_pressed va qui
 def mouse_pressed():
-    if hit_colour == Color('blue').hex:  # Like functions, if statements are indented
+    if hit_color == Color('blue').hex: # Come le funzioni, le istruzioni 'if' sono rientrate
         print('Hai colpito il cerchio esterno, 50 punti!')
     elif hit_colour == Color('red').hex:
         print('Hai colpito il cerchio esterno, 200 punti!')
@@ -19,7 +19,7 @@ def shoot_arrow():
     arrow_x = randint(100, 300)  # Memorizza un numero casuale compreso tra 100 e 300
     arrow_y = randint(100, 300)  # Memorizza un numero casuale compreso tra 100 e 300
     hit_color = get(arrow_x, arrow_y).hex # Ottieni il colore del risultato
-    fill('sienna')  # Set the arrow fill colour to brown
+    fill('sienna') # Imposta la freccia per riempire il colore su marrone
     circle(arrow_x, arrow_y, 15)  # Disegna un piccolo cerchio a coordinate casuali
 
 def setup():
