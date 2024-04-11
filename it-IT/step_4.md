@@ -80,7 +80,7 @@ Un <span style="color: #0faeb0; font-weight: bold;">pixel</span>, abbreviazione 
 
 Aggiungi una  **variabile globale** chiamata `hit_color` che può essere utilizzata in tutto il codice.
 
-Aggiungi il codice er `ottenere` il colore del pixel al centro della freccia e memorizzalo nella variabile `hit_color` . Per confrontare i colori dobbiamo utilizzare il codice esadecimale. Questo può essere fatto con la stringa `.hex` .
+Aggiungi il codice per `ottenere` il colore del pixel al centro della freccia e memorizzalo nella variabile `hit_color`. Per confrontare i colori dobbiamo utilizzare il codice esadecimale. Questo può essere fatto con la stringa `.hex` .
 
 --- code ---
 ---
