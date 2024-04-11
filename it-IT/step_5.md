@@ -111,11 +111,11 @@ print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').he
 
 C'è un'altra decisione che devi prendere: cosa succede se la freccia non si ferma su nessuno dei cerchi bersaglio? ❌
 
-Per fare quest'ultimo controllo, usi `else`.
+Per fare quest'ultimo controllo, usa `else`.
 
 --- task ---
 
-Aggiungi del codice per `stampare` un messaggio `else` se nessuna della condizioni `if` e `elif` è stata soddisfatta.
+Aggiungi del codice per `stampare (print)` un messaggio `else` se nessuna della condizioni `if` e `elif` è stata soddisfatta.
 
 --- code ---
 ---
