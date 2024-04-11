@@ -36,7 +36,7 @@ def mouse_pressed():
 
 --- task ---
 
-Visualizza un messaggio **se** il `hit_color` è uguale al `` colore del cerchio esterno (blu) 🎯.
+Visualizza un messaggio **if** il `hit_color` è uguale al colore del cerchio `esterno` (blu) 🎯.
 
 Nota 👀 che il codice utilizza due segni di uguale `==` per indicare **uguale a**.
 
