@@ -1,0 +1,73 @@
+Setup your game here
+
+width and height of screen
+
+Things to do in every frame
+
+Red = 92, Green = 204, Blue = 206
+
+Set the fill colour to grass
+
+x, y, width, height
+
+Set the stand fill colour to wood
+
+Set the circle fill colour to outer
+
+x, y, width of the circle
+
+Blue
+
+Red
+
+Yellow
+
+Set the circle fill colour to inner
+
+Inner circle - x, y, width of the circle
+
+Set the circle fill colour to middle
+
+Middle circle - x, y, width of the circle
+
+The shoot_arrow function goes here
+
+Store a random number between 100 and 300
+
+Set the arrow to fill colour to wood
+
+Draw a small circle at random coordinates
+
+Get the hit colour
+
+The mouse_pressed function goes here
+
+Can be used in other functions
+
+Save the colour before drawing the arrow
+
+Like functions, 'if' statements are indented
+
+Import library code
+
+Keep this to run your code
+
+Definitions for compatibility with the p5py processing library
+
+Shape
+
+Fonts
+
+Text
+
+Colour
+
+Images
+
+Environment
+
+Transform
+
+Keyboard
+
+Set the fill colour to grass
