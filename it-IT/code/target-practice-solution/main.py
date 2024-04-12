@@ -11,7 +11,7 @@ def mouse_pressed():
     elif hit_colour == Color('yellow').hex:
         print('Hai colpito il cerchio intermedio, 500 punti!')
     else:
-        print('L'hai mancato! Zero punti!')
+        print('L\'hai mancato! Zero punti!')
 
 # La funzione shoot_arrow va qui
 def shoot_arrow():
