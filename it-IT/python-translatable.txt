@@ -4,6 +4,7 @@ arrow_x
 
 arrow_y
 
-hit_color
+hit_colour
 
-speed
+mouse_pressed
+
