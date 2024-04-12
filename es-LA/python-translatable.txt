@@ -4,7 +4,6 @@ flecha_x
 
 flecha_y
 
-color_de_impacto
+hit_color
 
-mouse_pressed
-
+speed
