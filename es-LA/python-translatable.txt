@@ -6,4 +6,4 @@ flecha_y
 
 hit_color
 
-speed
+velocidad
