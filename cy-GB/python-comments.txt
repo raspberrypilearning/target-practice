@@ -64,5 +64,12 @@ You hit the middle, 500 points!
 
 You missed! No points!
 
+Super fast
+
+Pretty quick
+
+Very fast
+
+Speed not recognised!
 
 
