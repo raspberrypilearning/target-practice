@@ -6,7 +6,7 @@ Il tuo gioco ha bisogno di un bersaglio contro il quale lanciare le frecce.
 </div>
 <div>
 
-![L'area di output con il bersaglio e il supporto.](images/tre-circles.png){:width="300px"}
+![L'area di output con il bersaglio e il supporto.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
