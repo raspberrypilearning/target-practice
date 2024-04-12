@@ -64,5 +64,12 @@ Hai colpito a metà bersaglio, 500 punti!
 
 Mancato! Zero punti!
 
+Super fast
+
+Pretty quick
+
+Very fast
+
+Speed not recognised!
 
 
