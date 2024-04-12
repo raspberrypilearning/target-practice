@@ -4,7 +4,6 @@ pijl_x
 
 pijl_y
 
-hit_kleur
+hit_color
 
-muis_ingedrukt
-
+speed
