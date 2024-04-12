@@ -64,5 +64,12 @@ Trafiłeś na środek, 500 punktów!
 
 Przegapiłeś! Brak punktów!
 
+Super fast
+
+Pretty quick
+
+Very fast
+
+Speed not recognised!
 
 
