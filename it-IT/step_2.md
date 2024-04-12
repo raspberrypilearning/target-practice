@@ -6,7 +6,7 @@ Il tuo gioco ha bisogno di uno sfondo colorato.
 </div>
 <div>
 
-![L'area di output con un rettangolo color cielo sopra un rettangolo color erba per creare lo sfondo.](images/ background.png){:width="300px"}
+![L'area di output con un rettangolo color cielo sopra un rettangolo color erba per creare lo sfondo.](images/background.png){:width="300px"}
 
 </div>
 </div>
