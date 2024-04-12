@@ -69,7 +69,7 @@ def mouse_pressed():
 
 **Suggerimento:** 💡 `frame_rate=2`, in `run` in fondo al codice, controlla la velocità di disegno del tuo gioco. Se sta andando troppo veloce, impostalo su un numero inferiore.
 
-![L'area di output con la freccia che tocca il cerchio esterno. Il messaggio dei punti viene visualizzato nell'area di output.](images/blue-points.png)
+![L'area di output con la freccia che tocca il cerchio esterno. Il messaggio dei punti viene visualizzato nell'area di output.](images/blue-points.png){:height="600px"}
 
 **Debug:** 🐞 Controlla di aver utilizzato l'ortografia americana di "Color" (senza "u") e che "Color" sia in maiuscolo.
 

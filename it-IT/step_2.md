@@ -6,7 +6,7 @@ Il tuo gioco ha bisogno di uno sfondo colorato.
 </div>
 <div>
 
-![L'area di output con un rettangolo color cielo sopra un rettangolo color erba per creare lo sfondo.](images/ background.png){:width="300px"}
+![L'area di output con un rettangolo color cielo sopra un rettangolo color erba per creare lo sfondo.](images/background.png){:width="300px"}
 
 </div>
 </div>
@@ -51,7 +51,6 @@ line_highlights: 12
 ---
 def setup():
 # Imposta il tuo gioco qui
-
     size(400, 400)  # Larghezza e altezza dello schermo
     no_stroke()
 
@@ -85,7 +84,6 @@ line_highlights: 18-19
 ---
 def draw():
 # Cose da fare in ogni fotogramma
-
     fill('cyan')  # Imposta il colore di riempimento del cielo su ciano
     rect(0, 0, 400, 250)  # Disegna un rettangolo per il cielo con questi valori per x, y, larghezza, altezza
     fill('lightgreen')  # Imposta il colore di riempimento dell'erba su verde chiaro
