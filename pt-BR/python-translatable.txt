@@ -4,7 +4,6 @@ flecha_x
 
 flecha_y
 
-cor_acertada
+hit_color
 
-mouse_pressionado
-
+speed
