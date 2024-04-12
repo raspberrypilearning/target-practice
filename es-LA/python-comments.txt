@@ -64,12 +64,12 @@ You hit the middle, 500 points!
 
 You missed! No points!
 
-Super fast
+Súper rápido
 
-Pretty quick
+Bastante rápido
 
-Very fast
+Muy rapido
 
-Speed not recognised!
+¡Velocidad no reconocida!
 
 
