@@ -110,7 +110,7 @@ def mouse_pressed():
 
 **Test:** 🔄 Esegui il tuo progetto. Prova a lanciare la freccia sul cerchio interno e su quello esterno per vedere il messaggio.
 
-![L'area di output con la freccia che tocca il cerchio interno. Il messaggio dei punti viene visualizzato nell'area di output.](images/yellow-points.png)
+![L'area di output con la freccia che tocca il cerchio interno. Il messaggio dei punti viene visualizzato nell'area di output.](images/yellow-points.png){:height="600px"}
 
 **Debug:** 🐞 Controlla che il tuo rientro corrisponda all'esempio.
 
