@@ -31,7 +31,7 @@ else:
 
   --- feedback ---
 
-  È corretto! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  È corretto! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Molto veloce`.
 
   --- /feedback ---
 
