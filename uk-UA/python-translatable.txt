@@ -4,7 +4,6 @@
 
 стрілка_y
 
-hit_colour
+hit_color
 
-mouse_pressed
-
+speed
