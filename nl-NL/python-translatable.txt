@@ -4,6 +4,6 @@ pijl_x
 
 pijl_y
 
-hit_color
+raak_kleur
 
-speed
+snelheid
