@@ -29,6 +29,6 @@ Personalise and add more to your project. Perhaps you could change the difficult
 ಶೀರ್ಷಿಕೆ: ಪೂರ್ಣಗೊಂಡ ಪ್ರಾಜೆಕ್ಟ್
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
