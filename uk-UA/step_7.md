@@ -29,6 +29,6 @@
 title: Завершений проєкт
 ---
 
-Ти можеш переглянути [завершений проєкт тут](https://trinket.io/python/8444210ec1){:target="_blank"}.
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
