@@ -36,11 +36,11 @@ def draw():
     fill('sienna')
     triangle(150, 350, 200, 150, 250, 350) # Suporte
     fill('blue')
-    círculo(200, 200, 170) # Círculo externo
+    circle(200, 200, 170) # Círculo externo
     fill('red')
-    círculo(200, 200, 110) # Círculo interno
+    circle(200, 200, 110) # Círculo interno
     fill('yellow')
-    círculo(200, 200, 30) # Círculo do meio
+    circle(200, 200, 30) # Círculo do meio
     atirar_flecha()
 
 # Mantenha isto para executar seu código
