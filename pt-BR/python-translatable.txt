@@ -1,0 +1,9 @@
+atirar_flecha
+
+flecha_x
+
+flecha_y
+
+cor_acerto
+
+velocidade
