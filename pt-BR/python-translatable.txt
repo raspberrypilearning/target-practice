@@ -4,6 +4,6 @@ flecha_x
 
 flecha_y
 
-hit_color
+cor_acerto
 
-speed
+velocidade
