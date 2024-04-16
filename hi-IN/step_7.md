@@ -29,6 +29,6 @@
 title: पूर्ण परियोजना
 ---
 
-आप [ PLASS प्रोजेक्ट > ](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"} देख सकते हैं।
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
