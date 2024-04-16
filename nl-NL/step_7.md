@@ -29,6 +29,6 @@ Je kunt:
 title: Voltooid project
 ---
 
-Je kunt het [voltooide project hier](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"} bekijken.
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
