@@ -64,12 +64,12 @@ Você acertou o meio, 500 pontos!
 
 Você errou! Sem pontos!
 
-Super fast
+Super rápida
 
-Pretty quick
+Bem rápida
 
-Very fast
+Muito rápida
 
-Speed not recognised!
+Velocidade não reconhecida!
 
 
