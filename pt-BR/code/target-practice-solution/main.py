@@ -4,44 +4,44 @@ from random import randint
 
 # A função mouse_pressed vai aqui
 def mouse_pressed():
-    if hit_colour == Color('blue').hex:  # Like functions, if statements are indented
-        print('You hit the outer circle, 50 points!')
-    elif hit_colour == Color('red').hex:
-        print('You hit the inner circle, 200 points!')
-    elif hit_colour == Color('yellow').hex:
-        print('You hit the middle, 500 points!')
+    if cor_acerto == Color('blue').hex:  # Como as funções, as instruções 'if' são indentadas
+        print('Você acertou o círculo externo, 50 pontos!')
+    elif cor_acerto == Color('red').hex:
+        print('Você acertou o círculo interno, 200 pontos!')
+    elif cor_acerto == Color('yellow').hex:
+        print('Você acertou o meio, 500 pontos!')
     else:
-        print('You missed! No points!')
+        print('Você errou! Sem pontos!')
 
-# The shoot_arrow function goes here
-def shoot_arrow():
-    global hit_colour  # Can be used in other functions
-    arrow_x = randint(100, 300)  # Store a random number between 100 and 300
-    arrow_y = randint(100, 300)  # Store a random number between 100 and 300
-    hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour
-    fill('sienna')  # Set the arrow fill colour to brown
-    circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
+# A função atirar_flecha vai aqui
+def atirar_flecha():
+    global cor_acerto  # Pode ser usado em outras funções
+    flecha_x = randint(100, 300)  # Armazena um número aleatório entre 100 e 300
+    flecha_y = randint(100, 300)  # Armazena um número aleatório entre 100 e 300
+    cor_acerto = get(flecha_x, flecha_y).hex  # Obtém a cor acertada
+    fill('sienna')  # Defina a cor de preenchimento da flecha como marrom
+    circle(flecha_x, flecha_y, 15)  # Desenha um pequeno círculo em coordenadas aleatórias
 
 def setup():
-    # Setup your game here
-    size(400, 400)  # width and height
+    # Configure seu jogo aqui
+    size(400, 400) # largura e altura
     no_stroke()
 
 def draw():
-    # Things to do in every frame
+    # Coisas para fazer em cada quadro
     fill('cyan')
-    rect(0, 0, 400, 250)  # Sky
+    rect(0, 0, 400, 250) # Céu
     fill('lightgreen')
-    rect(0, 250, 400, 150)  # Grass
+    rect(0, 250, 400, 150) # Grama
     fill('sienna')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
+    triangle(150, 350, 200, 150, 250, 350) # Suporte
     fill('blue')
-    circle(200, 200, 170)  # Outer circle
+    círculo(200, 200, 170) # Círculo externo
     fill('red')
-    circle(200, 200, 110)  # Inner circle
+    círculo(200, 200, 110) # Círculo interno
     fill('yellow')
-    circle(200, 200, 30)  # Middle circle
-    shoot_arrow()
+    círculo(200, 200, 30) # Círculo do meio
+    atirar_flecha()
 
-# Keep this to run your code
+# Mantenha isto para executar seu código
 run(frame_rate=2)
