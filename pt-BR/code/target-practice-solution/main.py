@@ -1,8 +1,8 @@
-# Import library code!
+# Importa código da biblioteca!
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# A função mouse_pressed vai aqui
 def mouse_pressed():
     if hit_colour == Color('blue').hex:  # Like functions, if statements are indented
         print('You hit the outer circle, 50 points!')
