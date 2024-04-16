@@ -29,6 +29,6 @@ Możesz:
 title: Ukończony projekt
 ---
 
-Możesz wyświetlić ukończony projekt [ tutaj ](https://editor.raspberrypi.org/projects/target-practice-solution){:target="_blank"}.
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
 
 --- /collapse ---
