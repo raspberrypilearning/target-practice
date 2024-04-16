@@ -1,19 +1,19 @@
-# Import library code
+# Importar código da biblioteca
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# A função mouse_pressed vai aqui
 
-# The shoot_arrow function goes here
+# A função atirar_flecha vai aqui
 
 def setup():
-    # Set up your game here
-    size(400, 400)  # width and height of screen
+    # Configure seu jogo aqui
+    size(400, 400)  # largura e altura da tela
 
 def draw():
-    # Things to do in every frame
-    fill('cyan')  # Set the fill colour for the sky to cyan
-    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
+    # Coisas para fazer em cada quadro
+    fill('cyan') # Defina a cor de preenchimento do céu como ciano
+    rect(0, 0, 400, 250) # Desenhe um retângulo para o céu com estes valores para x, y, largura, altura
 
-# Keep this to run your code
+# Mantenha isto para executar seu código
 run(frame_rate=2)
