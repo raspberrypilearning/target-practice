@@ -1,0 +1,30 @@
+---
+title: Tiro ao alvo
+hero_image: images/banner.png
+description: Use Python para desenhar um alvo e marcar pontos acertando-o com flechas
+meta_title: Projetos de codificação Python para crianças e adolescentes | Tiro ao alvo
+meta_description: Aprenda Python com os projetos de codificação da Raspberry Pi Foundation para crianças e adolescentes. Use Python para desenhar um alvo e marcar pontos acertando-o com flechas.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-06"
+steps:
+  - title: Você vai fazer
+  - title: Crie um plano de fundo
+  - title: Desenhe o seu alvo
+    completion:
+      - engaged
+  - title: Atire sua flecha
+  - title: Marque pontos
+    completion:
+      - internal
+  - title: Teste rápido
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Melhore o seu projeto
+  - title: E agora?
