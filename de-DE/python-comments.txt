@@ -1,75 +1,75 @@
-Setup your game here
+Richte hier Dein Spiel ein
 
-Width and height of screen
+Breite und Höhe des Bildschirms
 
-Things to do in every frame
+Dinge die in jedem Frame passieren
 
 Set the fill colour for the sky to cyan
 
 Draw a rectangle for the sky with these values for x, y, width, height
 
-Set the fill colour for the grass to light green
+Stelle die Füllfarbe für das Gras auf Hellgrün ein
 
-Draw a rectangle for the grass with these values for x, y, width, height
+Zeichnet ein Rechteck für das Gras mit diesen Werten für x, y, Breite, Höhe
 
-Brown colour
+Braune Farbe
 
-Draw a triangle for the target's stand
+Zeichne ein Dreieck für den Zielstand
 
-Set the circle fill colour to blue
+Stelle die Füllfarbe auf blue (blau) ein
 
-Draw the outer circle
+Stelle die Füllfarbe auf blue (blau) ein
 
-Set the colour for the circle fill to red
 
-Draw the inner circle using x, y, width
 
-Set the colour for the circle fill to yellow
+Zeichne den inneren Kreis mit x, y, Breite
 
-Draw the middle circle using x, y, width
+Stelle die Farbe für die Kreisfüllung auf yellow (gelb) ein
 
-Sky
+Zeichne den inneren Kreis mit x, y, Breite
 
-Ground
+Himmel
 
-Stand
+Boden
 
-Outer circle
+Zielstand
 
-Inner circle
+Äußerer Kreis
 
-Middle circle
+Innerer Kreis
 
-The shoot_arrow function goes here
+Mittlerer Kreis
 
-Store a random number between 100 and 300
+Die Funktion „schiess_pfeil“ kommt hierher
+
+Speichere eine zufällige Zahl zwischen 100 und 300
 
 Set the arrow to fill colour to brown
 
-Draw a small circle at random coordinates
+Zeichne einen kleinen Kreis an zufälligen Koordinaten
 
-Can be used in other functions
+Kann in anderen Funktionen verwendet werden
 
 Get the hit colour
 
-The mouse_pressed function goes here
+Die Funktion „mouse_pressed“ kommt hierher
 
-Like the code in functions, the code in 'if' statements is indented
+Wie der Code in Funktionen ist der Code auch in 'if'-Anweisungen eingerückt
 
-You hit the outer circle, 50 points!
+Du hast den äußeren Kreis getroffen, 50 Punkte!
 
-You hit the inner circle, 200 points!
+Du hast den inneren Kreis getroffen, 200 Punkte!
 
-You hit the middle, 500 points!
+Du hast die Mitte getroffen, 500 Punkte!
 
-You missed! No points!
+Du hast das Ziel leider verfehlt! Keine Punkte!
 
-Super fast
+Super schnell
 
-Pretty quick
+Ziemlich schnell
 
-Very fast
+Sehr schnell
 
-Speed not recognised!
+Geschwindigkeit unbekannt!
 
 
