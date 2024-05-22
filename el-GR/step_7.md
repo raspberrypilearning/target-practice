@@ -29,6 +29,6 @@
 title: Ολοκληρωμένο έργο
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
+Μπορείς να δεις [ολοκληρωμένο το έργο εδώ](https://trinket.io/python/14dd4c7674){:target="_blank"}.
 
 --- /collapse ---
