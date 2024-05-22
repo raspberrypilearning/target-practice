@@ -4,9 +4,9 @@ Breite und Höhe des Bildschirms
 
 Dinge die in jedem Frame passieren
 
-Set the fill colour for the sky to cyan
+Setzt die Füllfarbe für den Himmel auf Cyan
 
-Draw a rectangle for the sky with these values for x, y, width, height
+Zeichnet ein Rechteck für den Himmel mit diesen Werten für x, y, Breite, Höhe
 
 Stelle die Füllfarbe für das Gras auf Hellgrün ein
 
@@ -18,15 +18,15 @@ Zeichne ein Dreieck für den Zielstand
 
 Stelle die Füllfarbe auf blue (blau) ein
 
-Stelle die Füllfarbe auf blue (blau) ein
+Zeichne den äußeren Kreis
 
-
+Stelle die Farbe für die Kreisfüllung auf red (rot) ein
 
 Zeichne den inneren Kreis mit x, y, Breite
 
 Stelle die Farbe für die Kreisfüllung auf yellow (gelb) ein
 
-Zeichne den inneren Kreis mit x, y, Breite
+Zeichne den mittleren Kreis mit x, y, Breite
 
 Himmel
 
@@ -44,13 +44,13 @@ Die Funktion „schiess_pfeil“ kommt hierher
 
 Speichere eine zufällige Zahl zwischen 100 und 300
 
-Set the arrow to fill colour to brown
+Stelle die Füllfarbe für den Pfeil auf Braun ein
 
 Zeichne einen kleinen Kreis an zufälligen Koordinaten
 
 Kann in anderen Funktionen verwendet werden
 
-Get the hit colour
+Hol dir die getroffene Farbe
 
 Die Funktion „mouse_pressed“ kommt hierher
 
