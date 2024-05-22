@@ -29,6 +29,6 @@ Tú podrías:
 title: Proyecto terminado
 ---
 
-Puedes ver el [proyecto terminado aquí](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
+Puedes ver el [proyecto terminado aquí](https://trinket.io/python/29e8095436){:target="_blank"}.
 
 --- /collapse ---
