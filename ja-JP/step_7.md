@@ -29,6 +29,6 @@
 title: 完成したプロジェクト
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
+[完成したプロジェクトはこちら](https://trinket.io/python/3b053cd59a){:target="_blank"}で確認できます。
 
 --- /collapse ---
