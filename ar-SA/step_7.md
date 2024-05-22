@@ -29,6 +29,6 @@
 المشروع المكتمل
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
+يمكنك عرض [المشروع المكتمل هنا](https://trinket.io/python/a1e9459336){:target="_blank"}.
 
 --- /collapse ---
