@@ -29,6 +29,6 @@ Fe allech chi:
 teitl: Prosiect gorffenedig
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/target-practice-solution){:target="_blank"}.
+Fe allwch chi weld y [prosiect gorffenedig yma](https://trinket.io/python/5126c55555){:target="_blank"}.
 
 --- /collapse ---
