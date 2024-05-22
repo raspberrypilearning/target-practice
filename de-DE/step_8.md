@@ -28,3 +28,12 @@ Klick auf die Schaltfläche **Ausführen**, um ein Beispiel dieses Projekts anzu
 --- /no-print ---
 
 Wenn du mehr Spaß beim Erkunden von Python haben willst, dann könntest du einige [dieser Projekte](https://projects.raspberrypi.org/de-DE/projects?software%5B%5D=python) ausprobieren.
+
+***
+
+Dieses Projekt wurde von freiwilligen Helfern übersetzt:
+
+Philipp Süss
+Marc Swenningshon
+
+Dank freiwilliger Helfer können wir Menschen auf der ganzen Welt die Möglichkeit geben, in ihrer eigenen Sprache zu lernen. Du kannst uns helfen, mehr Menschen zu erreichen, indem Du dich freiwillig zum Übersetzen meldest - weitere Informationen unter [rpf.io/translate](https://rpf.io/translate).
