@@ -18,11 +18,11 @@ arrow_y
 
 hit_color
 
-You hit the outer circle, 50 points!
+Du hast den äußeren Kreis getroffen, 50 Punkte!
 
-You hit the inner circle, 200 points!
+Du hast den inneren Kreis getroffen, 200 Punkte!
 
-You hit the middle, 500 points!
+Du hast die Mitte getroffen, 500 Punkte!
 
 You missed! No points!
 
