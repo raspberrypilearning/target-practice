@@ -1,0 +1,75 @@
+Richte hier Dein Spiel ein
+
+Breite und Höhe des Bildschirms
+
+Dinge die in jedem Frame passieren
+
+Set the fill colour for the sky to cyan
+
+Draw a rectangle for the sky with these values for x, y, width, height
+
+Stelle die Füllfarbe für das Gras auf Hellgrün ein
+
+Zeichnet ein Rechteck für das Gras mit diesen Werten für x, y, Breite, Höhe
+
+Braune Farbe
+
+Zeichne ein Dreieck für den Zielstand
+
+Stelle die Füllfarbe auf blue (blau) ein
+
+Stelle die Füllfarbe auf blue (blau) ein
+
+
+
+Zeichne den inneren Kreis mit x, y, Breite
+
+Stelle die Farbe für die Kreisfüllung auf yellow (gelb) ein
+
+Zeichne den inneren Kreis mit x, y, Breite
+
+Himmel
+
+Boden
+
+Zielstand
+
+Äußerer Kreis
+
+Innerer Kreis
+
+Mittlerer Kreis
+
+Die Funktion „schiess_pfeil“ kommt hierher
+
+Speichere eine zufällige Zahl zwischen 100 und 300
+
+Set the arrow to fill colour to brown
+
+Zeichne einen kleinen Kreis an zufälligen Koordinaten
+
+Kann in anderen Funktionen verwendet werden
+
+Get the hit colour
+
+Die Funktion „mouse_pressed“ kommt hierher
+
+Wie der Code in Funktionen ist der Code auch in 'if'-Anweisungen eingerückt
+
+Du hast den äußeren Kreis getroffen, 50 Punkte!
+
+Du hast den inneren Kreis getroffen, 200 Punkte!
+
+Du hast die Mitte getroffen, 500 Punkte!
+
+Du hast das Ziel leider verfehlt! Keine Punkte!
+
+Super schnell
+
+Ziemlich schnell
+
+Sehr schnell
+
+Geschwindigkeit unbekannt!
+
+

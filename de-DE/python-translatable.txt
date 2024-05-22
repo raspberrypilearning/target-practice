@@ -1,0 +1,9 @@
+shoot_arrow
+
+arrow_x
+
+arrow_y
+
+hit_color
+
+speed

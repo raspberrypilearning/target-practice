@@ -1,0 +1,37 @@
+wood
+
+sky
+
+grass
+
+outer
+
+inner
+
+middle
+
+shoot_arrow
+
+arrow_x
+
+arrow_y
+
+hit_color
+
+Du hast den äußeren Kreis getroffen, 50 Punkte!
+
+Du hast den inneren Kreis getroffen, 200 Punkte!
+
+Du hast die Mitte getroffen, 500 Punkte!
+
+You missed! No points!
+
+Super fast
+
+Pretty quick
+
+Very fast
+
+Speed not recognised!
+
+speed
