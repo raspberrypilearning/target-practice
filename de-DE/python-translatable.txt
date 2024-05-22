@@ -1,9 +1,9 @@
-shoot_arrow
+schiess_pfeil
 
-arrow_x
+pfeil_x
 
-arrow_y
+pfeil_y
 
-hit_color
+getroffene_farbe
 
-speed
+geschwindigkeit
