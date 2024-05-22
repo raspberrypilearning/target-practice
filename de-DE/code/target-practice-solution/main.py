@@ -4,7 +4,7 @@ from random import randint
 
 # Die Funktion „mouse_pressed“ kommt hierher
 def mouse_pressed():
-    if hit_colour == Color('blue').hex:  # Like functions, if statements are indented
+    if getroffene_farbe == Color('blue').hex: # Wie bei Funktionen sind auch 'if'-Anweisungen eingerückt
         print('Du hast den äußeren Kreis getroffen, 50 Punkte!')
     elif getroffene_farbe == Color('red').hex:
         print('Du hast den inneren Kreis erreicht, 200 Punkte!')
@@ -19,7 +19,7 @@ def schiess_pfeil():
     pfeil_x = randint(100, 300) # Speichere eine Zufallszahl zwischen 100 und 300
     pfeil_y = randint(100, 300) # Speichere eine Zufallszahl zwischen 100 und 300
     getroffene_farbe = get(pfeil_x, pfeil_y).hex # Hole die Trefferfarbe
-    fill('sienna')  # Set the arrow fill colour to brown
+    fill('sienna') # Stelle die Füllfarbe des Pfeils auf Braun ein
     circle(pfeil_x, pfeil_y, 15) # Zeichne einen kleinen Kreis an zufälligen Koordinaten
 
 def setup():
