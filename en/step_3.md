@@ -15,7 +15,7 @@ Your game needs a target to shoot arrows at.
 
 --- task ---
 
-Set the fill colour to `sienna` (brown). 
+Set the fill colour to `brown`.
 
 Draw a triangle using the x and y coordinates for each of the corners.
 
@@ -24,15 +24,14 @@ Draw a triangle using the x and y coordinates for each of the corners.
 --- code ---
 ---
 language: python
-filename: main.py - draw()
 line_numbers: true
-line_number_start: 18
-line_highlights: 20, 21
+line_number_start: 20
+line_highlights: 22-23
 ---
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)  
 
 --- /code ---
 
@@ -40,7 +39,7 @@ line_highlights: 20, 21
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target: 
+**Test:** Run your code to see the stand for your target: 
 
 ![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
@@ -61,13 +60,12 @@ Draw a circle with x and y coordinates for its centre and a width.
 --- code ---
 ---
 language: python
-filename: main.py - draw()
 line_numbers: true
-line_number_start: 20
-line_highlights: 22, 23
+line_number_start: 22
+line_highlights: 24-25
 ---
 
-    fill('sienna')  # Brown colour
+    fill('brown')  # Brown colour
     triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
     fill('blue')  # Set the circle fill colour to blue
     circle(200, 200, 170)  # Draw the outer circle
@@ -97,11 +95,11 @@ The target is made of different-sized circles with the same centre coordinates (
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 20
-line_highlights: 24, 25, 26, 27
+line_number_start: 22
+line_highlights: 26-30
 ---
 
-    fill('sienna')  # Brown colour
+    fill('brown')  # Brown colour
     triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
     fill('blue')  # Set the circle fill colour to blue
     circle(200, 200, 170)  # Draw the outer circle
@@ -116,50 +114,9 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles. 
+**Test:** Run your project to see the target with three coloured circles. 
 
 ![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}. 
-
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Example code using different colours
----
-
---- code ---
----
-language: python
-filename: main.py - draw()
-line_numbers: false
-line_number_start: 14
-line_highlights: 
----
-    
-def draw():
-# Things to do in every frame
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-  
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 

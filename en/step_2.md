@@ -16,7 +16,6 @@ Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/ta
 --- code ---
 ---
 language: python
-filename: main.py — draw()
 line_numbers: true
 line_number_start: 16
 line_highlights: 20-21
