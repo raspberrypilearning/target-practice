@@ -47,7 +47,7 @@ def mouse_pressed():
 
 --- /code ---
 
-**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
+**Tip:** If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
 
 --- /task ---
 
@@ -60,9 +60,9 @@ def mouse_pressed():
 
 `elif`{:.language-python} can be used to add more conditions to your `if`{:.language-python} statement. 
 
-Score points if the arrow lands on the **inner** or **middle** circles.
-
 --- task ---
+
+Add some more code to score points if the arrow lands on the **inner** or **middle** circles.
 
 --- code ---
 ---
@@ -88,7 +88,7 @@ def mouse_pressed():
 
 **Test:** Click the **Run** button.You should score points whenever you hit the target.
 
-![points being scored on any area of target](images/points-scored.gif)
+![points being scored on any area of target](images/yellow-points.png)
 
 --- /task ---
 

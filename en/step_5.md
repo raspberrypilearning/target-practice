@@ -1,14 +1,14 @@
 ## What colour did you hit?
 
-Use a **global variable** called `hit_colour`{:.language-python} to `get()`{:.language-python} the colour at `arrow_x, arrow_y`{:.language-python} when you click. 
+Next, you will add some code to get the colour at the location of the arrow.
 
 ### Get the colour hit by the arrow 
 
 --- task ---
 
-Add a **global variable** called `hit_colour` that can be used throughout your code.
+Add a new **global variable** called `hit_colour`. 
 
-Add code to `get` the colour  at the centre of the arrow and store it in the `hit_colour` variable. 
+Add code to `get` the colour at the centre of the arrow ,and store it in the `hit_colour` variable. 
 
 
 --- code ---
@@ -59,7 +59,7 @@ line_highlights: 14
 --- /task ---
 
 --- task ---
-Add code to print the target emoji 🎯 when the mouse is clicked.
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -76,7 +76,7 @@ def mouse_pressed():
 --- /task ---
 
 --- task --- 
-**Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse.
+**Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif)
 --- /task ---
