@@ -25,8 +25,8 @@ Draw a triangle using the x and y coordinates for each of the corners.
 ---
 language: python
 line_numbers: true
-line_number_start: 17
-line_highlights: 19-20
+line_number_start: 21
+line_highlights: 23-24
 ---
     fill('lightgreen')  
     rect(0, 250, 400, 150)  
@@ -61,14 +61,13 @@ Draw a circle with x and y coordinates for its centre and a width.
 ---
 language: python
 line_numbers: true
-line_number_start: 19
-line_highlights: 21-22
+line_number_start: 23
+line_highlights: 25-26
 ---
-
     fill('brown')  
     triangle(150, 350, 200, 150, 250, 350)  
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('blue')  
+    circle(200, 200, 170)  
   
 --- /code ---
 
@@ -95,12 +94,10 @@ The target is made of different-sized circles with the same centre coordinates (
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 19
-line_highlights: 23-26
+line_number_start: 25
+line_highlights: 27-30
 ---
 
-    fill('brown')  
-    triangle(150, 350, 200, 150, 250, 350)  
     fill('blue')  
     circle(200, 200, 170)  
     fill('red')  

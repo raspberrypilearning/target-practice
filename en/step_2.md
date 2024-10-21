@@ -17,8 +17,8 @@ Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/ta
 ---
 language: python
 line_numbers: true
-line_number_start: 13
-line_highlights: 17-18
+line_number_start: 17
+line_highlights: 21-22
 ---
 def draw():
     # Things to do in every frame
