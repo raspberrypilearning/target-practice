@@ -34,7 +34,9 @@ def shoot_arrow():
 --- /task ---
 
 --- task ---
+
 **Test:** Stop your code from running, then switch to Split View before running your code again. Click the **Run** button. You should see the colours being printed in the **Text output**, in hexadecimal format. 
+
 --- /task ---
 
 ### Print the colour when the mouse is pressed
@@ -58,6 +60,7 @@ line_highlights: 14
 
 --- task ---
 Add code to print the target emoji 🎯 when the mouse is clicked.
+
 --- code ---
 ---
 language: python
@@ -78,9 +81,6 @@ def mouse_pressed():
 ![target emoji printed when mouse clicked](images/target_printed.gif)
 --- /task ---
 
-
-
-
 --- task --- 
 
 **Test:** 🔄 Run your project. 
@@ -94,4 +94,5 @@ The project prints 🎯 each time the arrow is redrawn.
 **Debug:** 🐞 Check the `print` line really carefully for commas and brackets. 
 
 --- /task ---
+
 --- save ---
