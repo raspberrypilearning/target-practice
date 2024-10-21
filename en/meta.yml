@@ -14,7 +14,7 @@ steps:
   - title: Draw your target
     completion:
       - engaged
-  - title: Fire your arrow
+  - title: Add an arrow
   - title: Score points
     completion:
       - internal

@@ -92,7 +92,6 @@ The target is made of different-sized circles with the same centre coordinates (
 --- code ---
 ---
 language: python
-filename: main.py - draw()
 line_numbers: true
 line_number_start: 25
 line_highlights: 27-30

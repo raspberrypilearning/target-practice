@@ -21,8 +21,8 @@ Add a function to draw a brown circle at coordinates `200`, `200`.
 ---
 language: python
 line_numbers: true
-line_number_start: 7
-line_highlights: 8-12
+line_number_start: 8
+line_highlights: 9-13
 ---
 # The shoot_arrow function goes here    
 def shoot_arrow():   
@@ -37,14 +37,14 @@ def shoot_arrow():
 
 --- task ---
 
-Call your new `shoot_arrow()`{:.language-python}  function. 
+Call your new `shoot_arrow()`{:.language-python} function at the end of your `draw()`{:.language-python} function. 
 
 --- code ---
 ---
 language: python
 line_numbers: true
-line_number_start: 31
-line_highlights: 33
+line_number_start: 33
+line_highlights: 35
 ---
     fill('yellow')      
     circle(200, 200, 30)  
@@ -69,8 +69,8 @@ Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variabl
 ---
 language: python
 line_numbers: true
-line_number_start: 8
-line_highlights: 11-12
+line_number_start: 9
+line_highlights: 10-11
 ---
 def shoot_arrow():
     arrow_x = randint(100, 300)
