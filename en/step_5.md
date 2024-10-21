@@ -1,81 +1,85 @@
 ## Where did you hit?
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an even smaller circle to represent an arrow.
-</div>
-<div>
-
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
-
-</div>
-</div>
-
+Use a **global variable** called `hit_colour`{:.language-python} to `get()`{:.language-python} the colour at `arrow_x, arrow_y`{:.language-python} when you click. 
 
 ### Get the colour hit by the arrow 
-
-The `get()` function returns the colour of a pixel.
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0; font-weight: bold;">pixel</span>, short for picture element, is a single coloured dot within an image. Images are made up of lots of coloured pixels.
-</p>
 
 --- task ---
 
 Add a **global variable** called `hit_colour` that can be used throughout your code.
 
-Add code to `get` the colour of the pixel at the centre of the arrow and store it in the `hit_colour` variable. 
-In order to compare the colours, we need to use the hexadecimal code. This can be done with the `.hex` string.
+Add code to `get` the colour  at the centre of the arrow and store it in the `hit_colour` variable. 
+
 
 --- code ---
 ---
 language: python
-filename: main.py — shoot_arrow() 
 line_numbers: true
-line_number_start: 7
-line_highlights: 9, 12
+line_number_start: 9
+line_highlights: 11, 14, 15
 ---
-# The shoot_arrow function goes here     
 def shoot_arrow():
-    global hit_colour  # Can be used in other functions  
-    arrow_x = randint(100, 300)  # Store a random number between 100 and 300    
-    arrow_y = randint(100, 300)  # Store a random number between 100 and 300
-    hit_colour = get(arrow_x, arrow_y).hex  # Get the hit colour     
-    fill('sienna')  # Set the arrow to fill colour to brown   
-    circle(arrow_x, arrow_y, 15)  # Draw a small circle at random coordinates
-  
+    global hit_colour  
+    arrow_x = randint(100, 300)  
+    arrow_y = randint(100, 300) 
+    hit_colour = get(arrow_x, arrow_y).hex
+    print(hit_colour)
+    fill('brown')
+    circle(arrow_x, arrow_y, 15)
+
 --- /code ---
 
-**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the wood colour of the arrow! 
+**Tip:** 💡 The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the brown colour of the arrow! 
 
+--- /task ---
+
+--- task ---
+**Test:** Stop your code from running, then switch to Split View before running your code again. Click the **Run** button. You should see the colours being printed in the **Text output**, in hexadecimal format. 
 --- /task ---
 
 ### Print the colour when the mouse is pressed
 
-The `p5` library 'listens' for certain events, one of these is the press of the mouse button. When it detects that the button has been pressed, it will run whatever code it has been given in the `mouse_pressed` function.
-
 --- task ---
-
-Define your `mouse_pressed()` function under the comment **# The mouse_pressed function goes here**. 
-
-Add code to print the target emoji 🎯 when the mouse is clicked.
+Comment out the line that prints the colour. This means it will not run. 
 
 --- code ---
 ---
 language: python
-filename: main.py - mouse_pressed()
 line_numbers: true
-line_number_start: 5
-line_highlights: 6
+line_number_start: 13
+line_highlights: 14
 ---
-
-# The mouse_pressed function goes here    
-def mouse_pressed():    
-    print('🎯')
-
+    hit_colour = get(arrow_x, arrow_y).hex
+    # print(hit_colour)
+    circle(arrow_x, arrow_y, 15)
 --- /code ---
 
 --- /task ---
+
+--- task ---
+Add code to print the target emoji 🎯 when the mouse is clicked.
+--- code ---
+---
+language: python
+line_numbers: true
+line_number_start: 5
+line_highlights: 6-7
+---
+# The mouse_pressed function goes here    
+def mouse_pressed():    
+    print('🎯')
+--- /code ---
+
+--- /task ---
+
+--- task --- 
+**Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse.
+
+![target emoji printed when mouse clicked](images/target_printed.gif)
+--- /task ---
+
+
+
 
 --- task --- 
 
