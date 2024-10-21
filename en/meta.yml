@@ -15,7 +15,7 @@ steps:
     completion:
       - engaged
   - title: Add an arrow
-  - title: Where did you hit?
+  - title: What colour did you hit?
   - title: Score points
     completion:
       - internal
