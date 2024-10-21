@@ -9,7 +9,7 @@ listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
-  - title: What will I make?
+  - title: What you will make
   - title: Draw the grass
   - title: Draw your target
     completion:

@@ -2,7 +2,7 @@
   <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
 </div>
 
-## What will I make?
+## What you will make
 
 Use Python to draw a target and score points by hitting it with arrows. 
 

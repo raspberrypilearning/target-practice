@@ -25,8 +25,8 @@ Draw a triangle using the x and y coordinates for each of the corners.
 ---
 language: python
 line_numbers: true
-line_number_start: 20
-line_highlights: 22-23
+line_number_start: 17
+line_highlights: 19-20
 ---
     fill('lightgreen')  
     rect(0, 250, 400, 150)  
@@ -61,12 +61,12 @@ Draw a circle with x and y coordinates for its centre and a width.
 ---
 language: python
 line_numbers: true
-line_number_start: 22
-line_highlights: 24-25
+line_number_start: 19
+line_highlights: 21-22
 ---
 
-    fill('brown')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
     fill('blue')  # Set the circle fill colour to blue
     circle(200, 200, 170)  # Draw the outer circle
   
@@ -95,18 +95,18 @@ The target is made of different-sized circles with the same centre coordinates (
 language: python
 filename: main.py - draw()
 line_numbers: true
-line_number_start: 22
-line_highlights: 26-30
+line_number_start: 19
+line_highlights: 23-26
 ---
 
-    fill('brown')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle 
 
 --- /code ---
 

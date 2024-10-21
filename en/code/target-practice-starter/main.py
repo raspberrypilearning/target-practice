@@ -9,8 +9,9 @@ from random import randint
 
 
 def setup():
-    # Setup your game here
+    # Set up your game here
     size(400, 400)
+    no_stroke()
 
 
 def draw():
