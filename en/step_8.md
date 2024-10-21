@@ -26,4 +26,4 @@ Add a variable to keep track of the total score, adding the correct number of po
 
 ![Three project ideas, one has five circles, one has a difficulty input question and one has emojis in the points message.](images/upgrade-ideas.png)
 
---- challenge ---
+--- /challenge ---
