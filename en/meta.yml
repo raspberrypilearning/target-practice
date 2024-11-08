@@ -9,12 +9,13 @@ listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
-  - title: You will make
-  - title: Create a background
+  - title: What you will make
+  - title: Draw the grass
   - title: Draw your target
     completion:
       - engaged
-  - title: Fire your arrow
+  - title: Add an arrow
+  - title: What colour did you hit?
   - title: Score points
     completion:
       - internal
@@ -26,5 +27,6 @@ steps:
       passing_score: 3
     completion:
       - external
-  - title: Upgrade your project
-  - title: What next?
+  - title: Challenge
+    challenge: true
+  - title: What can you do now?
