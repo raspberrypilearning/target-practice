@@ -1,10 +1,12 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
-</div>
-
 ## What you will make
 
 Use Python to draw a target and score points by hitting it with arrows. 
+
+--- print-only ---
+
+![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
+
+--- /print-only ---
 
 --- no-print ---
 
@@ -20,10 +22,9 @@ Click the **Run** button below to start the game. When the dot appears on the ta
 
 --- /no-print ---
 
---- print-only ---
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+</div>
 
-![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
-
---- /print-only ---
 
 
