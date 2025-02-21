@@ -1,12 +1,9 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank"> अपने कोड एडिटर को बेहतर बनाने में मदद के लिए हमारे सर्वेक्षक </a> बनाएँ!
-</div>
-
 ## What you will make
 
 Use Python to draw a target and score points by hitting it with arrows.
 
---- no-print ---
+![बाहरी सर्कल पर एक हिट पॉइंट के साथ एक तीरंदाजी लक्ष्य। 'आप बाहरी वृत्त से टकराए, 50 अंक!' पाठ नीचे प्रदर्शित होता है](images/blue-points.png){:width="640px"}
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -20,10 +17,9 @@ Click the **Run** button below to start the game. When the dot appears on the ta
 
 --- /no-print ---
 
---- print-only ---
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank"> अपने कोड एडिटर को बेहतर बनाने में मदद के लिए हमारे सर्वेक्षक </a> बनाएँ!
+</div>
 
-![बाहरी सर्कल पर एक हिट पॉइंट के साथ एक तीरंदाजी लक्ष्य। 'आप बाहरी वृत्त से टकराए, 50 अंक!' पाठ नीचे प्रदर्शित होता है](images/blue-points.png){:width="640px"}
-
---- /print-only ---
 
 
