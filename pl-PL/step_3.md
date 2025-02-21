@@ -15,7 +15,7 @@ Twoja gra potrzebuje celu do strzelania strzałkami.
 
 --- task ---
 
-Ustaw kolor wypełnienia na ` ` (brązowy).
+Set the fill colour to `brown`.
 
 Narysuj trójkąt używając współrzędnych x i y dla każdego z rogów.
 
@@ -23,14 +23,14 @@ Narysuj trójkąt używając współrzędnych x i y dla każdego z rogów.
 
 --- code ---
 ---
-język: python nazwa pliku: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 20, 21
+language: python line_numbers: true line_number_start: 21
+line_highlights: 23-24
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -38,7 +38,7 @@ line_highlights: 20, 21
 
 --- task ---
 
-Test **:** ? Uruchom swój kod, aby zobaczyć stojak dla swojego celu:
+**Test:** Run your code to see the stand for your target:
 
 ![Brązowy trójkąt na trawie i na tle nieba.](images/target-stand.png){:width="400px"}
 
@@ -58,14 +58,14 @@ Narysuj okrąg ze współrzędnymi x i y dla jego środka i szerokości.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
-line_highlights: 22, 23
+language: python line_numbers: true line_number_start: 23
+line_highlights: 25-26
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)
 
 --- /code ---
 
@@ -89,18 +89,16 @@ Cel składa się z okręgów o różnych rozmiarach o tych samych współrzędny
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
-line_highlights: 24, 25, 26, 27
+language: python line_numbers: true line_number_start: 25
+line_highlights: 27-30
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
@@ -108,48 +106,9 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-Test **:** ? Uruchom swój projekt, aby zobaczyć cel z trzema kolorowymi kółkami.
+**Test:** Run your project to see the target with three coloured circles.
 
 ![Brązowy trójkąt z trzema kolorowymi kółkami na trawie i na tle nieba.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-** Wybierz:** ? Zmień dowolny kolor używając innej nazwy koloru. Możesz znaleźć listę wszystkich nazw kolorów dostępnych w [ W3 ](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Brązowy trójkąt z trzema kolorowymi kółkami na trawie i na tle nieba. Kolory zmieniły się na różowe i fioletowe.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-Title: Przykładowy kod używający różnych kolorów
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: false line_number_start: 14
-line_highlights:
----
-
-def draw():
-# Rzeczy do zrobienia w każdej klatce
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
