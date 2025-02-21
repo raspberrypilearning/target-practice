@@ -13,11 +13,12 @@ Add code to `get` the colour at the centre of the arrow ,and store it in the `hi
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 6
-line_highlights: 7
+language: python line_numbers: true line_number_start: 9
+line_highlights: 10, 13, 14
 ---
-def mouse_pressed(): if hit_kleur == Color('blue').hex:   
-print('Je raakt de buitenste cirkel, 50 punten!') elif hit_kleur == Color('red').hex: print('Je hebt de binnenste cirkel geraakt, 200 punten!') elif hit_kleur == Color('yellow').hex: print('Je raakt het midden, 500 punten!')
+def shoot_arrow(): global hit_colour  
+arrow_x = randint(100, 300)  
+arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_colour) fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -37,13 +38,13 @@ print('Je raakt de buitenste cirkel, 50 punten!') elif hit_kleur == Color('red')
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 6
-line_highlights: 7, 8
+language: python line_numbers: true line_number_start: 13
+line_highlights: 14
 ---
 
-    def mouse_pressed():<br x-id="5" />
-        if raak_kleur == Color('blue').hex: # Net als bij functies worden 'if'-instructies ingesprongen
-            print('Je hebt de buitenste cirkel geraakt, 50 punten!')
+    hit_colour = get(arrow_x, arrow_y).hex
+    # print(hit_colour)
+    circle(arrow_x, arrow_y, 15)
 --- /code ---
 
 --- /task ---
@@ -52,11 +53,12 @@ line_highlights: 7, 8
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 5
-line_highlights: 9-12
+language: python line_numbers: true line_number_start: 5
+line_highlights: 6-7
 ---
 # De mouse_pressed functie komt hier
-def mouse_pressed():
+def mouse_pressed():    
+print('🎯') --- /code ---
 
 --- /task ---
 
