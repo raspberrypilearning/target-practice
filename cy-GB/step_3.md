@@ -23,14 +23,14 @@ Draw a triangle using the x and y coordinates for each of the corners.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+Dyma dri triongl enghreifftiol ac mae gan bob un set wahanol o gyfesurynnau. 'Drychwch ar safle grid pob un i weld sut mae'r cyfesurynnau `x` a `y` yn lleoli corneli'r trionglau:
 title: Cyfesurynnau triongl
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -38,7 +38,7 @@ title: Cyfesurynnau triongl
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Test:** Run your code to see the stand for your target:
 
 ![A brown triangle on grass and against a sky.](images/target-stand.png)language: python filename: main.py - draw() line_numbers: true line_number_start: 28
 
@@ -58,14 +58,14 @@ Draw a circle with x and y coordinates for its centre and a width.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+language: python line_numbers: true line_number_start: 23
 line_highlights: 31-32
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)
 
 --- /code ---
 
@@ -89,18 +89,16 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+language: python line_numbers: true line_number_start: 25
 line_highlights: 33-34
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
@@ -108,54 +106,9 @@ line_highlights: 33-34
 
 --- task ---
 
-**Test:** 🔄 Run your project to see the target with three coloured circles.
+**Test:** Run your project to see the target with three coloured circles.
 
 ![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png)Ewch ati i greu dau newidyn newydd i storio'r lliwiau `mewnol` a `canol_y_nod` ar gyfer y cylchoedd sy'n weddill.
-
---- /task ---
-
---- task ---
-
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png)[[[generic-theory-simple-colours]]]
-
---- collapse ---
----
-line_highlights: 24-25
----
-
---- code ---
----
-def draw():   
-#Pethau i'w gwneud ym mhob ffrâm
-line_highlights: 37-40
----
-
-awyr = color(92, 204, 206)   
-gwair = color(149, 212, 122)   
-pren = color(145, 96, 51)   
-allanol = color(0, 120, 180) #Glas    
-mewnol = color(210, 60, 60) # Coch    
-canol_y_nod = color(220, 200, 0) #Melyn
-# Things to do in every frame
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
