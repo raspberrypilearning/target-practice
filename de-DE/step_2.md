@@ -1,70 +1,11 @@
-## Erstelle einen Hintergrund
-
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Dein Spiel braucht einen farbenfrohen Hintergrund.
-</div>
-<div>
-
-![Der Ausgabebereich mit einem himmelfarbenen Rechteck über einem grasfarbenen Rechteck, um den Hintergrund zu erstellen.](images/background.png){:width="300px"}
-
-</div>
-</div>
-
-### Öffne das Starterprojekt
+## Zeichne das Gras
 
 --- task ---
 
-Öffne das Projekt [Zielübungsstarter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}. Der Code Editor wird in einem anderen Tab im Browser geöffnet.
-
-Wenn du ein Raspberry Pi Konto hast, kannst du auf **Speichern** klicken, um eine Kopie in deinen **Projekten**zu speichern.
+Öffne das Projekt [Zielübungsstarter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}.
 
 --- /task ---
 
-### Bearbeite den Himmel
-
---- task ---
-
-Für das Starterprojekt ist bereits Code geschrieben.
-
-Klicke auf **„Ausführen“**, um ein blau gefülltes Rechteck zu sehen, das bei x=`0`, y=`0` (oben auf dem Bildschirm) beginnt. Dieses `400` x `250` Pixel große Rechteck ist der Himmel.
-
-![Ein blaues Rechteck mit einem schwarzen Rand darüber, darüber ein graues Rechteck. Die obere linke Ecke der Leinwand ist mit x=0, y=0 markiert. Dies ist der Ursprung des Rechtecks. Die Breite wird mit 400 und die Höhe mit 250 hervorgehoben. Der Code rect(0, 0, 400, 250) wird angezeigt.](images/sky_stroke.png){:width="400px"}
-
-**Tipp:** 💡 Die Koordinaten beginnen bei (x=0, y=0) in der oberen linken Ecke. Dies kann sich von anderen Koordinatensystemen unterscheiden, die Du mal verwendet hast.
-
---- /task ---
-
---- task ---
-
-Der Himmel wurde mit einem schwarzen Rand (Strich, engl.: „stroke“) gezeichnet.
-
-Um den Strich für alle Formen auszuschalten, füge `no_stroke()` zur `aufsetzen` Funktion hinzu:
-
---- code ---
----
-language: python filename: main.py — setup() line_numbers: true line_number_start: 9
-line_highlights: 12
----
-def setup():
-# Richte hier Dein Spiel ein
-
-    size(400, 400)  # Width and height of screen
-    no_stroke()
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Führe mit **Ausführen** deinen Code erneut aus und beachte 👀, dass der Rand (stroke) jetzt verschwunden ist.
-
-**Tipp:** 💡 Du musst **Stopp** drücken, um dein Programm zu stoppen. Dadurch wird die Schaltfläche **Ausführen** wieder erscheinen.
-
---- /task ---
-
-### Zeichne das Gras
 
 --- task ---
 
@@ -75,19 +16,12 @@ Führe mit **Ausführen** deinen Code erneut aus und beachte 👀, dass der Rand
 --- code ---
 ---
 language: python filename: main.py — draw() line_numbers: true line_number_start: 14
-line_highlights: 18-19
+line_highlights: 12
 ---
-def draw():
-# Dinge die in jedem Frame passieren
-
-    fill('cyan')  # Set the fill colour for the sky to cyan
-    rect(0, 0, 400, 250)  # Draw a rectangle for the sky with these values for x, y, width, height
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-
---- /code ---
-
-**Tipp:** 💡 Wir haben Kommentare zu unserem Code hinzugefügt, wie etwa `# Setzt die Füllfarbe für den Himmel auf Cyan`, um dir zu sagen, was es bewirkt. Du musst deinem Code keine Kommentare hinzufügen, aber sie sind hilfreich, um dich daran zu erinnern, was Codezeilen bewirken.
+def draw(): # Things to do in every frame fill('cyan')  
+rect(0, 0, 400, 250)  
+fill('lightgreen')  
+rect(0, 250, 400, 150) --- /code ---
 
 --- /task ---
 
