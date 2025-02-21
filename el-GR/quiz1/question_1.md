@@ -10,16 +10,14 @@ Have fun!
 ---
 legend: Ερώτηση 1 από 3
 ---
-In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
+In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
 Εδώ είναι ένα μπλε τετράγωνο, ποιες είναι οι τιμές RGB που θα το δημιουργήσουν;
 ---
 language: python
 ---
 
-def setup():   
-size(400, 400)      
-no_stroke()
+def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randint(100, 300)
 
 --- /code ---
 
@@ -29,7 +27,7 @@ no_stroke()
 
   --- feedback ---
 
-Not quite. The size() function does this in this example.
+That's correct. This chooses a random x coordinate for your arrow.
 
   --- /feedback ---
 
@@ -37,7 +35,7 @@ Not quite. The size() function does this in this example.
 
   --- feedback ---
 
-Not quite. The fill() function does this and will usually include a given colour.
+Not quite. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
 
   --- /feedback ---
 
@@ -45,7 +43,7 @@ Not quite. The fill() function does this and will usually include a given colour
 
   --- feedback ---
 
-  That's correct. A black border will be drawn around your shapes if you do not use this function.
+  Not quite. The get() function would be used to get the colour.
 
   --- /feedback ---
 
