@@ -1,64 +1,18 @@
-ここでゲームをセットアップします
-
-Width and height of screen
-
 すべてのフレームで行うこと
 
-Set the fill colour for the sky to cyan
+Draw the inner circle
 
-Draw a rectangle for the sky with these values for x, y, width, height
-
-Set the fill colour for the grass to light green
-
-Draw a rectangle for the grass with these values for x, y, width, height
-
-Brown colour
-
-Draw a triangle for the target's stand
-
-Set the circle fill colour to blue
-
-Draw the outer circle
-
-Set the colour for the circle fill to red
-
-Draw the inner circle using x, y, width
-
-Set the colour for the circle fill to yellow
-
-Draw the middle circle using x, y, width
-
-Sky
-
-Ground
-
-スタンド
-
-外側の円
-
-内側の円
-
-Middle circle
+Draw the middle circle
 
 shoot_arrow関数はここにあります
 
-Store a random number between 100 and 300
-
-Set the arrow to fill colour to brown
-
-Draw a small circle at random coordinates
-
-他の機能でも使用可能
-
-Get the hit colour
-
 mouse_pressed関数はここにあります
-
-Like the code in functions, the code in 'if' statements is indented
 
 You hit the outer circle, 50 points!
 
 You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
 
 You hit the middle, 500 points!
 
@@ -71,5 +25,3 @@ Pretty quick
 Very fast
 
 Speed not recognised!
-
-
