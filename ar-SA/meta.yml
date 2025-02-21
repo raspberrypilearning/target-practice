@@ -21,10 +21,12 @@ steps:
     title: أطلق سهمك
   - 
     title: تسجيل النقاط
-    completion:
-      - internal
   - 
     title: تفكير
+    completion:
+      - external
+  - 
+    title: قم بتطوير مشروعك
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: قم بتطوير مشروعك
-  - 
     title: ما التالي؟
+    challenge: true
+  - 
+    title: What can you do now?
