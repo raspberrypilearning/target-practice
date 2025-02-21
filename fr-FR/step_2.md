@@ -6,7 +6,6 @@ Ouvre le [projet de démarrage Tir sur cible](https://editor.raspberrypi.org/en/
 
 --- /task ---
 
-
 --- task ---
 
 **Ajoute** du code pour dessiner un rectangle vert en bas de l'écran.
@@ -21,7 +20,9 @@ line_highlights: 21-22
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
 fill('lightgreen')  
-rect(0, 250, 400, 150) --- /code ---
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
