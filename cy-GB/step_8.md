@@ -6,8 +6,13 @@ Os ydych chi'n dilyn y llwybr [Cyflwyniad i Python](https://projects.raspberrypi
 --- print-only ---
 
 
---- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
+--- task ---
 
+Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position
+
+--- /task ---
+
+--- task ---
 
 --- no-print ---
 
