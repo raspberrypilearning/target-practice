@@ -21,10 +21,12 @@ steps:
     title: Scocca la tua freccia
   - 
     title: Punteggio
-    completion:
-      - internal
   - 
     title: Quiz veloce
+    completion:
+      - external
+  - 
+    title: Migliora il tuo progetto
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Migliora il tuo progetto
-  - 
     title: E adesso?
+    challenge: true
+  - 
+    title: What can you do now?
