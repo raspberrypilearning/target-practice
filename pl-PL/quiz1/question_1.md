@@ -10,46 +10,44 @@ Miłej zabawy!
 ---
 legend: Pytanie 1 z 3
 ---
-W swoim projekcie dodałeś no_stroke() do funkcji konfiguracji. Co robi funkcja no_stroke()?
+In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
-size(400, 400)      
-no_stroke()
+def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randint(100, 300)
 
 --- /code ---
 
 --- choices ---
 
-- ( ) Rysuje kształt za pomocą podanych współrzędnych.
+- (x) It chooses a random whole number between 100 and 300.
 
   --- feedback ---
 
-Nie do końca. Funkcja size() robi to w tym przykładzie.
+Zgadza się. This chooses a random x coordinate for your arrow.
 
   --- /feedback ---
 
-- ( ) Wypełnia kształt określonym kolorem.
+- ( ) It makes the arrow move randomly around the screen.
 
   --- feedback ---
 
-Nie do końca. Funkcja fill() to robi i zwykle zawiera dany kolor.
+Nie do końca. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
 
   --- /feedback ---
 
-- (X) wyłącza obramowanie(obrys) dla wszystkich kształtów.
+- () It gets the colour that was hit by the arrow.
 
   --- feedback ---
 
-  Zgadza się. Jeśli nie korzystasz z tej funkcji, wokół twoich kształtów zostanie narysowana czarna ramka.
+  Nie do końca. The get() function would be used to get the colour.
 
   --- /feedback ---
 
-- ( ) Narysuje kształt koła w twoim programie.
+- ( ) It draws a circle of a random size.
 
   --- feedback ---
 
