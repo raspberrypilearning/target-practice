@@ -1,66 +1,20 @@
-Richte hier Dein Spiel ein
-
-Breite und Höhe des Bildschirms
-
 Dinge die in jedem Frame passieren
 
-Setzt die Füllfarbe für den Himmel auf Cyan
+Draw the inner circle
 
-Zeichnet ein Rechteck für den Himmel mit diesen Werten für x, y, Breite, Höhe
-
-Stelle die Füllfarbe für das Gras auf Hellgrün ein
-
-Zeichnet ein Rechteck für das Gras mit diesen Werten für x, y, Breite, Höhe
-
-Braune Farbe
-
-Zeichne ein Dreieck für den Zielstand
-
-Stelle die Füllfarbe auf blue (blau) ein
-
-Zeichne den äußeren Kreis
-
-Stelle die Farbe für die Kreisfüllung auf red (rot) ein
-
-Zeichne den inneren Kreis mit x, y, Breite
-
-Stelle die Farbe für die Kreisfüllung auf yellow (gelb) ein
-
-Zeichne den mittleren Kreis mit x, y, Breite
-
-Himmel
-
-Boden
-
-Zielstand
-
-Äußerer Kreis
-
-Innerer Kreis
-
-Mittlerer Kreis
+Draw the middle circle
 
 Die Funktion „schiess_pfeil“ kommt hierher
 
-Speichere eine zufällige Zahl zwischen 100 und 300
-
-Stelle die Füllfarbe für den Pfeil auf Braun ein
-
-Zeichne einen kleinen Kreis an zufälligen Koordinaten
-
-Kann in anderen Funktionen verwendet werden
-
-Hol dir die getroffene Farbe
-
 Die Funktion „mouse_pressed“ kommt hierher
-
-Wie der Code in Funktionen ist der Code auch in 'if'-Anweisungen eingerückt
 
 Du hast den äußeren Kreis getroffen, 50 Punkte!
 
 Du hast den inneren Kreis getroffen, 200 Punkte!
 
 Du hast die Mitte getroffen, 500 Punkte!
+
+You hit the middle, 500 points!
 
 Du hast das Ziel leider verfehlt! Keine Punkte!
 
@@ -71,5 +25,3 @@ Ziemlich schnell
 Sehr schnell
 
 Geschwindigkeit unbekannt!
-
-
