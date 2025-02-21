@@ -21,10 +21,12 @@ steps:
     title: Schiet de pijl af
   - 
     title: Punten scoren
-    completion:
-      - internal
   - 
     title: Snelle quiz
+    completion:
+      - external
+  - 
+    title: Verbeter je project
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Verbeter je project
-  - 
     title: Wat kun je verder nog doen?
+    challenge: true
+  - 
+    title: What can you do now?
