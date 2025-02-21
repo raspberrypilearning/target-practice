@@ -1,66 +1,20 @@
-Tutaj skonfiguruj swoją grę
-
-Szerokość i wysokość ekranu
-
 Rzeczy do zrobienia w każdej klatce
 
-Ustaw kolor wypełnienia nieba na błękitny
+Draw the inner circle
 
-Narysuj prostokąt nieba z tymi wartościami dla x, y, width, height
-
-Ustaw kolor wypełnienia dla trawy na jasnozielony
-
-Narysuj prostokąt dla trawy z tymi wartościami dla x, y, width, height
-
-Brązowy kolor
-
-Narysuj trójkąt dla pozycjonera celu
-
-Ustaw kolor wypełnienia okręgu na niebieski
-
-Narysuj zewnętrzny okrąg
-
-Ustaw kolor wypełnienia okręgu na czerwony
-
-Narysuj wewnętrzny okrąg używając x, y, width
-
-Ustaw kolor wypełnienia okręgu na żółty
-
-Narysuj środkowy okrąg używając x, y, width
-
-Niebo
-
-Masa
-
-Stań
-
-Koło zewnętrzne
-
-Wewnętrzny okrąg
-
-Środkowy okrąg
+Draw the middle circle
 
 Pojawi się tutaj funkcja shoot_arrow
 
-Przechowuj losową liczbę z zakresu od 100 do 300
-
-Ustaw strzałkę, aby wypełnić kolor na brązowy
-
-Narysuj małe kółko o losowych współrzędnych
-
-Może być używany w innych funkcjach
-
-Zdobądź kolor uderzenia
-
 Tutaj pojawi się funkcja Mouse_pressed
-
-Podobnie jak kod w funkcjach, kod w instrukcji "IF" jest wcięty
 
 Trafiłeś w zewnętrzne koło, 50 punktów!
 
 Trafiłeś w wewnętrzne koło, 200 punktów!
 
 Trafiłeś na środek, 500 punktów!
+
+You hit the middle, 500 points!
 
 Przegapiłeś! Brak punktów!
 
@@ -71,5 +25,3 @@ Pretty quick
 Very fast
 
 Speed not recognised!
-
-
