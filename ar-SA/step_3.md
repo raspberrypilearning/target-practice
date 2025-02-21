@@ -28,10 +28,8 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 24-25
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill(wood) # اضبط لون تعبئة الحامل على البني<br x-id="5" />
+      triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -55,18 +53,15 @@ line_highlights: 24-25
 
 Draw a circle with x and y coordinates for its centre and a width.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![مثلث بني على العشب وضد السماء مع تحديد نقاط الإحداثيات. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 33
+language: python filename: main.py - draw() line_numbers: true line_number_start: 31
 line_highlights: 31-32
 ---
 
-    fill(wood)<br x-id="3" />
-      triangle(150, 350, 200, 150, 250, 350)<br x-id="3" />
-      fill(outer)<br x-id="4" />
-      ellipse(200, 200, 170, 170) #الدائرة الخارجية.
+    المثلث البني: triangle(50, 150, 200, 250, 180, 350)
 
 --- /code ---
 
@@ -94,14 +89,12 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 33-34
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
@@ -112,45 +105,6 @@ line_highlights: 33-34
 **تتبع الخطأ:** تستخدم Python التهجئة الأمريكية لـ "color" (بدون "u") لذا تأكد من فعل الشيء نفسه.
 
 ![مثلث بني به ثلاث دوائر ملونة على العشب ومقابل السماء.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![مثلث بني على العشب وضد السماء مع تحديد نقاط الإحداثيات. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Example code using different colours
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 37-40
----
-
-def draw():
-# أشياء يجب القيام بها في كل إطار
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
