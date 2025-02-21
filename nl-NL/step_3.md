@@ -24,13 +24,13 @@ Teken een driehoek met de x- en y-coördinaten voor elk van de hoeken.
 --- code ---
 ---
 language: python filename: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 24-25
+line_highlights: 20, 21
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  # Stel de kleur voor het gras in op lichtgroen
+    rect(0, 250, 400, 150)  # Teken een rechthoek voor het gras met deze waarden voor x, y, breedte en hoogte
+    fill('sienna')  # Bruine kleur
+    triangle(150, 350, 200, 150, 250, 350)  # Teken een driehoek voor de standaard van het doel
 
 --- /code ---
 
@@ -58,8 +58,8 @@ Teken een cirkel met x- en y-coördinaten voor het midden en de breedte.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 33
-line_highlights: 31-32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+line_highlights: 22, 23
 ---
 
     fill('sienna') # Bruine kleur
@@ -89,18 +89,18 @@ Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale 
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 28
-line_highlights: 33-34
+language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+line_highlights: 24, 25, 26, 27
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna')  # Bruine kleur
+    triangle(150, 350, 200, 150, 250, 350)  # Teken een driehoek voor de standaard van het doel
+    fill('blue')  # Stel de kleur van de cirkel in op blauw
+    circle(200, 200, 170)  # Teken de buitenste cirkel
+    fill('red')  # Stel de kleur voor de cirkel in op rood
+    circle(200, 200, 110)  # Teken de binnenste cirkel met x, y, breedte
+    fill('yellow')  # Stel de kleur voor de cirkel in op geel  
+    circle(200, 200, 30)  # Teken de middelste cirkel met x, y, breedte
 
 --- /code ---
 
@@ -111,45 +111,6 @@ line_highlights: 33-34
 **Test:** 🔄 Voer je project uit om het doel met drie gekleurde cirkels te zien.
 
 ![Een bruine driehoek met drie gekleurde cirkels op gras en tegen een lucht.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Kies:** 💭 Verander een van de kleuren met een andere kleurnaam. Je kunt een lijst met alle beschikbare kleurnamen vinden op [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Een bruine driehoek op gras en tegen een lucht met de coördinaatpunten gelabeld. De kleuren zijn veranderd in verschilende tinten roze en paars.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Voorbeeldcode met verschillende kleuren
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 37-40
----
-
-def draw():
-# Dingen om te doen in elk frame
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
