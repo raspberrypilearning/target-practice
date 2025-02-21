@@ -51,10 +51,12 @@ line_highlights: 33
 
 --- /task ---
 
---- task --- **Test:** Click the **Run** button. You should see the arrow in the centre.
-
+--- task ---
 
 **Teste:** 🔄 Execute seu projeto. You should see the arrow in the centre.
+
+
+**Test:** Click the **Run** button. You should see the arrow in the centre.
 
 ![a brown arrow circle in the centre of the target](images/arrow-centre.png)
 
