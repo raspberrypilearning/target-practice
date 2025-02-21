@@ -40,7 +40,9 @@ Rydyn ni'n defnyddio <span style="color: #0faeb0; font-weight: bold;">amodau</sp
 
 ### Run code when the mouse is pressed
 
---- task --- Comment out the line that prints the colour. This means it will not run.
+--- task ---
+
+Comment out the line that prints the colour. This means it will not run.
 
 --- code ---
 ---
@@ -51,11 +53,14 @@ line_highlights: 10-11
 ---
 
     global allanol, mewnol, canol_y_nod
+
 --- /code ---
 
 --- /task ---
 
---- task --- Add code to print the target emoji 🎯 **when the mouse is clicked**.
+--- task ---
+
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -64,13 +69,14 @@ line_highlights: 12-15
 ---
 # Pethau i'w gwneud ym mhob ffrâm
 def mouse_pressed():    
-print('🎯') --- /code ---
+print('🎯')
+
+--- /code ---
 
 --- /task ---
 
 --- task --- **Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
-
 
 --- save ---
