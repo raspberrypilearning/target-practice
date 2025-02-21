@@ -33,7 +33,9 @@ if hit_colour == Color('blue').hex:  # Come il codice delle funzioni, il codice 
 
 ### Run code when the mouse is pressed
 
---- task --- Comment out the line that prints the colour. This means it will not run.
+--- task ---
+
+Comment out the line that prints the colour. This means it will not run.
 
 --- code ---
 ---
@@ -43,11 +45,14 @@ line_highlights: 7, 8
 
     Visualizza un messaggio <strong x-id="1">if</strong> il <code>hit_color è uguale al colore del cerchio esterno (blu) 🎯.
     </code>
+
 --- /code ---
 
 --- /task ---
 
---- task --- Add code to print the target emoji 🎯 **when the mouse is clicked**.
+--- task ---
+
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -55,13 +60,15 @@ language: python filename: main.py line_numbers: true line_number_start: 5
 line_highlights: 9-12
 ---
 # La funzione mouse_pressed va qui
-def mouse_pressed():
+def mouse_pressed():    
+print('🎯')
+
+--- /code ---
 
 --- /task ---
 
 **Test:** 🔄 Esegui il tuo progetto. Prova a lanciare la freccia sul cerchio interno e su quello esterno per vedere il messaggio.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
-
 
 --- save ---
