@@ -10,15 +10,17 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: You will make
+    title: What you will make
   - 
-    title: Create a background
+    title: Draw the grass
   - 
     title: Draw your target
     completion:
       - engaged
   - 
-    title: Fire your arrow
+    title: Add an arrow
+  - 
+    title: What colour did you hit?
   - 
     title: Score points
     completion:
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: ನಿಮ್ಮ ಯೋಜನೆಯನ್ನು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ
+    title: Challenge
+    challenge: true
   - 
-    title: ಮುಂದೆ ಏನು?
+    title: What can you do now?
