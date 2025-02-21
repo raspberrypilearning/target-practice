@@ -7,7 +7,9 @@ You could:
 
 
 --- task ---
-Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position 
+
+Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position
+
 --- /task ---
 
 
