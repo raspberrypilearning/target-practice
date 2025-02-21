@@ -10,42 +10,40 @@ Veel plezier!
 ---
 legend: Vraag 1 van 3
 ---
-In je project heb je no_stroke() aan je setup-functie toegevoegd. Wat doet de functie no_stroke()?
+In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
-size(400, 400)      
-no_stroke()
+def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randint(100, 300)
 
 --- /code ---
 
 --- choices ---
 
-- ( ) Het tekent een vorm met behulp van de opgegeven coördinaten.
+- (x) It chooses a random whole number between 100 and 300.
 
   --- feedback ---
 
-Niet helemaal. De functie size() doet dit in dit voorbeeld.
+Dat klopt. This chooses a random x coordinate for your arrow.
 
   --- /feedback ---
 
-- ( ) Het vult de vorm met een bepaalde kleur.
+- ( ) It makes the arrow move randomly around the screen.
 
   --- feedback ---
 
-Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
+Niet helemaal. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
 
   --- /feedback ---
 
-- (x) Het schakelt de rand (stroke) voor alle vormen uit.
+- () It gets the colour that was hit by the arrow.
 
   --- feedback ---
 
-  Dat klopt. Als je deze functie niet gebruikt, wordt er een zwarte rand rond je vormen getekend.
+  Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
 
   --- /feedback ---
 
