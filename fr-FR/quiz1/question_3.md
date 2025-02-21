@@ -11,12 +11,12 @@ Un cercle est dessiné en utilisant le code suivant :
 language: python
 ---
 
-def configuration():   
+def setup():   
 size(400, 400)   
 fill(0, 255, 0)   
 no_stroke()
 
-def dessin():   
+def draw():   
 circle(0, 0, 300)
 
 run()
