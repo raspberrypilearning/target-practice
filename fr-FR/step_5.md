@@ -69,8 +69,12 @@ print('🎯')
 
 --- /task ---
 
-**Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur les cercles intérieurs et intermédiaires pour voir leurs messages.
+--- task ---
 
-![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
+**Test:** Click the **Run** button. Essaie de tirer la flèche sur les cercles intérieurs et intermédiaires pour voir leurs messages.
+
+![target emoji printed when mouse clicked](images/target_printed.gif)
+
+--- /task ---
 
 --- save ---
