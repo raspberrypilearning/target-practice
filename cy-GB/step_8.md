@@ -5,17 +5,24 @@ Os ydych chi'n dilyn y llwybr [Cyflwyniad i Python](https://projects.raspberrypi
 
 --- print-only ---
 
+
 --- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
 
---- task ---
 
 --- no-print ---
 
 --- /task ---
 
-**Rhoi cynnig arni:** Bydd eich rhaglen yn addasu'r animeiddiad ar sail faint o danwydd rydych chi'n ei roi iddo a bydd naill ai'n llwyddo neu'n methu cyrraedd orbit. Faint o danwydd ydych chi am ei ddefnyddio i gyrraedd orbit heb wastraffu gormod o danwydd ychwanegol?
+--- task ---
 
-**Cyngor:** Dylai tua 25,000kg fod yn ddigon, ond arbrofwch gyda'r rhifau i weld beth sy'n digwydd.
+Make the game easier or harder by changing the `frame_rate=2` value
+
+
+--- /task ---
+
+--- task ---
+
+Add a variable to keep track of the total score, adding the correct number of points to it each time.
 
 --- /task ---
 
