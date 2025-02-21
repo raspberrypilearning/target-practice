@@ -10,26 +10,32 @@ Divertiti!
 ---
 legend: Domanda 1 di 3
 ---
-Nel tuo progetto hai aggiunto no_stroke() alla funzione setup. Cosa fa la funzione no_stroke()?
+In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
-size(400, 400)      
-no_stroke()
+def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randint(100, 300)
 
 --- /code ---
 
 --- choices ---
 
-- ( ) Disegna una forma utilizzando le coordinate fornite.
+- (x) It chooses a random whole number between 100 and 300.
 
   --- feedback ---
 
-Non proprio. La funzione size() fa questo in questo esempio.
+È corretto. Se non utilizzi questa funzione verrà disegnato un bordo nero attorno alle tue forme.
+
+  --- /feedback ---
+
+- ( ) It makes the arrow move randomly around the screen.
+
+  --- feedback ---
+
+Non proprio. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
 
   --- /feedback ---
 
@@ -37,19 +43,11 @@ Non proprio. La funzione size() fa questo in questo esempio.
 
   --- feedback ---
 
-Non proprio. La funzione fill() fa questo e di solito includerà un dato colore.
+  Non proprio. La funzione fill() fa questo e di solito includerà un dato colore.
 
   --- /feedback ---
 
-- (x) Disattiva il bordo (stroke) per tutte le forme.
-
-  --- feedback ---
-
-  È corretto. Se non utilizzi questa funzione verrà disegnato un bordo nero attorno alle tue forme.
-
-  --- /feedback ---
-
-- ( ) Disegnerà una forma circolare nel tuo programma.
+- ( ) It draws a circle of a random size.
 
   --- feedback ---
 
