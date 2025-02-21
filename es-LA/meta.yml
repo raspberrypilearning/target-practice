@@ -10,7 +10,7 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Lo que harás
+    title: Harás
   - 
     title: Crea un fondo
   - 
@@ -21,18 +21,21 @@ steps:
     title: Dispara tu flecha
   - 
     title: Gana puntos
-    completion:
-      - interno
   - 
-    title: Examen rapido
+    title: Test rápido
+    completion:
+      - external
+  - 
+    title: Mejora tu proyecto
     knowledge_quiz:
-      path: prueba1
+      path: quiz1
       version: 1
       questions: 3
       passing_score: 3
     completion:
-      - externo
-  - 
-    title: Mejora tu proyecto
+      - external
   - 
     title: '¿Qué sigue?'
+    challenge: true
+  - 
+    title: What can you do now?
