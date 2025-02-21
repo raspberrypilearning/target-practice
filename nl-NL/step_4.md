@@ -19,15 +19,12 @@ Voeg code toe om een bruine cirkel binnen een doelgebied willekeurig te tekenen:
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
-line_highlights: 8-12
+language: python line_numbers: true line_number_start: 8
+line_highlights: 9-13
 ---
 # De schiet_pijl functie komt hier
-def schiet_pijl(): global raak_kleur # Kan ook gebruikt worden in andere functies  
-pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300    
-pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300 raak_kleur = get(pijl_x, pijl_y).hex # Haal de geraakte kleur op     
-fill('sienna') # Stel vulkeur van de pijl in op bruin   
-circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
+def shoot_arrow():   
+arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -39,13 +36,13 @@ Ga naar de functie `draw` en roep je nieuwe `schiet_pijl` functie aan.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 31
-line_highlights: 33
+language: python line_numbers: true line_number_start: 33
+line_highlights: 35
 ---
 
-    fill('yellow')  # Stel de kleur voor de cirkel in op geel      
-    circle(200, 200, 30)  # Teken de middelste cirkel met x, y, breedte
-    schiet_pijl()
+    fill('yellow')      
+    circle(200, 200, 30)  
+    shoot_arrow()
 
 --- /code ---
 
@@ -61,14 +58,10 @@ The arrow needs to move randomly.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
-line_highlights: 9, 12
+language: python line_numbers: true line_number_start: 9
+line_highlights: 10-11
 ---
-def schiet_pijl():   
-pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300    
-pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300    
-fill('sienna') # Stel vulkeur van de pijl in op bruin   
-circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
+def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
