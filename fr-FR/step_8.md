@@ -1,30 +1,24 @@
-## Et ensuite ?
+## Challenge
 
-Si tu suis le parcours [Introduction à Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) , tu peux passer au projet [Lancement de fusée](https://projects.raspberrypi.org/en/projects/rocket-launch). Dans ce projet, tu réaliseras une animation interactive d'une fusée lançant un satellite en orbite.
+--- challenge ---
 
---- print-only ---
 
-![Projet de lancement de fusée.](images/showcase_rocket.png){:width="600px"}
+You could:
 
---- /print-only ---
-
---- no-print ---
+--- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
 
 --- task ---
 
-**Essaie-le :** ton programme ajustera l'animation en fonction de la quantité de carburant que tu lui donneras et réussira ou échouera à atteindre l'orbite. Quelle quantité de carburant veux-tu utiliser pour atteindre l'orbite sans gaspiller trop de carburant supplémentaire ?
-
-**Astuce :** environ 25 000 kg devraient suffire, mais expérimente avec les nombres pour voir ce qui se passe.
-
-Clique sur le bouton **Run** pour afficher un exemple de ce projet.
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-![Projet de lancement de fusée](images/showcase_rocket.png){:width="600px"}
+Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 
 --- /task ---
 
---- /no-print ---
+--- task --- Make the game easier or harder by changing the `frame_rate=2` value --- /task ---
 
-Si tu veux t'amuser davantage en explorant Python, tu peux essayer n'importe lequel de [ces projets](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+--- task --- Add a variable to keep track of the total score, adding the correct number of points to it each time.
+
+--- /task ---
+
+
+
+--- /no-print ---
