@@ -1,66 +1,20 @@
-Configure seu jogo aqui
-
-Largura e altura da tela
-
 Coisas para fazer em cada quadro
 
-Defina a cor de preenchimento do céu como ciano
+Draw the inner circle
 
-Desenhe um retângulo para o céu com estes valores para x, y, largura, altura
-
-Defina a cor de preenchimento da grama para verde-claro
-
-Desenhe um retângulo para a grama com estes valores para x, y, largura, altura
-
-Cor marrom
-
-Desenhe um triângulo para o suporte do alvo
-
-Defina a cor de preenchimento como azul
-
-Desenhe o círculo externo
-
-Defina a cor do preenchimento do círculo como vermelho
-
-Desenhe o círculo interno usando x, y, largura
-
-Defina a cor do preenchimento do círculo como amarelo
-
-Desenhe o círculo do meio usando x, y, largura
-
-Céu
-
-Chão
-
-Suporte
-
-Círculo externo
-
-Círculo interno
-
-Círculo do meio
+Draw the middle circle
 
 A função atirar_flecha vai aqui
 
-Armazena um número aleatório entre 100 e 300
-
-Defina a cor de preenchimento da flecha como marrom
-
-Desenha um pequeno círculo em coordenadas aleatórias
-
-Pode ser usado em outras funções
-
-Obtém a cor acertada
-
 A função mouse_pressed vai aqui
-
-Assim como o código nas funções, o código nas instruções 'if' é recuado
 
 Você acertou o círculo externo, 50 pontos!
 
 Você acertou o círculo interno, 200 pontos!
 
 Você acertou o meio, 500 pontos!
+
+You hit the middle, 500 points!
 
 Você errou! Sem pontos!
 
@@ -71,5 +25,3 @@ Bem rápida
 Muito rápida
 
 Velocidade não reconhecida!
-
-
