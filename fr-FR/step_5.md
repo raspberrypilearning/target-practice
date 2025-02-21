@@ -34,7 +34,9 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 ### Run code when the mouse is pressed
 
---- task --- Comment out the line that prints the colour. This means it will not run.
+--- task ---
+
+Comment out the line that prints the colour. This means it will not run.
 
 --- code ---
 ---
@@ -45,11 +47,14 @@ line_highlights: 14
     hit_colour = get(arrow_x, arrow_y).hex
     # print(hit_colour)
     circle(arrow_x, arrow_y, 15)
+
 --- /code ---
 
 --- /task ---
 
---- task --- Add code to print the target emoji 🎯 **when the mouse is clicked**.
+--- task ---
+
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -58,13 +63,14 @@ line_highlights: 6-7
 ---
 # La fonction souris_pressee vient ici
 def mouse_pressed():    
-print('🎯') --- /code ---
+print('🎯')
+
+--- /code ---
 
 --- /task ---
 
 **Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur les cercles intérieurs et intermédiaires pour voir leurs messages.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
-
 
 --- save ---
