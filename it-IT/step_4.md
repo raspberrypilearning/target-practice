@@ -50,11 +50,20 @@ line_highlights: 33
 
 --- task --- **Test:** Click the **Run** button. You should see the arrow in the centre.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png) --- /task ---
+
+**Test:** 🔄 Esegui il tuo progetto. You should see the arrow in the centre.
+
+![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+
+
+--- /task ---
 
 The arrow needs to move randomly.
 
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
+
+--- task ---
+
+Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
 
 --- code ---
 ---
@@ -71,7 +80,7 @@ def shoot_arrow(): global hit_colour  # Può essere utilizzato in altre funzioni
 --- task ---
 
 
-**Test:** 🔄 Esegui il tuo progetto. You should see the arrow jump around the target.
+**Test:** Click the **Run** button. You should see the arrow jump around the target.
 
 ![Un'animazione del bersaglio con una freccia circolare marrone che appare in diverse posizioni.](images/fire_arrow.gif)
 
