@@ -63,9 +63,9 @@ line_highlights: 22, 23
 ---
 
     fill('sienna') # Cor marrom
-    triângulo(150, 350, 200, 150, 250, 350) # Desenha um triângulo para o suporte do alvo 
+    triangle(150, 350, 200, 150, 250, 350) # Desenha um triângulo para o suporte do alvo 
     fill('blue') # Define a cor de preenchimento do círculo para azul
-    circle( 200, 200, 170) # Desenha o círculo externo
+    circle(200, 200, 170) # Desenha o círculo externo
 
 --- /code ---
 
@@ -96,10 +96,10 @@ line_highlights: 24, 25, 26, 27
     fill('sienna') # Cor marrom
     triangle(150, 350, 200, 150, 250, 350) # Desenha um triângulo para o suporte do alvo 
     fill('blue') # Define a cor de preenchimento do círculo para azul
-    circle( 200, 200, 170) # Desenha o círculo externo
+    circle(200, 200, 170) # Desenha o círculo externo
     fill('red') # Define a cor do preenchimento do círculo para vermelho
     circle(200, 200, 110) # Desenha o círculo interno usando x, y, width
-    fill ('yellow') # Define a cor de preenchimento do círculo para amarelo      
+    fill('yellow') # Define a cor de preenchimento do círculo para amarelo      
     circle(200, 200, 30) # Desenha o círculo do meio usando x, y, largura
 
 --- /code ---
@@ -111,45 +111,6 @@ line_highlights: 24, 25, 26, 27
 **Teste:** 🔄 Execute seu projeto para ver o alvo com três círculos coloridos.
 
 ![Um triângulo marrom com três círculos coloridos na grama e um céu de fundo.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Escolha:** 💭 Altere qualquer uma das cores usando um nome de cor diferente. Você pode encontrar uma lista de todos os nomes de cores disponíveis em [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Um triângulo marrom com três círculos coloridos na grama e um céu de fundo. As cores mudaram para rosa e roxo.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Exemplo de código usando cores diferentes
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: false line_number_start: 14
-line_highlights:
----
-
-def draw():
-# Coisas para fazer em cada quadro
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250) # Céu
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150) # Solo
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350) # Suporte
-    fill('LemonChiffon')
-    circle(200, 200, 170) # Círculo externo
-    fill('DeepPink')
-    circle(200, 200, 110) # Círculo interno
-    fill('BlueViolet')
-    circle(200, 200, 30) # Círculo do meio
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
