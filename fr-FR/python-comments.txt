@@ -1,64 +1,18 @@
-Configure ton jeu ici
-
-largeur et hauteur de l'écran
-
 Choses à faire dans chaque image
 
-Set the fill colour for the sky to cyan
+Draw the inner circle
 
-Draw a rectangle for the sky with these values for x, y, width, height
-
-Définir la couleur de remplissage du support sur herbe
-
-x, y, largeur, hauteur
-
-Couleur
-
-Draw a triangle for the target's stand
-
-Définir la couleur de remplissage de l'ellipse sur milieu
-
-Cercle extérieur
-
-Définir la couleur de remplissage de l'ellipse sur extérieur
-
-Cercle intérieur - x, y, largeur de l'ellipse
-
-Définir la couleur de remplissage de l'ellipse sur intérieur
-
-Cercle du centre - x, y, largeur de l'ellipse
-
-Sky
-
-Ground
-
-Support
-
-Cercle extérieur
-
-Cercle intérieur
-
-Middle circle
+Draw the middle circle
 
 La fonction tire_fleche vient ici
 
-Stocker un nombre aléatoire entre 100 et 300
-
-Définir la couleur de remplissage de la flèche sur bois
-
-Dessiner une petite ellipse à des coordonnées aléatoires
-
-Peut être utilisé dans d'autres fonctions
-
-Obtenir la couleur du succès
-
 La fonction souris_pressee vient ici
-
-Comme les fonctions, les instructions "if" sont indentées
 
 You hit the outer circle, 50 points!
 
 You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
 
 You hit the middle, 500 points!
 
@@ -71,5 +25,3 @@ Pretty quick
 Very fast
 
 Speed not recognised!
-
-
