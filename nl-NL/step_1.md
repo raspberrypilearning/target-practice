@@ -1,12 +1,9 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Vul onze enquête</a> in om onze Code Editor te helpen verbeteren!
-</div>
-
 ## Wat ga je maken
 
 Gebruik Python, met de `p5` grafische bibliotheek, om een doel te tekenen en punten te scoren door het met pijlen te raken.
 
---- no-print ---
+![Een boogschietdoel met een trefpunt op de buitenste cirkel. De tekst 'Je raakt de buitenste cirkel, 50 punten!' wordt eronder weergegeven](images/blue-points.png){:width="640px"}
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -20,10 +17,9 @@ Klik op de knop **Run** hieronder om het spel te starten. Wanneer de stip op het
 
 --- /no-print ---
 
---- print-only ---
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Vul onze enquête</a> in om onze Code Editor te helpen verbeteren!
+</div>
 
-![Een boogschietdoel met een trefpunt op de buitenste cirkel. De tekst 'Je raakt de buitenste cirkel, 50 punten!' wordt eronder weergegeven](images/blue-points.png){:width="640px"}
-
---- /print-only ---
 
 
