@@ -5,7 +5,7 @@ from random import randint
 
 # De mouse_pressed functie komt hier
 def mouse_pressed():
-    global raak_kleur # Kan in andere functies worden gebruikt
+    # print('🎯')
     if raak_kleur == Color('blue').hex: # Net als bij functies worden 'if'-instructies ingesprongen
         print('Je hebt de buitenste cirkel geraakt, 50 punten!')
     elif raak_kleur == Color('red').hex:
