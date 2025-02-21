@@ -1,64 +1,18 @@
-Configura tu juego aquí
-
-ancho y alto de la pantalla
-
 Cosas que hacer en cada cuadro
 
-Set the fill colour for the sky to cyan
+Draw the inner circle
 
-Draw a rectangle for the sky with these values for x, y, width, height
-
-Establece el color de relleno del soporte en césped
-
-Draw a rectangle for the grass with these values for x, y, width, height
-
-Color
-
-Draw a triangle for the target's stand
-
-Establece el color de relleno del círculo en medio
-
-Círculo exterior
-
-Establece el color de relleno del círculo en exterior
-
-Círculo interior - x, y, ancho del círculo
-
-Establece el color de relleno del círculo en interior
-
-Círculo medio - x, y, ancho del círculo
-
-Sky
-
-Base
-
-Base
-
-Círculo exterior
-
-Círculo interior
-
-Círculo interior
+Draw the middle circle
 
 La función disparar_flecha va aquí
 
-Almacena un número aleatorio entre 100 y 300
-
-Establece el color de relleno de la flecha en madera
-
-Dibuja un pequeño círculo en coordenadas aleatorias
-
-Se puede utilizar en otras funciones
-
-Consigue el color en que cayó la flecha
-
 La función mouse_pressed va aquí
-
-Al igual que las funciones, las declaraciones 'if' están indentandas
 
 You hit the outer circle, 50 points!
 
 You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
 
 You hit the middle, 500 points!
 
@@ -71,5 +25,3 @@ Bastante rápido
 Muy rapido
 
 ¡Velocidad no reconocida!
-
-
