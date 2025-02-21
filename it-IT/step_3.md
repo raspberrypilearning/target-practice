@@ -27,10 +27,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 20, 21
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  # Imposta il colore di riempimento dell'erba su verde chiaro
+    rect(0, 250, 400, 150)  # Disegna un rettangolo per il cielo con questi valori per x, y, larghezza, altezza
+    fill('sienna')  # Colore marrone
+    triangle(150, 350, 200, 150, 250, 350)  # Disegna un triangolo per la posizione del bersaglio
 
 --- /code ---
 
@@ -62,10 +62,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 22, 23
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('sienna')  # Colore marrone
+    triangle(150, 350, 200, 150, 250, 350)  # Disegna un triangolo per la posizione del bersaglio
+    fill('blue')  # Imposta il colore di riempimento del cerchio su blu
+    circle(200, 200, 170)  # Disegna il cerchio esterno
 
 --- /code ---
 
@@ -75,7 +75,7 @@ line_highlights: 22, 23
 
 **Test:** Esegui il codice per vedere il primo grande cerchio blu.
 
-Il cerchio blu è stato disegnato dopo lo stand, quindi appare davanti.
+Il cerchio blu è stato disegnato dopo il supporto, quindi appare davanti.
 
 ![Un triangolo marrone e un cerchio blu sull'erba e sopra il cielo.](images/blue-circle.png){:width="400px"}
 
@@ -93,14 +93,14 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 24, 25, 26, 27
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna')  # Colore marrone
+    triangle(150, 350, 200, 150, 250, 350)  # Disegna un triangolo per la posizione del bersaglio
+    fill('blue')  # Imposta il colore di riempimento del cerchio su blu
+    circle(200, 200, 170)  # Disegna il cerchio esterno
+    fill('red')  # Imposta il colore di riempimento del cerchio su rosso
+    circle(200, 200, 110)  # Disegna il cerchio interno usando x, y, larghezza
+    fill('yellow')  # Imposta il colore di riempimento del cerchio su giallo
+    circle(200, 200, 30)  # Disegna il cerchio interno usando x, y, larghezza
 
 --- /code ---
 
@@ -111,45 +111,6 @@ line_highlights: 24, 25, 26, 27
 **Test:** 🔄 Esegui il tuo progetto per vedere il bersaglio con i tre cerchi colorati.
 
 ![Un triangolo marrone e tre cerchi colorati sull'erba e sopra il cielo.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Scegli:** 💭 Cambia uno qualsiasi dei colori utilizzando un nome di colore diverso. Puoi trovare un elenco di tutti i nomi dei colori disponibili su [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Un triangolo marrone e tre cerchi colorati sull'erba e sopra il cielo. I colori sono cambiati in rosa e viola.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: codice di esempio che utilizza colori diversi
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: false line_number_start: 14
-line_highlights:
----
-
-def draw():
-# Cose da fare in ogni fotogramma
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
