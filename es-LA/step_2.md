@@ -6,7 +6,6 @@ Abre el [proyecto inicial de Tiro al blanco](https://trinket.io/python/88502d587
 
 --- /task ---
 
-
 --- task ---
 
 **Agregue** código para dibujar un rectángulo verde en la parte inferior de la pantalla.
@@ -21,7 +20,9 @@ line_highlights: 15
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
 fill('lightgreen')  
-rect(0, 250, 400, 150) --- /code ---
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
