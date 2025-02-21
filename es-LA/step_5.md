@@ -40,7 +40,9 @@ print('¡Fallaste! ¡Sin puntos!')
 
 ### Run code when the mouse is pressed
 
---- task --- Comment out the line that prints the colour. This means it will not run.
+--- task ---
+
+Comment out the line that prints the colour. This means it will not run.
 
 --- code ---
 ---
@@ -51,11 +53,14 @@ line_highlights: 9
     hit_colour = get(arrow_x, arrow_y).hex
     # print(hit_colour)
     circle(arrow_x, arrow_y, 15)
+
 --- /code ---
 
 --- /task ---
 
---- task --- Add code to print the target emoji 🎯 **when the mouse is clicked**.
+--- task ---
+
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -63,15 +68,15 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 9, 10
 ---
 # La función mouse_pressed va aquí
-def mouse_pressed():     
-if color_de_impacto == externo:      
-print('Le diste al círculo externo, ¡50 puntos!') # Al igual que las funciones, las declaraciones 'if' están indentandas
+def mouse_pressed():    
+print('🎯')
+
+--- /code ---
 
 --- /task ---
 
 **Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en los círculos interior y medio para ver sus mensajes.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
-
 
 --- save ---
