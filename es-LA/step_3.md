@@ -27,10 +27,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 29, 30
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill(pasto)<br x-id="3" />
+      rect(0, 250, 400, 150) 
+      fill(madera) # Establece el color de relleno del soporte en madera<br x-id="5" />
+      triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -58,7 +58,7 @@ Dibuja un círculo con coordenadas x e y para su centro y un ancho.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
+language: python filename: main.py - draw() line_numbers: true line_number_start: 17
 line_highlights: 31, 32
 ---
 
@@ -111,45 +111,6 @@ line_highlights: 24, 25
 **Prueba:** Vuelve a ejecutar tu proyecto para ver el blanco con tres círculos de colores.
 
 ![Un triángulo marrón con tres círculos de colores sobre el césped y contra el cielo.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Elige:** 💭 Cambia cualquiera de los colores. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Un triángulo marrón con tres círculos de colores sobre el césped y contra el cielo. Los colores han cambiado a rosas y morados.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Example code using different colours
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 17
-line_highlights: 35, 36, 37, 38
----
-
-def draw():
-# Things to do in every frame
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
