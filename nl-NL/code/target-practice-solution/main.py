@@ -1,4 +1,4 @@
-# Bibliotheekcode importeren!
+# Bibliotheekcode importeren
 from p5 import *
 from random import randint
 
@@ -6,7 +6,7 @@ from random import randint
 # De mouse_pressed functie komt hier
 def mouse_pressed():
     # print('🎯')
-    if raak_kleur == Color('blue').hex: # Net als bij functies worden 'if'-instructies ingesprongen
+    if hit_colour == Color("blue").hex:
         print('Je hebt de buitenste cirkel geraakt, 50 punten!')
     elif raak_kleur == Color('red').hex:
         print('Je hebt de binnenste cirkel geraakt, 200 punten!')
