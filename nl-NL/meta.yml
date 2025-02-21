@@ -24,7 +24,7 @@ steps:
   - 
     title: Snelle quiz
     completion:
-      - external
+      - internal
   - 
     title: Verbeter je project
     knowledge_quiz:
