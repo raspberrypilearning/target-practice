@@ -21,10 +21,12 @@ steps:
     title: 矢を放つ
   - 
     title: 得点
-    completion:
-      - internal
   - 
     title: ふりかえり
+    completion:
+      - external
+  - 
+    title: プロジェクトをアップグレードする
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: プロジェクトをアップグレードする
-  - 
     title: 次は何をしますか？
+    challenge: true
+  - 
+    title: What can you do now?
