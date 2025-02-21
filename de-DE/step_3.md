@@ -27,10 +27,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 20, 21
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  # Stelle die Füllfarbe für das Gras auf Hellgrün ein
+    rect(0, 250, 400, 150)  # Zeichnet ein Rechteck für das Gras mit diesen Werten für x, y, Breite, Höhe
+    fill('sienna')  # Braune Farbe
+    triangle(150, 350, 200, 150, 250, 350)  # Zeichne ein Dreieck für den Zielstand
 
 --- /code ---
 
@@ -62,10 +62,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 22, 23
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('sienna')  # Braune Farbe
+    triangle(150, 350, 200, 150, 250, 350)  # Zeichne ein Dreieck für den Zielstand
+    fill('blue')  # Stelle die Füllfarbe auf blue (blau) ein
+    circle(200, 200, 170)  # Zeichne den äußeren Kreis
 
 --- /code ---
 
@@ -93,14 +93,14 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 24, 25, 26, 27
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna')  # Braune Farbe
+    triangle(150, 350, 200, 150, 250, 350)  # Zeichne ein Dreieck für den Zielstand
+    fill('blue')  # Stelle die Füllfarbe auf blue (blau) ein
+    circle(200, 200, 170)  # Zeichne den äußeren Kreis
+    fill('red')  # Stelle die Farbe für die Kreisfüllung auf red (rot) ein
+    circle(200, 200, 110)  # Zeichne den inneren Kreis mit x, y, Breite
+    fill('yellow')  # Stelle die Farbe für die Kreisfüllung auf yellow (gelb) ein
+    circle(200, 200, 30)  # Zeichne den mittleren Kreis mit x, y, Breite
 
 --- /code ---
 
@@ -111,45 +111,6 @@ line_highlights: 24, 25, 26, 27
 **Test:** 🔄 Führe dein Projekt aus, um die Zielscheibe mit drei farbigen Kreisen zu sehen.
 
 ![Ein braunes Dreieck mit drei farbigen Kreisen auf Gras und vor einem Himmel.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Wähle aus:** 💭 Ändere eine der Farben, indem du einen anderen Farbnamen benutzt. Eine Liste aller verfügbaren Farbnamen findest Du auf [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Ein braunes Dreieck mit drei farbigen Kreisen auf Gras und vor einem Himmel. Die Farben haben sich in Rosa und Lila geändert.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Beispielcode mit verschiedenen Farben
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: false line_number_start: 14
-line_highlights:
----
-
-def draw():
-# Dinge die in jedem Frame passieren
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
