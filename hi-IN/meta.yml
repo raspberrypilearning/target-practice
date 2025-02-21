@@ -10,21 +10,23 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: आप बनाएँगे
+    title: What you will make
   - 
-    title: एक पृष्ठभूमि बनाएँ
+    title: Draw the grass
   - 
     title: अपना लक्ष्य बनाएँ
     completion:
       - engaged
   - 
-    title: अपनी तीर चलाएँ
+    title: Add an arrow
   - 
-    title: अंक स्कोर करें
+    title: What colour did you hit?
+  - 
+    title: Score points
     completion:
       - internal
   - 
-    title: शीघ्र क्विज़
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: प्रोजेक्ट को अपग्रेड करें
+    title: Challenge
+    challenge: true
   - 
-    title: आगे क्या?
+    title: What can you do now?
