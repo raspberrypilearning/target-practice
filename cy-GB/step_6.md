@@ -62,7 +62,9 @@ language: python line_numbers: true line_number_start: 6
 line_highlights: 10-14
 ---
 
-def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!') --- /code ---
+def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!')
+
+--- /code ---
 
 --- /task ---
 
@@ -94,6 +96,7 @@ line_highlights: 14-15
         print('You hit the middle, 500 points!')
     else:   
         print('You missed! No points!')
+
 --- /code ---
 
 --- /task ---
