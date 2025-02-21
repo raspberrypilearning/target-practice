@@ -1,30 +1,24 @@
-## Co dalej?
+## Challenge
 
-Jeśli podążasz ścieżką Wprowadzenie [ do ](https://projects.raspberrypi.org/en/raspberrypi/python-intro), możesz przejść do projektu [ ](https://projects.raspberrypi.org/en/projects/rocket-launch) . W tym projekcie stworzysz interaktywną animację rakiety wystrzeliwującej satelitę na orbitę.
+--- challenge ---
 
---- print-only ---
 
-![Projekt uruchomienia rakiety.](images/showcase_rocket.png){:width="600px"}
+You could:
 
---- /print-only ---
-
---- no-print ---
+--- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
 
 --- task ---
 
-** Spróbuj:** Twój program dostosuje animację w zależności od tego, ile paliwa mu dasz i czy uda się osiągnąć orbitę lub jej się nie uda. Ile paliwa chcesz użyć, aby dotrzeć na orbitę, ale nie marnować zbyt dużo dodatkowego paliwa?
-
-** Wskazówka: ** około 25 000 kg powinno wystarczyć, ale eksperymentuj z liczbami, aby zobaczyć, co się stanie.
-
-Kliknij przycisk ** ** , aby wyświetlić przykład tego projektu.
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-![Projekt uruchomienia rakiety](images/showcase_rocket.png){:width="600px"}
+Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 
 --- /task ---
 
---- /no-print ---
+--- task --- Make the game easier or harder by changing the `frame_rate=2` value --- /task ---
 
-Jeśli chcesz mieć więcej zabawy podczas odkrywania Pythona, możesz wypróbować dowolny z tych projektów [.](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+--- task --- Add a variable to keep track of the total score, adding the correct number of points to it each time.
+
+--- /task ---
+
+
+
+--- /challenge ---
