@@ -47,7 +47,9 @@ line_highlights: 44-45
 
 --- /task ---
 
---- task --- **Test:** Click the **Run** button. You should see the arrow in the centre.
+--- task ---
+
+**Test:** Click the **Run** button. You should see the arrow in the centre.
 
 
 **Test:** Click the **Run** button. You should see the arrow in the centre.
