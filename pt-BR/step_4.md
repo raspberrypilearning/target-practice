@@ -53,11 +53,20 @@ line_highlights: 33
 
 --- task --- **Test:** Click the **Run** button. You should see the arrow in the centre.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png) --- /task ---
+
+**Teste:** 🔄 Execute seu projeto. You should see the arrow in the centre.
+
+![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+
+
+--- /task ---
 
 The arrow needs to move randomly.
 
---- task --- Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+
+--- task ---
+
+Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
 
 --- code ---
 ---
@@ -78,7 +87,7 @@ circle(flecha_x, flecha_y, 15) # Desenha um pequeno círculo em coordenadas alea
 --- task ---
 
 
-**Teste:** 🔄 Execute seu projeto. You should see the arrow jump around the target.
+**Test:** Click the **Run** button. You should see the arrow jump around the target.
 
 ![Uma animação do alvo com uma seta circular marrom aparecendo em diversas posições.](images/fire_arrow.gif)
 
