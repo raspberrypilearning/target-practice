@@ -2,9 +2,11 @@
 from p5 import *
 from random import randint
 
+
 # La funzione mouse_pressed va qui
 def mouse_pressed():
-    if hit_color == Color('blue').hex: # Come le funzioni, le istruzioni 'if' sono rientrate
+    global hit_colour # Può essere utilizzato in altre funzioni
+    if hit_colour == Color('blue').hex: # Come le funzioni, le istruzioni 'if' sono rientrate
         print('Hai colpito il cerchio esterno, 50 punti!')
     elif hit_colour == Color('red').hex:
         print('Hai colpito il cerchio esterno, 200 punti!')
@@ -13,19 +15,23 @@ def mouse_pressed():
     else:
         print('L\'hai mancato! Zero punti!')
 
+
 # La funzione shoot_arrow va qui
 def shoot_arrow():
-    global hit_color # Può essere utilizzato in altre funzioni
+    global hit_colour
     arrow_x = randint(100, 300)  # Memorizza un numero casuale compreso tra 100 e 300
     arrow_y = randint(100, 300)  # Memorizza un numero casuale compreso tra 100 e 300
-    hit_color = get(arrow_x, arrow_y).hex # Ottieni il colore del risultato
+    hit_colour = get(arrow_x, arrow_y).hex # Ottieni il colore del risultato
+    # print(hit_colour)
     fill('sienna') # Imposta la freccia per riempire il colore su marrone
     circle(arrow_x, arrow_y, 15)  # Disegna un piccolo cerchio a coordinate casuali
+
 
 def setup():
     # Imposta il tuo gioco qui
     size(400, 400)  # larghezza e altezza
     no_stroke()
+
 
 def draw():
     # Cose da fare in ogni fotogramma
@@ -42,6 +48,7 @@ def draw():
     fill('yellow')
     circle(200, 200, 30)  # Cerchio intermedio
     shoot_arrow()
+
 
 # Conserva questa parte per eseguire il codice
 run(frame_rate=2)
