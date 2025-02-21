@@ -6,31 +6,17 @@
 
 Use Python, com a biblioteca de gráficos `p5`, para desenhar um alvo e marcar pontos acertando-o com flechas.
 
-Você deve:
- + Personalizar seu jogo com **cores RGB**
- + Usar **instruções condicionais** (`if`, `elif`, `else`) para tomar decisões
- + Posicionar formas com **coordenadas x, y**
-
 --- no-print ---
-
-### Jogar ▶️
-
---- task ---
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
 Clique no botão **Executar** abaixo para iniciar o jogo. Quando o ponto aparecer no alvo 🎯, clique com o mouse (ou toque no tablet) para disparar sua flecha. 
 
-Tente algumas vezes. Sua pontuação aparece na área de saída (output) abaixo do alvo. Como sua pontuação muda quando a flecha acerta em cores diferentes? 
   <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
 </div>
 </div>
-
-**Dica:** 💡 Ao pressionar **Stop** você verá um prompt que diz 'Execution interrupted'. Isso significa que você interrompeu o programa enquanto o código ainda estava em execução.
-
---- /task ---
 
 --- /no-print ---
 
@@ -40,8 +26,4 @@ Tente algumas vezes. Sua pontuação aparece na área de saída (output) abaixo 
 
 --- /print-only ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A evidência mais antiga de <span style="color: #0faeb0; font-weight: bold;"> tiro com arco </span> vem da Caverna Sibudu em KwaZulu-Natal, África do Sul. Restos de pontas de flechas de pedra e osso foram encontrados, que datam entre 60.000 a 70.000 anos atrás. 
-</p>
 
-![](http://code.org/api/hour/begin_coderdojo_target.png)
