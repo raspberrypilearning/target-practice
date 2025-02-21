@@ -6,7 +6,6 @@ Apri il progetto [Target Practice Starter](https://editor.raspberrypi.org/en/pro
 
 --- /task ---
 
-
 --- task ---
 
 **Aggiungi** il codice per disegnare un rettangolo verde nella parte inferiore dello schermo.
@@ -21,7 +20,9 @@ line_highlights: 12
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
 fill('lightgreen')  
-rect(0, 250, 400, 150) --- /code ---
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
