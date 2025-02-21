@@ -4,6 +4,6 @@
 
 стрілка_y
 
-hit_color
+hit_colour
 
 speed
