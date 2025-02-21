@@ -80,6 +80,7 @@ def mouse_pressed():
         print('You hit the inner circle, 200 points!')
     elif hit_colour == Color('yellow').hex:
         print('You hit the middle, 500 points!')
+
 --- /code ---
 
 --- /task ---
@@ -114,6 +115,7 @@ line_highlights: 14-15
         print('You hit the middle, 500 points!')
     else:   
         print('You missed! No points!')
+
 --- /code ---
 
 --- /task ---
