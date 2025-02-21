@@ -1,12 +1,9 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Nimm an unserer Umfrage teil</a>, um unseren Code Editor zu verbessern!
-</div>
-
 ## Das wirst Du machen
 
 Verwende Python mit der Grafikbibliothek `p5`, um eine Zielscheibe zu zeichnen, und Punkte zu erzielen, indem Du sie mit Pfeilen triffst.
 
---- no-print ---
+![Ein Bogenschießziel mit einem Trefferpunkt am äußeren Kreis. Der Text „Du hast den äußeren Kreis getroffen, 50 Punkte!“ wird darunter angezeigt](images/blue-points.png){:width="640px"}
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -20,10 +17,9 @@ Klicke unten auf die Schaltfläche **Ausführen**, um das Spiel zu starten. Wenn
 
 --- /no-print ---
 
---- print-only ---
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Nimm an unserer Umfrage teil</a>, um unseren Code Editor zu verbessern!
+</div>
 
-![Ein Bogenschießziel mit einem Trefferpunkt am äußeren Kreis. Der Text „Du hast den äußeren Kreis getroffen, 50 Punkte!“ wird darunter angezeigt](images/blue-points.png){:width="640px"}
-
---- /print-only ---
 
 
