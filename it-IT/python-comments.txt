@@ -1,66 +1,20 @@
-Imposta il tuo gioco qui
-
-Larghezza e altezza dello schermo
-
 Cose da fare in ogni fotogramma
 
-Imposta il colore di riempimento del cielo su ciano
+Draw the inner circle
 
-Disegna un rettangolo per il cielo con questi valori per x, y, larghezza, altezza
-
-Imposta il colore di riempimento dell'erba su verde chiaro
-
-Disegna un rettangolo per il cielo con questi valori per x, y, larghezza, altezza
-
-Colore marrone
-
-Disegna un triangolo per la posizione del bersaglio
-
-Imposta il colore di riempimento del cerchio su blu
-
-Disegna il cerchio esterno
-
-Imposta il colore di riempimento del cerchio su rosso
-
-Disegna il cerchio interno usando x, y, larghezza
-
-Imposta il colore di riempimento del cerchio su giallo
-
-Disegna il cerchio interno usando x, y, larghezza
-
-Cielo
-
-Terra
-
-Supporto
-
-Cerchio esterno
-
-Cerchio interno
-
-Cerchio centrale
+Draw the middle circle
 
 La funzione shoot_arrow va qui
 
-Memorizza un numero a caso fra 100 e 300
-
-Imposta la freccia in modo che il colore di riempimento sia marrone
-
-Disegna un piccolo cerchio a coordinate casuali
-
-Può essere utilizzato in altre funzioni
-
-Ottieni il colore colpito
-
 La funzione mouse_pressed va qui
-
-Come il codice delle funzioni, il codice delle istruzioni 'if' è rientrato
 
 Hai colpito il cerchio esterno, 50 punti!
 
 Hai colpito il cerchio interno, 200 punti!
 
 Hai colpito a metà bersaglio, 500 punti!
+
+You hit the middle, 500 points!
 
 Mancato! Zero punti!
 
@@ -71,5 +25,3 @@ Pretty quick
 Very fast
 
 Speed not recognised!
-
-
