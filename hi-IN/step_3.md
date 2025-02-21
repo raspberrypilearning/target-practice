@@ -15,7 +15,7 @@
 
 --- task ---
 
-भरण रंग को ` > endrocoding ` (ब्राउन) पर सेट करें।
+Set the fill colour to `brown`.
 
 प्रत्येक कोनों के लिए x और y निर्देशांक का उपयोग करके एक त्रिकोण बनाएं।
 
@@ -23,11 +23,14 @@
 
 --- code ---
 ---
-भाषा: Python फ़ाइल नाम: main.py - draway() line_number: True line_number_start: 18
-line_highlights: 20, 21
+language: python line_numbers: true line_number_start: 21
+line_highlights: 23-24
 ---
 
-    fill('lightgreen') # घास के लिए भरण रंग को हल्के हरे रंग में रखें(0, 250, 400, 150) # x, y, width, height fill('Sienna') # ब्राउन कलर त्रिकोण(150, 350, 200, 150, 250,,,, के लिए इन मानों के साथ घास के लिए एक आयत बनाएं 350) # लक्ष्य के स्टैंड के लिए एक त्रिकोण बनाएं
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -35,7 +38,7 @@ line_highlights: 20, 21
 
 --- task ---
 
-** >:** ? अपने लक्ष्य के लिए स्टैंड देखने के लिए अपना कोड चलाएँ:
+**Test:** Run your code to see the stand for your target:
 
 ![घास पर एक भूरा त्रिकोण और एक आकाश के खिलाफ।](images/target-stand.png){:width="400px"}
 
@@ -55,11 +58,14 @@ line_highlights: 20, 21
 
 --- code ---
 ---
-भाषा: Python फ़ाइल नाम: main.py - draway() line_number: True line_number_start: 20
-line_highlights: 22, 23
+language: python line_numbers: true line_number_start: 23
+line_highlights: 25-26
 ---
 
-    fill('sienna') # ब्राउन कलर त्रिकोण(150, 350, 200, 150, 250, 350) # लक्ष्य के स्टैंड भरण('blue') # सर्कल भरण रंग को नीले घेरे में सेट करें(200, 200, 170) # बाहरी सर्कल को बनाएं
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)
 
 --- /code ---
 
@@ -83,11 +89,16 @@ line_highlights: 22, 23
 
 --- code ---
 ---
-भाषा: Python फ़ाइल नाम: main.py - draway() line_number: True line_number_start: 20
-line_highlights: 24, 25, 26, 27
+language: python line_numbers: true line_number_start: 25
+line_highlights: 27-30
 ---
 
-    fill('sienna') # ब्राउन कलर त्रिकोण(150, 350, 200, 150, 250, 350) # लक्ष्य के स्टैंड भरण('नीला') के लिए एक त्रिकोण बनाएं # सर्कल भरण रंग को नीले घेरे में सेट करें(200, 200, 170) # बाहरी वृत्त भरण को बनाएं('लाल') # सर्कल भरण के लिए रंग को लाल घेरे में सेट करें(200, 200, 110) # x, y, का उपयोग करके आंतरिक वृत्त बनाएं width fill('yellow') # सर्कल भरण के लिए रंग को पीले रंग में सेट करें circle(200, 200, 30) # x, y, width का उपयोग करके मध्य वृत्त बनाएं
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
@@ -95,37 +106,9 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-** >:** ? तीन रंगीन वृत्तों के साथ लक्ष्य देखने के लिए अपना प्रोजेक्ट चलाएँ।
+**Test:** Run your project to see the target with three coloured circles.
 
 ![एक भूरा त्रिकोण जिसमें तीन रंगीन घेरे घास पर और एक आकाश के खिलाफ हैं।](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-** dampions:** ? किसी भी रंग को अलग रंग नाम का उपयोग करके बदलें। आप [ पर सभी उपलब्ध रंग नामों की सूची देख सकते हैं। ](https://www.w3schools.com/colors/colors_names.asp)
-
-![एक भूरा त्रिकोण जिसमें तीन रंगीन घेरे घास पर और एक आकाश के खिलाफ हैं। रंग बदलकर pinks और purbles हो गए हैं।](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: विभिन्न रंगों का उपयोग करके उदाहरण कोड
----
-
---- code ---
----
-भाषा: Python फ़ाइल नाम: main.py - draway() line_number: False line_number_start: 14
-line_highlights:
----
-
-def draway():
-# हर फ्रेम में करने के लिए चीजें
-
-    fill('bleViolet') receive(0, 0, 400, 250) # Sky fill('dipsky blue') receive(0, 250, 400, 150) # gended fill('fireFrebrick') triangle(150, 350, 200, 150, 250, 350) # stand fill('lemonchiffon') circle(200, 200, 170) # आउटर सर्कल भरण('diproपिंक') circle(200, 200, 110) # internal circle fill('bleViolet') circle(200, 200, 30) # middid circle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
