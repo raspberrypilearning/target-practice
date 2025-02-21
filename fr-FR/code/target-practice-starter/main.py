@@ -10,14 +10,14 @@ from random import randint
 
 def setup():
     # Configure ton jeu ici
-    size(400, 400) # largeur et hauteur de l'écran
+    size(400, 400)
     no_stroke()
 
 
 def draw():
     # Choses à faire dans chaque image
     fill("cyan")
-    rect(0, 0, 400, 250) # Dessine un rectangle pour le ciel avec ces valeurs pour x, y, largeur, hauteur
+    rect(0, 0, 400, 250)
 
 
 # Garde ceci pour exécuter ton code
