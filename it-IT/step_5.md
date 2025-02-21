@@ -67,8 +67,12 @@ print('🎯')
 
 --- /task ---
 
-**Test:** 🔄 Esegui il tuo progetto. Prova a lanciare la freccia sul cerchio interno e su quello esterno per vedere il messaggio.
+--- task ---
 
-![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
+**Test:** Click the **Run** button. Prova a lanciare la freccia sul cerchio interno e su quello esterno per vedere il messaggio.
+
+![target emoji printed when mouse clicked](images/target_printed.gif)
+
+--- /task ---
 
 --- save ---
