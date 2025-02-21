@@ -21,10 +21,12 @@ steps:
     title: Ρίξε το βέλος σου
   - 
     title: Κέρδισε πόντους
-    completion:
-      - internal
   - 
     title: Αναστοχασμός
+    completion:
+      - external
+  - 
+    title: Αναβάθμιση του έργου σου
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Αναβάθμιση του έργου σου
-  - 
     title: Και τώρα;
+    challenge: true
+  - 
+    title: What can you do now?
