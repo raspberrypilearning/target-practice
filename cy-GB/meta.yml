@@ -21,10 +21,12 @@ steps:
     title: Saethu
   - 
     title: Sgorio pwyntiau
-    completion:
-      - internal
   - 
     title: Myfyrio
+    completion:
+      - external
+  - 
+    title: Uwchraddio eich brosiect
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Uwchraddio dy brosiect
-  - 
     title: Beth nesaf?
+    challenge: true
+  - 
+    title: What can you do now?
