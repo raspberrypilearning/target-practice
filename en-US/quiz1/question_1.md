@@ -10,46 +10,44 @@ Have fun!
 ---
 legend: Question 1 of 3
 ---
-In your project you added no_stroke() to your setup function. What does the no_stroke() function do?
+In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
-size(400, 400)      
-no_stroke()
+def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randint(100, 300)
 
 --- /code ---
 
 --- choices ---
 
-- ( ) It draws a shape using the coordinates given.
+- (x) It chooses a random whole number between 100 and 300.
 
   --- feedback ---
 
-Not quite. The size() function does this in this example.
+That's correct. This chooses a random x coordinate for your arrow.
 
   --- /feedback ---
 
-- ( ) It fills the shape with a given colour.
+- ( ) It makes the arrow move randomly around the screen.
 
   --- feedback ---
 
-Not quite. The fill() function does this and will usually include a given colour.
+Not quite. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
 
   --- /feedback ---
 
-- (x) It turns off the border(stroke) for all the shapes.
+- () It gets the colour that was hit by the arrow.
 
   --- feedback ---
 
-  That's correct. A black border will be drawn around your shapes if you do not use this function.
+  Not quite. The get() function would be used to get the colour.
 
   --- /feedback ---
 
-- ( ) It will draw a circle shape in your program.
+- ( ) It draws a circle of a random size.
 
   --- feedback ---
 
