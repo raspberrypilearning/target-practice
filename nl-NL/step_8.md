@@ -1,30 +1,24 @@
-## Wat kun je verder nog doen?
+## Challenge
 
-Als je het [Inleiding tot Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pad volgt, kun je doorgaan naar het [Raket lanceren](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In dit project maak je een interactieve animatie van een raket die een satelliet in een baan om de aarde lanceert.
+--- challenge ---
 
---- print-only ---
 
-![Raket lancering-project.](images/showcase_rocket.png){:width="600px"}
+You could:
 
---- /print-only ---
-
---- no-print ---
+--- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
 
 --- task ---
 
-**Probeer het:** Je programma zal de animatie aanpassen op basis van de hoeveelheid brandstof die je het geeft en het zal er wel of niet in slagen om een baan om de aarde te bereiken. Hoeveel brandstof wil je gebruiken om de baan te bereiken, maar niet te veel extra brandstof te verspillen?
-
-**Tip:** Ongeveer 25.000 kg zou genoeg moeten zijn, maar experimenteer met de cijfers om te zien wat er gebeurt.
-
-Klik op de knop **Run** om een voorbeeld van dit project te bekijken.
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-![Raket lancering-project](images/showcase_rocket.png){:width="600px"}
+Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 
 --- /task ---
 
---- /no-print ---
+--- task --- Make the game easier or harder by changing the `frame_rate=2` value --- /task ---
 
-Als je meer plezier wilt hebben bij het verkennen van Python, dan kun je een van [deze projecten](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) uitproberen.
+--- task --- Add a variable to keep track of the total score, adding the correct number of points to it each time.
+
+--- /task ---
+
+
+
+--- /no-print ---
