@@ -23,14 +23,14 @@ Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 20, 21
+language: python line_numbers: true line_number_start: 21
+line_highlights: 23-24
 ---
 
-    fill('lightgreen')  # Définis la couleur de remplissage de l'herbe sur vert clair
-    rect(0, 250, 400, 150)  # Dessine un rectangle pour l'herbe avec ces valeurs pour x, y, largeur, hauteur
-    fill('sienna')  # Couleur marron
-    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -58,14 +58,14 @@ Dessine un cercle avec des coordonnées x et y pour son centre et une largeur.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
-line_highlights: 22, 23
+language: python line_numbers: true line_number_start: 23
+line_highlights: 25-26
 ---
 
-    fill('sienna')  # Couleur marron
-    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
-    fill('blue')  # Définis la couleur de remplissage sur blue
-    circle(200, 200, 170)  # Dessine le cercle extérieur
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)
 
 --- /code ---
 
@@ -89,18 +89,16 @@ La cible est constituée de cercles de tailles différentes ayant les mêmes coo
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
-line_highlights: 24, 25, 26, 27
+language: python line_numbers: true line_number_start: 25
+line_highlights: 27-30
 ---
 
-    fill('sienna')  # Couleur marron
-    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
-    fill('blue')  # Définis la couleur de remplissage sur blue
-    circle(200, 200, 170)  # Dessine le cercle extérieur
-    fill('red')  # Définis la couleur du remplissage du cercle sur rouge
-    circle(200, 200, 110)  # Dessine le cercle intérieur en utilisant x, y, largeur
-    fill('yellow')  # Définis la couleur du remplissage du cercle sur jaune
-    circle(200, 200, 30)  # Dessine le cercle du milieu en utilisant x, y, largeur
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
