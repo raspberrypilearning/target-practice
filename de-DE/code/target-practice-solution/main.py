@@ -2,8 +2,10 @@
 from p5 import *
 from random import randint
 
+
 # Die Funktion „mouse_pressed“ kommt hierher
 def mouse_pressed():
+    circle(pfeil_x, pfeil_y, 15) # Zeichne einen kleinen Kreis an zufälligen Koordinaten
     if getroffene_farbe == Color('blue').hex: # Wie bei Funktionen sind auch 'if'-Anweisungen eingerückt
         print('Du hast den äußeren Kreis getroffen, 50 Punkte!')
     elif getroffene_farbe == Color('red').hex:
@@ -13,19 +15,23 @@ def mouse_pressed():
     else:
         print('Daneben! Keine Punkte!')
 
+
 # Die Funktion „schiess_pfeil“ kommt hierher
 def schiess_pfeil():
-    global getroffene_farbe # Kann in anderen Funktionen verwendet werden
+    global hit_colour
     pfeil_x = randint(100, 300) # Speichere eine Zufallszahl zwischen 100 und 300
     pfeil_y = randint(100, 300) # Speichere eine Zufallszahl zwischen 100 und 300
     getroffene_farbe = get(pfeil_x, pfeil_y).hex # Hole die Trefferfarbe
+    global getroffene_farbe # Kann in anderen Funktionen verwendet werden
     fill('sienna') # Stelle die Füllfarbe des Pfeils auf Braun ein
-    circle(pfeil_x, pfeil_y, 15) # Zeichne einen kleinen Kreis an zufälligen Koordinaten
+    circle(arrow_x, arrow_y, 15)
+
 
 def setup():
     # Richte hier Dein Spiel ein
     size(400, 400) # Breite und Höhe
     no_stroke()
+
 
 def draw():
     # Dinge die in jedem Frame passieren
@@ -42,6 +48,7 @@ def draw():
     fill('yellow')
     circle(200, 200, 30) # Mitte
     schiess_pfeil()
+
 
 # Lass dies so stehen, um Deinen Code auszuführen
 run(frame_rate=2)
