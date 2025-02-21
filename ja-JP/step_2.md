@@ -6,7 +6,6 @@
 
 --- /task ---
 
-
 --- task ---
 
 **Add** code to draw a green rectangle at the bottom of the screen to represent the grass.
@@ -18,12 +17,12 @@
 language: python filename: main.py — draw() line_numbers: true line_number_start: 18
 line_highlights: 25
 ---
-def draw():     
-#すべてのフレームで行うこと     
-sky = color(92, 204, 206) #赤 = 92, 緑 = 204, 青 = 206     
-grass = color(149, 212, 122)     
-wood = color(145, 96, 51)     
-outer = color(0, 120, 180)
+def draw(): # Things to do in every frame fill('cyan')  
+rect(0, 0, 400, 250)  
+fill('lightgreen')  
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
