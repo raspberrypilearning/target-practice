@@ -40,7 +40,9 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 ### Мимо мішені
 
---- task --- Comment out the line that prints the colour. This means it will not run.
+--- task ---
+
+Comment out the line that prints the colour. This means it will not run.
 
 --- code ---
 ---
@@ -51,11 +53,14 @@ line_highlights: 9
     hit_colour = get(arrow_x, arrow_y).hex
     # print(hit_colour)
     circle(arrow_x, arrow_y, 15)
+
 --- /code ---
 
 --- /task ---
 
-Зверни увагу 👀, що в коді використовуються два символи дорівнювання `==`, що означатиме **дорівнює**.
+--- task ---
+
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -63,15 +68,15 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 9, 10
 ---
 # Things to do in every frame
-def mouse_pressed():     
-if hit_color == outer:      
-print('Влучення в зовнішнє коло - 50 балів!') # Подібно до функцій, оператори 'if' починаються з абзацного відступу
+def mouse_pressed():    
+print('🎯')
+
+--- /code ---
 
 --- /task ---
 
 --- task --- **Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
-
 
 --- save ---
