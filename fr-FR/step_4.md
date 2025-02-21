@@ -19,16 +19,12 @@ Ajoute du code pour dessiner au hasard un cercle marron dans une zone cible :
 
 --- code ---
 ---
-language: python filename: main.py — shoot_arrow() line_numbers: true line_number_start: 7
-line_highlights: 8-12
+language: python line_numbers: true line_number_start: 8
+line_highlights: 9-13
 ---
 # La fonction tire_fleche vient ici
-def tire_fleche():    
-global couleur_touche #Peut être utilisé dans d'autres fonctions     
-fleche_x = randint(100, 300)     
-fleche_y = randint(100, 300)     
-couleur_touche = get(fleche_x, fleche_y) #Enregistrer la couleur avant de dessiner la flèche     
-ellipse(fleche_x, fleche_y, 15, 15)
+def shoot_arrow():   
+arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
@@ -40,13 +36,13 @@ Va dans la fonction `draw` et appelle ta nouvelle fonction `tire_fleche`.
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 31
-line_highlights: 33
+language: python line_numbers: true line_number_start: 33
+line_highlights: 35
 ---
 
-    fill('yellow')  # Définis la couleur du remplissage du cercle sur jaune     
-    circle(200, 200, 30)  # Dessine le cercle du milieu en utilisant x, y, largeur
-    tire_fleche()
+    fill('yellow')      
+    circle(200, 200, 30)  
+    shoot_arrow()
 
 --- /code ---
 
@@ -62,14 +58,10 @@ The arrow needs to move randomly.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
-line_highlights: 9, 12
+language: python line_numbers: true line_number_start: 9
+line_highlights: 10-11
 ---
-def tire_fleche():    
-fleche_x = randint(100, 300)    
-fleche_y = randint(100, 300)    
-touche_couleur = get(fleche_x, fleche_y) #Enregistrer la couleur avant de dessiner la flèche   
-ellipse(fleche_x, fleche_y , 15, 15)
+def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- /code ---
 
