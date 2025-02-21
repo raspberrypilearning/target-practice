@@ -27,10 +27,10 @@ language: python filename: main.py - draw() line_numbers: true line_number_start
 line_highlights: 29, 30
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -38,7 +38,7 @@ line_highlights: 29, 30
 
 --- task ---
 
-**Test:** 🔄 Run your code to see the stand for your target:
+**Test:** Run your code to see the stand for your target:
 
 ![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
 
@@ -58,14 +58,14 @@ The largest part of the target is a blue **circle**.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+language: python line_numbers: true line_number_start: 23
 line_highlights: 31, 32
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)
 
 --- /code ---
 
@@ -93,14 +93,12 @@ The target is made of different-sized circles with the same centre coordinates (
 line_highlights: 24, 25
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
@@ -117,51 +115,6 @@ inner = color(210, 60, 60) # Червоний
 middle = color(220, 200, 0) # Жовтий
 
 ![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Choose:** 💭 Change any of the colours using a different colour name. You can find a list of all of the available colour names on [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![A brown triangle with three coloured circles on grass and against a sky. The colours have changed to pinks and purples.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-line_highlights: 35, 36, 37, 38
----
-
---- code ---
----
-fill(wood)    
-triangle(150, 350, 200, 150, 250, 350)  
-fill(outer)   
-circle(200, 200, 170) fill(inner) # Встановлення кольору заливки кола на inner      
-circle(200, 200, 110) # Внутрішнє коло - x, y, ширина кола  
-fill(middle) # Встановлення кольору заливки кола на middle      
-circle(200, 200, 30) # Середнє коло - x, y, ширина кола
-line_highlights:
----
-
-def draw():
-# Things to do in every frame
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
