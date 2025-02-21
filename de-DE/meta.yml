@@ -21,10 +21,12 @@ steps:
     title: Feuere deinen Pfeil ab
   - 
     title: Punkten
-    completion:
-      - internal
   - 
     title: Kurzes Quiz
+    completion:
+      - external
+  - 
+    title: Verbessere Dein Projekt
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Verbessere Dein Projekt
-  - 
     title: Wie geht es weiter?
+    challenge: true
+  - 
+    title: What can you do now?
