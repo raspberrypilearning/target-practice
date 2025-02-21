@@ -24,7 +24,7 @@ steps:
   - 
     title: Questionnaire rapide
     completion:
-      - external
+      - internal
   - 
     title: Améliorer ton projet
     knowledge_quiz:
