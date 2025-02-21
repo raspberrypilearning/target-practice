@@ -10,21 +10,23 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Zrobisz to
+    title: What you will make
   - 
-    title: Utwórz tło
+    title: Draw the grass
   - 
     title: Narysuj swój cel
     completion:
       - engaged
   - 
-    title: Wystrzel strzałkę
+    title: Add an arrow
   - 
-    title: Zdobądź punkty
+    title: What colour did you hit?
+  - 
+    title: Score points
     completion:
       - internal
   - 
-    title: Szybki quiz
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Ulepsz swój projekt
+    title: Challenge
+    challenge: true
   - 
-    title: Co następne?
+    title: What can you do now?
