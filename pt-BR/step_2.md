@@ -6,7 +6,6 @@ Abra o projeto [Tiro ao alvo inicial](https://editor.raspberrypi.org/en/projects
 
 --- /task ---
 
-
 --- task ---
 
 **Adicione** código para desenhar um retângulo verde na parte inferior da tela.
@@ -21,7 +20,9 @@ line_highlights: 12
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
 fill('lightgreen')  
-rect(0, 250, 400, 150) --- /code ---
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
