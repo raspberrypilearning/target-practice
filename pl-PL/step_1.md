@@ -1,12 +1,9 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank"> Weź naszą ankietę </a>, aby pomóc ulepszyć nasz edytor kodu!
-</div>
-
 ## What you will make
 
 Use Python to draw a target and score points by hitting it with arrows.
 
---- no-print ---
+![Cel łuczniczy z punktem uderzenia na zewnętrznym kole. Tekst "trafiłeś w zewnętrzne koło, 50 punktów!" jest wyświetlany poniżej](images/blue-points.png){:width="640px"}
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -20,10 +17,9 @@ Kliknij przycisk **Run** poniżej, aby rozpocząć grę. Kiedy kropka pojawi si�
 
 --- /no-print ---
 
---- print-only ---
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank"> Weź naszą ankietę </a>, aby pomóc ulepszyć nasz edytor kodu!
+</div>
 
-![Cel łuczniczy z punktem uderzenia na zewnętrznym kole. Tekst "trafiłeś w zewnętrzne koło, 50 punktów!" jest wyświetlany poniżej](images/blue-points.png){:width="640px"}
-
---- /print-only ---
 
 
