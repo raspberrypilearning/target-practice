@@ -23,14 +23,14 @@ Teken een driehoek met de x- en y-coördinaten voor elk van de hoeken.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 18
-line_highlights: 20, 21
+language: python line_numbers: true line_number_start: 21
+line_highlights: 23-24
 ---
 
-    fill('lightgreen')  # Stel de kleur voor het gras in op lichtgroen
-    rect(0, 250, 400, 150)  # Teken een rechthoek voor het gras met deze waarden voor x, y, breedte en hoogte
-    fill('sienna')  # Bruine kleur
-    triangle(150, 350, 200, 150, 250, 350)  # Teken een driehoek voor de standaard van het doel
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)
 
 --- /code ---
 
@@ -58,14 +58,14 @@ Teken een cirkel met x- en y-coördinaten voor het midden en de breedte.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
-line_highlights: 22, 23
+language: python line_numbers: true line_number_start: 23
+line_highlights: 25-26
 ---
 
-    fill('sienna') # Bruine kleur
-    triangle(150, 350, 200, 150, 250, 350) # Teken een driehoek voor de stand van het doelwit 
-    fill('blue') # Stel de vulkleur van cirkel naar blauw
-    circle(200, 200, 170) # Teken de buitenste cirkel
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)
 
 --- /code ---
 
@@ -89,18 +89,16 @@ Het doel is gemaakt van cirkels van verschillende grootte met dezelfde centrale 
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 20
-line_highlights: 24, 25, 26, 27
+language: python line_numbers: true line_number_start: 25
+line_highlights: 27-30
 ---
 
-    fill('sienna')  # Bruine kleur
-    triangle(150, 350, 200, 150, 250, 350)  # Teken een driehoek voor de standaard van het doel
-    fill('blue')  # Stel de kleur van de cirkel in op blauw
-    circle(200, 200, 170)  # Teken de buitenste cirkel
-    fill('red')  # Stel de kleur voor de cirkel in op rood
-    circle(200, 200, 110)  # Teken de binnenste cirkel met x, y, breedte
-    fill('yellow')  # Stel de kleur voor de cirkel in op geel  
-    circle(200, 200, 30)  # Teken de middelste cirkel met x, y, breedte
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Draw the inner circle 
+    fill('yellow')       
+    circle(200, 200, 30)  # Draw the middle circle
 
 --- /code ---
 
