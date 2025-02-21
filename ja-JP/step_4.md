@@ -51,10 +51,12 @@ line_highlights: 44-45
 
 --- /task ---
 
-**テスト：** プロジェクトを実行します。 矢印はランダムな座標で再描画されます。
+--- task ---
+
+**テスト:**コードを実行し、矢がブルズアイに表示されることを確認します。 矢印はランダムな座標で再描画されます。
 
 
-**テスト:**コードを実行し、矢がブルズアイに表示されることを確認します。 You should see the arrow in the centre.
+**Test:** Click the **Run** button. You should see the arrow in the centre.
 
 ![背景のターゲットに茶色の丸い矢印が描かれている。](images/arrow-centre.png)
 
