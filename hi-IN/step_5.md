@@ -1,142 +1,70 @@
-## अंक स्कोर करें
+## What colour did you hit?
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-आपका गेम जहां हिट होता है, उसके आधार पर स्कोर जोड़ेगा।
-</div>
-<div>
+Next, you will add some code to get the colour at the location of the arrow.
 
-![लक्ष्य का एक एनीमेशन, जिसमें तीर विभिन्न स्थानों में दिखाई देता है, और स्कोर खेल के नीचे टेक्स्ट के रूप में दिखाई देता है।](images/points-score.gif){:width="300px"}
-
-</div>
-</div>
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-हम निर्णय लेने के लिए हर समय </span> के लिए <span style="color: #0faeb0; font-weight: bold;"> शर्तों का उपयोग करते हैं। हम कह सकते हैं 'अगर पेंसिल को कुंद कर दिया जाए, तो उसे तेज कर दें'। Similarly, `if` conditions let us write code that does something different depending on whether a condition is true or false.
-</p>
-
-### स्कोर प्रदर्शित करें
+### Get the colour hit by the arrow
 
 --- task ---
 
-❌ ` >('?')` पंक्ति कोड हटाएँ।
+Add a new **global variable** called `hit_colour`.
+
+Add code to `get` the colour at the centre of the arrow ,and store it in the `hit_colour` variable.
+
 
 --- code ---
 ---
-भाषा: Python फ़ाइल नाम: main.py line_number: True line_number_start: 5
-line_highlights: 7
+language: python line_numbers: true line_number_start: 9
+line_highlights: 10, 13, 14
+---
+def shoot_arrow(): global hit_colour  
+arrow_x = randint(100, 300)  
+arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_colour) fill('brown') circle(arrow_x, arrow_y, 15)
+
+--- /code ---
+
+**Tip:** The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the brown colour of the arrow!
+
+--- /task ---
+
+--- task ---
+
+**Test:** Click the **Run** button. You should see colours being printed in the **Text output**, in hexadecimal format.
+
+--- /task ---
+
+### Run code when the mouse is pressed
+
+--- task --- Comment out the line that prints the colour. This means it will not run.
+
+--- code ---
+---
+language: python line_numbers: true line_number_start: 13
+line_highlights: 14
+---
+
+    hit_colour = get(arrow_x, arrow_y).hex
+    # print(hit_colour)
+    circle(arrow_x, arrow_y, 15)
+--- /code ---
+
+--- /task ---
+
+--- task --- Add code to print the target emoji 🎯 **when the mouse is clicked**.
+
+--- code ---
+---
+language: python line_numbers: true line_number_start: 5
+line_highlights: 6-7
 ---
 # mouse_powed फ़ंक्शन यहाँ जाता है
-def mouse_powed():
-
-
---- /code ---
+def mouse_pressed():    
+print('🎯') --- /code ---
 
 --- /task ---
 
---- task ---
+--- task --- **Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
 
-Display a message **if** the `hit_colour` is equal to the `outer` circle colour (blue) 🎯.
+![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
 
-Notice 👀 that the code uses two equals signs `==` to mean **equal to**.
-
---- code ---
----
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 5
-line_highlights: 7, 8
----
-
-# mouse_pressed फ़ंक्शन यहाँ जाता है
-def mouse_pressed():     
-if hit_colour == Color('blue').hex:  # Like the code in functions, the code in 'if' statements is indented print('You hit the outer circle, 50 points!')
-
---- /code ---
-
-**Tip:** 💡 If you changed the colour of your outer circle then you will need to replace `'blue'` with the colour name that you have chosen.
-
---- /task ---
-
---- task ---
-
-**Test:** 🔄 Run your project. Try to fire the arrow on the blue outer circle to see the message.
-
-**Tip:** 💡 `frame_rate=2`, in `run` at the bottom of your code, controls how fast your game draws. If it's going too fast, set it to a lower number.
-
-![The output area with arrow touching the outer circle. The points message is displayed in the output area.](images/blue-points.png)
-
-**Debug:** 🐞 Check that you have used the American spelling of 'Color' (without a 'u') and that 'Color' is capitalised.
-
-**Debug:** 🐞 Make sure your code matches exactly and you indented the code inside your `if` statement.
-
-**Debug:** 🐞 Make sure that you have entered the correct colour name you used for **your** outer circle.
-
---- /task ---
-
-`elif` (else - if) can be used to add more conditions to your `if` statement. These will be read from top to bottom. As soon as a **True** condition is found, it will be actioned. Any remaining conditions will be ignored.
-
---- task ---
-
-Score points if the arrow lands on the `inner` or `middle` circles 🎯:
-
---- code ---
----
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 6
-line_highlights: 9-12
----
-
-def mouse_pressed(): if hit_colour == Color('blue').hex:   
-print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!')
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test:** 🔄 Run your project. Try to fire the arrow on the inner and middle circles to see their messages.
-
-![The output area with arrow touching the inner circle. The points message is displayed in the output area.](images/yellow-points.png)
-
-**Debug:** 🐞 Check your indentation matches the example.
-
-**Debug:** 🐞 If you see a message about `hit_colour` being 'not defined', then go back to `draw()` and check that the line declares `hit_colour` as a global variable.
-
-**Debug:** 🐞 Make sure that you have entered the correct colour name for **your** circles.
-
-**Debug:** 🐞 Make sure that you have used the `.hex` string for **your** circle colours.
-
---- /task ---
-
-### लक्ष्य गुम है
-
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles? ❌
-
-To do this last check, you use `else`.
-
---- task ---
-
-Add code to `print` a message `else` none of the `if` and `elif` statements have been met.
-
---- code ---
----
-language: python filename: main.py line_numbers: true line_number_start: 6
-line_highlights: 13-14
----
-
-def mouse_pressed(): if hit_colour == Color('blue').hex:   
-print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!') else:   
-print('You missed! No points!')
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-**Test:** 🔄 Run your project. Fire the arrow in the grass or sky to see the miss message.
-
-**Choose:** 💭 Change the number of points scored for the different colours.
-
---- /task ---
 
 --- save ---
