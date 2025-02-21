@@ -1,30 +1,24 @@
-## ماذا بعد؟
+## Challenge
 
-إذا كنت تتبع مسار [مقدمة الى Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro)، يمكنك الانتقال إلى مشروع [اطلاق صاروخ](https://projects.raspberrypi.org/en/projects/rocket-launch). في هذا المشروع ، ستقوم بعمل رسوم متحركة تفاعلية لصاروخ يطلق قمرًا صناعيًا في المدار.
+--- challenge ---
 
---- print-only ---
 
-![مشروع إطلاق الصواريخ.](images/showcase_rocket.png){:width="600px"}
+You could:
 
---- /print-only ---
-
---- no-print ---
+--- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
 
 --- task ---
 
-**جربها:** سيقوم برنامجك بضبط الرسوم المتحركة بناءً على كمية الوقود التي تمنحها لها وسوف تنجح أو أخفق الوصول إلى المدار. ما مقدار الوقود الذي تريد استخدامه للوصول إلى المدار ولكن دون إهدار الكثير من الوقود الإضافي؟
-
-**نصيحة:** يجب أن يكون حوالي 25000 كجم كافيًا ، لكن جرب الأرقام لترى ما سيحدث.
-
-Click the **Run** button to view an example of this project.
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-![مشروع إطلاق الصواريخ](images/showcase_rocket.png){:width="600px"}
+Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 
 --- /task ---
 
---- /no-print ---
+--- task --- Make the game easier or harder by changing the `frame_rate=2` value --- /task ---
 
-إذا كنت ترغب في الحصول على مزيد من المتعة في استكشاف Python ، فيمكنك تجربة أي من [هذه المشاريع](https://projects.raspberrypi.org/ar-SA/projects?software%5B%5D=python).
+--- task --- Add a variable to keep track of the total score, adding the correct number of points to it each time.
+
+--- /task ---
+
+
+
+--- /no-print ---
