@@ -53,11 +53,20 @@ line_highlights: 44-45
 
 **اختبار:** قم بتشغيل مشروعك. يتم إعادة رسم السهم في إحداثيات عشوائية.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png) --- /task ---
+
+ابحث عن التعليق **# تنتقل دالة mouse_pressed هنا** وأدناه أضف رمزًا لتعريف دالة `mouse_pressed()`. You should see the arrow in the centre.
+
+![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+
+
+--- /task ---
 
 The arrow needs to move randomly.
 
-انتقل إلى الدالة `shoot_arrow()` وأضف متغيرين جديدين `arrow_x` و `arrow_y` لتخزين الأرقام العشوائية بين `100` و `300`.
+
+--- task ---
+
+Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
 
 --- code ---
 ---
@@ -78,7 +87,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-ابحث عن التعليق **# تنتقل دالة mouse_pressed هنا** وأدناه أضف رمزًا لتعريف دالة `mouse_pressed()`. You should see the arrow jump around the target.
+**Test:** Click the **Run** button. You should see the arrow jump around the target.
 
 ![الهدف ، مع سهم دائري بني يظهر في مواضع مختلفة.](images/fire_arrow.gif)
 
