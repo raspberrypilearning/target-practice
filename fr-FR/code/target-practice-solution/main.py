@@ -4,7 +4,7 @@ from random import randint
 
 
 # La fonction souris_pressee vient ici
-def souris_pressee():
+def mouse_pressed():
     # print('🎯')
     if touche_couleur == Color('blue').hex: # Comme les fonctions, les instructions 'if' sont indentées
         print('Tu as touché le cercle extérieur, 50 points !')
