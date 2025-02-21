@@ -51,10 +51,12 @@ line_highlights: 44-45
 
 --- /task ---
 
-**اختبار:** قم بتشغيل مشروعك. يتم إعادة رسم السهم في إحداثيات عشوائية.
+--- task ---
+
+ابحث عن التعليق **# تنتقل دالة mouse_pressed هنا** وأدناه أضف رمزًا لتعريف دالة `mouse_pressed()`. يتم إعادة رسم السهم في إحداثيات عشوائية.
 
 
-ابحث عن التعليق **# تنتقل دالة mouse_pressed هنا** وأدناه أضف رمزًا لتعريف دالة `mouse_pressed()`. You should see the arrow in the centre.
+**Test:** Click the **Run** button. You should see the arrow in the centre.
 
 ![a brown arrow circle in the centre of the target](images/arrow-centre.png)
 
