@@ -6,7 +6,6 @@
 
 --- /task ---
 
-
 --- task ---
 
 **Add** code to draw a green rectangle at the bottom of the screen to represent the grass.
@@ -21,7 +20,9 @@ line_highlights: 15
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
 fill('lightgreen')  
-rect(0, 250, 400, 150) --- /code ---
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
