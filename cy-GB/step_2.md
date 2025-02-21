@@ -6,7 +6,6 @@ Agorwch y [prosiect dechreuol Saethyddiaeth](https://trinket.io/python/23a6f0244
 
 --- /task ---
 
-
 --- task ---
 
 Mae rhywfaint o god wedi'i ysgrifennu i chi yn barod yn y prosiect dechreuol er mwyn i chi fewngludo'r llyfrgell `p5`. Byddwch yn defnyddio'r llyfrgell hon i adeiladu eich gêm saethyddiaeth.
@@ -18,7 +17,12 @@ Mae rhywfaint o god wedi'i ysgrifennu i chi yn barod yn y prosiect dechreuol er 
 Mae'r swyddogaeth `fill()` yn gosod y lliw tu mewn i'r siapiau. Mae'r prosiect dechreuol eisoes yn cynnwys rhai lliwiau RGB gallwch chi eu defnyddio i wneud hyn.
 line_highlights: 25
 ---
-Dewch o hyd i'ch swyddogaeth `draw()` a pharatoi i lunio'r awyr drwy ychwanegu cod wedi'i fewnoli i osod y lliw `fill()` ar `awyr`:
+def draw(): # Things to do in every frame fill('cyan')  
+rect(0, 0, 400, 250)  
+fill('lightgreen')  
+rect(0, 250, 400, 150)
+
+--- /code ---
 
 --- /task ---
 
