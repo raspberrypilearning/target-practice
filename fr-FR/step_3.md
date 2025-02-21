@@ -23,14 +23,14 @@ Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
 
 --- code ---
 ---
-language: python filename: main.py - dessin() line_numbers: true line_number_start: 18
-line_highlights: 24-25
+language: python filename: main.py - draw() line_numbers: true line_number_start: 18
+line_highlights: 20, 21
 ---
 
-    fill('lightgreen')  # Set the fill colour for the grass to light green
-    rect(0, 250, 400, 150)  # Draw a rectangle for the grass with these values for x, y, width, height
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand
+    fill('lightgreen')  # Définis la couleur de remplissage de l'herbe sur vert clair
+    rect(0, 250, 400, 150)  # Dessine un rectangle pour l'herbe avec ces valeurs pour x, y, largeur, hauteur
+    fill('sienna')  # Couleur marron
+    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
 
 --- /code ---
 
@@ -58,14 +58,14 @@ Dessine un cercle avec des coordonnées x et y pour son centre et une largeur.
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 33
-line_highlights: 31-32
+language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+line_highlights: 22, 23
 ---
 
-    fill(bois)<br x-id="3" />
-      triangle(150, 350, 200, 150, 250, 350)<br x-id="3" />
-      fill(exterieur)<br x-id="4" />
-      ellipse(200, 200, 170, 170) #Cercle extérieur.
+    fill('sienna')  # Couleur marron
+    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+    fill('blue')  # Définis la couleur de remplissage sur blue
+    circle(200, 200, 170)  # Dessine le cercle extérieur
 
 --- /code ---
 
@@ -89,18 +89,18 @@ La cible est constituée de cercles de tailles différentes ayant les mêmes coo
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 28
-line_highlights: 33-34
+language: python filename: main.py - draw() line_numbers: true line_number_start: 20
+line_highlights: 24, 25, 26, 27
 ---
 
-    fill('sienna')  # Brown colour
-    triangle(150, 350, 200, 150, 250, 350)  # Draw a triangle for the target's stand 
-    fill('blue')  # Set the circle fill colour to blue
-    circle(200, 200, 170)  # Draw the outer circle
-    fill('red')  # Set the colour for the circle fill to red
-    circle(200, 200, 110)  # Draw the inner circle using x, y, width
-    fill('yellow')  # Set the colour for the circle fill to yellow      
-    circle(200, 200, 30)  # Draw the middle circle using x, y, width
+    fill('sienna')  # Couleur marron
+    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+    fill('blue')  # Définis la couleur de remplissage sur blue
+    circle(200, 200, 170)  # Dessine le cercle extérieur
+    fill('red')  # Définis la couleur du remplissage du cercle sur rouge
+    circle(200, 200, 110)  # Dessine le cercle intérieur en utilisant x, y, largeur
+    fill('yellow')  # Définis la couleur du remplissage du cercle sur jaune
+    circle(200, 200, 30)  # Dessine le cercle du milieu en utilisant x, y, largeur
 
 --- /code ---
 
@@ -111,45 +111,6 @@ line_highlights: 33-34
 **Test :** 🔄 exécute ton projet pour voir la cible avec trois cercles colorés.
 
 ![Un triangle marron avec trois cercles colorés sur de l'herbe et sur fond de ciel.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Choisir :** 💭 modifie l'une des couleurs en utilisant un nom de couleur différent. Tu peux trouver une liste de tous les noms de couleurs disponibles sur [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Un triangle marron avec trois cercles colorés sur l'herbe et sur fond de ciel. Les couleurs sont devenues roses et violettes.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Exemple de code utilisant différentes couleurs
----
-
---- code ---
----
-language: python filename: main.py - draw() line_numbers: true line_number_start: 31
-line_highlights: 37-40
----
-
-def draw():
-# Choses à faire dans chaque frame
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Sky
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Ground
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Stand
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Outer circle
-    fill('DeepPink')
-    circle(200, 200, 110)  # Inner circle
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Middle circle
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 
