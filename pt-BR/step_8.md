@@ -1,30 +1,24 @@
-## E agora?
+## Challenge
 
-Se você estiver seguindo a trilha [Introdução ao Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro), poderá passar para o projeto [Lançamento do foguete](https://projects.raspberrypi.org/en/projects/rocket-launch). Neste projeto, você fará uma animação interativa de um foguete lançando um satélite em órbita.
+--- challenge ---
 
---- print-only ---
 
-![Projeto Lançamento do foguete.](images/showcase_rocket.png){:width="600px"}
+You could:
 
---- /print-only ---
-
---- no-print ---
+--- task --- Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position --- /task ---
 
 --- task ---
 
-**Experimente:** Seu programa ajustará a animação com base na quantidade de combustível que você fornecer e terá sucesso ou fracasso tentando chegar à órbita. Quanto combustível você deseja usar para atingir a órbita, mas sem desperdiçar muito combustível extra?
-
-**Dica:** Cerca de 25.000 kg devem ser suficientes, mas experimente os números para ver o que acontece.
-
-Clique no botão executar **Run** para visualizar um exemplo deste projeto.
-
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-![Projeto Lançamento do foguete](images/showcase_rocket.png){:width="600px"}
+Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
 
 --- /task ---
 
---- /no-print ---
+--- task --- Make the game easier or harder by changing the `frame_rate=2` value --- /task ---
 
-Se você quiser se divertir mais explorando Python, então você pode experimentar qualquer um [destes projetos](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+--- task --- Add a variable to keep track of the total score, adding the correct number of points to it each time.
+
+--- /task ---
+
+
+
+--- /no-print ---
