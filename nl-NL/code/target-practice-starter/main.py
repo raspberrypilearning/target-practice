@@ -10,7 +10,7 @@ from random import randint
 
 def setup():
     # Stel je spel hier in
-    size(400, 400) # breedte en hoogte
+    size(400, 400)
     no_stroke()
 
 
