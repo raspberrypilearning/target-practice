@@ -6,7 +6,6 @@ Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/ta
 
 --- /task ---
 
-
 --- task ---
 
 **Add** code to draw a green rectangle at the bottom of the screen to represent the grass.
@@ -26,6 +25,7 @@ def draw():
     rect(0, 0, 400, 250)  
     fill('lightgreen')  
     rect(0, 250, 400, 150) 
+
 --- /code ---
 
 --- /task ---
