@@ -38,7 +38,9 @@ print('You hit the bullseye, 500 points!')
 
 ### Run code when the mouse is pressed
 
---- task --- Comment out the line that prints the colour. This means it will not run.
+--- task ---
+
+Comment out the line that prints the colour. This means it will not run.
 
 --- code ---
 ---
@@ -49,11 +51,14 @@ line_highlights: 10-11
     def mouse_pressed():<br x-id="5" />
       if hit_color == outer:<br x-id="6" />
         print('You hit the outer circle, 50 points!')
+
 --- /code ---
 
 --- /task ---
 
---- task --- Add code to print the target emoji 🎯 **when the mouse is clicked**.
+--- task ---
+
+Add code to print the target emoji 🎯 **when the mouse is clicked**.
 
 --- code ---
 ---
@@ -61,13 +66,15 @@ language: python filename: main.py - mouse_pressed() line_numbers: true line_num
 line_highlights: 12-15
 ---
 # The mouse_pressed function goes here
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 9
+def mouse_pressed():    
+print('🎯')
+
+--- /code ---
 
 --- /task ---
 
 **اختبار:** قم بتشغيل مشروعك. You should see the 🎯 character printed when you click the mouse on the target.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif) --- /task ---
-
 
 --- save ---
