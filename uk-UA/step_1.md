@@ -1,12 +1,9 @@
-<div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
-</div>
-
 ## Ти зробиш
 
 Використовуй Python з графічною бібліотекою `p5`, щоб намалювати мішень та заробляти очки, влучаючи в неї стрілами.
 
---- no-print ---
+![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
+
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
@@ -20,10 +17,9 @@ Click the **Run** button below to start the game. When the dot appears on the ta
 
 --- /no-print ---
 
---- print-only ---
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+</div>
 
-![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
-
---- /print-only ---
 
 
