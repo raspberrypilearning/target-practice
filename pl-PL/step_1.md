@@ -2,9 +2,13 @@
 
 Use Python to draw a target and score points by hitting it with arrows.
 
+--- print-only ---
+
 ![Cel łuczniczy z punktem uderzenia na zewnętrznym kole. Tekst "trafiłeś w zewnętrzne koło, 50 punktów!" jest wyświetlany poniżej](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
