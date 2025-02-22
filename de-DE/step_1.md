@@ -2,9 +2,13 @@
 
 Verwende Python mit der Grafikbibliothek `p5`, um eine Zielscheibe zu zeichnen, und Punkte zu erzielen, indem Du sie mit Pfeilen triffst.
 
+--- print-only ---
+
 ![Ein Bogenschießziel mit einem Trefferpunkt am äußeren Kreis. Der Text „Du hast den äußeren Kreis getroffen, 50 Punkte!“ wird darunter angezeigt](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
