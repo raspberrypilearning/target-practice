@@ -2,9 +2,13 @@
 
 Usa Python, con la libreria grafica `p5` , per disegnare un bersaglio e segnare punti colpendolo con le frecce.
 
+--- print-only ---
+
 ![Un bersaglio per tiro con l'arco con un colpo finito sul cerchio esterno. Sotto viene visualizzato il testo "Hai colpito il cerchio esterno, 50 punti!" ](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
