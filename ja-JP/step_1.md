@@ -2,9 +2,13 @@
 
 Pythonと`p5`グラフィックスライブラリを使って、ターゲットを描き、そこに矢を当てて得点を表示するゲームを作成します。
 
+--- print-only ---
+
 ![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
