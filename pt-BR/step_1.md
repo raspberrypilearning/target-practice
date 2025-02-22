@@ -2,9 +2,13 @@
 
 Use Python, com a biblioteca de gráficos `p5`, para desenhar um alvo e marcar pontos acertando-o com flechas.
 
+--- print-only ---
+
 ![Um alvo de tiro com arco com um ponto de impacto no círculo externo. O texto 'Você atingiu o círculo externo, 50 pontos!' é exibido abaixo](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
