@@ -2,9 +2,13 @@
 
 Use Python to draw a target and score points by hitting it with arrows.
 
+--- print-only ---
+
 ![बाहरी सर्कल पर एक हिट पॉइंट के साथ एक तीरंदाजी लक्ष्य। 'आप बाहरी वृत्त से टकराए, 50 अंक!' पाठ नीचे प्रदर्शित होता है](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
