@@ -2,9 +2,13 @@
 
 Gebruik Python, met de `p5` grafische bibliotheek, om een doel te tekenen en punten te scoren door het met pijlen te raken.
 
+--- print-only ---
+
 ![Een boogschietdoel met een trefpunt op de buitenste cirkel. De tekst 'Je raakt de buitenste cirkel, 50 punten!' wordt eronder weergegeven](images/blue-points.png){:width="640px"}
 
+--- /print-only ---
 
+--- no-print ---
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
