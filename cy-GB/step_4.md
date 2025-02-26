@@ -64,7 +64,7 @@ The arrow needs to move randomly.
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+Mae gemau cyfrifiadur, fideos ac animeiddiadau'n creu effaith symud drwy ddangos llawer o ddelweddau un ar ôl y llall. <span style="color: #0faeb0; font-weight: bold;">Ffrâm</span> yw enw pob delwedd. <span style="color: #800080;">Cyfradd fframiau</span> yw enw'r cyflymder mae'r ddelwedd yn newid ac mae'n cael ei rhoi mewn <span style="color: #800080;">fps</span>, sef fframiau yr eiliad (frames per second).
 
 --- code ---
 ---
