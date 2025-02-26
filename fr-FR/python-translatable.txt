@@ -4,6 +4,6 @@ fleche_x
 
 fleche_y
 
-hit_colour
+couleur_touchee
 
 vitesse
