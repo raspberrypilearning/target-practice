@@ -63,12 +63,12 @@ line_highlights: 44-45
 
 --- /task ---
 
-The arrow needs to move randomly.
+矢印はランダムな座標で再描画されます。
 
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+`shoot_arrow()`関数に行き、`arrow_x`と`arrow_y`の2つの新しい変数を追加して、`100`から`300`までの乱数を格納します。
 
 --- code ---
 ---
@@ -89,7 +89,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**テスト：** プロジェクトを実行します。 You should see the arrow jump around the target.
 
 ![さまざまな位置に茶色の円の矢印が表示されているターゲット。](images/fire_arrow.gif)
 
