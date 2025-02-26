@@ -77,7 +77,7 @@ print('🎯')
 
 --- task ---
 
-**Test:** Click the **Run** button. Intenta detener la flecha en los círculos interior y medio para ver sus mensajes.
+**Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en los círculos interior y medio para ver sus mensajes.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif)
 
