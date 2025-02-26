@@ -28,12 +28,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-def draw():     
-#Pethau i'w gwneud ym mhob ffrâm     
-awyr = color(92, 204, 206) #Coch = 92, Gwyrdd = 204, Glas = 206     
-gwair = color(149, 212, 122)     
-pren = color(145, 96, 51)     
-allanol = color(0, 120, 180)
+fill(awyr)
 
 ![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
