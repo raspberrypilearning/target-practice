@@ -68,7 +68,7 @@ The arrow needs to move randomly.
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+انتقل إلى الدالة `shoot_arrow()` وأضف متغيرين جديدين `arrow_x` و `arrow_y` لتخزين الأرقام العشوائية بين `100` و `300`.
 
 --- code ---
 ---
@@ -89,7 +89,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**اختبار:** قم بتشغيل مشروعك. You should see the arrow jump around the target.
 
 ![الهدف ، مع سهم دائري بني يظهر في مواضع مختلفة.](images/fire_arrow.gif)
 
