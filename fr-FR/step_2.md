@@ -8,7 +8,7 @@ Ouvre le [projet de démarrage Tir sur cible](https://editor.raspberrypi.org/en/
 
 --- task ---
 
-**Ajoute** du code pour dessiner un rectangle vert en bas de l'écran.
+**Ajoute** du code pour dessiner un rectangle vert au bas de l'écran pour représenter l'herbe.
 
 ![La zone de sortie avec un rectangle de couleur ciel au-dessus d'un rectangle de couleur herbe pour créer l'arrière-plan. Le coin supérieur gauche du rectangle est marqué x=0, y=250 ; c'est l'origine du rectangle. La largeur est surlignée à 400 et la hauteur à 150. Le code rect(0, 0, 400, 250) s'affiche.](images/green-grass.png){:width="400px"}
 
@@ -28,7 +28,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-**Test :** 🔄 exécute à nouveau ton projet pour voir l'arrière-plan terminé.
+**Test :** exécute ton projet pour voir l'arrière-plan.
 
 ![La zone de sortie avec un rectangle de couleur ciel au-dessus d'un rectangle de couleur herbe pour créer l'arrière-plan.](images/background.png){:width="400px"}
 
