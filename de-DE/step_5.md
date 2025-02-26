@@ -74,7 +74,7 @@ print('🎯')
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
+**Test:** 🔄 Führe dein Projekt aus. You should see the 🎯 character printed when you click the mouse on the target.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif)
 
