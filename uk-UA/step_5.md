@@ -60,7 +60,7 @@ line_highlights: 9
 
 --- task ---
 
-Add code to print the target emoji 🎯 **when the mouse is clicked**.
+language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
 
 --- code ---
 ---
