@@ -82,7 +82,7 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Test:** 🔄 Voer je project uit. You should see the arrow jump around the target.
 
 ![Het doelwit op de achtergrond met een bruine cirkelpijl erop.](images/fire_arrow.gif)
 
