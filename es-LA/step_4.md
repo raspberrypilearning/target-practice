@@ -90,7 +90,7 @@ circle(flecha_x, flecha_y, 15)
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Test:** Ejecuta tu proyecto. You should see the arrow jump around the target.
 
 ![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
 
