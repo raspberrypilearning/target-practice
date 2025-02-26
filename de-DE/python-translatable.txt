@@ -4,6 +4,6 @@ pfeil_x
 
 pfeil_y
 
-hit_colour
+hit_color
 
 geschwindigkeit
