@@ -28,7 +28,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-Небо обведено чорною рамкою (обведенням).
+Щоб вимкнути обведення для всіх фігур необхідно додати `no_stroke()` до функції `setup`:
 
 ![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
