@@ -8,9 +8,9 @@ Amuse-toi bien !
 
 --- question ---
 ---
-legend : Question 1 sur 3
+legend: Question 1 sur 3
 ---
-In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
+Dans ton projet, tu as ajouté `randint(100, 300)` à ta fonction `tire_fleche()`. Que fait `randint(100, 300)` ?
 
 --- code ---
 ---
@@ -23,31 +23,31 @@ def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randi
 
 --- choices ---
 
-- (x) It chooses a random whole number between 100 and 300.
+- (x) Il choisit un nombre entier aléatoire entre 100 et 300.
 
   --- feedback ---
 
-C'est correct ! Une bordure noire sera dessinée autour de tes formes si tu n'utilises pas cette fonction.
+C'est correct ! Cela permet de choisir une coordonnée x aléatoire pour ta flèche.
 
   --- /feedback ---
 
-- ( ) It makes the arrow move randomly around the screen.
+- ( ) Cela fait bouger la flèche de manière aléatoire sur l'écran.
 
   --- feedback ---
 
-Pas tout à fait. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
+Pas tout à fait. Ce code explique en partie comment la flèche se déplace de manière aléatoire, mais tu as besoin d'autres codes pour atteindre cet objectif.
 
   --- /feedback ---
 
-- ( ) Elle remplit la forme avec une couleur donnée.
+- () Il s'agit de la couleur qui a été touchée par la flèche.
 
   --- feedback ---
 
-  Pas tout à fait. La fonction fill() fait cela et inclura généralement une couleur donnée.
+  Pas tout à fait. La fonction get() est utilisée pour obtenir la couleur.
 
   --- /feedback ---
 
-- ( ) Elle dessinera une forme de cercle dans ton programme.
+- ( ) Il dessine un cercle de taille aléatoire.
 
   --- feedback ---
 
