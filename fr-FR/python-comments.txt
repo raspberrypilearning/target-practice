@@ -1,27 +1,27 @@
 Choses à faire dans chaque image
 
-Draw the inner circle
+Dessiner le cercle intérieur
 
-Draw the middle circle
+Dessiner le cercle du milieu
 
 La fonction tire_fleche vient ici
 
 La fonction souris_pressee vient ici
 
-You hit the outer circle, 50 points!
+Tu as touché le cercle extérieur, 50 points !
 
-You hit the inner circle, 200 points!
+Tu as touché le cercle intérieur, 200 points !
 
-You hit the middle, 500 points!
+Tu as touché le milieu, 500 points !
 
-You hit the middle, 500 points!
+Tu as touché le milieu, 500 points !
 
-You missed! No points!
+Tu as loupé la cible ! Aucun point !
 
-Super fast
+Super rapide
 
-Pretty quick
+Assez rapide
 
-Very fast
+Très rapide
 
-Speed not recognised!
+Vitesse non reconnue !
