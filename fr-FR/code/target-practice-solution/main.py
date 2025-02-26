@@ -1,16 +1,16 @@
-# importation des librairies de code !
+## Importer le code de la bibliothèque
 from p5 import *
 from random import randint
 
 
-# La fonction mouse_pressed vient ici
+# La fonction souris_pressee vient ici
 def mouse_pressed():
     # print('🎯')
-    if hit_colour == Color("blue").hex:
+    if couleur_touchee == Color("blue").hex:
         print('Tu as touché le cercle extérieur, 50 points !')
-    elif touche_couleur == Color('red').hex:
+    elif couleur_touchee == Color('red').hex:
         print('Tu as touché le cercle intérieur, 200 points !')
-    elif touche_couleur == Color('yellow').hex:
+    elif couleur_touchee == Color('yellow').hex:
         print('Tu as touché le centre, 500 points !')
     else:
         print('Tu as loupé la cible ! Aucun point !')
@@ -18,13 +18,13 @@ def mouse_pressed():
 
 # La fonction tire_fleche vient ici
 def tire_fleche():
-    global hit_colour
-    arrow_x = randint(100, 300)
-    arrow_y = randint(100, 300)
-    hit_colour = get(arrow_x, arrow_y).hex
-    # print(hit_colour)
+    global couleur_touchee
+    fleche_x = randint(100, 300)
+    fleche_y = randint(100, 300)
+    couleur_touchee = get(fleche_x, fleche_y).hex
+    # print(couleur_touchee)
     fill("brown")
-    circle(arrow_x, arrow_y, 15)
+    circle(fleche_x, fleche_y, 15)
 
 
 def setup():
@@ -44,9 +44,9 @@ def draw():
     fill("blue")
     circle(200, 200, 170)
     fill("red")
-    circle(200, 200, 110)  # Draw the inner circle
+    circle(200, 200, 110)  # Dessiner le cercle intérieur
     fill("yellow")
-    circle(200, 200, 30)  # Draw the middle circle
+    circle(200, 200, 30)  # Dessiner le cercle du milieu
     tire_fleche()
 
 
