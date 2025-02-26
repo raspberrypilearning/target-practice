@@ -15,7 +15,7 @@ Ton jeu a besoin d'une cible pour tirer des flèches.
 
 --- task ---
 
-Définis la couleur de remplissage sur `sienna` (marron).
+Définis la couleur de remplissage sur `brun`.
 
 Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
 
@@ -38,7 +38,7 @@ line_highlights: 23-24
 
 --- task ---
 
-**Test :** 🔄 exécute ton code pour voir le support de ta cible :
+**Test :** exécute ton code pour voir la position de ta cible :
 
 ![Un triangle marron sur l'herbe et sur fond de ciel.](images/target-stand.png){:width="400px"}
 
@@ -106,7 +106,7 @@ line_highlights: 27-30
 
 --- task ---
 
-**Test :** 🔄 exécute ton projet pour voir la cible avec trois cercles colorés.
+**Test :** exécute ton projet pour voir la cible avec trois cercles colorés.
 
 ![Un triangle marron avec trois cercles colorés sur de l'herbe et sur fond de ciel.](images/three-circles.png){:width="400px"}
 
