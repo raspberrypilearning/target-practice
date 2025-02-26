@@ -70,7 +70,7 @@ print('🎯')
 
 --- task ---
 
-**Test:** Click the **Run** button. Tente disparar a flecha nos círculos interno e do meio para ver suas mensagens.
+**Teste:** 🔄 Execute seu projeto. Tente disparar a flecha nos círculos interno e do meio para ver suas mensagens.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif)
 
