@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend : Question 3 sur 3
+legend: Question 3 sur 3
 ---
 
 Un cercle est dessiné en utilisant le code suivant :
