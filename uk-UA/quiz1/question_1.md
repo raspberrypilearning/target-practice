@@ -2,15 +2,15 @@
 
 Дай відповідь на три запитання. Підказки допоможуть знайти правильну відповідь.
 
-Відповівши на кожне питання, натисни на **Перевірити мою відповідь**.
+Відповівши на питання, натисни на **Перевірити мою відповідь**.
 
-Розважайся!
+Успіхів!
 
 --- question ---
 ---
 legend: Питання 1 з 3
 ---
-In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
+У цьому проєкті ми додали `randint(100, 300)` до функції `shoot_arrow()`. Що робить `randint(100, 300)`?
 
 --- code ---
 ---
@@ -23,35 +23,35 @@ def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randi
 
 --- choices ---
 
-- ( ) (0, 0, 0)
+- (x) Вибирає випадкове ціле число від 100 до 300.
 
   --- feedback ---
 
-That's correct. This chooses a random x coordinate for your arrow.
+Правильно. randint(100, 300) вибирає випадкову координату x для твоєї стріли.
 
   --- /feedback ---
 
-- ( ) (255, 0, 0)
+- ( ) Змушує стрілу довільно рухатися по екрану.
 
   --- feedback ---
 
-Not quite. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
+Не зовсім так. Ця частина коду допомагає стрілі рухатися випадковим чином, але для досягнення цієї мети тобі потрібен інший код.
 
   --- /feedback ---
 
-- (x) (0, 0, 255)
+- () Визначає колір, на який потрапила стріла.
 
   --- feedback ---
 
-  Not quite. The get() function would be used to get the colour.
+  Не зовсім так. Для отримання кольору використовувалася б функція get().
 
   --- /feedback ---
 
-- ( ) (255, 255, 255)
+- ( ) Малює коло довільного розміру.
 
   --- feedback ---
 
-  Not quite. The circle() function would be used to draw a circle.
+  Не зовсім так. Для малювання кола використовувалася б функція circle().
 
   --- /feedback ---
 
