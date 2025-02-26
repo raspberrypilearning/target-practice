@@ -89,7 +89,7 @@ circle(flecha_x, flecha_y, 15) # Desenha um pequeno círculo em coordenadas alea
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Teste:** 🔄 Execute seu projeto. You should see the arrow jump around the target.
 
 ![Uma animação do alvo com uma seta circular marrom aparecendo em diversas posições.](images/fire_arrow.gif)
 
