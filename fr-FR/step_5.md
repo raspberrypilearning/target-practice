@@ -1,14 +1,14 @@
-## What colour did you hit?
+## Quelle est la couleur atteinte ?
 
-Next, you will add some code to get the colour at the location of the arrow.
+Ensuite, tu ajouteras du code pour obtenir la couleur à l’emplacement de la flèche.
 
-### Get the colour hit by the arrow
+### Obtenir la couleur touchée par la flèche
 
 --- task ---
 
-**Débogage :** 🐞 si tu vois un message indiquant que `touche_couleur` n'est pas « défini », reviens à `draw()` et vérifie que la ligne déclaration `touche_couleur` comme une variable globale.
+Ajoute une nouvelle **variable globale** appelée `couleur_touchee`.
 
-Add code to `get` the colour at the centre of the arrow ,and store it in the `hit_colour` variable.
+Ajoute du code pour `obtenir` la couleur au centre de la flèche et la stocker dans la variable `couleur_touchee`.
 
 
 --- code ---
@@ -22,21 +22,21 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- /code ---
 
-**Débogage :** 🐞 assure-toi d'avoir utilisé la chaîne `.hex` pour **tes** couleurs de cercle.
+**Astuce :** le code pour `obtenir` la couleur doit être **avant** le code pour dessiner le `cercle` sinon tu garderas toujours la couleur brune de la flèche !
 
 --- /task ---
 
 --- task ---
 
-**Test :** 🔄 exécute ton projet. Essaie de tirer la flèche sur le cercle extérieur bleu pour voir le message.
+**Test :** clique sur le bouton **Run** . Tu devrais voir les couleurs imprimées dans **Text output**, au format hexadécimal.
 
 --- /task ---
 
-### Run code when the mouse is pressed
+### Exécuter le code lorsque la souris est pressée
 
 --- task ---
 
-Comment out the line that prints the colour. This means it will not run.
+Commente la ligne qui imprime la couleur. Cela signifie qu'elle ne s'exécuteras pas.
 
 --- code ---
 ---
@@ -54,7 +54,7 @@ line_highlights: 14
 
 --- task ---
 
-Add code to print the target emoji 🎯 **when the mouse is clicked**.
+Ajoute du code pour imprimer l'emoji cible 🎯 **quand la souris est cliquée**.
 
 --- code ---
 ---
@@ -71,9 +71,9 @@ print('🎯')
 
 --- task ---
 
-**Test:** Click the **Run** button. Essaie de tirer la flèche sur les cercles intérieurs et intermédiaires pour voir leurs messages.
+**Test :** clique sur le bouton **Run**. Tu dois voir le caractère 🎯 s'imprimer lorsque tu cliques sur la cible avec la souris.
 
-![target emoji printed when mouse clicked](images/target_printed.gif)
+![emoji cible imprimé lorsque l'on clique sur la souris](images/target_printed.gif)
 
 --- /task ---
 
