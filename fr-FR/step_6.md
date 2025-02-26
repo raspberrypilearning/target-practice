@@ -1,19 +1,19 @@
-## Score points
+## Marquer des points
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add a score based on where the arrow hits.
+Ajoute un score en fonction de l'endroit où la flèche frappe.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Une animation de la cible, avec la flèche apparaissant dans diverses positions et les scores apparaissant sous forme de texte sous le jeu.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Comment out the line to print the 🎯 character so that it no longer runs.
+Commente la ligne pour imprimer le caractère 🎯 afin qu'il ne s'exécute plus.
 
 --- code ---
 ---
@@ -28,7 +28,7 @@ def mouse_pressed(): # print('🎯')
 
 --- task ---
 
-Display a message **if** the `hit_colour`{:.language-python} is equal to the `outer` circle colour (blue).
+Affiche un message **if** la `touche_couleur`{:.language-python} est égale à la couleur du cercle `extérieur` (bleu).
 
 --- code ---
 ---
@@ -40,21 +40,21 @@ def mouse_pressed():
 
 --- /code ---
 
-**Tip:** If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
+**Astuce :** si tu as modifié la couleur de ton cercle extérieur, tu dois remplacer `blue` par le nom de la couleur que tu as choisie.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click the **Run** button. Wait for the arrow to land on the blue circle, then click your left mouse button. ![points scored when blue circle clicked](images/blue_circle_points.gif)
+**Test :** clique sur le bouton **Run** . Attends que la flèche atterrisse sur le cercle bleu, puis clique sur le bouton gauche de la souris. ![points marqués lorsque le cercle bleu est cliqué](images/blue_circle_points.gif)
 
 --- /task ---
 
-`elif`{:.language-python} can be used to add more conditions to your `if`{:.language-python} statement.
+`elif`{:.language-python} peut être utilisé pour ajouter plus de conditions à ton instruction `if`{:.language-python}.
 
 --- task ---
 
-Add some more code to score points if the arrow lands on the **inner** or **middle** circles.
+Ajoute un peu de code pour marquer des points si la flèche tombe sur les cercles **intérieure** ou **milieu**.
 
 --- code ---
 ---
@@ -70,21 +70,21 @@ def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('
 
 --- task ---
 
-**Test:** Click the **Run** button.You should score points whenever you hit the target.
+**Test :** clique sur le bouton **Run**. Tu devrais marquer des points chaque fois que tu atteins la cible.
 
-![points being scored on any area of target](images/yellow-points.png)
+![points marqués sur n'importe quelle zone de la cible](images/yellow-points.png)
 
 --- /task ---
 
-### Missing the target
+### Manquer la cible
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles?
+Il te reste une décision à prendre : que se passe-t-il si la flèche n'atterrit sur aucun des cercles de la cible ?
 
-To do this last check, you use `else`{:.language-python}.
+Pour faire cette dernière vérification, tu utiliseras `else`{:.language-python}.
 
 --- task ---
 
-Add code to `print` a message when none of the `if` and `elif` statements are true.
+Ajoute du code pour `imprimer` un message lorsque aucune des déclarations `if` et `elif` n'est vraie.
 
 --- code ---
 ---
@@ -103,9 +103,9 @@ line_highlights: 14-15
 
 --- task ---
 
-**Test:** Click the **Run** button. Fire the arrow in the grass or sky to see the miss message.
+**Test :** clique sur le bouton **Run** . Tire la flèche dans l'herbe ou dans le ciel pour voir le message qui te dit que tu as loupé la cible.
 
-![no points printed when outside target](images/missed_no_points.gif)
+![aucun point imprimé en dehors de la cible](images/missed_no_points.gif)
 
 --- /task ---
 
