@@ -65,7 +65,7 @@ The arrow needs to move randomly.
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+Definisci la tua funzione `shoot_arrow()` sotto il commento **# La funzione shoot_arrow() va qui**.
 
 --- code ---
 ---
@@ -82,7 +82,7 @@ def shoot_arrow(): global hit_colour  # Può essere utilizzato in altre funzioni
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Test:** 🔄 Esegui il tuo progetto. You should see the arrow jump around the target.
 
 ![Un'animazione del bersaglio con una freccia circolare marrone che appare in diverse posizioni.](images/fire_arrow.gif)
 
