@@ -60,7 +60,7 @@ line_highlights: 10-11
 
 --- task ---
 
-Add code to print the target emoji 🎯 **when the mouse is clicked**.
+**Cyngor:** Mae `frame_rate()` yn `setup()` yn rheoli pa mor gyflym mae eich gêm yn llunio. Os yw'n mynd yn rhy gyflym, rhowch rif is.
 
 --- code ---
 ---
