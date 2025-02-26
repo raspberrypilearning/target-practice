@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend : Question 2 sur 3
+legend: Question 2 sur 3
 ---
 
 Dans ton projet, tu as utilisé les conditions `if`, `elif` et `else` pour vérifier sur quelle couleur la flèche a atterri.
