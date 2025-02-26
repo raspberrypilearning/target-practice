@@ -1,10 +1,10 @@
 ## Ce que tu vas faire
 
-Utilise Python, avec la bibliothèque graphique `p5`, pour dessiner une cible et marquer des points en l'atteignant avec des flèches.
+Utilise Python pour dessiner une cible et marque des points en l'atteignant avec des flèches.
 
 --- print-only ---
 
-![Une cible de tir à l'arc avec un point de vie sur le cercle extérieur. Le texte « Tu as atteint le cercle extérieur, 50 points ! » est affiché en dessous](images/blue-points.png){:width="640px"}
+![Une cible de tir à l'arc avec un point de vie sur le cercle extérieur. Le texte "Tu as atteint le cercle extérieur, 50 points !" est affiché en dessous](images/blue-points.png){:width="640px"}
 
 --- /print-only ---
 
