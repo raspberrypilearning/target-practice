@@ -4,6 +4,6 @@ flecha_x
 
 flecha_y
 
-hit_colour
+color_de_impacto
 
 velocidad
