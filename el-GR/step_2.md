@@ -28,12 +28,7 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-def draw():     
-#Πράγματα που θα συμβαίνουν σε κάθε καρέ     
-sky = color(92, 204, 206) #Κόκκινο = 92, Πράσινο = 204, Μπλε = 206     
-grass = color(149, 212, 122)     
-wood = color(145, 96, 51)     
-outer = color(0, 120, 180)
+fill(sky)
 
 ![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
 
