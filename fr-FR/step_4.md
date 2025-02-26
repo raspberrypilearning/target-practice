@@ -1,8 +1,8 @@
-## Tirer la flèche
+## Ajouter une flèche
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an even smaller circle to represent an arrow.
+Ajoute un cercle encore plus petit pour représenter une flèche.
 </div>
 <div>
 
@@ -11,11 +11,11 @@ Add an even smaller circle to represent an arrow.
 </div>
 </div>
 
-### Where will you shoot?
+### Où vas-tu tirer ?
 
 --- task ---
 
-Ajoute du code pour dessiner au hasard un cercle marron dans une zone cible :
+Ajoute une fonction pour dessiner un cercle brun aux coordonnées `200`, `200`.
 
 --- code ---
 ---
@@ -32,7 +32,7 @@ arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-Va dans la fonction `draw` et appelle ta nouvelle fonction `tire_fleche`.
+Appelle ta nouvelle fonction `tire_fleche()`{:.language-python} à la fin de ta fonction `draw()`{:.language-python}.
 
 --- code ---
 ---
@@ -50,22 +50,22 @@ line_highlights: 35
 
 --- task ---
 
-**Test :** 🔄 exécute ton projet. You should see the arrow in the centre.
+**Test :** clique sur le bouton **Run**. Tu devrais voir la flèche au centre.
 
 
-**Test:** Click the **Run** button. You should see the arrow in the centre.
+**Test :** clique sur le bouton **Run**. Tu devrais voir la flèche au centre.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+![un cercle de flèche brun au centre de la cible](images/arrow-centre.png)
 
 
 --- /task ---
 
-The arrow needs to move randomly.
+La flèche doit se déplacer de manière aléatoire.
 
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+Modifie les variables `fleche_x`{:.language-python} et `fleche_y`{:.language-python} pour choisir un nombre aléatoire entre 100 et 300.
 
 --- code ---
 ---
@@ -82,7 +82,7 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Test :** clique sur le bouton **Run**. Tu devrais voir la flèche sauter autour de la cible.
 
 ![Une animation de cible avec une flèche circulaire marron apparaissant dans diverses positions.](images/fire_arrow.gif)
 
