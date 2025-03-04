@@ -18,11 +18,11 @@ def mouse_pressed():
 
 # De schiet_pijl functie komt hier
 def schiet_pijl():
-    global hit_colour
+    global raak_kleur
     pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
     pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
     raak_kleur = get(pijl_x, pijl_y).hex # Haal de geraakte kleur op
-    # print(hit_colour)
+    # print(raak_kleur)
     fill("brown")
     circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
 
