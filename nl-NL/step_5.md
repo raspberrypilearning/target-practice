@@ -1,14 +1,14 @@
-## What colour did you hit?
+## Welke kleur heb je geraakt?
 
-Next, you will add some code to get the colour at the location of the arrow.
+Vervolgens voeg je wat code toe om te kleur op de plek van de pijl op te halen.
 
-### Get the colour hit by the arrow
+### Haal de kleur op die door de pijl wordt geraakt
 
 --- task ---
 
 **Debuggen:** 🐞 Als je een bericht ziet over `raak_kleur` die 'niet gedefinieerd' is, ga dan terug naar `draw()` en controleer de regel waarin `raak_kleur` als globale variabele gedeclareerd is.
 
-Add code to `get` the colour at the centre of the arrow ,and store it in the `hit_colour` variable.
+Voeg code toe om de kleur in het midden van de pijl `op te halen` en sla deze op in de variabele `raak_kleur` .
 
 
 --- code ---
@@ -32,11 +32,11 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- /task ---
 
-### Run code when the mouse is pressed
+### Code uitvoeren wanneer de muis wordt ingedrukt
 
 --- task ---
 
-Comment out the line that prints the colour. This means it will not run.
+Maak een comment van de regel die de kleur print. Dit betekent dat het niet zal werken.
 
 --- code ---
 ---
@@ -54,7 +54,7 @@ line_highlights: 14
 
 --- task ---
 
-Add code to print the target emoji 🎯 **when the mouse is clicked**.
+Voeg code toe om de doel-emoji 🎯 af te drukken ** wanneer met de muis wordt geklikt**.
 
 --- code ---
 ---
@@ -71,9 +71,9 @@ print('🎯')
 
 --- task ---
 
-**Test:** 🔄 Voer je project uit. You should see the 🎯 character printed when you click the mouse on the target.
+**Test:** 🔄 Voer je project uit. Wanneer je met de muis op het doel klikt, zou je het teken 🎯 moeten zien.
 
-![target emoji printed when mouse clicked](images/target_printed.gif)
+![doel-emoji geprint wanneer met de muis wordt geklikt](images/target_printed.gif)
 
 --- /task ---
 
