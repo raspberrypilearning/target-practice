@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an even smaller circle to represent an arrow.
+Voeg een nog kleinere cirkel toe die een pijlt voorstelt.
 </div>
 <div>
 
@@ -11,7 +11,7 @@ Add an even smaller circle to represent an arrow.
 </div>
 </div>
 
-### Where will you shoot?
+### Waar ga je schieten?
 
 --- task ---
 
@@ -50,22 +50,22 @@ line_highlights: 35
 
 --- task ---
 
-**Test:** 🔄 Voer je project uit. You should see the arrow in the centre.
+**Test:** 🔄 Voer je project uit. Je zou de pijl in het midden moeten zien.
 
 
-**Test:** Click the **Run** button. You should see the arrow in the centre.
+**Test:** Klik op de knop **Run**. Je zou de pijl in het midden moeten zien.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+![een bruine pijlcirkel in het midden van het doel](images/arrow-centre.png)
 
 
 --- /task ---
 
-The arrow needs to move randomly.
+De pijl moet willekeurig bewegen.
 
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+Wijzig de `pijl_x`{:.language-python} en `pijl_y`{:.language-python} variabelen om een willekeurig getal tussen 100 en 300 te kiezen.
 
 --- code ---
 ---
@@ -82,7 +82,7 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 --- task ---
 
 
-**Test:** 🔄 Voer je project uit. You should see the arrow jump around the target.
+**Test:** 🔄 Voer je project uit. Je zou de pijl rond het doel moeten zien springen.
 
 ![Het doelwit op de achtergrond met een bruine cirkelpijl erop.](images/fire_arrow.gif)
 
