@@ -10,7 +10,7 @@ Veel plezier!
 ---
 legend: Vraag 1 van 3
 ---
-In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
+In je project heb je `randint(100, 300)` toegevoegd aan je `schiet_pijl()` functie. Wat doet `randint(100, 300)`?
 
 --- code ---
 ---
@@ -23,31 +23,31 @@ def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randi
 
 --- choices ---
 
-- (x) It chooses a random whole number between 100 and 300.
+- (x) Er wordt een willekeurig geheel getal tussen 100 en 300 gekozen.
 
   --- feedback ---
 
-Dat klopt. This chooses a random x coordinate for your arrow.
+Dat klopt. Hiermee kies je een willekeurige x-coördinaat voor jouw pijl.
 
   --- /feedback ---
 
-- ( ) It makes the arrow move randomly around the screen.
+- ( ) Hierdoor beweegt de pijl willekeurig over het scherm.
 
   --- feedback ---
 
-Niet helemaal. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
+Niet helemaal. Deze code bepaalt gedeeltelijk hoe de pijl willekeurig beweegt, maar om dat doel te bereiken, heb je ook nog andere code nodig.
 
   --- /feedback ---
 
-- () It gets the colour that was hit by the arrow.
+- () Het haalt de kleur op die door de pijl werd geraakt.
 
   --- feedback ---
 
-  Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
+  Niet helemaal. De get()-functie wordt gebruikt om de kleur op te halen.
 
   --- /feedback ---
 
-- ( ) Er wordt een cirkelvorm in jouw programma getekend.
+- ( ) Het tekent een cirkel van willekeurige grootte.
 
   --- feedback ---
 
