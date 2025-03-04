@@ -1,19 +1,19 @@
-## Score points
+## Punten scoren
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add a score based on where the arrow hits.
+Afhankelijk van waar de pijl terechtkomt, wordt er een score toegekend.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Een animatie van het doel, waarbij de pijl in verschillende posities verschijnt en de scores als tekst onder het spel verschijnen.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Comment out the line to print the 🎯 character so that it no longer runs.
+Maak een comment van de regel die het teken 🎯 print, zodat deze niet meer wordt uitgevoerd.
 
 --- code ---
 ---
