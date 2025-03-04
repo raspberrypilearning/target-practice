@@ -1,8 +1,8 @@
 Dingen om te doen in elk frame
 
-Draw the inner circle
+Teken de binnenste cirkel
 
-Draw the middle circle
+Teken de middelste cirkel
 
 De schiet_pijl functie komt hier
 
@@ -14,7 +14,7 @@ Je hebt de binnenste cirkel geraakt, 200 punten!
 
 Je raakt het midden, 500 punten!
 
-You hit the middle, 500 points!
+Je hebt het midden geraakt, 500 punten!
 
 Je hebt gemist! Geen punten!
 
