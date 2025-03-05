@@ -28,7 +28,7 @@ def mouse_pressed(): # print('🎯')
 
 --- task ---
 
-Display a message **if** the `hit_colour`{:.language-python} is equal to the `outer` circle colour (blue).
+Geef een bericht weer **als** de `raak_kleur`{:.language-python} gelijk is aan de `buitenste` cirkelkleur (blauw).
 
 --- code ---
 ---
@@ -46,15 +46,15 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Click the **Run** button. Wait for the arrow to land on the blue circle, then click your left mouse button. ![points scored when blue circle clicked](images/blue_circle_points.gif)
+**Test:** Klik op de knop **Run**. Wacht tot de pijl in de blauwe cirkel terechtkomt en klik vervolgens op de linkermuisknop. ![punten gescoord toen op de blauwe cirkel werd geklikt](images/blue_circle_points.gif)
 
 --- /task ---
 
-`elif`{:.language-python} can be used to add more conditions to your `if`{:.language-python} statement.
+`elif`{:.language-python} kan worden gebruikt om meer voorwaarden toe te voegen aan je `if`{:.language-python} statement.
 
 --- task ---
 
-Add some more code to score points if the arrow lands on the **inner** or **middle** circles.
+Voeg wat meer code toe om punten te scoren als de pijl op de **binnenste** of **middelste** cirkel terechtkomt.
 
 --- code ---
 ---
@@ -70,21 +70,21 @@ def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('
 
 --- task ---
 
-**Test:** Click the **Run** button.You should score points whenever you hit the target.
+**Test:** Klik op de knop **Run**. Je zou punten moeten scoren wanneer je het doel raakt.
 
-![points being scored on any area of target](images/yellow-points.png)
+![punten die op een willekeurig gebied van het doel worden gescoord](images/yellow-points.png)
 
 --- /task ---
 
-### Missing the target
+### Het doel missen
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles?
+Er is nog een beslissing die je moet nemen: wat gebeurt er als de pijl niet op een van de doelcirkels landt?
 
-To do this last check, you use `else`{:.language-python}.
+Om deze laatste controle uit te voeren, gebruikt je `else`{:.language-python}.
 
 --- task ---
 
-Add code to `print` a message when none of the `if` and `elif` statements are true.
+Voeg code toe aan het `print` commando om een een bericht weer te geven wanneer geen van de `if` en `elif` statements waar zijn.
 
 --- code ---
 ---
@@ -103,9 +103,9 @@ line_highlights: 14-15
 
 --- task ---
 
-**Test:** Click the **Run** button. Fire the arrow in the grass or sky to see the miss message.
+**Test:** Klik op de knop **Run**. Probeer de pijl in het gras of de lucht te laten landen om het gemist bericht te zien.
 
-![no points printed when outside target](images/missed_no_points.gif)
+![geen punten weergegeven wanneer buiten het doelgebied](images/missed_no_points.gif)
 
 --- /task ---
 
