@@ -40,7 +40,7 @@ def mouse_pressed():
 
 --- /code ---
 
-**Tip:** If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
+**Tip:** Als je de kleur van je buitenste cirkel hebt gewijzigd, moet je `'blue'` vervangen door de kleurnaam die je hebt gekozen.
 
 --- /task ---
 
