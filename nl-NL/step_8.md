@@ -1,33 +1,33 @@
-## Challenge
+## Uitdaging
 
 --- challenge ---
 
 
-You could:
+Je kunt:
 
 
 --- task ---
 
-Add a `fourth` and `fifth` circle, in new colours, which score different amounts of points based on their position
+Een `vierde` en `vijfde` cirkel toevoegen, in nieuwe kleuren, die verschillende punten scoren op basis van hun positie
 
 --- /task ---
 
 --- task ---
 
-Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
+Emoji in je geprinte berichten zetten ([hier is een lijst met emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} waaruit je kunt kopiëren)
 
 --- /task ---
 
 --- task ---
 
-Make the game easier or harder by changing the `frame_rate=2` value
+Het spel gemakkelijker of moeilijker maken door de waarde van `frame_rate=2` te wijzigen
 
 
 --- /task ---
 
 --- task ---
 
-Add a variable to keep track of the total score, adding the correct number of points to it each time.
+Voeg een variabele toe om de totaalscore bij te houden en tel er elke keer het juiste aantal punten bij op.
 
 --- /task ---
 
