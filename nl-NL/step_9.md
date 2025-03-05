@@ -1,6 +1,6 @@
-## What can you do now?
+## Wat kun je verder nog doen?
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Als je het [Inleiding tot Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pad volgt, kun je doorgaan naar het [Raket lanceren](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In dit project maak je een interactieve animatie van een raket die een satelliet in een baan om de aarde lanceert.
 
 \--- print-only ---
 
@@ -10,11 +10,12 @@ If you are following the [Introduction to Python](https://projects.raspberrypi.o
 
 \--- no-print ---
 
-Click the **Run** button to view an example of this project.
+Klik op de knop **Run** om een voorbeeld van dit project te bekijken.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
 \--- /no-print ---
 
-Or, why not try out another [Python](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) project.
+Of waarom probeer je geen ander [Python](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) project?
+
