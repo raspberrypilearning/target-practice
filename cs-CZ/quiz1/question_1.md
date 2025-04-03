@@ -51,7 +51,7 @@ Not quite. This code part of how the arrow moves randomly but you need other cod
 
   --- feedback ---
 
-  Not quite. The circle() function would be used to draw a circle.
+  Not quite. K nakreslení kruhu by se použila funkce circle().
 
   --- /feedback ---
 
