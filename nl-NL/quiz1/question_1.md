@@ -43,11 +43,11 @@ Niet helemaal. Deze code bepaalt gedeeltelijk hoe de pijl willekeurig beweegt, m
 
   --- feedback ---
 
-  Niet helemaal. De get()-functie wordt gebruikt om de kleur op te halen.
+  Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
 
   --- /feedback ---
 
-- ( ) Het tekent een cirkel van willekeurige grootte.
+- ( ) Er wordt een cirkelvorm in jouw programma getekend.
 
   --- feedback ---
 
