@@ -1,19 +1,19 @@
-## Score points
+## Gana puntos
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add a score based on where the arrow hits.
+Añade una puntuación basada en dónde impacta la flecha.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Una animación del blanco, con la flecha apareciendo en una variedad de posiciones y puntajes que aparecen como texto debajo del juego.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Comment out the line to print the 🎯 character so that it no longer runs.
+Comenta la línea para imprimir el carácter 🎯 para que ya no se ejecute.
 
 --- code ---
 ---
@@ -28,7 +28,7 @@ def mouse_pressed(): # print('🎯')
 
 --- task ---
 
-Display a message **if** the `hit_colour`{:.language-python} is equal to the `outer` circle colour (blue).
+Muestra un mensaje **si (if)** el `hit_colour`{:.language-python} es igual al `color del círculo exterior` (azul).
 
 --- code ---
 ---
@@ -36,25 +36,25 @@ language: python line_numbers: true line_number_start: 6
 line_highlights: 8-9
 ---
 def mouse_pressed():    
-# print('🎯') if hit_colour == Color('blue').hex: print('You hit the outer circle, 50 points!')
+# print('🎯') if hit_colour == Color('blue').hex: print(''Le diste al círculo externo, ¡50 puntos!')
 
 --- /code ---
 
-**Tip:** If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
+**Consejo:** Si cambiaste el color de tu círculo exterior, deberás reemplazar `blue (azul)` con el nombre del color que hayas elegido.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click the **Run** button. Wait for the arrow to land on the blue circle, then click your left mouse button. ![points scored when blue circle clicked](images/blue_circle_points.gif)
+**Prueba:** Haz clic en el botón **Ejecutar (Run)**. Espera a que la flecha aterrice en el círculo azul y luego haz clic con el botón izquierdo del mouse. ![puntos obtenidos al hacer clic en el círculo azul](images/blue_circle_points.gif)
 
 --- /task ---
 
-`elif`{:.language-python} can be used to add more conditions to your `if`{:.language-python} statement.
+`elif`{:.language-python} se puede usar para agregar más condiciones a tu declaración `if`{:.language-python}.
 
 --- task ---
 
-Add some more code to score points if the arrow lands on the **inner** or **middle** circles.
+Agrega más código para sumar puntos si la flecha cae en los círculos **internos ** o en los círculos **centrales **.
 
 --- code ---
 ---
@@ -62,7 +62,7 @@ language: python line_numbers: true line_number_start: 6
 line_highlights: 10-14
 ---
 
-def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('You hit the outer circle, 50 points!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('You hit the middle, 500 points!')
+def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print(''Le diste al círculo externo, ¡50 puntos!') elif hit_colour == Color('red').hex: print('You hit the inner circle, 200 points!') elif hit_colour == Color('yellow').hex: print('¡Le diste al centro, 500 puntos!')
 
 --- /code ---
 
@@ -76,7 +76,7 @@ def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('
 
 --- /task ---
 
-### Missing the target
+### Fallar el blanco
 
 There is one more decision you need to make: what happens if the arrow does not land on any of the target circles?
 
@@ -93,9 +93,9 @@ line_highlights: 14-15
 ---
 
     elif hit_colour == Color('yellow').hex:
-        print('You hit the middle, 500 points!')
+            print('¡Le diste al centro, 500 puntos!')
     else:   
-        print('You missed! No points!')
+        print('¡Fallaste! ¡Sin puntos!')
 
 --- /code ---
 
