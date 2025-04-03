@@ -1,14 +1,14 @@
-## What colour did you hit?
+## ¿Que color te salió?
 
-Next, you will add some code to get the colour at the location of the arrow.
+A continuación, agregarás código para obtener el color en la ubicación de la flecha.
 
-### Get the colour hit by the arrow
+### Obtener el color donde se clavó la flecha
 
 --- task ---
 
 **Depuración:** 🐞 Si ve un mensaje sobre `interno` o `medio` que están 'not defined', vuelve a `draw()` y verifica que estén en la línea que declara variables globales.
 
-Add code to `get` the colour at the centre of the arrow ,and store it in the `hit_colour` variable.
+Agregue código para `obtener (get)` el color en el centro de la flecha y almacenarlo en la variable `hit_colour` .
 
 
 --- code ---
@@ -34,15 +34,15 @@ print('¡Fallaste! ¡Sin puntos!')
 
 --- task ---
 
-**Prueba:** Ejecuta tu proyecto. You should see colours being printed in the **Text output**, in hexadecimal format.
+**Prueba:** Ejecuta tu proyecto. Deberías ver los colores impresos en la **salida de texto**, en formato hexadecimal.
 
 --- /task ---
 
-### Run code when the mouse is pressed
+### Imprime el color cuando se presiona el mouse
 
 --- task ---
 
-Comment out the line that prints the colour. This means it will not run.
+Comment out the line that prints the colour. Esto significa que no funcionará.
 
 --- code ---
 ---
@@ -79,7 +79,7 @@ print('🎯')
 
 **Prueba:** Ejecuta tu proyecto. Intenta detener la flecha en los círculos interior y medio para ver sus mensajes.
 
-![target emoji printed when mouse clicked](images/target_printed.gif)
+![emoji de objetivo impreso al hacer clic con el mouse](images/target_printed.gif)
 
 --- /task ---
 
