@@ -28,14 +28,14 @@ steps:
   - 
     title: Mejora tu proyecto
     knowledge_quiz:
-      path: quiz1
+      path: prueba1
       version: 1
       questions: 3
       passing_score: 3
     completion:
-      - external
+      - externo
   - 
     title: '¿Qué sigue?'
     challenge: true
   - 
-    title: What can you do now?
+    title: '¿Qué puedes hacer ahora?'
