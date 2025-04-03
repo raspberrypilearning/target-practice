@@ -1,4 +1,4 @@
-## What you will make
+## Lo que harás
 
 Usa Python, con la biblioteca de gráficos `p5`, para dibujar una diana y ganar puntos golpeándolo con flechas.
 
