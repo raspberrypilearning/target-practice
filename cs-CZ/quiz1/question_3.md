@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Question 3 of 3
+legenda: Otázka 3 ze 3
 ---
 
-A circle is drawn using the following code:
+Kruh se nakreslí pomocí následujícího kódu:
 
 --- code ---
 ---
@@ -23,39 +23,39 @@ run()
 
 --- /code ---
 
-Which of the images below show the correct position of this circle in the output area?
+Který z obrázků níže ukazuje správnou polohu tohoto kruhu ve výstupní oblasti?
 
 --- choices ---
 
-- ( ) ![A green circle centred in the bottom-right corner of the output area.](images/bottom-right.png)
+- ( ) ![Zelený kruh se středem v pravém dolním rohu výstupní oblasti.](images/bottom-right.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the bottom-right corner, the coordinates would need to be the same as the screen size. In this example, the ellipse would be `circle(400, 400, 300)`.
+  Ne tak docela, pro vycentrování kruhu v pravém dolním rohu by souřadnice musely být stejné jako velikost obrazovky. V tomto příkladu by elipsa byla `circle(400, 400, 300)`.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred in the middle of the output area.](images/centre.png)
+- ( ) ![Zelený kruh uprostřed oblasti výstupu.](images/centre.png)
 
   --- feedback ---
 
-  Not quite, to centre the circle in the middle, the coordinates would need to be half of the screen size. In this example, `circle(200, 200, 300)`.
+  Ne tak docela, aby se kruh vycentroval na střed, souřadnice by musely být poloviční velikosti obrazovky. V tomto příkladu `circle(200, 200, 300)`.
 
   --- /feedback ---
 
-- (x) ![A green circle centred in the top-left corner of the output area.](images/top-left.png)
+- (x) ![Zelený kruh se středem v levém horním rohu výstupní oblasti.](images/top-left.png)
 
   --- feedback ---
 
-  That's correct! This circle is centred at coordinates (0,0), the top-left corner of the screen.
+  Správně! Tento kruh je vycentrován na souřadnicích (0,0), v levém horním rohu obrazovky.
 
   --- /feedback ---
 
-- ( ) ![A green circle centred towards the top-right side of the output area.](images/random-side.png)
+- ( ) ![Zelený kruh se středem směrem k pravé horní straně výstupní oblasti.](images/random-side.png)
 
   --- feedback ---
 
-  No, this circle would have code of `circle(350, 150, 300)` to centre it towards the top-right of the screen. The `x` coordinate is how far across the screen the ellipse is, and the `y` coordinate is how far down the screen it is.
+  Ne, tento kruh by měl kód `circle(350, 150, 300)`, aby byl vycentrován směrem k pravé horní části obrazovky. Souřadnice `x` udává, jak daleko přes obrazovku je elipsa, a souřadnice `y` je, jak daleko je na obrazovce.
 
   --- /feedback ---
 
