@@ -10,7 +10,7 @@ Cuando hayas respondido a cada pregunta, haz clic en **Revisar mi respuesta**.
 ---
 legend: Pregunta 1 de 3
 ---
-In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
+En tu proyecto agregaste `randint(100, 300)` a tu función `shoot_arrow()`. ¿Qué hace `randint(100, 300)`?
 
 --- code ---
 ---
@@ -23,31 +23,31 @@ def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randi
 
 --- opciones ---
 
-- (x) It chooses a random whole number between 100 and 300.
+- (x) Elige un número entero aleatorio entre 100 y 300.
 
   --- feedback ---
 
-That's correct. This chooses a random x coordinate for your arrow.
+That's correct. Esto elige una coordenada x aleatoria para tu flecha.
 
   --- /retroalimentación ---
 
-- ( ) It makes the arrow move randomly around the screen.
+- ( ) Hace que la flecha se mueva aleatoriamente por la pantalla.
 
   --- feedback ---
 
-Not quite. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
+Not quite. Esta parte del código muestra cómo la flecha se mueve aleatoriamente, pero también necesitas otro código para que alcance el objetivo.
 
   --- /retroalimentación ---
 
-- () It gets the colour that was hit by the arrow.
+- () Obtiene el color donde se clavó la flecha.
 
   --- feedback ---
 
-  Not quite. The get() function would be used to get the colour.
+  Not quite. La función get() se puede utilizar para obtener el color.
 
   --- /feedback ---
 
-- ( ) It draws a circle of a random size.
+- ( ) Dibuja un círculo de tamaño aleatorio.
 
   --- feedback ---
 
