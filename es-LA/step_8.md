@@ -1,9 +1,9 @@
-## Challenge
+## Desafío
 
---- challenge ---
+--- desafío ---
 
 
-You could:
+Podrías:
 
 
 --- task ---
@@ -14,7 +14,7 @@ Add a `fourth` and `fifth` circle, in new colours, which score different amounts
 
 --- task ---
 
-Put emojis in your print messages ([here's a list of emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} you can copy from)
+Poner emojis en tus mensajes impresos ([aquí hay una lista de emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} que puedes usar para copiar)
 
 --- /task ---
 
