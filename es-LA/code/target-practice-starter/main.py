@@ -1,4 +1,4 @@
-## Import library code
+## Importa la biblioteca
 from p5 import *
 from random import randint
 
