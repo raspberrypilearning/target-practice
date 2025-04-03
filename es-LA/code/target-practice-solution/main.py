@@ -1,19 +1,20 @@
-## Import library code
+## Importar código de biblioteca
+
 from p5 import *
 from random import randint
 
 
 # The mouse_pressed function goes here
 def mouse_pressed():
-    # print('🎯')
+    # imprimir('🎯')
     if hit_colour == Color("blue").hex:
-        print("You hit the outer circle, 50 points!")
+        print("Le diste al círculo externo, ¡50 puntos!")
     elif hit_colour == Color("red").hex:
-        print("You hit the inner circle, 200 points!")
+        print("Le diste al círculo interno, ¡200 puntos!")
     elif hit_colour == Color("yellow").hex:
-        print("You hit the middle, 500 points!")
+        print("¡Le diste al centro, 500 puntos!")
     else:
-        print("You missed! No points!")
+        print("¡Fallaste! ¡Sin puntos!')
 
 
 # The shoot_arrow function goes here
@@ -28,7 +29,7 @@ def shoot_arrow():
 
 
 def setup():
-    # Set up your game here
+    # Configura tu juego aquí
     size(400, 400)
     no_stroke()
 
@@ -44,9 +45,9 @@ def draw():
     fill("blue")
     circle(200, 200, 170)
     fill("red")
-    circle(200, 200, 110)  # Draw the inner circle
+    circle(200, 200, 110) # Dibuja el círculo interior
     fill("yellow")
-    circle(200, 200, 30)  # Draw the middle circle
+    circle(200, 200, 30) # Dibuja el círculo del medio
     shoot_arrow()
 
 
