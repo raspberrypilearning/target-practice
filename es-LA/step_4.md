@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an even smaller circle to represent an arrow.
+Añade un círculo aún más pequeño para representar una flecha.
 </div>
 <div>
 
@@ -11,11 +11,11 @@ Add an even smaller circle to represent an arrow.
 </div>
 </div>
 
-### Where will you shoot?
+### ¿Donde dispararás?
 
 --- task ---
 
-Add a function to draw a brown circle at coordinates `200`, `200`.
+Agrega una función para dibujar un círculo marrón en las coordenadas `200`, `200`.
 
 --- code ---
 ---
@@ -54,17 +54,17 @@ line_highlights: 44
 
 --- task ---
 
-**Test:** Ejecuta tu proyecto. You should see the arrow in the centre.
+**Test:** Ejecuta tu proyecto. Deberías ver la flecha en el centro.
 
 
 **Test:** Click the **Run** button. You should see the arrow in the centre.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+![un círculo marrón representando la flecha en el centro del objetivo](images/arrow-centre.png)
 
 
 --- /task ---
 
-The arrow needs to move randomly.
+La flecha debe moverse aleatoriamente.
 
 
 --- task ---
@@ -90,7 +90,7 @@ circle(flecha_x, flecha_y, 15)
 --- task ---
 
 
-**Test:** Ejecuta tu proyecto. You should see the arrow jump around the target.
+**Test:** Ejecuta tu proyecto. Deberías ver la flecha saltar alrededor del objetivo.
 
 ![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
 
