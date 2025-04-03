@@ -1,27 +1,27 @@
-Things to do in every frame
+Co dělat v každém snímku
 
-Draw the inner circle
+Nakreslete vnitřní kruh
 
-Draw the middle circle
+Nakreslete střední kruh
 
-The shoot_arrow function goes here
+Zde je funkce shoot_arrow
 
-The mouse_pressed function goes here
+Zde je funkce mouse_pressed
 
-You hit the outer circle, 50 points!
+Trefil jsi vnější kruh, 50 bodů!
 
-You hit the inner circle, 200 points!
+Trefil jsi vnitřní kruh, 200 bodů!
 
-You hit the middle, 500 points!
+Trefil jsi střed, 500 bodů!
 
-You hit the middle, 500 points!
+Trefil jsi střed, 500 bodů!
 
-You missed! No points!
+Netrefil jsi! Bez bodů!
 
-Super fast
+Super rychlé
 
-Pretty quick
+Docela rychle
 
-Very fast
+Velmi rychle
 
-Speed not recognised!
+Rychlost nebyla rozpoznána!
