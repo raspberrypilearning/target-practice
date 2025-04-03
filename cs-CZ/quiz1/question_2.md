@@ -1,12 +1,12 @@
 
 --- question ---
 ---
-legend: Question 2 of 3
+legenda: Otázka 2 ze 3
 ---
 
-In your project, you used `if` , `elif`, and `else` conditions to check which colour the arrow landed on.
+Ve svém projektu jsi použil `, if` , `elif`and `else` , abys zkontroloval, na kterou barvu šipka přistála.
 
-In the example below, a variable called `speed` has the number `6` stored in it. When this `if` statement is run, what would be printed in the output area?
+V níže uvedeném příkladu má proměnná s názvem `speed` uloženu hodnotu `6`. Když je spuštěn příkaz `if`, co se vytiskne ve výstupní oblasti?
 
 --- code ---
 ---
@@ -14,33 +14,33 @@ language: python
 ---
 speed = 6
 
-if speed == 7: print('Super fast') elif speed == 5: print('Pretty quick') elif speed == 6: print('Very fast') else: print('Speed not recognised!')
+if speed == 7: print('Super rychlá') elif speed == 5: print('Docela rychlá') elif speed == 6: print('Velmi rychlá') else: print('Rychlost nebyla rozpoznána!')
 
 --- /code ---
 
 --- choices ---
 
-- (x) `Very fast`
+- (x) `Velmi rychlá`
 
   --- feedback ---
 
-  That's correct! The **speed** variable has been assigned the value `6`, which makes the `speed == 6` condition **True** and prints `Very fast`.
+  Správně! Proměnné **speed** byla přiřazena hodnota `6`. Podmínka `speed == 6` bude vyhodnocena jako **True** a tím pádem bude vytisknuto `Very fast`.
 
   --- /feedback ---
 
-- ( ) `Speed not recognised!`
+- ( ) `Rychlost nebyla rozpoznána!`
 
   --- feedback ---
 
-  Not quite, look at the value assigned to the **speed** variable.
+  Ne tak docela. Podívej se na hodnotu přiřazenou proměnné **speed**.
 
   --- /feedback ---
 
-- ( ) Nothing gets printed
+- ( ) Nic se nevytiskne
 
   --- feedback ---
 
-  Try again, `else` is used as a final option for when all the above conditions are false. Look through the conditions again, are any of the conditions true?
+  Zkus to znovu, `else` se použije jako poslední možnost, když jsou všechny výše uvedené podmínky nepravdivé. Prohlédněte si znovu podmínky, jsou některé z podmínek pravdivé?
 
   --- /feedback ---
 
