@@ -1,16 +1,16 @@
-## Quick quiz
+## Rychlý kvíz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Odpovězte na tři otázky. Existují tipy, které vás dovedou ke správné odpovědi.
 
-When you have answered each question, click on **Check my answer**.
+Po zodpovězení každé otázky klikněte na **Zkontrolujte moji odpověď**.
 
-Have fun!
+Příjemnou zábavu!
 
 --- question ---
 ---
-legend: Question 1 of 3
+legenda: Otázka 1 ze 3
 ---
-In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
+Ve svém projektu jsi přidal `randint(100, 300)` do funkce `shoot_arrow()`. Co dělá `randint(100, 300)`?
 
 --- code ---
 ---
@@ -23,35 +23,35 @@ def shoot_arrow(): global hit_colour arrow_x = randint(100, 300) arrow_y = randi
 
 --- choices ---
 
-- (x) It chooses a random whole number between 100 and 300.
+- (x) Vybere náhodné celé číslo mezi 100 a 300.
 
   --- feedback ---
 
-That's correct. This chooses a random x coordinate for your arrow.
+Správně. Tím vyberete náhodnou souřadnici x pro vaši šipku.
 
   --- /feedback ---
 
-- ( ) It makes the arrow move randomly around the screen.
+- ( ) Způsobí, že se šipka náhodně pohybuje po obrazovce.
 
   --- feedback ---
 
-Not quite. This code part of how the arrow moves randomly but you need other code too to achieve that goal.
+Ne tak docela. Tento kód je součástí toho, jak se šipka pohybuje náhodně, ale k dosažení tohoto cíle potřebujete také jiný kód.
 
   --- /feedback ---
 
-- () It gets the colour that was hit by the arrow.
+- () Získá barvu, kterou zasáhla šipka.
 
   --- feedback ---
 
-  Not quite. The get() function would be used to get the colour.
+  Ne tak docela. K získání barvy by se použila funkce get().
 
   --- /feedback ---
 
-- ( ) It draws a circle of a random size.
+- ( ) Nakreslí kruh náhodné velikosti.
 
   --- feedback ---
 
-  Not quite. K nakreslení kruhu by se použila funkce circle().
+  Ne tak docela. K nakreslení kruhu lze použít funkci circle().
 
   --- /feedback ---
 
