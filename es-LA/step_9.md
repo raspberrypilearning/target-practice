@@ -1,10 +1,10 @@
-## What can you do now?
+## ¿Qué puedes hacer ahora?
 
-If you are following the [Introduction to Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro) pathway, you can move on to the [Rocket launch](https://projects.raspberrypi.org/en/projects/rocket-launch) project. In this project, you will make an interactive animation of a rocket launching a satellite into orbit.
+Si estás siguiendo la ruta [Introducción a Python](https://projects.raspberrypi.org/en/raspberrypi/python-intro), puedes pasar al proyecto [Lanzamiento de cohete](https://projects.raspberrypi.org/en/projects/rocket-launch). En este proyecto, harás una animación interactiva de un cohete que lanza un satélite a la órbita.
 
 \--- print-only ---
 
-![Rocket launch project.](images/showcase_rocket.png){:width="600px"}
+![Proyecto de lanzamiento de cohete.](images/showcase_rocket.png){:width="600px"}
 
 \--- /print-only ---
 
@@ -18,3 +18,4 @@ Click the **Run** button to view an example of this project.
 \--- /no-print ---
 
 Or, why not try out another [Python](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) project.
+
