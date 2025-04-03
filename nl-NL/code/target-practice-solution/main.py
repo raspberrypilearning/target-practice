@@ -1,4 +1,5 @@
 # Bibliotheekcode importeren
+
 from p5 import *
 from random import randint
 
