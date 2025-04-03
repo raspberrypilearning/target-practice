@@ -1,0 +1,27 @@
+Things to do in every frame
+
+Draw the inner circle
+
+Draw the middle circle
+
+The shoot_arrow function goes here
+
+The mouse_pressed function goes here
+
+You hit the outer circle, 50 points!
+
+You hit the inner circle, 200 points!
+
+You hit the middle, 500 points!
+
+You hit the middle, 500 points!
+
+You missed! No points!
+
+Super fast
+
+Pretty quick
+
+Very fast
+
+Speed not recognised!
