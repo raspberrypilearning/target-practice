@@ -1,21 +1,21 @@
-## Add an arrow
+## Přidejte šíp
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an even smaller circle to represent an arrow.
+Přidejte ještě menší kruh, který bude představovat šíp.
 </div>
 <div>
 
-![The target, with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif){:width="300px"}
+![Cíl s hnědou kruhovou šipkou objevující se v různých pozicích.](images/fire_arrow.gif){:width="300px"}
 
 </div>
 </div>
 
-### Where will you shoot?
+### Kam budeš střílet?
 
 --- task ---
 
-Add a function to draw a brown circle at coordinates `200`, `200`.
+Přidej funkci pro nakreslení hnědého kruhu na souřadnicích `200`, `200`.
 
 --- code ---
 ---
@@ -32,7 +32,7 @@ arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-Call your new `shoot_arrow()`{:.language-python} function at the end of your `draw()`{:.language-python} function.
+Na konci funkce `draw()`{:.language-python} zavolejte svou novou funkci `shoot_arrow()`{:.language-python}.
 
 --- code ---
 ---
@@ -50,22 +50,22 @@ line_highlights: 35
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see the arrow in the centre.
+**Test:** Click the **Run** button. Měli byste vidět šíp uprostřed.
 
 
-**Test:** Click the **Run** button. You should see the arrow in the centre.
+**Test:** Klikněte na tlačítko **Spustit**. Měli byste vidět šíp uprostřed.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+![kruh s hnědou šipkou ve středu terče](images/arrow-centre.png)
 
 
 --- /task ---
 
-The arrow needs to move randomly.
+Šíp se musí pohybovat náhodně.
 
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+Změňte proměnné `arrow_x`{:.language-python} a `arrow_y`{:.language-python} a vyberte náhodné číslo mezi 100 a 300.
 
 --- code ---
 ---
@@ -82,9 +82,9 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Test:** Klikněte na tlačítko **Spustit**. Měl bys vidět, jak šíp přeskakuje kolem cíle.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Animace cíle s hnědou kruhovou šipkou objevující se v různých pozicích.](images/fire_arrow.gif)
 
 --- /task ---
 
