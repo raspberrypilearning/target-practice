@@ -81,7 +81,7 @@ line_highlights: 22, 23
 
 **Test:** Esegui il codice per vedere il primo grande cerchio blu.
 
-Il cerchio blu è stato disegnato dopo lo stand, quindi appare davanti.
+Il cerchio blu è stato disegnato dopo il supporto, quindi appare davanti.
 
 ![Un triangolo marrone e un cerchio blu sull'erba e sopra il cielo.](images/blue-circle.png){:width="400px"}
 
