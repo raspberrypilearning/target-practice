@@ -1,8 +1,8 @@
-## Пусти стрілу
+## Додай стрілу
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Коли ти будеш натискати або торкатися, стріла буде вистрілювати в місці розташування рухомого круга-мішені.
+Додайте найменше коло — це буде стріла.
 </div>
 <div>
 
@@ -11,18 +11,18 @@
 </div>
 </div>
 
-### Намалюй коло для мішені для кожного кадра
+### Куди ти поцілиш?
 
 --- task ---
 
-Add a function to draw a brown circle at coordinates `200`, `200`.
+Додай функцію, яка малюватиме коричневе коло з координатами `200`, `200`.
 
 --- code ---
 ---
-Додай код, щоб випадковим чином з'являвся коричневий кружок всередині мішені:
-line_highlights: 10, 11, 12, 13, 14
+language: python line_numbers: true line_number_start: 8
+line_highlights: 9-13
 ---
-# Функція shoot_arrow викликається тут
+# The shoot_arrow function goes here
 def shoot_arrow():   
 arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
@@ -32,12 +32,12 @@ arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-Call your new `shoot_arrow()`{:.language-python} function at the end of your `draw()`{:.language-python} function.
+Виклич цю нову функцію `shoot_arrow()`{:.language-python} (з англійської «пустити стрілу») наприкінці своєї функції `draw()`{:.language-python} (з англійської «малювати»).
 
 --- code ---
 ---
 language: python line_numbers: true line_number_start: 33
-line_highlights: 44
+line_highlights: 35
 ---
 
     fill('yellow')      
@@ -50,27 +50,27 @@ line_highlights: 44
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see the arrow in the centre.
+**Протестуй:** натисни на кнопку **Run**. Ти маєш побачити стрілу в центрі.
 
 
-**Test:** Click the **Run** button. You should see the arrow in the centre.
+**Протестуй:** натисни на кнопку **Run**. Ти маєш побачити стрілу в центрі.
 
-![a brown arrow circle in the centre of the target](images/arrow-centre.png)
+![Коричневе коло стріли в центрі мішені](images/arrow-centre.png)
 
 
 --- /task ---
 
-**Тест:** 🔄 Запусти свій код та подивись, як стріла з'являється у випадковому місці в кожному кадрі.
+Стріла повинна рухатися випадковим чином.
 
 
 --- task ---
 
-Change the `arrow_x`{:.language-python} and `arrow_y`{:.language-python} variables to choose a random number between 100 and 300.
+Зміни код так, щоб змінні `arrow_x`{:.language-python} і `arrow_y`{:.language-python} вибирали випадкове число від 100 до 300.
 
 --- code ---
 ---
-**Тест:** 🔄 Запусти свій код та подивись, як стріла з'являється у випадковому місці в кожному кадрі.
-line_highlights: 13
+language: python line_numbers: true line_number_start: 9
+line_highlights: 10-11
 ---
 def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill('brown') circle(arrow_x, arrow_y, 15)
 
@@ -82,9 +82,9 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Протестуй:** натисни на кнопку **Run**. Ти маєш побачити, як стріла рухається навколо цілі.
 
-![An animation of target with a brown circle arrow appearing in a variety of positions.](images/fire_arrow.gif)
+![Анімація, на якій коричневе коло стріли зʼявляється у різних положеннях.](images/fire_arrow.gif)
 
 --- /task ---
 
