@@ -1,19 +1,19 @@
-## Швидкий тест
+## Набирай бали
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add a score based on where the arrow hits.
+Додай рахунок залежно від того, куди влучить стріла.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Анімація, на якій стріла зʼявляється у різних положеннях і бали зʼявляються у вигляді тексту під грою.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Comment out the line to print the 🎯 character so that it no longer runs.
+Додай символ # перед рядком, який виводить 🎯, щоб він більше не виконувався.
 
 --- code ---
 ---
@@ -28,7 +28,7 @@ def mouse_pressed(): # print('🎯')
 
 --- task ---
 
-Display a message **if** the `hit_colour`{:.language-python} is equal to the `outer` circle colour (blue).
+Виведи повідомлення, **якщо** колір `hit_colour`{:.language-python} дорівнює кольору `зовнішнього` кола (синьому).
 
 --- code ---
 ---
@@ -40,21 +40,21 @@ def mouse_pressed():
 
 --- /code ---
 
-**Tip:** If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
+**Порада:** якщо твоє зовнішнє коло іншого кольору, тобі потрібно буде замінити `blue` на назву вибраного тобою кольору англійською мовою.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click the **Run** button. Wait for the arrow to land on the blue circle, then click your left mouse button. ![points scored when blue circle clicked](images/blue_circle_points.gif)
+**Протестуй:** натисни на кнопку **Run**. Зачекай, поки стріла опиниться на синьому колі, а потім натисни ліву кнопку миші. ![points scored when blue circle clicked](images/blue_circle_points.gif)
 
 --- /task ---
 
-`elif`{:.language-python} can be used to add more conditions to your `if`{:.language-python} statement.
+Щоб додати більше умов до виразу `if`{:.language-python}, можна використовувати `elif`{:.language-python}.
 
 --- task ---
 
-Add some more code to score points if the arrow lands on the **inner** or **middle** circles.
+Додай рядки коду, які рахуватимуть бали у випадку потрапляння у **внутрішнє** або **середнє** коло.
 
 --- code ---
 ---
@@ -70,21 +70,21 @@ def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('
 
 --- task ---
 
-**Test:** Click the **Run** button.You should score points whenever you hit the target.
+**Протестуй:** натисни кнопку **Run**. Ти маєш бачити рахунок щоразу, як стріла влучає у мішень.
 
 ![points being scored on any area of target](images/yellow-points.png)
 
 --- /task ---
 
-### Missing the target
+### Мимо мішені
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles?
+Тобі треба вирішити: що буде, якщо стріла не влучить у мішень?
 
-To do this last check, you use `else`{:.language-python}.
+Щоб виконати цю перевірку, використай `else`{:.language-python}.
 
 --- task ---
 
-Add code to `print` a message when none of the `if` and `elif` statements are true.
+Додай код, який виводитиме повідомлення (`print`), коли жодна з умов `if` або `elif` не виконалась.
 
 --- code ---
 ---
@@ -103,7 +103,7 @@ line_highlights: 14-15
 
 --- task ---
 
-**Test:** Click the **Run** button. Fire the arrow in the grass or sky to see the miss message.
+**Протестуй:** натисни на кнопку **Run**. Спробуй влучити в траву або небо, щоб побачити повідомлення про промах.
 
 ![no points printed when outside target](images/missed_no_points.gif)
 
