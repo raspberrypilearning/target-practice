@@ -1,26 +1,20 @@
-## Набирай бали
+## У який колір влучила стріла?
 
-Next, you will add some code to get the colour at the location of the arrow.
+Тепер ти додаси код, який буде визначати колір місця, куди влучила стріла.
 
-### Відображення балів
+### Визнач колір, на який потрапила стріла
 
 --- task ---
 
-Add a new **global variable** called `hit_colour`.
+Додай нову **глобальну змінну** під назвою `hit_colour` (з англійської «колір, у який влучила стріла»).
 
-language: python filename: main.py line_numbers: true line_number_start: 26
+Додай код який буде `діставати` (англійською get) колір пікселя з центру стріли та зберігати його у змінній `hit_color`.
 
 
 --- code ---
 ---
-global wood, outer, inner, middle    
-sky = color(92, 204, 206) # Червоний = 92, Зелений = 204, Синій = 206    
-grass = color(149, 212, 122)    
-wood = color(145, 96, 51)    
-outer = color(0, 120, 180)    
-inner = color(210, 60, 60)   
-middle = color(220, 200, 0)
-line_highlights: 28
+language: python line_numbers: true line_number_start: 9
+line_highlights: 10, 13, 14
 ---
 def shoot_arrow(): global hit_colour  
 arrow_x = randint(100, 300)  
@@ -28,26 +22,26 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- /code ---
 
-**Tip:** The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the brown colour of the arrow!
+**Порада:** код для визначення кольору (`get`) повинен бути **перед** кодом, який малює коло (`circle`). Інакше ти будеш постійно зберігати коричневий колір стріли!
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see colours being printed in the **Text output**, in hexadecimal format.
+**Протестуй:** натисни на кнопку **Run**. Ти маєш бачити кольори, що друкуються у **полі для вихідного тексту** у шістнадцятковому форматі.
 
 --- /task ---
 
-### Мимо мішені
+### Запускай код, коли натиснута кнопка миші
 
 --- task ---
 
-Comment out the line that prints the colour. This means it will not run.
+Додай значок коментаря # перед рядком, який виводить колір. Це означає, що цей рядок не буде виконуватися.
 
 --- code ---
 ---
 language: python line_numbers: true line_number_start: 13
-line_highlights: 9
+line_highlights: 14
 ---
 
     hit_colour = get(arrow_x, arrow_y).hex
@@ -60,14 +54,14 @@ line_highlights: 9
 
 --- task ---
 
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
+Додай код, щоб **коли натискалася кнопка миші**, у полі для вихідного тексту виводилось емоджі мішені 🎯.
 
 --- code ---
 ---
-language: python filename: main.py - mouse_pressed() line_numbers: true line_number_start: 7
-line_highlights: 9, 10
+language: python line_numbers: true line_number_start: 5
+line_highlights: 6-7
 ---
-# Things to do in every frame
+# The mouse_pressed function goes here
 def mouse_pressed():    
 print('🎯')
 
@@ -77,9 +71,9 @@ print('🎯')
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
+**Протестуй:** натисни на кнопку **Run**. Ти маєш бачити символ мішені 🎯 щоразу, як клацаєш мишкою на мішені.
 
-![target emoji printed when mouse clicked](images/target_printed.gif)
+![Емоджі мішені виводиться, коли натиснута кнопка миші](images/target_printed.gif)
 
 --- /task ---
 
