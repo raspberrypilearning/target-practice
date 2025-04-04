@@ -1,23 +1,23 @@
-## Import library code
+## Імпортуй код бібліотеки
 
 from p5 import *
 from random import randint
 
 
-# The mouse_pressed function goes here
+# Тут буде функція mouse_pressed
 def mouse_pressed():
     # print('🎯')
     if hit_colour == Color("blue").hex:
-        print("You hit the outer circle, 50 points!")
+        print("Стріла в зовнішньому колі — 50 балів!")
     elif hit_colour == Color("red").hex:
-        print("You hit the inner circle, 200 points!")
+        print("Стріла у внутрішньому колі — 200 балів!")
     elif hit_colour == Color("yellow").hex:
-        print("You hit the middle, 500 points!")
+        print("Стріла у центрі — 500 балів!")
     else:
-        print("You missed! No points!")
+        print("Стріла не влучила! Нуль балів!")
 
 
-# The shoot_arrow function goes here
+# Тут буде функція shoot_arrow
 def shoot_arrow():
     global hit_colour
     arrow_x = randint(100, 300)
@@ -29,13 +29,13 @@ def shoot_arrow():
 
 
 def setup():
-    # Set up your game here
+    # Налаштуй свою гру тут
     size(400, 400)
     no_stroke()
 
 
 def draw():
-    # Things to do in every frame
+    # Що відбувається на кожному кадрі
     fill("cyan")
     rect(0, 0, 400, 250)
     fill("lightgreen")
@@ -45,11 +45,11 @@ def draw():
     fill("blue")
     circle(200, 200, 170)
     fill("red")
-    circle(200, 200, 110)  # Draw the inner circle
+    circle(200, 200, 110)  # Намалюй внутрішнє коло
     fill("yellow")
-    circle(200, 200, 30)  # Draw the middle circle
+    circle(200, 200, 30)  # Намалюй середнє коло
     shoot_arrow()
 
 
-# Keep this to run your code
+# Цей рядок запускає код
 run(frame_rate=2)
