@@ -1,8 +1,8 @@
-стріляти_стрілка
+shoot_arrow
 
-стрілка_x
+arrow_x
 
-стрілка_y
+arrow_y
 
 hit_colour
 
