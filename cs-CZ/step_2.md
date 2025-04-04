@@ -1,16 +1,16 @@
-## Draw the grass
+## Nakreslete trávu
 
 --- task ---
 
-Open the [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"} project.
+Otevřete projekt [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}.
 
 --- /task ---
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen to represent the grass.
+**Přidejte kód** a nakreslete ve spodní části obrazovky zelený obdélník, který bude představovat trávu.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background. The top left corner of the rectangle is marked as x=0, y=250 this is the origin of the rectangle. The width is highlighted as 400 and the height as 150. The code rect(0, 250, 400, 150) is shown.](images/green-grass.png){:width="400px"}
+![Výstupní oblast s obdélníkem barvy nebe nad obdélníkem barvy trávy pro vytvoření pozadí. Levý horní roh obdélníku je označen jako x=0, y=250 toto je počátek obdélníku. Šířka je zvýrazněna jako 400 a výška jako 150. Zobrazí se kód rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
@@ -28,9 +28,9 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-**Test:** Run your project to view the background.
+**Test:** Spusťte svůj projekt a zobrazte pozadí.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![Výstupní oblast s obdélníkem barvy nebe nad obdélníkem barvy trávy pro vytvoření pozadí.](images/background.png){:width="400px"}
 
 --- /task ---
 
