@@ -1,24 +1,24 @@
-## Import library code
+## Імпортуй код бібліотеки
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# Тут буде функція mouse_pressed
 
 
-# The shoot_arrow function goes here
+# Тут буде функція shoot_arrow
 
 
 def setup():
-    # Set up your game here
+    # Налаштуй свою гру тут
     size(400, 400)
     no_stroke()
 
 
 def draw():
-    # Things to do in every frame
+    # Що відбувається на кожному кадрі
     fill("cyan")
     rect(0, 0, 400, 250)
 
 
-# Keep this to run your code
+# Цей рядок запускає код
 run(frame_rate=2)
