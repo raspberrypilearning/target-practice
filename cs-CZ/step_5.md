@@ -1,14 +1,14 @@
-## What colour did you hit?
+## Jakou barvu jsi trefil?
 
-Next, you will add some code to get the colour at the location of the arrow.
+Dále přidej nějaký kód, ať získáš barvu v místě šípu.
 
-### Get the colour hit by the arrow
+### Získej barvu zasaženou šipkou
 
 --- task ---
 
-Add a new **global variable** called `hit_colour`.
+Přidej novou globální proměnnou **** s názvem `hit_color`.
 
-Add code to `get` the colour at the centre of the arrow ,and store it in the `hit_colour` variable.
+Přidej část kódu, ať `získáte` barvu ve středu šipky a uložte ji do proměnné `hit_color` .
 
 
 --- code ---
@@ -22,21 +22,21 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- /code ---
 
-**Tip:** The code to `get` the colour needs to be **before** the code to draw the `circle` otherwise you will always save the brown colour of the arrow!
+**Tip:** Kód pro `získání` barvy musí být **před kódem**, který kreslí kruh ``, jinak vždy uložíte hnědou barvu šípu!
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see colours being printed in the **Text output**, in hexadecimal format.
+**Test:** Klikněte na tlačítko **Spustit**. Měli byste vidět barvy tištěné ve formátu **Textového výstupu**, v hexadecimálním formátu.
 
 --- /task ---
 
-### Run code when the mouse is pressed
+### Spusť kód kliknutím myši
 
 --- task ---
 
-Comment out the line that prints the colour. This means it will not run.
+Zakomentujte řádek, který tiskne barvu. To znamená, že nepoběží.
 
 --- code ---
 ---
@@ -54,7 +54,7 @@ line_highlights: 14
 
 --- task ---
 
-Add code to print the target emoji 🎯 **when the mouse is clicked**.
+Přidej kód pro tisk cílového emoji 🎯 **po kliknutí myší**.
 
 --- code ---
 ---
@@ -71,9 +71,9 @@ print('🎯')
 
 --- task ---
 
-**Test:** Click the **Run** button. You should see the 🎯 character printed when you click the mouse on the target.
+**Test:** Klikněte na tlačítko **Spustit**. Když klikneš myší na cíl, měl bys vidět vytištěný znak 🎯.
 
-![target emoji printed when mouse clicked](images/target_printed.gif)
+![cílové emotikony vytištěné po kliknutí myší](images/target_printed.gif)
 
 --- /task ---
 
