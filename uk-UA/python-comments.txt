@@ -1,27 +1,27 @@
 Що відбувається на кожному кадрі
 
-Draw the inner circle
+Намалюй внутрішнє коло
 
-Draw the middle circle
+Намалюй середнє коло
 
-Функція shoot_arrow викликається тут
+Тут буде функція shoot_arrow
 
-Функція mouse_pressed викликається тут
+Тут буде функція mouse_pressed
 
-You hit the outer circle, 50 points!
+Стріла в зовнішньому колі — 50 балів!
 
-You hit the inner circle, 200 points!
+Стріла у внутрішньому колі — 200 балів!
 
-You hit the middle, 500 points!
+Стріла у центрі — 500 балів!
 
-You hit the middle, 500 points!
+Стріла у центрі — 500 балів!
 
-You missed! No points!
+Стріла не влучила! Нуль балів!
 
-Super fast
+Надзвичайно швидко
 
-Pretty quick
+Досить швидко
 
-Very fast
+Дуже швидко
 
 Speed not recognised!
