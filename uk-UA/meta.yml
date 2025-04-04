@@ -1,32 +1,32 @@
 ---
-title: Стрільба по мішені
+title: Влучний постріл
 hero_image: images/banner.png
-description: Використовуй Python, щоб намалювати мішень та набирати бали, влучаючи в неї стрілами
-meta_title: Python coding projects for kids and teens | Target practice
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
+description: За допомогою Python намалюй мішень та набирай бали, влучаючи в неї стрілами
+meta_title: Проєкти з кодування для дітей і підлітків | Влучний постріл
+meta_description: Вивчай Python за допомогою проєктів програмування Raspberry Pi Foundation для дітей і підлітків. За допомогою Python намалюй ціль і набирай бали, влучаючи в неї стрілами.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-06"
 steps:
   - 
-    title: Ти зробиш
+    title: Що ти зробиш
   - 
-    title: Створення фону
+    title: Намалюй траву
   - 
-    title: Малювання мішені
+    title: Намалюй мішень
     completion:
       - engaged
   - 
-    title: Пусти стрілу
+    title: Додай стрілу
+  - 
+    title: У який колір влучила стріла?
   - 
     title: Набирай бали
-  - 
-    title: Швидкий тест
     completion:
       - external
   - 
-    title: Вдосконалення твого проєкту
+    title: Швидкий тест
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -35,7 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Що далі?
+    title: Додаткове завдання
     challenge: true
   - 
-    title: What can you do now?
+    title: Що ти тепер вмієш?
