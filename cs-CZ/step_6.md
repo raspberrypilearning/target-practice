@@ -1,19 +1,19 @@
-## Score points
+## Body
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add a score based on where the arrow hits.
+Přidej skóre podle toho, kam dopadne šíp.
 </div>
 <div>
 
-![An animation of the target, with the arrow appearing in a variety of positions, and scores appearing as text below the game.](images/points-scored.gif){:width="300px"}
+![Animace cíle se šipkou na různých pozicích a skóre jako text pod hrou.](images/points-scored.gif){:width="300px"}
 
 </div>
 </div>
 
 --- task ---
 
-Comment out the line to print the 🎯 character so that it no longer runs.
+Zakomentuj řádek pro tisk znaku 🎯, aby již neběžel.
 
 --- code ---
 ---
