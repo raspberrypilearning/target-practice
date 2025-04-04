@@ -1,25 +1,25 @@
-## Draw your target
+## Nakreslete svůj cíl
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your game needs a target to shoot arrows at.
+Vaše hra potřebuje cíl, na který budete střílet šípy.
 </div>
 <div>
 
-![The output area with the target and stand.](images/three-circles.png){:width="300px"}
+![Výstupní oblast s cílem a stojanem.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
 
-### Draw a triangular stand
+### Nakreslete trojúhelníkový stojan
 
 --- task ---
 
-Set the fill colour to `brown`.
+Nastavte barvu výplně na `hnědá`.
 
-Draw a triangle using the x and y coordinates for each of the corners.
+Nakreslete trojúhelník pomocí souřadnic x a y pro každý z rohů.
 
-![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Hnědý trojúhelník na trávě a proti obloze se souřadnicovými body označenými jako 150, 350 a 200, 150 a 250, 350). Rohy plátna jsou také označeny jako x=0, y=0 vlevo nahoře a x=400, y=400 vpravo dole.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -38,23 +38,23 @@ line_highlights: 23-24
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target:
+**Test:** Spusťte svůj kód, abyste viděli stojan pro svůj cíl:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Hnědý trojúhelník na trávě a proti obloze.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Draw the target circles
+### Nakreslete cílové kruhy
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+Největší část terče je modrý **kruh**.
 
-Set the fill colour to `blue`.
+Nastavte barvu výplně na `modrou`.
 
-Draw a circle with x and y coordinates for its centre and a width.
+Nakreslete kružnici se souřadnicemi x a y pro její střed a šířku.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Hnědý trojúhelník a modrý kruh na trávě a proti obloze. Kruh je označen souřadnicemi x=200, y=200 jako střed a šířka kruhu 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
@@ -73,19 +73,19 @@ line_highlights: 25-26
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Test:** Spusťte svůj kód a uvidíte první velký modrý kruh.
 
-The blue circle was drawn after the stand so it is in front.
+Modrý kruh byl nakreslen až když, byl nakreslen stojan, takže je vpředu.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Hnědý trojúhelník a modrý kruh na trávě a proti obloze.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Terč je vyroben z různě velkých kruhů se stejnými středovými souřadnicemi (200, 200).
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**Přidejte** barevné kruhy pro vnitřní a střední části terče.
 
 --- code ---
 ---
@@ -106,9 +106,9 @@ line_highlights: 27-30
 
 --- task ---
 
-**Test:** Run your project to see the target with three coloured circles.
+**Test:** Spusťte svůj projekt, abyste viděli cíl se třemi barevnými kruhy.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![Hnědý trojúhelník se třemi barevnými kruhy na trávě a proti obloze.](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
