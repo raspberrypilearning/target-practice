@@ -1,4 +1,4 @@
-## Малювання мішені
+## Намалюй мішень
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -6,7 +6,7 @@
 </div>
 <div>
 
-![Зона виводу з мішенню та стендом.](images/three-circles.png){:width="300px"}
+![Зона виводу з мішенню та підставкою.](images/three-circles.png){:width="300px"}
 
 </div>
 </div>
@@ -15,16 +15,16 @@
 
 --- task ---
 
-Встановлення кольору заливки на `wood` (коричневий).
+Встанови колір заливки `brown` (коричневий).
 
-Намалюй трикутник, використовуючи координати x та y для кожного з кутів.
+Намалюй трикутник (англійською triangle), використовуючи координати x та y для кожного з кутів.
 
-![Коричневий трикутник, який розташований на траві, на фоні неба з координатами 150, 350 та 200, 150 та 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
+![Коричневий трикутник на траві на фоні неба. Він має такі підписані координати: 150, 350; 200, 150; 250, 350). Кути фона також підписані: x=0, y=0 у верхньому лівому куті та x=400, y=400 у нижньому правому куті.](images/stand_coords.png){:width="400px"}
 
 --- code ---
 ---
-language: python filename: main.py - draw() line_numbers: true line_number_start: 27
-line_highlights: 29, 30
+language: python line_numbers: true line_number_start: 21
+line_highlights: 23-24
 ---
 
     fill('lightgreen')  
@@ -38,28 +38,28 @@ line_highlights: 29, 30
 
 --- task ---
 
-**Test:** Run your code to see the stand for your target:
+**Протестуй:** запусти код, щоб побачити підставку для мішені:
 
-![A brown triangle on grass and against a sky.](images/target-stand.png){:width="400px"}
+![Коричневий трикутник на траві на фоні неба.](images/target-stand.png){:width="400px"}
 
 --- /task ---
 
-### Намалюй коло для мішені
+### Намалюй кола мішені
 
 --- task ---
 
-The largest part of the target is a blue **circle**.
+Найбільша частина мішені — це синє **коло** (англійською circle).
 
-Найбільша частина мішені - це синє **коло**.
+Встанови колір заливки `blue` (синій).
 
-Встановлення кольору заливки на `outer` (синій).
+Намалюй коло з координатами x та y (де буде його центру) та шириною.
 
-![A brown triangle and blue circle on grass and against a sky. The circle is labelled with the coordinates x=200, y=200 as the centre and circle width of 170.](images/circle-coords.png){:width="400px"}
+![Коричневий трикутник та синє коло на траві, на фоні неба. Координати центру кола підписані: x=200, y=200. Ширина кола підписана 170.](images/circle-coords.png){:width="400px"}
 
 --- code ---
 ---
 language: python line_numbers: true line_number_start: 23
-line_highlights: 31, 32
+line_highlights: 25-26
 ---
 
     fill('brown')  
@@ -73,24 +73,24 @@ line_highlights: 31, 32
 
 --- task ---
 
-**Test:** Run your code to see the first large blue circle.
+**Протестуй:** запусти код, щоб побачити перше велике синє коло.
 
-The blue circle was drawn after the stand so it is in front.
+Ми намалювали синє коло після підставки, тому воно знаходиться попереду.
 
-![A brown triangle and blue circle on grass and against a sky.](images/blue-circle.png){:width="400px"}
+![Коричневий трикутник та синє коло на траві, на фоні неба.](images/blue-circle.png){:width="400px"}
 
 --- /task ---
 
-The target is made of different-sized circles with the same centre coordinates (200, 200).
+Мішень складається з кіл різного розміру з однаковими координатами центру (200, 200).
 
 --- task ---
 
-**Add** coloured circles for the inner and middle parts of the target.
+**Додай** кольорові кола для внутрішньої та середньої частин мішені.
 
 --- code ---
 ---
-Створи дві змінні з назвою `inner` та `middle`, щоб зберігати кольори для наступних елементів.
-line_highlights: 24, 25
+language: python line_numbers: true line_number_start: 25
+line_highlights: 27-30
 ---
 
     fill('blue')  
@@ -106,15 +106,9 @@ line_highlights: 24, 25
 
 --- task ---
 
-def draw():   
-# Що відбувається на кожному кадрі global wood sky = color(92, 204, 206)   
-grass = color(149, 212, 122)   
-wood = color(145, 96, 51)   
-outer = color(0, 120, 180) # Синій    
-inner = color(210, 60, 60) # Червоний    
-middle = color(220, 200, 0) # Жовтий
+**Протестуй:** запусти свій проєкт, щоб побачити мішень з трьома кольоровими колами.
 
-![A brown triangle with three coloured circles on grass and against a sky.](images/three-circles.png){:width="400px"}
+![Коричневий трикутник з трьома кольоровими колами на траві на фоні неба.](images/three-circles.png){:width="400px"}
 
 --- /task ---
 
