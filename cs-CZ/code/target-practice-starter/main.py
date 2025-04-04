@@ -1,24 +1,24 @@
-## Import library code
+## Import kódu knihovny
 from p5 import *
 from random import randint
 
-# The mouse_pressed function goes here
+# Zde je funkce mouse_pressed
 
 
-# The shoot_arrow function goes here
+# Zde je funkce shoot_arrow
 
 
 def setup():
-    # Set up your game here
+    # Zde si nastav svou hru
     size(400, 400)
     no_stroke()
 
 
 def draw():
-    # Things to do in every frame
+    # Co dělat v každém snímku
     fill("cyan")
     rect(0, 0, 400, 250)
 
 
-# Keep this to run your code
+# Toto si ponech pro spuštění kódu
 run(frame_rate=2)
