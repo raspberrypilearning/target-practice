@@ -1,25 +1,25 @@
-## Import library code
+## Import kódu knihovny
 
 from p5 import *
 from random import randint
 
 
-# The mouse_pressed function goes here
+# Zde je funkce mouse_pressed
 def mouse_pressed():
     # print('🎯')
-    if hit_colour == Color("blue").hex:
-        print("You hit the outer circle, 50 points!")
-    elif hit_colour == Color("red").hex:
-        print("You hit the inner circle, 200 points!")
-    elif hit_colour == Color("yellow").hex:
-        print("You hit the middle, 500 points!")
+    if hit_color == Color("modrá").hex:
+        print("Trefil jsi vnější kruh, 50 bodů!")
+    elif hit_colour == Color("červená").hex:
+        print("Trefil jsi vnitřní kruh, 200 bodů!")
+    elif hit_colour == Color("žlutá").hex:
+        print("Trefil jsi střed, 500 bodů!")
     else:
-        print("You missed! No points!")
+        print("Vedle! Žádné body!")
 
 
-# The shoot_arrow function goes here
+# Zde je funkce shoot_arrow
 def shoot_arrow():
-    global hit_colour
+    globální hit_color
     arrow_x = randint(100, 300)
     arrow_y = randint(100, 300)
     hit_colour = get(arrow_x, arrow_y).hex
@@ -29,13 +29,13 @@ def shoot_arrow():
 
 
 def setup():
-    # Set up your game here
+    # Zde si nastav svou hru
     size(400, 400)
     no_stroke()
 
 
 def draw():
-    # Things to do in every frame
+    # Co dělat v každém snímku
     fill("cyan")
     rect(0, 0, 400, 250)
     fill("lightgreen")
@@ -45,11 +45,11 @@ def draw():
     fill("blue")
     circle(200, 200, 170)
     fill("red")
-    circle(200, 200, 110)  # Draw the inner circle
+    circle(200, 200, 110)  # Nakresli vnitřní kruh
     fill("yellow")
-    circle(200, 200, 30)  # Draw the middle circle
+    circle(200, 200, 30)  # Nakresli prostřední kruh
     shoot_arrow()
 
 
-# Keep this to run your code
+# Toto si ponech pro spuštění kódu
 run(frame_rate=2)
