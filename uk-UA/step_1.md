@@ -1,10 +1,10 @@
-## Ти зробиш
+## Що ти зробиш
 
-Використовуй Python з графічною бібліотекою `p5`, щоб намалювати мішень та заробляти очки, влучаючи в неї стрілами.
+За допомогою Python ти намалюєш мішень та зароблятимеш бали, влучаючи в неї стрілами.
 
 --- print-only ---
 
-![An archery target with a hit point on the outer circle. The text 'You hit the outer circle, 50 points!' is displayed underneath](images/blue-points.png){:width="640px"}
+![Мішень для стрільби з лука зі слідом влучання стріли на зовнішньому колі. Внизу видно текст «Стріла в зовнішньому колі — 50 балів!»](images/blue-points.png){:width="640px"}
 
 --- /print-only ---
 
@@ -12,7 +12,7 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 
-Click the **Run** button below to start the game. When the dot appears on the target 🎯, click the mouse (or tap on your tablet) to fire your arrow. 
+Натисни кнопку **Run** (Запуск) внизу, щоб запустити гру. Коли на мішені 🎯 з'явиться крапка, клацни мишкою (або торкнись екрану планшета), щоб випустити стрілу. 
 
   <iframe src="https://editor.raspberrypi.org/en/embed/viewer/target-practice-solution" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
@@ -22,7 +22,7 @@ Click the **Run** button below to start the game. When the dot appears on the ta
 --- /no-print ---
 
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Візьми участь в опитуванні</a>, щоб покращити наш редактор коду Code Editor!
 </div>
 
 
