@@ -1,21 +1,21 @@
-## Створення фону
+## Намалюй траву
 
 --- task ---
 
-Відкрий стартовий проєкт [Стрільба по мішені](https://trinket.io/python/ba27b1e043){:target="_blank"}.
+Відкрий [початковий проєкт «Влучний постріл»](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}.
 
 --- /task ---
 
 --- task ---
 
-**Add** code to draw a green rectangle at the bottom of the screen to represent the grass.
+**Додай** код, щоб намалювати зелений прямокутник у нижній частині екрана. Це буде трава.
 
-![Область виводу з прямокутником небесного кольору, над прямокутником зеленого кольору, які створюють фон. Верхній лівий кут прямокутника позначено як x=0, y=250 - це початок прямокутника. Ширина виділена як 400, а висота - як 150. Показано код rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
+![Область виводу з прямокутником небесного кольору вгорі та прямокутником зеленого кольору внизу, які створюють тло. Верхній лівий кут прямокутника позначено як x=0, y=250. Це початок прямокутника. Ширина позначена як 400, а висота — 150. Видно код rect(0, 250, 400, 150).](images/green-grass.png){:width="400px"}
 
 --- code ---
 ---
 language: python line_numbers: true line_number_start: 17
-line_highlights: 15
+line_highlights: 21-22
 ---
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
@@ -28,9 +28,9 @@ rect(0, 250, 400, 150)
 
 --- task ---
 
-Щоб вимкнути обведення для всіх фігур необхідно додати `no_stroke()` до функції `setup`:
+**Протестуй:** запусти свій проєкт, щоб побачити тло.
 
-![The output area with a sky-coloured rectangle above a grass-coloured rectangle to create the background.](images/background.png){:width="400px"}
+![Область виводу з прямокутником небесного кольору вгорі та прямокутником зеленого кольору внизу, які створюють тло.](images/background.png){:width="400px"}
 
 --- /task ---
 
