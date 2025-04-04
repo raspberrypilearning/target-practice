@@ -28,7 +28,7 @@ def mouse_pressed(): # print('🎯')
 
 --- task ---
 
-Display a message **if** the `hit_colour`{:.language-python} is equal to the `outer` circle colour (blue).
+Zobrazte zprávu **if** `hit_color`{:.language-python} se rovná `barvě vnějšího` kruhu (modrá).
 
 --- code ---
 ---
@@ -40,21 +40,21 @@ def mouse_pressed():
 
 --- /code ---
 
-**Tip:** If you changed the colour of your outer circle then you will need to replace `blue` with the colour name that you have chosen.
+**Tip:** Pokud jsi změnil barvu vnějšího kruhu, budeš muset nahradit `modrou` názvem barvy, kterou jsi vybral.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click the **Run** button. Wait for the arrow to land on the blue circle, then click your left mouse button. ![points scored when blue circle clicked](images/blue_circle_points.gif)
+**Test:** Klikni na tlačítko **Spustit**. Počkejte, až šíp přistane na modrém kruhu, a poté klikni levým tlačítkem myši. ![body získané po kliknutí na modrý kruh](images/blue_circle_points.gif)
 
 --- /task ---
 
-`elif`{:.language-python} can be used to add more conditions to your `if`{:.language-python} statement.
+`elif`{:.language-python} lze použít k přidání dalších podmínek k tvému `if`{:.language-python}.
 
 --- task ---
 
-Add some more code to score points if the arrow lands on the **inner** or **middle** circles.
+Přidejte další kód, abyste získali body, pokud šíp dopadne na **vnitřní** nebo **prostřední** kruhy.
 
 --- code ---
 ---
@@ -70,21 +70,21 @@ def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('
 
 --- task ---
 
-**Test:** Click the **Run** button.You should score points whenever you hit the target.
+**Test:** Klikněte na tlačítko **Spustit**. Kdykoli zasáhneš cíl, měli byste získat body.
 
-![points being scored on any area of target](images/yellow-points.png)
+![body se získávají v jakékoli oblasti cíle](images/yellow-points.png)
 
 --- /task ---
 
-### Missing the target
+### Vedle
 
-There is one more decision you need to make: what happens if the arrow does not land on any of the target circles?
+Musíte udělat ještě jedno rozhodnutí: co se stane, když šíp nedopadne na žádný z cílových kruhů?
 
-To do this last check, you use `else`{:.language-python}.
+K provedení této poslední kontroly použijte `else`{:.language-python}.
 
 --- task ---
 
-Add code to `print` a message when none of the `if` and `elif` statements are true.
+Přidejte kód do `print` zprávu, když žádný z `, pokud` a `elif` není pravdivý.
 
 --- code ---
 ---
@@ -103,9 +103,9 @@ line_highlights: 14-15
 
 --- task ---
 
-**Test:** Click the **Run** button. Fire the arrow in the grass or sky to see the miss message.
+**Test:** Klikněte na tlačítko **Spustit**. Vystřelte šíp do trávy nebo na oblohu, abyste viděli zprávu o chybě.
 
-![no points printed when outside target](images/missed_no_points.gif)
+![žádné body se tisknou mimo cíl](images/missed_no_points.gif)
 
 --- /task ---
 
