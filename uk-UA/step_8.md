@@ -1,33 +1,33 @@
-## Що далі?
+## Додаткове завдання
 
 --- challenge ---
 
 
---- print-only ---
+Ти можеш:
 
 
 --- task ---
 
---- /print-only ---
+Додати `четверте` і `пʼяте` коло інших кольорів, за які зараховується різна кількість балів залежно від їхнього розташування.
 
 --- /task ---
 
 --- task ---
 
---- no-print ---
+Додати емоджі до повідомлень print (можеш скопіювати їх із цього [списку емоджі](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"})
 
 --- /task ---
 
 --- task ---
 
-Make the game easier or harder by changing the `frame_rate=2` value
+Зробити гру легшою або складнішою, змінивши значення `frame_rate(2)`
 
 
 --- /task ---
 
 --- task ---
 
-Add a variable to keep track of the total score, adding the correct number of points to it each time.
+Додати змінну, яка відстежуватиме загальну кількість балів. Щоразу як стріла влучає у мішень, до значення змінної має додаватися правильна кількість балів.
 
 --- /task ---
 
