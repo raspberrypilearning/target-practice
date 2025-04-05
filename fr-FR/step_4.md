@@ -52,9 +52,6 @@ line_highlights: 35
 
 **Test :** clique sur le bouton **Run**. Tu devrais voir la flèche au centre.
 
-
-**Test :** clique sur le bouton **Run**. Tu devrais voir la flèche au centre.
-
 ![un cercle de flèche brun au centre de la cible](images/arrow-centre.png)
 
 
