@@ -55,9 +55,6 @@ line_highlights: 44-45
 
 ابحث عن التعليق **# تنتقل دالة mouse_pressed هنا** وأدناه أضف رمزًا لتعريف دالة `mouse_pressed()`. يتم إعادة رسم السهم في إحداثيات عشوائية.
 
-
-**Test:** Click the **Run** button. You should see the arrow in the centre.
-
 ![a brown arrow circle in the centre of the target](images/arrow-centre.png)
 
 
@@ -89,7 +86,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-**اختبار:** قم بتشغيل مشروعك. You should see the arrow jump around the target.
+**Test:** Click the **Run** button. You should see the arrow jump around the target.
 
 ![الهدف ، مع سهم دائري بني يظهر في مواضع مختلفة.](images/fire_arrow.gif)
 
