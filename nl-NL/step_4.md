@@ -81,7 +81,7 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 
 **Test:** Klik op de knop **Run**. Je zou de pijl rond het doel moeten zien springen.
 
-![Het doelwit op de achtergrond met een bruine cirkelpijl erop.](images/fire_arrow.gif)
+![Een animatie van een doelwit met een bruine cirkelpijl die in verschillende posities verschijnt.](images/fire_arrow.gif)
 
 --- /task ---
 
