@@ -1,6 +1,6 @@
 ## Welke kleur heb je geraakt?
 
-Vervolgens voeg je wat code toe om te kleur op de plek van de pijl op te halen.
+Vervolgens voeg je wat code toe om de kleur op de plek van de pijl op te halen.
 
 ### Haal de kleur op die door de pijl wordt geraakt
 
