@@ -52,9 +52,6 @@ line_highlights: 35
 
 **Test:** 🔄 Voer je project uit. Je zou de pijl in het midden moeten zien.
 
-
-**Test:** Klik op de knop **Run**. Je zou de pijl in het midden moeten zien.
-
 ![een bruine pijlcirkel in het midden van het doel](images/arrow-centre.png)
 
 
@@ -82,7 +79,7 @@ def shoot_arrow(): arrow_x = randint(100, 300) arrow_y = randint(100, 300) fill(
 --- task ---
 
 
-**Test:** 🔄 Voer je project uit. Je zou de pijl rond het doel moeten zien springen.
+**Test:** Klik op de knop **Run**. Je zou de pijl rond het doel moeten zien springen.
 
 ![Het doelwit op de achtergrond met een bruine cirkelpijl erop.](images/fire_arrow.gif)
 
