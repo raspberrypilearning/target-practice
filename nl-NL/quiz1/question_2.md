@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Vraag 2 van 3
+legenda: Vraag 2 van 3
 ---
 
-In je project heb je `if` , `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
+In je project heb je `if`, `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
 
 In het onderstaande voorbeeld is in een variabele met de naam `snelheid` het getal `6` opgeslagen. Als dit `if` commando wordt uitgevoerd, wat wordt er dan afgedrukt in het uitvoergebied?
 
@@ -40,7 +40,7 @@ if snelheid == 7: print('Super snel') elif snelheid == 5: print('Aardig snel') e
 
   --- feedback ---
 
-  Probeer het opnieuw, `else ` wordt gebruikt als laatste optie voor wanneer alle bovenstaande voorwaarden onwaar zijn. Kijk nog eens naar de voorwaarden. Is een van de voorwaarden waar?
+  Probeer het opnieuw, `else` wordt gebruikt als laatste optie voor wanneer alle bovenstaande voorwaarden onwaar zijn. Kijk nog eens naar de voorwaarden. Is een van de voorwaarden waar?
 
   --- /feedback ---
 
