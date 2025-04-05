@@ -55,9 +55,6 @@ line_highlights: 44-45
 
 **テスト:**コードを実行し、矢がブルズアイに表示されることを確認します。 矢印はランダムな座標で再描画されます。
 
-
-**Test:** Click the **Run** button. You should see the arrow in the centre.
-
 ![背景のターゲットに茶色の丸い矢印が描かれている。](images/arrow-centre.png)
 
 
@@ -89,7 +86,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-**テスト：** プロジェクトを実行します。 You should see the arrow jump around the target.
+**Test:** Click the **Run** button. You should see the arrow jump around the target.
 
 ![さまざまな位置に茶色の円の矢印が表示されているターゲット。](images/fire_arrow.gif)
 
