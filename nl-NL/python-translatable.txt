@@ -1,4 +1,4 @@
-schiet_pijl
+pijl_y
 
 pijl_x
 
