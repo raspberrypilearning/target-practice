@@ -53,9 +53,6 @@ line_highlights: 33
 
 **Test:** 🔄 Führe dein Projekt aus. You should see the arrow in the centre.
 
-
-**Test:** Click the **Run** button. You should see the arrow in the centre.
-
 ![a brown arrow circle in the centre of the target](images/arrow-centre.png)
 
 
@@ -84,7 +81,7 @@ pfeil_x = randint(100, 300)  # Speichere eine zufällige Zahl zwischen 100 und 3
 --- task ---
 
 
-**Test:** 🔄 Führe dein Projekt aus. You should see the arrow jump around the target.
+**Test:** Click the **Run** button. You should see the arrow jump around the target.
 
 ![Eine Animation eines Ziels mit einem braunen Kreispfeil, der an verschiedenen Positionen erscheint.](images/fire_arrow.gif)
 
