@@ -40,7 +40,7 @@ if speed == 7: print('Super rychlá') elif speed == 5: print('Docela rychlá') e
 
   --- feedback ---
 
-  Zkus to znovu, `else` se použije jako poslední možnost, když jsou všechny výše uvedené podmínky nepravdivé. Prohlédněte si znovu podmínky, jsou některé z podmínek pravdivé?
+  Zkus to znovu, `else` se použije jako poslední možnost, když jsou všechny výše uvedené podmínky nepravdivé. Prohlédni si znovu podmínky, jsou některé z podmínek pravdivé?
 
   --- /feedback ---
 
