@@ -56,9 +56,6 @@ line_highlights: 44
 
 **Test:** Ejecuta tu proyecto. Deberías ver la flecha en el centro.
 
-
-**Test:** Click the **Run** button. You should see the arrow in the centre.
-
 ![un círculo marrón representando la flecha en el centro del objetivo](images/arrow-centre.png)
 
 
@@ -90,7 +87,7 @@ circle(flecha_x, flecha_y, 15)
 --- task ---
 
 
-**Test:** Ejecuta tu proyecto. Deberías ver la flecha saltar alrededor del objetivo.
+**Test:** Click the **Run** button. Deberías ver la flecha saltar alrededor del objetivo.
 
 ![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
 
