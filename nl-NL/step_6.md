@@ -84,7 +84,7 @@ Om deze laatste controle uit te voeren, gebruikt je `else`{:.language-python}.
 
 --- task ---
 
-Voeg code toe aan het `print` commando om een een bericht weer te geven wanneer geen van de `if` en `elif` statements waar zijn.
+Voeg code toe aan het `print` commando om een bericht weer te geven wanneer geen van de `if` en `elif` statements waar zijn.
 
 --- code ---
 ---
