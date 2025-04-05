@@ -52,9 +52,6 @@ line_highlights: 35
 
 **Test:** Click the **Run** button. Měli byste vidět šíp uprostřed.
 
-
-**Test:** Klikněte na tlačítko **Spustit**. Měli byste vidět šíp uprostřed.
-
 ![kruh s hnědou šipkou ve středu terče](images/arrow-centre.png)
 
 
