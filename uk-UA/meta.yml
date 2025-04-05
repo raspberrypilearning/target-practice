@@ -24,7 +24,7 @@ steps:
   - 
     title: Набирай бали
     completion:
-      - external
+      - internal
   - 
     title: Швидкий тест
     knowledge_quiz:
