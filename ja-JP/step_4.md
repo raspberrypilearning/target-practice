@@ -86,7 +86,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**テスト：** プロジェクトを実行します。 You should see the arrow jump around the target.
 
 ![さまざまな位置に茶色の円の矢印が表示されているターゲット。](images/fire_arrow.gif)
 
