@@ -56,7 +56,7 @@ line_highlights: 44-45
 
 --- /task ---
 
-The arrow needs to move randomly.
+**Δοκιμή:** Εκτέλεσε τον κώδικά σου και δες το βέλος να εμφανίζεται στο κέντρο του στόχου.
 
 
 --- task ---
