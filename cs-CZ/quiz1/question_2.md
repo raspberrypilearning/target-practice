@@ -31,7 +31,7 @@ else:
 
   --- feedback ---
 
-  Správně! Proměnné **speed** byla přiřazena hodnota `6`. Podmínka `speed == 6` bude vyhodnocena jako **True** a tím pádem bude vytisknuto `Very fast`.
+  Správně! Proměnné **speed** byla přiřazena hodnota `6`. Podmínka `speed == 6` bude vyhodnocena jako **True** a tím pádem bude vytisknuto `Velmi rychlá`.
 
   --- /feedback ---
 

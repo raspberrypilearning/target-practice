@@ -53,7 +53,9 @@ def mouse_pressed():
 
 --- task ---
 
-**Test:** Klikni na tlačítko **Spustit**. Počkejte, až šíp přistane na modrém kruhu, a poté klikni levým tlačítkem myši. ![body získané po kliknutí na modrý kruh](images/blue_circle_points.gif)
+**Test:** Klikni na tlačítko **Spustit**. Počkejte, až šíp přistane na modrém kruhu, a poté klikni levým tlačítkem myši.
+
+![body získané po kliknutí na modrý kruh](images/blue_circle_points.gif)
 
 --- /task ---
 
@@ -100,7 +102,7 @@ K provedení této poslední kontroly použijte `else`{:.language-python}.
 
 --- task ---
 
-Přidejte kód do `print` zprávu, když žádný z `, pokud` a `elif` není pravdivý.
+Přidejte kód do `print` zprávu, když žádný z `pokud` a `elif` není pravdivý.
 
 --- code ---
 ---

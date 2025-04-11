@@ -19,3 +19,10 @@ Kliknutím na tlačítko **Spustit** zobrazíš příklad tohoto projektu.
 
 Nebo proč nezkusit jiný [Python](https://projects.raspberrypi.org/cs-CZ/projects?software%5B%5D=python) projekt.
 
+***
+
+Tento projekt byl přeložen dobrovolníky:
+
+Miroslav Kuba
+
+Díky dobrovolníkům můžeme dát lidem po celém světě šanci se učit ve svém vlastním jazyce. Můžete nám pomoci oslovit více lidí dobrovolným překládáním - více informací na [rpf.io/translate](https://rpf.io/translate).
