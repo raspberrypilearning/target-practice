@@ -87,7 +87,7 @@ circle(flecha_x, flecha_y, 15)
 --- task ---
 
 
-**Test:** Click the **Run** button. Deberías ver la flecha saltar alrededor del objetivo.
+**Test:** Ejecuta tu proyecto. Deberías ver la flecha saltar alrededor del objetivo.
 
 ![El blanco, con una flecha circular marrón apareciendo en una variedad de posiciones.](images/fire_arrow.gif)
 
