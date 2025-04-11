@@ -79,7 +79,7 @@ def shoot_arrow(): global hit_colour  # Può essere utilizzato in altre funzioni
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**Test:** 🔄 Esegui il tuo progetto. You should see the arrow jump around the target.
 
 ![Un'animazione del bersaglio con una freccia circolare marrone che appare in diverse posizioni.](images/fire_arrow.gif)
 
