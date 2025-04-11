@@ -56,7 +56,7 @@ line_highlights: 44-45
 
 --- /task ---
 
-The arrow needs to move randomly.
+**Profi:** Rhedwch eich cod a gweld y saeth yn ymddangos yng nghanol y nod.
 
 
 --- task ---
