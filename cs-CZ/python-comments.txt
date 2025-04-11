@@ -1,0 +1,27 @@
+Co dělat v každém snímku
+
+Nakreslete vnitřní kruh
+
+Nakreslete střední kruh
+
+Zde je funkce shoot_arrow
+
+Zde je funkce mouse_pressed
+
+Trefil jsi vnější kruh, 50 bodů!
+
+Trefil jsi vnitřní kruh, 200 bodů!
+
+Trefil jsi střed, 500 bodů!
+
+Trefil jsi střed, 500 bodů!
+
+Netrefil jsi! Bez bodů!
+
+Super rychlé
+
+Docela rychle
+
+Velmi rychle
+
+Rychlost nebyla rozpoznána!

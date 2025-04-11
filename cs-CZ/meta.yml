@@ -1,0 +1,32 @@
+---
+title: Cílová praxe
+hero_image: images/banner.png
+description: Použij Python k nakreslení cíle a získej body tím, že do něj zasáhneš šípy
+meta_title: Projekty kódování Python pro děti a dospívající | Cílová praxe
+meta_description: Nauč se Python s projekty kódování pro děti a dospívající nadace Raspberry Pi Foundation. Použij Python k nakreslení cíle a zaznamenávej body tím, že ho zasáhneš šípy.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-06"
+steps:
+  - title: Co budeš dělat
+  - title: Nakresli trávu
+  - title: Nakresli svůj cíl
+    completion:
+      - engaged
+  - title: Přidej šíp
+  - title: Jakou barvu jsi trefil?
+  - title: Získej body
+    completion:
+      - internal
+  - title: Rychlý kvíz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Výzva
+    challenge: true
+  - title: Co můžeš dělat dál?
