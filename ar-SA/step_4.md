@@ -86,7 +86,7 @@ ellipse(arrow_x, arrow_y, 15, 15)
 --- task ---
 
 
-**Test:** Click the **Run** button. You should see the arrow jump around the target.
+**اختبار:** قم بتشغيل مشروعك. You should see the arrow jump around the target.
 
 ![الهدف ، مع سهم دائري بني يظهر في مواضع مختلفة.](images/fire_arrow.gif)
 
