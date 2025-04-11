@@ -7,11 +7,11 @@ from random import randint
 # Zde je funkce mouse_pressed
 def mouse_pressed():
     # print('🎯')
-    if hit_colour == Color("modrá").hex:
+    if hit_colour == Color("blue").hex:
         print("Trefil jsi vnější kruh, 50 bodů!")
-    elif hit_colour == Color("červená").hex:
+    elif hit_colour == Color("red").hex:
         print("Trefil jsi vnitřní kruh, 200 bodů!")
-    elif hit_colour == Color("žlutá").hex:
+    elif hit_colour == Color("yellow").hex:
         print("Trefil jsi střed, 500 bodů!")
     else:
         print("Vedle! Žádné body!")
