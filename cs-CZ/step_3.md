@@ -1,4 +1,4 @@
-## Nakreslete svůj cíl
+## Nakresli terč
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -11,13 +11,13 @@ Vaše hra potřebuje cíl, na který budete střílet šípy.
 </div>
 </div>
 
-### Nakreslete trojúhelníkový stojan
+### Nakresli trojúhelníkový stojan
 
 --- task ---
 
-Nastavte barvu výplně na `hnědá`.
+Nastav barvu výplně na `brown`.
 
-Nakreslete trojúhelník pomocí souřadnic x a y pro každý z rohů.
+Nakresli trojúhelník pomocí souřadnic x a y pro každý z rohů.
 
 ![Hnědý trojúhelník na trávě a proti obloze se souřadnicovými body označenými jako 150, 350 a 200, 150 a 250, 350). Rohy plátna jsou také označeny jako x=0, y=0 vlevo nahoře a x=400, y=400 vpravo dole.](images/stand_coords.png){:width="400px"}
 
@@ -45,15 +45,15 @@ line_highlights: 23-24
 
 --- /task ---
 
-### Nakreslete cílové kruhy
+### Nakresli kruhy terče
 
 --- task ---
 
 Největší část terče je modrý **kruh**.
 
-Nastavte barvu výplně na `modrou`.
+Nastav barvu výplně na `blue`.
 
-Nakreslete kružnici se souřadnicemi x a y pro její střed a šířku.
+Nakresli kružnici se souřadnicemi x a y pro její střed a šířku.
 
 ![Hnědý trojúhelník a modrý kruh na trávě a proti obloze. Kruh je označen souřadnicemi x=200, y=200 jako střed a šířka kruhu 170.](images/circle-coords.png){:width="400px"}
 
