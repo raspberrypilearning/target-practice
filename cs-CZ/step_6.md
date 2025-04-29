@@ -80,7 +80,7 @@ def mouse_pressed(): # print('🎯') if hit_colour == Color('blue').hex: print('
 
 Musíte udělat ještě jedno rozhodnutí: co se stane, když šíp nedopadne na žádný z cílových kruhů?
 
-K provedení této poslední kontroly použijte `else`{:.language-python}.
+Musíte udělat ještě jedno rozhodnutí: co se stane, když šíp nedopadne na žádný z cílových kruhů?
 
 --- task ---
 
