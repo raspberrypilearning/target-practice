@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legenda: Otázka 3 ze 3
+legend: Otázka 3 ze 3
 ---
 
 Kruh se nakreslí pomocí následujícího kódu:
