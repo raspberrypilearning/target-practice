@@ -17,5 +17,5 @@ Kliknutím na tlačítko **Spustit** zobrazíš příklad tohoto projektu.
 
 \--- /no-print ---
 
-Nebo proč nezkusit jiný [Python](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) projekt.
+Nebo proč nezkusit jiný [Python](https://projects.raspberrypi.org/cs-CZ/projects?software%5B%5D=python) projekt.
 
