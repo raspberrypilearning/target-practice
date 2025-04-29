@@ -1,8 +1,8 @@
 ---
-title: Cílová praxe
+title: Lukostřelba
 hero_image: images/banner.png
 description: Použij Python k nakreslení cíle a získej body tím, že do něj zasáhneš šípy
-meta_title: Projekty kódování Python pro děti a dospívající | Cílová praxe
+meta_title: Projekty kódování Python pro děti a dospívající | Lukostřelba
 meta_description: Nauč se Python s projekty kódování pro děti a dospívající nadace Raspberry Pi Foundation. Použij Python k nakreslení cíle a zaznamenávej body tím, že ho zasáhneš šípy.
 version: 4
 listed: true
@@ -14,7 +14,7 @@ steps:
   - 
     title: Nakresli trávu
   - 
-    title: Nakresli svůj cíl
+    title: Nakresli terč
     completion:
       - engaged
   - 
