@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legenda: Otázka 2 ze 3
+legend: Otázka 2 ze 3
 ---
 
-Ve svém projektu jsi použil `, if` , `elif`and `else` , abys zkontroloval, na kterou barvu šipka přistála.
+Ve svém projektu jsi použil `if` , `elif` and `else` , abys zkontroloval, na kterou barvu šipka přistála.
 
 V níže uvedeném příkladu má proměnná s názvem `speed` uloženu hodnotu `6`. Když je spuštěn příkaz `if`, co se vytiskne ve výstupní oblasti?
 
