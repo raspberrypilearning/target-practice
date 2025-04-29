@@ -8,7 +8,7 @@ Příjemnou zábavu!
 
 --- question ---
 ---
-legenda: Otázka 1 ze 3
+legend: Otázka 1 ze 3
 ---
 Ve svém projektu jsi přidal `randint(100, 300)` do funkce `shoot_arrow()`. Co dělá `randint(100, 300)`?
 
