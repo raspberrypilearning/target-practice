@@ -2,7 +2,7 @@
 
 --- task ---
 
-Otevřete projekt [Target practice starter](https://editor.raspberrypi.org/en/projects/target-practice-starter){:target="_blank"}.
+Otevřete projekt [Target practice starter](https://editor.raspberrypi.org/cs-CZ/projects/target-practice-starter){:target="_blank"}.
 
 --- /task ---
 
