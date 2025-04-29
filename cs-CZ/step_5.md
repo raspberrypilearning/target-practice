@@ -6,7 +6,7 @@ Dále přidej nějaký kód, ať získáš barvu v místě šípu.
 
 --- task ---
 
-Přidej novou globální proměnnou **** s názvem `hit_color`.
+Přidej novou **globální proměnnou** s názvem `hit_color`.
 
 Přidej část kódu, ať `získáte` barvu ve středu šipky a uložte ji do proměnné `hit_color` .
 
@@ -22,7 +22,7 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- /code ---
 
-**Tip:** Kód pro `získání` barvy musí být **před kódem**, který kreslí kruh ``, jinak vždy uložíte hnědou barvu šípu!
+**Tip:** Kód pro `získání` barvy musí být **před kódem**, který kreslí kruh, jinak vždy uložíte hnědou barvu šípu!
 
 --- /task ---
 
