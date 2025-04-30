@@ -37,7 +37,7 @@ def schiet_pijl():
 
 --- task ---
 
-Ga naar de functie `draw()`{:.language-python} en roep je nieuwe `schiet_pijl()`{:.language-python} functie aan.
+Roep je nieuwe `schiet_pijl()`{:.language-python} functie aan het einde van jouw `draw()`{:.language-python} functie aan.
 
 --- code ---
 ---

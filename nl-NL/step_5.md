@@ -35,7 +35,7 @@ def schiet_pijl():
 
 --- task ---
 
-**Test:** Klik op de knop **Run**.
+**Test:** Klik op de knop **Run**. Je zou kleuren moeten zien afgedrukt in de **Tekstuitvoer**, in hexadecimaal formaat.
 
 --- /task ---
 
