@@ -1,6 +1,6 @@
 ## Wat ga je maken
 
-Gebruik Python, met de `p5` grafische bibliotheek, om een doel te tekenen en punten te scoren door het met pijlen te raken.
+Gebruik Python om een doel te tekenen en punten te scoren door het met pijlen te raken.
 
 --- print-only ---
 
