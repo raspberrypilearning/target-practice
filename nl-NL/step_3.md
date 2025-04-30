@@ -15,7 +15,7 @@ Je spel heeft een doel nodig om pijlen op te schieten.
 
 --- task ---
 
-Stel de vulkleur in op `sienna` (bruin).
+Stel de vulkleur in op `brown` (bruin).
 
 Teken een driehoek met de x- en y-coördinaten voor elk van de hoeken.
 
