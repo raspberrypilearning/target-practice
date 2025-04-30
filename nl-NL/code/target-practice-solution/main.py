@@ -7,25 +7,25 @@ from random import randint
 # De mouse_pressed functie komt hier
 def mouse_pressed():
     # print('🎯')
-    if raak_kleur == Color('blue').hex: # Net als bij functies worden 'if'-instructies ingesprongen
-        print('Je hebt de buitenste cirkel geraakt, 50 punten!')
-    elif raak_kleur == Color('red').hex:
-        print('Je hebt de binnenste cirkel geraakt, 200 punten!')
-    elif raak_kleur == Color('yellow').hex:
-        print('In de roos, 500 punten!')
+    if raak_kleur == Color("blue").hex:
+        print("Je hebt de buitenste cirkel geraakt, 50 punten!")
+    elif raak_kleur == Color("red").hex:
+        print("Je hebt de binnenste cirkel geraakt, 200 punten!")
+    elif raak_kleur == Color("yellow").hex:
+        print("In de roos, 500 punten!")
     else:
-        print('Je hebt gemist! Geen punten!')
+        print("Je hebt gemist! Geen punten!")
 
 
 # De schiet_pijl functie komt hier
 def schiet_pijl():
     global raak_kleur
-    pijl_x = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
-    pijl_y = randint(100, 300) # Bewaar een willekeurig getal tussen 100 en 300
-    raak_kleur = get(pijl_x, pijl_y).hex # Haal de geraakte kleur op
+    pijl_x = randint(100, 300)
+    pijl_y = randint(100, 300)
+    raak_kleur = get(pijl_x, pijl_y).hex
     # print(raak_kleur)
     fill("brown")
-    circle(pijl_x, pijl_y, 15) # Teken een kleine cirkel op willekeurige coördinaten
+    circle(pijl_x, pijl_y, 15)
 
 
 def setup():
