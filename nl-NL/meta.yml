@@ -12,7 +12,7 @@ steps:
   - 
     title: Wat ga je maken
   - 
-    title: Een achtergrond maken
+    title: Teken het gras
   - 
     title: Teken je doelwit
     completion:
@@ -20,13 +20,13 @@ steps:
   - 
     title: Schiet de pijl af
   - 
-    title: Punten scoren
+    title: Welke kleur heb je geraakt?
   - 
-    title: Snelle quiz
+    title: Punten scoren
     completion:
       - internal
   - 
-    title: Verbeter je project
+    title: Snelle quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -35,7 +35,7 @@ steps:
     completion:
       - external
   - 
-    title: Wat kun je verder nog doen?
+    title: Uitdaging
     challenge: true
   - 
     title: Wat kun je verder nog doen?
