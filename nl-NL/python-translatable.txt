@@ -1,9 +1,9 @@
-pijl_y
+schiet_pijl
 
 pijl_x
 
 pijl_y
 
-hit_kleur
+raak_kleur
 
 snelheid
