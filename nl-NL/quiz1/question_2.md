@@ -1,10 +1,10 @@
 
 --- question ---
 ---
-legend: Vraag 2 van 3
+legenda: Vraag 2 van 3
 ---
 
-In je project heb je `if` , `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
+In je project heb je `if`, `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
 
 In het onderstaande voorbeeld is in een variabele met de naam `snelheid` het getal `6` opgeslagen. Als dit `if` commando wordt uitgevoerd, wat wordt er dan afgedrukt in het uitvoergebied?
 
@@ -15,13 +15,13 @@ language: python
 snelheid = 6
 
 if snelheid == 7:
-    print('Super snel')
+    print('Supersnel')
 elif snelheid == 5:
-    print('Aardig snel')
+    print('Vrij snel')
 elif snelheid == 6:
     print('Zeer snel')
 else:
-    print( 'Snelheid niet herkend!')
+    print('Snelheid niet herkend!') 
 
 --- /code ---
 

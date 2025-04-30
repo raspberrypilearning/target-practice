@@ -1,47 +1,55 @@
-# importation des librairies de code !
+## Importer le code de la bibliothèque
+
 from p5 import *
 from random import randint
 
-# La fonction mouse_pressed vient ici
+
+# La fonction souris_pressee vient ici
 def mouse_pressed():
-    if touche_couleur == Color('blue').hex: # Comme les fonctions, les instructions 'if' sont indentées
+    # print('🎯')
+    if couleur_touchee == Color("blue").hex:
         print('Tu as touché le cercle extérieur, 50 points !')
-    elif touche_couleur == Color('red').hex:
+    elif couleur_touchee == Color("red").hex:
         print('Tu as touché le cercle intérieur, 200 points !')
-    elif touche_couleur == Color('yellow').hex:
+    elif couleur_touchee == Color("yellow").hex:
         print('Tu as touché le centre, 500 points !')
     else:
         print('Tu as loupé la cible ! Aucun point !')
 
+
 # La fonction tire_fleche vient ici
 def tire_fleche():
-    global touche_couleur # Peut être utilisé dans d'autres fonctions
-    fleche_x = randint(100, 300) # Stocke un nombre aléatoire entre 100 et 300
-    fleche_y = randint(100, 300) # Stocke un nombre aléatoire entre 100 et 300
-    touche_couleur = get(fleche_x, fleche_y).hex # Récupère la couleur de l'endroit touché
-    fill('sienna') # Définit la flèche pour remplir la couleur sur marron
-    circle(fleche_x, fleche_y, 15) # Dessine un petit cercle à des coordonnées aléatoires
+    global couleur_touchee
+    fleche_x = randint(100, 300)
+    fleche_y = randint(100, 300)
+    couleur_touchee = get(fleche_x, fleche_y).hex
+    # print(couleur_touchee)
+    fill("brown")
+    circle(fleche_x, fleche_y, 15)
+
 
 def setup():
     # Configure ton jeu ici
-    size(400, 400) # largeur et hauteur
+    size(400, 400)
     no_stroke()
+
 
 def draw():
     # Choses à faire dans chaque image
-    fill('cyan')
-    rect(0, 0, 400, 250) # Ciel
-    fill('lightgreen')
-    rect(0, 250, 400, 150) # Herbe
-    fill('sienna')
-    triangle(150, 350, 200, 150, 250, 350) # Support
-    fill('blue')
-    circle(200, 200, 170)  # Cercle extérieur
-    fill('red')
-    circle(200, 200, 110)  # Cercle intérieur
-    fill('yellow')
-    circle(200, 200, 30)  # Cercle du milieu
+    fill("cyan")
+    rect(0, 0, 400, 250)
+    fill("lightgreen")
+    rect(0, 250, 400, 150)
+    fill("brown")
+    triangle(150, 350, 200, 150, 250, 350)
+    fill("blue")
+    circle(200, 200, 170)
+    fill("red")
+    circle(200, 200, 110)  # Dessiner le cercle intérieur
+    fill("yellow")
+    circle(200, 200, 30)  # Dessiner le cercle du milieu
     tire_fleche()
+
 
 # Garde ceci pour exécuter ton code
 run(frame_rate=2)

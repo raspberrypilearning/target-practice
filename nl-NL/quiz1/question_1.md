@@ -10,42 +10,43 @@ Veel plezier!
 ---
 legend: Vraag 1 van 3
 ---
-In je project heb je no_stroke() aan je setup-functie toegevoegd. Wat doet de functie no_stroke()?
+In je project heb je `randint(100, 300)` toegevoegd aan je `schiet_pijl()` functie. Wat doet `randint(100, 300)`?
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
-  size(400, 400)      
-  no_stroke()
-
+def schiet_pijl():
+    global raak_kleur
+    pijl_x = randint(100, 300)
+    pijl_y = randint(100, 300)
+  
 --- /code ---
 
 --- choices ---
 
-- ( ) Het tekent een vorm met behulp van de opgegeven coördinaten.
+- (x) Er wordt een willekeurig geheel getal tussen 100 en 300 gekozen.
 
   --- feedback ---
 
-Niet helemaal. De functie size() doet dit in dit voorbeeld.
+Dat klopt. Hiermee kies je een willekeurige x-coördinaat voor jouw pijl.
 
   --- /feedback ---
 
-- ( ) Het vult de vorm met een bepaalde kleur.
+- ( ) Hierdoor beweegt de pijl willekeurig over het scherm.
 
   --- feedback ---
 
-Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
+Niet helemaal. Deze code bepaalt gedeeltelijk hoe de pijl willekeurig beweegt, maar om dat doel te bereiken, heb je ook nog andere code nodig.
 
   --- /feedback ---
 
-- (x) Het schakelt de rand (stroke) voor alle vormen uit.
+- () Het haalt de kleur op die door de pijl werd geraakt.
 
   --- feedback ---
 
-  Dat klopt. Als je deze functie niet gebruikt, wordt er een zwarte rand rond je vormen getekend.
+  Niet helemaal. De functie get() wordt gebruikt om de kleur op te halen.
 
   --- /feedback ---
 

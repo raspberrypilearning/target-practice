@@ -10,11 +10,12 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - title: Wat ga je maken
-  - title: Een achtergrond maken
+  - title: Teken het gras
   - title: Teken je doelwit
     completion:
       - engaged
   - title: Schiet de pijl af
+  - title: Welke kleur heb je geraakt?
   - title: Punten scoren
     completion:
       - internal
@@ -26,5 +27,6 @@ steps:
       passing_score: 3
     completion:
       - external
-  - title: Verbeter je project
+  - title: Uitdaging
+    challenge: true
   - title: Wat kun je verder nog doen?

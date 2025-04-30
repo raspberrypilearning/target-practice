@@ -10,46 +10,47 @@ Amuse-toi bien !
 ---
 legend: Question 1 sur 3
 ---
-Dans ton projet, tu as ajouté no_stroke() à ta fonction de configuration. Que fait la fonction no_stroke() ?
+Dans ton projet, tu as ajouté `randint(100, 300)` à ta fonction `tire_fleche()`. Que fait `randint(100, 300)` ?
 
 --- code ---
 ---
 language: python
 ---
 
-def setup():   
-  size(400, 400)      
-  no_stroke()
-
+def tire_fleche():
+    global touche_couleur
+    fleche_x = randint(100, 300)
+    fleche_y = randint(100, 300)
+  
 --- /code ---
 
 --- choices ---
 
-- ( ) Elle dessine une forme en utilisant les coordonnées données.
+- (x) Il choisit un nombre entier aléatoire entre 100 et 300.
 
   --- feedback ---
 
-Pas tout à fait. La fonction size() fait cela dans cet exemple.
+C'est correct ! Cela permet de choisir une coordonnée x aléatoire pour ta flèche.
 
   --- /feedback ---
 
-- ( ) Elle remplit la forme avec une couleur donnée.
+- ( ) Cela fait bouger la flèche de manière aléatoire sur l'écran.
 
   --- feedback ---
 
-Pas tout à fait. La fonction fill() fait cela et inclura généralement une couleur donnée.
+Pas tout à fait. Ce code explique en partie comment la flèche se déplace de manière aléatoire, mais tu as besoin d'autres codes pour atteindre cet objectif.
 
   --- /feedback ---
 
-- (x) Elle désactive la bordure (stroke) pour toutes les formes.
+- () Il s'agit de la couleur qui a été touchée par la flèche.
 
   --- feedback ---
 
-  C'est correct ! Une bordure noire sera dessinée autour de tes formes si tu n'utilises pas cette fonction.
+  Pas tout à fait. La fonction get() est utilisée pour obtenir la couleur.
 
   --- /feedback ---
 
-- ( ) Elle dessinera une forme de cercle dans ton programme.
+- ( ) Il dessine un cercle de taille aléatoire.
 
   --- feedback ---
 
