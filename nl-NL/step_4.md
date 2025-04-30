@@ -32,7 +32,7 @@ arrow_x = 200 arrow_y = 200 fill('brown') circle(arrow_x, arrow_y, 15)
 
 --- task ---
 
-Ga naar de functie `draw` en roep je nieuwe `schiet_pijl` functie aan.
+Roep je nieuwe `schiet_pijl()`{:.language-python} functie aan het einde van jouw `draw()`{:.language-python} functie aan.
 
 --- code ---
 ---
