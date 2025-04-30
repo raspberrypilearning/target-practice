@@ -43,7 +43,7 @@ Niet helemaal. Deze code bepaalt gedeeltelijk hoe de pijl willekeurig beweegt, m
 
   --- feedback ---
 
-  Niet helemaal. De functie fill() doet dit en bevat meestal een bepaalde kleur.
+  Niet helemaal. De get()-functie wordt gebruikt om de kleur op te halen.
 
   --- /feedback ---
 
