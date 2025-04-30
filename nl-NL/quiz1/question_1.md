@@ -43,7 +43,7 @@ Niet helemaal. Deze code bepaalt gedeeltelijk hoe de pijl willekeurig beweegt, m
 
   --- feedback ---
 
-  Niet helemaal. De get()-functie wordt gebruikt om de kleur op te halen.
+  Niet helemaal. De functie get() wordt gebruikt om de kleur op te halen.
 
   --- /feedback ---
 
