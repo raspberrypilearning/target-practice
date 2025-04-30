@@ -1,60 +1,12 @@
-Stel je spel hier in
-
-Breedte en hoogte van het scherm
-
 Dingen om te doen in elk frame
 
-Stel de kleur voor de lucht in op cyaan
+Teken de binnenste cirkel
 
-Teken een rechthoek voor de lucht met deze waarden voor x, y, breedte en hoogte
-
-Stel de kleur voor het gras in op lichtgroen
-
-Teken een rechthoek voor het gras met deze waarden voor x, y, breedte en hoogte
-
-Bruine kleur
-
-Teken een driehoek voor de standaard van het doel
-
-Stel de kleur van de cirkel in op blauw
-
-Teken de buitenste cirkel
-
-Stel de kleur voor de cirkel in op rood
-
-Teken de binnenste cirkel met x, y, breedte
-
-Stel de kleur voor de cirkel in op geel
-
-Teken de middelste cirkel met x, y, breedte
-
-Lucht
-
-Grond
-
-Standaard
-
-Buitenste cirkel
-
-Binnenste cirkel
-
-Middelste cirkel
+Teken de middelste cirkel
 
 De schiet_pijl functie komt hier
 
-Sla een willekeurig getal op tussen 100 en 300
-
-Stel de pijl in om de kleur op bruin te zetten
-
-Teken een kleine cirkel op willekeurige coördinaten
-
-Kan ook gebruikt worden in andere functies
-
-Pak de kleur van de hit
-
 De mouse_pressed functie komt hier
-
-Net als de code in functies, is de code in 'if' statements ingesprongen
 
 Je raakt de buitenste cirkel, 50 punten!
 
@@ -62,7 +14,14 @@ Je hebt de binnenste cirkel geraakt, 200 punten!
 
 Je raakt het midden, 500 punten!
 
+Je hebt het midden geraakt, 500 punten!
+
 Je hebt gemist! Geen punten!
 
+Supersnel
 
+Vrij snel
 
+Zeer snel
+
+Snelheid niet herkend!

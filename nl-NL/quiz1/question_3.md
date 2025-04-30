@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Vraag 3 van 3
+legenda: Vraag 3 van 3
 ---
 
 Een cirkel wordt getekend met behulp van de volgende code:
@@ -14,10 +14,10 @@ language: python
 def setup():   
   size(400, 400)   
   fill(0, 255, 0)   
-  no_stroke()
-
+  no_stroke()   
+    
 def draw():   
-  circle(0, 0, 300)
+  circle(0, 0, 300)    
 
 run()
 

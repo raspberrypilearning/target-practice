@@ -1,87 +1,27 @@
 Choses à faire dans chaque image
 
-Rouge = 92, Vert = 204, Bleu = 206
+Dessiner le cercle intérieur
 
-Départ x, départ y, largeur, hauteur
-
-x, y, largeur, hauteur
-
-Définir la couleur de remplissage du support sur bois
-
-Définir la couleur de remplissage de la flèche sur bois
-
-Définir la couleur de remplissage du support sur herbe
-
-Définir la couleur de remplissage de l'ellipse sur extérieur
-
-Définir la couleur de remplissage de l'ellipse sur intérieur
-
-Définir la couleur de remplissage de l'ellipse sur milieu
-
-x, y, largeur de l'ellipse
-
-Cercle intérieur - x, y, largeur de l'ellipse
-
-Cercle du centre - x, y, largeur de l'ellipse
-
-Cercle extérieur. 200, 200 est le milieu de l'écran
-
-Bleu
-
-Rouge
-
-Jaune
-
-Support
-
-Cercle extérieur
-
-Cercle intérieur
-
-Mille
+Dessiner le cercle du milieu
 
 La fonction tire_fleche vient ici
 
-Importer le code de la bibliothèque
-
-Mise à jour des coordonnées aléatoires
-
-Enregistrer la couleur avant de dessiner la flèche
-
 La fonction souris_pressee vient ici
 
-Peut être utilisé dans d'autres fonctions
+Tu as touché le cercle extérieur, 50 points !
 
-Comme les fonctions, les instructions "if" sont indentées
+Tu as touché le cercle intérieur, 200 points !
 
-Configure ton jeu ici
+Tu as touché le milieu, 500 points !
 
-largeur et hauteur
+Tu as touché le milieu, 500 points !
 
-Définitions pour la compatibilité avec la bibliothèque de traitement p5py
+Tu as loupé la cible ! Aucun point !
 
-Forme
+Super rapide
 
-Polices
+Assez rapide
 
-Texte
+Très rapide
 
-Couleur
-
-Images
-
-Environnement
-
-Transformer
-
-Clavier
-
-Garde ceci pour exécuter ton code
-
-Stocker un nombre aléatoire entre 100 et 300
-
-Obtenir la couleur du succès
-
-Dessiner une petite ellipse à des coordonnées aléatoires
-
-largeur et hauteur de l'écran
+Vitesse non reconnue !

@@ -15,7 +15,7 @@ Ton jeu a besoin d'une cible pour tirer des flèches.
 
 --- task ---
 
-Définis la couleur de remplissage sur `sienna` (marron).
+Définis la couleur de remplissage sur `brown` (marron).
 
 Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
 
@@ -24,16 +24,14 @@ Dessine un triangle en utilisant les coordonnées x et y de chacun des angles.
 --- code ---
 ---
 language: python
-filename: main.py - draw()
 line_numbers: true
-line_number_start: 18
-line_highlights: 20, 21
+line_number_start: 21
+line_highlights: 23-24
 ---
-
-    fill('lightgreen')  # Définis la couleur de remplissage de l'herbe sur vert clair
-    rect(0, 250, 400, 150)  # Dessine un rectangle pour l'herbe avec ces valeurs pour x, y, largeur, hauteur
-    fill('sienna')  # Couleur marron
-    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
+    fill('lightgreen')  
+    rect(0, 250, 400, 150)  
+    fill('brown') 
+    triangle(150, 350, 200, 150, 250, 350)  
 
 --- /code ---
 
@@ -41,7 +39,7 @@ line_highlights: 20, 21
 
 --- task ---
 
-**Test :** 🔄 exécute ton code pour voir le support de ta cible :
+**Test :** exécute ton code pour voir la position de ta cible :
 
 ![Un triangle marron sur l'herbe et sur fond de ciel.](images/target-stand.png){:width="400px"}
 
@@ -53,7 +51,7 @@ line_highlights: 20, 21
 
 La plus grande partie de la cible est un **cercle** bleu.
 
-Définis la couleur de remplissage sur `blue`.
+Définis la couleur de remplissage sur `blue` (bleu).
 
 Dessine un cercle avec des coordonnées x et y pour son centre et une largeur.
 
@@ -62,16 +60,14 @@ Dessine un cercle avec des coordonnées x et y pour son centre et une largeur.
 --- code ---
 ---
 language: python
-filename: main.py - draw()
 line_numbers: true
-line_number_start: 20
-line_highlights: 22, 23
+line_number_start: 23
+line_highlights: 25-26
 ---
-
-    fill('sienna')  # Couleur marron
-    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
-    fill('blue')  # Définis la couleur de remplissage sur blue
-    circle(200, 200, 170)  # Dessine le cercle extérieur
+    fill('brown')  
+    triangle(150, 350, 200, 150, 250, 350)  
+    fill('blue')  
+    circle(200, 200, 170)  
   
 --- /code ---
 
@@ -96,20 +92,17 @@ La cible est constituée de cercles de tailles différentes ayant les mêmes coo
 --- code ---
 ---
 language: python
-filename: main.py - draw()
 line_numbers: true
-line_number_start: 20
-line_highlights: 24, 25, 26, 27
+line_number_start: 25
+line_highlights: 27-30
 ---
 
-    fill('sienna')  # Couleur marron
-    triangle(150, 350, 200, 150, 250, 350)  # Dessine un triangle pour le support de la cible
-    fill('blue')  # Définis la couleur de remplissage sur blue
-    circle(200, 200, 170)  # Dessine le cercle extérieur
-    fill('red')  # Définis la couleur du remplissage du cercle sur rouge
-    circle(200, 200, 110)  # Dessine le cercle intérieur en utilisant x, y, largeur
-    fill('yellow')  # Définis la couleur du remplissage du cercle sur jaune
-    circle(200, 200, 30)  # Dessine le cercle du milieu en utilisant x, y, largeur
+    fill('blue')  
+    circle(200, 200, 170)  
+    fill('red')  
+    circle(200, 200, 110)  # Dessiner le cercle intérieur 
+    fill('yellow')       
+    circle(200, 200, 30)  # Dessiner le cercle du milieu
 
 --- /code ---
 
@@ -117,51 +110,9 @@ line_highlights: 24, 25, 26, 27
 
 --- task ---
 
-**Test :** 🔄 exécute ton projet pour voir la cible avec trois cercles colorés.
+**Test :** exécute ton projet pour voir la cible avec trois cercles colorés.
 
 ![Un triangle marron avec trois cercles colorés sur de l'herbe et sur fond de ciel.](images/three-circles.png){:width="400px"}
-
---- /task ---
-
---- task ---
-
-**Choisir :** 💭 modifie l'une des couleurs en utilisant un nom de couleur différent. Tu peux trouver une liste de tous les noms de couleurs disponibles sur [W3 Schools](https://www.w3schools.com/colors/colors_names.asp){:target="blank"}.
-
-![Un triangle marron avec trois cercles colorés sur l'herbe et sur fond de ciel. Les couleurs sont devenues roses et violettes.](images/alternative-colours.png){:width="400px"}
-
---- collapse ---
----
-title: Exemple de code utilisant différentes couleurs
----
-
---- code ---
----
-language: python
-filename: main.py - draw()
-line_numbers: false
-line_number_start: 14
-line_highlights: 
----
-
-def draw():
-# Choses à faire dans chaque frame
-
-    fill('BlueViolet')
-    rect(0, 0, 400, 250)  # Ciel
-    fill('DeepSkyBlue')
-    rect(0, 250, 400, 150)  # Sol
-    fill('FireBrick')
-    triangle(150, 350, 200, 150, 250, 350)  # Support
-    fill('LemonChiffon')
-    circle(200, 200, 170)  # Cercle extérieur
-    fill('DeepPink')
-    circle(200, 200, 110)  # Cercle intérieur
-    fill('BlueViolet')
-    circle(200, 200, 30)  # Cercle du milieu
-
---- /code ---
-
---- /collapse ---
 
 --- /task ---
 

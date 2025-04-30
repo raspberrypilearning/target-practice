@@ -1,7 +1,7 @@
 ---
 title: Tir sur cible
 hero_image: images/banner.png
-description: Utilise Python pour dessiner une cible et marquer des points en la frappant avec des flèches
+description: Utilise Python pour dessiner une cible et marquer des points en l'atteignant avec des flèches
 meta_title: Projets de codage Python pour enfants et adolescents | Tir sur cible
 meta_description: Apprends le langage Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Utilise Python pour dessiner une cible et marquer des points en l'atteignant avec des flèches.
 version: 4
@@ -10,11 +10,12 @@ copyedit: true
 last_tested: "2021-10-06"
 steps:
   - title: Ce que tu vas faire
-  - title: Créer un arrière-plan
+  - title: Dessiner l'herbe
   - title: Dessiner ta cible
     completion:
       - engaged
-  - title: Tirer la flèche
+  - title: Ajouter une flèche
+  - title: Quelle est la couleur atteinte ?
   - title: Marquer des points
     completion:
       - internal
@@ -26,5 +27,6 @@ steps:
       passing_score: 3
     completion:
       - external
-  - title: Améliorer ton projet
-  - title: Et ensuite ?
+  - title: Défi
+    challenge: true
+  - title: Que peux-tu faire maintenant ?

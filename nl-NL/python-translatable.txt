@@ -1,4 +1,4 @@
-schiet_pijl
+pijl_y
 
 pijl_x
 
@@ -6,5 +6,4 @@ pijl_y
 
 hit_kleur
 
-muis_ingedrukt
-
+snelheid

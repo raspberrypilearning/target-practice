@@ -1,41 +1,36 @@
-## Wat kun je verder nog doen?
+## Uitdaging
 
-Als je het [Inleiding tot Python](https://projects.raspberrypi.org/nl-NL/raspberrypi/python-intro) pad volgt, kun je doorgaan naar het [Raket lanceren](https://projects.raspberrypi.org/nl-NL/projects/rocket-launch) project. In dit project maak je een interactieve animatie van een raket die een satelliet in een baan om de aarde lanceert.
+--- challenge ---
 
---- print-only ---
 
-![Raket lancering-project.](images/showcase_rocket.png){:width="600px"}
+Je kunt:
 
---- /print-only ---
-
---- no-print ---
 
 --- task ---
 
-**Probeer het:** Je programma zal de animatie aanpassen op basis van de hoeveelheid brandstof die je het geeft en het zal er wel of niet in slagen om een baan om de aarde te bereiken. Hoeveel brandstof wil je gebruiken om de baan te bereiken, maar niet te veel extra brandstof te verspillen?
-
-**Tip:** Ongeveer 25.000 kg zou genoeg moeten zijn, maar experimenteer met de cijfers om te zien wat er gebeurt.
-
-Klik op de knop **Run** om een voorbeeld van dit project te bekijken.
-
-<iframe src="https://editor.raspberrypi.org/nl-NL/embed/viewer/rocket-launch-example" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
-
-![Raket lancering-project](images/showcase_rocket.png){:width="600px"}
+Een `vierde` en `vijfde` cirkel toevoegen, in nieuwe kleuren, die verschillende punten scoren op basis van hun positie
 
 --- /task ---
 
---- /no-print ---
+--- task ---
 
-Als je meer plezier wilt hebben bij het verkennen van Python, dan kun je een van [deze projecten](https://projects.raspberrypi.org/nl-NL/projects?software%5B%5D=python) uitproberen.
+Emoji in je geprinte berichten zetten ([hier is een lijst met emojis](https://unicode.org/emoji/charts/full-emoji-list.html){:target="_blank"} waaruit je kunt kopiëren)
 
-***
+--- /task ---
 
-Dit project werd vertaald door vrijwilligers:
+--- task ---
 
-Max Schaaper
-Robert-Jan Kempenaar
-Iny van Beuningen
-Jeroen Wernsen
+Het spel gemakkelijker of moeilijker maken door de waarde van `frame_rate=2` te wijzigen
 
-Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
+
+--- /task ---
+
+--- task ---
+
+Voeg een variabele toe om de totaalscore bij te houden en tel er elke keer het juiste aantal punten bij op.
+
+--- /task ---
+
+
+
+--- /challenge ---
