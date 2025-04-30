@@ -28,7 +28,7 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- task ---
 
-**Test:** Klik op de knop **Run**. **Debuggen:** 🐞 Zorg ervoor dat je de juiste kleurnaam hebt ingevoerd voor **jouw** cirkels.
+**Test:** Klik op de knop **Run**. Je zou kleuren moeten zien afgedrukt in de **Tekstuitvoer**, in hexadecimaal formaat.
 
 --- /task ---
 
