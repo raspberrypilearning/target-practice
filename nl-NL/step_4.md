@@ -15,7 +15,7 @@ Voeg een nog kleinere cirkel toe die een pijlt voorstelt.
 
 --- task ---
 
-Voeg code toe om een bruine cirkel binnen een doelgebied willekeurig te tekenen:
+Voeg een functie toe om een bruine cirkel te tekenen op de coördinaten `200`, `200`.
 
 --- code ---
 ---
@@ -50,7 +50,7 @@ line_highlights: 35
 
 --- task ---
 
-**Test:** 🔄 Voer je project uit. Je zou de pijl in het midden moeten zien.
+**Test:** Klik op de knop **Run**. Je zou de pijl in het midden moeten zien.
 
 ![een bruine pijlcirkel in het midden van het doel](images/arrow-centre.png)
 
