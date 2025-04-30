@@ -6,9 +6,9 @@ Vervolgens voeg je wat code toe om de kleur op de plek van de pijl op te halen.
 
 --- task ---
 
-**Debuggen:** 🐞 Als je een bericht ziet over `raak_kleur` die 'niet gedefinieerd' is, ga dan terug naar `draw()` en controleer de regel waarin `raak_kleur` als globale variabele gedeclareerd is.
+Voeg een nieuwe **globale variabele** toe met de naam `raak_kleur`.
 
-Voeg code toe om de kleur in het midden van de pijl `op te halen` en sla deze op in de variabele `raak_kleur` .
+Voeg code toe om de kleur in het midden van de pijl `op te halen` en sla deze op in de variabele `raak_kleur`.
 
 
 --- code ---
@@ -22,13 +22,13 @@ arrow_y = randint(100, 300) hit_colour = get(arrow_x, arrow_y).hex print(hit_col
 
 --- /code ---
 
-**Debug:** 🐞 Zorg ervoor dat je de `.hex` string hebt gebruikt voor **jouw** cirkelkleuren.
+**Tip:** 💡 De `get`-code om de kleur op te halen en op te slaan moet **vóór** de code om de `cirkel` te tekenen staan, anders bewaar je altijd de bruin kleur van de pijl!
 
 --- /task ---
 
 --- task ---
 
-**Test:** 🔄 Voer je project uit. **Debuggen:** 🐞 Zorg ervoor dat je de juiste kleurnaam hebt ingevoerd voor **jouw** cirkels.
+**Test:** Klik op de knop **Run**. **Debuggen:** 🐞 Zorg ervoor dat je de juiste kleurnaam hebt ingevoerd voor **jouw** cirkels.
 
 --- /task ---
 
@@ -71,7 +71,7 @@ print('🎯')
 
 --- task ---
 
-**Test:** 🔄 Voer je project uit. Wanneer je met de muis op het doel klikt, zou je het teken 🎯 moeten zien.
+**Test:** Klik op de knop **Run**. Wanneer je met de muis op het doel klikt, zou je het teken 🎯 moeten zien.
 
 ![doel-emoji geprint wanneer met de muis wordt geklikt](images/target_printed.gif)
 
