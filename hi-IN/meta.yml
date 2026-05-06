@@ -5,7 +5,7 @@ description: एक लक्ष्य बनाने के लिए पा�
 meta_title: Python बच्चों और किशोरों के लिए प्रोजेक्ट कोडिंग | लक्ष्य अभ्यास
 meta_description: बच्चों और किशोरों के लिए Raspberry Pi फाउंडेशन की कोडिंग प्रोजेक्ट्स के साथ Python जानें। एक लक्ष्य बनाने के लिए Python का उपयोग करें और इसे तीर से मारते हुए अंक स्कोर करें।
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: Challenge
     challenge: true
-  - 
-    title: What can you do now?
