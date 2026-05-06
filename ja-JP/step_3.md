@@ -17,7 +17,7 @@ Your game needs a target to shoot arrows at.
 
 Set the fill colour to `brown`.
 
-ここでは、それぞれ異なる座標を持つ3つの三角形の例を示します。
+ここでは、それぞれ異なる座標を持つ3つの三角形の例を示します。 それぞれのグリッド位置を見て、`x`と`y`の座標が三角形の角をどのように位置づけているかを確認します。
 
 ![A brown triangle on grass and against a sky with the coordinate points labelled at 150, 350 and 200, 150 and 250, 350). The corners of the canvas are also labelled as x=0, y=0 in the top left and x=400, y=400 in the bottom right.](images/stand_coords.png){:width="400px"}
 
@@ -46,7 +46,7 @@ line_highlights: 24-25
 
 --- task ---
 
-**ヒント：**円を作るには、**幅**と**高さ**が同じである必要があります。
+ターゲットの一番大きな部分は、`ellipse ()` 関数を使って作った青い**円**になります。 楕円は、片側に角のない形状です。 楕円のようにつぶれてもいいし、円のように完全に丸くなってもいい。
 
 Set the fill colour to `blue`.
 
@@ -80,7 +80,7 @@ line_highlights: 31-32
 
 --- task ---
 
-**Test:** プロジェクトを再度実行すると、ターゲットに3色の丸が表示されます。
+**ヒント：**円を作るには、**幅**と**高さ**が同じである必要があります。
 
 --- code ---
 ---
@@ -101,7 +101,7 @@ line_highlights: 33-34
 
 --- task ---
 
-**デバッグ：** Python は 'color' のアメリカ綴り('u' がない) を使うので、同じようにしてください。
+**Test:** プロジェクトを再度実行すると、ターゲットに3色の丸が表示されます。 納得がいくまで色を変えてみてください。
 
 ![草の上と空を背景に3色の円が描かれた茶色の三角形。](images/three-circles.png){:width="400px"}
 
