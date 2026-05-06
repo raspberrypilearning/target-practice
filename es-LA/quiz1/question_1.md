@@ -8,7 +8,7 @@ Cuando hayas respondido a cada pregunta, haz clic en **Revisar mi respuesta**.
 
 --- pregunta ---
 ---
-legend: Pregunta 1 de 3
+leyenda: Pregunta 1 de 3
 ---
 En tu proyecto agregaste `randint(100, 300)` a tu función `shoot_arrow()`. ¿Qué hace `randint(100, 300)`?
 
