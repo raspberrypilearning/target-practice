@@ -12,7 +12,7 @@ Your game needs a target to shoot arrows at.
 </div>
 </div>
 
-### Draw a triangular stand
+### إحداثيات مثلث
 
 --- task ---
 
