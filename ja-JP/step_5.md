@@ -24,7 +24,7 @@ print('内側の円に当たった、 200点！
 
 --- /code ---
 
-は**同値**をテストするために使われます - `hit_color == bullseye` のように - もしどちらかの側のものが同じ値であれば、テストは`真`、そうでない場合`偽`になります。
+**テスト：** プロジェクトを実行します。 あなたのメッセージを見るために青い外側の円の矢を止めてみてください。 矢の中心にあるピクセルの色が、保存されチェックされる色です。
 
 --- /task ---
 
@@ -73,7 +73,7 @@ print('🎯')
 
 --- task ---
 
-**テスト：**プロジェクトを実行します。 You should see the 🎯 character printed when you click the mouse on the target.
+**テスト：**プロジェクトを実行します。 赤と黄色の円に矢を止めて、そのメッセージを確認してください。 You should see the 🎯 character printed when you click the mouse on the target.
 
 ![target emoji printed when mouse clicked](images/target_printed.gif)
 
