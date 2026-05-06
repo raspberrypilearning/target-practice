@@ -5,7 +5,7 @@ description: Zeichne mit Python eine Zielscheibe und erziele Punkte, indem Du si
 meta_title: Python Programmierprojekte für Kinder und Jugendliche | Zielübung
 meta_description: Lerne Python mit den Programmierprojekten der Raspberry Pi Foundation für Kinder und Jugendliche. Zeichne mit Python eine Zielscheibe und erziele Punkte, indem Du sie mit Pfeilen triffst.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: Wie geht es weiter?
     challenge: true
-  - 
-    title: What can you do now?
