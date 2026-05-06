@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Cwestiwn 2 o 3
+legend: Question 2 of 3
 ---
 
 Yn eich prosiect roeddech chi wedi defnyddio'r amodau `if` , `elif`, ac `else` i wirio ar ba liw glaniodd y saeth.
