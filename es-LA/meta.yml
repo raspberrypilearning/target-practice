@@ -5,7 +5,7 @@ description: Usa Python para dibujar un blanco y ganar puntos golpeándolo con f
 meta_title: Proyectos de codificación Python para niños y adolescentes | Práctica de tiro al blanco
 meta_description: Aprende Python con los proyectos de codificación de la Fundación Raspberry Pi para niños y adolescentes. Usa Python para dibujar un objetivo y ganar puntos tirando flechas.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: '¿Qué sigue?'
     challenge: true
-  - 
-    title: '¿Qué puedes hacer ahora?'
