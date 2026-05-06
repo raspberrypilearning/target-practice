@@ -8,7 +8,7 @@ Ar ôl bob cwestiwn, pwyswch **cyflwyno**. Byddi di'n cael dy dywys i'r ateb cyw
 
 --- question ---
 ---
-legend: Cwestiwn 1 o 3
+legend: Question 1 of 3
 ---
 In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
