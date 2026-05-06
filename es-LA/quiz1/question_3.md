@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Pregunta 3 de 3
+leyenda: Pregunta 3 de 3
 ---
 
 Un círculo se dibuja usando el siguiente código:
