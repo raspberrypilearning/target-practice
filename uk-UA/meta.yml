@@ -5,7 +5,7 @@ description: За допомогою Python намалюй мішень та н�
 meta_title: Проєкти з кодування для дітей і підлітків | Влучний постріл
 meta_description: Вивчай Python за допомогою проєктів програмування Raspberry Pi Foundation для дітей і підлітків. За допомогою Python намалюй ціль і набирай бали, влучаючи в неї стрілами.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: Додаткове завдання
     challenge: true
-  - 
-    title: Що ти тепер вмієш?
