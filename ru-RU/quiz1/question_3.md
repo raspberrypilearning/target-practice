@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Вопрос 3 из 3
+legend: Question 3 of 3
 ---
 
 A circle is drawn using the following code:
