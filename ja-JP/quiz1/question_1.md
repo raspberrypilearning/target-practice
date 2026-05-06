@@ -2,7 +2,7 @@
 
 Answer the three questions. There are hints to guide you to the correct answer.
 
-各質問の後、**ボタン**を押してください。 正しい答えが表示されます。
+各質問の後、**ボタン**を押してください。 正しい答えが表示されます。 このアクティビティは何度でも実行できます。
 
 お楽しみください!
 
