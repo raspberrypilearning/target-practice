@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Cwestiwn 3 o 3
+legend: Question 3 of 3
 ---
 
 Mae elips yn cael ei lunio gan ddefnyddio'r cod canlynol:
