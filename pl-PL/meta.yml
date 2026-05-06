@@ -5,7 +5,7 @@ description: Użyj Pythona, aby narysować cel i zdobywać punkty, uderzając go
 meta_title: Projekty kodowania w Pythonie dla dzieci i młodzieży | Praktyka docelowa
 meta_description: Naucz się języka Python z projektami programistycznymi Fundacji Raspberry Pi dla dzieci i młodzieży. Użyj Pythona, aby narysować cel i zdobywać punkty, uderzając go strzałkami.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: Challenge
     challenge: true
-  - 
-    title: What can you do now?
