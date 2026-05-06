@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legenda: Vraag 2 van 3
+legend: Vraag 2 van 3
 ---
 
 In je project heb je `if`, `elif`en `else` condities gebruikt om te controleren op welke kleur de pijl terechtkwam.
