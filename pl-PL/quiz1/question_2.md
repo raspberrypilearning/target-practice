@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Pytanie 2 z 3
+legend: Question 2 of 3
 ---
 
 W swoim projekcie użyłeś warunków ` ` , ` ` i ` ` , aby sprawdzić, na którym kolorze wylądowała strzałka.
