@@ -8,7 +8,7 @@ Have fun!
 
 --- question ---
 ---
-legend: प्रश्न 3 पैकी 1
+legend: Question 1 of 3
 ---
 In your project you added `randint(100, 300)` to your `shoot_arrow()` function. What does `randint(100, 300)` do?
 
