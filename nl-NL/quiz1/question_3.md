@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legenda: Vraag 3 van 3
+legend: Vraag 3 van 3
 ---
 
 Een cirkel wordt getekend met behulp van de volgende code:
