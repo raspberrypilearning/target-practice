@@ -5,7 +5,7 @@ description: Defnyddiwch Python i lunio targed a sgorio pwyntiau drwy ei daro â
 meta_title: Python coding projects for kids and teens | Target practice
 meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Use Python to draw a target and score points by hitting it with arrows.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: Beth nesaf?
     challenge: true
-  - 
-    title: What can you do now?
