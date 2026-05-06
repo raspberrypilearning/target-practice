@@ -1,7 +1,7 @@
 
 --- question ---
 ---
-legend: Pytanie 3 z 3
+legend: Question 3 of 3
 ---
 
 Okrąg jest rysowany przy użyciu następującego kodu:
