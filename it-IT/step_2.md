@@ -14,8 +14,8 @@ Apri il progetto [Target Practice Starter](https://editor.raspberrypi.org/en/pro
 
 --- code ---
 ---
-language: python filename: main.py — draw() line_numbers: true line_number_start: 14
-line_highlights: 12
+language: python line_numbers: true line_number_start: 17
+line_highlights: 21-22
 ---
 def draw(): # Things to do in every frame fill('cyan')  
 rect(0, 0, 400, 250)  
