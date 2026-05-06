@@ -5,7 +5,7 @@ description: Utilise Python pour dessiner une cible et marquer des points en l'a
 meta_title: Projets de codage Python pour enfants et adolescents | Tir sur cible
 meta_description: Apprends le langage Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Utilise Python pour dessiner une cible et marquer des points en l'atteignant avec des flèches.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-06"
 steps:
@@ -37,5 +37,3 @@ steps:
   - 
     title: Défi
     challenge: true
-  - 
-    title: Que peux-tu faire maintenant ?
